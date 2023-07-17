@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'assignments',
     'login',
     'introduction',
+    'library',
 ]
 
 MIDDLEWARE = [
