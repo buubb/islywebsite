@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'team_activities',
     'volunteer',
     'CTF_Challenge',
+    'recruit',
 ]
 
 MIDDLEWARE = [
