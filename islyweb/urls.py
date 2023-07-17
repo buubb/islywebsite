@@ -26,4 +26,7 @@ urlpatterns = [
     path('login/', include('login.urls')),
     path('introduction/', include('introduction.urls')),
     path('library/', include('library.urls')),
+    path('team-activities/', include('team_activities.urls')),
+    path('volunteer/', include('volunteer.urls')),
+    path('CTF-Challenge/', include('CTF_Challenge.urls')),
 ]

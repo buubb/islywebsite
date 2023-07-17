@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'login',
     'introduction',
     'library',
+    'team_activities',
+    'volunteer',
+    'CTF_Challenge',
 ]
 
 MIDDLEWARE = [
