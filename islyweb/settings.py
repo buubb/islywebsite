@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'islyweb',
     'notice',
-    'assignments'
+    'assignments',
+    'login',
 ]
 
 MIDDLEWARE = [

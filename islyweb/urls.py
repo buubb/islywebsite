@@ -23,4 +23,5 @@ urlpatterns = [
     path('', Main.as_view()),
     path('notice/', include('notice.urls')),
     path('assignments/', include('assignments.urls')),
+    path('login/', include('login.urls')),
 ]
