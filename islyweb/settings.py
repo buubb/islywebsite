@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'notice',
     'assignments',
     'login',
+    'introduction',
 ]
 
 MIDDLEWARE = [
