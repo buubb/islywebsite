@@ -5,6 +5,22 @@
 3. fork 받은 프로젝트를 clone 후 작업 브랜치를 만들어주세요.
 4. PR을 만들어주세요.
 
+# I.Sly() URL 
+
+- 메인 페이지: /
+- 공지사항: /notice
+- 과제 목록
+    심화: /assignments/advanced
+    기초: /assignments/basic
+- 과제 제출: /assignments/submit
+- 자료실: /library
+- 팀 활동 게시물: /team-activities
+- 재능 기부: /volunteer
+- CTF 문제 모음: /CTF-Challenge
+- 동아리 지원: /recruit
+- 로그인: /login
+- 아이슬리 소개: /introduction
+
 # 기능 추가 시 참고사항
 
 1. 가상환경에 'python manage.py startapp 기능이름(ex. login, assignments)' 명령어로 기능 추가
