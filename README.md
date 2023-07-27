@@ -36,6 +36,7 @@
 - 작업 브랜치 규칙:'issueid'-브랜치 이름 (e.x, '3-added-buubb', 비고.buubb는 제 githubID입니다.)
 - 순번과 Github ID는 입력이 필수입니다.
 - PR 제출 후 리뷰가 진행이 돼요. merge 되기 전에 수정과 rebase가 필요하실 수 있어요.    
+- hi
 
 # Who Am I
 
