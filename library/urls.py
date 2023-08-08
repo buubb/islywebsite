@@ -5,3 +5,4 @@ urlpatterns = [
     # url path: library/
     path('', Library.as_view()),
 ]
+
