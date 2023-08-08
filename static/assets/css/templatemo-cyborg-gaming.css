@@ -173,7 +173,7 @@ p {
 
 .main-button a:hover {
   background-color: #fff;
-  color: #11320e;
+  color: #23681d;
 }
 
 .main-border-button a {
@@ -1021,7 +1021,7 @@ Featured Games Style
 .featured-games .item .thumb .hover-effect h6 {
   background-color: rgba(31,33,34,0.95);
   display: inline-block;
-  color: #ec6090;
+  color: #4bf17a;
   font-weight: 600;
   font-size: 14px;
   padding: 10px 20px;
@@ -1062,7 +1062,7 @@ Featured Games Style
 }
 
 .featured-games .item ul li:last-child i {
-  color: #ec6090;
+  color: #60ec7e;
 }
 
 .featured-games .owl-nav {
@@ -1092,7 +1092,7 @@ Featured Games Style
 .featured-games .owl-nav .owl-prev span:hover,
 .featured-games .owl-nav .owl-next span:hover {
   opacity: 1;
-  color: #ec6090;
+  color: #57f579;
 }
 
 .top-downloaded {
@@ -1294,6 +1294,11 @@ Live Stream Style
 .live-stream .main-button {
   text-align: center;
   margin-bottom: -53px;
+}
+
+.live-stream .main-border-button {
+  text-align: center;
+  margin: -53px;
 }
 
 /* 
@@ -1762,3 +1767,51 @@ body {
     width: 16%;
   }
 }
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
+
+.page-content #teambtn1 {
+  text-align: center;
+  margin-bottom: -53px;
+  padding: 20px;
+}
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+yubin workspace
+--------------------------------------------- 
+*/
