@@ -10,3 +10,7 @@ class Notice(APIView):
     def post(self, request):
         print("post로 호출")
         return render(request, 'notice/a.html')
+    
+    
+def basic(request):
+    return render(request,'notice/a.html')
