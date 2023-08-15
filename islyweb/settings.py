@@ -89,7 +89,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'islywebdb',
-        'USER': 'root',
+        'USER': 'test',
         'PASSWORD':'hisly2)2!3hisly2)2!3',
         'HOST': 'localhost',
         'PORT': '3306',

@@ -6,3 +6,9 @@ __pycache__
 ## 폴더 무시
 venv/
 myvenv/
+
+# MySQL Database
+*.sql
+*.sqlite3
+*.db
+*.log
