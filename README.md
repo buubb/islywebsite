@@ -47,7 +47,4 @@
 pip install djangorestframework
 pip install summernote
 pip install mysqlclient
-pip install PyMySQL
-assignments/migrations/0001_initial.py 삭제 후 mySQL 맞게 재생성
-User/migrations/0001_initial.py 삭제 후 mySQL 맞게 재생성
 User 테이블 사용은 from User.models import User
