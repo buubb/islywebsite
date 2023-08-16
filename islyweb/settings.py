@@ -11,10 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
-#import pymysql
-
-#pymysql.install_as_MySQLdb()
+from .my_settings import MY_DATABASES,MY_SECRET
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mo)7-bhl30!g&i7qr6@qo*03^!kfl^#*887-o=)rcog2@d&!z('
+SECRET_KEY = MY_SECRET['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -91,17 +88,7 @@ WSGI_APPLICATION = 'islyweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'islywebdb',
-        'USER': 'test',
-        'PASSWORD':'hisly2)2!3',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
-
+DATABASES = MY_DATABASES
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -127,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC' 
+TIME_ZONE = 'Asia/Seoul' 
 
 USE_I18N = True
 
