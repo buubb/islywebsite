@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -89,9 +90,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'islywebdb',
-        'USER': 'root',
+        'USER': 'test',
         'PASSWORD':'hisly2)2!3hisly2)2!3',
-        'HOST': 'localhost',
+        'HOST': '192.168.0.6',
         'PORT': '3306',
     }
 }
