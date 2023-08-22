@@ -48,7 +48,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
-        <div class="row">
+        <div class="row"> <!--""-->
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
@@ -116,18 +116,74 @@ https://templatemo.com/tm-579-cyborg-gaming
 
           <!-- ***** Banner Start ***** -->
           
-          {% csrf_token %}
-          <div class="mb-3">
-            <label for="username">사용자ID</label>
-            <input type="text" class="form-control" name="username" id="username"
-                   value="{{ form.username.value|default_if_none:'' }}">
+          {% csrf_token %} <!-- *CSRF 공격 방지하기 위함 -->
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-4">
+              <div class="from-group">
+                <h4>Try login</h4>
+                <div class="mb-3">
+                  <label for="username">사용자ID</label>
+                  <br>
+                  <input type="text" class="form-control" name="username" id="username"
+                      placeholder="write your ID"
+                      value="{{ form.username.value|default_if_none:'' |escape }}"> 
+                         <!-- *escape : 사용자 입력 노출 방지 위함 , 특수문자나 태그 등이 html로 해석되지 않도록 하여 XSS 공격 방지가능  -->
+                  
+                  <br>
+                  <input type="text" class="form-control" name="password" id="password"
+                      placeholder="write your PW"
+                      value="{{ form.password.value|default_if_none:'' |escape }}">
+      
+                  </div>
+
+                  <div class="buttons">
+                    <label for="remember-check">
+                      <input type="checkbox" class="remember-check" id="remember-check">SAVE THE ID
+                    </label>
+                    <button type="submit" class="input-group_mb-4" id="login_button">로그인</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
+        
+      
+    </div>
+  </div>
+</div>
+        
+<!--         <div class="input-group_mb-3">
+            <button type="submit" id="login_button">로그인</button>
+        </div> -->
+        
+
+<!--         <div class="mb-3">
             <label for="password">비밀번호</label>
             <input type="password" class="form-control" name="password" id="password"
-                   value="{{ form.password.value|default_if_none:'' }}">
+                   value="{{ form.password.value|default_if_none:'' |escape }}">
+            <br>
+
+            <div class="input-group_mb-3">
+            <button type="submit" class="btn btn-primary">로그인</button>
         </div>
-        <button type="submit" class="btn btn-primary">로그인</button>
+        </div> -->
+
+<!--         <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Password</label>
+            </div>
+            <div class="col-auto">
+              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+              </span>
+            </div>
+          </div>
+        </div> -->
           
 <!--           <div class="row">
             <div class="col-lg-12">
@@ -265,10 +321,6 @@ https://templatemo.com/tm-579-cyborg-gaming
             </div>
           </div> -->
           <!-- ***** Gaming Library End ***** -->
-        </div>
-      </div>
-    </div>
-  </div>
   
   <footer>
     <div class="container">

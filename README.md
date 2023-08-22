@@ -42,3 +42,9 @@
 | 순번 | Github ID | 
 | ---- | --------- |
 | - | - |
+
+# Requirement
+pip install djangorestframework
+pip install summernote
+pip install mysqlclient
+User 테이블 사용은 from User.models import User
