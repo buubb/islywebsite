@@ -1808,7 +1808,9 @@ label.remember_check {
 sumi workspace
 --------------------------------------------- 
 */
-
+.game-details #acontent ul li {
+  color: #CCC;
+}
 /* 
 ---------------------------------------------
 eunju workspace
