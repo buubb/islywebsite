@@ -115,40 +115,42 @@ https://templatemo.com/tm-579-cyborg-gaming
         <div class="page-content">
 
           <!-- ***** Banner Start ***** -->
-          
-          {% csrf_token %} <!-- *CSRF 공격 방지하기 위함 -->
           <div class="row justify-content-center mt-5">
             <div class="col-md-4">
               <div class="from-group">
                 <h4>Try login</h4>
-                <div class="mb-3">
-                  <label for="username">사용자ID</label>
-                  <br>
-                  <input type="text" class="form-control" name="username" id="username"
-                      placeholder="write your ID"
-                      value="{{ form.username.value|default_if_none:'' |escape }}"> 
-                         <!-- *escape : 사용자 입력 노출 방지 위함 , 특수문자나 태그 등이 html로 해석되지 않도록 하여 XSS 공격 방지가능  -->
-                  
-                  <br>
-                  <input type="text" class="form-control" name="password" id="password"
-                      placeholder="write your PW"
-                      value="{{ form.password.value|default_if_none:'' |escape }}">
-      
-                  </div>
+                <form method="post" action="{%url 'login' %}">
+                  {% csrf_token %} <!-- *CSRF 공격 방지하기 위함 -->
+                  {% include "login/error.html" %}
+                  <div class="mb-3">
+                    <label for="username">사용자ID</label>
+                    <br>
+                    <input type="text" class="form-control" name="username" id="username"
+                        placeholder="write your ID"
+                        value="{{ form.username.value|default_if_none:'' |escape }}"> 
+                          <!-- *escape : 사용자 입력 노출 방지 위함 , 특수문자나 태그 등이 html로 해석되지 않도록 하여 XSS 공격 방지가능  -->
+                    
+                    <br>
+                    <input type="text" class="form-control" name="password" id="password"
+                        placeholder="write your PW"
+                        value="{{ form.password.value|default_if_none:'' |escape }}">
+        
+                    </div>
 
-                  <div class="buttons">
-                    <label for="remember-check">
-                      <input type="checkbox" class="remember-check" id="remember-check">SAVE THE ID
-                    </label>
-                    <button type="submit" class="input-group_mb-4" id="login_button">로그인</button>
+                    <div class="buttons">
+                      <label class="remember-check">
+                        <input type="checkbox" class="remember-check" id="remember-check">SAVE THE ID
+                      </label>
+                      <button type="submit" class="input-group_mb-4" id="login_button">로그인</button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
               
             </div>
           </div>
         </div>
-        
+      </div>
       
     </div>
   </div>
