@@ -1818,7 +1818,9 @@ input[type="checkbox"] {
 sumi workspace
 --------------------------------------------- 
 */
-
+.game-details #acontent ul li {
+  color: #CCC;
+}
 /* 
 ---------------------------------------------
 eunju workspace
