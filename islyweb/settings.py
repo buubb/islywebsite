@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 
 from pathlib import Path
+from .my_settings import MY_DATABASES,MY_SECRET
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mo)7-bhl30!g&i7qr6@qo*03^!kfl^#*887-o=)rcog2@d&!z('
+SECRET_KEY = MY_SECRET['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'CTF_Challenge',
     'recruit',
     'User.apps.UserConfig',
+    #'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +62,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+   # 'corsheaders.middleware.CorsMiddleware',
 ]
+
+# 로그인 성공 시 자동으로 이동할 URL
+LOGIN_REDIRECT_URL = '/'
 
 ROOT_URLCONF = 'islyweb.urls'
 
@@ -86,17 +92,7 @@ WSGI_APPLICATION = 'islyweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'islywebdb',
-        'USER': 'test',
-        'PASSWORD':'hisly2)2!3hisly2)2!3',
-        'HOST': '192.168.0.6',
-        'PORT': '3306',
-    }
-}
-
+DATABASES = MY_DATABASES
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -122,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC' 
+TIME_ZONE = 'Asia/Seoul' 
 
 USE_I18N = True
 
@@ -181,3 +177,32 @@ SUMMERNOTE_CONFIG = {
         
     }
 }
+
+##CORS
+"""
+CORS_ORIGIN_ALLOW_ALL=True
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+)
+
+APPEND_SLASH = False
+"""

@@ -1,8 +1,15 @@
 ## 파일 무시
 db.sqlite3
 __pycache__
+my_settings.py
 ## 다음과 같은 확장자는 전체 무시
 *.pyc
 ## 폴더 무시
 venv/
 myvenv/
+
+# MySQL Database
+*.sql
+*.sqlite3
+*.db
+*.log
