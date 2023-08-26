@@ -1823,14 +1823,21 @@ seolin workspace
 }
 
 .buttons #login_button {
-  position: absolute;
   background-color: rgba(0, 128, 0, 0.603);
+  padding: 10px 30px;
+  border-radius: 30px;
 }
 
-label.remember_check {
-  
+.buttons label {
   color: white;
 }
+
+
+
+/* .alert-danger {
+  background-color:  #27292a;
+  color: white
+} */
 
 /* 
 ---------------------------------------------
