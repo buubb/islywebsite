@@ -10,7 +10,7 @@ class LibraryAdmin(SummernoteModelAdmin) :
         'title',
         'contents',
         'writer',
-        'write_dttm',
-        'update_dttm'
+        'writer_dttm',
+        'updata_dttm'
     )
     list_display_links = list_display
