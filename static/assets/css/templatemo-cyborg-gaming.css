@@ -1780,6 +1780,35 @@ yubin workspace
   padding: 20px;
 }
 
+.teamboard-page-content #teambtn1 {
+  display: inline-block;
+  margin: 20px 10px 10px 10px;
+}
+
+#teambtn {
+  text-align: right;
+}
+
+#teambtn .main-border-button a {
+  font-size: 14px;
+  color: #60ec8c;
+  background-color: transparent;
+  border: 1px solid #60ec8c;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  overflow: hidden;
+}
+
+#teambtn .main-border-button a:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: #5ee76c;
+}
+
 /* 
 ---------------------------------------------
 seolin workspace
@@ -1815,7 +1844,9 @@ seolin workspace
 sumi workspace
 --------------------------------------------- 
 */
-
+.game-details #acontent ul li {
+  color: #CCC;
+}
 /* 
 ---------------------------------------------
 eunju workspace

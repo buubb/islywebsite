@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'recruit',
     'User.apps.UserConfig',
     #'corsheaders',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
