@@ -44,8 +44,8 @@
 | - | - |
 
 # Requirement
-pip install djangorestframework
-pip install summernote
-pip install mysqlclient
-User 테이블 사용은 from User.models import User
-pip install django-extensions
+- pip install djangorestframework
+- pip install summernote
+- pip install mysqlclient
+- User 테이블 사용은 https://han-py.tistory.com/353 참고
+- pip install django-extensions
