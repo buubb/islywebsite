@@ -14,8 +14,8 @@ class TeamActivities(APIView):
 class TeamWritePage(APIView):
     def get(self, request):
         print("get으로 호출")
-        return render(request, 'team_activities/tem2.html')
+        return render(request, 'team_activities/teamboard.html')
     
     def post(self, request):
         print("post로 호출")
-        return render(request, 'team_activities/tem2.html')
+        return render(request, 'team_activities/teamboard.html')
