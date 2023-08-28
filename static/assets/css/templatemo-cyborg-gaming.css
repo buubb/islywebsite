@@ -1809,6 +1809,47 @@ yubin workspace
   color: #5ee76c;
 }
 
+.page-content #ctftitle h4 em {
+  text-align: center;
+  color: #60ec77;
+  font-size: 34px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.page-content #ctftitle h4 {
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-size: 34px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.footer-container hr {
+  color: #fff;
+}
+
+/* 메뉴 드롭다운 */
+.header-area .main-nav .nav .nav-item li:last-child:hover a,
+.header-area .main-nav .nav .nav-item li:last-child a.active {
+  color: #fff !important;
+  background-color: #fff !important;
+}
+
+.header-area .main-nav .nav .nav-item li:last-child a {
+  background-color: transparent;
+  color: #666;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: transparent;
+  padding: 13px 10px;
+  border-radius: 18px;
+  letter-spacing: .3px;
+}
+
 /* 
 ---------------------------------------------
 seolin workspace
