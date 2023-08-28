@@ -124,7 +124,7 @@ Global Styles
 html,
 body {
   background: #1f2122;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Sen","Noto Sans KR",sans-serif!important;
 }
 
 body .page-content {
