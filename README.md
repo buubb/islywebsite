@@ -49,3 +49,7 @@
 - pip install mysqlclient
 - User 테이블 사용은 https://han-py.tistory.com/353 참고
 - pip install django-extensions
+- pip install django-admin-thumbnails //일반
+- pip install ‘django-admin-thumbnails<0.3’ //파이참 이용자
+- python -m pip install Pillow //일반
+- python -m pip install ‘Pillow<10’ //파이참 이용자
