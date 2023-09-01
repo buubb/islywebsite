@@ -62,7 +62,14 @@
                         <li><a href="/library/">자료실</a></li>
                         <li><a href="/CTF-Challenge/">Challenge</a></li>
                         <li><a href="/recruit/">RECRUIT</a></li>
-                        <li><a href="/login/">Login <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a></li>
+                        <li class="nav-item">
+                          {% if user.is_authenticated %}
+                          <a class="nav-link" href="{% url 'logout' %}">{{user.username}} (Logout)</a>
+                          {% else %}
+                          <a href="/login/">Login <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a>
+                          {% endif %}
+                        </li>
+                        <!-- <li><a href="/login/">Login <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a></li> -->
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
