@@ -751,7 +751,7 @@ Header Style
     color: #1e1e1e !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #fff !important;
+    background-color: #27292a!important;
     color: #5ee773!important;
   }
   .header-area .main-nav .nav li:last-child a img {
@@ -1831,10 +1831,16 @@ yubin workspace
 }
 
 /* 메뉴 드롭다운 */
+.header-area .main-nav .nav .nav-item li:hover a,
+.header-area .main-nav .nav .nav-item li a.active {
+  color: #5ee773!important;
+  background-color: #27292a!important;
+}
+
 .header-area .main-nav .nav .nav-item li:last-child:hover a,
 .header-area .main-nav .nav .nav-item li:last-child a.active {
-  color: #fff !important;
-  background-color: #fff !important;
+  color: #5ee773!important;
+  background-color: #27292a!important;
 }
 
 .header-area .main-nav .nav .nav-item li:last-child a {
@@ -1887,6 +1893,9 @@ sumi workspace
 */
 .game-details #acontent ul li {
   color: #CCC;
+}
+.heading-section h4 {
+  color: #fff;
 }
 /* 
 ---------------------------------------------
