@@ -4,91 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f15f95d6-99b6-4a51-bfad-d880358d8691" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/volunteer/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/volunteer/js/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_JMPTJMF.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_QC6soDN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_QP6QR4p.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_TSh5OaR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_UXMzyl4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_Vv9esKx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_blFVsVj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_hF4pNAW.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/1_zr849cb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/2_HlpeeG4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/2_Q4o1JM7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/2_T1xCbJJ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/2_qA07nHo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/2_tPXEBRg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3_Inpkutl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3_QITcOFC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3_TAj8R8G.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3_poSRRHe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3_wtDDKmS.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/3_y7gG0AY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/post/셀.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team_activities/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team_activities/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team_activities/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team_activities/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team_activities/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team_activities/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team_activities/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team_activities/tem_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/tem_profile.html" afterDir="false" />
+    <list default="true" id="8016a4e7-1295-4fc0-ba76-6d24c5ef088e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/users/profile/EWL-8031221-pristine-sunny-side-up-eggs-hero-C-2000-44f44a59171a4cdda8a93c_KweVgLc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/users/profile/ISlylogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/breakpoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/browser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_actions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_author.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_blurb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_box.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_mini-post.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_post.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_posts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/components/_table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/layout/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/layout/_intro.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/layout/_main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/layout/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/layout/_wrapper.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/libs/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/libs/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/libs/_html-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/libs/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/libs/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/libs/_vendor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,40 +62,32 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2Ua0V7j2G6Ng9SHcmTsvXgUrJb2" />
+  <component name="ProjectId" id="2VA1WL3hE0KRXuIlIY6U3TuxW8I" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/연습/pystagram-17.3_-",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\js" />
       <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\volunteer" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\images" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\assets" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,39 +118,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f15f95d6-99b6-4a51-bfad-d880358d8691" name="Changes" comment="" />
-      <created>1693162405194</created>
+      <changelist id="8016a4e7-1295-4fc0-ba76-6d24c5ef088e" name="Changes" comment="" />
+      <created>1694264101718</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1693162405194</updated>
-      <workItem from="1693162408412" duration="7598000" />
-      <workItem from="1693173506207" duration="502000" />
-      <workItem from="1693174022579" duration="12395000" />
-      <workItem from="1693186986926" duration="54000" />
-      <workItem from="1693396719343" duration="1018000" />
-      <workItem from="1693707245320" duration="2352000" />
-      <workItem from="1693709645531" duration="331000" />
-      <workItem from="1693710080509" duration="386000" />
-      <workItem from="1694029294764" duration="1964000" />
-      <workItem from="1694031495235" duration="591000" />
-      <workItem from="1694032097516" duration="4319000" />
-      <workItem from="1694036456039" duration="2452000" />
-      <workItem from="1694038956792" duration="15121000" />
+      <updated>1694264101718</updated>
+      <workItem from="1694264104707" duration="1389000" />
+      <workItem from="1694265727349" duration="49000" />
+      <workItem from="1694265825134" duration="4970000" />
+      <workItem from="1694313473862" duration="454000" />
+      <workItem from="1694317031037" duration="1740000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
