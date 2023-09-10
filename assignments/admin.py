@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from .models import BasicAssignment, AdvancedAssignment
 
 # Register your models here.
