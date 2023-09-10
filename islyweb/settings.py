@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-AUTH_USER_MODEL='User.User'
+AUTH_USER_MODEL= 'User.User'
  
 # Application definition
 # 기능(어플) 추가 시 아래에 이름을 추가해주세요. 하위 기능은 추가 XX

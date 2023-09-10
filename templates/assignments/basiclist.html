@@ -133,15 +133,15 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </tr>
                 </thead>
                 <tbody>
-                {% for post in postlist %}
+                {% for post in postlist1 %}
                 <tr>
                     <td style="color: DarkSeaGreen;">{{ post.id }} </td>
                     <td style="color: DarkSeaGreen;">
-                        <a href="{% url 'posting' post.id %}">{{ post.title }}</a><br>
+                        <a href="{% url 'BasicPosting' post.id %}">{{ post.title }}</a><br>
                     </td>
                     <td style="color: DarkSeaGreen;">{{ post.author }}</td>
                     <td style="color: DarkSeaGreen;">{{ post.created_at}}</td>
-                    <td style="color: DarkSeaGreen;">{{ post.views}}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.view_count}}</td>
                 </tr>
                 {% endfor %}
                 </tbody>
