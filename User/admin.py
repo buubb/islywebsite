@@ -3,8 +3,6 @@ from django.contrib.auth.admin import UserAdmin
 
 from User.models import User
 
-#admin.site.register(User, UserAdmin) #user는 내가 만든거, useradmin은 장고제공사용
-
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     fieldsets = [
@@ -19,6 +17,12 @@ class CustomUserAdmin(UserAdmin):
             "추가필드",
             {
                 "fields": ("profile_image", "short_description"),
+            },
+        ),
+        (
+            "연관객체",
+            {
+                "fields": ("like_posts",),
             },
         ),
         (

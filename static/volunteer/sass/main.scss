@@ -1,11 +1,11 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
+@import 'vars';
+@import 'functions';
+@import 'mixins';
+@import 'vendor';
+@import 'breakpoints';
+@import 'html-grid';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /*
 	Future Imperfect by HTML5 UP
@@ -25,35 +25,35 @@
 
 // Base.
 
-	@import 'base/reset';
-	@import 'base/page';
-	@import 'base/typography';
+	@import 'reset';
+	@import 'page';
+	@import 'typography';
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/author';
-	@import 'components/blurb';
-	@import 'components/box';
-	@import 'components/button';
-	@import 'components/form';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/actions';
-	@import 'components/icons';
-	@import 'components/posts';
-	@import 'components/mini-post';
-	@import 'components/post';
-	@import 'components/section';
-	@import 'components/table';
+	@import 'row';
+	@import 'author';
+	@import 'blurb';
+	@import 'box';
+	@import 'button';
+	@import 'form';
+	@import 'icon';
+	@import 'image';
+	@import 'list';
+	@import 'actions';
+	@import 'icons';
+	@import 'posts';
+	@import 'mini-post';
+	@import 'post';
+	@import 'section';
+	@import 'table';
 
 // Layout.
 
-	@import 'layout/header';
-	@import 'layout/wrapper';
-	@import 'layout/main';
-	@import 'layout/sidebar';
-	@import 'layout/intro';
-	@import 'layout/footer';
-	@import 'layout/menu';
+	@import 'header';
+	@import 'wrapper';
+	@import 'main';
+	@import 'sidebar';
+	@import 'intro';
+	@import 'footer';
+	@import 'menu';
