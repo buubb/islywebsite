@@ -41,6 +41,10 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <!-- ***** Preloader Start ***** -->
   {% include "navbar.html" %}
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+
   <!-- ***** Header Area End ***** -->
 
 
@@ -57,21 +61,21 @@ https://templatemo.com/tm-579-cyborg-gaming
 						<!-- Post -->
 							<article class="post">
 								<header class="post-header">
-                                    <!-- 제목, 소제목 -->
+                                    <!-- 포스트 제목, 팀원 -->
 									<div class="title">
-										<h2><a href="single.html">Magna sed adipiscing</a></h2>
-										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+										<h2><a href="single.html">{{ post.title }}</a></h2>
+                                        <p>{{ post.members }}</p>
 									</div>
-                                    <!-- 작성일자, 작성자, 프로필사진 -->
+                                    <!-- 작성일시, 작성자, 프로필 사진 -->
 									<div class="meta">
 										<time class="published">{{ post.created|date:'F d, Y' }}</time>
-										<p class="author"><span class="name">{{ post.user.username }}</span>
-                                            {% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</p>
+										<a class="author"><span class="name">{{ post.user.username }}</span>
+                                            {% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</a>
 									</div>
 								</header>
 
                                 <!-- 이미지 슬라이드 영역 시작 -->
-                                <a class="image featured">
+                                <p class="image featured">
                                 <div class="post-images splide">
                                     <div class="splide__track">
                                         <ul class="splide__list">
@@ -85,27 +89,47 @@ https://templatemo.com/tm-579-cyborg-gaming
                                         </ul>
                                     </div>
                                 </div>
-                                </a>
+                                </p>
                                 <!-- 이미지 슬라이드 영역 종료 -->
 
-                                <!-- 글 내용 -->
-                                <p><div class="post-content">{{ post.content|linebreaksbr }}</div></p>
+                                <!-- 포스트 내용 -->
+                                <p>{{ post.content|linebreaksbr }}</p>
 
+                                <!-- 버튼 -->
                                 <footer>
 									<ul class="actions">
 										<li><a href="single.html" class="button large">Continue Reading</a></li>
 									</ul>
+
 									<ul class="stats">
-                                        <div class = "post-buttons">
-										    <li><a href="#">General</a></li>
-										    <li><a href="#" class="icon solid fa-heart">Likes(0)</a></li>
-										    <li><a href="#" class="icon solid fa-comment"><span>Comments(0)</span></a></li>
+                                        <div class="post-buttons">
+                                              <!-- 좋아요 -->
+                                              <form class="like" action="{% url 'Volunteer:post_like' post_id=post.id %}?next={{ action_redirect_url }}" method="POST">
+                                                {% csrf_token %}
+                                                <li>
+                                                  <a class="icon solid fa-heart">
+                                                    <button type="submit" style="{% if user in post.like_users.all %} color: #5ee773 !important; {% endif %}">
+                                                      <i class="fa-solid fa-heart"></i> Likes({{ post.like_users.count }})
+                                                    </button>
+                                                  </a>
+                                                </li>
+                                              </form>
+                                              <!-- 공유 -->
+                                              <!-- <li><a href="#" class="icon solid fa-comment"><button>Share</button></a></li> -->
                                         </div>
 									</ul>
 								</footer>
 
 							</article>
                         {% endfor %}
+
+                        </div>
+
+                        <!-- Pagination -->
+							<ul class="actions pagination">
+								<li><a href="" class="disabled button large previous">Previous Page</a></li>
+								<li><a href="#" class="button large next">Next Page</a></li>
+							</ul>
 
                         <!-- Splide 초기화 자바스크립트 코드 -->
                         <script>
@@ -115,35 +139,27 @@ https://templatemo.com/tm-579-cyborg-gaming
                             }
                         </script>
 
-                        <!-- Pagination -->
-							<ul class="actions pagination">
-								<li><a href="" class="disabled button large previous">Previous Page</a></li>
-								<li><a href="#" class="button large next">Next Page</a></li>
-							</ul>
-                        </div>
-
 					</div>
 
 				<!-- Sidebar -->
 					<section id="sidebar">
+                        <!-- Intro -->
 
 						<!-- Mini Posts -->
 							<section>
+                                {% for post in posts %}
 								<div class="mini-posts">
-
-									<!-- Mini Post -->
 										<article class="mini-post">
 											<header>
-												<h3><a href="single.html">Vitae sed condimentum</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-												<a href="#" class="author"><img src="volunteer/images/avatar.jpg" alt="" /></a>
+												<h3><a href="#">{{ post.title }}</a></h3>
+                                                <time class="published">{{ post.created|date:'M d, Y' }}</time>
+                                                <a class="author">{% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</a>
 											</header>
-											<a href="single.html" class="image"><img src="volunteer/images/pic04.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="../../static/volunteer/images/pic04.jpg" alt="" /></a>
 										</article>
-
 								</div>
+                                {% endfor %}
 							</section>
-
 					</section>
 
 			</div>
@@ -180,14 +196,12 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Raon JavaScript -->
-  <script src="volunteer/js/jquery.min.js"></script>
-  <script src="volunteer/js/browser.min.js"></script>
-  <script src="volunteer/js/breakpoints.min.js"></script>
-  <script src="volunteer/js/util.js"></script>
-  <script src="volunteer/js/main.js"></script>
+  <script src="{% static 'volunteer/js/jquery.min.js' %}"></script>
+  <script src="{% static 'volunteer/js/browser.min.js' %}"></script>
+  <script src="{% static 'volunteer/js/breakpoints.min.js' %}"></script>
+  <script src="{% static 'volunteer/js/util.js' %}"></script>
+  <script src="{% static 'volunteer/js/main.js' %}"></script>
 
-
-
-  </body>
+</body>
 
 </html>
