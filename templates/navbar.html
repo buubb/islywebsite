@@ -63,7 +63,14 @@
                         <li><a href="/library/">자료실</a></li>
                         <li><a href="/CTF-Challenge/">WARGAME</a></li>
                         <li><a href="/recruit/">RECRUIT</a></li>
-                        <li><a href="/login/">Login <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a></li>
+                        <li class="nav-item">
+                          {% if request.user.is_authenticated %} <!-- 단순히 사용자 인증에 대한 확인만 하는 기능 -> url에 login을 직접 치면 로그인 상태에서도 로그인창이 뜸 -->
+                          <a class="nav-link" href="{% url 'logout' %}">Logout <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a>
+                          {% else %}
+                          <a href="/login/">Login <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a>
+                          {% endif %}
+                        </li>
+                        <!-- <li><a href="/login/">Login <img src="{% static 'assets/img/ISlylogo2.jpg' %}" alt=""></a></li> -->
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
