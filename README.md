@@ -1,4 +1,4 @@
-# Install 해야할 것들
+# Install 필수
 - pip install djangorestframework
 - pip install summernote
 - pip install mysqlclient
@@ -12,7 +12,7 @@
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
 
-# [push하고 싶을 때]
+# push하고 싶을 때
 - git add .
 - git status
 - git pull origin master > 솔직히 pull은 push 하기 전에만 하면 상관없음.
