@@ -1,9 +1,11 @@
-# github 협업 전 필수 setting
+# git 사용 방법
 
-1. 지금의 프로젝트를 fork 해주세요.
-2. 티켓을 구분할 수 있도록 이슈를 등록해주세요.
-3. fork 받은 프로젝트를 clone 후 작업 브랜치를 만들어주세요.
-4. PR을 만들어주세요.
+[push하고 싶을 때]
+- git add .
+- git status
+- git pull origin master > 솔직히 pull은 push 하기 전에만 하면 상관없음.
+- git commit -m "수정사항"
+- git push origin master
 
 # I.Sly() URL 
 
