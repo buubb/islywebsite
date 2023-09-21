@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha256-7ZWbZUAi97rkirk4DcEp4GWDPkWpRMcNaEyXGsNXjLg=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" integrity="sha256-IKhQVXDfwbVELwiR0ke6dX+pJt0RSmWky3WB2pNx9Hg=" crossorigin="anonymous">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <!-- Summernote Style -->
+    <!-- Summernote Style 
     <style>
       @media (prefers-color-scheme: dark) {
       
@@ -62,7 +62,7 @@
         }
       }
       </style>
-<!--
+
 
 TemplateMo 579 Cyborg Gaming
 
@@ -93,6 +93,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="teamboard-page-content">
                 <div class="row">
                     <!-- Summernote start -->
+                    <input id="inputTitle" placeholder="제목을 작성해주세요" />
                     <div id="summernote"></div>
                 <!-- button start -->
                   <div id="teambtn-left" class="col-lg-6">
@@ -139,9 +140,9 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <script>
     $('#summernote').summernote({
-      placeholder: 'Summernote for Bootstrap 5',
+      placeholder: '글을 작성해주세요',
       tabsize: 2,
-      height: 400,
+      height: 700,
       lang: 'ko-KR', // default: 'en-US'
       toolbar: [
 			    // [groupName, [list of button]]
