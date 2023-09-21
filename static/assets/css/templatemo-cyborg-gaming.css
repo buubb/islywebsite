@@ -1832,7 +1832,15 @@ yubin workspace
   background-color: #fff;
   color: #5ee76c;
 }
+.page-content .teambtngrp {
+  text-align: center;
+}
 
+.page-content .teambtngrp .teambtn0 {
+  display: inline-block;
+  color:#fff;
+  background-color: #1f2122;
+}
 .page-content #ctftitle h4 em {
   text-align: center;
   color: #60ec77;
