@@ -2,12 +2,19 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post
 from .forms import PostForm
 from django.utils import timezone
+from django.core.paginator import Paginator  
+from django.contrib.auth.decorators import login_required
 
 # 목록 페이지를 부르는 Library 함수
 def Library(request):
+    page = request.GET.get('page', '1')
     # 모든 Post를 가져와 postlist에 저장합니다
     postlist = Post.objects.order_by('-created_date')
-    context = {'postlist': postlist}
+
+    # 페이징 처리
+    paginator = Paginator(postlist, 10)
+    page_obj = paginator.get_page(page)
+    context = {'postlist': page_obj}
     # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
     return render(request, 'library/tem2.html', context)
 
@@ -18,11 +25,13 @@ def posting(request, post_id):
     # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'library/posting.html', context)
     
+@login_required(login_url='common:login') #나중에 로그인 링크 수정하기
 def post_create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
+            post.author = request.user
             post.create_date = timezone.now()
             post.save()
             return redirect('Library')
