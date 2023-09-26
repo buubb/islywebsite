@@ -1,24 +1,32 @@
-# backend
-from django.shortcuts import render
-from rest_framework.views import APIView
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Post
+from .forms import PostForm
+from django.utils import timezone
 
+# 목록 페이지를 부르는 Library 함수
+def Library(request):
+    # 모든 Post를 가져와 postlist에 저장합니다
+    postlist = Post.objects.order_by('-created_date')
+    context = {'postlist': postlist}
+    # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
+    return render(request, 'library/tem2.html', context)
 
-class Library(APIView):
-    def get(self, request):
-        print("get으로 호출")
-        return render(request, 'library/tem2.html')
+def posting(request, post_id):
+    # 게시글(Post) 중 post_id를 이용해 하나의 게시글(post)를 검색
+    post = get_object_or_404(Post, pk=post_id)
+    context = {'post': post}
+    # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
+    return render(request, 'library/posting.html', context)
     
-    def post(self, request):
-        print("post로 호출")
-        return render(request, 'library/tem2.html')
-    
-class Library_Write(APIView):
-    def get(self, request):
-        print("get으로 호출")
-        return render(request, 'library/library_write.html')
-    
-    def post(self, request):
-        print("post로 호출")
-        return render(request, 'library/library_write.html')
-
-  
+def post_create(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.create_date = timezone.now()
+            post.save()
+            return redirect('Library')
+    else: 
+        form = PostForm()
+    context = {'form':form}
+    return render(request, 'library/library_write.html', context)
