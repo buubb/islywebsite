@@ -9,12 +9,12 @@ from django.contrib.auth.decorators import login_required
 def Library(request):
     page = request.GET.get('page', '1')
     # 모든 Post를 가져와 postlist에 저장합니다
-    postlist = Post.objects.order_by('-created_date')
+    post_list = Post.objects.order_by('-created_date')
 
     # 페이징 처리
-    paginator = Paginator(postlist, 10)
+    paginator = Paginator(post_list, 10)
     page_obj = paginator.get_page(page)
-    context = {'postlist': page_obj}
+    context = {'post_list': page_obj}
     # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다 
     return render(request, 'library/tem2.html', context)
 

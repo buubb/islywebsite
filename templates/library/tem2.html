@@ -133,7 +133,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </tr>
                 </thead>
                 <tbody>
-                {% for post in postlist %}
+                {% for post in post_list %}
                 <tr>
                     <td style="color: DarkSeaGreen;">{{ post.id }} </td>
                     <td style="color: DarkSeaGreen;">
@@ -147,9 +147,9 @@ https://templatemo.com/tm-579-cyborg-gaming
             <!-- 페이징처리 시작 -->
             <ul class="pagination justify-content-center">
               <!-- 이전페이지 -->
-              {% if postlist.has_previous %}
+              {% if post_list.has_previous %}
               <li class="page-item">
-                <a class="page-link" href="?page={{ postlist.previous_page_number }}">이전</a>
+                <a class="page-link" href="?page={{ post_list.previous_page_number }}">이전</a>
               </li>
               {% else %}
               <li class="page-item disabled">
@@ -157,9 +157,9 @@ https://templatemo.com/tm-579-cyborg-gaming
               </li>
               {% endif %}
               <!-- 페이지리스트 -->
-              {% for page_number in postlist.paginator.page_range %}
-              {% if page_number >= postlist.number|add:-5 and page_number <= postlist.number|add:5 %}
-              {% if page_number == postlist.number %}
+              {% for page_number in post_list.paginator.page_range %}
+              {% if page_number >= post_list.number|add:-5 and page_number <= post_list.number|add:5 %}
+              {% if page_number == post_list.number %}
               <li class="page-item active" aria-current="page">
                 <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
               </li>
@@ -171,9 +171,9 @@ https://templatemo.com/tm-579-cyborg-gaming
               {% endif %}
               {% endfor %}
               <!-- 다음페이지 -->
-              {% if postlist.has_next %}
+              {% if post_list.has_next %}
               <li class="page-item">
-                <a class="page-link" href="?page={{ postlist.next_page_number }}">다음</a>
+                <a class="page-link" href="?page={{ post_list.next_page_number }}">다음</a>
               </li>
               {% else %}
               <li class="page-item disabled">
