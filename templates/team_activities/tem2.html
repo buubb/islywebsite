@@ -55,6 +55,45 @@ https://templatemo.com/tm-579-cyborg-gaming
             <button type="button" class="btn navbar-btn teambtn0">포너블</button>
             <button type="button" class="btn navbar-btn teambtn0">심화</button>
           </div>
+          <div id="teamgrid">
+            <div class="teamgrid-item">1</div>
+
+            <div class="teamgrid-item">2</div>
+
+            <div class="teamgrid-item">3</div>
+
+            <div class="teamgrid-item">4</div>
+
+            <div class="teamgrid-item">5</div>
+
+            <div class="teamgrid-item">6</div>
+          </div>
+          <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="color: white;">No.</th>
+                        <th style="color: white;">Title</th>
+                        <th style="color: white;">Author</th>
+                        <th style="color: white;">Created At</th>
+                        <th style="color: white;">Views</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for post in page %}
+                <tr>
+                    <td style="color: DarkSeaGreen;">{{ post.id }} </td>
+                    <td style="color: DarkSeaGreen;">
+                        <a href="{% url 'AdvancedPosting' post.id %}">{{ post.title }}</a><br>
+                    </td>
+                    <td style="color: DarkSeaGreen;">{{ post.author }}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.created_at}}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.view_count}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+          </div>
           <!-- ***** Featured Games Start ***** 
           <div class="row">
             <div class="col-lg-4">
