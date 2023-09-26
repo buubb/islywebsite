@@ -1897,6 +1897,16 @@ body .teamcontent{
   letter-spacing: .3px;
 }
 
+#teamgrid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+.teamgrid-item {
+  background-color: #27292a;
+  color:#eee;
+}
 /* 
 ---------------------------------------------
 seolin workspace
