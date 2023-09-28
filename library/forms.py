@@ -1,9 +1,9 @@
 from django import forms
-from .models import Post
+from .models import LibraryPost
 
 class PostForm(forms.ModelForm):
     class Meta:
-        model = Post
+        model = LibraryPost
         fields = ['subject', 'content']
         labels = {
             'subject': '제목',
