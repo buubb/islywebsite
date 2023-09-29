@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import Library, Library_Write
+
+from . import views
 
 urlpatterns = [
     # url path: library/
-    path('', Library.as_view()),
-    path('write/', Library_Write.as_view())
+    path('', views.Library, name='Library'),
+    path('<int:post_id>/', views.posting, name='posting'),
+    path('create/', views.post_create, name='post_create'),
 ]
-

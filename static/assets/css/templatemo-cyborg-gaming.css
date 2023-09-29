@@ -1785,6 +1785,9 @@ yubin workspace
   margin: 20px 10px 10px 10px;
 }
 
+body .teamcontent{
+  background-color: transparent;
+}
 #teambtn-right {
   text-align: right;
 }
@@ -1832,7 +1835,21 @@ yubin workspace
   background-color: #fff;
   color: #5ee76c;
 }
+.page-content .teambtngrp {
+  text-align: center;
+}
 
+.page-content .teambtngrp .teambtn0 {
+  display: inline-block;
+  color:#fff;
+  background-color: #27292a;
+  border: none;
+}
+
+.page-content .teambtngrp .teambtn0:hover {
+  background-color: #333;
+  border: none;
+}
 .page-content #ctftitle h4 em {
   text-align: center;
   color: #60ec77;
@@ -1880,6 +1897,16 @@ yubin workspace
   letter-spacing: .3px;
 }
 
+#teamgrid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+.teamgrid-item {
+  background-color: #27292a;
+  color:#eee;
+}
 /* 
 ---------------------------------------------
 seolin workspace
