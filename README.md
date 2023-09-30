@@ -53,3 +53,4 @@
 - pip install ‘django-admin-thumbnails<0.3’ //파이참 이용자
 - python -m pip install Pillow //일반
 - python -m pip install ‘Pillow<10’ //파이참 이용자
+- pip install django-session-timeout // 세션 설정에 필요한 패키지

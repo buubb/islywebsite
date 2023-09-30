@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from .my_settings import MY_DATABASES,MY_SECRET
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -58,6 +59,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django_session_timeout.middleware.SessionTimeoutMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -66,11 +68,29 @@ MIDDLEWARE = [
    # 'corsheaders.middleware.CorsMiddleware',
 ]
 
+
 # 로그인 성공 시 자동으로 이동할 URL
 LOGIN_REDIRECT_URL = '/'
 
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
+
+# 해당 값에 따른 시간 후에 session 종료 (단위 : 초)
+SESSION_EXPIRE_SECONDS = 10  # 1 hour
+# 사용자가 마지막으로 활동한 시점 후부터 session_expire_seconds 측정됨
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
+# 마지막 활동 이후 설정한 값(초)가 지난 후에 session_expire_seconds 계산
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 60 # group by minute
+# session이 종료된 후에 이동할 url
+SESSION_TIMEOUT_REDIRECT='/'
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 ROOT_URLCONF = 'islyweb.urls'
 

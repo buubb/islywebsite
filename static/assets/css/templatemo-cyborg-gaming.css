@@ -373,6 +373,7 @@ Header Style
 }
 
 .background-header .main-nav {
+  position: fixed;
   padding: 0px;
   background-color: transparent;
 }
@@ -1904,6 +1905,23 @@ seolin workspace
 }
 
 
+/* nav{
+  position:sticky;
+  top:0;
+  left:0;
+  right:0;
+} */
+/* nav {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  display: flex;
+  flex-direction:row;
+  margin:0px;
+  padding:0px;
+}
+ */
 
 /* .alert-danger {
   background-color:  #27292a;
