@@ -41,11 +41,12 @@ https://templatemo.com/tm-579-cyborg-gaming
         <div class="page-content">
 
           <!-- ***** Banner Start ***** -->
+
           <div class="row justify-content-center mt-5">
             <div class="col-md-4">
               <div class="from-group">
                 <h4>Try login</h4>
-                <form method="post" action="{%url 'login' %}">
+                <form method="post" action="{% url 'login' %}">
                   {% csrf_token %} <!-- *CSRF 공격 방지하기 위함 -->
                   {% include "login/error.html" %}
                   
@@ -66,10 +67,27 @@ https://templatemo.com/tm-579-cyborg-gaming
 
                     <div class="buttons">
                       <label>
-                        <input type="checkbox" id="remember">SAVE THE ID
+                        <input type="checkbox" id="show-password">SHOW PASSWORD
                       </label>
                       <button type="submit" class="input-group_mb-4" id="login_button">login</button>
-                      
+                      <script>
+                        var passwordInput = document.getElementById("password");
+                        var toggleButton = document.getElementById("show-password");
+                        
+                            // 페이지가 로드될 때 비밀번호 필드를 가림
+                        passwordInput.type = "password";
+
+                        // 비밀번호 보이기/가리기 버튼 클릭 이벤트 핸들러
+                        toggleButton.addEventListener("click", function() {
+                            if (passwordInput.type === "password") {
+                                // 현재 비밀번호가 가려져 있는 경우: 보이기
+                                passwordInput.type = "text";
+                            } else {
+                                // 현재 비밀번호가 보이는 경우: 가리기
+                                passwordInput.type = "password";
+                            }
+                        });
+                      </script>
                     </div>
                   </div>
                 </form>
@@ -83,6 +101,8 @@ https://templatemo.com/tm-579-cyborg-gaming
     </div>
   </div>
 </div>
+
+
    
           <!-- ***** Gaming Library End ***** -->
   

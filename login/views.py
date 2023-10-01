@@ -1,6 +1,7 @@
 # backend
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework.views import APIView
+from django.contrib import messages
 
 
 class Login(APIView):
@@ -26,3 +27,6 @@ class Logout(APIView):
         if request.user.is_authenticated:
             Logout(request)
             return render(request, 'islyweb/index.html')
+
+
+
