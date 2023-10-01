@@ -39,15 +39,62 @@ https://templatemo.com/tm-579-cyborg-gaming
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-content">
-
-          <!-- ***** Featured Games Start ***** -->
+        <div class="page-content teamcontent">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Team</li>
             </ol>
           </nav>
+          <div id="ctftitle">
+            <h4>Team</h4>
+          </div>
+          <div class="teambtngrp">
+            <button type="button" class="btn navbar-btn teambtn0">웹</button>
+            <button type="button" class="btn navbar-btn teambtn0">리버싱</button>
+            <button type="button" class="btn navbar-btn teambtn0">포너블</button>
+            <button type="button" class="btn navbar-btn teambtn0">심화</button>
+          </div>
+          <div id="teamgrid">
+            <div class="teamgrid-item">1</div>
+
+            <div class="teamgrid-item">2</div>
+
+            <div class="teamgrid-item">3</div>
+
+            <div class="teamgrid-item">4</div>
+
+            <div class="teamgrid-item">5</div>
+
+            <div class="teamgrid-item">6</div>
+          </div>
+          <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="color: white;">No.</th>
+                        <th style="color: white;">Title</th>
+                        <th style="color: white;">Author</th>
+                        <th style="color: white;">Created At</th>
+                        <th style="color: white;">Views</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for post in page %}
+                <tr>
+                    <td style="color: DarkSeaGreen;">{{ post.id }} </td>
+                    <td style="color: DarkSeaGreen;">
+                        <a href="{% url 'AdvancedPosting' post.id %}">{{ post.title }}</a><br>
+                    </td>
+                    <td style="color: DarkSeaGreen;">{{ post.author }}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.created_at}}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.view_count}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+          </div>
+          <!-- ***** Featured Games Start ***** 
           <div class="row">
             <div class="col-lg-4">
               <div class="top-streamers">
@@ -186,7 +233,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
             </div>
           </div>
-          <!-- ***** Featured Games End ***** -->
+           ***** Featured Games End ***** -->
 
           <!-- ***** Live Stream Start ***** 
           <div class="live-stream">

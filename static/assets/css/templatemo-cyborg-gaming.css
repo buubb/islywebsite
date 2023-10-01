@@ -1786,6 +1786,9 @@ yubin workspace
   margin: 20px 10px 10px 10px;
 }
 
+body .teamcontent{
+  background-color: transparent;
+}
 #teambtn-right {
   text-align: right;
 }
@@ -1833,7 +1836,21 @@ yubin workspace
   background-color: #fff;
   color: #5ee76c;
 }
+.page-content .teambtngrp {
+  text-align: center;
+}
 
+.page-content .teambtngrp .teambtn0 {
+  display: inline-block;
+  color:#fff;
+  background-color: #27292a;
+  border: none;
+}
+
+.page-content .teambtngrp .teambtn0:hover {
+  background-color: #333;
+  border: none;
+}
 .page-content #ctftitle h4 em {
   text-align: center;
   color: #60ec77;
@@ -1881,6 +1898,16 @@ yubin workspace
   letter-spacing: .3px;
 }
 
+#teamgrid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+.teamgrid-item {
+  background-color: #27292a;
+  color:#eee;
+}
 /* 
 ---------------------------------------------
 seolin workspace
@@ -1944,6 +1971,38 @@ sumi workspace
 eunju workspace
 --------------------------------------------- 
 */
+
+/* 페이지네이션 컨테이너의 스타일 */
+.pagination-container {
+    text-align: center; /* 가운데 정렬 */
+}
+
+/* 페이지네이션 내용의 스타일 (optional) */
+.pagination {
+    display: inline-block; /* 인라인 요소로 표시하여 중앙 정렬 */
+    margin: 15px; /* 원하는 여백 설정 */
+}
+
+
+/* 페이지 링크 스타일 (optional) */
+.pagination a {
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    padding: 3px 8px; /* 링크 내부 여백 설정 */
+    margin: 2px; /* 링크 간격 설정 */
+    border: 1px solid #ccc; /* 테두리 추가 */
+    border-radius: 4px; /* 둥근 모서리 설정 */
+    background-color: #f2f2f2; /* 배경색 설정 */
+    color: #333; /* 글자색 설정 */
+}
+
+/* 현재 페이지 스타일 (optional) */
+.pagination .current-page {
+    padding: 3px 8px;
+    margin: 2px;
+    background-color: #28B463; /* 현재 페이지 배경색 설정 */
+    color: #fff; /* 현재 페이지 글자색 설정 */
+}
+
 
 /* 
 ---------------------------------------------

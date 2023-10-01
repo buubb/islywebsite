@@ -3326,7 +3326,7 @@ input, select, textarea {
 		max-width: 100%;
 		opacity: 1;
 		padding: 4.5em;
-		width: 90em;
+		width: 80em; /* main post size(90) */
 	}
 
 		body.is-menu-visible #wrapper {
@@ -3375,9 +3375,10 @@ input, select, textarea {
 /* Sidebar */
 
 	#sidebar {
-		margin-right: 3em;
-		min-width: 22em;
-		width: 22em;
+		margin-left: 0.5em;
+		margin-right: 2em;
+		min-width: 18em; /* mini post size(22) */
+		width: 18em; /* mini post size(22) */
 	}
 
 		#sidebar > * {

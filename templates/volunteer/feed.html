@@ -59,14 +59,14 @@ https://templatemo.com/tm-579-cyborg-gaming
                         <div id="feeds" class="post-container">
                         {% for post in posts %}
 						<!-- Post -->
-							<article class="post">
+                            <article id="post-{{ post.id }}" class="post">
 								<header class="post-header">
-                                    <!-- 포스트 제목, 팀원 -->
+                                    <!-- Post Title and Team Members -->
 									<div class="title">
 										<h2><a href="single.html">{{ post.title }}</a></h2>
                                         <p>{{ post.members }}</p>
 									</div>
-                                    <!-- 작성일시, 작성자, 프로필 사진 -->
+                                    <!-- Date of Posting, Author, and Profile Image -->
 									<div class="meta">
 										<time class="published">{{ post.created|date:'F d, Y' }}</time>
 										<a class="author"><span class="name">{{ post.user.username }}</span>
@@ -74,7 +74,7 @@ https://templatemo.com/tm-579-cyborg-gaming
 									</div>
 								</header>
 
-                                <!-- 이미지 슬라이드 영역 시작 -->
+                                <!-- Image Slider Section Starts -->
                                 <p class="image featured">
                                 <div class="post-images splide">
                                     <div class="splide__track">
@@ -90,12 +90,12 @@ https://templatemo.com/tm-579-cyborg-gaming
                                     </div>
                                 </div>
                                 </p>
-                                <!-- 이미지 슬라이드 영역 종료 -->
+                                <!-- Image Slider Section Ends -->
 
-                                <!-- 포스트 내용 -->
+                                <!-- Post Content -->
                                 <p>{{ post.content|linebreaksbr }}</p>
 
-                                <!-- 버튼 -->
+                                <!-- Buttons -->
                                 <footer>
 									<ul class="actions">
 										<li><a href="single.html" class="button large">Continue Reading</a></li>
@@ -103,18 +103,18 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 									<ul class="stats">
                                         <div class="post-buttons">
-                                              <!-- 좋아요 -->
-                                              <form class="like" action="{% url 'Volunteer:post_like' post_id=post.id %}?next={{ action_redirect_url }}" method="POST">
+                                              <!-- Like Button -->
+                                              <form class="like" action="{% url 'Volunteer:post_like' post_id=post.id %}?page={{ page_number }}" method="POST">
                                                 {% csrf_token %}
-                                                <li>
-                                                  <a class="icon solid fa-heart">
-                                                    <button type="submit" style="{% if user in post.like_users.all %} color: #5ee773 !important; {% endif %}">
-                                                      <i class="fa-solid fa-heart"></i> Likes({{ post.like_users.count }})
-                                                    </button>
-                                                  </a>
-                                                </li>
+                                                    <li>
+                                                      <a class="icon solid fa-heart">
+                                                        <button type="submit" style="{% if user in post.like_users.all %} color: #5ee773 !important; {% endif %}">
+                                                          <i class="fa-solid fa-heart"></i> Likes({{ post.like_users.count }})
+                                                        </button>
+                                                      </a>
+                                                    </li>
                                               </form>
-                                              <!-- 공유 -->
+                                              <!-- Share Button -->
                                               <!-- <li><a href="#" class="icon solid fa-comment"><button>Share</button></a></li> -->
                                         </div>
 									</ul>
@@ -123,13 +123,22 @@ https://templatemo.com/tm-579-cyborg-gaming
 							</article>
                         {% endfor %}
 
-                        </div>
 
                         <!-- Pagination -->
-							<ul class="actions pagination">
-								<li><a href="" class="disabled button large previous">Previous Page</a></li>
-								<li><a href="#" class="button large next">Next Page</a></li>
-							</ul>
+                            <ul class="actions pagination">
+                                {% if posts.has_previous %}
+                                    <li><a href="?page={{ posts.previous_page_number }}" class="button large previous">Previous Page</a></li>
+                                {% else %}
+                                    <li><span class="button large previous disabled">Previous Page</span></li>
+                                {% endif %}
+
+                                {% if posts.has_next %}
+                                    <li><a href="?page={{ posts.next_page_number }}" class="button large next">Next Page</a></li>
+                                {% else %}
+                                    <li><span class="button large next disabled">Next Page</span></li>
+                                {% endif %}
+                            </ul>
+                        </div>
 
                         <!-- Splide 초기화 자바스크립트 코드 -->
                         <script>
@@ -147,17 +156,21 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 						<!-- Mini Posts -->
 							<section>
-                                {% for post in posts %}
-								<div class="mini-posts">
-										<article class="mini-post">
-											<header>
-												<h3><a href="#">{{ post.title }}</a></h3>
-                                                <time class="published">{{ post.created|date:'M d, Y' }}</time>
-                                                <a class="author">{% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</a>
-											</header>
-											<a href="#" class="image"><img src="../../static/volunteer/images/pic04.jpg" alt="" /></a>
-										</article>
-								</div>
+                                {% for post in all_posts %}
+                                    <div class="mini-posts">
+                                            <article class="mini-post">
+                                                <header>
+                                                    <h3><a href="#">{{ post.title }}</a></h3>
+                                                    <time class="published">{{ post.created|date:'M d, Y' }}</time>
+                                                    <a class="author">{% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</a>
+                                                </header>
+                                                <a href="#" class="image">
+                                                    {% if post.postimage_set.first %}
+                                                        <img src="{{ post.postimage_set.first.photo.url }}" alt="">
+                                                    {% endif %}
+                                                </a>
+                                            </article>
+                                    </div>
                                 {% endfor %}
 							</section>
 					</section>
