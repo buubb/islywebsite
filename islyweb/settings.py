@@ -53,6 +53,9 @@ INSTALLED_APPS = [
     'User.apps.UserConfig',
     #'corsheaders',
     'django_extensions',
+    'markdownx',
+    'crispy_forms',
+    'crispy_bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -73,6 +76,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 ROOT_URLCONF = 'islyweb.urls'
+
 
 TEMPLATES = [
     {
@@ -208,5 +212,15 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
 )
 
+
 APPEND_SLASH = False
 """
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+MARKDOWNX_MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.extra',
+    'markdown.extensions.codehilite',
+    'markdown.extensions.toc',
+]

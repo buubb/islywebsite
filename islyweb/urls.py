@@ -30,6 +30,7 @@ urlpatterns = [
     path('volunteer/', include('volunteer.urls')),
     path('CTF-Challenge/', include('CTF_Challenge.urls')),
     path('recruit/', include('recruit.urls')),
+    path('markdownx/', include('markdownx.urls')),
 ]
 
 #summernote 설정
