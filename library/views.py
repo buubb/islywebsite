@@ -22,8 +22,12 @@ def Library(request):
     return render(request, 'library/tem2.html', context)
 
 def posting(request, post_id):
+    
     # 게시글(Post) 중 post_id를 이용해 하나의 게시글(post)를 검색
     post = get_object_or_404(LibraryPost, pk=post_id)
+    # 조회 횟수 증가
+    post.library_count += 1
+    post.save()
     context = {'post': post}
     # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'library/posting.html', context)
@@ -33,10 +37,10 @@ def post_create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.create_date = timezone.now()
-            post.save()
+            librarypost = form.save(commit=False)
+            librarypost.author = request.user
+            librarypost.create_date = timezone.now()
+            librarypost.save()
             return redirect('Library')
     else: 
         form = PostForm()
@@ -47,14 +51,14 @@ def post_modify(request, post_id):
     post = get_object_or_404(LibraryPost, pk=post_id)
     if request.user != post.author:
         messages.error(request, '수정권한이 없습니다')
-        return redirect('posting', posi_id = post.id)
+        return redirect('posting', post_id = post.id)
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.modify_date = timezone.now()  # 수정일시 저장
-            post.save()
-            return redirect('posting', posi_id = post.id)
+            librarypost = form.save(commit=False)
+            librarypost.modify_date = timezone.now()  # 수정일시 저장
+            librarypost.save()
+            return redirect('posting', post_id = post.id)
     else:
         form = PostForm(instance=post)
     context = {'form': form}
@@ -62,26 +66,26 @@ def post_modify(request, post_id):
 
 @login_required(login_url='common:login')
 def post_delete(request, post_id):
-    post = get_object_or_404(LibraryPost, pk=post_id)
-    if request.user != post.author:
+    librarypost = get_object_or_404(LibraryPost, pk=post_id)
+    if request.user != librarypost.author:
         messages.error(request, '삭제권한이 없습니다')
-        return redirect('posting', posi_id = post.id)
-    post.delete()
+        return redirect('posting', post_id = post.id)
+    librarypost.delete()
     return redirect('Library')
 
 
 @login_required(login_url='common:login') 
 def comment_create_library(request, post_id):
-    post = get_object_or_404(LibraryPost, pk=post_id) 
+    librarypost = get_object_or_404(LibraryPost, pk=post_id) 
     if request.method == 'POST':
         form = CommentForm(request.POST) 
         if form.is_valid():
             comment = form.save(commit=False) 
             comment.author = request.user 
             comment.create_date = timezone.now() 
-            comment.post = post 
+            comment.post = librarypost
             comment.save()
-            return redirect('posting', posi_id = post.id)
+            return redirect('posting', post_id = librarypost.id)
     else:
         form = CommentForm()
         context = {'form':form}
