@@ -5,7 +5,7 @@ from django.utils import timezone
 from django.core.paginator import Paginator  
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.urls import reverse
+
 
 
 # 목록 페이지를 부르는 Library 함수
@@ -47,14 +47,14 @@ def post_modify(request, post_id):
     post = get_object_or_404(LibraryPost, pk=post_id)
     if request.user != post.author:
         messages.error(request, '수정권한이 없습니다')
-        return redirect(reverse('posting', args=[post.id]))
+        return redirect('posting', posi_id = post.id)
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
             post.modify_date = timezone.now()  # 수정일시 저장
             post.save()
-            return redirect(reverse('posting', args=[post.id]))
+            return redirect('posting', posi_id = post.id)
     else:
         form = PostForm(instance=post)
     context = {'form': form}
@@ -65,7 +65,7 @@ def post_delete(request, post_id):
     post = get_object_or_404(LibraryPost, pk=post_id)
     if request.user != post.author:
         messages.error(request, '삭제권한이 없습니다')
-        return redirect(reverse('posting', args=[post.id]))
+        return redirect('posting', posi_id = post.id)
     post.delete()
     return redirect('Library')
 
@@ -81,7 +81,7 @@ def comment_create_library(request, post_id):
             comment.create_date = timezone.now() 
             comment.post = post 
             comment.save()
-            return redirect(reverse('posting', args=[post.id]))
+            return redirect('posting', posi_id = post.id)
     else:
         form = CommentForm()
         context = {'form':form}
