@@ -59,55 +59,50 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </tr>
                 </thead>
                 <tbody>
-                {% for post in post_list %}
+                {% for post in library_list %}
                 <tr>
                     <td style="color: DarkSeaGreen;">{{ post.id }} </td>
                     <td style="color: DarkSeaGreen;">
                         <a href="{{post.id}}/">{{ post.subject }}</a><br>
                     </td>
+                    <td style="color: DarkSeaGreen;">{{ post.author }}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.created_date }}</td>
 
                 </tr>
                 {% endfor %}
                 </tbody>
             </table>
             <!-- 페이징처리 시작 -->
-            <ul class="pagination justify-content-center">
+            <div class="pagination-container">
+              <div class="pagination">
+              <span class="step-links">
               <!-- 이전페이지 -->
-              {% if post_list.has_previous %}
-              <li class="page-item">
-                <a class="page-link" href="?page={{ post_list.previous_page_number }}">이전</a>
-              </li>
-              {% else %}
-              <li class="page-item disabled">
-                <a class="page-link" tabindex="-1" aria-disabled="true" href="#">이전</a>
-              </li>
+              {% if library_list.has_previous %}
+              <a href="?page={{ library_list.previous_page_number }}">&laquo; first</a>
+              <a href="?page={{ library_list.previous_page_number }}">←</a>
+
               {% endif %}
               <!-- 페이지리스트 -->
-              {% for page_number in post_list.paginator.page_range %}
-              {% if page_number >= post_list.number|add:-5 and page_number <= post_list.number|add:5 %}
-              {% if page_number == post_list.number %}
-              <li class="page-item active" aria-current="page">
-                <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
-              </li>
-              {% else %}
-              <li class="page-item">
-                <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
-              </li>
+              {% for page_number in library_list.paginator.page_range %}
+                {% if page_number >= library_list.number|add:-5 and page_number <= library_list.number|add:5 %}
+                  {% if page_number == library_list.number %}
+                  <span class="current-page">{{ page_number }}</span>
+                  {% else %}
+                      <a href="?page={{ page_number }}">{{ page_number }}</a>
+
+                  {% endif %}
               {% endif %}
-              {% endif %}
-              {% endfor %}
+            
+            {% endfor %}
               <!-- 다음페이지 -->
-              {% if post_list.has_next %}
-              <li class="page-item">
-                <a class="page-link" href="?page={{ post_list.next_page_number }}">다음</a>
-              </li>
-              {% else %}
-              <li class="page-item disabled">
-                <a class="page-link" tabindex="-1" aria-disabled="true" href="#">다음</a>
-              </li>
+              {% if library_list.has_next %}
+              <a href="?page={{ library_list.next_page_number }}">→</a>
+              <a href="?page={{ library_list.paginator.num_pages }}">last &raquo;</a>
               {% endif %}
-            </ul>
-            <!-- 페이징처리 끝 -->
+              </span>
+              </div>
+            </div>
+          <!-- 페이징처리 끝 -->
           </div>
         </div>
       </div>
