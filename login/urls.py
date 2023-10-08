@@ -4,6 +4,11 @@ from django.contrib.auth import views as auth_views
 
 from . import views
 
+""" urlpatterns=[
+    path('', Login.as_view(), name='login'),  # /login/ 에 대한 로그인 뷰
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+] """
+
 urlpatterns = [
     # url path: login/
     path('', Login.as_view()),
