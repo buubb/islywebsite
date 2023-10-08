@@ -6,6 +6,17 @@ class LibraryPost(models.Model):
     content = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,  null=True)
-
+    modify_date = models.DateTimeField(null=True, blank=True)
+    
     def __str__(self):
         return self.subject
+    
+
+class LibraryComment(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,  null=True)
+    content = models.TextField()
+    modify_date = models.DateTimeField(null=True, blank=True)
+    post = models.ForeignKey(LibraryPost, null=True, blank=True, on_delete=models.CASCADE)
+    created_date = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return self.content
