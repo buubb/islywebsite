@@ -24,5 +24,5 @@ class AdvancedAssignment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     view_count = models.PositiveIntegerField(default=0)
 
-    def get_content_markdown(self): # 추가
+    def get_content_markdown(self):  # 추가
         return markdown(self.content)
