@@ -188,6 +188,8 @@ SUMMERNOTE_CONFIG = {
         'width': 720,
         'height': 480,
         'lang': 'ko-KR',
+        'upload_to': 'uploads/',  # 이미지 업로드 경로 설정
+        'extensions': ['image'],
         'toolbar': [
             ['style', ['style']],
             ['font', ['bold', 'underline', 'superscipt', 'strikethroungh',
