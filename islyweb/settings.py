@@ -79,7 +79,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 # 해당 값에 따른 시간 후에 session 종료 (단위 : 초)
-SESSION_EXPIRE_SECONDS = 10  # 1 hour
+SESSION_EXPIRE_SECONDS = 3600  # 1 hour
 # 사용자가 마지막으로 활동한 시점 후부터 session_expire_seconds 측정됨
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 # 마지막 활동 이후 설정한 값(초)가 지난 후에 session_expire_seconds 계산
@@ -188,6 +188,8 @@ SUMMERNOTE_CONFIG = {
         'width': 720,
         'height': 480,
         'lang': 'ko-KR',
+        'upload_to': 'uploads/',  # 이미지 업로드 경로 설정
+        'extensions': ['image'],
         'toolbar': [
             ['style', ['style']],
             ['font', ['bold', 'underline', 'superscipt', 'strikethroungh',
