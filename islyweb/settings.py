@@ -87,6 +87,10 @@ SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 60 # group by minute
 # session이 종료된 후에 이동할 url
 SESSION_TIMEOUT_REDIRECT='/'
 
+from django.contrib.messages import constants as messages_constants
+MESSAGE_LEVEL=messages_constants.INFO
+MESSAGE_LEVEL=messages_constants.DEBUG
+
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
     messages.INFO: 'alert-info',
