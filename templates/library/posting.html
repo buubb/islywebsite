@@ -51,7 +51,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <div class="border-bottom py-2">
                       <h1>{{ post.subject }}</h1>
                       <div class="d-flex justify-content-end">
-                        <div style="color: white;">{{ post.created_date }}</div>>
+                        <div style="color: white;">{{ post.created_date }}</div>
                     </div>
                     <div class="my-3">
                         {% if request.user == post.author %}
@@ -85,7 +85,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             
                   <ul>
                     <li>
-                        <div class="card-text">{{ post.content }}</div>
+                        <div class="card-text">{{ post.content | safe}}</div>
 
                     
                     </li>
@@ -105,9 +105,9 @@ https://templatemo.com/tm-579-cyborg-gaming
 </div>
 
 <!-- 댓글 Start -->
-{% if post.comment_set.count > 0 %}
+{% if librarypost.comment_set.count > 0 %}
 <div class="mt-3">
-    {% for comment in post.comment_set.all %}
+    {% for comment in librarypost.comment_set.all %}
     <div class="comment py-2 text-muted">
         <span style="white-space: pre-line;">{{ comment.content }}</span>
         <span> - {{ comment.author }}, {{ comment.create_date }}

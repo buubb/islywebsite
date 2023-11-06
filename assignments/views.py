@@ -1,4 +1,5 @@
 # backend
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.edit import CreateView
@@ -38,7 +39,6 @@ def BasicPosting(request, post_id):
 
     # 작성자 정보 가져오기
     author = post.author
-
     # 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'assignments/post.html', {'post': post, 'author': author})
 
@@ -52,23 +52,28 @@ def AdvancedPosting(request, post_id):
 
     # 작성자 정보 가져오기
     author = post.author
-
     # 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'assignments/post.html', {'post': post, 'author': author})
 
-class BasicCreate(CreateView):
+
+class BasicCreate(LoginRequiredMixin, CreateView):
     model = BasicAssignment
     form_class = BasicAssignmentForm
-    template_name = 'assignments/submit.html'  # 기본 템플릿 설정
-    success_url = reverse_lazy('basic')  # 성공 시 리디렉션할 URL 지정
+    template_name = 'assignments/submit.html'
+    success_url = reverse_lazy('basic')
 
-class AdvancedCreate(CreateView):
+    def form_valid(self, form):
+        # 현재 로그인한 사용자를 작성자로 설정
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+class AdvancedCreate(LoginRequiredMixin, CreateView):
     model = AdvancedAssignment
     form_class = AdvancedAssignmentForm  # 사용할 폼 클래스 설정
     template_name = 'assignments/submit.html'  # 기본 템플릿 설정
     success_url = reverse_lazy('advanced')  # 성공 시 리디렉션할 URL 지정
 
-
-
-
-
+    def form_valid(self, form):
+        # 현재 로그인한 사용자를 작성자로 설정
+        form.instance.author = self.request.user
+        return super().form_valid(form)
