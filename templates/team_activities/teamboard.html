@@ -1,3 +1,4 @@
+<!-- 글 작성 페이지-->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -87,33 +88,39 @@ https://templatemo.com/tm-579-cyborg-gaming
   <!-- ***** Preloader End ***** -->
 
 
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="teamboard-page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+            {% load crispy_forms_tags %}
+
+            <div class="game-details">
                 <div class="row">
-                    <!-- Summernote start -->
-                    <input id="inputTitle" placeholder="제목을 작성해주세요" />
-                    <div id="summernote"></div>
-                <!-- button start -->
-                  <div id="teambtn-left" class="col-lg-6">
-                        <div id="teambtn1" class="main-border-button">
-                          <a href="/team-activities/">Back</a>
+                    <div class="col-lg-12">
+                        <div id="assignment-content" class="content assignment-container">
+                            <div class="row">
+                                <div class="container">
+                                <h3 class="assignment-title">글쓰기</h3>
+                                    <form method="post" enctype="multipart/form-data" class="assignment-form">
+                                    {% csrf_token %}
+                                    {{ form|crispy }}
+                                    <button type="submit" class="assignment-submit-button">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                  </div>
-                  <div id="teambtn-right" class="col-lg-5">
-                        <div id="teambtn1" class="main-border-button">
-                          <a href="/team-activities/">임시저장</a>
-                        </div>
-                        <div id="teambtn1" class="main-border-button">
-                          <a type="submit">제출</a>
-                        </div>   
-                  </div>
+                    </div>
                 </div>
-                <!-- button finish -->
             </div>
+
+            <div class="markdown-preview">
+            {{ form.media }}
+            </div>
+
         </div>
       </div>
+    </div>
   </div>
   
 
