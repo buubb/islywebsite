@@ -78,6 +78,7 @@ LOGIN_REDIRECT_URL = '/'
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
 
+
 # 해당 값에 따른 시간 후에 session 종료 (단위 : 초)
 SESSION_EXPIRE_SECONDS = 3600  # 1 hour
 # 사용자가 마지막으로 활동한 시점 후부터 session_expire_seconds 측정됨
