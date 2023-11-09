@@ -22,55 +22,64 @@
     <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- 위에 있는 head 태그 내에 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.2/markdown-it.min.js" integrity="sha384-VYuNxuhy0lZ0i1dVw26O+5Hft/dxgl8Uc8sOGi3RZq12Za3o8ygNYaVOaCuoP6F6y" crossorigin="anonymous"></script>
+
     
   </head>
 
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-12">
         <div class="page-content teamboard-page-content">
-
             {% load crispy_forms_tags %}
-
+        
             <div class="teamboard-details">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-6"> <!-- 글쓰기 폼 -->
                         <div class="content assignment-container">
-                            <div class="row">
-                                <div class="container">
-                                    <h3 class="assignment-title">글쓰기</h3>
-                                    <form method="post" enctype="multipart/form-data" class="assignment-form">
-                                    {% csrf_token %}
-                                    {{ form|crispy }}
-                                    <button type="submit" class="assignment-submit-button">Submit</button>
-                                    </form>
-                                    
-                                </div>
-                            </div>
+                            <h3 class="assignment-title">글쓰기</h3>
+                            <form method="post" enctype="multipart/form-data" class="assignment-form">
+                                {% csrf_token %}
+                                {{ form.title|as_crispy_field }}
+                                {{ form.content|as_crispy_field }}
+                                <button type="submit" class="assignment-submit-button">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6"> <!-- 미리보기 -->
+                        <div class="content markdown-preview-container">
+                            <h3 class="assignment-title">미리보기</h3>
+                            <div id="markdownPreview"></div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="markdown-preview">
-            {{ form.media }}
-            </div>
-          
+        
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            {{ form.media.js }}
+            <script>
+                $(document).ready(function () {
+                    var inputField = $('#id_content');
+                    var previewDiv = $('#markdownPreview');
+                    
+                    var md = new window.markdownit(); // markdown-it 라이브러리 사용
+            
+                    inputField.on('input', function () {
+                        var markdownText = inputField.val();
+                        var htmlText = md.render(markdownText);
+                        previewDiv.html(htmlText);
+                    });
+            
+                    // 폼 전송 시에 미리보기 숨기기
+                    $('form').on('submit', function() {
+                        previewDiv.empty();
+                    });
+                });
+            </script>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="page-content teamboard-page-content">
-
-            {% load crispy_forms_tags %}
-
-            <div class="markdownx">
-              <div class="markdownx-preview">
-                {{ form.media }}
-              </div>
-          </div>
-
-        </div>
+        
       </div>
     </div>
   </div>
