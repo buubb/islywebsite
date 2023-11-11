@@ -1797,6 +1797,12 @@ body .teamcontent{
   text-align: left;
 }
 
+body .teamboard-content{
+  background-color: #353637;
+  margin-top: 0px;
+  padding:0px;
+}
+
 #teambtn-right .main-border-button a {
   font-size: 14px;
   color: #60ec8c;
@@ -1829,6 +1835,12 @@ body .teamcontent{
   letter-spacing: 0.5px;
   transition: all .3s;
   overflow: hidden;
+}
+
+.teamboard-details .content{
+  border-radius: 23px;
+  padding: 30px;
+  background-color: #27292a;
 }
 
 #teambtn-left .main-border-button a:hover {

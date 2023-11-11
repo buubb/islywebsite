@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.forms',
     'islyweb',
     'notice',
     'assignments',
@@ -241,8 +242,30 @@ APPEND_SLASH = False
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
+# markdownx settings
+from datetime import datetime
+MARKDOWNX_MARKDOWNIFY_FUNCTION = 'markdownx.utils.markdownify'
 MARKDOWNX_MARKDOWN_EXTENSIONS = [
     'markdown.extensions.extra',
     'markdown.extensions.codehilite',
     'markdown.extensions.toc',
 ]
+MARKDOWNX_MARKDOWN_EXTENSION_CONFIGS = {
+    'extension_name_1': {
+        'option_1': 'value_1'
+    }
+}
+MARKDOWNX_URLS_PATH = '/markdownx/markdownify/'
+MARKDOWNX_UPLOAD_URLS_PATH = '/markdownx/upload/'
+MARKDOWNX_MEDIA_PATH = datetime.now().strftime('markdownx/%Y/%m/%d')
+MARKDOWNX_UPLOAD_MAX_SIZE = 50 * 1024 * 1024 #50MB in bytes
+MARKDOWNX_UPLOAD_CONTENT_TYPES = ['image/jpeg', 'image/png', 'image/svg+xml']
+MARKDOWNX_IMAGE_MAX_SIZE = {
+    'size': (500, 500),
+    'quality': 90
+}
+MARKDOWNX_SVG_JAVASCRIPT_PROTECTION = True
+MARKDOWNX_EDITOR_RESIZABLE = True
+MARKDOWNX_SERVER_CALL_LATENCY = 500  # milliseconds
+
+FORM_RENDERFORM='django.forms.renderers.TemplatesSetting'
