@@ -32,7 +32,7 @@ def posting(request, post_id):
     # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'library/library_posting.html', context)
     
-@login_required #나중에 로그인 링크 수정하기
+@login_required(login_url='common:login') #나중에 로그인 링크 수정하기
 def post_create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
