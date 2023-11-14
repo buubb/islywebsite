@@ -73,6 +73,8 @@ MIDDLEWARE = [
 ]
 
 
+LOGIN_TRY_LIMIT=5
+
 # 로그인 성공 시 자동으로 이동할 URL
 LOGIN_REDIRECT_URL = '/'
 
@@ -177,7 +179,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Summernot 설정
 X_FRAME_ORTIONS = 'SAMEORIGIN'
 
-INSTALLED_APPS += ['django_summernote']
+INSTALLED_APPS += [
+    'django_summernote'
+]
 
 import os
 MEDIA_URL = '/media/'
