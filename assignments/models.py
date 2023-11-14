@@ -11,6 +11,7 @@ class BasicAssignment(models.Model): # models 모듈의 Model 클래스를 확�
     content = MarkdownxField()
     file_upload = models.FileField(upload_to='uploads/', null=True, blank=True, default='default_value.pdf')
     created_at = models.DateTimeField(auto_now_add=True)
+    modify_date = models.DateTimeField(null=True, blank=True)
     view_count = models.PositiveIntegerField(default=0)
 
     def get_content_markdown(self):  # 추가
@@ -22,6 +23,7 @@ class AdvancedAssignment(models.Model):
     content = MarkdownxField()
     file_upload = models.FileField(upload_to='uploads/', null=True, blank=True, default='default_value.pdf')
     created_at = models.DateTimeField(auto_now_add=True)
+    modify_date = models.DateTimeField(null=True, blank=True)
     view_count = models.PositiveIntegerField(default=0)
 
     def get_content_markdown(self):  # 추가

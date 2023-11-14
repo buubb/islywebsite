@@ -2,7 +2,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.shortcuts import render, get_object_or_404
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from .models import BasicAssignment, AdvancedAssignment
 from .forms import AdvancedAssignmentForm, BasicAssignmentForm
 from django.core.paginator import Paginator
@@ -77,3 +77,16 @@ class AdvancedCreate(LoginRequiredMixin, CreateView):
         # 현재 로그인한 사용자를 작성자로 설정
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+class BasicUpdate(LoginRequiredMixin, UpdateView):
+    model = BasicAssignment
+    form_class = BasicAssignmentForm
+    template_name = 'assignments/edit.html'  # 수정 페이지 템플릿
+    success_url = reverse_lazy('basic')  # 수정 성공 시 리디렉션할 URL 지정
+
+class AdvancedUpdate(LoginRequiredMixin, UpdateView):
+    model = AdvancedAssignment
+    form_class = AdvancedAssignmentForm
+    template_name = 'assignments/edit.html'  # 수정 페이지 템플릿
+    success_url = reverse_lazy('advanced')  # 수정 성공 시 리디렉션할 URL 지정
