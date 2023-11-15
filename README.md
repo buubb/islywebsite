@@ -68,5 +68,6 @@
 - python -m pip install Pillow //일반
 - python -m pip install ‘Pillow<10’ //파이참 이용자
 - pip install django-session-timeout // 세션 설정에 필요한 패키지
+- pip install django-brutebuster // 관리자가 차단된 계정을 수동으로 해제할 수 있음
 =======
 >>>>>>> 463fbe33090c39f1a6da22e6a8f4a963ccd39b86

@@ -73,11 +73,14 @@ MIDDLEWARE = [
 ]
 
 
+LOGIN_TRY_LIMIT=5
+
 # 로그인 성공 시 자동으로 이동할 URL
 LOGIN_REDIRECT_URL = '/'
 
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
+
 
 # 해당 값에 따른 시간 후에 session 종료 (단위 : 초)
 SESSION_EXPIRE_SECONDS = 3600  # 1 hour
@@ -87,6 +90,10 @@ SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 60 # group by minute
 # session이 종료된 후에 이동할 url
 SESSION_TIMEOUT_REDIRECT='/'
+
+from django.contrib.messages import constants as messages_constants
+MESSAGE_LEVEL=messages_constants.INFO
+MESSAGE_LEVEL=messages_constants.DEBUG
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
@@ -172,7 +179,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Summernot 설정
 X_FRAME_ORTIONS = 'SAMEORIGIN'
 
-INSTALLED_APPS += ['django_summernote']
+INSTALLED_APPS += [
+    'django_summernote'
+]
 
 import os
 MEDIA_URL = '/media/'
