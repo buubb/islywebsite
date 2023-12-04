@@ -1,85 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e23a80d-8ca5-4756-b0c9-b10694300a8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assignments/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/migrations/0004_alter_advancedassignment_content_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/migrations/0005_basicassignment_file_upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/migrations/0006_advancedassignment_file_upload_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/migrations/0007_basicassignment_modify_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/migrations/0008_advancedassignment_modify_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django-markdownx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/migrations/0002_librarypost_delete_post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/migrations/0003_librarypost_modify_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/migrations/0004_librarycomment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/migrations/0005_alter_librarycomment_created_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/migrations/0006_rename_post_librarycomment_librarypost_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/IMG_0274.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/스크린샷_2023-09-19_오전_1.06.07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/AWS 클라우드 서비스 인프라 구축 이해와 해킹, 보안.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/ISlylogo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_activities/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_activities/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_activities/migrations/0002_alter_teamactivitiespost_content.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/library/comment_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/library/library_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/library/library_posting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/library/tem5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/library_base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/account_lock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/login_failed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/messages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/markdownx/widget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/recruit/b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/team_activities/team_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/team_activities/teamex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/team_activities/teampost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/islyweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/islyweb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/islyweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/islyweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/templatemo-cyborg-gaming.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/templatemo-cyborg-gaming.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_activities/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/team_activities/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_activities/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/team_activities/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_activities/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/team_activities/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_activities/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/team_activities/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/advancedlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/advancedlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/basiclist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/basiclist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignments/submit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignments/submit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/library_write.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/library_write.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/make.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/make.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/tem4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/tem4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team_activities/teamboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team_activities/teamboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team_activities/tem2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+    <list default="true" id="f9a6ddb6-cad4-40c2-ae6d-6973a3024067" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0002_librarypost_delete_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0003_librarypost_modify_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0004_librarycomment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0005_alter_librarycomment_created_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0006_rename_post_librarycomment_librarypost_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,28 +25,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
-  <component name="ProjectId" id="2Z3SMIXxDxyU30n1sZ6uhBLxJD7" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Z3lHaFknZpJScxfGB06HQSWgCO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -142,12 +75,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0e23a80d-8ca5-4756-b0c9-b10694300a8f" name="Changes" comment="" />
-      <created>1701649221161</created>
+      <changelist id="f9a6ddb6-cad4-40c2-ae6d-6973a3024067" name="Changes" comment="" />
+      <created>1701658559158</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701649221161</updated>
-      <workItem from="1701649224075" duration="347000" />
+      <updated>1701658559158</updated>
+      <workItem from="1701658561252" duration="676000" />
+      <workItem from="1701659257786" duration="205000" />
     </task>
     <servers />
   </component>

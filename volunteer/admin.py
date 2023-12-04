@@ -42,7 +42,7 @@ class PostAdmin(admin.ModelAdmin):
         "year",
         "participant",
         "content",
-        "created"
+        "created",
     ]
     inlines = [
         CommentInline,
