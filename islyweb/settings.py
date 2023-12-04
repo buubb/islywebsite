@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from .my_settings import MY_DATABASES,MY_SECRET
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.forms',
     'islyweb',
     'notice',
     'assignments',
@@ -53,11 +55,15 @@ INSTALLED_APPS = [
     'User.apps.UserConfig',
     #'corsheaders',
     'django_extensions',
+    'markdownx',
+    'crispy_forms',
+    'crispy_bootstrap5'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django_session_timeout.middleware.SessionTimeoutMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -66,13 +72,39 @@ MIDDLEWARE = [
    # 'corsheaders.middleware.CorsMiddleware',
 ]
 
+
+LOGIN_TRY_LIMIT=5
+
 # 로그인 성공 시 자동으로 이동할 URL
 LOGIN_REDIRECT_URL = '/'
 
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
 
+
+# 해당 값에 따른 시간 후에 session 종료 (단위 : 초)
+SESSION_EXPIRE_SECONDS = 3600  # 1 hour
+# 사용자가 마지막으로 활동한 시점 후부터 session_expire_seconds 측정됨
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
+# 마지막 활동 이후 설정한 값(초)가 지난 후에 session_expire_seconds 계산
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 60 # group by minute
+# session이 종료된 후에 이동할 url
+SESSION_TIMEOUT_REDIRECT='/'
+
+from django.contrib.messages import constants as messages_constants
+MESSAGE_LEVEL=messages_constants.INFO
+MESSAGE_LEVEL=messages_constants.DEBUG
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
+
 ROOT_URLCONF = 'islyweb.urls'
+
 
 TEMPLATES = [
     {
@@ -147,7 +179,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Summernot 설정
 X_FRAME_ORTIONS = 'SAMEORIGIN'
 
-INSTALLED_APPS += ['django_summernote']
+INSTALLED_APPS += [
+    'django_summernote'
+]
 
 import os
 MEDIA_URL = '/media/'
@@ -164,6 +198,8 @@ SUMMERNOTE_CONFIG = {
         'width': 720,
         'height': 480,
         'lang': 'ko-KR',
+        'upload_to': 'uploads/',  # 이미지 업로드 경로 설정
+        'extensions': ['image'],
         'toolbar': [
             ['style', ['style']],
             ['font', ['bold', 'underline', 'superscipt', 'strikethroungh',
@@ -208,5 +244,37 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
 )
 
+
 APPEND_SLASH = False
 """
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+# markdownx settings
+from datetime import datetime
+MARKDOWNX_MARKDOWNIFY_FUNCTION = 'markdownx.utils.markdownify'
+MARKDOWNX_MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.extra',
+    'markdown.extensions.codehilite',
+    'markdown.extensions.toc',
+]
+MARKDOWNX_MARKDOWN_EXTENSION_CONFIGS = {
+    'extension_name_1': {
+        'option_1': 'value_1'
+    }
+}
+MARKDOWNX_URLS_PATH = '/markdownx/markdownify/'
+MARKDOWNX_UPLOAD_URLS_PATH = '/markdownx/upload/'
+MARKDOWNX_MEDIA_PATH = datetime.now().strftime('markdownx/%Y/%m/%d')
+MARKDOWNX_UPLOAD_MAX_SIZE = 50 * 1024 * 1024 #50MB in bytes
+MARKDOWNX_UPLOAD_CONTENT_TYPES = ['image/jpeg', 'image/png', 'image/svg+xml']
+MARKDOWNX_IMAGE_MAX_SIZE = {
+    'size': (500, 500),
+    'quality': 90
+}
+MARKDOWNX_SVG_JAVASCRIPT_PROTECTION = True
+MARKDOWNX_EDITOR_RESIZABLE = True
+MARKDOWNX_SERVER_CALL_LATENCY = 500  # milliseconds
+
+FORM_RENDERFORM='django.forms.renderers.TemplatesSetting'

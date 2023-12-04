@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Login Failed</h2>
+    <p>Your login attempt has failed. Please check your username and password.</p>
+    {% if state == 'account_lock' %}
+        <p>Your account has been locked due to too many unsuccessful login attempts. Please contact the administrator for assistance.</p>
+    {% endif %}
+{% endblock %}

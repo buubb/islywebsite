@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>I.Sly()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+  {% include "navbar.html" %}
+  <!-- ***** Header Area End ***** -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="/library/create/"> WRITE </a>
+                </div>
+          </div>
+
+          <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="color: white;">No.</th>
+                        <th style="color: white;">Title</th>
+                        <th style="color: white;">Author</th>
+                        <th style="color: white;">Created At</th>
+                        <th style="color: white;">Views</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for post in library_list %}
+                <tr>
+                    <td style="color: DarkSeaGreen;">{{ post.id }} </td>
+                    <td style="color: DarkSeaGreen;">
+                        <a href="{{post.id}}/">{{ post.subject }}</a><br>
+                    </td>
+                    <td style="color: DarkSeaGreen;">{{ post.author }}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.created_date }}</td>
+                    <td style="color: DarkSeaGreen;">{{ post.library_count}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <!-- 페이징처리 시작 -->
+            <div class="pagination-container">
+              <div class="pagination">
+              <span class="step-links">
+              <!-- 이전페이지 -->
+              {% if library_list.has_previous %}
+              <a href="?page={{ library_list.previous_page_number }}">&laquo; first</a>
+              <a href="?page={{ library_list.previous_page_number }}">←</a>
+
+              {% endif %}
+              <!-- 페이지리스트 -->
+              {% for page_number in library_list.paginator.page_range %}
+                {% if page_number >= library_list.number|add:-5 and page_number <= library_list.number|add:5 %}
+                  {% if page_number == library_list.number %}
+                  <span class="current-page">{{ page_number }}</span>
+                  {% else %}
+                      <a href="?page={{ page_number }}">{{ page_number }}</a>
+
+                  {% endif %}
+              {% endif %}
+            
+            {% endfor %}
+              <!-- 다음페이지 -->
+              {% if library_list.has_next %}
+              <a href="?page={{ library_list.next_page_number }}">→</a>
+              <a href="?page={{ library_list.paginator.num_pages }}">last &raquo;</a>
+              {% endif %}
+              </span>
+              </div>
+            </div>
+          <!-- 페이징처리 끝 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
+
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/tabs.js' %}"></script>
+  <script src="{% static 'assets/js/popup.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

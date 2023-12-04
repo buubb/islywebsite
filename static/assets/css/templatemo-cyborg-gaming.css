@@ -373,6 +373,7 @@ Header Style
 }
 
 .background-header .main-nav {
+  position: fixed;
   padding: 0px;
   background-color: transparent;
 }
@@ -1796,6 +1797,12 @@ body .teamcontent{
   text-align: left;
 }
 
+body .teamboard-content{
+  background-color: #353637;
+  margin-top: 0px;
+  padding:0px;
+}
+
 #teambtn-right .main-border-button a {
   font-size: 14px;
   color: #60ec8c;
@@ -1828,6 +1835,12 @@ body .teamcontent{
   letter-spacing: 0.5px;
   transition: all .3s;
   overflow: hidden;
+}
+
+.teamboard-details .content{
+  border-radius: 23px;
+  padding: 30px;
+  background-color: #27292a;
 }
 
 #teambtn-left .main-border-button a:hover {
@@ -1897,6 +1910,16 @@ body .teamcontent{
   letter-spacing: .3px;
 }
 
+#teamgrid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+.teamgrid-item {
+  background-color: #27292a;
+  color:#eee;
+}
 /* 
 ---------------------------------------------
 seolin workspace
@@ -1921,6 +1944,23 @@ seolin workspace
 }
 
 
+/* nav{
+  position:sticky;
+  top:0;
+  left:0;
+  right:0;
+} */
+/* nav {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  display: flex;
+  flex-direction:row;
+  margin:0px;
+  padding:0px;
+}
+ */
 
 /* .alert-danger {
   background-color:  #27292a;
@@ -1938,11 +1978,68 @@ sumi workspace
 .heading-section h4 {
   color: #fff;
 }
+.custom-list li {
+  color: #ffffffb7;
+}
 /* 
 ---------------------------------------------
 eunju workspace
 --------------------------------------------- 
 */
+
+.view-count {
+  float: right;
+  font-size: 1.2rem;
+}
+
+.assignment-form {
+    color: #fff;
+}
+
+/* post.html 기본 컨테이너 스타일 */
+#assignment-content {
+    padding: 100px;
+    border-radius: 5px;
+}
+
+/* 제목 스타일 */
+.assignment-title {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left; /* 텍스트 좌측 정렬 */
+}
+
+/* 폼 스타일 */
+.assignment-form {
+    margin-top: 10px;
+}
+
+/* 폼 필드 스타일 */
+.assignment-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* 제출 버튼 스타일 */
+.assignment-submit-button {
+    margin-top: 20px;
+    background-color: #366F31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 제출 버튼 호버 효과 */
+.assignment-submit-button:hover {
+    background-color: #0C2F09;
+}
+
 
 /* 페이지네이션 컨테이너의 스타일 */
 .pagination-container {
@@ -1978,7 +2075,7 @@ eunju workspace
 
 /* 
 ---------------------------------------------
-soyoeng workspace
+soyoeng workspace햣
 --------------------------------------------- 
 */
 

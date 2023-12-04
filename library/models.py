@@ -1,20 +1,24 @@
+from django.conf import settings
 from django.db import models
 
-# Create your models here.
-
-class Library(models.Model):
-    title = models.CharField(max_length=64, verbose_name= '글 제목')
-    contents = models.TextField(verbose_name='글 내용')
-    writer = models.ForeignKey('User.User', on_delete=models.CASCADE, verbose_name='작성자')
-    writer_dttm = models.DateTimeField(auto_now_add=True, verbose_name='글 작성일')
-    
-    updata_dttm = models.DateTimeField(auto_now=True, verbose_name='마지막 수정일')
-    
+class LibraryPost(models.Model):
+    subject = models.CharField(max_length=200)
+    content = models.TextField()
+    library_file_upload = models.FileField(upload_to='uploads/', null=True, blank=True, default='default_value.pdf') 
+    created_date = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+    modify_date = models.DateTimeField(null=True, blank=True)
+    library_count = models.PositiveIntegerField(default=0)
 
     def __str__(self):
-        return self.title
-    
-    class Meta:
-        db_table = 'library'
-        verbose_name = '게시판'
-        verbose_name_plural = '게시판'
+        return self.subject
+
+class LibraryComment(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+    content = models.TextField()
+    modify_date = models.DateTimeField(null=True, blank=True)
+    librarypost = models.ForeignKey(LibraryPost, null=True, blank=True, on_delete=models.CASCADE)
+    created_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.content
