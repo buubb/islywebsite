@@ -39,9 +39,10 @@ class PostAdmin(admin.ModelAdmin):
     list_display = [
         "title",
         "id",
-        "members",
+        "year",
+        "participant",
         "content",
-        "created",
+        "created"
     ]
     inlines = [
         CommentInline,
