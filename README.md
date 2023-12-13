@@ -9,7 +9,7 @@
 - python -m pip install Pillow //일반
 - python -m pip install ‘Pillow<10’ //파이참 이용자# git 사용 방법
 - pip install bandit // 보안 취약점 점검 툴
-  
+- pip install cmarkgfm
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
 

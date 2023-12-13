@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     'django_extensions',
     'markdownx',
     'crispy_forms',
-    'crispy_bootstrap5'
+    'crispy_bootstrap5',
+    'django_tuieditor',
 ]
 
 MIDDLEWARE = [
