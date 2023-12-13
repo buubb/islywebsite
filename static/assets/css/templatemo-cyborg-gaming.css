@@ -803,9 +803,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-color: #1f2122;
   min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;
@@ -1838,8 +1836,6 @@ body .teamboard-content{
 }
 
 .teamboard-details .content{
-  border-radius: 23px;
-  padding: 30px;
   background-color: #27292a;
 }
 
