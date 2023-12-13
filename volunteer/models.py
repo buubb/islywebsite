@@ -3,10 +3,12 @@ from django.db import models
 
 class Post(models.Model):
     title = models.CharField("포스트 제목", max_length=100, null=True, default='')
-    members = models.CharField("팀원", max_length=100, null=True, default='')
+    subtitle = models.CharField("소제목", max_length=100, null=True, default='')
+    year = models.PositiveIntegerField("동아리 기수", null=True)
+    participant = models.CharField("팀원", max_length=100, null=True, default='')
     user = models.ForeignKey("User.User", verbose_name="작성자", on_delete=models.CASCADE)
     content = models.TextField("내용", blank=True)
-    created = models.DateTimeField("작성일시", auto_now_add=True)
+    created = models.DateTimeField("작성일시", auto_now_add=True, null=True)
 
     def __str__(self):
         return f"{self.user.username}의 Post(id: {self.id})"

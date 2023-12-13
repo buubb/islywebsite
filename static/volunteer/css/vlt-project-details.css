@@ -1,0 +1,106 @@
+/*
+---------------------------------------------
+Game Details Style
+---------------------------------------------
+*/
+
+
+/* content block */
+.vlt-project-details .content {
+  border-radius: 23px;
+  padding: 40px;
+  background-color: #1f2122;
+  margin-top: 25px; /* important */
+}
+
+
+/* left-info */
+.vlt-project-details .content .left-info {
+  background-color: #27292a;
+  border-radius: 23px;
+  padding: 30px;
+  margin: 30px 0px; /* important */
+}
+
+.vlt-project-details .content .left-info .left {
+  text-align: left;
+}
+
+.vlt-project-details .content .left-info h4 {
+  color: #57f579;
+  font-size: 17px;
+  display: block;
+}
+
+.vlt-project-details .content .left-info span {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 650;
+  display: block;
+  margin-top: 8px;
+}
+
+
+/* right-info */
+.vlt-project-details .content .right-info {
+  background-color: #27292a;
+  border-radius: 23px;
+  padding: 30px;
+  margin: 30px 0px; /* important */
+}
+
+.vlt-project-details .content .right-info ul li {
+  display: inline-block;
+  width: 23%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.vlt-project-details .content .right-info ul li i {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.vlt-project-details .content .right-info ul li:first-child i {
+  color: yellow;
+}
+
+.vlt-project-details .content .right-info ul li i {
+  color: #ec6090;
+}
+
+
+/* description */
+.vlt-project-details .content .description {
+  border-radius: 23px;
+  padding: 30px;
+  background-color: #27292a;
+}
+
+
+/* title */
+.vlt-project-details .content .description .title p {
+  color: #57f579;
+  font-size: 40px;
+  font-weight: 650;
+  text-align: left;
+  margin: 20px 0px 40px 0px; /* important */
+}
+
+
+/* down-content */
+.vlt-project-details .content .description .down-content p {
+  color: #ffffff;
+}
+
+
+/* main-border-button */
+.vlt-project-details .main-border-button {
+  margin-top: 35px;
+}
+
+.vlt-project-details .main-border-button a {
+  text-align: center;
+  width: 100%;
+}

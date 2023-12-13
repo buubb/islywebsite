@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
 
     <!-- Raon CSS Files -->
-    <link rel="stylesheet" href="{% static 'volunteer/css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
-    <script src="{% static 'splide/splide.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-banner.css' %}">
+    <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-project.css' %}">
+
 
 <!--
 
@@ -37,158 +37,93 @@ https://templatemo.com/tm-579-cyborg-gaming
 -->
   </head>
 
-<body class="is-preload">
+<body>
 
   <!-- ***** Preloader Start ***** -->
   {% include "navbar.html" %}
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-
   <!-- ***** Header Area End ***** -->
 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
 
-          <!-- ***** Featured Games Start ***** -->
+          <!-- ***** Volunteer Banner ***** -->
+          <div class="volunteer-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6>I.Sly()의 다양한 프로젝트를 확인해 보세요!</h6>
+                  <h4><em>Discover</em> Our<br/>Projects Here</h4>
+                  <div class="main-button">
+                    <a href="#"><i class="fa-solid fa-share"></i><b> Share</b></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Volunteer Banner ***** -->
 
-
-            <!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-                        <div id="feeds" class="post-container">
-                        {% for post in posts %}
-						<!-- Post -->
-                            <article id="post-{{ post.id }}" class="post">
-								<header class="post-header">
-                                    <!-- Post Title and Team Members -->
-									<div class="title">
-										<h2><a href="single.html">{{ post.title }}</a></h2>
-                                        <p>{{ post.members }}</p>
-									</div>
-                                    <!-- Date of Posting, Author, and Profile Image -->
-									<div class="meta">
-										<time class="published">{{ post.created|date:'F d, Y' }}</time>
-										<a class="author"><span class="name">{{ post.user.username }}</span>
-                                            {% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</a>
-									</div>
-								</header>
-
-                                <!-- Image Slider Section Starts -->
-                                <p class="image featured">
-                                <div class="post-images splide">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            {% for image in post.postimage_set.all %}
-                                                {% if image.photo %}
-                                                    <li class="splide__slide">
-                                                        <img src="{{ image.photo.url }}">
-                                                    </li>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                                </p>
-                                <!-- Image Slider Section Ends -->
-
-                                <!-- Post Content -->
-                                <p>{{ post.content|linebreaksbr }}</p>
-
-                                <!-- Buttons -->
-                                <footer>
-									<ul class="actions">
-										<li><a href="single.html" class="button large">Continue Reading</a></li>
-									</ul>
-
-									<ul class="stats">
-                                        <div class="post-buttons">
-                                              <!-- Like Button -->
-                                              <form class="like" action="{% url 'Volunteer:post_like' post_id=post.id %}?page={{ page_number }}" method="POST">
-                                                {% csrf_token %}
-                                                    <li>
-                                                      <a class="icon solid fa-heart">
-                                                        <button type="submit" style="{% if user in post.like_users.all %} color: #5ee773 !important; {% endif %}">
-                                                          <i class="fa-solid fa-heart"></i> Likes({{ post.like_users.count }})
-                                                        </button>
-                                                      </a>
-                                                    </li>
-                                              </form>
-                                              <!-- Share Button -->
-                                              <!-- <li><a href="#" class="icon solid fa-comment"><button>Share</button></a></li> -->
-                                        </div>
-									</ul>
-								</footer>
-
-							</article>
-                        {% endfor %}
-
-
-                        <!-- Pagination -->
-                            <ul class="actions pagination">
-                                {% if posts.has_previous %}
-                                    <li><a href="?page={{ posts.previous_page_number }}" class="button large previous">Previous Page</a></li>
-                                {% else %}
-                                    <li><span class="button large previous disabled">Previous Page</span></li>
-                                {% endif %}
-
-                                {% if posts.has_next %}
-                                    <li><a href="?page={{ posts.next_page_number }}" class="button large next">Next Page</a></li>
-                                {% else %}
-                                    <li><span class="button large next disabled">Next Page</span></li>
-                                {% endif %}
-                            </ul>
+          <!-- ***** Volunteer Project Start ***** -->
+          <div class="volunteer-project">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>Volunteer Projects</h4>
+              </div>
+            </div>
+            <div class="row">
+              {% for post in posts %}
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <!-- Thumbnail -->
+                    {% if post.postimage_set.first %}
+                    <img src="{{ post.postimage_set.first.photo.url }}" alt="">
+                    {% endif %}
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="#"><i class="fa fa-heart"></i><b> {{ post.like_users.count }}</b></a>
                         </div>
+                        <ul>
+                          <li><a href="/volunteer/{{ post.id }}/"><b> View</b></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <!-- Year -->
+                    <span><i class="fa-solid fa-hashtag"></i><b> {{ post.year }}기</b></span>
+                    <!-- Post Title -->
+                    {% if post.title|length > 15 %}
+                        <h4>{{ post.title|slice:":15" }} ...</h4>
+                    {% else %}
+                        <h4>{{ post.title }}</h4>
+                    {% endif %}
+                  </div> 
+                </div>
+              </div>
+              {% endfor %}
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="#">View More Projects</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Volunteer Project End ***** -->
 
-                        <!-- Splide 초기화 자바스크립트 코드 -->
-                        <script>
-                            const elms = document.getElementsByClassName('splide');
-                            for (let i = 0; i < elms.length; i++) {
-                                new Splide(elms[i]).mount();
-                            }
-                        </script>
-
-					</div>
-
-				<!-- Sidebar -->
-					<section id="sidebar">
-                        <!-- Intro -->
-
-						<!-- Mini Posts -->
-							<section>
-                                {% for post in all_posts %}
-                                    <div class="mini-posts">
-                                            <article class="mini-post">
-                                                <header>
-                                                    <h3><a href="#">{{ post.title }}</a></h3>
-                                                    <time class="published">{{ post.created|date:'M d, Y' }}</time>
-                                                    <a class="author">{% if post.user.profile_image %}<img src="{{ post.user.profile_image.url }}">{% endif %}</a>
-                                                </header>
-                                                <a href="#" class="image">
-                                                    {% if post.postimage_set.first %}
-                                                        <img src="{{ post.postimage_set.first.photo.url }}" alt="">
-                                                    {% endif %}
-                                                </a>
-                                            </article>
-                                    </div>
-                                {% endfor %}
-							</section>
-					</section>
-
-			</div>
-          <!-- ***** Featured Games End ***** -->
-
-          <!-- ***** Live Stream Start ***** -->
-
-          <!-- ***** Live Stream End ***** -->
-
-
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
-
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
+          
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
       </div>
@@ -208,13 +143,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="{% static 'assets/js/custom.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- Raon JavaScript -->
-  <script src="{% static 'volunteer/js/jquery.min.js' %}"></script>
-  <script src="{% static 'volunteer/js/browser.min.js' %}"></script>
-  <script src="{% static 'volunteer/js/breakpoints.min.js' %}"></script>
-  <script src="{% static 'volunteer/js/util.js' %}"></script>
-  <script src="{% static 'volunteer/js/main.js' %}"></script>
 
-</body>
+  </body>
 
 </html>

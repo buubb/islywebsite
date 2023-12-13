@@ -9,16 +9,23 @@ def feed(request):
     posts = Post.objects.all().order_by('-created')
 
     # Paging
-    per_page = 2
+    per_page = 8
     paginator = Paginator(posts, per_page)
     page_number = request.GET.get("page")  # Get the current page number
     posts = paginator.get_page(page_number)  # Retrieve the list of posts for the requested page
 
-    # Sidebar
-    all_posts = Post.objects.all()
-
-    context = {"posts": posts, "page_number": page_number, "all_posts": all_posts}
+    context = {"posts": posts, "page_number": page_number}
     return render(request, "volunteer/feed.html", context)
+
+
+def post_detail(request, post_id):
+    post = Post.objects.get(id=post_id)
+    print(post)
+
+    context = {
+        "post": post,
+    }
+    return render(request, "volunteer/post_detail.html", context)
 
 
 def post_like(request, post_id):
