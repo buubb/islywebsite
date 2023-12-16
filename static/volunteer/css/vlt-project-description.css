@@ -181,7 +181,7 @@ main-border-button
 /* 미디어 쿼리 추가: 768px 이하 화면 크기에 대한 스타일 조정 */
 @media (max-width: 768px) {
   .vlt-project-description .breadcrumb-item {
-    display: none; /* breadcrumbs X */
+    display: none; /* breadcrumbs 삭제 */
   }
   .vlt-project-description .content .right-info ul.right-info-buttons {
     gap: 20px; /* right-info 버튼 간격 */

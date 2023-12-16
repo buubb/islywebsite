@@ -80,7 +80,7 @@ Featured Games Style
 
 /* title */
 .vlt-more-projects .item span {
-  color: #ffffff;
+  color: #fff;
   display: block;
   margin-top: 7px;
   /* font-weight: 400; */
@@ -125,7 +125,7 @@ Featured Games Style
 .vlt-more-projects .owl-nav .owl-next span  {
   font-size: 36px;
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   opacity: 1;
   transition: all .3s;
 }
