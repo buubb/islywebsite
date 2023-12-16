@@ -50,6 +50,12 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <h4>Try login</h4>
                 <form method="post" action="{% url 'login' %}">
                   {% csrf_token %} <!-- *CSRF 공격 방지하기 위함 -->
+
+                  <!-- Raon added -->
+                  {% if request.GET.next %}
+                      <input type="hidden" name="next" value="{{ request.GET.next }}">
+                  {% endif %}
+
                   {% include "login/error.html" %}
                   
                   <div class="mb-3">
