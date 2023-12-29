@@ -17,7 +17,7 @@ Game Details Style
   border-radius: 23px;
   padding: 35px;
   background-color: #1f2122;
-  margin-top: 25px;
+  margin-top: 25px; /* important */
 }
 
 
@@ -41,7 +41,7 @@ left-info
 }
 
 .vlt-project-description .content .left-info p {
-  color: #ffffff;
+  color: #fff;
   display: block;
   margin-top: 8px;
   font-weight: 650;
@@ -155,7 +155,7 @@ down-content
 
 /* content */
 .vlt-project-description .content .down-content p {
-  color: #ffffff;
+  color: #fff;
 }
 
 
@@ -176,9 +176,12 @@ main-border-button
 
 
 
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
 
-
-/* 미디어 쿼리 추가: 768px 이하 화면 크기에 대한 스타일 조정 */
 @media (max-width: 768px) {
   .vlt-project-description .breadcrumb-item {
     display: none; /* breadcrumbs 삭제 */
