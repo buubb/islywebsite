@@ -10,7 +10,7 @@ def feed(request):
     posts = Post.objects.all().order_by('-created')
 
     # Paging
-    per_page = 8
+    per_page = 12
     paginator = Paginator(posts, per_page)
     page_number = request.GET.get("page")  # Get the current page number
     posts = paginator.get_page(page_number)  # Retrieve the list of posts for the requested page

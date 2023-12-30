@@ -1,0 +1,170 @@
+/*
+---------------------------------------------
+Live Stream Style
+---------------------------------------------
+*/
+
+
+
+/* Basic */
+.vlt-list {
+  margin-top: 60px;
+  border-radius: 23px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.vlt-list .item {
+  margin-bottom: 30px;
+  border-radius: 23px;
+  background-color: #1f2122;
+  padding: 2.5rem;
+}
+
+.vlt-list .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* info */
+.vlt-list .info {
+  text-align: center;
+}
+
+/* info_year */
+.vlt-list .info p {
+  font-family: 'SUIT', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.375;
+  letter-spacing: 0.06em;
+  color: #57f579;
+}
+
+/* info_title */
+.vlt-list .info h2 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+
+/* image */
+.vlt-list .thumb img {
+  border-radius: 0;
+  margin-top: 2rem;
+}
+
+
+/* hover effect */
+.vlt-list .thumb:hover .hover-effect {
+  opacity: 1;
+  visibility: visible;
+}
+
+.vlt-list .hover-effect {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.vlt-list .hover-effect .live a {
+  position: absolute;
+  background-color: rgba(236, 96, 144, 0.9);
+  padding: 5px 10px;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 14px;
+  right: 15px;
+  top: 15px;
+}
+
+.vlt-list .hover-effect ul {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.vlt-list .hover-effect ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.vlt-list .hover-effect ul li a {
+  font-family: 'SUIT', sans-serif;
+  background-color: #1f2122;
+  padding: 6px 12px;
+  border-radius: 23px;
+  color: #57f579;
+  font-size: 14px;
+}
+
+
+/* down-content */
+.vlt-list .down-content h4 {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.375;
+  text-align: justify; /* 양쪽 정렬 */
+  color: #E4E5E8;
+  margin-top: 2rem;
+}
+
+
+/* button */
+.vlt-list .view-button {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.vlt-list .view-button a {
+  font-family: 'SUIT', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: #57f579;
+  background-color: transparent;
+  border: 1.5px solid #57f579;
+  border-radius: 0;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.vlt-list .view-button a:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+
+/* main-button */
+.vlt-list .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
+
+.vlt-list .main-border-button {
+  text-align: center;
+  margin: -53px;
+}
+
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
