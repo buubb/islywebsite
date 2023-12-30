@@ -1,0 +1,153 @@
+/*
+---------------------------------------------
+Featured Games Style
+---------------------------------------------
+*/
+
+.explore-other-projects .heading-section {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.vlt-more-projects {
+  border-radius: 23px;
+  background-color: #1f2122;
+  padding: 30px;
+}
+
+.vlt-more-projects .heading-section h4 {
+  color: #57f579;
+  font-size: 25px;
+}
+
+.vlt-more-projects .item .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.vlt-more-projects .item .thumb .hover-effect {
+  position: absolute;
+  bottom: -100px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.vlt-more-projects .item .thumb:hover .hover-effect {
+  opacity: 1;
+  visibility: visible;
+  bottom: 15px;
+}
+
+.vlt-more-projects .item .thumb .hover-effect h6 {
+  background-color: rgba(31,33,34,0.95);
+  display: inline-block;
+  /* color: #57f579; */
+  /* font-weight: 600; */
+  /* font-size: 14px; */
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.vlt-more-projects .item .thumb .hover-effect h6 a {
+  color: #57f579; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.4s; /* Add transition for smooth color change */
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.vlt-more-projects .item .thumb .hover-effect h6 a:hover {
+  color: #fff; /* Hover text color */
+}
+
+/* image */
+.vlt-more-projects .item img {
+  border-radius: 23px;
+}
+
+/* year */
+.vlt-more-projects .item h4 {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: inline-block;
+  color: #57f579;
+}
+
+/* title */
+.vlt-more-projects .item span {
+  color: #fff;
+  display: block;
+  margin-top: 7px;
+  /* font-weight: 400; */
+  font-size: 18px;
+}
+
+.vlt-more-projects .item ul {
+  float: right;
+  margin-top: 20px;
+}
+
+.vlt-more-projects .item ul li {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
+
+.vlt-more-projects .item ul li:first-child i {
+  color: yellow;
+}
+
+.vlt-more-projects .item ul li:last-child i {
+  color: #57f579;
+}
+
+.vlt-more-projects .owl-nav {
+  position: absolute;
+  margin: 0 auto;
+  top: -70px;
+  right: 0;
+}
+
+.vlt-more-projects .owl-nav .owl-prev {
+  margin-right: 2.5px;
+}
+
+.vlt-more-projects .owl-nav .owl-next {
+  margin-left: 2.5px;
+}
+
+.vlt-more-projects .owl-nav .owl-prev span,
+.vlt-more-projects .owl-nav .owl-next span  {
+  font-size: 36px;
+  display: inline-block;
+  color: #fff;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.vlt-more-projects .owl-nav .owl-prev span:hover,
+.vlt-more-projects .owl-nav .owl-next span:hover {
+  opacity: 1;
+  color: #57f579;
+}
+
+
+/* 미디어 쿼리 추가: 768px 이하 화면 크기에 대한 스타일 조정 */
+@media (max-width: 768px) {
+  .vlt-more-projects .heading-section h4 {
+    font-size: 20px; /* x Projects More */
+  }
+
+  .vlt-more-projects .item h4 {
+    font-size: 13px; /* year */
+  }
+
+  .vlt-more-projects .item span {
+    font-size: 17px; /* title */
+  }
+}

@@ -24,8 +24,9 @@
 
 
     <!-- Raon Additional Files -->
+    <link rel="stylesheet" href="{% static 'volunteer/css/vlt-project-description.css' %}">
     <link rel="stylesheet" href="{% static 'volunteer/css/vlt-team-comment.css' %}">
-    <link rel="stylesheet" href="{% static 'volunteer/css/vlt-project-details.css' %}">
+    <link rel="stylesheet" href="{% static 'volunteer/css/vlt-more-projects.css' %}">
     <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
     <script src="{% static 'splide/splide.js' %}"></script>
 
@@ -50,8 +51,8 @@ https://templatemo.com/tm-579-cyborg-gaming
       <div class="col-lg-12">
         <div class="page-content">
 
-          <!-- ***** Project Details Start ***** -->
-          <div class="vlt-project-details">
+          <!-- ***** Project Description Start ***** -->
+          <div class="vlt-project-description">
             <div class="row">
               <div class="col-lg-12">
                 <!-- Breadcrumbs -->
@@ -73,7 +74,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                                     {% for image in post.postimage_set.all %}
                                         {% if image.photo %}
                                             <li class="splide__slide">
-                                                <img src="{{ image.photo.url }}">
+                                                <img src="{{ image.photo.url }}" alt="">
                                             </li>
                                         {% endif %}
                                     {% endfor %}
@@ -84,45 +85,54 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </div>
                     <div class="col-lg-6">
                       <div class="left-info">
-                        <div class="left">
-                          <h4><i class="fa-solid fa-square"></i> {{ post.year }}기</h4>
-                          <span> {{ post.participant }}</span>
-                        </div>
+                        <h4><i class="fa-solid fa-hashtag"></i> {{ post.year }}기</h4>
+                        <p>{{ post.participant }}</p>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="right-info">
-                        <ul>
-                          <li><i class="fa fa-star"></i> 4.8</li>
-                          <li><i class="fa fa-download"></i> 2.3M</li>
-                          <li><i class="fa fa-server"></i> 36GB</li>
-                          <li><i class="fa fa-gamepad"></i> Action</li>
+                        <ul class="right-info-buttons">
+                          <!-- Like Button -->
+                          <li>
+                              <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
+                                   {% csrf_token %}
+                                    <button type="submit">
+                                        {% if user in post.like_users.all %}
+                                            <i class="fas fa-thumbs-up"></i>
+                                        {% else %}
+                                            <i class="far fa-thumbs-up fa-beat"></i>
+                                        {% endif %}
+                                    </button>
+                              </form>
+                          </li>
+                          <!-- PDF Button -->
+                          <li><a href=""><i class="fa fa-download"></i></a></li>
+                          <!-- Copy to Clipboard Button -->
+                          <li><a href=""><i class="fa fa-link"></i></a></li>
+                          <!-- Share Button -->
+                          <li><a href=""><i class="fa fa-arrow-up-from-bracket"></i></a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-12">
-                      <div class="description">
-                          <div class="title">
-                            <p>{{ post.title }}</p>
-                          </div>
-                          <div class="down-content">
-                            <p>{{ post.content|linebreaksbr }}</p>
-                          </div>
+                      <div class="down-content">
+                          <h2>{{ post.title }}</h2>
+                          <p>{{ post.content|linebreaksbr }}</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Splide JavaScript Code -->
+            <!-- Splide JavaScript Code -->
             <script>
                 const elms = document.getElementsByClassName('splide');
                 for (let i = 0; i < elms.length; i++) {
                     new Splide(elms[i]).mount();
                 }
             </script>
-          <!-- ***** Project Details End ***** -->
+          </div>
+          <!-- ***** Project Description End ***** -->
 
           <!-- ***** Team Comment Start ***** -->
           {% if post.comment_set.all %}
@@ -146,151 +156,41 @@ https://templatemo.com/tm-579-cyborg-gaming
           {% endif %}
           <!-- ***** Team Comment End ***** -->
 
-          <!-- ***** Featured Games Start ***** -->
+          <!-- ***** More Projects Start ***** -->
           <div class="row">
-            <div class="start-stream col-lg-12">
-              <div class="heading-section">
-                <h4>More Projects</h4>
-              </div>
+            <div class="col-lg-12">
+                <div class="explore-other-projects">
+                    <div class="heading-section">
+                        <h4>Explore Other Projects</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-8">
-              <div class="featured-games header-text">
-                <div class="heading-section">
-                  <h4>Explore Other Projects</h4>
+            <div class="col-lg-12">
+                <div class="vlt-more-projects header-text">
+                    <div class="heading-section">
+                        <h4>{{ all_posts.count }} Projects More</h4>
+                    </div>
+                    <div class="owl-features owl-carousel">
+                        {% for other_post in all_posts %}
+                            <div class="item">
+                                <div class="thumb">
+                                    {% if other_post.postimage_set.first %}
+                                        <a href="/volunteer/{{ other_post.id }}/">
+                                            <img src="{{ other_post.postimage_set.first.photo.url }}" alt="">
+                                        </a>
+                                    {% endif %}
+                                    <div class="hover-effect">
+                                        <h6><a href="/volunteer/{{ other_post.id }}/">View</a></h6>
+                                    </div>
+                                </div>
+                                <h4><i class="fa-solid fa-hashtag"></i> {{ other_post.year }}기<br><span>{{ other_post.title }}</span></h4>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="owl-features owl-carousel">
-                  <div class="item">
-                    <div class="thumb">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/featured-01.jpg' %}" alt="">
-                      <div class="hover-effect">
-                        <h6>2.4K Streaming</h6>
-                      </div>
-                    </div>
-                    <h4>CS-GO<br><span>249K Downloads</span></h4>
-                    <ul>
-                      <li><i class="fa fa-star"></i> 4.8</li>
-                      <li><i class="fa fa-download"></i> 2.3M</li>
-                    </ul>
-                  </div>
-                  <div class="item">
-                    <div class="thumb">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/featured-02.jpg' %}" alt="">
-                      <div class="hover-effect">
-                        <h6>2.4K Streaming</h6>
-                      </div>
-                    </div>
-                    <h4>Gamezer<br><span>249K Downloads</span></h4>
-                    <ul>
-                      <li><i class="fa fa-star"></i> 4.8</li>
-                      <li><i class="fa fa-download"></i> 2.3M</li>
-                    </ul>
-                  </div>
-                  <div class="item">
-                    <div class="thumb">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/featured-03.jpg' %}" alt="">
-                      <div class="hover-effect">
-                        <h6>2.4K Streaming</h6>
-                      </div>
-                    </div>
-                    <h4>Island Rusty<br><span>249K Downloads</span></h4>
-                    <ul>
-                      <li><i class="fa fa-star"></i> 4.8</li>
-                      <li><i class="fa fa-download"></i> 2.3M</li>
-                    </ul>
-                  </div>
-                  <div class="item">
-                    <div class="thumb">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/featured-01.jpg' %}" alt="">
-                      <div class="hover-effect">
-                        <h6>2.4K Streaming</h6>
-                      </div>
-                    </div>
-                    <h4>CS-GO<br><span>249K Downloads</span></h4>
-                    <ul>
-                      <li><i class="fa fa-star"></i> 4.8</li>
-                      <li><i class="fa fa-download"></i> 2.3M</li>
-                    </ul>
-                  </div>
-                  <div class="item">
-                    <div class="thumb">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/featured-02.jpg' %}" alt="">
-                      <div class="hover-effect">
-                        <h6>2.4K Streaming</h6>
-                      </div>
-                    </div>
-                    <h4>Gamezer<br><span>249K Downloads</span></h4>
-                    <ul>
-                      <li><i class="fa fa-star"></i> 4.8</li>
-                      <li><i class="fa fa-download"></i> 2.3M</li>
-                    </ul>
-                  </div>
-                  <div class="item">
-                    <div class="thumb">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/featured-03.jpg' %}" alt="">
-                      <div class="hover-effect">
-                        <h6>2.4K Streaming</h6>
-                      </div>
-                    </div>
-                    <h4>Island Rusty<br><span>249K Downloads</span></h4>
-                    <ul>
-                      <li><i class="fa fa-star"></i> 4.8</li>
-                      <li><i class="fa fa-download"></i> 2.3M</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="top-streamers">
-                <div class="heading-section">
-                  <h4>Discover Popular</h4>
-                </div>
-                <ul>
-                  <li>
-                    <span>01</span>
-                    <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/avatar-01.jpg' %}" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> LahutaM</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
-                  </li>
-                  <li>
-                    <span>02</span>
-                    <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/avatar-02.jpg' %}" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> Kengan</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
-                  </li>
-                  <li>
-                    <span>03</span>
-                    <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/avatar-03.jpg' %}" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> Areluwa</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
-                  </li>
-                  <li>
-                    <span>04</span>
-                    <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/avatar-04.jpg' %}" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> Omeg</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
-                  </li>
-                  <li>
-                    <span>05</span>
-                    <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/avatar-01.jpg' %}" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> GangTeam</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
-          <!-- ***** Featured Games End ***** -->
+          <!-- ***** More Projects End ***** -->
 
           <!-- ***** Live Stream Start ***** -->
           <div class="live-stream">

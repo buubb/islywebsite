@@ -37,8 +37,8 @@ class LikeUserInline(admin.TabularInline):
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = [
-        "title",
         "id",
+        "title",
         "year",
         "participant",
         "content",

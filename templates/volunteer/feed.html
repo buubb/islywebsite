@@ -1,4 +1,5 @@
-{% load static %}
+{% load static humanize %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,9 +24,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
 
-    <!-- Raon CSS Files -->
+    <!-- Raon Additional Files -->
     <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-banner.css' %}">
-    <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-project.css' %}">
+    <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-list.css' %}">
+
+
+     <!-- Raon Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
 
 <!--
@@ -48,7 +55,7 @@ https://templatemo.com/tm-579-cyborg-gaming
       <div class="col-lg-12">
         <div class="page-content">
 
-          <!-- ***** Volunteer Banner ***** -->
+          <!-- ***** Volunteer Banner Start ***** -->
           <div class="volunteer-banner">
             <div class="row">
               <div class="col-lg-7">
@@ -62,45 +69,45 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
             </div>
           </div>
-          <!-- ***** Volunteer Banner ***** -->
+          <!-- ***** Volunteer Banner End ***** -->
 
-          <!-- ***** Volunteer Project Start ***** -->
-          <div class="volunteer-project">
+          <!-- ***** Volunteer Project List Start ***** -->
+          <div class="vlt-list header-text">
             <div class="col-lg-12">
               <div class="heading-section">
-                <h4>Volunteer Projects</h4>
+                <h4><em>{{ posts.paginator.count }} Projects</em></h4>
               </div>
             </div>
             <div class="row">
               {% for post in posts %}
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="item">
                   <div class="thumb">
+                    <!-- Year/Title -->
+                    <div class="info">
+                        <p>{{ post.year|ordinal }}, 2023</p>
+                        <h2>{{ post.title|truncatechars:11 }}</h2>
+                    </div>
                     <!-- Thumbnail -->
                     {% if post.postimage_set.first %}
-                    <img src="{{ post.postimage_set.first.photo.url }}" alt="">
+                        <img src="{{ post.postimage_set.first.photo.url }}" alt="">
                     {% endif %}
+                    <!-- Hover Effect -->
                     <div class="hover-effect">
                       <div class="content">
-                        <div class="live">
-                          <a href="#"><i class="fa fa-heart"></i><b> {{ post.like_users.count }}</b></a>
-                        </div>
                         <ul>
-                          <li><a href="/volunteer/{{ post.id }}/"><b> View</b></a></li>
+                          <li><a href="#"><i class="fa-regular fa-images"></i> {{ post.postimage_set.count }}</a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i> {{ post.like_users.count }}</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="down-content">
-                    <!-- Year -->
-                    <span><i class="fa-solid fa-hashtag"></i><b> {{ post.year }}기</b></span>
-                    <!-- Post Title -->
-                    {% if post.title|length > 15 %}
-                        <h4>{{ post.title|slice:":15" }} ...</h4>
-                    {% else %}
-                        <h4>{{ post.title }}</h4>
-                    {% endif %}
-                  </div> 
+                    <h4>{{ post.content|truncatechars:75 }}</h4>
+                  </div>
+                  <div class="view-button">
+                      <a href="/volunteer/{{ post.id }}/">full story</a>
+                  </div>
                 </div>
               </div>
               {% endfor %}
@@ -111,7 +118,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
             </div>
           </div>
-          <!-- ***** Volunteer Project End ***** -->
+          <!-- ***** Volunteer Project List End ***** -->
 
         </div>
       </div>
