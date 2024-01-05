@@ -174,14 +174,18 @@ https://templatemo.com/tm-579-cyborg-gaming
                         {% for other_post in all_posts %}
                             <div class="item">
                                 <div class="thumb">
-                                    {% if other_post.postimage_set.first %}
-                                        <a href="/volunteer/{{ other_post.id }}/">
+                                  <a href="/volunteer/{{ other_post.id }}/">
+                                    <div class="more-images">
+                                        {% if other_post.postimage_set.first %}
                                             <img src="{{ other_post.postimage_set.first.photo.url }}" alt="">
-                                        </a>
-                                    {% endif %}
-                                    <div class="hover-effect">
-                                        <h6><a href="/volunteer/{{ other_post.id }}/">View</a></h6>
+                                        {% else %}
+                                            <img src="{% static '/volunteer/images/default-image.png' %}" alt="">
+                                        {% endif %}
                                     </div>
+                                    <div class="hover-effect">
+                                        <h6> View</h6>
+                                    </div>
+                                  </a>
                                 </div>
                                 <h4><i class="fa-solid fa-hashtag"></i> {{ other_post.year }}기<br><span>{{ other_post.title }}</span></h4>
                             </div>

@@ -1,0 +1,141 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.vlt-intro {
+  background-color: transparent;
+  border-radius: 0;
+  margin-top: 0;
+}
+
+
+/*
+---------------------------------------------
+Line
+---------------------------------------------
+*/
+
+.vlt-intro .line {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.vlt-intro .line::before,
+.vlt-intro .line::after {
+  content: "";
+  flex-grow: 1;
+  margin: 0px 16px;
+  background-color: #57f579; /* line color */
+  height: 1.5px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+/* y projects */
+.vlt-intro .line h6 {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 1rem;
+  color: #57f579;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+
+/*
+---------------------------------------------
+Major
+---------------------------------------------
+*/
+
+.vlt-intro .major {
+  padding: 6rem 8rem 2rem 8rem ;
+}
+
+/* I.Sly()의 다양한 프로젝트를 확인해 보세요! */
+.vlt-intro .major h4 {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.075em;
+}
+
+/* <em>Discover</em> Our<br/>Projects Here */
+.vlt-intro .major h2 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.07em;
+  margin: 0 0 2rem 0;
+}
+
+.vlt-intro h2 em {
+  font-style: normal;
+  color: #57f579;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+@media (max-width: 992px) {
+  /* y projects */
+  .vlt-intro .line h6 {
+    font-size: 0.9rem;
+  }
+
+  .vlt-intro .major {
+    padding: 6rem 4rem 2rem 4rem ;
+  }
+
+  /* I.Sly()의 다양한 프로젝트를 확인해 보세요! */
+  .vlt-intro .major h4 {
+    font-size: 1rem;
+  }
+
+  /* Discover Our Projects Here */
+  .vlt-intro .major h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .vlt-intro .line {
+    margin-top: 20px;
+  }
+
+  /* y projects */
+  .vlt-intro .line h6 {
+    font-size: 0.8rem;
+  }
+
+  .vlt-intro .major {
+    padding: 4rem 2rem 1rem 2rem ;
+  }
+
+  /* I.Sly()의 다양한 프로젝트를 확인해 보세요! */
+  .vlt-intro .major h4 {
+    font-size: 0.8rem;
+  }
+
+  /* Discover Our Projects Here */
+  .vlt-intro .major h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+  }
+}
