@@ -4,13 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d68d137-910d-4430-b3d8-426a7b00fe34" name="Changes" comment="">
+    <list default="true" id="2eb12c95-9ce7-4bb1-8453-073e24bc122c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/vlt-more-projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/vlt-more-projects.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-banner.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/1_E9mV5O9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/2_SvjhZg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/3_v7IJthC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_10_8S2SGbE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_10_J02uJ0w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_10_LZQdtYg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_10_fGRwgzd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_10_lbwLoSs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/post/post_11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_11_N034qYe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_11_a6XkYx8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_11_aQWnmNI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_11_kePdOKJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_11_yM64up7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_12_kaRFbf3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_12_t3W0FpJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_13_RP8XKRi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_13_hYrmzvO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_14_I4e723U.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_14_QU1c2Pf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_15_SF4eMhV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_15_iInzfnk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_16_BY4uJZr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_16_H3xZMvE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_17_WROeumA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_17_uvlAp3h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_18_6Onyplp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_18_lzxYSPS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_19_HbsZpnG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_19_LDX7fPs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_19_bbvYLSq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_19_ceRy2Sc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_19_wu5c1Hf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_9QWqzXp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_CbiBsQ0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_NBDPeaa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_OmpQZK6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_XwFMKT7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_g1QEYQ9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_jfwIOUD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_qScWPDC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_1_rBEvyVh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_20_kBlWUgR.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_20_wR3uIs4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_3_DKmOqaY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_3_QDU0CdQ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_3_QYrvQ02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_3_YcEp2qJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_4_E8L6H55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_4_JzQAFVz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_4_oLNHhHl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_4_otzRn05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_4_zBzLmbo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_5_Fjktr3U.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_5_Fth9eW1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_8_5YtscNt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_8_IBZAlpO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_9_oejgzu5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_9_xT44xVB.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/volunteer-intro.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +105,7 @@
   "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2aXcliw2OAOkXUAgkKYvCDFjLMo" />
+  <component name="ProjectId" id="2aZ0EAjZfUs5s02tzle006eW2Zo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,12 +123,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\images" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -79,12 +151,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8d68d137-910d-4430-b3d8-426a7b00fe34" name="Changes" comment="" />
-      <created>1704468518099</created>
+      <changelist id="2eb12c95-9ce7-4bb1-8453-073e24bc122c" name="Changes" comment="" />
+      <created>1704510680757</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704468518099</updated>
-      <workItem from="1704468521423" duration="1255000" />
+      <updated>1704510680757</updated>
+      <workItem from="1704510683979" duration="14715000" />
     </task>
     <servers />
   </component>
