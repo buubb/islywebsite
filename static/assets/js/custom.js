@@ -202,20 +202,29 @@
 	    });
 	});
 
-	function onScroll(event){
-	    var scrollPos = $(document).scrollTop();
-	    $('.nav a').each(function () {
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('.nav ul li a').removeClass("active");
-	            currLink.addClass("active");
-	        }
-	        else{
-	            currLink.removeClass("active");
-	        }
-	    });
+	function onScroll(event) {
+		var scrollPos = $(document).scrollTop();
+		$('.nav a').each(function () {
+			var currLink = $(this);
+
+			// Get the href attribute and remove '#' from the beginning
+			var hrefValue = currLink.attr("href").replace(/^#/, '');
+
+			// Check if hrefValue is a valid ID selector
+			if (hrefValue && /^[a-zA-Z][\w-]*$/.test(hrefValue)) {
+				var refElement = $('#' + hrefValue);
+
+				// Check if refElement exists and position() is not undefined before accessing 'top'
+				if (refElement.length && refElement.position() && refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+					$('.nav ul li a').removeClass("active");
+					currLink.addClass("active");
+				} else {
+					currLink.removeClass("active");
+				}
+			}
+		});
 	}
+
 
 
 	// Page loading animation
