@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ad7740-10b6-443b-94ac-94dec7b3ccfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/volunteer/css/volunteer-list.css" afterDir="false" />
+    <list default="true" id="0bc59ee5-bc19-4175-a3b4-6790d73956b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/images/default-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/images/default-image.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
   "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2aF6pbW0I9KrGsggyWVenqoynlT" />
+  <component name="ProjectId" id="2af23ZWWqCzBNGUGlwUSOnkgWXU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,7 +44,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,12 +75,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2ad7740-10b6-443b-94ac-94dec7b3ccfe" name="Changes" comment="" />
-      <created>1703902165089</created>
+      <changelist id="0bc59ee5-bc19-4175-a3b4-6790d73956b4" name="Changes" comment="" />
+      <created>1704695115461</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1703902165089</updated>
-      <workItem from="1703902167549" duration="758000" />
+      <updated>1704695115461</updated>
+      <workItem from="1704695117747" duration="318000" />
     </task>
     <servers />
   </component>

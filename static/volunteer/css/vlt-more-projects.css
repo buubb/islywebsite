@@ -45,23 +45,11 @@ Featured Games Style
 .vlt-more-projects .item .thumb .hover-effect h6 {
   background-color: rgba(31,33,34,0.95);
   display: inline-block;
-  /* color: #57f579; */
-  /* font-weight: 600; */
-  /* font-size: 14px; */
-  padding: 10px 20px;
-  border-radius: 25px;
-}
-
-.vlt-more-projects .item .thumb .hover-effect h6 a {
-  color: #57f579; /* Default text color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.4s; /* Add transition for smooth color change */
+  color: #57f579;
   font-weight: 600;
   font-size: 15px;
-}
-
-.vlt-more-projects .item .thumb .hover-effect h6 a:hover {
-  color: #fff; /* Hover text color */
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 
 /* image */

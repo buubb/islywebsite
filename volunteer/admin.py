@@ -39,7 +39,7 @@ class PostAdmin(admin.ModelAdmin):
     list_display = [
         "id",
         "title",
-        "year",
+        "generation",
         "participant",
         "content",
         "created",
