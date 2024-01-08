@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1002893-7ca9-4d06-9515-fef01680a425" name="Changes" comment="">
+    <list default="true" id="266dfefb-2f66-435b-9297-392a3bca20bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_12_n6jddSj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_15_kZ9vdKJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/vlt-more-projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/vlt-more-projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/volunteer-intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/volunteer-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-project.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +31,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
+  "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2afOvqR3LbSsyLSq9ZVrnqVrv7a" />
+  <component name="ProjectId" id="2ag08UC6Fc83DH5bt4XZp0tbF2s" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,12 +79,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e1002893-7ca9-4d06-9515-fef01680a425" name="Changes" comment="" />
-      <created>1704706400917</created>
+      <changelist id="266dfefb-2f66-435b-9297-392a3bca20bd" name="Changes" comment="" />
+      <created>1704724758456</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704706400917</updated>
-      <workItem from="1704706403829" duration="615000" />
+      <updated>1704724758456</updated>
+      <workItem from="1704724760270" duration="1973000" />
     </task>
     <servers />
   </component>

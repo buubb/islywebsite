@@ -1,4 +1,4 @@
-{% load static %}
+{% load static humanize %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -169,11 +169,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="col-lg-12">
                     <div class="vlt-more-projects header-text">
                         <div class="heading-section">
-                            {% if all_posts.count == 1 %}
-                                <h4>{{ all_posts.count }} Project More</h4>
-                            {% else %}
-                                <h4>{{ all_posts.count }} Projects More</h4>
-                            {% endif %}
+                            <h4>{{ all_posts.count }} Project{{ all_posts.count|pluralize }} More</h4>
                         </div>
                         <div class="owl-features owl-carousel">
                             {% for other_post in all_posts %}
