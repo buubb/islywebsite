@@ -23,17 +23,17 @@ Card
 */
 
 .vlt-list .card {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0, 1);
+  transition: all 0.3s;
   background-color: #1f2122;
   position: relative;
   border-radius: 23px;
   overflow: hidden;
-  box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 10px -2px rgba(0,0,0,0.5);
 }
 
 .vlt-list .card:hover {
-  box-shadow: 0 30px 18px -8px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1, 1.1);
+  box-shadow: 0 17px 19px -2px rgba(0,0,0,0.8);
+  transform: translate(0,-4px);
 }
 
 .vlt-list .card__img {
@@ -93,6 +93,43 @@ Card
 
 /*
 ---------------------------------------------
+Load More button
+---------------------------------------------
+*/
+
+.vlt-list .load-more-button {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.vlt-list .load-more-button a {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.085em;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  padding: 0 2rem;
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.vlt-list .load-more-button a:hover {
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+/*
+---------------------------------------------
 main-button
 ---------------------------------------------
 */
@@ -145,5 +182,13 @@ Responsive Style
 @media (max-width: 767.98px) {
   .vlt-list .item {
     margin-bottom: 30px;
+  }
+
+  .vlt-list .load-more-button {
+    margin-bottom: 2.5rem;
+  }
+
+  .vlt-list .load-more-button a {
+    display: block;
   }
 }
