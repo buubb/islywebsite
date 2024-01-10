@@ -1,27 +1,52 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
 from volunteer.models import Post
-from django.core.paginator import Paginator
+from django.contrib.humanize.templatetags.humanize import ordinal
 from django.contrib.auth.decorators import login_required
 
 
 def feed(request):
-    posts = Post.objects.all().order_by('-created')
+    # 처음에 보여줄 포스트 개수
+    initial_post_count = 6
 
-    # Paging
-    per_page = 12
-    paginator = Paginator(posts, per_page)
-    page_number = request.GET.get("page")  # Get the current page number
-    posts = paginator.get_page(page_number)  # Retrieve the list of posts for the requested page
+    # 처음에 보여줄 포스트 데이터 조회
+    posts = Post.objects.all().order_by("-generation")[:initial_post_count]
 
-    context = {"posts": posts, "page_number": page_number}
+    context = {"posts": posts}
     return render(request, "volunteer/feed.html", context)
+
+
+def load_more(request):
+    # 현재까지 보여준 포스트의 개수를 받아옴
+    current_count = int(request.GET.get("current_count", 0))
+
+    # 추가로 불러올 포스트 개수
+    load_count = 6
+
+    # 새로 불러올 포스트
+    additional_posts = Post.objects.all().order_by("-generation")[current_count:current_count + load_count]
+
+    # 포스트 정보를 JSON으로 변환하여 반환
+    data = []
+    for post in additional_posts:
+        data.append({
+            "id": post.id,
+            "generation_ordinal": ordinal(post.generation),  # 서수 변환 적용
+            "year": post.year,
+            "title": post.title,
+            "like_count": post.like_users.count(),
+            "image_url": post.postimage_set.first().photo.url if post.postimage_set.first() else "/static/volunteer/images/default-image.png",
+        })
+
+    no_more_posts = current_count + load_count >= Post.objects.count()
+
+    return JsonResponse({"posts": data, "no_more_posts": no_more_posts})
 
 
 def post_detail(request, post_id):
     post = Post.objects.get(id=post_id)
-    all_posts = Post.objects.exclude(id=post_id).order_by('-created')
+    all_posts = Post.objects.exclude(id=post_id).order_by("-created")
 
     context = {
         "post": post,

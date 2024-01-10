@@ -1,5 +1,4 @@
 {% load static humanize %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +26,7 @@
     <!-- Raon Additional Files -->
     <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-intro.css' %}">
     <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-list.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
     <!-- Raon Fonts -->
@@ -59,17 +59,7 @@ https://templatemo.com/tm-579-cyborg-gaming
           <div class="vlt-intro">
             <div class="row">
                <div class="col-lg-12">
-                    <div class="line">
-                      {% if posts.paginator.count == 0 or posts.paginator.count == 1 %}
-                        <h6>{{ posts.paginator.count }} Project</h6>
-                      {% else %}
-                        <h6>{{ posts.paginator.count }} Projects</h6>
-                      {% endif %}
-                    </div>
-               </div>
-               <div class="col-lg-12">
                     <div class="major">
-                      <h4>I.Sly()의 재능기부 프로젝트를 확인해 보세요</h4>
                       <h2><em>Discover</em> Our<br/> Projects Here!</h2>
                     </div>
                </div>
@@ -79,9 +69,9 @@ https://templatemo.com/tm-579-cyborg-gaming
 
           <!-- ***** Volunteer Project List Start ***** -->
           <div class="vlt-list header-text">
-            <div class="row">
+            <div class="row" id="card-container">
                 {% for post in posts %}
-                  <div class="col-xl-4 col-lg-6 col-sm-12">
+                  <div class="col-xl-4 col-lg-6 col-sm-6">
                       <div class="item">
                           <div class="card">
                             <a href="/volunteer/{{ post.id }}/" class="card_link">
@@ -94,13 +84,13 @@ https://templatemo.com/tm-579-cyborg-gaming
                                 </div>
                                 <div class="card__info">
                                   <span class="card__category"> {{ post.generation|ordinal }}, {{ post.year }}</span>
-                                  <h3 class="card__title"> {{ post.title|truncatechars:20 }}</h3>
+                                  <h3 class="card__title"> {{ post.title }}</h3>
                                   <span class="card__like">
                                       <i class="fa-solid fa-heart"></i>
                                       {% if post.like_users.count == 0 or post.like_users.count == 1 %}
-                                        {{ post.like_users.count }} Like
+                                        {{ post.like_users.count }} like
                                       {% else %}
-                                        {{ post.like_users.count }} Likes
+                                        {{ post.like_users.count }} likes
                                       {% endif %}
                                   </span>
                                 </div>
@@ -112,13 +102,64 @@ https://templatemo.com/tm-579-cyborg-gaming
             </div>
             <div class="row">
               <div class="col-lg-12">
-                <div class="main-button">
-                  <a href="#">View More Projects</a>
+                <div class="load-more-button" id="LoadMore">
+                  <a href="#">Load More <i class="fa-solid fa-angle-down"></i></a>
                 </div>
               </div>
             </div>
           </div>
           <!-- ***** Volunteer Project List End ***** -->
+
+          <script>
+                // Load more 버튼 클릭 시 실행할 JavaScript 코드
+                document.getElementById('LoadMore').addEventListener('click', function (event) {
+                    // 기본 동작 방지
+                    event.preventDefault();
+
+                    // 현재까지 보여준 포스트 개수 계산
+                    var currentCount = document.getElementById('card-container').children.length;
+
+                    // Ajax를 이용하여 서버에 요청을 보내고 새로운 포스트를 받아옴
+                    $.ajax({
+                        url: '{% url "Volunteer:load_more" %}',
+                        data: { 'current_count': currentCount },
+                        dataType: 'json',
+                        success: function (data) {
+                            // 받아온 포스트를 동적으로 추가
+                            var container = document.getElementById('card-container');
+                            data.posts.forEach(function (post) {
+                                var generationOrdinal = post.generation_ordinal;
+
+                                var html = '<div class="col-xl-4 col-lg-6 col-sm-6">' +
+                                    '<div class="item">' +
+                                    '<div class="card">' +
+                                    '<a href="/volunteer/' + post.id + '/" class="card_link">' +
+                                    '<div class="card__img">' +
+                                    '<img src="' + post.image_url + '" alt="">' +
+                                    '</div>' +
+                                    '<div class="card__info">' +
+                                    '<span class="card__category">' + generationOrdinal + ', ' + post.year + '</span>' +
+                                    '<h3 class="card__title">' + post.title + '</h3>' +
+                                    '<span class="card__like"><i class="fa-solid fa-heart"></i> ' +
+                                    (post.like_count === 0 || post.like_count === 1 ? post.like_count + ' like' : post.like_count + ' likes') +
+                                    '</span>' +
+                                    '</div>' +
+                                    '</a>' +
+                                    '</div>' +
+                                    '</div>' +
+                                    '</div>';
+
+                                container.insertAdjacentHTML('beforeend', html);
+                            });
+
+                            // 더 이상 로드할 포스트가 없는 경우, Load more 버튼 숨기기
+                            if (data.no_more_posts) {
+                                document.getElementById('LoadMore').style.display = 'none';
+                            }
+                        }
+                    });
+                });
+          </script>
 
         </div>
       </div>
