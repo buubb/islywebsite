@@ -51,10 +51,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <form method="post" action="{% url 'login' %}">
                   {% csrf_token %} <!-- *CSRF 공격 방지하기 위함 -->
 
-                  <!-- Raon added -->
+                  <!-- Raon Added Start -->
                   {% if request.GET.next %}
                       <input type="hidden" name="next" value="{{ request.GET.next }}">
                   {% endif %}
+                  <!-- Raon Added End -->
 
                   {% include "login/error.html" %}
                   

@@ -17,17 +17,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Summernote 스크립트 -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
- 
+
      <style>
        #summernote {
            background-color: white !important;
-          
+
        }
        .note-toolbar {
        background-color: white !important;
    }
    </style>
-    
+
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -39,8 +39,8 @@
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-   
-  
+
+
 <!--
 
 TemplateMo 579 Cyborg Gaming
@@ -160,10 +160,10 @@ https://templatemo.com/tm-579-cyborg-gaming
         <label for="content" class="form-label">내용</label>
         <textarea class="form-control" name="content" id="summernote" rows="10" style="background-color: white !important; color: black !important;">{{ form.content.value|default_if_none:''|safe }}</textarea>
 
-        
+
 
         </div>
-    
+
         <button type="submit" class="btn btn-primary">글쓰기</button>
     </form>
 </div>
