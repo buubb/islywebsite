@@ -123,8 +123,18 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <img src="" alt="" style="border-radius: 23px;">
                   </div>
                   <div class="col-lg-12">
-                    <div class="thumb">
-                      <h5> post page </h5>
+                    <div class="border-bottom py-2">
+                      <h1>{{ post.title }}</h1>
+                      <div class="d-flex justify-content-end">
+                        <div style="color: white;">{{ post.created_at }}</div>
+                      </div>
+                    <div class="my-3">
+                        {% if request.user == post.author %}
+                        <a href="{% url 'post_modify' post.id %}" class="btn btn-sm btn-outline-secondary">수정</a>
+                        {% endif %}
+                    </div>
+                    <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary"
+                    data-uri="{% url 'post_delete' post.id %}">삭제</a>
 
                       <img src="" alt="" style="border-radius: 23px;">
 
@@ -138,51 +148,31 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 
           <!-- ***** Details Start ***** -->
-          {% autoescape on %}
-          <div class="game-details">
-            <div class="row">
-              <div class="col-lg-12">
-                <div id="acontent" class="content" style="border-radius: 5px">
-                  <div class="row">
-                          <ul>
-                            <li>
-                              <ul>
-                                <li style=" font-size: 1.9rem">Title: {{ post.title }}</li>
-                                <li style=" font-size: 1.2rem">{{ post.created_at }} by {{author}}</li>
-                                <li class="view-count"><i class="bi bi-eye-fill"></i> {{ post.view_count }}</li>
-                              </ul>
-                            </li>
-                          </ul>
-                  </div>
+          {% load static %}
+          <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+            <div class="container my-3">
+            <div class="game-details">
+                <div class="row">
+                    <h3></h3>
                 </div>
-               </div>
+                    <div class="col-lg-12">
+                        <div id="acontent" class="content">
+                            <div class="row">
+
+                            <ul>
+                            <li>
+                            <div class="card-text">{{ post.content | safe}}</div>
+                            </li>
+                            </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            </div>
 
           <img src="" alt="" style="border-radius: 16px;">
-
-          <div class="game-details">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div id="acontent" class="content" style="border-radius: 5px">
-                          <div class="row">
-                              <ul>
-                                  <li>
-                                      <ul>
-                                          <li style="font-size: 1.2rem">{{ post.get_content_markdown }}</li>
-                                      </ul>
-                                  </li>
-                              </ul>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-
-          <img src="" alt="" style="border-radius: 16px;">
-          {% endautoescape %}
           <!-- ***** Details End ***** -->
 
 

@@ -1,28 +1,25 @@
 # backend
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse_lazy
-from django.shortcuts import render, get_object_or_404
-from django.views.generic.edit import CreateView, UpdateView
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import BasicAssignment, AdvancedAssignment
 from .forms import AdvancedAssignmentForm, BasicAssignmentForm
+from django.utils import timezone
 from django.core.paginator import Paginator
+from django.contrib.auth.decorators import login_required
 
-def BasicBlog(request):
+def BasicList(request):
     postlist1 = BasicAssignment.objects.order_by('-created_at')
+
     paginator = Paginator(postlist1, 10)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
     return render(request, 'assignments/basiclist.html', {'page': page})
 
-def AdvancedBlog(request):
+def AdvancedList(request):
     # AdvancedAssignment 모델의 모든 게시물을 가져와서 'created_at' 필드를 기준으로 내림차순 정렬합니다.
     postlist2 = AdvancedAssignment.objects.all().order_by('-created_at')
 
-    # Paginator 객체를 생성하고 한 페이지당 10개의 아이템을 표시합니다.
     paginator = Paginator(postlist2, 10)
-    # 클라이언트 요청에서 현재 페이지 번호를 가져옵니다.
     page_number = request.GET.get('page')
-    # 요청된 페이지 번호로 페이지 객체를 가져옵니다.
     page = paginator.get_page(page_number)
     return render(request, 'assignments/advancedlist.html', {'page': page})
 
@@ -55,38 +52,34 @@ def AdvancedPosting(request, post_id):
     # 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'assignments/post.html', {'post': post, 'author': author})
 
+@login_required(login_url='common:login')
+def BasicCreate(request):
+    if request.method == 'POST':
+        form = BasicAssignmentForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.create_at = timezone.now()
+            post.save()
+            return redirect('basic')
+    else:
+        form = BasicAssignmentForm()
 
-class BasicCreate(LoginRequiredMixin, CreateView):
-    model = BasicAssignment
-    form_class = BasicAssignmentForm
-    template_name = 'assignments/submit.html'
-    success_url = reverse_lazy('basic')
+    context = {'form': form}
+    return render(request, 'assignments/submit.html', context)
 
-    def form_valid(self, form):
-        # 현재 로그인한 사용자를 작성자로 설정
-        form.instance.author = self.request.user
-        return super().form_valid(form)
+@login_required(login_url='common:login')
+def AdvancedCreate(request):
+    if request.method == 'POST':
+        form = AdvancedAssignmentForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.create_at = timezone.now()
+            post.save()
+            return redirect('advanced')
+    else:
+        form = AdvancedAssignmentForm()
 
-class AdvancedCreate(LoginRequiredMixin, CreateView):
-    model = AdvancedAssignment
-    form_class = AdvancedAssignmentForm  # 사용할 폼 클래스 설정
-    template_name = 'assignments/submit.html'  # 기본 템플릿 설정
-    success_url = reverse_lazy('advanced')  # 성공 시 리디렉션할 URL 지정
-
-    def form_valid(self, form):
-        # 현재 로그인한 사용자를 작성자로 설정
-        form.instance.author = self.request.user
-        return super().form_valid(form)
-
-
-class BasicUpdate(LoginRequiredMixin, UpdateView):
-    model = BasicAssignment
-    form_class = BasicAssignmentForm
-    template_name = 'assignments/edit.html'  # 수정 페이지 템플릿
-    success_url = reverse_lazy('basic')  # 수정 성공 시 리디렉션할 URL 지정
-
-class AdvancedUpdate(LoginRequiredMixin, UpdateView):
-    model = AdvancedAssignment
-    form_class = AdvancedAssignmentForm
-    template_name = 'assignments/edit.html'  # 수정 페이지 템플릿
-    success_url = reverse_lazy('advanced')  # 수정 성공 시 리디렉션할 URL 지정
+    context = {'form': form}
+    return render(request, 'assignments/submit.html', context)
