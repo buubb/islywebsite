@@ -7,9 +7,12 @@
 - pip install django-admin-thumbnails //일반
 - pip install ‘django-admin-thumbnails<0.3’ //파이참 이용자
 - python -m pip install Pillow //일반
-- python -m pip install ‘Pillow<10’ //파이참 이용자# git 사용 방법
+- python -m pip install ‘Pillow<10’ //파이참 이용자
+- pip install django-session-timeout // 세션 설정에 필요한 패키지
+- pip install django-brutebuster // 관리자가 차단된 계정을 수동으로 해제할 수 있음
 - pip install bandit // 보안 취약점 점검 툴
 - pip install cmarkgfm
+
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
 
@@ -56,18 +59,5 @@
 | 순번 | Github ID | 
 | ---- | --------- |
 | - | - |
-
-# Requirement
-- pip install djangorestframework
-- pip install summernote
-- pip install mysqlclient
-- User 테이블 사용은 https://han-py.tistory.com/353 참고
-- pip install django-extensions
-- pip install django-admin-thumbnails //일반
-- pip install ‘django-admin-thumbnails<0.3’ //파이참 이용자
-- python -m pip install Pillow //일반
-- python -m pip install ‘Pillow<10’ //파이참 이용자
-- pip install django-session-timeout // 세션 설정에 필요한 패키지
-- pip install django-brutebuster // 관리자가 차단된 계정을 수동으로 해제할 수 있음
 =======
 >>>>>>> 463fbe33090c39f1a6da22e6a8f4a963ccd39b86
