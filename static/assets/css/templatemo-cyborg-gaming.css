@@ -67,8 +67,11 @@ ul, li {
   margin: 0;
   list-style: none;
 }
-
-header, nav, section, article, aside, footer, hgroup {
+header{
+  display:block;
+  position:fixed;
+}
+nav, section, article, aside, footer, hgroup {
   display: block;
 }
 
@@ -351,7 +354,8 @@ Header Style
 
 .header-area {
   background-color: transparent;
-  position: absolute;
+  /* 원래 absolute였음*/
+  position: fixed;
   height: 70px;
   top: 10px;
   left: 0;
