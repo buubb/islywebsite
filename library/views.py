@@ -44,7 +44,7 @@ def post_create(request):
             return redirect('Library')
     else: 
         form = PostForm()
-    context = {'form':form}
+    context = {'form': form}
     return render(request, 'library/library_write.html', context)
 
 def post_modify(request, post_id):
