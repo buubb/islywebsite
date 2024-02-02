@@ -104,13 +104,14 @@ header nav .nav li:last-child a.active {
     color: #5ee773!important;
     background-color: #27292a!important;
 }
-header nav .nav li:last-child a {
+header nav .nav .nav-item a {
   background-color: transparent;
   color: #666;
   background-color: #27292a!important;
   padding: 8px 10px 8px 20px;
   border-radius: 23px;
   letter-spacing: .3px;
+  vertical-align: middle;
 }
 header nav .nav li:last-child a img {
     max-width: 30px;
