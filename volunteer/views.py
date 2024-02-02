@@ -8,10 +8,10 @@ from django.contrib.auth.decorators import login_required
 
 
 def feed(request):
-    # 처음에 보여줄 포스트 개수
+    # 초기 포스트 개수
     initial_post_count = 6
 
-    # 처음에 보여줄 포스트 데이터 조회
+    # 내림차순 정렬
     posts = Post.objects.all().order_by("-generation")[:initial_post_count]
 
     context = {"posts": posts}
@@ -25,10 +25,10 @@ def load_more(request):
     # 추가로 불러올 포스트 개수
     load_count = 6
 
-    # 새로 불러올 포스트
+    # 내림차순 정렬
     additional_posts = Post.objects.all().order_by("-generation")[current_count:current_count + load_count]
 
-    # 포스트 정보를 JSON으로 변환하여 반환
+    # 포스트 정보를 JSON 형태로 변환
     data = []
     for post in additional_posts:
         data.append({
@@ -40,6 +40,7 @@ def load_more(request):
             "image_url": post.postimage_set.first().photo.url if post.postimage_set.first() else "/static/volunteer/images/default-image.png",
         })
 
+    # 추가로 불러올 포스트가 더 이상 없는지 확인
     no_more_posts = current_count + load_count >= Post.objects.count()
 
     return JsonResponse({"posts": data, "no_more_posts": no_more_posts})
@@ -82,7 +83,7 @@ def post_add(request):
 
 def post_detail(request, post_id):
     post = Post.objects.get(id=post_id)
-    all_posts = Post.objects.exclude(id=post_id).order_by("-created")
+    all_posts = Post.objects.exclude(id=post_id).order_by("generation")  # 오름차순 정렬
 
     context = {
         "post": post,
