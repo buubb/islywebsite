@@ -13,9 +13,14 @@ header{
 }
 
 header nav{
+    min-height: 80px;
     position: relative;
+    display: flex;
     background: transparent;
-    padding: 15px 0px;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 15px 0px 15px 200px;
     border-radius: 0px;
 }
 header nav .logo{
@@ -38,11 +43,34 @@ header nav .logo img{
     vertical-align: middle;
     width: 70px;
 }
+header nav #search {
+    position: relative;
 
+  }
+  
+header nav #search input {
+    background-color: #27292a;
+    height: 46px;
+    border-radius: 23px;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    padding: 0px 15px 0px 45px;
+  }
+  
+header nav #search i {
+    position: absolute;
+    color: #666;
+    left: 20px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+  }
 header nav .nav{
     display: inline-flex;
     flex-basis: 70%;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     vertical-align: middle;
     text-align: right;
     margin-top: 0px;
@@ -83,7 +111,7 @@ header nav .nav li a{
 ul{list-style:none;}
 a{text-decoration:none; color:#333;}
 .nav:after{display:block; content:''; clear:both;}
-.nav > .dropdown{position:relative; float:left; margin-right:5px;text-align:center;}
+.nav > .dropdown{position:relative; float:left; margin-right:5px;}
 .nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:50px;}
 .nav > .dropdown:hover .depth_1 {display:block;}
 .nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);
@@ -93,27 +121,29 @@ a{text-decoration:none; color:#333;}
 .nav .depth_1 a{display:block; padding:12px 16px; background: transparent; color:#fff;}
 .nav .depth_1 a:hover{color: #5ee773!important;background-color: #27292a!important;}
 
-header nav .nav .nav-item li:hover a,
-header nav .nav .nav-item li a.active {
-    color: #5ee773!important;
-    background-color: #27292a!important;
+header nav .nav .nav-item a:hover,
+header nav .nav .nav-item a.active {
+    color: #fff !important;
+    background-color: #5ee775 !important;
 }
-
+header nav .nav li:hover a{
+    color:aliceblue;
+}
 header nav .nav li:last-child:hover a,
 header nav .nav li:last-child a.active {
-    color: #5ee773!important;
-    background-color: #27292a!important;
+    color: #5ee773;
+    background-color: #27292a;
 }
 header nav .nav .nav-item a {
   background-color: transparent;
   color: #666;
   background-color: #27292a!important;
-  padding: 8px 10px 8px 20px;
+  /*padding: 8px 10px 8px 20px;*/ 
   border-radius: 23px;
   letter-spacing: .3px;
-  vertical-align: middle;
 }
-header nav .nav li:last-child a img {
+
+header nav .nav .nav-item a img {
     max-width: 30px;
     border-radius: 50%;
     margin-left: 5px;
