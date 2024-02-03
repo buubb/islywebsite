@@ -26,6 +26,5 @@ class PostForm(forms.ModelForm):
             "title",
             "year",
             "generation",
-            "participant",
             "content",
         ]

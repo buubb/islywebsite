@@ -40,7 +40,6 @@ class PostAdmin(admin.ModelAdmin):
         "id",
         "title",
         "generation",
-        "participant",
         "content",
         "created",
     ]

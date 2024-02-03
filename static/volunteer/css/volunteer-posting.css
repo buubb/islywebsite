@@ -4,12 +4,25 @@ Basic
 ---------------------------------------------
 */
 
-.vlt-add {
-    padding: 20px 150px;
+.vlt-posting {
+    padding: 20px 160px;
 }
 
-/* Fill Out */
-.vlt-add h2.major {
+
+/*
+---------------------------------------------
+Headline
+---------------------------------------------
+*/
+
+.vlt-posting .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Write */
+.vlt-posting h2.major {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #fff;
     font-size: 2.25rem;
@@ -23,6 +36,43 @@ Basic
     margin: 0 0 2.5rem 0;
 }
 
+/* Save Button */
+.vlt-posting button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #1b1f22;
+    background-color: #fff;
+    border: 0;
+    border-radius: 1.5px;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    padding: 0 1.25rem 0 1.35rem;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 2.5rem 0;
+}
+
+.vlt-posting button:hover {
+    background-color: #e1e2e2;
+    opacity: 1;
+}
+
 
 /*
 ---------------------------------------------
@@ -30,11 +80,11 @@ Form
 ---------------------------------------------
 */
 
-.vlt-add .form {
+.vlt-posting .form {
     margin: 0 0 2rem 0;
 }
 
-.vlt-add .fields {
+.vlt-posting .fields {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -47,7 +97,7 @@ Form
     margin: -1.5rem 0 2rem -1.5rem;
 }
 
-.vlt-add .fields .field {
+.vlt-posting .fields .field {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -60,7 +110,7 @@ Form
     width: calc(100% - 1.5rem);
 }
 
-.vlt-add .fields .field.half {
+.vlt-posting .fields .field.half {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -80,7 +130,13 @@ Label
 ---------------------------------------------
 */
 
-.vlt-add label {
+.vlt-posting .label-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vlt-posting label {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #fff;
     display: block;
@@ -92,10 +148,43 @@ Label
     text-transform: uppercase;
 }
 
-.vlt-add input[type="text"],
-.vlt-add input[type="number"],
-.vlt-add input[type="file"],
-.vlt-add textarea {
+/* title-counter */
+.vlt-posting span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #aaa;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: none;
+}
+
+/* title-feedback */
+.vlt-posting p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #57f579;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+
+/*
+---------------------------------------------
+Input
+---------------------------------------------
+*/
+
+.vlt-posting input[type="text"],
+.vlt-posting input[type="number"],
+.vlt-posting input[type="file"],
+.vlt-posting textarea {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -119,17 +208,17 @@ Label
     resize: none;
 }
 
-.vlt-add input[type="text"]:invalid,
-.vlt-add input[type="number"]:invalid,
-.vlt-add input[type="file"]:invalid,
-.vlt-add textarea:invalid {
+.vlt-posting input[type="text"]:invalid,
+.vlt-posting input[type="number"]:invalid,
+.vlt-posting input[type="file"]:invalid,
+.vlt-posting textarea:invalid {
     box-shadow: none;
 }
 
-.vlt-add input[type="text"]:focus,
-.vlt-add input[type="number"]:focus,
-.vlt-add input[type="file"]:focus,
-.vlt-add textarea:focus {
+.vlt-posting input[type="text"]:focus,
+.vlt-posting input[type="number"]:focus,
+.vlt-posting input[type="file"]:focus,
+.vlt-posting textarea:focus {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #fff;
     font-size: 1rem;
@@ -139,60 +228,24 @@ Label
     box-shadow: 0 0 0 1px #fff;
 }
 
-.vlt-add input[type="text"],
-.vlt-add input[type="number"] {
+.vlt-posting input[type="text"],
+.vlt-posting input[type="number"] {
     height: 3.25rem;
 }
 
-.vlt-add input[type="file"] {
+.vlt-posting input[type="file"] {
     height: 3.25rem;
     padding: 10px;
 }
 
-.vlt-add textarea {
+.vlt-posting textarea {
     padding: 0.75rem 1rem;
 }
 
-
-/*
----------------------------------------------
-Button
----------------------------------------------
-*/
-
-.vlt-add button.vlt__1 {
-    -moz-appearance: none;
+.vlt-posting input[type='number']::-webkit-outer-spin-button,
+.vlt-posting input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    color: #1b1f22;
-    background-color: #fff;
-    border: 0;
-    border-radius: 1.5px;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    padding: 0 1.5rem;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-}
-
-.vlt-add button.vlt__1:hover {
-    background-color: #e1e2e2;
-    opacity: 1;
+    margin: 0;
 }
 
 
@@ -204,69 +257,77 @@ Responsive Style
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-    .vlt-add {
+    .vlt-posting {
         padding: 20px 120px;
     }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .vlt-add {
+    .vlt-posting {
         padding: 20px 80px;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .vlt-add {
+    .vlt-posting {
         padding: 20px 30px;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .vlt-add {
+    .vlt-posting {
         padding: 40px 15px;
     }
 
-    .vlt-add h2.major {
+    /* Write */
+    .vlt-posting h2.major {
         font-size: 2rem;
     }
 
-    .vlt-add label {
+    /* label, title-counter */
+    .vlt-posting label,
+    .vlt-posting span {
         font-size: 0.9rem;
     }
 
-    .vlt-add input[type="text"],
-    .vlt-add input[type="number"],
-    .vlt-add input[type="file"],
-    .vlt-add textarea {
+    /* title-feedback */
+    .vlt-posting p {
+        font-size: 0.8rem;
+    }
+
+    .vlt-posting input[type="text"],
+    .vlt-posting input[type="number"],
+    .vlt-posting input[type="file"],
+    .vlt-posting textarea {
         font-size: 0.9rem;
     }
 
-    .vlt-add input[type="text"]:focus,
-    .vlt-add input[type="number"]:focus,
-    .vlt-add input[type="file"]:focus,
-    .vlt-add textarea:focus {
+    .vlt-posting input[type="text"]:focus,
+    .vlt-posting input[type="number"]:focus,
+    .vlt-posting input[type="file"]:focus,
+    .vlt-posting textarea:focus {
         font-size: 0.9rem;
     }
 
-    .vlt-add button.vlt__1 {
+    .vlt-posting button {
         font-size: 0.9rem;
         height: 3rem;
         line-height: 3rem;
-        padding: 0 1.2rem;
+        padding: 0 1.05rem 0 1.15rem;
     }
 }
 
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .vlt-add {
+    .vlt-posting {
         padding: 40px 10px;
     }
 
-    .vlt-add .fields {
+    .vlt-posting .fields {
         width: calc(100% + 3rem);
         margin: -1.5rem 0 2rem -1.5rem;
     }
