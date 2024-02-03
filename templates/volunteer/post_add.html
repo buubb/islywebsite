@@ -24,6 +24,7 @@
 
 
     <!-- Raon Additional Files -->
+    <link rel="stylesheet" href="{% static 'volunteer/css/header.css' %}">
     <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-posting.css' %}">
 
 
@@ -53,30 +54,36 @@ https://templatemo.com/tm-579-cyborg-gaming
         <div class="page-content">
 
           <!-- ***** Volunteer Posting Start ***** -->
-          <div class="posting header-text">
+          <div class="vlt-posting header-text">
             <div class="row">
               <div class="col-lg-12">
-                  <div class="vlt-add">
-                      <h2 class="major">WRITE</h2>
-                      <form method="POST" enctype="multipart/form-data">
-                          {% csrf_token %}
-                          <div class="fields">
+                  <form method="POST" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <div class="headline">
+                            <h2 class="major">WRITE</h2>
+                            <button type="submit">SAVE</button>
+                      </div>
+                      <div class="fields">
+                              <!-- title -->
                               <div class="field">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" maxlength="50" required>
+                                <div class="label-group">
+                                    <label for="title">Title</label>
+                                    <span id="title-counter">0 / 50</span>
+                                </div>
+                                <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" required>
+                                <p id="title-feedback" style="display: none;">Maximum 50 characters allowed.</p>
                               </div>
+                              <!-- year -->
                               <div class="field half">
                                 <label for="year">Year</label>
                                 <input type="number" class="form-control" name="year" id="year" value="{{ form.year.value|default_if_none:'' }}" min="2020" required>
                               </div>
+                              <!-- generation -->
                               <div class="field half">
                                 <label for="generation">Generation</label>
                                 <input type="number" class="form-control" name="generation" id="generation" value="{{ form.generation.value|default_if_none:'' }}" min="1" required>
                               </div>
-                              <div class="field">
-                                <label for="participant">Participant</label>
-                                <input type="text" class="form-control" name="participant" id="participant" value="{{ form.participant.value|default_if_none:'' }}" maxlength="100" required>
-                              </div>
+                              <!-- content -->
                               <div class="field">
                                 <label for="content">Content</label>
                                 <textarea class="form-control" name="content" id="content" rows="10" required>{{ form.content.value|default_if_none:'' }}</textarea>
@@ -86,10 +93,8 @@ https://templatemo.com/tm-579-cyborg-gaming
                                 <label for="id_images">Image Upload</label>
                                 <input id="id_images" name="images" type="file" multiple>
                               </div>
-                          </div>
-                          <button type="submit" class="vlt__1">SUBMIT</button>
-                      </form>
-                  </div>
+                      </div>
+                  </form>
               </div>
             </div>
           </div>
@@ -125,6 +130,8 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="{% static 'assets/js/custom.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+  <!-- Raon Additional JavaScript -->
+  <script src="{% static 'volunteer/js/text-counting.js' %}"></script>
 
   </body>
 
