@@ -10,3 +10,12 @@ $(function(){
 	});
 });
 
+function toggleAnswer(answerID) {
+    var answerDiv = document.getElementById(answerID);
+
+    if (answerDiv.style.display === 'none') {
+      answerDiv.style.display = 'block';
+    } else {
+      answerDiv.style.display = 'none';
+    }
+  }

@@ -1,6 +1,8 @@
 /* font */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
+body{
+    justify-content: center;
+}
 /* header */
 header{
     position: fixed;
@@ -10,10 +12,11 @@ header{
     z-index: 100;
     font-family: "Sen","Noto Sans KR",sans-serif!important;
     text-align: center;
+    background-color: rgba(0,0,0,0.2);
 }
 
 header nav{
-    min-height: 80px;
+    min-height: 70px;
     position: relative;
     display: flex;
     background: transparent;
@@ -115,11 +118,12 @@ a{text-decoration:none; color:#333;}
 .nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:50px;}
 .nav > .dropdown:hover .depth_1 {display:block;}
 .nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);
+    background-color: #27292a;
     -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); text-align:center;width: 160px;z-index: 4;}
 .nav .depth_1 a{display:block; padding:12px 16px; background: transparent; color:#fff;}
-.nav .depth_1 a:hover{color: #5ee773!important;background-color: #27292a!important;}
+.nav .depth_1 a:hover{color: #5ee773!important;background-color: #333!important;}
 
 header nav .nav .nav-item a:hover,
 header nav .nav .nav-item a.active {
@@ -153,4 +157,46 @@ header nav .nav .nav-item a img {
     font-family: "Sen","Noto Sans KR",sans-serif!important;
     color: aliceblue;
     text-align: center;
+}
+
+.section .subtitle{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    margin-bottom: 72px;
+    margin-top: 0px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.section #qcontent {
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #27292a;
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+    min-width: 1000px;
+    border-radius: 23px 23px;
+    cursor: pointer;
+}
+.section #qcontent .down{
+    float: right;
+}
+
+.section #a1, .section #a2, .section #a3, .section #a4{
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color:aliceblue;
+    color:#27292a;
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+    min-width: 1000px;
+    border-radius: 23px 23px;
+}
+
+.section .insta{
+    float: none;
+    margin-top: 50px;
 }
