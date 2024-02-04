@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e55dae7-4225-4e8f-8408-60b3955d7488" name="Changes" comment="">
+    <list default="true" id="83d14f4e-929e-45b7-bea8-9591349f0709" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-posting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/volunteer-posting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +23,7 @@
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2boRkNmR3AUjBs9O0lLj0GZDIUV" />
+  <component name="ProjectId" id="2buXwjti1PNn11yePT6yvVB2m8B" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +43,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\recruit" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -77,12 +76,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3e55dae7-4225-4e8f-8408-60b3955d7488" name="Changes" comment="" />
-      <created>1706879587637</created>
+      <changelist id="83d14f4e-929e-45b7-bea8-9591349f0709" name="Changes" comment="" />
+      <created>1707066178754</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706879587637</updated>
-      <workItem from="1706879590531" duration="1191000" />
+      <updated>1707066178754</updated>
+      <workItem from="1707066182125" duration="8591000" />
     </task>
     <servers />
   </component>
