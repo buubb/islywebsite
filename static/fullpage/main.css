@@ -12,7 +12,8 @@ header{
     z-index: 100;
     font-family: "Sen","Noto Sans KR",sans-serif!important;
     text-align: center;
-    background-color: rgba(0,0,0,0.2);
+    background-color: #000;
+    /*background-color: rgba(0,0,0,0.2);*/
 }
 
 header nav{
@@ -117,8 +118,8 @@ a{text-decoration:none; color:#333;}
 .nav > .dropdown{position:relative; float:left; margin-right:5px;}
 .nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:50px;}
 .nav > .dropdown:hover .depth_1 {display:block;}
-.nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);
-    background-color: transparent;
+.nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);border-radius: 18px;
+    background-color: #000;
     -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); text-align:center;width: 160px;z-index: 4;}
