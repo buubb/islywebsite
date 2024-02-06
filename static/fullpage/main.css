@@ -118,7 +118,7 @@ a{text-decoration:none; color:#333;}
 .nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:50px;}
 .nav > .dropdown:hover .depth_1 {display:block;}
 .nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);
-    background-color: #27292a;
+    background-color: transparent;
     -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); text-align:center;width: 160px;z-index: 4;}
@@ -152,13 +152,70 @@ header nav .nav .nav-item a img {
     border-radius: 50%;
     margin-left: 5px;
   }
+
+/*scroll down*/
+.scrolldown{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:120px;
+}
+.scroll-downs {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:50px;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
 /* section */
 .section{
     font-family: "Sen","Noto Sans KR",sans-serif!important;
     color: aliceblue;
     text-align: center;
 }
-
+.mainbanner{
+    position:absolute;
+    left:250px;
+    top:200px;
+}
+.mainbanner p{
+    text-align: left!important;
+}
+.mainbanner h1{
+    font-size: 100px;
+    font-weight: 200;
+    text-align: left!important;
+}
+.green{
+    color:#5ee773;
+}
 .section .subtitle{
     font-size: 40px;
     font-weight: 700;

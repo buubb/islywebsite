@@ -6,7 +6,7 @@ $(function(){
 		//scrollHorizontally: true,
         //navigation: true,
         //navigationPosition: 'bottom',
-        sectionsColor:['#1f2122','#1f2122','#1f2122','#1f2122', '#1f2122']
+        sectionsColor:['#000','#1f2122','#1f2122','#1f2122', '#1f2122']
 	});
 });
 
