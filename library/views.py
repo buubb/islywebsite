@@ -32,7 +32,7 @@ def posting(request, post_id):
     # posting.html 페이지를 열 때, 찾아낸 게시글(post)을 post라는 이름으로 가져옴
     return render(request, 'library/library_posting.html', context)
     
-@login_required(login_url='common:login') #나중에 로그인 링크 수정하기
+@login_required(login_url="login") #나중에 로그인 링크 수정하기
 def post_create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
@@ -44,7 +44,7 @@ def post_create(request):
             return redirect('Library')
     else: 
         form = PostForm()
-    context = {'form':form}
+    context = {'form': form}
     return render(request, 'library/library_write.html', context)
 
 def post_modify(request, post_id):
@@ -64,7 +64,7 @@ def post_modify(request, post_id):
     context = {'form': form}
     return render(request, 'library/library_write.html', context)
 
-@login_required(login_url='common:login')
+@login_required(login_url="login")
 def post_delete(request, post_id):
     librarypost = get_object_or_404(LibraryPost, pk=post_id)
     if request.user != librarypost.author:
@@ -74,7 +74,7 @@ def post_delete(request, post_id):
     return redirect('Library')
 
 
-@login_required(login_url='common:login') 
+@login_required(login_url="login")
 def comment_create_library(request, post_id):
     librarypost = get_object_or_404(LibraryPost, pk=post_id) 
     if request.method == 'POST':
@@ -91,7 +91,7 @@ def comment_create_library(request, post_id):
         context = {'form':form}
         return render(request, 'library/comment_form.html', context)
     
-@login_required(login_url='common:login') 
+@login_required(login_url="login")
 def comment_modify_library(request, comment_id):
     comment = get_object_or_404(LibraryComment, pk=comment_id)
     if request.user != comment.author:
@@ -111,7 +111,7 @@ def comment_modify_library(request, comment_id):
         context = {'form':form}
         return render(request, 'library/comment_form.html', context)
     
-@login_required(login_url='common:login') 
+@login_required(login_url="login")
 def comment_delete_library(request, comment_id):
     comment = get_object_or_404(LibraryComment, pk=comment_id)
     if request.user != comment.author:

@@ -1,0 +1,138 @@
+{% load static humanize %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>I.Sly()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+    <!-- Raon Additional Files -->
+    <link rel="stylesheet" href="{% static 'volunteer/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'volunteer/css/volunteer-posting.css' %}">
+
+
+    <!-- Raon Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  {% include "navbar.html" %}
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Volunteer Posting Start ***** -->
+          <div class="vlt-posting header-text">
+            <div class="row">
+              <div class="col-lg-12">
+                  <form method="POST" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <div class="headline">
+                            <h2 class="major">WRITE</h2>
+                            <button type="submit">SAVE</button>
+                      </div>
+                      <div class="fields">
+                              <!-- title -->
+                              <div class="field">
+                                <div class="label-group">
+                                    <label for="title">Title</label>
+                                    <span id="title-counter">0 / 50</span>
+                                </div>
+                                <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" required>
+                                <p id="title-feedback" style="display: none;">Maximum 50 characters allowed.</p>
+                              </div>
+                              <!-- year -->
+                              <div class="field half">
+                                <label for="year">Year</label>
+                                <input type="number" class="form-control" name="year" id="year" value="{{ form.year.value|default_if_none:'' }}" min="2020" required>
+                              </div>
+                              <!-- generation -->
+                              <div class="field half">
+                                <label for="generation">Generation</label>
+                                <input type="number" class="form-control" name="generation" id="generation" value="{{ form.generation.value|default_if_none:'' }}" min="1" required>
+                              </div>
+                              <!-- content -->
+                              <div class="field">
+                                <label for="content">Content</label>
+                                <textarea class="form-control" name="content" id="content" rows="10" required>{{ form.content.value|default_if_none:'' }}</textarea>
+                              </div>
+                              <div class="field">
+                                <!-- label의 for 속성에는 가리키는 input의 id값을 입력 -->
+                                <label for="id_images">Image Upload</label>
+                                <input id="id_images" name="images" type="file" multiple>
+                              </div>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Volunteer Posting End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
+
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/tabs.js' %}"></script>
+  <script src="{% static 'assets/js/popup.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Raon Additional JavaScript -->
+  <script src="{% static 'volunteer/js/text-counting.js' %}"></script>
+
+  </body>
+
+</html>

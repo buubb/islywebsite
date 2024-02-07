@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.Sly()</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fullpage/jquery.fullPage.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{% static 'fullpage/jquery.fullPage.js' %}"></script>
+    <script src="{% static 'fullpage/main.js' %}"></script>
+</head>
+<body>
+    {% include "fullpagenav.html" %}
+    <main id="fullpage">
+        <section class="section">
+          <div class="mainbanner">
+            <p>Hacking Club of Sungshin Women's University</p>
+            <!--<h1>Hello, We are</h1><h1 class="green">I.Sly()</h1>-->
+          </div>
+          <div class="text_box" data-trigger>
+            <span class="text"></span><span class="cursor">|</span>
+          </div>
+          <div class="scrolldown">
+            <p>scroll down</p>
+          </div>
+          <!-- <img src="{% static 'fullpage/img/mainpicture.jpg' %}" alt="">-->
+          <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="slide">
+            <h3>slide 01</h3>
+          </div>
+          <div class="slide">
+            <h3>slide 02</h3>
+          </div>
+          <div class="slide">
+            <h3>slide 03</h3>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="subtitle">자주 묻는 질문</h2>
+          <div id="qcontent">
+            <h3 onclick="toggleAnswer('a1')">Q. I.Sly()는 어떤 동아리인가요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
+          </div>
+          <div id="a1" style="display: none;"><p><b>I.Sly()</b>는 Information Security의 약자인 IS와 부사형 어미 ly를 합쳐 만든 동아리입니다.</p></div>
+            
+          <div id="qcontent">
+            <h3 onclick="toggleAnswer('a2')">Q. 언제 모집하나요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h2>
+          </div>
+          <div id="a2" style="display: none;"><p>매 학기마다 모집하고 있으며 보통 <b>1월 말</b>과 <b>7월 말</b>에 모집합니다.</p></div>
+
+          <div id="qcontent">
+            <h3 onclick="toggleAnswer('a3')">Q. 무슨 활동을 하나요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
+          </div>
+          <div id="a3" style="display: none;"><p>저희 동아리는 기초 보안 교육과 프로젝트를 주로 하고 있습니다.</p></div>
+
+          <div id="qcontent">
+            <h3 onclick="toggleAnswer('a4')">Q. 해킹 못하는 데 지원 가능한가요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
+          </div>
+          <div id="a4" style="display: none;"><p><b>I.Sly()</b>는 지원자의 열정만 있다면 누구든지 지원 가능합니다. 회장단이 선정한 해킹 커리큘럼을 통해 배우면 됩니다..</p></div>
+
+          <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon><p>instagram</p>
+        </section>
+        <section class="section">
+          <h2>section 4</h2>
+        </section>
+        <footer class="section fp-auto-height">
+          <h2> footer </h2>
+        </footer>
+    </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

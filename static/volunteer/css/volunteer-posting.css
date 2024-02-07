@@ -1,0 +1,334 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.vlt-posting {
+    padding: 20px 160px;
+}
+
+
+/*
+---------------------------------------------
+Headline
+---------------------------------------------
+*/
+
+.vlt-posting .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Write */
+.vlt-posting h2.major {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    border-bottom: solid 1.8px #fff;
+    width: max-content;
+    padding-bottom: 0.5rem;
+    margin: 0 0 2.5rem 0;
+}
+
+/* Save Button */
+.vlt-posting button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #1b1f22;
+    background-color: #fff;
+    border: 0;
+    border-radius: 1.5px;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    padding: 0 1.25rem 0 1.35rem;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 2.5rem 0;
+}
+
+.vlt-posting button:hover {
+    background-color: #e1e2e2;
+    opacity: 1;
+}
+
+
+/*
+---------------------------------------------
+Form
+---------------------------------------------
+*/
+
+.vlt-posting .form {
+    margin: 0 0 2rem 0;
+}
+
+.vlt-posting .fields {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(100% + 3rem);
+    margin: -1.5rem 0 2rem -1.5rem;
+}
+
+.vlt-posting .fields .field {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    padding: 1.5rem 0 0 1.5rem;
+    width: calc(100% - 1.5rem);
+}
+
+.vlt-posting .fields .field.half {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    padding: 1.5rem 0 0 1.5rem;
+    width: calc(50% - 0.75rem);
+}
+
+
+/*
+---------------------------------------------
+Label
+---------------------------------------------
+*/
+
+.vlt-posting .label-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vlt-posting label {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+/* title-counter */
+.vlt-posting span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #aaa;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: none;
+}
+
+/* title-feedback */
+.vlt-posting p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #57f579;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+
+/*
+---------------------------------------------
+Input
+---------------------------------------------
+*/
+
+.vlt-posting input[type="text"],
+.vlt-posting input[type="number"],
+.vlt-posting input[type="file"],
+.vlt-posting textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 1.5px;
+    border: solid 1.8px #fff;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    color: #fff;
+    display: block;
+    outline: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    width: 100%;
+    resize: none;
+}
+
+.vlt-posting input[type="text"]:invalid,
+.vlt-posting input[type="number"]:invalid,
+.vlt-posting input[type="file"]:invalid,
+.vlt-posting textarea:invalid {
+    box-shadow: none;
+}
+
+.vlt-posting input[type="text"]:focus,
+.vlt-posting input[type="number"]:focus,
+.vlt-posting input[type="file"]:focus,
+.vlt-posting textarea:focus {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    background: rgba(255, 255, 255, 0.075);
+    border-color: #fff;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.vlt-posting input[type="text"],
+.vlt-posting input[type="number"] {
+    height: 3.25rem;
+}
+
+.vlt-posting input[type="file"] {
+    height: 3.25rem;
+    padding: 10px;
+}
+
+.vlt-posting textarea {
+    padding: 0.75rem 1rem;
+}
+
+.vlt-posting input[type='number']::-webkit-outer-spin-button,
+.vlt-posting input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .vlt-posting {
+        padding: 20px 120px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .vlt-posting {
+        padding: 20px 80px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .vlt-posting {
+        padding: 20px 30px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .vlt-posting {
+        padding: 40px 15px;
+    }
+
+    /* Write */
+    .vlt-posting h2.major {
+        font-size: 2rem;
+    }
+
+    /* label, title-counter */
+    .vlt-posting label,
+    .vlt-posting span {
+        font-size: 0.9rem;
+    }
+
+    /* title-feedback */
+    .vlt-posting p {
+        font-size: 0.8rem;
+    }
+
+    .vlt-posting input[type="text"],
+    .vlt-posting input[type="number"],
+    .vlt-posting input[type="file"],
+    .vlt-posting textarea {
+        font-size: 0.9rem;
+    }
+
+    .vlt-posting input[type="text"]:focus,
+    .vlt-posting input[type="number"]:focus,
+    .vlt-posting input[type="file"]:focus,
+    .vlt-posting textarea:focus {
+        font-size: 0.9rem;
+    }
+
+    .vlt-posting button {
+        font-size: 0.9rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0 1.05rem 0 1.15rem;
+    }
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .vlt-posting {
+        padding: 40px 10px;
+    }
+
+    .vlt-posting .fields {
+        width: calc(100% + 3rem);
+        margin: -1.5rem 0 2rem -1.5rem;
+    }
+}
