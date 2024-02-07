@@ -5,6 +5,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from .models import LoginFail
 from django.contrib.auth import get_user_model
+from django.http import HttpResponse
+from django.utils import timezone
 
 LOGIN_TRY_LIMIT=5
 
@@ -28,13 +30,16 @@ class Login(APIView):
             
             if user is not None:
                 print(user)
+                user_instance = get_user_model().objects.get(username=username)
+
                 LoginFail.objects.filter(user__username=username).delete()
+                    
                 login(request, user)
                 return render(request, 'islyweb/index.html')
             else:
                 # 로그인 실패 기록 가져오기
                 if LoginFail.objects.filter(user__username=username).exists():
-                    login_fail = LoginFail.objects.get(user__username=username)
+                    login_fail = LoginFail.objects.get_or_create(user=user_instance, defaults={"count": 0})[0]
                     count = login_fail.count
                 else:
                     count = 0
@@ -60,5 +65,13 @@ class Logout(APIView):
             Logout(request)
         return render(request, 'islyweb/index.html')
 
+
+from django.http import HttpResponse
+
+def check_session_status(request):
+    if request.user.is_authenticated:
+        return HttpResponse('세션이 유효합니다.')
+    else:
+        return HttpResponse('세션이 만료되었습니다. 다시 로그인해주세요.')
 
 
