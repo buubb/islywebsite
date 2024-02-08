@@ -1,0 +1,233 @@
+/*
+---------------------------------------------
+Featured Games Style
+---------------------------------------------
+*/
+
+.ctf {
+    border-radius: 23px;
+    background-color: transparent;
+    padding: 30px;
+}
+
+.ctf .heading-section h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #57f579;
+}
+
+.ctf .item .thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.ctf .item .thumb .hover-effect {
+    position: absolute;
+    bottom: -100px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+.ctf .item .thumb:hover .hover-effect {
+    opacity: 1;
+    visibility: visible;
+    bottom: 15px;
+}
+
+.ctf .item .thumb .hover-effect h6 {
+    background-color: rgba(31, 33, 34, 0.95);
+    display: inline-block;
+    color: #57f579;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.ctf .item img {
+    border-radius: 23px;
+}
+
+.ctf .item h4 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.ctf .item span {
+    color: #888;
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+}
+
+.ctf .item ul {
+    float: right;
+    margin-top: 20px;
+}
+
+.ctf .item ul li {
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+}
+
+.ctf .item ul li:first-child i {
+    color: yellow;
+}
+
+.ctf .item ul li:last-child i {
+    color: #60ec7e;
+}
+
+
+/*
+---------------------------------------------
+Owl
+---------------------------------------------
+*/
+
+.ctf .owl-nav {
+    display: inline-block !important;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-45px);
+}
+
+.ctf .owl-dots {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.ctf .owl-dots .owl-dot {
+    transition: all .5s;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    margin: 0px 5px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.ctf .owl-dots .active {
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.ctf .owl-nav .owl-prev {
+    margin-right: 10px;
+    outline: none;
+    position: absolute;
+    left: -65px;
+}
+
+.ctf .owl-nav .owl-prev span,
+.ctf .owl-nav .owl-next span {
+    opacity: 0;
+}
+
+.ctf .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #57f579;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: rgba(31, 33, 34, 0.95);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.ctf .owl-nav .owl-prev {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.ctf .owl-nav .owl-prev:hover {
+    opacity: 0.7;
+}
+
+.ctf .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.ctf .owl-nav .owl-next:hover {
+    opacity: 0.7;
+}
+
+.ctf .owl-nav .owl-next {
+    margin-left: 10px;
+    outline: none;
+    position: absolute;
+    right: -70px;
+}
+
+.ctf .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #57f579;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: rgba(31, 33, 34, 0.95);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+
+/*
+---------------------------------------------
+responsive
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .ctf {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Responsive style : owl
+---------------------------------------------
+*/
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .ctf .owl-nav .owl-next {
+        right: -30px;
+    }
+
+    .ctf .owl-nav .owl-prev {
+        left: -25px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .ctf .owl-nav .owl-next {
+        right: -25px;
+    }
+
+    .ctf .owl-nav .owl-prev {
+        left: -25px;
+    }
+}
