@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2185f69-7982-49f5-9499-a814a9712b68" name="Changes" comment="" />
+    <list default="true" id="92a0a0e0-af1c-439f-a2dd-895944f13a8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +24,7 @@
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2c5MVqKNk82k5KPHQdL2LGkR5FZ" />
+  <component name="ProjectId" id="2c5cM9oamwnfmk7YQcgWEnp1I6p" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,11 +42,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\ctf_challenge\css" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -71,12 +70,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e2185f69-7982-49f5-9499-a814a9712b68" name="Changes" comment="" />
-      <created>1707397014088</created>
+      <changelist id="92a0a0e0-af1c-439f-a2dd-895944f13a8a" name="Changes" comment="" />
+      <created>1707404830521</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707397014088</updated>
-      <workItem from="1707397016141" duration="2129000" />
+      <updated>1707404830521</updated>
+      <workItem from="1707404833540" duration="2511000" />
     </task>
     <servers />
   </component>
