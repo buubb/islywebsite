@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="92a0a0e0-af1c-439f-a2dd-895944f13a8a" name="Changes" comment="">
+    <list default="true" id="731199b6-60c7-4abe-bf87-a9c93d69b78a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +19,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
+  "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2c5cM9oamwnfmk7YQcgWEnp1I6p" />
+  <component name="ProjectId" id="2c5mVQtMPcRP273OWq188Cqddu3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,12 +67,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="92a0a0e0-af1c-439f-a2dd-895944f13a8a" name="Changes" comment="" />
-      <created>1707404830521</created>
+      <changelist id="731199b6-60c7-4abe-bf87-a9c93d69b78a" name="Changes" comment="" />
+      <created>1707409839383</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707404830521</updated>
-      <workItem from="1707404833540" duration="2511000" />
+      <updated>1707409839383</updated>
+      <workItem from="1707409841496" duration="313000" />
     </task>
     <servers />
   </component>
