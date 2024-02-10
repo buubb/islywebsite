@@ -18,7 +18,7 @@ Basic
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #fff;
     display: block;
-    font-size: 2rem; /* English: 3rem / Korean: 2rem */
+    font-size: 2.5rem; /* English: 3rem / Korean: 2.5rem */
     font-weight: 900;
     letter-spacing: 0.075em;
     line-height: 1.5;
@@ -63,7 +63,7 @@ FAQ
     /* add */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #fff;
-    font-size: 0.95rem;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.075em;
     line-height: 1.8;
@@ -76,7 +76,7 @@ FAQ
     /* add */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #E4E5E8;
-    font-size: 0.95rem;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.075em;
     line-height: 1.8;
@@ -139,11 +139,11 @@ Responsive style
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .r__faq .faq-title {
-        font-size: 0.95rem;
+        font-size: 17px;
     }
 
     .r__faq .faq-text {
-        font-size: 0.95rem;
+        font-size: 17px;
     }
 }
 
@@ -156,11 +156,12 @@ Responsive style
     }
 
     .r__faq .faq-title {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
 
     .r__faq .faq-text {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
+
 }
 
