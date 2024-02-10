@@ -30,7 +30,7 @@ header nav{
 header nav .logo{
     /*border-right: 1px solid #27292a;
     flex-basis: 15%;*/
-    margin-right: 800px;
+    margin-right: 730px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -212,7 +212,7 @@ header nav .nav .nav-item a img {
 }
 .mainbanner{
     position:absolute;
-    left:250px;
+    left:170px;
     top:200px;
 }
 .mainbanner p{
@@ -228,7 +228,7 @@ header nav .nav .nav-item a img {
 }
 .text_box{
     position:absolute;
-    left:250px;
+    left:170px;
     top:250px;
     /* height: 100px;*/
     font-size: 100px;
