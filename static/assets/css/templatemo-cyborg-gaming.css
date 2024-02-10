@@ -338,8 +338,8 @@ Header Style
 */
 
 .background-header {
-  background-color: #fff !important;
-  height: 70px!important;
+  background-color: #1f2122 !important;
+  height: 100px!important;
   position: fixed!important;
   top: 0 !important;
   left: 0;
@@ -349,7 +349,6 @@ Header Style
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
-  display: none;
 }
 
 .header-area {

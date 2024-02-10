@@ -6,7 +6,7 @@ $(function(){
 		//scrollHorizontally: true,
         //navigation: true,
         //navigationPosition: 'bottom',
-        sectionsColor:['#000','aliceblue','#000','aliceblue', '#000']
+        sectionsColor:['#1f2122','aliceblue','#1f2122','aliceblue', '#1f2122']
 	});
 });
 
