@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>I.Sly()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- Raon Additional Files -->
+    <link rel="stylesheet" href="{% static 'introduction/brief/css/Feature.css' %}">
+    <link rel="stylesheet" href="{% static 'introduction/brief/css/RulesLink.css' %}">
+
+    <!-- Raon Text Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+    <!-- Raon Icon Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+{% include "fullpagenav.html" %}
+<!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Feature Start ***** -->
+          <div class="Feature">
+            <div class="col-lg-12">
+                <div class="row g-5">
+                    <div class="col-lg-6 align-self-center mb-md-5 pb-md-5">
+                        <div class="btn btn-sm border border-2 rounded-pill text-white px-3 mb-3" id="subtitle">Since 2020</div>
+                        <h1 class="text-white mb-4" id="title">Start Hacking With <em>I.Sly()</em>!</h1>
+                        <p class="text-light mb-4" id="content">I.Sly는 웹 해킹, 리버스 엔지니어링, 시스템 해킹 등 다양한 해킹 분야에서 기본 소양 및 심화 내용을 공부하여 화이트 해커 양성을 목표로 활동하는 해킹 동아리입니다.</p>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span id="list">The Hacking Club of SSWU</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span id="list">Information Security + ly</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span id="list">정보 보안 전문가 다운 사람이 되자</span>
+                        </div>
+                        <div class="row g-4 pt-3">
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <i class="fa fa-user fa-3x text-white"></i>
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up" id="number">765</h2>
+                                        <p class="text-white mb-0" id="counter">I.Sly() Members</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <i class="fa fa-check fa-3x text-white"></i>
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up" id="number">9999</h2>
+                                        <p class="text-white mb-0" id="counter">Project Complete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center text-md-end" id="logo">
+                        <img class="img-fluid" src="{% static 'introduction/brief/img/featurelogo.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- ***** Feature End ***** -->
+
+          <!-- ***** Rules Link Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="RulesLink">
+                <div class="text-center">
+                    <div class="p-5">
+                      <div class="py-3">
+                        <h1 class="title">Need More<br>Information?</h1>
+                      </div>
+                      <div class="ruleslink-button">
+                        <a href="{% url 'Introduction:rules' %}">Details <span class="fas fa-arrow-right"></span></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Rules Link End ***** -->
+
+
+          <!-- ***** 동아리 구성 Start ***** -->
+
+          <!-- 구현 예정🤠 -->
+
+          <!-- ***** 동아리 구성 End ***** -->
+
+
+          <!-- ***** 활동 구성 Start ***** -->
+
+          <!-- 구현 예정🤠 -->
+
+          <!-- ***** 활동 구성 End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
+
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a> Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/tabs.js' %}"></script>
+  <script src="{% static 'assets/js/popup.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Raon JavaScript Libraries -->
+  <script src="{% static 'introduction/brief/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'introduction/brief/js/counterup.min.js' %}"></script>
+
+  <!-- Raon Template Javascript -->
+  <script src="{% static 'introduction/brief/js/RaonCustom.js' %}"></script>
+
+  </body>
+
+</html>

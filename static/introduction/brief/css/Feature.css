@@ -1,0 +1,175 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.Feature {
+    background-color: transparent;
+}
+
+.Feature h1 {
+    font-weight: 900 !important;
+}
+
+.Feature h2,
+.Feature h3,
+.Feature .fw-bold {
+    font-weight: 800 !important;
+    line-height: 1.3;
+}
+
+.Feature h4,
+.Feature h5,
+.Feature h6,
+.Feature .fw-medium {
+    font-weight: 500 !important;
+}
+
+.Feature em {
+    font-style: normal;
+    color: #57f579;
+}
+
+
+/*
+---------------------------------------------
+Subtitle, Title, Content
+---------------------------------------------
+*/
+
+.Feature #subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
+
+/* h1 */
+.Feature #title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.055em;
+}
+
+.Feature #content {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    /* font-weight: 400; */
+    letter-spacing: 0.055em;
+    text-align: justify !important;
+}
+
+
+/*
+---------------------------------------------
+List
+---------------------------------------------
+*/
+
+.Feature .fa-check {
+    color: #333;
+}
+
+.Feature #list {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.055em;
+}
+
+
+/*
+---------------------------------------------
+Counter
+---------------------------------------------
+*/
+
+.Feature #number {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: 0.075em;
+}
+
+.Feature #counter {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+}
+
+
+/*
+---------------------------------------------
+Btn
+---------------------------------------------
+*/
+
+.Feature .btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.Feature .btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.Feature .btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.Feature .btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.Feature .btn-square,
+.Feature .btn-sm-square,
+.Feature .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .Feature #title {
+        letter-spacing: 0;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .Feature #title {
+        letter-spacing: 0.055em;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .Feature #logo {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
