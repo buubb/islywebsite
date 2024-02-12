@@ -19,7 +19,7 @@ Basic
     color: #fff;
     display: block;
     font-size: 2.5rem; /* English: 3rem / Korean: 2.5rem */
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 0.075em;
     line-height: 1.5;
     text-transform: none;
@@ -66,7 +66,7 @@ FAQ
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.075em;
-    line-height: 1.8;
+    /* line-height: 1.8; */
     text-transform: none;
 }
 
@@ -136,6 +136,20 @@ Responsive style
 ---------------------------------------------
 */
 
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .r__faq .faq-toggle {
+        top: 27px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .r__faq .faq-toggle {
+        top: 26px;
+    }
+}
+
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .r__faq .faq-title {
@@ -144,6 +158,10 @@ Responsive style
 
     .r__faq .faq-text {
         font-size: 17px;
+    }
+
+    .r__faq .faq-toggle {
+        top: 25px;
     }
 }
 
@@ -157,11 +175,11 @@ Responsive style
 
     .r__faq .faq-title {
         font-size: 14px;
+        line-height: 1.5;
     }
 
     .r__faq .faq-text {
         font-size: 14px;
     }
-
 }
 
