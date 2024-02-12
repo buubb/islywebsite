@@ -30,7 +30,7 @@ header nav{
 header nav .logo{
     /*border-right: 1px solid #27292a;
     flex-basis: 15%;*/
-    margin-right: 730px;
+    margin-right: 580px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -212,8 +212,8 @@ header nav .nav .nav-item a img {
 }
 .mainbanner{
     position:absolute;
-    left:170px;
-    top:200px;
+    left:250px;
+    top:220px;
 }
 .mainbanner p{
     text-align: left!important;
@@ -228,11 +228,11 @@ header nav .nav .nav-item a img {
 }
 .text_box{
     position:absolute;
-    left:170px;
+    left:250px;
     top:250px;
     /* height: 100px;*/
     font-size: 100px;
-    font-weight: 400;
+    font-weight: 900;
     text-align: left!important;
 }
 .cursor {
@@ -287,3 +287,90 @@ header nav .nav .nav-item a img {
     float: none;
     margin-top: 50px;
 }
+
+.bg-3 {
+    background: #37474f;
+    color: #fff;
+    position:absolute;
+    left:240px;
+    top:570px;
+  }
+
+.bg-3 .button {
+    float: left;
+    min-width: 150px;
+    max-width: 250px;
+    display: block;
+    margin: 1em;
+    padding: 1em 2em;
+    background: none;
+    color: inherit;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    border-color: #fff;
+  }
+
+.bg-3 .button:focus {
+    outline: none;
+  }
+.button--size-s {
+    font-size: 14px;
+  }
+/* Wayra */
+.button--wayra {
+    overflow: hidden;
+    width: 245px;
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .button--wayra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: #37474f;
+    z-index: -1;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  }
+  .button--wayra:hover {
+    color: #fff;
+    border-color: #1f2122;
+  }
+  .button--wayra.button--inverted:hover {
+    color: #1f2122;
+    border-color: #fff;
+  }
+  .button--wayra:hover::before {
+    opacity: 1;
+    background-color: #1f2122;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .button--wayra.button--inverted:hover::before {
+    background-color: #fff;
+  } 
+.button--border-medium {
+    border: 2px solid;
+  }
+.button--text-upper {
+    letter-spacing: 2px;
+    text-transform: uppercase 
+}
+.button--text-thick {
+    font-weight: 600;
+  }
