@@ -4,12 +4,8 @@ Basic
 ---------------------------------------------
 */
 
-:root {
-    --hue: 223;
-}
-
 .RulesLink {
-    background-color: hsl(var(--hue), 10%, 50%, 0.1);
+    background-color: #2A2C30;
     border-radius: 23px;
     margin-top: 30px;
 }
