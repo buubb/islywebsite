@@ -20,7 +20,7 @@ Basic
 }
 
 .Feature h4,
-.Feature h5,
+    /* .Feature h5, */
 .Feature h6,
 .Feature .fw-medium {
     font-weight: 500 !important;
@@ -29,73 +29,6 @@ Basic
 .Feature em {
     font-style: normal;
     color: #57f579;
-}
-
-
-/*
----------------------------------------------
-Subtitle, Title, Content
----------------------------------------------
-*/
-
-.Feature #subtitle {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.075em;
-    cursor: text !important;
-}
-
-/* h1 */
-.Feature #title {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 900;
-    letter-spacing: 0.055em;
-}
-
-.Feature #content {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 16px;
-    /* font-weight: 400; */
-    letter-spacing: 0.055em;
-    text-align: justify !important;
-}
-
-
-/*
----------------------------------------------
-List
----------------------------------------------
-*/
-
-.Feature .fa-check {
-    color: #333;
-}
-
-.Feature #list {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.055em;
-}
-
-
-/*
----------------------------------------------
-Counter
----------------------------------------------
-*/
-
-.Feature #number {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    letter-spacing: 0.075em;
-}
-
-.Feature #counter {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
 }
 
 
@@ -139,6 +72,123 @@ Btn
 
 /*
 ---------------------------------------------
+Left
+---------------------------------------------
+*/
+
+.Feature #subtitle,
+.Feature #content,
+.Feature #list,
+.Feature #number,
+.Feature #counter {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.Feature #subtitle {
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
+
+/* h1 */
+.Feature #title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.035em;
+}
+
+.Feature #content {
+    font-size: 16px;
+    /* font-weight: 400; */
+    letter-spacing: 0.055em;
+    text-align: justify !important;
+}
+
+/* icon */
+.Feature .fa-users,
+.Feature .fa-check {
+    color: #333;
+}
+
+.Feature #list {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.055em;
+}
+
+/* h2 */
+.Feature #number {
+    letter-spacing: 0.075em;
+}
+
+/* p */
+.Feature #counter {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+}
+
+
+/*
+---------------------------------------------
+Right
+---------------------------------------------
+*/
+
+/* item */
+.service-item {
+    position: relative;
+    padding: 45px 30px;
+    background: #2A2C30;
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: #348E38;
+}
+
+/* icon */
+.service-item .service-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    color: #424549;
+    background: #F4F7FE;
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: #348E38;
+    background: #FFFFFF;
+}
+
+/* text */
+.service-item h5,
+.service-item p {
+    transition: .5s;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.service-item h5 {
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+.service-item p {
+    color: #666;
+    font-weight: 500;
+}
+
+.service-item:hover h5,
+.service-item:hover p {
+    color: #FFFFFF;
+}
+
+
+/*
+---------------------------------------------
 Responsive Style
 ---------------------------------------------
 */
@@ -155,13 +205,15 @@ Responsive Style
     .Feature #title {
         letter-spacing: 0.055em;
     }
+
+    .Feature #ready {
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .Feature #logo {
-        display: none;
-    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
