@@ -1,12 +1,11 @@
 $(function(){
     $('#fullpage').fullpage({
 		//options here
-        anchors:['s1','s2','s3','s4','s5'],
-		//autoScrolling:true,
-		//scrollHorizontally: true,
-        //navigation: true,
-        //navigationPosition: 'bottom',
-        sectionsColor:['#1f2122','aliceblue','#1f2122','aliceblue', '#1f2122']
+        anchors:['s1','s2','s3','s4'],
+		autoScrolling: false,
+        scrollOverflow:true,
+        sectionsColor:['#1f2122','aliceblue','#1f2122','#1f2122'],
+        bigSectionsDestination: top,
 	});
 });
 

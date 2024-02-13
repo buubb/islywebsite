@@ -158,9 +158,9 @@ header nav .nav .nav-item a img {
 .mainlogo{
     position:absolute;
     vertical-align: middle;
-    width: 500px;
-    right:200px;
-    top: 200px;
+    width: 70px;
+    left:200px;
+    top: 20px;
 }
 
 /*scroll down*/
@@ -205,8 +205,7 @@ header nav .nav .nav-item a img {
     100% { transform: translateY(15px); opacity: 0;}
   }
 /* section */
-.section{
-    font-family: "Sen","Noto Sans KR",sans-serif!important;
+#section{
     color: aliceblue;
     text-align: center;
 }
@@ -246,7 +245,7 @@ header nav .nav .nav-item a img {
       opacity: 0;
     }
   }
-.section .subtitle{
+#section .subtitle{
     font-size: 40px;
     font-weight: 700;
     line-height: 130%;
@@ -257,7 +256,7 @@ header nav .nav .nav-item a img {
     color: aliceblue;
 }
 
-.section #qcontent {
+#section #qcontent {
     margin-top: 20px;
     margin-left: 300px;
     margin-right: 300px;
@@ -268,11 +267,11 @@ header nav .nav .nav-item a img {
     border-radius: 23px 23px;
     cursor: pointer;
 }
-.section #qcontent .down{
+#section #qcontent .down{
     float: right;
 }
 
-.section #a1, .section #a2, .section #a3, .section #a4{
+#section #a1, #section #a2, #section #a3, #section #a4{
     margin-left: 300px;
     margin-right: 300px;
     background-color:aliceblue;
@@ -283,7 +282,7 @@ header nav .nav .nav-item a img {
     border-radius: 23px 23px;
 }
 
-.section .insta{
+#section .insta{
     float: none;
     margin-top: 50px;
 }
@@ -374,3 +373,14 @@ header nav .nav .nav-item a img {
 .button--text-thick {
     font-weight: 600;
   }
+#section-footer{
+  color: aliceblue;
+  border-top: 0.5px solid aliceblue;
+}
+#footer-text{
+  height: 200px;
+}
+#section-footer p
+{
+	text-align: center;
+}
