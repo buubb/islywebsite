@@ -383,7 +383,7 @@ header nav .nav .nav-item a img {
   }
   /* footer */
 #section-footer{ /* root */
-  border-top: 0.5px solid ;
+  border-top: 0.5px solid #666;
   flex-direction: column;
   padding: 54px 230px 0px 230px;
   letter-spacing: 0.075em;
