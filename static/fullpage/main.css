@@ -300,7 +300,7 @@ header nav .nav .nav-item a img {
     color: #fff;
     position:absolute;
     left:240px;
-    top:545px;
+    top:5px;
   }
 
 .bg-3 .button {
@@ -383,7 +383,7 @@ header nav .nav .nav-item a img {
   }
   /* footer */
 #section-footer{ /* root */
-  border-top: 0.5px solid aliceblue;
+  border-top: 0.5px solid #666;
   flex-direction: column;
   padding: 54px 230px 0px 230px;
   letter-spacing: 0.075em;
@@ -393,6 +393,8 @@ header nav .nav .nav-item a img {
 #footer-text{ /*wrap*/
   height: 200px;
   display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 .aboutcolumn{
   flex-direction: column!important;
