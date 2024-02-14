@@ -3,9 +3,8 @@ $(function(){
 		//options here
         anchors:['s1','s2','s3','s4'],
 		autoScrolling: false,
-        scrollOverflow:true,
+        scrollBar:true,
         sectionsColor:['#1f2122','aliceblue','#1f2122','#1f2122'],
-        bigSectionsDestination: top,
 	});
 });
 
