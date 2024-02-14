@@ -300,7 +300,7 @@ header nav .nav .nav-item a img {
     color: #fff;
     position:absolute;
     left:240px;
-    top:5px;
+    top:545px;
   }
 
 .bg-3 .button {
@@ -383,7 +383,7 @@ header nav .nav .nav-item a img {
   }
   /* footer */
 #section-footer{ /* root */
-  border-top: 0.5px solid #666;
+  border-top: 0.5px solid ;
   flex-direction: column;
   padding: 54px 230px 0px 230px;
   letter-spacing: 0.075em;
