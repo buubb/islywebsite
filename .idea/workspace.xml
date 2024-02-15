@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b20998a-3fca-4688-9a57-2f29b25f17c3" name="Changes" comment="">
+    <list default="true" id="243be1a3-c29a-4206-a990-977f9efc3e01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/introduction/brief/js/RaonCarousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/Feature.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/Feature.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/Feature.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/brief/img/featurelogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/js/RaonCustom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/js/RaonCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/a.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,33 +33,35 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="2cJuBFbMNGVQAmtuV00fvLMUzqU" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2cNT7xQyHsdgMvGw8uWuNFbDega" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/raony/PycharmProjects/islywebsite/static/introduction/brief&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\brief" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\introduction" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\brief\js" />
       <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\brief\css" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\notice" />
     </key>
   </component>
   <component name="RunManager">
@@ -81,12 +92,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b20998a-3fca-4688-9a57-2f29b25f17c3" name="Changes" comment="" />
-      <created>1707841866295</created>
+      <changelist id="243be1a3-c29a-4206-a990-977f9efc3e01" name="Changes" comment="" />
+      <created>1707950874160</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707841866295</updated>
-      <workItem from="1707841868663" duration="995000" />
+      <updated>1707950874160</updated>
+      <workItem from="1707950877367" duration="1149000" />
+      <workItem from="1707952088681" duration="5259000" />
     </task>
     <servers />
   </component>

@@ -94,7 +94,15 @@ Left
 .Feature #title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 900;
-    letter-spacing: 0.035em;
+    letter-spacing: 0.055em;
+}
+
+.Feature #large {
+    display: inline;
+}
+
+.Feature #small {
+    display: none;
 }
 
 .Feature #content {
@@ -105,9 +113,8 @@ Left
 }
 
 /* icon */
-.Feature .fa-users,
 .Feature .fa-check {
-    color: #333;
+    color: #424549;
 }
 
 .Feature #list {
@@ -170,14 +177,16 @@ Right
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+/* title */
 .service-item h5 {
     color: #FFFFFF;
     font-weight: 700;
     letter-spacing: 0.075em;
 }
 
+/* hashtag */
 .service-item p {
-    color: #666;
+    color: #8D8F91;
     font-weight: 500;
 }
 
@@ -196,17 +205,27 @@ Responsive Style
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
     .Feature #title {
-        letter-spacing: 0;
+        font-size: 2.2rem;
+        letter-spacing: 0.025em;
     }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .Feature #title {
-        letter-spacing: 0.055em;
+        font-size: 2.5rem;
+        letter-spacing: 0.075em;
     }
 
-    .Feature #ready {
+    .Feature #large {
+        display: none;
+    }
+
+    .Feature #small {
+        display: inline;
+    }
+
+    .Feature #hide {
         display: none;
     }
 }
@@ -218,10 +237,16 @@ Responsive Style
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    .Feature #title {
+        font-size: 2rem;
+        letter-spacing: 0.055em;
+    }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    .Feature #title {
+        font-size: 1.8rem;
+        letter-spacing: 0.055em;
+    }
 }
