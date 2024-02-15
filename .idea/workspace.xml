@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="243be1a3-c29a-4206-a990-977f9efc3e01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/introduction/brief/js/RaonCarousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/Feature.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/Feature.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/brief/js/RaonCustom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/js/RaonCustom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/js/RaonCounter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/a.html" afterDir="false" />
     </list>
@@ -96,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707950874160</updated>
       <workItem from="1707950877367" duration="1149000" />
-      <workItem from="1707952088681" duration="4924000" />
+      <workItem from="1707952088681" duration="5259000" />
     </task>
     <servers />
   </component>
