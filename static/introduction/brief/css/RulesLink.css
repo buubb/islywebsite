@@ -7,7 +7,7 @@ Basic
 .RulesLink {
     background-color: #2A2C30;
     border-radius: 23px;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 
@@ -99,10 +99,6 @@ Responsive Style
 @media (max-width: 767.98px) {
     .RulesLink {
         margin-bottom: 40px;
-    }
-
-    .RulesLink h2.title {
-        font-size: 2rem;
     }
 
     .RulesLink .rules-button a {
