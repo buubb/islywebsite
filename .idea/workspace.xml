@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bad5194-e474-4cc0-b20b-68fa1beee9b9" name="Changes" comment="">
+    <list default="true" id="75f88332-4b91-42da-8ecc-6f4af009eea6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/r-faq.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/js/r-faq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,7 @@
   "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2cUtzfK9Xt3DO4wROVv1TGXc71N" />
+  <component name="ProjectId" id="2cV7eRS9LRZI9HgLx0qohCOaI0f" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +34,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/islywebsite/static/introduction/rules",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,16 +41,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\rules" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\rules\css" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\rules\js" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\introduction" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -81,12 +69,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1bad5194-e474-4cc0-b20b-68fa1beee9b9" name="Changes" comment="" />
-      <created>1708178250268</created>
+      <changelist id="75f88332-4b91-42da-8ecc-6f4af009eea6" name="Changes" comment="" />
+      <created>1708184989280</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708178250268</updated>
-      <workItem from="1708178253775" duration="657000" />
+      <updated>1708184989280</updated>
+      <workItem from="1708184990624" duration="319000" />
     </task>
     <servers />
   </component>

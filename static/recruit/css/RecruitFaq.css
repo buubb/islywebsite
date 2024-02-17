@@ -4,7 +4,11 @@ Basic
 ---------------------------------------------
 */
 
-.Rules a, p {
+.RecruitFaq {
+    margin-top: 150px;
+}
+
+.RecruitFaq a, p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -15,7 +19,7 @@ Custom Text
 ---------------------------------------------
 */
 
-.Rules #title {
+.RecruitFaq #title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #FFFFFF;
     display: block;
@@ -25,17 +29,6 @@ Custom Text
     text-transform: capitalize;
 }
 
-.Rules #list-small {
-    font-size: 14px;
-    margin-left: 15px;
-}
-
-.Rules em {
-    font-style: normal;
-    color: #57f579;
-    font-weight: 600;
-}
-
 
 /*
 ---------------------------------------------
@@ -43,22 +36,22 @@ FAQ-list
 ---------------------------------------------
 */
 
-.Rules .faq .faq-list {
+.RecruitFaq .faq .faq-list {
     padding: 0;
 }
 
-.Rules .faq .faq-list ul {
+.RecruitFaq .faq .faq-list ul {
     padding: 0;
     list-style: none;
 }
 
 
-.Rules .faq .faq-list li + li {
+.RecruitFaq .faq .faq-list li + li {
     margin-top: 20px;
 }
 
 
-.Rules .faq .faq-list li {
+.RecruitFaq .faq .faq-list li {
     padding: 20px;
     background: #2A2C30;
     border-radius: 4px;
@@ -67,10 +60,10 @@ FAQ-list
 }
 
 /* question */
-.Rules .faq .faq-list a {
+.RecruitFaq .faq .faq-list a {
     display: block;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: 600;
     padding-right: 30px;
@@ -82,7 +75,7 @@ FAQ-list
 }
 
 /* number */
-.Rules .faq .faq-list span {
+.RecruitFaq .faq .faq-list span {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
@@ -90,8 +83,8 @@ FAQ-list
 }
 
 /* icon-show, icon-close */
-.Rules .faq .faq-list .icon-show,
-.Rules .faq .faq-list .icon-close {
+.RecruitFaq .faq .faq-list .icon-show,
+.RecruitFaq .faq .faq-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -99,9 +92,10 @@ FAQ-list
 }
 
 /* answer */
-.Rules .faq .faq-list p {
+.RecruitFaq .faq .faq-list p {
     margin-bottom: 0;
     padding: 10px 0 0 0;
+    font-size: 16px;
     color: #FFFFFF;
     text-align: justify;
     letter-spacing: 0.075em;
@@ -121,26 +115,45 @@ Responsive Style
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 15px;
+    }
+    /* number */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 17px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .Rules .right-faq {
+    /* right-faq */
+    .RecruitFaq .right-faq {
         margin-top: 20px;
+    }
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 16px;
+    }
+    /* number */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 18px;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* question, number */
-    .Rules .faq .faq-list a,
-    .Rules .faq .faq-list span {
-        font-size: 18px;
-    }
+
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 15px;
+    }
+    /* number */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 17px;
+    }
 }
