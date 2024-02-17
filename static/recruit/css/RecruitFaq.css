@@ -123,6 +123,10 @@ Responsive Style
     .RecruitFaq .faq .faq-list span {
         font-size: 17px;
     }
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 15px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
