@@ -15,9 +15,16 @@ Basic
 
 /*
 ---------------------------------------------
-Custom Text
+Subtitle, Title
 ---------------------------------------------
 */
+
+.RecruitFaq #subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
 
 .RecruitFaq #title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -85,10 +92,10 @@ FAQ-list
 /* icon-show, icon-close */
 .RecruitFaq .faq .faq-list .icon-show,
 .RecruitFaq .faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* answer */
@@ -119,10 +126,12 @@ Responsive Style
     .RecruitFaq .faq .faq-list a {
         font-size: 15px;
     }
+
     /* number */
     .RecruitFaq .faq .faq-list span {
         font-size: 17px;
     }
+
     /* answer */
     .RecruitFaq .faq .faq-list p {
         font-size: 15px;
@@ -135,10 +144,12 @@ Responsive Style
     .RecruitFaq .right-faq {
         margin-top: 20px;
     }
+
     /* question */
     .RecruitFaq .faq .faq-list a {
         font-size: 16px;
     }
+
     /* number */
     .RecruitFaq .faq .faq-list span {
         font-size: 18px;
@@ -156,6 +167,7 @@ Responsive Style
     .RecruitFaq .faq .faq-list a {
         font-size: 15px;
     }
+
     /* number */
     .RecruitFaq .faq .faq-list span {
         font-size: 17px;
