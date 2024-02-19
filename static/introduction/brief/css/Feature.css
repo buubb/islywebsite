@@ -232,7 +232,10 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    .Feature #title {
+        font-size: 2.5rem;
+        letter-spacing: 0.055em;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */

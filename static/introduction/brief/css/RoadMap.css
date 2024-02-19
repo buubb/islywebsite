@@ -10,18 +10,25 @@ Basic
 
 /*
 Color Hex
--- light: #2A2C30
--- m1: #424549
--- m2: #8D8F91
--- dark: #989A9C
+-- bg: #2A2C30
+-- icon: #424549
+-- light1: #8D8F91
+-- light2: #989A9C
  */
 
 
 /*
 ---------------------------------------------
-Custom Text
+Subtitle, Title
 ---------------------------------------------
 */
+
+.RoadMap #subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
 
 .RoadMap #title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -33,16 +40,16 @@ Custom Text
     text-transform: capitalize;
 }
 
-.RoadMap #subtitle,
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
 .RoadMap #week,
 .RoadMap #hashtag {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-.RoadMap #subtitle {
-    color: #8D8F91;
-    letter-spacing: 0.035em;
-    font-weight: 500;
 }
 
 .RoadMap #week {
@@ -53,7 +60,7 @@ Custom Text
 
 .RoadMap #hashtag {
     color: #8D8F91;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -159,7 +166,7 @@ Owl-nav
     justify-content: center;
     border-radius: 50px;
     font-size: 22px;
-    color: #F2F8FE;
+    color: #FFFFFF;
     background: #2A2C30;
     transition: .5s;
 }
@@ -167,7 +174,7 @@ Owl-nav
 .RoadMap .roadmap-carousel .owl-nav .owl-prev:hover,
 .RoadMap .roadmap-carousel .owl-nav .owl-next:hover {
     color: #2A2C30;
-    background: #F2F8FE;
+    background: #FFFFFF;
 }
 
 
@@ -189,9 +196,7 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .RoadMap #subtitle {
-        font-size: 1rem;
-    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -201,7 +206,5 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .RoadMap #subtitle {
-        font-size: 0.9rem;
-    }
+
 }
