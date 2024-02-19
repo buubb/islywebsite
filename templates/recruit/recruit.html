@@ -26,14 +26,16 @@
     <!-- Raon Additional CSS Files -->
     <link rel="stylesheet" href="{% static 'recruit/css/Inform.css' %}">
     <link rel="stylesheet" href="{% static 'recruit/css/Process.css' %}">
+    <link rel="stylesheet" href="{% static 'recruit/css/Facts.css' %}">
     <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
     <link rel="stylesheet" href="{% static 'recruit/css/RecruitFaq.css' %}">
 
-    <!-- Raon Fonts -->
+    <!-- Raon Text Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
     <!-- Raon Icon Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   </head>
@@ -57,8 +59,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8 text-center">
                         <p class="section-title text-white justify-content-center"><span></span>모집 알림 신청하기<span></span></p>
-                        <h1 class="text-center text-white mb-4" id="title">Stay Always In Touch</h1>
-                        <p class="text-white mb-4" id="content">
+                        <h1 class="title text-center text-white mb-4">Stay Always In Touch</h1>
+                        <p class="note text-white mb-4">
                             현재 99기 활동 중! 모집 기간이 되면 메일로 알려드릴게요
                         </p>
                         <div class="position-relative w-100 mt-3">
@@ -77,8 +79,8 @@
           <div class="Process container-process">
             <div class="col-lg-12">
               <div class="text-center mx-auto">
-                <div class="btn btn-sm border border-2 rounded-pill text-white px-3 mb-3" id="subtitle">Procedure</div>
-                <h1 class="mb-5" id="title">How To Apply<br> For I.Sly()</h1>
+                <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">Procedure</div>
+                <h1 class="title mb-5">How To Apply<br> For I.Sly()</h1>
               </div>
               <div class="row g-4">
                   <div class="col-xl-3 col-lg-6 col-md-6">
@@ -114,9 +116,9 @@
                         </div>
                         <h5 class="mb-3">지원방법</h5>
                         <p>
-                            <i class="bi bi-check-lg"></i> 1차 서류<br>
-                            <i class="bi bi-check-lg"></i> 2차 면접<br>
-                            <i class="bi bi-check-lg"></i> 최종 합격
+                            <i class="bi bi-check-lg"></i> 1차 서류 제출<br>
+                            <i class="bi bi-check-lg"></i> 2차 온라인 면접<br>
+                            <i class="bi bi-check-lg"></i> 3차 최종 합격
                         </p>
                     </div>
                   </div>
@@ -137,12 +139,62 @@
           <!-- ***** Process End ***** -->
 
 
+          <!-- ***** Facts Start ***** -->
+          <div class="Facts">
+            <div class="col-lg-12">
+              <div class="text-center mx-auto">
+                <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">About Us</div>
+                <h1 class="title mb-5">Activity Records<br>Hitherto</h1>
+              </div>
+              <div class="row g-4 container-facts">
+                  <div class="col-xl-3 col-md-6">
+                     <div class="facts-item">
+                        <div class="text-center p-5">
+                            <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                            <h1 class="number display-3 mb-0" data-toggle="counter-up">4</h1>
+                            <h5 class="topic text-white">Years</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-3">
+                     <div class="facts-item">
+                        <div class="text-center p-5">
+                            <i class="fa-solid fa-envelopes-bulk fa-3x text-white mb-3"></i>
+                            <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
+                            <h5 class="topic text-white">Applicants</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-3">
+                     <div class="facts-item">
+                        <div class="text-center p-5">
+                            <i class="fa fa-user-group fa-3x text-white mb-3"></i>
+                            <h1 class="number display-3 mb-0" data-toggle="counter-up">80</h1>
+                            <h5 class="topic text-white">Members</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-3">
+                     <div class="facts-item">
+                        <div class="text-center p-5">
+                            <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                            <h1 class="number display-3 mb-0" data-toggle="counter-up">32</h1>
+                            <h5 class="topic text-white">Projects</h5>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Facts End ***** -->
+
+
           <!-- ***** FAQ Start ***** -->
           <div class="RecruitFaq pb-3">
             <div class="row">
               <div class="col-lg-12 text-center mx-auto">
-                <div class="btn btn-sm border border-2 rounded-pill text-white px-3 mb-3" id="subtitle">Popular FAQs</div>
-                <h1 class="mb-5" id="title">Frequently Asked<br> Questions</h1>
+                <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">Popular FAQs</div>
+                <h1 class="title mb-5">Frequently Asked<br> Questions</h1>
               </div>
               <div class="col-lg-12">
                   <div class="row">
@@ -258,7 +310,7 @@
                         <h3> Contact </h3>
                         <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
                         <ion-icon class="call" size="large" name="call"></ion-icon>
-                        <ion-icon class="talk" size="large"name="chatbubbles"></ion-icon>
+                        <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
                     </div>
                 </div>
                 <div class="footer-nav">
@@ -293,8 +345,13 @@
   <script src="{% static 'assets/js/custom.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- Raon Additional JavaScript -->
+  <!-- Raon FAQ JavaScript -->
   <script src="{% static 'recruit/js/RecruitFaq.js' %}"></script>
+
+  <!-- Raon Facts JavaScript -->
+  <script src="{% static 'recruit/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'recruit/js/counterup.min.js' %}"></script>
+  <script src="{% static 'recruit/js/Facts.js' %}"></script>
 
   </body>
   <!-- icons : insta, kakao, call -->
