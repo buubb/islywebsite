@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
 <!--
 
@@ -44,7 +44,6 @@ https://templatemo.com/tm-579-cyborg-gaming
         <div class="page-content">
 
           <!-- ***** Banner Start ***** -->
-
           <div class="row justify-content-center mt-5">
             <div class="col-md-4">
               <div class="from-group">
@@ -65,17 +64,16 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <br>
                     <input type="text" class="form-control" name="username" id="username"
                         placeholder="write your ID"
-                        value="{{ form.username.value|default_if_none:'' |escape }}"> 
+                        value="{{ form.username.value|default_if_none:'' |escape }}">
                           <!-- *escape : 사용자 입력 노출 방지 위함 , 특수문자나 태그 등이 html로 해석되지 않도록 하여 XSS 공격 방지가능  -->
-                    
+
                     <br>
                     <input type="text" class="form-control" name="password" id="password"
                         placeholder="write your PW"
                         value="{{ form.password.value|default_if_none:'' |escape }}">
-        
-                    </div>
+                  </div>
 
-                    <div class="buttons">
+                  <div class="buttons">
                       <label>
                         <input type="checkbox" id="show-password">SHOW PASSWORD
                       </label>
@@ -98,23 +96,21 @@ https://templatemo.com/tm-579-cyborg-gaming
                             }
                         });
                       </script>
-                    </div>
                   </div>
                 </form>
               </div>
-              
             </div>
           </div>
+          <!-- ***** Banner End ***** -->
+
         </div>
       </div>
-      
     </div>
   </div>
-</div>
 
 
    
-          <!-- ***** Gaming Library End ***** -->
+
 
 
   <!-- Scripts -->

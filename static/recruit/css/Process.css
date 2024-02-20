@@ -15,7 +15,7 @@ Subtitle, Title
 ---------------------------------------------
 */
 
-.Process #subtitle {
+.Process .subtitle {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 600;
     letter-spacing: 0.075em;
@@ -23,7 +23,7 @@ Subtitle, Title
 }
 
 
-.Process #title {
+.Process .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #FFFFFF;
     display: block;
@@ -33,27 +33,43 @@ Subtitle, Title
     text-transform: capitalize;
 }
 
+
 /*
 ---------------------------------------------
 Custom Text
 ---------------------------------------------
 */
 
-.process-item h5,
-.process-item p {
+.Process .process-item h5,
+.Process .process-item p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
 }
 
-/* item-title */
-.process-item h5 {
+/* topic */
+.Process .process-item h5 {
     font-weight: 700;
     letter-spacing: 0.075em;
 }
 
-/* item-content */
-.process-item p {
+/* content */
+.Process .process-item p {
     letter-spacing: 0.055em;
+}
+
+
+/*
+---------------------------------------------
+Custom Icon
+---------------------------------------------
+*/
+
+.Process .process-item .bi-check-lg {
+    color: #5EE773;
+}
+
+.Process .process-item:hover .bi-check-lg {
+    color: #FFFFFF;
 }
 
 
@@ -93,10 +109,6 @@ Icon-box
     background: #5EE773;
 }
 
-.Process .icon-box-light::before {
-    background: var(--bs-light);
-}
-
 
 /*
 ---------------------------------------------
@@ -104,11 +116,11 @@ Item
 ---------------------------------------------
 */
 
-.container-process {
+.Process .container-process {
     position: relative;
 }
 
-.container-process::before {
+.Process .container-process::before {
     position: absolute;
     content: '';
     background: var(--bs-light);
@@ -120,34 +132,34 @@ Item
     z-index: -1;
 }
 
-.process-item {
+.Process .process-item {
     position: relative;
     height: 100%;
     padding: 30px;
     background: #2A2C30;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .05);
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .05); */
     border-radius: 23px;
 }
 
-.process-item:hover {
+.Process .process-item:hover {
     background: #348E38;
 }
 
-.process-item * {
+.Process .process-item * {
     position: relative;
     transition: .5s;
     z-index: 1;
 }
 
-.process-item:hover h5,
-.process-item:hover p {
+.Process .process-item:hover h5,
+.Process .process-item:hover p {
     color: #FFFFFF;
 }
 
-.process-item:hover .icon-box-primary::before {
+.Process .process-item:hover .icon-box-primary::before {
     background: #1F2122;
 }
 
-.process-item:hover .icon-box-primary i {
+.Process .process-item:hover .icon-box-primary i {
     color: #FFFFFF !important;
 }

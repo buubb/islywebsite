@@ -15,14 +15,14 @@ Subtitle, Title
 ---------------------------------------------
 */
 
-.RecruitFaq #subtitle {
+.RecruitFaq .subtitle {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 600;
     letter-spacing: 0.075em;
     cursor: text !important;
 }
 
-.RecruitFaq #title {
+.RecruitFaq .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #FFFFFF;
     display: block;
@@ -88,7 +88,7 @@ FAQ-list
     letter-spacing: 0.075em;
 }
 
-/* number */
+/* Q */
 .RecruitFaq .faq .faq-list span {
     color: #FFFFFF;
     font-weight: 700;
@@ -134,7 +134,7 @@ Responsive Style
         font-size: 15px;
     }
 
-    /* number */
+    /* Q */
     .RecruitFaq .faq .faq-list span {
         font-size: 17px;
     }
@@ -157,7 +157,7 @@ Responsive Style
         font-size: 16px;
     }
 
-    /* number */
+    /* Q */
     .RecruitFaq .faq .faq-list span {
         font-size: 18px;
     }
@@ -175,7 +175,7 @@ Responsive Style
         font-size: 15px;
     }
 
-    /* number */
+    /* Q */
     .RecruitFaq .faq .faq-list span {
         font-size: 17px;
     }
