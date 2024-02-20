@@ -1,4 +1,4 @@
-// Brief Template Javascript
+// Recruit Template Javascript
 
 (function ($) {
     "use strict";

@@ -4,18 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fa5443-56bb-4cfc-b399-73b29ec5a0ed" name="Changes" comment="">
+    <list default="true" id="ec56e6e7-8d15-4771-b944-6c1d1daa17ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/Inform.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Inform.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/Process.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Process.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/Facts.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Facts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/js/Facts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/js/Facts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/make.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/make.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,20 +32,17 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
+  "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2caqlrVO9stLyrgXmDeevzXC1Sm" />
+  <component name="ProjectId" id="2ccvWxxeKWnsniIchNaAK5EZOAn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -48,12 +54,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -82,12 +82,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="30fa5443-56bb-4cfc-b399-73b29ec5a0ed" name="Changes" comment="" />
-      <created>1708360192032</created>
+      <changelist id="ec56e6e7-8d15-4771-b944-6c1d1daa17ad" name="Changes" comment="" />
+      <created>1708423717786</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708360192032</updated>
-      <workItem from="1708360194592" duration="7273000" />
+      <updated>1708423717786</updated>
+      <workItem from="1708423721112" duration="2412000" />
     </task>
     <servers />
   </component>
