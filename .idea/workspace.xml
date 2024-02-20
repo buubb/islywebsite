@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec56e6e7-8d15-4771-b944-6c1d1daa17ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/Facts.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Facts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/js/Facts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/js/Facts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/make.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/make.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/a.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708423717786</updated>
-      <workItem from="1708423721112" duration="2412000" />
+      <workItem from="1708423721112" duration="3373000" />
     </task>
     <servers />
   </component>
