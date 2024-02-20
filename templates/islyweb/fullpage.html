@@ -11,9 +11,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="{% static 'fullpage/jquery.fullPage.js' %}"></script>
     <script src="{% static 'fullpage/main.js' %}"></script>
-   <link rel="stylesheet" href="{% static 'recruit/css/schedule.css' %}">
+    <link rel="stylesheet" href="{% static 'recruit/css/schedule.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 </head>
 <body>
     {% include "fullpagenav.html" %}
@@ -253,6 +254,11 @@
         </section>
     </main>
     <script src="{% static 'recruit/js/schedule.js' %}"></script>
+    <script>
+        $(".hamburger").click(function(){
+        $(".nav").slideToggle();
+      });
+      </script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

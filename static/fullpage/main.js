@@ -45,3 +45,7 @@ function toggleAnswer(answerID) {
 
     typing(); // 처음 한 번만 실행
 });
+
+$(".hamburger").click(function(){
+    $(".nav").slideToggle();
+});
