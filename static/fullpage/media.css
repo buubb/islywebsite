@@ -43,6 +43,19 @@
     .s1-wrap{
         padding:0px 30px;
     }
+    .mainbanner{
+        padding-right: 0px;
+    }
+    .mainbanner p{
+        text-align: center!important;
+    }
+    .text_box{
+        text-align: center!important;
+        padding:0px;
+    }
+    .bg-3 .button{
+        margin: 35px 0px 50px 0px;
+    }
 }
 
 @media(min-width:1255px){

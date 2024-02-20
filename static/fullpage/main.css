@@ -230,9 +230,11 @@ nav .res-nav .icon-wrap .hamburger{
     margin:auto;
 }
 .mainbanner{
-    position:absolute;
-    left:250px;
-    top:220px;
+    position:relative;
+    margin:auto;
+    max-width: 700px;
+    width: 100%;
+    padding-right:440px;
 }
 .mainbanner p{
     text-align: left!important;
@@ -246,13 +248,14 @@ nav .res-nav .icon-wrap .hamburger{
     color:#5ee773;
 }
 .text_box{
-    position:absolute;
-    left:250px;
-    top:250px;
-    /* height: 100px;*/
+    position:relative;
     font-size: 100px;
     font-weight: 900;
     text-align: left!important;
+    max-width: 700px;
+    margin:auto;
+    width:100%;
+    padding:0px 440px 0px 0px;
 }
 .cursor {
     animation: blink 0.5s infinite;
@@ -316,24 +319,21 @@ nav .res-nav .icon-wrap .hamburger{
 }
 
 .bg-3 {
-    background: #37474f;
     color: #fff;
-    position:absolute;
-    left:240px;
-    top:545px;
-  }
+    position:relative;
+    margin:auto;
+    width: 100%;
+}
 
 .bg-3 .button {
-    float: left;
     min-width: 150px;
     max-width: 250px;
-    display: block;
-    margin: 1em;
+    margin: 35px 900px 50px 1em;
     padding: 1em 2em;
     background: none;
     color: inherit;
     vertical-align: middle;
-    position: absolute;
+    position: relative;
     z-index: 1;
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
