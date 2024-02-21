@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec56e6e7-8d15-4771-b944-6c1d1daa17ad" name="Changes" comment="">
+    <list default="true" id="56fb0da1-43ec-4ec7-a893-47e7e2cc3a41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,16 +22,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2ccvWxxeKWnsniIchNaAK5EZOAn" />
+  <component name="ProjectId" id="2cfDroJmzyRmx0QDC6OuEqcBICo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -48,6 +43,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\brief\css" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -76,12 +76,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ec56e6e7-8d15-4771-b944-6c1d1daa17ad" name="Changes" comment="" />
-      <created>1708423717786</created>
+      <changelist id="56fb0da1-43ec-4ec7-a893-47e7e2cc3a41" name="Changes" comment="" />
+      <created>1708493942242</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708423717786</updated>
-      <workItem from="1708423721112" duration="3373000" />
+      <updated>1708493942242</updated>
+      <workItem from="1708493944793" duration="1603000" />
     </task>
     <servers />
   </component>

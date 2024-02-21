@@ -97,10 +97,6 @@ Responsive Style
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .RulesLink {
-        margin-bottom: 40px;
-    }
-
     .RulesLink .rules-button a {
         font-size: 0.9rem;
         height: 3.2rem;
