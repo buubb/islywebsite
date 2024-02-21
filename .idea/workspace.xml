@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56fb0da1-43ec-4ec7-a893-47e7e2cc3a41" name="Changes" comment="">
+    <list default="true" id="c4f9f894-3703-476b-9150-33f72ac1e88a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +29,7 @@
   "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2cfDroJmzyRmx0QDC6OuEqcBICo" />
+  <component name="ProjectId" id="2cfmVyZa37pYIbZxQ5k51InQhBH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,7 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\brief\css" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,12 +80,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="56fb0da1-43ec-4ec7-a893-47e7e2cc3a41" name="Changes" comment="" />
-      <created>1708493942242</created>
+      <changelist id="c4f9f894-3703-476b-9150-33f72ac1e88a" name="Changes" comment="" />
+      <created>1708511036982</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708493942242</updated>
-      <workItem from="1708493944793" duration="1603000" />
+      <updated>1708511036982</updated>
+      <workItem from="1708511038014" duration="2817000" />
     </task>
     <servers />
   </component>
