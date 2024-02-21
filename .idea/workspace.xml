@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f9f894-3703-476b-9150-33f72ac1e88a" name="Changes" comment="">
+    <list default="true" id="c042ac64-2d1d-4b02-a768-f92547fbf556" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
   "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2cfmVyZa37pYIbZxQ5k51InQhBH" />
+  <component name="ProjectId" id="2ch1A8JOaYEeIdgarUsOxxvD6oo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,7 +45,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\CTF_Challenge" />
     </key>
   </component>
   <component name="RunManager">
@@ -74,12 +76,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c4f9f894-3703-476b-9150-33f72ac1e88a" name="Changes" comment="" />
-      <created>1708511036982</created>
+      <changelist id="c042ac64-2d1d-4b02-a768-f92547fbf556" name="Changes" comment="" />
+      <created>1708548851444</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708511036982</updated>
-      <workItem from="1708511038014" duration="3719000" />
+      <updated>1708548851444</updated>
+      <workItem from="1708548853872" duration="744000" />
     </task>
     <servers />
   </component>

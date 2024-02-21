@@ -11,14 +11,14 @@ CTF_Challenge Style
 }
 
 /* Wargame */
-.ctf .heading-section h1 {
-    text-align: center;
-    margin-bottom: 60px;
-    color: #57f579;
+.ctf .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 3rem;
+    color: #FFFFFF;
+    display: block;
     font-weight: 900;
     letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
 }
 
 .ctf .item .thumb {
@@ -72,7 +72,7 @@ CTF_Challenge Style
     line-height: 1.3;
     letter-spacing: 0.075em;
     font-weight: 700;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 /* Hashtag */
@@ -84,25 +84,6 @@ CTF_Challenge Style
     /* add */
     font-size: 14px;
     line-height: 1.5;
-}
-
-.ctf .item ul {
-    float: right;
-    margin-top: 20px;
-}
-
-.ctf .item ul li {
-    text-align: right;
-    color: #fff;
-    font-size: 14px;
-}
-
-.ctf .item ul li:first-child i {
-    color: yellow;
-}
-
-.ctf .item ul li:last-child i {
-    color: #60ec7e;
 }
 
 
@@ -132,7 +113,7 @@ Owl-nav
     transition: all .5s;
     width: 7px;
     height: 7px;
-    background-color: #fff;
+    background-color: #FFFFFF;
     margin: 0px 5px;
     border-radius: 50%;
     outline: none;
@@ -218,18 +199,11 @@ Responsive style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .ctf {
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* Wargame */
-    .ctf .heading-section h1 {
-        font-size: 2.5rem;
-    }
     /* Owl */
     .ctf .owl-nav .owl-next {
         right: -60px;
@@ -252,8 +226,5 @@ Responsive style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    /* Wargame */
-    .ctf .heading-section h1 {
-        margin-bottom: 40px;
-    }
+
 }
