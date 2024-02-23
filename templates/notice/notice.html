@@ -25,6 +25,7 @@
 
         <!-- Raon Additional Files -->
         <link rel="stylesheet" href="{% static 'notice/css/NoticeList.css' %}">
+        <link rel="stylesheet" href="{% static 'notice/css/NoticeLink.css' %}">
         <link rel="stylesheet" href="{% static 'notice/css/NoticeTask.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
@@ -56,7 +57,7 @@
                             <div class="col-lg-12">
                                 <div class="row justify-content-around gy-4">
                                     <div class="col-lg-12 d-flex flex-column justify-content-center">
-                                        <div class="info rounded">
+                                        <div class="info">
                                             <h3>출결조건</h3>
 
                                             <div class="icon-box d-flex position-relative">
@@ -144,12 +145,34 @@
                         <!-- ***** 출결조건 End ***** -->
 
 
+                        <!-- ***** 출결현황 Start ***** -->
+                        <div class="row pb-5">
+                            <div class="col-lg-12">
+                                <div class="NoticeLink">
+                                    <div class="text-center text-xl-start">
+                                        <div class="p-5 d-flex flex-column justify-content-xl-between flex-xl-row">
+                                            <div class="py-3">
+                                                <h4 class="linkSub opacity-50 lh-base">출결 현황</h4>
+                                                <h1 class="linkTitle mt-2 lh-base">Records of Attendance</h1>
+                                            </div>
+                                            <div class="notice-btn align-self-center">
+                                                <a href="https://docs.google.com/spreadsheets/d/1rzLxYcVEad6Zhdi22Uvd7ayLBYPpMzj4vUcDNya9Hqw/edit#gid=0"
+                                                   rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** 출결현황 End ***** -->
+
+
                         <!-- ***** 과제조건 Start ***** -->
                         <div class="NoticeList py-5">
                             <div class="col-lg-12">
                                 <div class="row justify-content-around gy-4">
                                     <div class="col-lg-12 d-flex flex-column justify-content-center">
-                                        <div class="info rounded">
+                                        <div class="info">
                                             <h3>과제조건</h3>
 
                                             <div class="icon-box d-flex position-relative">
@@ -183,12 +206,34 @@
                         <!-- ***** 과제조건 End ***** -->
 
 
-                        <!-- ***** 수료조건 Start ***** -->
+                        <!-- ***** 과제현황 Start ***** -->
+                        <div class="row pb-5">
+                            <div class="col-lg-12">
+                                <div class="NoticeLink">
+                                    <div class="text-center text-xl-start">
+                                        <div class="p-5 d-flex flex-column justify-content-xl-between flex-xl-row">
+                                            <div class="py-3">
+                                                <h4 class="linkSub opacity-50 lh-base">과제 제출 현황</h4>
+                                                <h1 class="linkTitle mt-2 lh-base">Records of Submission</h1>
+                                            </div>
+                                            <div class="notice-btn align-self-center">
+                                                <a href="https://docs.google.com/spreadsheets/d/1HznoDO4K1vYpxhNzsHxn83WPRd0Cl7Ul3ZMoPf4ug44/edit#gid=0"
+                                                   rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** 과제현황 End ***** -->
+
+
+                        <!-- ***** 수료조건 Start *****
                         <div class="NoticeList py-5">
                             <div class="col-lg-12">
                                 <div class="row justify-content-around gy-4">
                                     <div class="col-lg-12 d-flex flex-column justify-content-center">
-                                        <div class="info rounded">
+                                        <div class="info">
                                             <h3>수료조건</h3>
 
                                             <div class="icon-box d-flex position-relative">
@@ -250,10 +295,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ***** 수료조건 End ***** -->
+                         ***** 수료조건 End ***** -->
+
 
                         <!-- ***** 강의대여 Start ***** -->
-                        <div class="row pt-5 pb-3">
+                        <div class="row py-5">
                             <div class="col-lg-12">
                                 <div class="NoticeTask">
                                     <div class="heading-section">
@@ -340,7 +386,7 @@
                                         <div class="item">
                                             <a href="https://inf.run/uuQ3">
                                                 <div class="thumb">
-                                                    <img src="{% static 'assets/img/안드로이드 모바일 앱 모의해킹과 시큐어코딩.jpg' %}" alt="">
+                                                    <img src="{% static 'notice/img/안드로이드.png' %}" alt="">
                                                     <div class="hover-effect">
                                                         <h6>Click</h6>
                                                     </div>
@@ -359,19 +405,44 @@
                                                 <h4>AWS 클라우드 서비스 인프라 구축 이해와 해킹, 보안<br><span>#AWS #모의해킹</span></h4>
                                             </a>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="main-border-button text-center mt-3">
-                                        <a href="https://docs.google.com/spreadsheets/d/1G4vYDtdTSOXdDX746n9uM0cu5AIP9_cuux0G-v-lk0o/edit#gid=0"
-                                           rel="noopener noreferrer">
-                                            강의 대여 현황 보러가기
-                                        </a>
+                                        <div class="item">
+                                            <a href="https://inf.run/QXrC">
+                                                <div class="thumb">
+                                                    <img src="{% static 'notice/img/윈도우악성코드분석.png' %}" alt="">
+                                                    <div class="hover-effect">
+                                                        <h6>Click</h6>
+                                                    </div>
+                                                </div>
+                                                <h4>윈도우 악성코드(malware) 분석 입문 과정<br><span>#악성코드 #리버싱</span></h4>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- ***** 강의 대여 End *****  -->
+                        <!-- ***** 강의대여 End *****  -->
+
+
+                        <!-- ***** 강의대여 현황 Start *****  -->
+                        <div class="row pb-3">
+                            <div class="col-lg-12">
+                                <div class="NoticeLink">
+                                    <div class="text-center text-xl-start">
+                                        <div class="p-5 d-flex flex-column justify-content-xl-between flex-xl-row">
+                                            <div class="py-3">
+                                                <h4 class="linkSub opacity-50 lh-base">강의 대여 현황</h4>
+                                                <h1 class="linkTitle mt-2 lh-base">Records of Rental</h1>
+                                            </div>
+                                            <div class="notice-btn align-self-center">
+                                                <a href="https://docs.google.com/spreadsheets/d/1G4vYDtdTSOXdDX746n9uM0cu5AIP9_cuux0G-v-lk0o/edit#gid=0"
+                                                   rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** 강의 대여 현황 End *****  -->
 
                     </div>
                 </div>

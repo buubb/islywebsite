@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc37aa0a-f42f-4433-b175-cd0b914be6bf" name="Changes" comment="">
+    <list default="true" id="90b9d2e3-b77e-4240-a23d-0fefdcb9340e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/introduction/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/introduction/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/copyright.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +22,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2cjkqjtQ4nFwkGn7WY7SUJbLHHq" />
+  <component name="ProjectId" id="2ckFxtg7nuocLIwt1boosOLBPAz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,7 +45,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\introduction" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\notice\img" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\notice\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,12 +77,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc37aa0a-f42f-4433-b175-cd0b914be6bf" name="Changes" comment="" />
-      <created>1708632569500</created>
+      <changelist id="90b9d2e3-b77e-4240-a23d-0fefdcb9340e" name="Changes" comment="" />
+      <created>1708647919572</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708632569500</updated>
-      <workItem from="1708632571999" duration="993000" />
+      <updated>1708647919572</updated>
+      <workItem from="1708647921610" duration="5399000" />
     </task>
     <servers />
   </component>

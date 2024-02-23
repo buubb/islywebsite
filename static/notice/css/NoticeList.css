@@ -5,7 +5,8 @@ Info
 */
 
 .NoticeList .info {
-    background-color: #2A2C30;
+    border-radius: 23px;
+    background-color: transparent;
     padding: 30px;
 }
 
@@ -111,7 +112,13 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .NoticeList .info {
+        padding: 20px;
+    }
 
+    .NoticeList .icon-box p.listCircle {
+        font-size: 14px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -121,5 +128,7 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    .NoticeList .icon-box p.listCircle {
+        font-size: 13px;
+    }
 }
