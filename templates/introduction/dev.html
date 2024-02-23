@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <title>I.Sly()</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <!-- Raon Additional Files -->
+        <link rel="stylesheet" href="{% static 'introduction/dev/css/DevList.css' %}">
+        <link rel="stylesheet" href="{% static 'copyright.css' %}">
+
+        <!-- Raon Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+        <!-- Yubin add -->
+        <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+
+    </head>
+
+    <body>
+
+        <!-- ***** Navbar Start ***** -->
+        {% include "fullpagenav.html" %}
+        <!-- ***** Navbar End ***** -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-content">
+
+                        <!-- ***** Developers Start ***** -->
+                        <div class="DevList py-5">
+                            <div class="col-lg-12">
+                                <div class="text-center mx-auto">
+                                    <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">Developers</div>
+                                    <h1 class="title mb-5">I.Sly() Website Was<br>Developed By Us!</h1>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="dev-item overflow-hidden pb-4">
+                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/yubin_b1.png' %}" alt="">
+                                            <h5 class="mb-2">Yubin Lee</h5>
+                                            <span>Convergence Security<br>Engineering 21</span>
+                                            <ul class="dev-social">
+                                                <li><a class="btn btn-square" href="https://github.com/buubb"><i class="fa-brands fa-github"></i></a></li>
+                                                <li><a class="btn btn-square" href="https://velog.io/@buubb/posts"><i class="fa-solid fa-house"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-brands fa-discord"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="dev-item overflow-hidden pb-4">
+                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/raon_b1.png' %}" alt="">
+                                            <h5 class="mb-2">Raon Yang</h5>
+                                            <span>Convergence Security<br>Engineering 20</span>
+                                            <ul class="dev-social">
+                                                <li><a class="btn btn-square" href="https://github.com/raon-yang"><i class="fa-brands fa-github"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-solid fa-house"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-brands fa-discord"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="dev-item overflow-hidden pb-4">
+                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/sumi_b1.png' %}" alt="">
+                                            <h5 class="mb-2">Sumi Lee</h5>
+                                            <span>Convergence Security<br>Engineering 21</span>
+                                            <ul class="dev-social">
+                                                <li><a class="btn btn-square" href="https://github.com/sumi-2"><i class="fa-brands fa-github"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-solid fa-house"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-brands fa-discord"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="dev-item overflow-hidden pb-4">
+                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/yubin_b1.png' %}" alt="">
+                                            <h5 class="mb-2">Eunju Park</h5>
+                                            <span>Convergence Security<br>Engineering 21</span>
+                                            <ul class="dev-social">
+                                                <li><a class="btn btn-square" href="https://github.com/enjprk41"><i class="fa-brands fa-github"></i></a></li>
+                                                <li><a class="btn btn-square" href="https://eunjuicyyyyyy.tistory.com/"><i class="fa-solid fa-house"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                                <li><a class="btn btn-square" href=""><i class="fa-brands fa-discord"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** Developers End ***** -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer Start -->
+        <div>
+            <div id="section-footer">
+                <div id="footer-text">
+                    <div class="footerbox">
+                        <h2> I.Sly() </h2>
+                        <p> since 2020 </p>
+                        <div class="footer-contact">
+                            <h3> Contact </h3>
+                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
+                            <ion-icon class="call" size="large" name="call"></ion-icon>
+                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-category">
+                            <li><a href="/recruit/">Recruit</a></li>
+                            <li><a href="/CTF-Challenge/">Wargame</a></li>
+                            <li><a href="/volunteer/">Project</a></li>
+                            <li>
+                                <a>About</a>
+                                <ul class="aboutcolumn">
+                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
+                                    <li><a href="/notice/"> 공지사항 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a href="/recruit/">Join Us <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+        <script src="{% static 'assets/js/tabs.js' %}"></script>
+        <script src="{% static 'assets/js/popup.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle();
+            });
+        </script>
+
+        <!-- icons : insta, kakao, call -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>

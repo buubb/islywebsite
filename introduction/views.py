@@ -22,4 +22,4 @@ def rules(request):
     return render(request, "introduction/rules.html")
 
 def developers(request):
-    return render(request, "introduction/developers.html")
+    return render(request, "introduction/dev.html")
