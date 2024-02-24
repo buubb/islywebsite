@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bb588b8-83c0-4249-a1c1-7b619f5360f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/introduction/dev/img/eunju_memoji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/introduction/dev/img/sumi_memoji.png" afterDir="false" />
+    <list default="true" id="e92d0c8f-e35f-4926-8239-3022601ca336" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/sumi_b1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/yubin_b1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/img/color.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,10 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2cnXPfDL7vUTPpqjCR10XaYoSCz" />
+  <component name="ProjectId" id="2cnuQRNqdi0oVTcs9ourGdIUX3M" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,7 +42,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/islywebsite/static/introduction/dev/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,14 +49,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\img" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -85,12 +77,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9bb588b8-83c0-4249-a1c1-7b619f5360f5" name="Changes" comment="" />
-      <created>1708748294614</created>
+      <changelist id="e92d0c8f-e35f-4926-8239-3022601ca336" name="Changes" comment="" />
+      <created>1708759648046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708748294614</updated>
-      <workItem from="1708748296732" duration="6461000" />
+      <updated>1708759648046</updated>
+      <workItem from="1708759650676" duration="989000" />
     </task>
     <servers />
   </component>
