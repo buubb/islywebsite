@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5949d1d2-7b2f-4326-9a94-332d14c501ce" name="Changes" comment="">
+    <list default="true" id="f68840a3-57ff-4d60-bb8f-85af011bc079" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/raon_b1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/sumi_memoji.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/seolin_memoji.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +24,7 @@
   "customColor": "",
   "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2coPQgaH8HuOphiZL80MF3p06Ag" />
+  <component name="ProjectId" id="2coixduIbSScicFA0QjuLDXnw7z" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +35,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/islywebsite/static/introduction/dev/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,9 +43,6 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\img" />
     </key>
@@ -80,12 +75,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5949d1d2-7b2f-4326-9a94-332d14c501ce" name="Changes" comment="" />
-      <created>1708774944858</created>
+      <changelist id="f68840a3-57ff-4d60-bb8f-85af011bc079" name="Changes" comment="" />
+      <created>1708784582047</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708774944858</updated>
-      <workItem from="1708774947411" duration="3402000" />
+      <updated>1708784582047</updated>
+      <workItem from="1708784583952" duration="358000" />
     </task>
     <servers />
   </component>
