@@ -1,12 +1,5 @@
 /*
 ---------------------------------------------
-Basic
----------------------------------------------
-*/
-
-
-/*
----------------------------------------------
 Subtitle, Title
 ---------------------------------------------
 */
@@ -48,7 +41,7 @@ Subtitle, Title
 .DevList span {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 
@@ -85,7 +78,7 @@ Task
 .dev-item .dev-task a {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
-    background: #424549;
+    background: #36383E;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.075em;
