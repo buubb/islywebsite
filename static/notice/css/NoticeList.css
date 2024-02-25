@@ -1,0 +1,134 @@
+/*
+---------------------------------------------
+Info
+---------------------------------------------
+*/
+
+.NoticeList .info {
+    border-radius: 23px;
+    background-color: transparent;
+    padding: 30px;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.NoticeList h3,
+.NoticeList .icon-box h4,
+.NoticeList .icon-box p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+
+/*
+---------------------------------------------
+Scheme
+---------------------------------------------
+*/
+
+.NoticeList h3 {
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-bottom: 8px;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+    transition: 0.3s;
+    letter-spacing: 0.075em;
+}
+
+.NoticeList .icon-box {
+    margin-top: 50px;
+}
+
+.NoticeList .icon-box .bi-1-square,
+.NoticeList .icon-box .bi-2-square,
+.NoticeList .icon-box .bi-3-square,
+.NoticeList .icon-box .bi-4-square,
+.NoticeList .icon-box .bi-5-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-right: 25px;
+    font-size: 50px;
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    line-height: 0;
+    /* box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08); */
+    background-color: transparent;
+    /* transition: 0.3s; */
+}
+
+.NoticeList .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: #FFFFFF;
+    letter-spacing: 0.075em;
+}
+
+.NoticeList .icon-box p {
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    letter-spacing: 0.055em;
+}
+
+
+/*
+---------------------------------------------
+ListCircle
+---------------------------------------------
+*/
+
+.NoticeList .icon-box p.listCircle {
+    margin-left: 15px;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .NoticeList .info {
+        padding: 20px;
+    }
+
+    .NoticeList .icon-box p.listCircle {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .NoticeList .icon-box p.listCircle {
+        font-size: 13px;
+    }
+}

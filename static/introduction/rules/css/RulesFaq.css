@@ -1,21 +1,10 @@
 /*
 ---------------------------------------------
-Basic
+Title
 ---------------------------------------------
 */
 
-.Rules a, p {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-
-/*
----------------------------------------------
-Custom Text
----------------------------------------------
-*/
-
-.Rules #title {
+.Rules .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #FFFFFF;
     display: block;
@@ -23,6 +12,16 @@ Custom Text
     letter-spacing: 0.075em;
     line-height: 1.3;
     text-transform: capitalize;
+}
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.Rules a, p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 .Rules #list-small {
@@ -52,18 +51,19 @@ FAQ-list
     list-style: none;
 }
 
-
+/*
 .Rules .faq .faq-list li + li {
     margin-top: 20px;
 }
-
+*/
 
 .Rules .faq .faq-list li {
-    padding: 20px;
-    background: #2A2C30;
-    border-radius: 4px;
+    padding: 25px 10px;
+    background: transparent;
+    border-radius: 0;
     position: relative;
     cursor: pointer;
+    border-bottom: 1.5px solid #FFFFFF;
 }
 
 /* question */
@@ -101,9 +101,10 @@ FAQ-list
 /* answer */
 .Rules .faq .faq-list p {
     margin-bottom: 0;
-    padding: 10px 0 0 0;
+    padding: 15px 0 0 0;
+    font-size: 16px;
     color: #FFFFFF;
-    text-align: justify;
+    /* text-align: justify; */
     letter-spacing: 0.075em;
 }
 
@@ -126,9 +127,7 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .Rules .right-faq {
-        margin-top: 20px;
-    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -137,6 +136,15 @@ Responsive Style
     .Rules .faq .faq-list a,
     .Rules .faq .faq-list span {
         font-size: 18px;
+    }
+
+    /* answer */
+    .Rules .faq .faq-list p {
+        font-size: 15px;
+    }
+
+    .Rules #list-small {
+        font-size: 12px;
     }
 }
 
