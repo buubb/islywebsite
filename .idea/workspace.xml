@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5012ee4e-c6da-4065-b8d7-dfcd49f7a499" name="Changes" comment="">
+    <list default="true" id="1bcdba73-79ab-4e81-9852-6a14b24cce2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
   "customColor": "",
   "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2cqJOjxwBNc02ymjb1HEoilLxaZ" />
+  <component name="ProjectId" id="2csf4PYLf2KX0X3ThK1M4GW261H" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,12 +77,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5012ee4e-c6da-4065-b8d7-dfcd49f7a499" name="Changes" comment="" />
-      <created>1708833147279</created>
+      <changelist id="1bcdba73-79ab-4e81-9852-6a14b24cce2c" name="Changes" comment="" />
+      <created>1708905016296</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708833147279</updated>
-      <workItem from="1708833148213" duration="4942000" />
+      <updated>1708905016296</updated>
+      <workItem from="1708905018817" duration="2273000" />
     </task>
     <servers />
   </component>
