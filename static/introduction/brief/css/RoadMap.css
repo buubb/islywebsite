@@ -142,31 +142,57 @@ Owl-nav
 ---------------------------------------------
 */
 
-.RoadMap .roadmap-carousel .owl-nav {
+.RoadMap .owl-nav {
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-.RoadMap .roadmap-carousel .owl-nav .owl-prev,
-.RoadMap .roadmap-carousel .owl-nav .owl-next {
-    margin: 0 12px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    font-size: 22px;
-    color: #FFFFFF;
-    background: #2A2C30;
-    transition: .5s;
+.RoadMap .owl-nav .owl-prev span,
+.RoadMap .owl-nav .owl-next span {
+    opacity: 0;
 }
 
-.RoadMap .roadmap-carousel .owl-nav .owl-prev:hover,
-.RoadMap .roadmap-carousel .owl-nav .owl-next:hover {
+.RoadMap .owl-nav .owl-prev,
+.RoadMap .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+    margin: 0 12px;
+}
+
+.RoadMap .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: #2A2C30;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.RoadMap .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: #2A2C30;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.RoadMap .owl-nav .owl-prev:hover:before,
+.RoadMap .owl-nav .owl-next:hover:before {
     color: #2A2C30;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
+    opacity: 1;
 }
 
 
