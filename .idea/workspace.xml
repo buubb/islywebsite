@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="766e7c8a-9033-4f8e-85e8-ba1a584c6844" name="Changes" comment="">
+    <list default="true" id="a04d61cb-9919-4ef6-bc1c-c96e9221c160" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-posting.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem4.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   "customColor": "",
   "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2cwMi5X84Gd49iYBrJU0qDRymRP" />
+  <component name="ProjectId" id="2cx3xwom3zsUTjdOHYKRNZORAQz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +44,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\volunteer" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -70,12 +78,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="766e7c8a-9033-4f8e-85e8-ba1a584c6844" name="Changes" comment="" />
-      <created>1709018313423</created>
+      <changelist id="a04d61cb-9919-4ef6-bc1c-c96e9221c160" name="Changes" comment="" />
+      <created>1709039654199</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709018313423</updated>
-      <workItem from="1709018316850" duration="5817000" />
+      <updated>1709039654199</updated>
+      <workItem from="1709039656581" duration="2626000" />
     </task>
     <servers />
   </component>

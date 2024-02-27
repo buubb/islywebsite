@@ -4,8 +4,10 @@ Basic
 ---------------------------------------------
 */
 
-.vlt-posting {
-    padding: 20px 160px;
+.VltPosting .blanks {
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    padding: 50px 70px 30px;
 }
 
 
@@ -15,14 +17,14 @@ Headline
 ---------------------------------------------
 */
 
-.vlt-posting .headline {
+.VltPosting .headline {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 /* Write */
-.vlt-posting h2.major {
+.VltPosting h2.major {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #fff;
     font-size: 2.25rem;
@@ -37,7 +39,7 @@ Headline
 }
 
 /* Save Button */
-.vlt-posting button {
+.VltPosting button {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -53,7 +55,7 @@ Headline
     color: #1b1f22;
     background-color: #fff;
     border: 0;
-    border-radius: 1.5px;
+    border-radius: 0;
     height: 3.2rem;
     line-height: 3.2rem;
     padding: 0 1.25rem 0 1.35rem;
@@ -68,7 +70,7 @@ Headline
     margin: 0 0 2.5rem 0;
 }
 
-.vlt-posting button:hover {
+.VltPosting button:hover {
     background-color: #e1e2e2;
     opacity: 1;
 }
@@ -80,11 +82,11 @@ Form
 ---------------------------------------------
 */
 
-.vlt-posting .form {
+.VltPosting .form {
     margin: 0 0 2rem 0;
 }
 
-.vlt-posting .fields {
+.VltPosting .fields {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -97,7 +99,7 @@ Form
     margin: -1.5rem 0 2rem -1.5rem;
 }
 
-.vlt-posting .fields .field {
+.VltPosting .fields .field {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -110,7 +112,7 @@ Form
     width: calc(100% - 1.5rem);
 }
 
-.vlt-posting .fields .field.half {
+.VltPosting .fields .field.half {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -130,13 +132,13 @@ Label
 ---------------------------------------------
 */
 
-.vlt-posting .label-group {
+.VltPosting .label-group {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.vlt-posting label {
+.VltPosting label {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #fff;
     display: block;
@@ -149,7 +151,7 @@ Label
 }
 
 /* title-counter */
-.vlt-posting span {
+.VltPosting span {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #aaa;
     display: block;
@@ -162,7 +164,7 @@ Label
 }
 
 /* title-feedback */
-.vlt-posting p {
+.VltPosting p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #57f579;
     display: block;
@@ -181,10 +183,10 @@ Input
 ---------------------------------------------
 */
 
-.vlt-posting input[type="text"],
-.vlt-posting input[type="number"],
-.vlt-posting input[type="file"],
-.vlt-posting textarea {
+.VltPosting input[type="text"],
+.VltPosting input[type="number"],
+.VltPosting input[type="file"],
+.VltPosting textarea {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -194,7 +196,7 @@ Input
     -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     background-color: transparent;
-    border-radius: 1.5px;
+    border-radius: 0;
     border: solid 1.8px #fff;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 1rem;
@@ -208,17 +210,17 @@ Input
     resize: none;
 }
 
-.vlt-posting input[type="text"]:invalid,
-.vlt-posting input[type="number"]:invalid,
-.vlt-posting input[type="file"]:invalid,
-.vlt-posting textarea:invalid {
+.VltPosting input[type="text"]:invalid,
+.VltPosting input[type="number"]:invalid,
+.VltPosting input[type="file"]:invalid,
+.VltPosting textarea:invalid {
     box-shadow: none;
 }
 
-.vlt-posting input[type="text"]:focus,
-.vlt-posting input[type="number"]:focus,
-.vlt-posting input[type="file"]:focus,
-.vlt-posting textarea:focus {
+.VltPosting input[type="text"]:focus,
+.VltPosting input[type="number"]:focus,
+.VltPosting input[type="file"]:focus,
+.VltPosting textarea:focus {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #fff;
     font-size: 1rem;
@@ -228,22 +230,22 @@ Input
     box-shadow: 0 0 0 1px #fff;
 }
 
-.vlt-posting input[type="text"],
-.vlt-posting input[type="number"] {
+.VltPosting input[type="text"],
+.VltPosting input[type="number"] {
     height: 3.25rem;
 }
 
-.vlt-posting input[type="file"] {
+.VltPosting input[type="file"] {
     height: 3.25rem;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
-.vlt-posting textarea {
+.VltPosting textarea {
     padding: 0.75rem 1rem;
 }
 
-.vlt-posting input[type='number']::-webkit-outer-spin-button,
-.vlt-posting input[type='number']::-webkit-inner-spin-button {
+.VltPosting input[type='number']::-webkit-outer-spin-button,
+.VltPosting input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -257,62 +259,54 @@ Responsive Style
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-    .vlt-posting {
-        padding: 20px 120px;
-    }
+
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .vlt-posting {
-        padding: 20px 80px;
-    }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .vlt-posting {
-        padding: 20px 30px;
+    .VltPosting .blanks {
+        padding: 50px 50px 30px;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .vlt-posting {
-        padding: 40px 15px;
-    }
-
     /* Write */
-    .vlt-posting h2.major {
+    .VltPosting h2.major {
         font-size: 2rem;
     }
 
     /* label, title-counter */
-    .vlt-posting label,
-    .vlt-posting span {
+    .VltPosting label,
+    .VltPosting span {
         font-size: 0.9rem;
     }
 
     /* title-feedback */
-    .vlt-posting p {
+    .VltPosting p {
         font-size: 0.8rem;
     }
 
-    .vlt-posting input[type="text"],
-    .vlt-posting input[type="number"],
-    .vlt-posting input[type="file"],
-    .vlt-posting textarea {
+    .VltPosting input[type="text"],
+    .VltPosting input[type="number"],
+    .VltPosting input[type="file"],
+    .VltPosting textarea {
         font-size: 0.9rem;
     }
 
-    .vlt-posting input[type="text"]:focus,
-    .vlt-posting input[type="number"]:focus,
-    .vlt-posting input[type="file"]:focus,
-    .vlt-posting textarea:focus {
+    .VltPosting input[type="text"]:focus,
+    .VltPosting input[type="number"]:focus,
+    .VltPosting input[type="file"]:focus,
+    .VltPosting textarea:focus {
         font-size: 0.9rem;
     }
 
-    .vlt-posting button {
+    .VltPosting button {
         font-size: 0.9rem;
         height: 3rem;
         line-height: 3rem;
@@ -323,11 +317,11 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .vlt-posting {
-        padding: 40px 10px;
+    .VltPosting .blanks {
+        padding: 30px 30px 10px;
     }
 
-    .vlt-posting .fields {
+    .VltPosting .fields {
         width: calc(100% + 3rem);
         margin: -1.5rem 0 2rem -1.5rem;
     }
