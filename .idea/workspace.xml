@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a57a26a-1d98-42a0-8be7-5a8ddbd50057" name="Changes" comment="">
+    <list default="true" id="766e7c8a-9033-4f8e-85e8-ba1a584c6844" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
   "customColor": "",
   "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2cuPlK10X1e5QL6UJFtGZz2kEAi" />
+  <component name="ProjectId" id="2cwMi5X84Gd49iYBrJU0qDRymRP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,13 +42,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\img" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\js" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\css" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -77,12 +70,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a57a26a-1d98-42a0-8be7-5a8ddbd50057" name="Changes" comment="" />
-      <created>1708958641330</created>
+      <changelist id="766e7c8a-9033-4f8e-85e8-ba1a584c6844" name="Changes" comment="" />
+      <created>1709018313423</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708958641330</updated>
-      <workItem from="1708958642939" duration="1803000" />
+      <updated>1709018313423</updated>
+      <workItem from="1709018316850" duration="4915000" />
     </task>
     <servers />
   </component>
