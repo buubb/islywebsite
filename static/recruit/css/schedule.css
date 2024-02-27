@@ -4,7 +4,7 @@ Basic
 ---------------------------------------------
 */
 
-:root {
+#section2 {
     --hue: 223;
     --bg: hsl(var(--hue), 10%, 10%);
     --fg: hsl(var(--hue), 10%, 90%);
@@ -16,17 +16,19 @@ Basic
 
 .schedule {
     color: var(--fg);
-    font-size: 1.3em;
+   /* font-size: 1.3em!important; */
+   margin-bottom: 200px;
 }
 
 .schedule .heading-section {
     margin-top: 200px;
     text-align: center;
     margin-bottom: 60px;
+    font-size: 40px;
 }
 
 .schedule .heading-section h4 {
-    font-size: 2em;
+    color: #1b1f22;
 }
 
 /*
@@ -36,8 +38,9 @@ Button
 */
 
 .schedule button {
-    color: var(--fg);
-    border: none;
+    color: #27292a;
+    border: 2px;
+    margin-top: 8px;
 }
 
 .schedule .btn-group {
@@ -63,7 +66,8 @@ Button
     letter-spacing: 0.15rem;
     color: #1b1f22;
     background-color: #fff;
-    border: 0;
+    border-style: solid;
+    border-color: #1b1f22;
     border-radius: 0.375em;
     height: 2.55rem;
     line-height: 2.55rem;
@@ -81,6 +85,8 @@ Button
 .schedule button.btn__1:hover,
 .schedule button.btn__2:hover {
     background-color: #e1e2e2;
+    border: 2px;
+    border-color: #27292a;
     opacity: 1;
 }
 
@@ -139,7 +145,7 @@ Timeline
 }
 
 .timeline__dot {
-    background-color: currentColor;
+    background-color: #27292a;
     border-radius: 50%;
     display: inline-block;
     flex-shrink: 0;
@@ -156,14 +162,14 @@ Timeline
 }
 
 .timeline__item:not(:last-child):before {
-    background-color: currentColor;
+    background-color: #27292a;
     content: "";
     display: block;
     position: absolute;
-    top: 1em;
-    left: 2.625em;
+    top: 0.75em;
+    left: 2.9em;
     width: 0.125em;
-    height: 100%;
+    height: 107%;
     transform: translateX(-50%);
 }
 
@@ -199,10 +205,12 @@ Timeline
 }
 
 .timeline__item-body-content p {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: var(--fg);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+    color: #27292a;
+    font-size: 18px;
     font-weight: 500;
-    letter-spacing: 0.075rem;
+    letter-spacing: 0.075em;
+    line-height: 1.8;
     text-transform: none;
 }
 
@@ -210,7 +218,7 @@ Timeline
     display: block;
     font-size: 1.1em;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1em;
     margin: 0.2rem 0;
     text-transform: none;
 }
@@ -222,6 +230,7 @@ Timeline
 
 .timeline__meta {
     width: 100%;
+    margin-left: 16px;
 }
 
 .timeline__title {
@@ -231,6 +240,7 @@ Timeline
     letter-spacing: 0.1rem;
     line-height: 1.333;
     text-transform: capitalize;
+    color:#27292a;
 }
 
 /* Expanded state */

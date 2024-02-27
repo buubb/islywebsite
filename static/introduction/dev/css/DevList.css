@@ -1,0 +1,155 @@
+/*
+---------------------------------------------
+Subtitle, Title
+---------------------------------------------
+*/
+
+.DevList .subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
+
+.DevList .title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Subtitle, Title
+---------------------------------------------
+*/
+
+.DevList h5, span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+}
+
+.DevList h5 {
+    font-weight: 800;
+}
+
+.DevList span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.dev-item {
+    position: relative;
+    text-align: center;
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .07); */
+    background-color: #2A2C30;
+    border-radius: 23px;
+    /* add */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+---------------------------------------------
+Task
+---------------------------------------------
+*/
+
+.dev-item .dev-task {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.dev-item .dev-task a {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    background: #36383E;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.075em;
+    text-decoration: none;
+    border: none;
+    margin-top: 15px;
+}
+
+.dev-item .dev-task a:hover {
+    color: #424549;
+    background: #FFFFFF;
+    border: none;
+}
+
+
+/*
+---------------------------------------------
+Social
+---------------------------------------------
+*/
+
+.dev-item .dev-social {
+    position: absolute;
+    padding: 0;
+    top: 15px;
+    left: 0;
+    overflow: hidden;
+}
+
+.dev-item .dev-social li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: -50px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.dev-item:hover .dev-social li {
+    margin-left: 15px;
+    opacity: 1;
+}
+
+.dev-item .dev-social li .btn {
+    background: #424549;
+    color: #FFFFFF;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.dev-item .dev-social li .btn:hover {
+    color: #424549;
+    background: #FFFFFF;
+    border: none;
+}
+
+.dev-item .dev-social li:nth-child(1) {
+    transition-delay: .1s;
+}
+
+.dev-item .dev-social li:nth-child(2) {
+    transition-delay: .2s;
+}
+
+.dev-item .dev-social li:nth-child(3) {
+    transition-delay: .3s;
+}
+
+.dev-item .dev-social li:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.dev-item .dev-social li:nth-child(5) {
+    transition-delay: .5s;
+}

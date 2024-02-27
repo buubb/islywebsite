@@ -11,40 +11,201 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="{% static 'fullpage/jquery.fullPage.js' %}"></script>
     <script src="{% static 'fullpage/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'recruit/css/schedule.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 </head>
 <body>
     {% include "fullpagenav.html" %}
     <main id="fullpage">
-        <section class="section">
-          <div class="mainbanner">
-            <p>Hacking Club of Sungshin Women's University</p>
-            <!--<h1>Hello, We are</h1><h1 class="green">I.Sly()</h1>-->
-          </div>
-          <div class="text_box" data-trigger>
-            <span class="text"></span><span class="cursor">|</span>
-          </div>
-          <div class="scrolldown">
-            <p>scroll down</p>
-          </div>
-          <!-- <img src="{% static 'fullpage/img/mainpicture.jpg' %}" alt="">-->
-          <div class="scroll-downs">
-            <div class="mousey">
-              <div class="scroller"></div>
+        <section id="section" class="section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mainbanner">
+                        <p>Hacking Club of Sungshin Women's University</p>
+                      </div>
+                      <div class="text_box" data-trigger>
+                        <span class="text"></span><span class="cursor">|</span>
+                      </div>
+                      <div class="box bg-3">
+                        <button class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted" onclick="location.href='/recruit/'">지원하러 가기</button>
+                      </div>
+                      <!--<img class="mainlogo" src="{% static 'assets/img/ISlylogo.png' %}" alt="">-->
+                      <div class="scrolldown">
+                        <p>scroll down</p>
+                      </div>
+                      <div class="scroll-downs">
+                        <div class="mousey">
+                          <div class="scroller"></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section id ="section2" class="section">
+            <!-- ***** Schedule Start ***** -->
+          <div class="schedule">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4>활동은 어떻게 진행되나요?</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <svg display="none">
+                    <symbol id="arrow">
+                        <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </symbol>
+                </svg>
+                <div id="timeline" class="timeline">
+                    <div class="btn-group">
+                        <button class="btn__1" type="button" data-action="expand">Expand</button>
+                        <button class="btn__2" type="button" data-action="collapse">Collapse</button>
+                    </div>
+                    <!-- item1 -->
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item1-name" class="timeline__meta">
+                                <time class="timeline__date">Week 0</time><br>
+                                <strong class="timeline__title">Orientation</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">
+                                    <span>⭐오리엔테이션⭐</span>
+                                    동아리 소개와 친목 도모를 위한 다양한 활동이 준비되어 있습니다. 주로 온라인/오프라인 병행으로 진행되며, 각 기수별 상황에 따라 달라질 수 있습니다. 자세한 OT 일정은 내부 채널을 통해 공지해 드릴 예정입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item2 -->
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item2-name" class="timeline__meta">
+                                <time class="timeline__date">Week 1-4</time><br>
+                                <strong class="timeline__title">Basic Hacking Technique</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">
+                                    <span>🐍정기활동🐍</span>
+                                    • 매주 토요일 12-15시에 진행합니다.<br>
+                                    • <em>전체 활동</em> : 전체 기초 부원들이 모여 해킹 기본 지식을 학습합니다.<br>
+                                    • <em>팀 활동</em> : 웹 해킹, 리버싱, 포너블로 나뉘어 기초 스터디를 진행합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item3 -->
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item3-name" class="timeline__meta">
+                                <time class="timeline__date">Break</time><br>
+                                <strong class="timeline__title">Midterm Exams</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">중간고사 기간에는 학업에 집중할 수 있도록 동아리 활동을 잠시 쉬어가요!😉</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item4 -->
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item4-name" class="timeline__meta">
+                                <time class="timeline__date">Week 5-8</time><br>
+                                <strong class="timeline__title">Basic Hacking Technique</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">
+                                    <span>🐍정기활동🐍</span>
+                                    • 매주 토요일 12-15시에 진행합니다.<br>
+                                    • <em>전체 활동</em> : 전체 기초 부원들이 모여 해킹 기본 지식을 학습합니다.<br>
+                                    • <em>팀 활동</em> : 웹 해킹, 리버싱, 포너블로 나뉘어 기초 스터디를 진행합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item5 -->
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item5-name" class="timeline__meta">
+                                <time class="timeline__date">Break</time><br>
+                                <strong class="timeline__title">Final Exams</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">기말고사 기간에는 학업에 집중할 수 있도록 동아리 활동을 잠시 쉬어가요!😴</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item6 -->
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item6-name" class="timeline__meta">
+                                <time class="timeline__date">Week 9</time><br>
+                                <strong class="timeline__title">Seminar</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">
+                                    <span>🔥최종발표🔥</span>
+                                    팀별로 자유롭게 주제를 선정하여 세미나를 진행합니다. 우수 활동자 시상 및 수료증 수여도 함께 이루어질 예정이니, 동아리 활동에 적극적으로 참여해 보세요!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- ***** Schedule End ***** -->
         </section>
-        <section class="section">
-          <div class="slide">
-            <h3>slide 01</h3>
-          </div>
-          <div class="slide">
-            <h3>slide 02</h3>
-          </div>
-          <div class="slide">
-            <h3>slide 03</h3>
-          </div>
-        </section>
-        <section class="section">
+        <section id="section" class="section">
           <h2 class="subtitle">자주 묻는 질문</h2>
           <div id="qcontent">
             <h3 onclick="toggleAnswer('a1')">Q. I.Sly()는 어떤 동아리인가요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
@@ -65,16 +226,43 @@
             <h3 onclick="toggleAnswer('a4')">Q. 해킹 못하는 데 지원 가능한가요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
           </div>
           <div id="a4" style="display: none;"><p><b>I.Sly()</b>는 지원자의 열정만 있다면 누구든지 지원 가능합니다. 회장단이 선정한 해킹 커리큘럼을 통해 배우면 됩니다..</p></div>
-
-          <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon><p>instagram</p>
         </section>
-        <section class="section">
-          <h2>section 4</h2>
+        <!-- footer -->
+        <section class="section fp-auto-height" id="section-footer">
+          <div id="footer-text">
+            <div class="footerbox">
+                <h2> I.Sly() </h2><p> since 2020 </p>
+            
+            <div class="footer-contact">
+                <h3> Contact </h3>
+                <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
+                <ion-icon class="call" size="large" name="call"></ion-icon>
+                <ion-icon class="talk" size="large"name="chatbubbles"></ion-icon>
+            </div>
+        </div>
+            <div class="footer-nav">
+                <ul class="footer-category">
+                    <li><a href="/">Recruit</a></li>
+                    <li><a href="/">Wargame</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li>
+                        <a>About</a>
+                        <ul class="aboutcolumn">
+                            <li><a href="/"> 동아리 소개 </a></li>
+                            <li><a href="/"> 공지사항 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
         </section>
-        <footer class="section fp-auto-height">
-          <h2> footer </h2>
-        </footer>
     </main>
+    <script src="{% static 'recruit/js/schedule.js' %}"></script>
+    <script>
+        $(".hamburger").click(function(){
+        $(".nav").slideToggle();
+      });
+      </script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

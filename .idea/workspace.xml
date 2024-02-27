@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d14f4e-929e-45b7-bea8-9591349f0709" name="Changes" comment="">
+    <list default="true" id="5012ee4e-c6da-4065-b8d7-dfcd49f7a499" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +25,9 @@
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
-  "associatedIndex": 2
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2buXwjti1PNn11yePT6yvVB2m8B" />
+  <component name="ProjectId" id="2cqJOjxwBNc02ymjb1HEoilLxaZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,9 +47,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\recruit" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\introduction" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,12 +78,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="83d14f4e-929e-45b7-bea8-9591349f0709" name="Changes" comment="" />
-      <created>1707066178754</created>
+      <changelist id="5012ee4e-c6da-4065-b8d7-dfcd49f7a499" name="Changes" comment="" />
+      <created>1708833147279</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707066178754</updated>
-      <workItem from="1707066182125" duration="8591000" />
+      <updated>1708833147279</updated>
+      <workItem from="1708833148213" duration="4942000" />
     </task>
     <servers />
   </component>
