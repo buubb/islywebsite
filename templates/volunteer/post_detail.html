@@ -1,4 +1,4 @@
-{% load static %}
+{% load static humanize %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +26,7 @@
         <!-- Raon Additional Files -->
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltNav.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltDetails.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltMore.css' %}">
         <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
         <script src="{% static 'splide/splide.js' %}"></script>
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
@@ -48,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="page-content">
+                    <div class="page-content" style="background-color: transparent;">
 
                         <!-- ***** Delete & Edit Start ***** -->
                         <div class="row pt-4">
@@ -137,6 +138,50 @@
                             </script>
                         </div>
                         <!-- ***** Vlt Details End ***** -->
+
+
+                        <!-- ***** More Projects Start ***** -->
+                        {% if all_posts %}
+                            <div class="row pb-4">
+                                <div class="col-lg-12">
+                                    <div class="VltMore">
+                                        <div class="text-center mx-auto">
+                                            <h1 class="title mb-5">Other Projects</h1>
+                                        </div>
+                                        <div class="owl-features owl-carousel">
+                                            {% for other_post in all_posts %}
+                                                <div class="item">
+                                                    <div class="card">
+                                                        <a href="/volunteer/{{ other_post.id }}/" class="card_link">
+                                                            <div class="card__img">
+                                                                {% if other_post.postimage_set.first %}
+                                                                    <img src="{{ other_post.postimage_set.first.photo.url }}" alt="">
+                                                                {% else %}
+                                                                    <img src="{% static '/volunteer/images/default-image.png' %}" alt="">
+                                                                {% endif %}
+                                                            </div>
+                                                            <div class="card__info">
+                                                                <span class="card__category"> {{ other_post.generation|ordinal }}, {{ other_post.year }}</span>
+                                                                <h3 class="card__title"> {{ other_post.title }}</h3>
+                                                                <span class="card__like">
+                                                                    <i class="fa-solid fa-heart"></i>
+                                                                    {% if other_post.like_users.count == 0 or other_post.like_users.count == 1 %}
+                                                                        {{ other_post.like_users.count }} like
+                                                                    {% else %}
+                                                                        {{ other_post.like_users.count }} likes
+                                                                    {% endif %}
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <!-- ***** More Projects End ***** -->
 
                     </div>
                 </div>
