@@ -354,6 +354,35 @@
 
 
         <!-- Scripts -->
+        <script>
+            // JavaScript 코드
+            // 세션 만료 경고 메시지를 표시하고 싶을 때 이 부분에 추가
+            window.onload = function () {
+                checkSessionStatus();
+                setInterval(checkSessionStatus, 10000);  // 1분마다 세션 상태 체크
+            };
+        
+            function checkSessionStatus() {
+                console.log('Checking session status...');
+                // 여기에서 서버에 세션 상태를 확인하는 요청을 보내고 결과에 따라 경고 메시지를 표시할 수 있습니다.
+                // 이 예시에서는 클라이언트 측에서만 세션 만료를 체크하고 경고 메시지를 표시합니다.
+                fetch('{% url 'check_session_status' %}')
+                    .then(response => response.text())
+                    .then(data => {
+                        if (data.includes('세션이 만료되었습니다')) {
+                            // 세션이 만료된 경우 경고창을 표시하고 '예' 버튼이 클릭되면 로그인 페이지로 이동
+                            if (window.confirm('세션이 만료되었습니다. 다시 로그인해주세요.')) {
+                                window.location.href = '{% url 'login' %}';
+                            }
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error checking session status:', error);
+                    });
+            }
+        </script>
+
+
         <!-- Bootstrap core JavaScript -->
         <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
         <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>

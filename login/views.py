@@ -70,7 +70,7 @@ from django.http import HttpResponse
 
 def check_session_status(request):
     if request.user.is_authenticated:
-        return HttpResponse('세션이 유효합니다.')
+        return 
     else:
         return HttpResponse('세션이 만료되었습니다. 다시 로그인해주세요.')
 

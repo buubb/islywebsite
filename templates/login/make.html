@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +37,8 @@ https://templatemo.com/tm-579-cyborg-gaming
   <!-- ***** Preloader Start ***** -->
 {% include "navbar.html" %}
 
-  <!-- ***** Header Area End ***** -->
+
+<!-- ***** Header Area End ***** -->
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -115,7 +117,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                               .then(data => {
                                   if (data.includes('세션이 만료되었습니다')) {
                                       // 세션이 만료된 경우 경고창을 표시하고 '예' 버튼이 클릭되면 로그인 페이지로 이동
-                                      if (window.confirm('세션이 만료되었습니다. 다시 로그인해주세요.')) {
+                                      if (window.confirm('세션이 만료되었습니다. 다시 로그인해주세요.^^')) {
                                           window.location.href = '{% url 'login' %}';
                                       }
                                   }
