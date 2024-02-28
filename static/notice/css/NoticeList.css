@@ -7,7 +7,7 @@ Info
 .NoticeList .info {
     border-radius: 23px;
     background-color: transparent;
-    padding: 30px;
+    padding: 10px;
 }
 
 
@@ -44,6 +44,7 @@ Scheme
 
 .NoticeList .icon-box {
     margin-top: 50px;
+    text-align: justify;
 }
 
 .NoticeList .icon-box .bi-1-square,
@@ -112,10 +113,6 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .NoticeList .info {
-        padding: 20px;
-    }
-
     .NoticeList .icon-box p.listCircle {
         font-size: 14px;
     }

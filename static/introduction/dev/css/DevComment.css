@@ -1,0 +1,201 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.DevComment {
+    margin-top: 150px;
+    padding: 10px 30px;
+}
+
+
+/*
+---------------------------------------------
+Subtitle, Title
+---------------------------------------------
+*/
+
+.DevComment .subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
+
+
+.DevComment .title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.DevComment h5, p, span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.DevComment h5 {
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.DevComment p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.035em;
+    line-height: 1.3;
+}
+
+.DevComment span {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.035em;
+    color: #696B6E;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.DevComment .item {
+    border-radius: 23px;
+}
+
+
+/*
+---------------------------------------------
+Owl-Nav
+---------------------------------------------
+*/
+
+.DevComment .owl-nav {
+    display: inline-block !important;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-45px);
+}
+
+.DevComment .owl-nav .owl-prev span,
+.DevComment .owl-nav .owl-next span {
+    opacity: 0;
+}
+
+.DevComment .owl-nav .owl-prev,
+.DevComment .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.DevComment .owl-nav .owl-prev {
+    margin-right: 10px;
+    outline: none;
+    position: absolute;
+    left: -65px;
+}
+
+.DevComment .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: #2A2C30;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.DevComment .owl-nav .owl-next {
+    margin-left: 10px;
+    outline: none;
+    position: absolute;
+    right: -70px;
+}
+
+.DevComment .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: #2A2C30;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.DevComment .owl-nav .owl-prev:hover:before,
+.DevComment .owl-nav .owl-next:hover:before {
+    color: #2A2C30;
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+
+/*
+---------------------------------------------
+Responsive style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Owl-Nav */
+    .DevComment .owl-nav .owl-next {
+        right: -60px;
+    }
+
+    .DevComment .owl-nav .owl-prev {
+        left: -55px;
+    }
+
+    .DevComment .owl-nav .owl-next:before {
+        font-size: 35px;
+        background-color: transparent;
+    }
+
+    .DevComment .owl-nav .owl-prev:before {
+        font-size: 35px;
+        background-color: transparent;
+    }
+
+    .DevComment .owl-nav .owl-next:hover:before,
+    .DevComment .owl-nav .owl-prev:hover:before {
+        color: #FFFFFF;
+        background-color: transparent;
+        opacity: 0.7;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .DevComment img {
+        max-width: 70px;
+    }
+}
