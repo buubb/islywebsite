@@ -170,9 +170,11 @@ Responsive Style
         margin-bottom: 30px;
     }
 
+    /*
     .vlt-list .load-more-button {
         margin-bottom: 2.5rem;
     }
+    */
 
     .vlt-list .load-more-button a {
         display: block;
