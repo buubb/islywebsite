@@ -4,7 +4,7 @@ Basic
 ---------------------------------------------
 */
 
-.VltPosting .blanks {
+.VltPosting {
     background-color: transparent;
     border: 1.5px solid #FFFFFF;
     padding: 50px 70px 30px;
@@ -269,7 +269,7 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .VltPosting .blanks {
+    .VltPosting {
         padding: 50px 50px 30px;
     }
 }
@@ -317,7 +317,7 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .VltPosting .blanks {
+    .VltPosting {
         padding: 30px 30px 10px;
     }
 

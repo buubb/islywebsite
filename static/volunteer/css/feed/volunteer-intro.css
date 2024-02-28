@@ -108,7 +108,7 @@ Write-Button
     color: #fff;
     background-color: transparent;
     border: 1.8px solid #fff;
-    border-radius: 1.5px;
+    border-radius: 0;
     height: 3.2rem;
     line-height: 3.2rem;
     padding: 0 1.2rem;

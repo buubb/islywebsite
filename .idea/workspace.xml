@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a04d61cb-9919-4ef6-bc1c-c96e9221c160" name="Changes" comment="">
+    <list default="true" id="c6b7fe92-1faa-407e-b748-ab6e67df730e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-posting.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/vlt-more-projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/vlt-more-projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/vlt-project-description.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/vlt-project-description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/vlt-team-comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/vlt-team-comment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/volunteer-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/volunteer/post_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/tem4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
+  "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2cx3xwom3zsUTjdOHYKRNZORAQz" />
+  <component name="ProjectId" id="2cyaqw7TJfCP8MSvdB7h9nBnR5j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,8 +56,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\volunteer" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css\feed" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css\detail" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css\posting" />
     </key>
   </component>
   <component name="RunManager">
@@ -78,12 +89,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a04d61cb-9919-4ef6-bc1c-c96e9221c160" name="Changes" comment="" />
-      <created>1709039654199</created>
+      <changelist id="c6b7fe92-1faa-407e-b748-ab6e67df730e" name="Changes" comment="" />
+      <created>1709086467484</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709039654199</updated>
-      <workItem from="1709039656581" duration="2626000" />
+      <updated>1709086467484</updated>
+      <workItem from="1709086469986" duration="1177000" />
     </task>
     <servers />
   </component>

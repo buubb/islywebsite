@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon Additional Files -->
-        <link rel="stylesheet" href="{% static 'volunteer/css/VltPosting.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/posting/VltPosting.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
@@ -48,9 +48,9 @@
                     <div class="page-content" style="background-color: transparent;">
 
                         <!-- ***** Posting Start ***** -->
-                        <div class="VltPosting py-5">
-                            <div class="row">
-                                <div class="blanks col-xl-9 col-lg-10 mx-auto">
+                        <div class="row py-5">
+                            <div class="col-xl-9 col-lg-10 mx-auto">
+                                <div class="VltPosting">
                                     <form method="POST" enctype="multipart/form-data">
                                         {% csrf_token %}
                                         <div class="headline">
