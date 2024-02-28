@@ -1,269 +1,223 @@
-{% load static humanize %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>I.Sly()</title>
+        <title>I.Sly()</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
 
-    <!-- Raon Additional Files -->
-    <link rel="stylesheet" href="{% static 'volunteer/css/detail/vlt-project-description.css' %}">
-    <link rel="stylesheet" href="{% static 'volunteer/css/detail/vlt-team-comment.css' %}">
-    <link rel="stylesheet" href="{% static 'volunteer/css/detail/vlt-more-projects.css' %}">
-    <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
-    <script src="{% static 'splide/splide.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'copyright.css' %}">
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-    <!-- Yubin add -->
-    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+        <!-- Raon Additional Files -->
+        <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltNav.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltDetails.css' %}">
+        <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
+        <script src="{% static 'splide/splide.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
-  </head>
+        <!-- Raon Text Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
-<body>
+        <!-- Yubin add -->
+        <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 
-  <!-- ***** Preloader Start ***** -->
-  {% include "fullpagenav.html" %}
-  <!-- ***** Header Area End ***** -->
+    </head>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
+    <body>
 
-          <!-- ***** Project Description Start ***** -->
-          <div class="vlt-project-description header-text">
+        <!-- ***** Navbar Start ***** -->
+        {% include "fullpagenav.html" %}
+        <!-- ***** Navbar End ***** -->
+
+        <div class="container">
             <div class="row">
-              <div class="col-lg-12">
-                <!-- Breadcrumbs -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="/volunteer/"><b>Project</b></a></li>
-                      <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
-                    </ol>
-                </nav>
-              </div>
-              <div class="col-lg-12">
-                <div class="content">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <!-- Image Slider Section Starts -->
-                        <div class="post-images splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    {% for image in post.postimage_set.all %}
-                                        {% if image.photo %}
-                                            <li class="splide__slide">
-                                                <img src="{{ image.photo.url }}" alt="">
-                                            </li>
-                                        {% endif %}
-                                    {% endfor %}
-                                </ul>
+                <div class="col-lg-12">
+                    <div class="page-content">
+
+                        <!-- ***** Delete & Edit Start ***** -->
+                        <div class="row pt-4">
+                            <div class="col-lg-12">
+                                <div class="VltNav">
+                                    <div class="row">
+                                        <div class="col-lg-12 text-sm-end">
+                                            <a class="btn btn-square me-3" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
+                                            <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> Edit</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      <!-- Image Slider Section Ends -->
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="left-info">
-                        <h4><i class="fa-solid fa-hashtag"></i> {{ post.generation }}기</h4>
-                        <p>Jade, Matteo, Lucas, Sarah, Clement</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="right-info">
-                        <ul class="right-info-buttons">
-                          <!-- Like Button -->
-                          <li>
-                              <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
-                                   {% csrf_token %}
-                                    <button type="submit">
-                                        {% if user in post.like_users.all %}
-                                            <i class="fas fa-thumbs-up"></i>
-                                        {% else %}
-                                            <i class="far fa-thumbs-up fa-beat"></i>
-                                        {% endif %}
-                                    </button>
-                              </form>
-                          </li>
-                          <!-- PDF Button -->
-                          <li><a href=""><i class="fa fa-download"></i></a></li>
-                          <!-- Copy to Clipboard Button -->
-                          <li><a href=""><i class="fa fa-link"></i></a></li>
-                          <!-- Share Button -->
-                          <li><a href=""><i class="fa fa-arrow-up-from-bracket"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="down-content">
-                          <h2>{{ post.title }}</h2>
-                          <p>{{ post.content|linebreaksbr }}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Splide JavaScript Code -->
-            <script>
-                const elms = document.getElementsByClassName('splide');
-                for (let i = 0; i < elms.length; i++) {
-                    new Splide(elms[i]).mount();
-                }
-            </script>
-          </div>
-          <!-- ***** Project Description End ***** -->
+                        <!-- ***** Delete & Edit End ***** -->
 
-          <!-- ***** Team Comment Start ***** -->
-          {% if post.comment_set.all %}
-              <div class="vlt-team-comment">
-                <div class="col-lg-12">
-                  <div class="heading-section">
-                    <h4>Our Team</h4>
-                  </div>
-                  <div class="row">
-                   {% for comment in post.comment_set.all %}
-                        <div class="col-lg-4">
-                          <div class="item">
-                            <h4><i class="fa-regular fa-circle-user"></i> {{ comment.user }}</h4>
-                            <p>{{ comment.content }}</p>
-                          </div>
-                        </div>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
-          {% endif %}
-          <!-- ***** Team Comment End ***** -->
 
-          <!-- ***** More Projects Start ***** -->
-          {% if all_posts %}
-              <div class="row">
-                <div class="col-lg-12">
-                    <div class="explore-other-projects">
-                        <div class="heading-section">
-                            <h4>Explore Other Projects</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="vlt-more-projects header-text">
-                        <div class="heading-section">
-                            <h4>{{ all_posts.count }} Project{{ all_posts.count|pluralize }} More</h4>
-                        </div>
-                        <div class="owl-features owl-carousel">
-                            {% for other_post in all_posts %}
-                                <div class="item">
-                                    <div class="thumb">
-                                      <a href="/volunteer/{{ other_post.id }}/">
-                                        <div class="thumbnails">
-                                            {% if other_post.postimage_set.first %}
-                                                <img src="{{ other_post.postimage_set.first.photo.url }}" alt="">
-                                            {% else %}
-                                                <img src="{% static '/volunteer/images/default-image.png' %}" alt="">
-                                            {% endif %}
+                        <!-- ***** Vlt Details Start ***** -->
+                        <div class="VltDetails pt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+                                        <div class="row">
+                                            <!-- Image Slider -->
+                                            <div class="col-lg-12">
+                                                <div class="post-images splide">
+                                                    <div class="splide__track">
+                                                        <ul class="splide__list">
+                                                            {% for image in post.postimage_set.all %}
+                                                                {% if image.photo %}
+                                                                    <li class="splide__slide">
+                                                                        <img src="{{ image.photo.url }}" alt="">
+                                                                    </li>
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Down Content -->
+                                            <div class="col-lg-12">
+                                                <h2 class="pt-5">{{ post.title }}</h2>
+                                                <p class="pt-5">{{ post.content|linebreaksbr }}</p>
+                                            </div>
+                                            <!-- Buttons -->
+                                            <div class="col-lg-12">
+                                                <div class="row pt-4">
+                                                    <div class="col-md-7 text-center text-md-end align-self-center order-md-5">
+                                                        <div class="stats">
+                                                            <ul>
+                                                                <li>
+                                                                    <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
+                                                                        {% csrf_token %}
+                                                                        <button type="submit" class="like-btn">
+                                                                            {% if user in post.like_users.all %}
+                                                                                <i class="fa-solid fa-heart" style="color: #57F579;"></i> {{ post.like_users.count }} Like
+                                                                            {% else %}
+                                                                                <i class="fa-regular fa-heart fa-beat" style="color: #FFFFFF;"></i> {{ post.like_users.count }} Like
+                                                                            {% endif %}
+                                                                        </button>
+                                                                    </form>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="share-btn"><i class="fa-solid fa-link"></i> Share</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5 text-center text-md-start order-md-1">
+                                                        <div class="comment">
+                                                            <a class="btn btn-square" href="">Add Comment</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="hover-effect">
-                                            <h6> View</h6>
-                                        </div>
-                                      </a>
                                     </div>
-                                    <h4> {{ other_post.generation|ordinal }}, {{ other_post.year }}<br><span>{{ other_post.title }}</span></h4>
                                 </div>
-                            {% endfor %}
+                            </div>
+                            <!-- Splide JavaScript Code -->
+                            <script>
+                                const elms = document.getElementsByClassName('splide');
+                                for (let i = 0; i < elms.length; i++) {
+                                    new Splide(elms[i]).mount();
+                                }
+                            </script>
                         </div>
+                        <!-- ***** Vlt Details End ***** -->
+
                     </div>
                 </div>
-              </div>
-          {% endif %}
-          <!-- ***** More Projects End ***** -->
-
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
 
-  <!-- footer Start -->
-  <div>
-     <div id="section-footer">
-        <div id="footer-text">
-            <div class="footerbox">
-                <h2> I.Sly() </h2><p> since 2020 </p>
-                <div class="footer-contact">
-                    <h3> Contact </h3>
-                    <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
-                    <ion-icon class="call" size="large" name="call"></ion-icon>
-                    <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
+        <!-- footer Start -->
+        <div>
+            <div id="section-footer">
+                <div id="footer-text">
+                    <div class="footerbox">
+                        <h2> I.Sly() </h2>
+                        <p> since 2020 </p>
+                        <div class="footer-contact">
+                            <h3> Contact </h3>
+                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
+                            <ion-icon class="call" size="large" name="call"></ion-icon>
+                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-category">
+                            <li><a href="/recruit/">Recruit</a></li>
+                            <li><a href="/CTF-Challenge/">Wargame</a></li>
+                            <li><a href="/volunteer/">Project</a></li>
+                            <li>
+                                <a>About</a>
+                                <ul class="aboutcolumn">
+                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
+                                    <li><a href="/notice/"> 공지사항 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-nav">
-                <ul class="footer-category">
-                    <li><a href="/recruit/">Recruit</a></li>
-                    <li><a href="/CTF-Challenge/">Wargame</a></li>
-                    <li><a href="/volunteer/">Project</a></li>
-                    <li>
-                        <a>About</a>
-                        <ul class="aboutcolumn">
-                            <li><a href="/introduction/"> 동아리 소개 </a></li>
-                            <li><a href="/notice/"> 공지사항 </a></li>
-                        </ul>
-                    </li>
-                </ul>
+        </div>
+        <!-- footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
+                    </div>
+                </div>
             </div>
         </div>
-     </div>
-  </div>
-  <!-- footer End -->
+        <!-- Copyright End -->
 
 
-  <!-- Copyright Start -->
-  <div class="container-fluid copyright py-4">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
-              </div>
-              <div class="col-md-6 text-center text-md-end">
-                  <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Copyright End -->
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+        <script src="{% static 'assets/js/tabs.js' %}"></script>
+        <script src="{% static 'assets/js/popup.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle();
+            });
+        </script>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+        <!-- Raon Additional JavaScript -->
+        <script src="{% static 'volunteer/js/share.js' %}"></script>
 
-  <script src="{% static 'assets/js/isotope.min.js' %}"></script>
-  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
-  <script src="{% static 'assets/js/tabs.js' %}"></script>
-  <script src="{% static 'assets/js/popup.js' %}"></script>
-  <script src="{% static 'assets/js/custom.js' %}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- icons : insta, kakao, call -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    </body>
 
-  </body>
-<!-- icons : insta, kakao, call -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
