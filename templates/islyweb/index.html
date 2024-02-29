@@ -17,10 +17,28 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/owl.css'%}">
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'copyright.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/jquery.fullPage.css' %}">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{% static 'fullpage/jquery.fullPage.js' %}"></script>
+    <script src="{% static 'fullpage/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'recruit/css/schedule.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:900'>
+    <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+    
+    <!-- yubin fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <!--
 
 TemplateMo 579 Cyborg Gaming
@@ -32,201 +50,310 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 <body>
 
- {% include "navbar.html" %}
+ {% include "fullpagenav.html" %}
  
   <!-- ***** Header Area End ***** -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
-
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Welcome To I.Sly()</h6>
-                  <h4><em>I.Sly()</em> Best Hacking Crew of Sungshin</h4>
-                  <div class="main-button">
-                    <a href="/recruit/"> JOIN US! </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
-
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Most Popular</em> Right Now</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-01.jpg' %}" alt="">
-                      <h4>Fortnite<br><span>Sandbox</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
+  <main id="fullpage">
+    <section id="section" class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mainbanner">
+                    <!-- partial:index.partial.html -->
+                    <div class="wordbanner">
+                      <ul class="Words">
+                        <li id="wordcolor1" class="Words-line">
+                          <p>&nbsp;</p>
+                          <p>Hello,</p>
+                        </li>
+                        <li id="wordcolor2" class="Words-line">
+                          <p>Hello,</p>
+                          <p>We are</p>
+                        </li>
+                        <li id="wordcolor1" class="Words-line">
+                          <p>We are</p>
+                          <p>I.Sly()</p>
+                        </li>
+                        <li id="wordcolor2" class="Words-line">
+                          <p>I.Sly()</p>
+                          <p>Are You</p>
+                        </li>
+                        <li id="wordcolor1" class="Words-line">
+                          <p>Are You</p>
+                          <p>Ready To</p>
+                        </li>
+                        <li id="wordcolor2" class="Words-line">
+                          <p>Ready To</p>
+                          <p>Join Us?</p>
+                        </li>
+                        <li class="Words-line">
+                          <p>Join US?</p>
+                          <p>&nbsp;</p>
+                        </li>
                       </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-02.jpg' %}" alt="">
-                      <h4>PubG<br><span>Battle S</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-03.jpg' %}" alt="">
-                      <h4>Dota2<br><span>Steam-X</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-04.jpg' %}" alt="">
-                      <h4>CS-GO<br><span>Legendary</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item inner-item">
-                            <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-05.jpg' %}" alt="">
-                            <h4>Mini Craft<br><span>Legendary</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item">
-                            <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-06.jpg' %}" alt="">
-                            <h4>Eagles Fly<br><span>Matrix Games</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
-                        </div>
                       </div>
-                    </div>
+                      <!-- partial -->
                   </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-07.jpg' %}" alt="">
-                      <h4>Warface<br><span>Max 3D</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
+                  <div class="text_box" data-trigger>
+                    <span class="text"></span><span class="cursor">|</span>
                   </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="{% static 'assets/../../static/volunteer/../../static/assets/images/popular-08.jpg' %}" alt="">
-                      <h4>Warcraft<br><span>Legend</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
+                  <div class="box bg-3">
+                    <button class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted" onclick="location.href='/recruit/'">지원하러 가기</button>
                   </div>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">Discover Popular</a>
-                    </div>
+                  <!--<img class="mainlogo" src="{% static 'assets/img/ISlylogo.png' %}" alt="">-->
+                  <div class="scrolldown">
+                    <p>scroll down</p>
                   </div>
-                </div>
-              </div>
+                  <div class="scroll-downs">
+                    <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+        bottom: 25px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></Div>
+                    <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+        bottom: 40px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite;"></Div>
+                  </div>
+                  <!--<div class="scroll-downs">
+                    <div class="mousey">
+                      <div class="scroller"></div>
+                    </div>
+                  </div>-->
             </div>
-          </div>
-           <!-- ***** Most Popular End ***** -->
-
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Gaming</em> Library</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="{% static 'assets/../../static/volunteer/../../static/assets/images/game-01.jpg' %}" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="{% static 'assets/../../static/volunteer/../../static/assets/images/game-02.jpg' %}" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="{% static 'assets/../../static/volunteer/../../static/assets/images/game-03.jpg' %}" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
-            </div>
-          </div>
-          ***** Gaming Library End ***** --
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <div class="footer-container">
-      <div class="row">
+    </section>
+    <section id ="section2" class="section">
+        <!-- ***** Schedule Start ***** -->
+      <div class="schedule">
         <div class="col-lg-12">
-          <hr />
-          <h3>I.Sly()</h3>
-          <p>I.Sly() © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Developer: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+          <div class="heading-section">
+            <h4>활동은 어떻게 진행되나요?</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <svg display="none">
+                <symbol id="arrow">
+                    <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </symbol>
+            </svg>
+            <div id="timeline" class="timeline">
+                <div class="btn-group">
+                    <button class="btn__1" type="button" data-action="expand">Expand</button>
+                    <button class="btn__2" type="button" data-action="collapse">Collapse</button>
+                </div>
+                <!-- item1 -->
+                <div class="timeline__item">
+                    <div class="timeline__item-header">
+                        <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+                            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                <use href="#arrow" />
+                            </svg>
+                        </button>
+                        <span class="timeline__dot"></span>
+                        <span id="item1-name" class="timeline__meta">
+                            <time class="timeline__date">Week 0</time><br>
+                            <strong class="timeline__title">Orientation</strong>
+                        </span>
+                    </div>
+                    <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
+                        <div class="timeline__item-body-content">
+                            <p class="timeline__item-p">
+                                <span>⭐오리엔테이션⭐</span>
+                                동아리 소개와 친목 도모를 위한 다양한 활동이 준비되어 있습니다. 주로 온라인/오프라인 병행으로 진행되며, 각 기수별 상황에 따라 달라질 수 있습니다. 자세한 OT 일정은 내부 채널을 통해 공지해 드릴 예정입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="timeline__item">
+                    <div class="timeline__item-header">
+                        <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+                            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                <use href="#arrow" />
+                            </svg>
+                        </button>
+                        <span class="timeline__dot"></span>
+                        <span id="item2-name" class="timeline__meta">
+                            <time class="timeline__date">Week 1-4</time><br>
+                            <strong class="timeline__title">Basic Hacking Technique</strong>
+                        </span>
+                    </div>
+                    <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
+                        <div class="timeline__item-body-content">
+                            <p class="timeline__item-p">
+                                <span>🐍정기활동🐍</span>
+                                • 매주 토요일 12-15시에 진행합니다.<br>
+                                • <em>전체 활동</em> : 전체 기초 부원들이 모여 해킹 기본 지식을 학습합니다.<br>
+                                • <em>팀 활동</em> : 웹 해킹, 리버싱, 포너블로 나뉘어 기초 스터디를 진행합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="timeline__item">
+                    <div class="timeline__item-header">
+                        <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+                            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                <use href="#arrow" />
+                            </svg>
+                        </button>
+                        <span class="timeline__dot"></span>
+                        <span id="item3-name" class="timeline__meta">
+                            <time class="timeline__date">Break</time><br>
+                            <strong class="timeline__title">Midterm Exams</strong>
+                        </span>
+                    </div>
+                    <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
+                        <div class="timeline__item-body-content">
+                            <p class="timeline__item-p">중간고사 기간에는 학업에 집중할 수 있도록 동아리 활동을 잠시 쉬어가요!😉</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item4 -->
+                <div class="timeline__item">
+                    <div class="timeline__item-header">
+                        <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+                            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                <use href="#arrow" />
+                            </svg>
+                        </button>
+                        <span class="timeline__dot"></span>
+                        <span id="item4-name" class="timeline__meta">
+                            <time class="timeline__date">Week 5-8</time><br>
+                            <strong class="timeline__title">Basic Hacking Technique</strong>
+                        </span>
+                    </div>
+                    <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
+                        <div class="timeline__item-body-content">
+                            <p class="timeline__item-p">
+                                <span>🐍정기활동🐍</span>
+                                • 매주 토요일 12-15시에 진행합니다.<br>
+                                • <em>전체 활동</em> : 전체 기초 부원들이 모여 해킹 기본 지식을 학습합니다.<br>
+                                • <em>팀 활동</em> : 웹 해킹, 리버싱, 포너블로 나뉘어 기초 스터디를 진행합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item5 -->
+                <div class="timeline__item">
+                    <div class="timeline__item-header">
+                        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+                            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                <use href="#arrow" />
+                            </svg>
+                        </button>
+                        <span class="timeline__dot"></span>
+                        <span id="item5-name" class="timeline__meta">
+                            <time class="timeline__date">Break</time><br>
+                            <strong class="timeline__title">Final Exams</strong>
+                        </span>
+                    </div>
+                    <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+                        <div class="timeline__item-body-content">
+                            <p class="timeline__item-p">기말고사 기간에는 학업에 집중할 수 있도록 동아리 활동을 잠시 쉬어가요!😴</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item6 -->
+                <div class="timeline__item">
+                    <div class="timeline__item-header">
+                        <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+                            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                <use href="#arrow" />
+                            </svg>
+                        </button>
+                        <span class="timeline__dot"></span>
+                        <span id="item6-name" class="timeline__meta">
+                            <time class="timeline__date">Week 9</time><br>
+                            <strong class="timeline__title">Seminar</strong>
+                        </span>
+                    </div>
+                    <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
+                        <div class="timeline__item-body-content">
+                            <p class="timeline__item-p">
+                                <span>🔥최종발표🔥</span>
+                                팀별로 자유롭게 주제를 선정하여 세미나를 진행합니다. 우수 활동자 시상 및 수료증 수여도 함께 이루어질 예정이니, 동아리 활동에 적극적으로 참여해 보세요!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- ***** Schedule End ***** -->
+    </section>
+    <section id="section" class="section">
+      <h2 class="subtitle">자주 묻는 질문</h2>
+      <div id="qcontent">
+        <h3 onclick="toggleAnswer('a1')">Q. I.Sly()는 어떤 동아리인가요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
+      </div>
+      <div id="a1" style="display: none;"><p><b>I.Sly()</b>는 Information Security의 약자인 IS와 부사형 어미 ly를 합쳐 만든 동아리입니다.</p></div>
+        
+      <div id="qcontent">
+        <h3 onclick="toggleAnswer('a2')">Q. 언제 모집하나요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h2>
+      </div>
+      <div id="a2" style="display: none;"><p>매 학기마다 모집하고 있으며 보통 <b>1월 말</b>과 <b>7월 말</b>에 모집합니다.</p></div>
+
+      <div id="qcontent">
+        <h3 onclick="toggleAnswer('a3')">Q. 무슨 활동을 하나요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
+      </div>
+      <div id="a3" style="display: none;"><p>저희 동아리는 기초 보안 교육과 프로젝트를 주로 하고 있습니다.</p></div>
+
+      <div id="qcontent">
+        <h3 onclick="toggleAnswer('a4')">Q. 해킹 못하는 데 지원 가능한가요?<ion-icon class="down" size="large" name="chevron-down-outline"></ion-icon></h3>
+      </div>
+      <div id="a4" style="display: none;"><p><b>I.Sly()</b>는 지원자의 열정만 있다면 누구든지 지원 가능합니다. 회장단이 선정한 해킹 커리큘럼을 통해 배우면 됩니다..</p></div>
+    </section>
+  
+  <!-- footer Start -->
+  <div>
+    <div id="section-footer">
+        <div id="footer-text">
+            <div class="footerbox">
+                <h2> I.Sly() </h2><p> since 2020 </p>
+                <div class="footer-contact">
+                    <h3> Contact </h3>
+                    <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
+                    <ion-icon class="call" size="large" name="call"></ion-icon>
+                    <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-category">
+                    <li><a href="/recruit/">Recruit</a></li>
+                    <li><a href="/CTF-Challenge/">Wargame</a></li>
+                    <li><a href="/volunteer/">Project</a></li>
+                    <li>
+                        <a>About</a>
+                        <ul class="aboutcolumn">
+                            <li><a href="/introduction/"> 동아리 소개 </a></li>
+                            <li><a href="/notice/"> 공지사항 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </footer>
+</div>
+<!-- footer End -->
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 
@@ -239,7 +366,17 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 
 
+  <script src="{% static 'recruit/js/schedule.js' %}"></script>
+  <script>
+      $(".hamburger").click(function(){
+      $(".nav").slideToggle();
+    });
+    $(".aboutdrop").click(function(){
+      $(".depth_1").slideToggle();
+    });
+    </script>
+</body>
 
-  </body>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

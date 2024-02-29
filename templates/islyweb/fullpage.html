@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
     <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+
+    <!-- yubin fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     {% include "fullpagenav.html" %}
@@ -36,10 +41,16 @@
                         <p>scroll down</p>
                       </div>
                       <div class="scroll-downs">
+                        <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+            bottom: 25px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></Div>
+                        <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+            bottom: 40px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite;"></Div>
+                      </div>
+                      <!--<div class="scroll-downs">
                         <div class="mousey">
                           <div class="scroller"></div>
                         </div>
-                      </div>
+                      </div>-->
                 </div>
             </div>
         </section>

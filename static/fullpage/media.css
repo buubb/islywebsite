@@ -30,7 +30,7 @@
     header nav .logo{
         text-align: center; 
         width:100%;
-        margin-right: 0px;
+        margin-right: 25px;
     }
     header nav .nav li{
         display: inline-block;
@@ -57,6 +57,40 @@
         margin: 35px 0px 50px 0px;
     }
     .nav > .dropdown:hover .depth_1 {display:none;}
+    #section-footer h2{
+        color:aliceblue;
+        font-size:27px!important;
+        font-weight:700;
+      }
+      #section-footer h3{
+        color:aliceblue;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      #section-footer p{
+        color:#666!important;
+        font-size: 13px;
+      }
+      .footer-nav .footer-category>li{
+        padding-left: 30px;
+        /* padding-top : 8px; */
+        padding-right: 8px;
+        color:#666!important;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.075em;
+        line-height: 1.8;
+        float:right;
+      }
+      #section-footer{ 
+        padding: 50px 40px 5px 40px;
+      }
+      .wordbanner {
+        margin-right:240px;
+        padding-left: 0px;
+        padding-top: 120px;
+        display: flex;
+      }
 }
 
 @media(min-width:1255px){

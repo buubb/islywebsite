@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
     $('#fullpage').fullpage({
 		//options here
         anchors:['s1','s2','s3','s4'],
@@ -7,7 +7,7 @@ $(function(){
         sectionsColor:['#1f2122','aliceblue','#1f2122','#1f2122'],
 	});
 });
-
+*/
 function toggleAnswer(answerID) {
     var answerDiv = document.getElementById(answerID);
 
@@ -20,7 +20,7 @@ function toggleAnswer(answerID) {
 
 
   document.addEventListener("DOMContentLoaded", function() {
-    const content1 = "Hello, We are\n";
+    const content1 = "열정만 있다면\n 누구나!\n";
     const content2 = "I.Sly()";
     const text = document.querySelector(".text");
     const cursor = document.querySelector(".cursor"); // 커서 요소 선택
@@ -44,8 +44,4 @@ function toggleAnswer(answerID) {
     }
 
     typing(); // 처음 한 번만 실행
-});
-
-$(".hamburger").click(function(){
-    $(".nav").slideToggle();
 });

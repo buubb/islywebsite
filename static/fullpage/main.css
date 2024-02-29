@@ -37,8 +37,11 @@ header nav .logo{
     transition: all 0.3s ease 0s;
 
     /*로고 글씨체 크기 및 굵기 변경*/
+    
+    font-weight: 700;
+    font-style: normal;
     font-size: 30px;
-    font-weight: bold;
+    letter-spacing: 0.1em;
     color:aliceblue;
     text-decoration-line: none;
 
@@ -117,7 +120,7 @@ ul{list-style:none;}
 a{text-decoration:none; color:#333;}
 .nav:after{display:block; content:''; clear:both;}
 .nav > .dropdown{position:relative; float:left; margin-right:5px;}
-.nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:50px;}
+.nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:45px;}
 .nav > .dropdown:hover .depth_1 {display:block;}
 .nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);border-radius: 18px;
     background-color: #1f2122;
@@ -158,9 +161,7 @@ header nav .nav .nav-item a img {
 .mainlogo{
     position:absolute;
     vertical-align: middle;
-    width: 70px;
-    left:200px;
-    top: 20px;
+    width: 200px;
 }
 
 /* resposive nav*/
@@ -177,8 +178,44 @@ nav .res-nav .icon-wrap .hamburger{
     position:relative;
 }
   
-
-/*scroll down*/
+/*scroll down arrow*/
+.scrolldown{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:100px;
+}
+.scroll-downs {
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:30px;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.down{
+  /*left: 50%;*/
+  transform: translateY(0%) rotate(45deg);
+  
+                opacity: 0;
+}
+@keyframes scrolldown {
+            0%{
+                transform: translateY(20%) rotate(45deg);
+                opacity: 0.7;
+            }
+            50%{
+                transform: translateY(0%) rotate(45deg);
+                opacity: 0.2;
+            }
+            100%{
+                transform: translateY(20%) rotate(45deg);
+                opacity: 0.7;
+            }
+        }
+/*scroll down mousy*
 .scrolldown{
     position:absolute;
     left:0;
@@ -244,14 +281,17 @@ nav .res-nav .icon-wrap .hamburger{
     color:#5ee773;
 }
 .text_box{
-    position:relative;
-    font-size: 100px;
-    font-weight: 900;
+    position:absolute;
+    font-size: 90px;
+    font-weight: 800;
     text-align: left!important;
     max-width: 700px;
     margin:auto;
     width:100%;
-    padding:0px 440px 0px 0px;
+    padding:0px;
+    left:270px;
+    top:250px;
+    line-height:110px;
 }
 .cursor {
     animation: blink 0.5s infinite;
@@ -324,7 +364,7 @@ nav .res-nav .icon-wrap .hamburger{
 .bg-3 .button {
     min-width: 150px;
     max-width: 250px;
-    margin: 35px 900px 50px 1em;
+    margin: 0px 900px 50px 1em;
     padding: 1em 2em;
     background: none;
     color: inherit;
@@ -407,7 +447,7 @@ nav .res-nav .icon-wrap .hamburger{
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
 }
 #footer-text{ /*wrap*/
-  height: 200px;
+  min-height: 200px;
   display: flex;
   max-width: 1240px;
   margin: 0 auto;
@@ -528,3 +568,93 @@ path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 /*hamburger*/
+
+/*word banner*/
+.wordbanner {
+  padding-left: 330px;
+  padding-top:120px;
+  display: flex;
+}
+
+/*
+** Apply styles to the parent element
+*/
+.Words {
+  margin: 0 auto;
+  padding: 80px 0;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*
+** Apply common styles to each line of text
+*/
+.Words-line {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.Words-line:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.66667);
+}
+.Words-line:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.33333);
+}
+.Words-line:nth-child(1) {
+  left: 29px;
+}
+.Words-line:nth-child(2) {
+  left: 58px;
+}
+.Words-line:nth-child(3) {
+  left: 87px;
+}
+.Words-line:nth-child(4) {
+  left: 116px;
+}
+.Words-line:nth-child(5) {
+  left: 145px;
+}
+.Words-line:nth-child(6) {
+  left: 174px;
+}
+.Words-line:nth-child(7) {
+  left: 203px;
+}
+#wordcolor1 p {
+  /*color: aliceblue !important;*/
+}
+#wordcolor2 p {
+  /*color: #5ee773 !important;*/
+}
+/*
+** Fine-grained text styles
+*/
+.Words p {
+  height: 50px;
+  line-height: 45px;
+  padding: 0 10px;
+  transition: all 0.4s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+/*
+** The hover interaction
+*/
+.Words:hover p {
+  transform: translate3d(0, -50px, 0);
+}
+/*wordbanner*/
+
+#section2 {
+  background-color: aliceblue;
+}
