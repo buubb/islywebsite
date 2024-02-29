@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon Additional CSS Files -->
-        <link rel="stylesheet" href="{% static 'recruit/css/Inform.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/RecruitBanner.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/Process.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/Facts.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
@@ -50,39 +50,35 @@
         {% include "fullpagenav.html" %}
         <!-- ***** Navbar End ***** -->
 
+
+        <!-- ***** Container 1 Start ***** -->
+        <div class="container-fluid pt-5 RecruitBanner mb-5">
+            <div class="container pt-5">
+                <div class="row g-5 py-5">
+                    <div class="col-xl-5 col-lg-6 col-md-8 align-self-center text-center mx-auto">
+                        <div class="content">
+                            <h1 class="title display-4 mb-3">Join I.Sly()!</h1>
+                            <p class="mb-4">I.Sly() is the hacking club at Sungshin Women's University dedicated to fostering white-hat hackers</p>
+                            <a href="" class="apply btn btn-square me-4">지원하기</a>
+                            <a href="{% url 'Recruit:status' %}" class="status btn btn-square">합격조회</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Container 1 End ***** -->
+
+
+        <!-- ***** Container 2 Start ***** -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="page-content">
-
-                        <!-- ***** Inform Start ***** -->
-                        <div class="row pt-4">
-                            <div class="Inform">
-                                <div class="col-lg-12 py-5 px-lg-5">
-                                    <div class="row justify-content-center">
-                                        <div class="col-xl-7 col-lg-8 text-center">
-                                            <p class="section-title text-white justify-content-center"><span></span>모집 알림 신청하기<span></span></p>
-                                            <h1 class="title text-center text-white mb-4">Stay Always In Touch</h1>
-                                            <p class="note text-white mb-4">
-                                                현재 99기 활동 중! 모집 기간이 되면 메일로 알려드릴게요
-                                            </p>
-                                            <div class="position-relative w-100 mt-3">
-                                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email">
-                                                <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-2 me-2"><i class="fa fa-paper-plane fs-4"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***** Inform End ***** -->
-
+                    <div class="page-content" style="margin-top: 0; background-color: transparent;">
 
                         <!-- ***** Process Start ***** -->
-                        <div class="Process container-process">
+                        <div class="Process container-process pt-4">
                             <div class="col-lg-12">
                                 <div class="text-center mx-auto">
-                                    <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">Procedure</div>
                                     <h1 class="title mb-5">How To Apply</h1>
                                 </div>
                                 <div class="row g-4">
@@ -146,7 +142,6 @@
                         <div class="Facts">
                             <div class="col-lg-12">
                                 <div class="text-center mx-auto">
-                                    <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">About Us</div>
                                     <h1 class="title mb-5">Activity Records</h1>
                                 </div>
                                 <div class="row g-4 container-facts">
@@ -196,8 +191,7 @@
                         <div class="RecruitFaq pb-4">
                             <div class="row">
                                 <div class="col-lg-12 text-center mx-auto">
-                                    <div class="subtitle btn btn-sm border border-2 rounded-pill text-white px-3 mb-3">Popular FAQs</div>
-                                    <h1 class="title mb-5">Frequently Asked<br> Questions</h1>
+                                    <h1 class="title mb-5">Popular FAQs</h1>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="row">
@@ -301,6 +295,7 @@
                 </div>
             </div>
         </div>
+        <!-- ***** Container 2 End ***** -->
 
 
         <!-- footer Start -->
@@ -353,7 +348,7 @@
         <!-- Copyright End -->
 
 
-        <!-- Scripts -->
+        <!-- Scripts
         <script>
             // JavaScript 코드
             // 세션 만료 경고 메시지를 표시하고 싶을 때 이 부분에 추가
@@ -381,6 +376,7 @@
                     });
             }
         </script>
+        -->
 
 
         <!-- Bootstrap core JavaScript -->
@@ -406,6 +402,9 @@
         <script src="{% static 'recruit/js/waypoints.min.js' %}"></script>
         <script src="{% static 'recruit/js/counterup.min.js' %}"></script>
         <script src="{% static 'recruit/js/Facts.js' %}"></script>
+
+        <!-- Eunju add -->
+
 
         <!-- icons : insta, kakao, call -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
