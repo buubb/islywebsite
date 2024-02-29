@@ -159,9 +159,23 @@ Responsive style
 ---------------------------------------------
 */
 
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .DevComment h5 {
+        letter-spacing: 0.035em;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    .DevComment h5 {
+        letter-spacing: 0.075em;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -195,6 +209,10 @@ Responsive style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .DevComment h5 {
+        letter-spacing: 0.035em;
+    }
+
     .DevComment img {
         max-width: 70px;
     }
