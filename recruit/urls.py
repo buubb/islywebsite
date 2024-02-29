@@ -1,7 +1,10 @@
 from django.urls import path
-from .views import Recruit
+from .views import recruit, status
 
+
+app_name = "Recruit"
 urlpatterns = [
     # url path: recruit/
-    path('', Recruit.as_view())
+    path("", recruit, name="recruit"),
+    path("status/", status, name="status"),
 ]
