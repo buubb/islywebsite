@@ -17,7 +17,7 @@ Title
 ---------------------------------------------
 */
 
-.RulesLink h1.title {
+.RulesLink .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #fff;
     display: block;
