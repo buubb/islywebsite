@@ -43,6 +43,25 @@
     .s1-wrap{
         padding:0px 30px;
     }
+    .text_box{
+        position:absolute;
+        font-size: 70px;
+        font-weight: 700;
+        text-align: center!important;
+        max-width: 700px;
+        margin:auto;
+        width:100%;
+        padding:0px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height:90px;
+    }
+    .cursor {
+        animation: blink 0.5s infinite;
+        font-size: 80px;
+        font-weight: 400;
+      }
     .mainbanner{
         padding-right: 0px;
     }
