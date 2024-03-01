@@ -7,7 +7,7 @@ Content Block
 .VltDetails .content {
     border: 1.8px solid #FFFFFF;
     border-radius: 0;
-    padding: 60px;
+    padding: 50px 60px;
     background-color: transparent;
 }
 
@@ -36,6 +36,31 @@ Custom Text
 .VltDetails p {
     font-weight: 500;
     letter-spacing: 0.035em;
+}
+
+
+/*
+---------------------------------------------
+Delete & Edit Button
+---------------------------------------------
+*/
+
+.VltDetails .vltnav a {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1.8px solid #FFFFFF;
+    border-radius: 0;
+}
+
+.VltDetails .vltnav a:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
 
@@ -153,13 +178,15 @@ Responsive style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    .VltDetails .vltnav a {
+        font-size: 13px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .VltDetails .content {
-        padding: 40px;
+        padding: 30px 40px;
     }
 
     .VltDetails .stats {
