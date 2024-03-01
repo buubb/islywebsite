@@ -44,9 +44,8 @@ Button
 */
 
 .schedule button {
-    color: #27292a;
+    color: #FFFFFF;
     border: 2px;
-    margin-top: 8px;
 }
 
 .schedule .btn-group {
@@ -117,7 +116,7 @@ Timeline
 
 .timeline__arrow:focus-visible,
 .timeline__arrow:hover {
-    background-color: hsl(var(--hue), 10%, 50%, 0.4);
+    background-color: #2A2C30;
 }
 
 .timeline__arrow-icon {
