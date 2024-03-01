@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9d5072-6902-4bd0-b952-28f43628bfee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\recruit" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -74,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709289889401</updated>
-      <workItem from="1709289892627" duration="388000" />
+      <workItem from="1709289892627" duration="1987000" />
     </task>
     <servers />
   </component>
