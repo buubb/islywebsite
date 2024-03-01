@@ -24,7 +24,6 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon Additional Files -->
-        <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltNav.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltDetails.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltMore.css' %}">
         <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
@@ -51,21 +50,6 @@
                 <div class="col-lg-12">
                     <div class="page-content" style="background-color: transparent;">
 
-                        <!-- ***** Delete & Edit Start ***** -->
-                        <div class="row pt-4">
-                            <div class="col-lg-12">
-                                <div class="VltNav">
-                                    <div class="row">
-                                        <div class="col-lg-12 text-sm-end">
-                                            <a class="btn btn-square me-3" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
-                                            <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> Edit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***** Delete & Edit End ***** -->
-
 
                         <!-- ***** Vlt Details Start ***** -->
                         <div class="VltDetails pt-4">
@@ -73,6 +57,13 @@
                                 <div class="col-lg-12">
                                     <div class="content">
                                         <div class="row">
+                                            <!-- Delete & Edit Buttons -->
+                                            <div class="col-lg-12 text-end pb-4">
+                                                <div class="vltnav">
+                                                    <a class="btn btn-square me-3" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
+                                                    <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> Edit</a>
+                                                </div>
+                                            </div>
                                             <!-- Image Slider -->
                                             <div class="col-lg-12">
                                                 <div class="post-images splide">
@@ -94,7 +85,7 @@
                                                 <h2 class="pt-5">{{ post.title }}</h2>
                                                 <p class="pt-5">{{ post.content|linebreaksbr }}</p>
                                             </div>
-                                            <!-- Buttons -->
+                                            <!-- Like & Share Buttons -->
                                             <div class="col-lg-12">
                                                 <div class="row pt-4">
                                                     <div class="col-md-7 text-center text-md-end align-self-center order-md-5">
