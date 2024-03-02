@@ -50,14 +50,13 @@
                 <div class="col-lg-12">
                     <div class="page-content" style="background-color: transparent;">
 
-
                         <!-- ***** Vlt Details Start ***** -->
                         <div class="VltDetails pt-4">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="content">
                                         <div class="row">
-                                            <!-- Delete & Edit Buttons -->
+                                            <!-- Top Buttons -->
                                             <div class="col-lg-12 text-end pb-4">
                                                 <div class="vltnav">
                                                     <a class="btn btn-square me-3" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
@@ -69,13 +68,17 @@
                                                 <div class="post-images splide">
                                                     <div class="splide__track">
                                                         <ul class="splide__list">
-                                                            {% for image in post.postimage_set.all %}
-                                                                {% if image.photo %}
+                                                            {% if post.postimage_set.all %}
+                                                                {% for image in post.postimage_set.all %}
                                                                     <li class="splide__slide">
                                                                         <img src="{{ image.photo.url }}" alt="">
                                                                     </li>
-                                                                {% endif %}
-                                                            {% endfor %}
+                                                                {% endfor %}
+                                                            {% else %}
+                                                                <li class="splide__slide">
+                                                                    <img src="{% static '/volunteer/images/default-image.png' %}" alt="Default Image">
+                                                                </li>
+                                                            {% endif %}
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -85,12 +88,13 @@
                                                 <h2 class="pt-5">{{ post.title }}</h2>
                                                 <p class="pt-5">{{ post.content|linebreaksbr }}</p>
                                             </div>
-                                            <!-- Like & Share Buttons -->
+                                            <!-- Bottom Buttons -->
                                             <div class="col-lg-12">
                                                 <div class="row pt-4">
                                                     <div class="col-md-7 text-center text-md-end align-self-center order-md-5">
                                                         <div class="stats">
                                                             <ul>
+                                                                <!-- Like Button -->
                                                                 <li>
                                                                     <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
                                                                         {% csrf_token %}
@@ -103,6 +107,7 @@
                                                                         </button>
                                                                     </form>
                                                                 </li>
+                                                                <!-- Share Button -->
                                                                 <li>
                                                                     <button class="share-btn"><i class="fa-solid fa-link"></i> Share</button>
                                                                 </li>
