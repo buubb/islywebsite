@@ -104,14 +104,14 @@ def post_delete(request, post_id):
             messages.error(request, 'You do not have permission to delete this post')
             return redirect('Volunteer:post_detail', post_id=post_id)
 
-        # 사용자가 게시물을 삭제할 수 있는 권한이 있는 경우
+        # 삭제할 수 있는 권한이 있는 경우
         post.delete()
 
         # 삭제 후 피드 페이지로 이동
         return redirect('Volunteer:feed')
 
     except Post.DoesNotExist:
-        # 해당 ID의 게시물이 존재하지 않는 경우
+        # 해당 ID의 Post가 존재하지 않는 경우
         return render(request, 'volunteer/404_2.html')
 
 
@@ -120,15 +120,25 @@ def post_like(request, post_id):
     post = Post.objects.get(id=post_id)
     user = request.user
 
-    # 사용자가 "좋아요를 누른 Post 목록"에 "좋아요 버튼을 누른 Post"가 존재한다면
-    if user.like_posts.filter(id=post.id).exists():
-        # 좋아요 목록에서 삭제
-        user.like_posts.remove(post)
-    # 존재하지 않는다면 좋아요 목록에 추가
+    if request.method == "POST" and user.is_authenticated:
+        # 사용자가 "좋아요를 누른 Post 목록"에 "좋아요 버튼을 누른 Post"가 존재한다면
+        if user.like_posts.filter(id=post.id).exists():
+            # 좋아요 목록에서 삭제
+            user.like_posts.remove(post)
+            liked = False
+        # 존재하지 않는다면 좋아요 목록에 추가
+        else:
+            user.like_posts.add(post)
+            liked = True
+
+        response_data = {
+            'liked': liked,
+            'like_count': post.like_users.count(),
+            'logged_in': True,  # 사용자가 로그인 상태임을 전달
+        }
     else:
-        user.like_posts.add(post)
+        response_data = {
+            'logged_in': False,  # 사용자가 로그인 상태가 아님을 전달
+        }
 
-    # next로 값이 전달되었다면 해당 위치로, 전달되지 않았다면 해당 Post 위치로 이동
-    url_next = request.GET.get("next") or reverse("Volunteer:post_detail", args=[post_id])
-
-    return redirect(url_next)
+    return JsonResponse(response_data)

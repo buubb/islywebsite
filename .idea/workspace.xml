@@ -6,13 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="298fc06d-8038-4698-90eb-674aec297749" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_13_4GwebUN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/post/post_13_jo7Ojmp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709572427373</updated>
       <workItem from="1709572428859" duration="3574000" />
-      <workItem from="1709576345175" duration="976000" />
+      <workItem from="1709576345175" duration="1655000" />
+      <workItem from="1709578109291" duration="3070000" />
     </task>
     <servers />
   </component>
