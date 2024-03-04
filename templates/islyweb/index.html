@@ -39,9 +39,12 @@
     <!-- Yubin CSS Files -->
     <link rel="stylesheet" href="{% static 'fullpage/special.css' %}">
     <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <!-- Yubin JS Files -->
     <script src="{% static 'fullpage/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
     <!-- yubin fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -341,16 +344,88 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <h1 class="title mb-5">Our Special Activities</h1>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                  </div>
-                </div>
               </div>
                 <!-- ***** Special Activities End ***** -->
             
         </div>
     </div>
   </div>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+        <!-- start slider item -->
+        <div class="bigbox swiper-slide width-550px xs-width-100 xs-height-auto">
+            <div class="position-relative width-90 height-100 display-table padding-ten-all xs-padding-fifteen-all xs-width-100">
+                <div class="display-table-cell vertical-align-middle">
+                    <h4 class="text-medium-gray display-block margin-5px-bottom alt-font">Hello,</h4>
+                    <h6 class="text-medium-gray font-weight-300 margin-20px-bottom alt-font">I'm Colin Smith</h6>
+                    <p class="text-large dispaly-block pull-left font-weight-300 width-90 margin-35px-bottom">I design thoughtful digital experiences & beautiful brand aesthetics. I provide high quality web design services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
+            <div class="height-100 display-table">
+                <div class="display-table-cell vertical-align-middle">
+                    <div class="display-block position-relative">
+                        <img src="http://www.themezaa.com/html/pofo/images/homepage-2-slider-img-9.jpg" alt=""/>
+                        <p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Branding and Identity</p>
+                    </div>
+                    <div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
+                        <div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
+                        <h3><a class="text-white font-weight-600 alt-font text-white-hover" href="single-project-page-01.html">Pixflow Studio</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slider item -->
+        <!-- start slider item -->
+        <div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
+            <div class="height-100 display-table">
+                <div class="display-table-cell vertical-align-middle">
+                    <div class="display-block position-relative">
+                        <img src="http://www.themezaa.com/html/pofo/images/homepage-2-slider-img-13.jpg" alt=""/>
+                        <p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Web and Photography</p>
+                    </div>
+                    <div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
+                        <div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
+                        <h3><a class="text-white font-weight-600 alt-font text-white-hover" href="single-project-page-03.html">Digital Media</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slider item -->
+        <!-- start slider item -->
+        <div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
+            <div class="height-100 display-table">
+                <div class="display-table-cell vertical-align-middle">
+                    <div class="display-block position-relative">
+                        <img src="http://www.themezaa.com/html/pofo/images/homepage-2-slider-img-12.jpg" alt=""/>
+                        <p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Branding and Identity</p>
+                    </div>
+                    <div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
+                        <div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
+                        <h3><a class="text-white font-weight-600 alt-font text-white-hover" href="single-project-page-04.html">HardDot Stone</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slider item -->
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons 
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
   <!-- footer Start -->
   <div>
     <div id="section-footer">
@@ -418,6 +493,10 @@ https://templatemo.com/tm-579-cyborg-gaming
   
   <!-- Schedule JavaScript -->
   <script src="{% static 'recruit/js/schedule.js' %}"></script>
+
+  <!-- Special JavaScript -->
+  <script src="{% static 'fullpage/special.js' %}"></script>
+  
 
   <script>
       $(".hamburger").click(function(){
