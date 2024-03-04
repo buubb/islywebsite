@@ -5,6 +5,7 @@ from volunteer.models import Post, Comment, PostImage
 from volunteer.forms import CommentForm, PostForm
 from django.contrib.humanize.templatetags.humanize import ordinal
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 def feed(request):
@@ -90,6 +91,28 @@ def post_detail(request, post_id):
         "all_posts": all_posts,
     }
     return render(request, "volunteer/post_detail.html", context)
+
+
+@login_required(login_url="login")
+def post_delete(request, post_id):
+    try:
+        post = Post.objects.get(id=post_id)
+
+        # 권한 확인
+        if request.user != post.user:
+            # 작성자가 아닌 경우
+            messages.error(request, 'You do not have permission to delete this post')
+            return redirect('Volunteer:post_detail', post_id=post_id)
+
+        # 사용자가 게시물을 삭제할 수 있는 권한이 있는 경우
+        post.delete()
+
+        # 삭제 후 피드 페이지로 이동
+        return redirect('Volunteer:feed')
+
+    except Post.DoesNotExist:
+        # 해당 ID의 게시물이 존재하지 않는 경우
+        return render(request, 'volunteer/404_2.html')
 
 
 @login_required(login_url="login")

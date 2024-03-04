@@ -45,7 +45,8 @@ Delete & Edit Button
 ---------------------------------------------
 */
 
-.VltDetails .vltnav a {
+.VltDetails .vltnav a,
+.VltDetails .vltnav button {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
     background: transparent;
@@ -56,9 +57,11 @@ Delete & Edit Button
     text-decoration: none;
     border: 1.8px solid #FFFFFF;
     border-radius: 0;
+    display: inline-block;
 }
 
-.VltDetails .vltnav a:hover {
+.VltDetails .vltnav a:hover,
+.VltDetails .vltnav button:hover {
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.075);
 }
@@ -178,7 +181,8 @@ Responsive style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .VltDetails .vltnav a {
+    .VltDetails .vltnav a,
+    .VltDetails .vltnav button {
         font-size: 13px;
     }
 }
