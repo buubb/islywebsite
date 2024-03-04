@@ -55,20 +55,13 @@
         <div class="container-fluid pt-5 RecruitBanner mb-5">
             <div class="container pt-5">
                 <div class="row g-5 py-5">
-                    <div class="col-lg-12 text-center mx-auto text-xl-start">
-                        <div class="p-5 d-flex flex-column justify-content-xl-between flex-xl-row">
-                            <div class="align-self-center py-5">
-                                <h1 class="display-1 me-3">Join</h1>
-                                <span class="key display-1">I</span>
-                                <span class="key display-1">.</span>
-                                <span class="key display-1">S</span>
-                                <span class="key display-1">l</span>
-                                <span class="key display-1">y</span>
-                                <span class="key display-1">(</span>
-                                <span class="key display-1">)</span>
-                                <span class="key display-1 text-white">!</span>
-                            </div>
-                            <div class="align-self-center">
+                    <div class="col-lg-12 text-center mx-auto">
+                        <div class="p-5">
+                            <div class="align-self-center py-3">
+                                <h1 class="title display-3 text-white mb-5">
+                                    Want To Learn <span class="break-md"><br></span><span id="element"></span>?<br>
+                                    Join I.Sly() Now!
+                                </h1>
                                 <a href="" class="apply btn btn-square me-4">지원하기</a>
                                 <a href="{% url 'Recruit:status' %}" class="status btn btn-square">합격조회</a>
                             </div>
@@ -405,6 +398,10 @@
                 $(".nav").slideToggle();
             });
         </script>
+
+        <!-- Raon Typewriter JavaScript -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="{% static 'recruit/js/Typewriter.js' %}"></script>
 
         <!-- Raon FAQ JavaScript -->
         <script src="{% static 'recruit/js/RecruitFaq.js' %}"></script>
