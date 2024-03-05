@@ -195,18 +195,29 @@
   color: #666;
   margin-bottom: 15px;
   display: block;
+  font-size: 15px;
   font-weight: 500;
+  letter-spacing: 0.075em;
+  line-height: 1.8;
+  text-transform: none;
 }
 .blog-slider__title {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.8;
+  text-transform: none;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
 .blog-slider__text {
   color: aliceblue;
   margin-bottom: 30px;
-  line-height: 1.5em;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.075em;
+  line-height: 1.8;
+  text-transform: none;
 }
 .blog-slider__button {
   display: inline-flex;
@@ -266,7 +277,6 @@
   height: 11px;
   display: block;
   border-radius: 10px;
-  background: #062744;
   opacity: 0.2;
   transition: all 0.3s;
 }
