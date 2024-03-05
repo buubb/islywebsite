@@ -17,20 +17,22 @@ class Login(APIView):
             return render(request, 'islyweb/index.html')
         else:
             form=AuthenticationForm()
-            return render(request, 'login/make.html', {'form':form})
+            return render(request, 'login/new2.html', {'form':form})
             
     
     def post(self, request):
         print("post로 호출")
         form = AuthenticationForm(request=request, data=request.POST)
         if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
+            username=form.cleaned_data.get('username')
+            password=form.cleaned_data.get('password')
+            user_instance = get_user_model().objects.get(username=username)
+            user=authenticate(username=username, password=password)
             
             if user is not None:
                 print(user)
-                user_instance = get_user_model().objects.get(username=username)
+                # user_instance = get_user_model().objects.get(username=username)
+
                 LoginFail.objects.filter(user__username=username).delete()
                     
                 login(request, user)

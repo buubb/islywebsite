@@ -572,7 +572,7 @@ path:nth-child(6) {
 /*word banner*/
 .wordbanner {
   padding-left: 330px;
-  padding-top:120px;
+  padding-top:150px;
   display: flex;
 }
 
