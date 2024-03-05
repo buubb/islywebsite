@@ -45,7 +45,7 @@
     }
     .text_box{
         position:absolute;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 700;
         text-align: center!important;
         max-width: 700px;
@@ -67,10 +67,6 @@
     }
     .mainbanner p{
         text-align: center!important;
-    }
-    .text_box{
-        text-align: center!important;
-        padding:0px;
     }
     .bg-3 .button{
         margin: 35px 0px 50px 0px;
@@ -107,10 +103,19 @@
       .Words-line{
         position:static!important;
       }
+      .Words p{
+        font-size: 55px!important;
+      }
       .wordbanner {
         padding-left: 0px;
         padding-top: 120px;
         display: flex;
+      }
+      .blog-slider__title{
+        font-size: 20px;
+      }
+      .bg-3{
+        text-align: center!important;
       }
 }
 
