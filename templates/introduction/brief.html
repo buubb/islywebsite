@@ -432,11 +432,17 @@
 
   <!-- Raon Carousel JavaScript -->
   <script src="{% static 'introduction/brief/js/RaonCarousel.js' %}"></script>
+
+  <!-- Navbar JavaScript -->
   <script>
-    $(".hamburger").click(function(){
-    $(".nav").slideToggle();
-  });
-  </script>
+      $(".hamburger").click(function(){
+      $(".nav").slideToggle();
+    });
+    $(".aboutdrop").click(function(){
+      $(".depth_1").slideToggle();
+    });
+   </script>
+
   </body>
   <!-- icons : insta, kakao, call -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
