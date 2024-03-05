@@ -141,7 +141,7 @@ header nav .nav li:hover a{
 header nav .nav li:last-child:hover a,
 header nav .nav li:last-child a.active {
     color: #5ee773;
-    background-color: #27292a;
+    background-color: #1f2122;
 }
 header nav .nav .nav-item a {
   background-color: transparent;
