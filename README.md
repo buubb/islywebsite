@@ -1,6 +1,6 @@
 # Install 필수
 - pip install djangorestframework
-- pip install summernote
+- pip install summernote //(django_summernote)
 - pip install mysqlclient
 - User 테이블 사용은 https://han-py.tistory.com/353 참고
 - pip install django-extensions
@@ -12,6 +12,9 @@
 - pip install django-brutebuster // 관리자가 차단된 계정을 수동으로 해제할 수 있음
 - pip install bandit // 보안 취약점 점검 툴
 - pip install cmarkgfm
+- pip install django-crispy-forms //마크다운 관련 패키지
+- pip install django-markdownx //마크다운 관련 패키지
+- pip install crispy_bootstrap5
 
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
