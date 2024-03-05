@@ -117,12 +117,13 @@
                                                                 <li>
                                                                     <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
                                                                         {% csrf_token %}
-                                                                        <button type="submit" class="like-btn">
+                                                                        <button class="like-btn" data-post-id="{{ post.id }}">
                                                                             {% if user in post.like_users.all %}
-                                                                                <i class="fa-solid fa-heart" style="color: #57F579;"></i> {{ post.like_users.count }} Like
+                                                                                <i class="fa-solid fa-heart"></i>
                                                                             {% else %}
-                                                                                <i class="fa-regular fa-heart fa-beat" style="color: #FFFFFF;"></i> {{ post.like_users.count }} Like
+                                                                                <i class="fa-regular fa-heart fa-beat"></i>
                                                                             {% endif %}
+                                                                            <span class="like-count">{{ post.like_users.count }}</span> Like
                                                                         </button>
                                                                     </form>
                                                                 </li>
@@ -273,6 +274,7 @@
 
         <!-- Raon Additional JavaScript -->
         <script src="{% static 'volunteer/js/delete.js' %}"></script>
+        <script src="{% static 'volunteer/js/like.js' %}"></script>
         <script src="{% static 'volunteer/js/share.js' %}"></script>
 
         <!-- icons : insta, kakao, call -->
