@@ -62,7 +62,7 @@
                                     Want To Learn <span class="break-md"><br></span><span id="element"></span>?<br>
                                     Join I.Sly() Now!
                                 </h1>
-                                <a href="" class="apply btn btn-square me-4">지원하기</a>
+                                <a href="#" class="apply btn btn-square me-4" onclick="checkRecruitment()">지원하기</a>
                                 <a href="{% url 'Recruit:status' %}" class="status btn btn-square">합격조회</a>
                             </div>
                         </div>
@@ -279,7 +279,7 @@
                                                                         추가적으로 납부해야 합니다. 회비는 교재, 팀 별 온라인 강의 구매,
                                                                         회식비, 간식비 등으로 사용되며, 동아리 비용은 투명하게 공개할
                                                                         예정입니다. 대회 참여, 박람회, MT 등의 활동 시 별도 참가 비용이
-                                                                        발생할 수 있습니다. 자세한 규정은 회칙을 참고해 주세요.
+                                                                        발생할 수 있습니다. 자세한 규정은 회칙을 참고해 주세요🏃‍♀️🚶‍♂️🚴‍♂️🏃‍♂️🚶‍♂️
                                                                     </p>
                                                                 </div>
                                                             </li>
@@ -360,7 +360,7 @@
                 checkSessionStatus();
                 setInterval(checkSessionStatus, 10000);  // 1분마다 세션 상태 체크
             };
-
+        
             function checkSessionStatus() {
                 console.log('Checking session status...');
                 // 여기에서 서버에 세션 상태를 확인하는 요청을 보내고 결과에 따라 경고 메시지를 표시할 수 있습니다.
@@ -393,9 +393,14 @@
         <script src="{% static 'assets/js/popup.js' %}"></script>
         <script src="{% static 'assets/js/custom.js' %}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Navbar JavaScript -->
         <script>
             $(".hamburger").click(function () {
                 $(".nav").slideToggle();
+            });
+            $(".aboutdrop").click(function () {
+                $(".depth_1").slideToggle();
             });
         </script>
 
@@ -412,6 +417,7 @@
         <script src="{% static 'recruit/js/Facts.js' %}"></script>
 
         <!-- Eunju add -->
+        <script src="/static/recruit/js/apply.js"></script>
 
 
         <!-- icons : insta, kakao, call -->
