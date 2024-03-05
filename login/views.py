@@ -22,16 +22,15 @@ class Login(APIView):
     
     def post(self, request):
         print("post로 호출")
-        form=AuthenticationForm(request=request, data=request.POST)
+        form = AuthenticationForm(request=request, data=request.POST)
         if form.is_valid():
-            username=form.cleaned_data.get('username')
-            password=form.cleaned_data.get('password')
-            user=authenticate(username=username, password=password)
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
             
             if user is not None:
                 print(user)
                 user_instance = get_user_model().objects.get(username=username)
-
                 LoginFail.objects.filter(user__username=username).delete()
                     
                 login(request, user)
