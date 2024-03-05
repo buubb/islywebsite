@@ -120,7 +120,7 @@ ul{list-style:none;}
 a{text-decoration:none; color:#333;}
 .nav:after{display:block; content:''; clear:both;}
 .nav > .dropdown{position:relative; float:left; margin-right:5px;}
-.nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:45px;}
+.nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:46.4px;}
 .nav > .dropdown:hover .depth_1 {display:block;}
 .nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);border-radius: 18px;
     background-color: #1f2122;
@@ -288,8 +288,7 @@ nav .res-nav .icon-wrap .hamburger{
     max-width: 700px;
     margin:auto;
     width:100%;
-    padding:0px;
-    left:270px;
+    padding:0px 0px 0px 40px;
     top:250px;
     line-height:110px;
 }
@@ -359,12 +358,13 @@ nav .res-nav .icon-wrap .hamburger{
     position:relative;
     margin:auto;
     width: 100%;
+    text-align: left!important;
 }
 
 .bg-3 .button {
     min-width: 150px;
     max-width: 250px;
-    margin: 0px 900px 50px 1em;
+    margin: 0px 900px 50px 47px;
     padding: 1em 2em;
     background: none;
     color: inherit;
@@ -572,7 +572,7 @@ path:nth-child(6) {
 /*word banner*/
 .wordbanner {
   padding-left: 330px;
-  padding-top:120px;
+  padding-top:150px;
   display: flex;
 }
 
@@ -645,6 +645,8 @@ path:nth-child(6) {
   transform: translate3d(0, 0, 0);
   vertical-align: top;
   white-space: nowrap;
+  font-size:68px;
+  letter-spacing: -0.05rem;
 }
 
 /*

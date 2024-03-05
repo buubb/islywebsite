@@ -1,0 +1,76 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>I.Sly()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/single-page-login-sign-up.css' %}">
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+{% include "fullpagenav.html" %}
+
+<div class="login-box">
+  <h2>Login</h2>
+  <form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+
+    <!-- Raon Added Start -->
+    {% if request.GET.next %}
+    <input type="hidden" name="next" value="{{ request.GET.next }}">
+    {% endif %}
+    <!-- Raon Added End -->
+
+    <div class="user-box">
+      <input type="text" placeholder="write your ID" value="{{ form.username.value|default_if_none:'' |escape }}" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="Password" placeholder="write your PW" value="{{ form.username.value|default_if_none:'' |escape }}" required="">
+      <label>Password</label>
+    </div>
+    <a href="/">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+
+
+
+</body>
+</html>

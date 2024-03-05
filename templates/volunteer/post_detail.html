@@ -23,12 +23,14 @@
         <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-        <!-- Raon Additional Files -->
+        <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltDetails.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltMore.css' %}">
+        <link rel="stylesheet" href="{% static 'copyright.css' %}">
+
+        <!-- Raon Splide Files -->
         <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
         <script src="{% static 'splide/splide.js' %}"></script>
-        <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
@@ -50,32 +52,52 @@
                 <div class="col-lg-12">
                     <div class="page-content" style="background-color: transparent;">
 
-
                         <!-- ***** Vlt Details Start ***** -->
                         <div class="VltDetails pt-4">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="content">
                                         <div class="row">
-                                            <!-- Delete & Edit Buttons -->
-                                            <div class="col-lg-12 text-end pb-4">
-                                                <div class="vltnav">
-                                                    <a class="btn btn-square me-3" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
-                                                    <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> Edit</a>
+                                            <!-- Top Buttons -->
+                                            {% if request.user == post.user %}
+                                                <div class="col-lg-12 text-end pb-4">
+                                                    <div class="vltnav">
+                                                        <!-- Delete -->
+                                                        <form id="delete" action="{% url 'Volunteer:post_delete' post_id=post.id %}" method="post" style="display: inline;">
+                                                            {% csrf_token %}
+                                                            <button type="button" class="btn btn-square me-3" onclick="confirmDelete()">
+                                                                <i class="fa-regular fa-trash-can"></i> Delete
+                                                            </button>
+                                                        </form>
+                                                        <!-- Edit -->
+                                                        <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> Edit</a>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            {% endif %}
+                                            <!-- Message -->
+                                            {% if messages %}
+                                                {% for message in messages %}
+                                                    <div class="alert alert-danger" role="alert">
+                                                        {{ message }}
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
                                             <!-- Image Slider -->
                                             <div class="col-lg-12">
                                                 <div class="post-images splide">
                                                     <div class="splide__track">
                                                         <ul class="splide__list">
-                                                            {% for image in post.postimage_set.all %}
-                                                                {% if image.photo %}
+                                                            {% if post.postimage_set.all %}
+                                                                {% for image in post.postimage_set.all %}
                                                                     <li class="splide__slide">
                                                                         <img src="{{ image.photo.url }}" alt="">
                                                                     </li>
-                                                                {% endif %}
-                                                            {% endfor %}
+                                                                {% endfor %}
+                                                            {% else %}
+                                                                <li class="splide__slide">
+                                                                    <img src="{% static '/volunteer/images/default-image.png' %}" alt="Default Image">
+                                                                </li>
+                                                            {% endif %}
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -85,24 +107,27 @@
                                                 <h2 class="pt-5">{{ post.title }}</h2>
                                                 <p class="pt-5">{{ post.content|linebreaksbr }}</p>
                                             </div>
-                                            <!-- Like & Share Buttons -->
+                                            <!-- Bottom Buttons -->
                                             <div class="col-lg-12">
                                                 <div class="row pt-4">
                                                     <div class="col-md-7 text-center text-md-end align-self-center order-md-5">
                                                         <div class="stats">
                                                             <ul>
+                                                                <!-- Like Button -->
                                                                 <li>
                                                                     <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
                                                                         {% csrf_token %}
-                                                                        <button type="submit" class="like-btn">
+                                                                        <button class="like-btn" data-post-id="{{ post.id }}">
                                                                             {% if user in post.like_users.all %}
-                                                                                <i class="fa-solid fa-heart" style="color: #57F579;"></i> {{ post.like_users.count }} Like
+                                                                                <i class="fa-solid fa-heart"></i>
                                                                             {% else %}
-                                                                                <i class="fa-regular fa-heart fa-beat" style="color: #FFFFFF;"></i> {{ post.like_users.count }} Like
+                                                                                <i class="fa-regular fa-heart fa-beat"></i>
                                                                             {% endif %}
+                                                                            <span class="like-count">{{ post.like_users.count }}</span> Like
                                                                         </button>
                                                                     </form>
                                                                 </li>
+                                                                <!-- Share Button -->
                                                                 <li>
                                                                     <button class="share-btn"><i class="fa-solid fa-link"></i> Share</button>
                                                                 </li>
@@ -248,6 +273,8 @@
         </script>
 
         <!-- Raon Additional JavaScript -->
+        <script src="{% static 'volunteer/js/delete.js' %}"></script>
+        <script src="{% static 'volunteer/js/like.js' %}"></script>
         <script src="{% static 'volunteer/js/share.js' %}"></script>
 
         <!-- icons : insta, kakao, call -->
