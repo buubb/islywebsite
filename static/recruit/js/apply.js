@@ -2,11 +2,11 @@
 function checkRecruitment() {
     var currentDateTime = new Date();
     var recruitmentStart = new Date('2024-01-27'); // 모집 시작 날짜
-    var recruitmentEnd = new Date('2024-02-15');   // 모집 종료 날짜
+    var recruitmentEnd = new Date('2024-02-07');   // 모집 종료 날짜
 
     if (currentDateTime >= recruitmentStart && currentDateTime <= recruitmentEnd) {
         window.location.href = "https://www.naver.com"; // 지원 링크로 이동
     } else {
-        alert("지금은 모집 기간이 아닙니다");
+        alert("지금은 모집 기간이 아닙니다. 다음 10기 모집을 기다려주세요!");
     }
 }
