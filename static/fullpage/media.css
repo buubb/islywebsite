@@ -104,8 +104,10 @@
       #section-footer{ 
         padding: 50px 40px 5px 40px;
       }
+      .Words-line{
+        position:static!important;
+      }
       .wordbanner {
-        margin-right:240px;
         padding-left: 0px;
         padding-top: 120px;
         display: flex;
