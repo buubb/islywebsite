@@ -52,8 +52,8 @@
         </div>
         <!-- 반응형 end -->
         <ul class="nav">
-          <li class="dropdown">
-            <a class="aboutdrop" href="#">ABOUT</a>
+          <li class="dropdown menu_li">
+            <a class="aboutdrop">ABOUT</a>
             <ul class="depth_1">
               <li><a href="/introduction/">동아리 소개</a></li>
               <li><a href="/notice/">공지사항</a></li>
@@ -67,11 +67,11 @@
             </ul>
           </li>
           <li data-menuanchor="s4"><a href="/team-activities/">Team</a></li>-->
-          <li data-menuanchor="s5"><a href="/volunteer/">PROJECT</a></li>
+          <li data-menuanchor="s5" class="menu_li"><a href="/volunteer/">PROJECT</a></li>
           <!--<li data-menuanchor="s5"><a href="/library/">자료실</a></li>-->
-          <li data-menuanchor="s5"><a href="/CTF-Challenge/">WARGAME</a></li>
-          <li data-menuanchor="s5"><a href="/recruit/">RECRUIT</a></li>
-          <li class="nav-item">
+          <li data-menuanchor="s5" class="menu_li"><a href="/CTF-Challenge/">WARGAME</a></li>
+          <li data-menuanchor="s5" class="menu_li"><a href="/recruit/">RECRUIT</a></li>
+          <li class="nav-item menu_li">
             {% if request.user.is_authenticated %} <!-- 단순히 사용자 인증에 대한 확인만 하는 기능 -> url에 login을 직접 치면 로그인 상태에서도 로그인창이 뜸 -->
             <a href="{% url 'logout' %}">Logout {{request.user.username}} </a>
             {% else %}

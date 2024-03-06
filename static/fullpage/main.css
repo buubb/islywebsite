@@ -114,6 +114,11 @@ header nav .nav li a{
     text-decoration-line: none;
 }
 
+.nav .active a{
+  color:aliceblue;
+  font-weight: 700;
+}
+
 /* menu dropdown */
 *{margin:0; padding:0;}
 ul{list-style:none;}
