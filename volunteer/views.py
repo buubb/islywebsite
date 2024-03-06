@@ -101,18 +101,18 @@ def post_delete(request, post_id):
         # 권한 확인
         if request.user != post.user:
             # 작성자가 아닌 경우
-            messages.error(request, 'You do not have permission to delete this post')
-            return redirect('Volunteer:post_detail', post_id=post_id)
+            messages.error(request, "You do not have permission to delete this post")
+            return redirect("Volunteer:post_detail", post_id=post_id)
 
         # 삭제할 수 있는 권한이 있는 경우
         post.delete()
 
         # 삭제 후 피드 페이지로 이동
-        return redirect('Volunteer:feed')
+        return redirect("Volunteer:feed")
 
     except Post.DoesNotExist:
         # 해당 ID의 Post가 존재하지 않는 경우
-        return render(request, 'volunteer/404_2.html')
+        return render(request, "volunteer/404_2.html")
 
 
 @login_required(login_url="login")
@@ -132,13 +132,13 @@ def post_like(request, post_id):
             liked = True
 
         response_data = {
-            'liked': liked,
-            'like_count': post.like_users.count(),
-            'logged_in': True,  # 사용자가 로그인 상태임을 전달
+            "liked": liked,
+            "like_count": post.like_users.count(),
+            "logged_in": True,  # 사용자가 로그인 상태임을 전달
         }
     else:
         response_data = {
-            'logged_in': False,  # 사용자가 로그인 상태가 아님을 전달
+            "logged_in": False,  # 사용자가 로그인 상태가 아님을 전달
         }
 
     return JsonResponse(response_data)

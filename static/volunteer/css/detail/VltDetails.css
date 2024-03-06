@@ -81,11 +81,11 @@ Delete & Edit Button
 
 /*
 ---------------------------------------------
-Comment
+Share Button
 ---------------------------------------------
 */
 
-.VltDetails .comment a {
+.VltDetails .share-btn {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 0.9rem;
@@ -107,7 +107,7 @@ Comment
     overflow: hidden;
 }
 
-.VltDetails .comment a:hover {
+.VltDetails .share-btn:hover {
     border-color: #FFFFFF;
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.075);
@@ -154,11 +154,11 @@ Like Button
 
 /*
 ---------------------------------------------
-Share Button
+Comment Button
 ---------------------------------------------
 */
 
-.VltDetails .share-btn {
+.VltDetails .comment-btn {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
     background: transparent;
@@ -170,7 +170,7 @@ Share Button
     border-left: 1.8px solid #FFFFFF;
     display: inline-block;
     margin: 0 0 0 2em;
-    padding: 0 0 0 1.7em;
+    padding: 0 0 0 2em;
     text-transform: uppercase;
 }
 
@@ -193,6 +193,10 @@ Responsive style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .VltDetails .content {
+        padding: 40px 50px;
+    }
+
     .VltDetails .vltnav a,
     .VltDetails .vltnav button {
         font-size: 13px;
@@ -205,16 +209,13 @@ Responsive style
         padding: 30px 40px;
     }
 
+    .VltDetails .share-btn {
+        margin-top: 45px;
+        display: block;
+    }
+
     .VltDetails .stats {
         margin-top: 20px;
-    }
-
-    .VltDetails .comment {
-        margin-top: 45px;
-    }
-
-    .VltDetails .comment a {
-        display: block;
     }
 }
 
