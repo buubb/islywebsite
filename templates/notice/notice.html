@@ -156,7 +156,11 @@
                                                 <h2 class="linkTitle mt-2 lh-base">Records of Attendance</h2>
                                             </div>
                                             <div class="notice-btn align-self-center">
-                                                <a href="{{ attendance_link.link }}" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% if attendance_link.link %}
+                                                    <a href="{{ attendance_link.link }}" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% else %}
+                                                    <a href="https://docs.google.com/spreadsheets/d/1UtpFLxG7fFOfKgNEo7hKIy-TllsPV5FhV2Jpb5GEOKw/edit?usp=sharing" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
@@ -215,8 +219,13 @@
                                                 <h4 class="linkSub opacity-50 lh-base">과제 제출 현황</h4>
                                                 <h2 class="linkTitle mt-2 lh-base">Records of Submission</h2>
                                             </div>
+                                            <!-- submission_link가 비어 있는 경우 기본 링크 표시, 그렇지 않은 경우 설정한 링크 표시 -->
                                             <div class="notice-btn align-self-center">
-                                                <a href="{{ submission_link.link }}" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% if submission_link.link %}
+                                                    <a href="{{ submission_link.link }}" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% else %}
+                                                    <a href="https://docs.google.com/spreadsheets/d/1vam_eNcy8VjkNacxGCtmTCPR62XFUHUklohqFV3RMI4/edit?usp=sharing" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
@@ -431,9 +440,14 @@
                                                 <h4 class="linkSub opacity-50 lh-base">강의 대여 현황</h4>
                                                 <h2 class="linkTitle mt-2 lh-base">Records of Rental</h2>
                                             </div>
+                                            <!--  rental_link가 비어 있는 경우에는 기본 링크가 표시되고, 그렇지 않은 경우에는 설정한 링크가 표시  -->
                                             <div class="notice-btn align-self-center">
-                                                <a href="{{ rental_link.link }}" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
-                                            </div>
+                                                {% if rental_link.link %}
+                                                    <a href="{{ rental_link.link }}" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% else %}
+                                                    <a href="https://docs.google.com/spreadsheets/d/1suz_lQbw7fS-dnYh5axOc3VJb3Q5AXdXwclMiKfFQu4/edit?usp=sharing" rel="noopener noreferrer">View <span class="fas fa-arrow-right"></span></a>
+                                                {% endif %}
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
