@@ -5,7 +5,7 @@ Basic
 */
 
 .RecruitBanner {
-    background-color: #2A2C30;
+    background-color: #000000;
 }
 
 
@@ -21,11 +21,12 @@ Custom Text
     display: block;
     font-weight: 900;
     letter-spacing: 0.075em;
-    text-transform: capitalize;
+    line-height: 1.3;
+    text-transform: none;
 }
 
 .RecruitBanner #element {
-    color: #57F579;
+    /* color: #57F579; */
 }
 
 
@@ -60,30 +61,19 @@ Button
 */
 
 .RecruitBanner .apply {
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    color: #2A2C30;
-    background-color: #FFFFFF;
-    border: 1.8px solid #FFFFFF;
-    border-radius: 0;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    padding: 0 2.5rem;
-    display: inline-block;
+    font-size: 5rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-}
-
-.RecruitBanner .apply:hover {
-    background-color: #e1e2e2;
-    opacity: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .RecruitBanner .status {
@@ -133,34 +123,23 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    .RecruitBanner .apply {
+        font-size: 3rem;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .RecruitBanner .apply,
-    .RecruitBanner .status {
-        font-size: 0.9rem;
-        padding: 0 1.5rem;
-        height: 3.2rem;
-        line-height: 3.2rem;
+    .RecruitBanner .apply {
+        font-size: 3rem;
+        width: 90px;
+        height: 90px;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-}
-
-
-/*
----------------------------------------------
-Responsive Style : <br>
----------------------------------------------
-*/
-
-@media (min-width: 1200px) {
-    .break-md {
-        display: none;
-    }
 }

@@ -1,0 +1,154 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.Procedure {
+    margin-top: 0;
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.Procedure .title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.Procedure h5, p, a {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #000000;
+}
+
+/* topic */
+.Procedure h5 {
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+/* content */
+.Procedure p {
+    font-weight: 500;
+    letter-spacing: 0.055em;
+    /* text-align: left; */
+    /* margin: 0 auto; */
+}
+
+/* button */
+.Procedure a {
+    font-weight: 600;
+    letter-spacing: 0.075em;
+}
+
+
+/*
+---------------------------------------------
+Btn-square
+---------------------------------------------
+*/
+
+.Procedure .btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.Procedure .btn-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.Procedure .item {
+    position: relative;
+    height: 350px;
+    padding: 30px 25px;
+    background: #FFFFFF;
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .08); */
+    transition: .5s;
+}
+
+.Procedure .item:hover {
+    background: #FFFFFF;
+}
+
+.Procedure .item .topic-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: #FFFFFF;
+    background: #000000;
+    transition: .5s;
+}
+
+.Procedure .item:hover .topic-icon {
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.Procedure .item h5,
+.Procedure .item p {
+    transition: .5s;
+}
+
+.Procedure .item:hover h5,
+.Procedure .item:hover p {
+    color: #000000;
+}
+
+.Procedure .item a.btn {
+    position: relative;
+    display: flex;
+    color: #000000;
+    transition: .5s;
+    z-index: 1;
+}
+
+.Procedure .item:hover a.btn {
+    color: #FFFFFF;
+}
+
+.Procedure .item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #DDDDDD;
+    transition: .5s;
+    z-index: -1;
+}
+
+.Procedure .item:hover a.btn::before {
+    width: 100%;
+    background: #000000;
+}
