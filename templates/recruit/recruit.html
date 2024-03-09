@@ -25,6 +25,7 @@
 
         <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/InfiniteBanner.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/Procedure.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitFaq.css' %}">
@@ -51,16 +52,16 @@
 
 
         <!-- ***** Container 1 Start ***** -->
-        <div class="container-fluid pt-5 RecruitBanner mb-5">
+        <div class="container-fluid pt-5 RecruitBanner">
             <div class="container pt-5">
-                <div class="row g-5 py-5">
+                <div class="row g-5 py-4">
                     <div class="col-lg-12 text-center mx-auto text-lg-start">
                         <div class="p-5 d-flex flex-column justify-content-lg-between flex-lg-row">
                             <div class="align-self-center py-5">
                                 <h1 class="title display-4">
                                     WANT TO LEARN<br>
                                     <span id="element"></span>?<br>
-                                    JOIN I.Sly() NOW!
+                                    JOIN I.Sly()!
                                 </h1>
                             </div>
                             <div class="align-self-center">
@@ -77,6 +78,20 @@
 
 
         <!-- ***** Container 2 Start ***** -->
+        <div class="container-fluid InfiniteBanner">
+            <div class="container">
+                <div class="row py-2">
+                    <div class="align-self-center">
+                        <ul class="props display-6">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Container 2 End ***** -->
+
+
+        <!-- ***** Container 3 Start ***** -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -304,7 +319,7 @@
                 </div>
             </div>
         </div>
-        <!-- ***** Container 2 End ***** -->
+        <!-- ***** Container 3 End ***** -->
 
 
         <!-- footer Start -->
@@ -412,6 +427,9 @@
         <!-- Raon Typewriter JavaScript -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="{% static 'recruit/js/Typewriter.js' %}"></script>
+
+        <!-- Raon Infinite Scroll JavaScript -->
+        <script src="{% static 'recruit/js/InfiniteScroll.js' %}"></script>
 
         <!-- Raon FAQ JavaScript -->
         <script src="{% static 'recruit/js/RecruitFaq.js' %}"></script>
