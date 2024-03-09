@@ -2,7 +2,8 @@
     color: var(--fg);
     font-size: 1.3em!important;
     /* margin-bottom: 200px; */
-    padding-top: 150px
+    padding-top: 150px;
+    margin-top:200px;
 }
 
 .special .heading-section {
