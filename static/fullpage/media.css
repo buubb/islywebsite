@@ -17,13 +17,14 @@
         flex-wrap: wrap;
         width:100%;
         padding-right: 0;
-        background-color: #1f2122 ;
+        background-color: #171a1c ;
     }
     header nav .nav .depth_1{
         position:static;
         width:100%;
         box-shadow: none;
-        background-color: #27292a;
+        background-color: #171a1c ;
+        margin-bottom:0px!important;
         border-radius: 0px;
 
     }
