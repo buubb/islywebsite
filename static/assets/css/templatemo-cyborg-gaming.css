@@ -338,7 +338,10 @@ Header Style
 */
 
 .background-header {
-  background-color: #0d0f10 !important;
+  background: #0d0f101a;
+  backdrop-filter: blur( 4.5px );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   height: 100px!important;
   position: fixed!important;
   top: 0 !important;

@@ -12,8 +12,6 @@ header{
     z-index: 100!important;
     font-family: "Sen","Noto Sans KR",sans-serif!important;
     text-align: center;
-    background-color: #1f2122;
-    /*background-color: rgba(0,0,0,0.2);*/
 }
 
 header nav{
@@ -51,30 +49,6 @@ header nav .logo img{
     width: 70px;
     
 }
-header nav #search {
-    position: relative;
-
-  }
-  
-header nav #search input {
-    background-color: #27292a;
-    height: 46px;
-    border-radius: 23px;
-    border: none;
-    color: #666;
-    font-size: 14px;
-    padding: 0px 15px 0px 45px;
-  }
-  
-header nav #search i {
-    position: absolute;
-    color: #666;
-    left: 20px;
-    top: 16px;
-    width: 18px;
-    height: 18px;
-    font-size: 16px;
-  }
 header nav .nav{
     display: inline-flex;
     /* flex-basis: 70%; */
@@ -102,7 +76,7 @@ header nav .nav li a{
     font-size: 14px;
     text-transform: capitalize;
     /* menu color */
-    color: #666;
+    color: #FFFFFF;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -116,7 +90,7 @@ header nav .nav li a{
 
 .nav .active a{
   color:aliceblue;
-  font-weight: 700;
+  font-weight: 700!important;
 }
 
 /* menu dropdown */
@@ -128,7 +102,10 @@ a{text-decoration:none; color:#333;}
 .nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:46.4px;}
 /*.nav > .dropdown:hover .depth_1 {display:block;}*/
 .nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);border-radius: 18px;
-    background-color: #0d0f10;
+  background: #0d0f10;
+  backdrop-filter: blur( 4.5px );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
     -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); text-align:center;width: 160px;z-index: 4; margin-top: 20px;}
@@ -148,7 +125,7 @@ header nav .nav li:first-child:hover a{
 header nav .nav li:hover .menu_name{
     color:aliceblue;
     text-decoration: underline 3px aliceblue!important;
-    text-underline-offset: 10px!important;
+    text-underline-offset: 40px!important;
 }
 /*
 header nav .nav li:last-child:hover a,
@@ -679,6 +656,10 @@ path:nth-child(6) {
 .main {
   width: 1200px;
   height: 500px;
+  letter-spacing: 0.075em!important;
+  line-height: 1.8!important;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+
   & section {
     display: flex;
     gap: 70px;
@@ -693,7 +674,7 @@ path:nth-child(6) {
   color: aliceblue;
   
   & li {
-    padding: 2rem;
+    padding: 1.75rem 2rem;
     border: 3px solid transparent;
     cursor: pointer;
   }
@@ -726,8 +707,8 @@ path:nth-child(6) {
   transform: translateY(-5rem);
 
   & h3 {
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 600!important;
+    font-size: 32px!important;
     border-bottom: 3px solid white;
     padding-bottom: 1rem;
   }

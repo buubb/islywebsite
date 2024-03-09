@@ -118,6 +118,9 @@
       .bg-3{
         text-align: center!important;
       }
+      header nav .nav li:hover .menu_name{
+        text-underline-offset: 10px!important;
+      }
 }
 
 @media(min-width:1278px){
