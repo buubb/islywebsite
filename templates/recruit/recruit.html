@@ -27,9 +27,9 @@
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitBanner.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/InfiniteBanner.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/Procedure.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/StatusLink.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitFaq.css' %}">
-        <link rel="stylesheet" href="{% static 'recruit/css/recruit/StatusLink.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
@@ -163,8 +163,30 @@
                         <!-- ***** Procedure End ***** -->
 
 
+                        <!-- ***** Status Link Start ***** -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="StatusLink">
+                                    <div class="text-center">
+                                        <div class="p-5">
+                                            <div class="py-3">
+                                                <a href="{% url 'Recruit:status' %}">
+                                                    <h1 class="title">Application<br>Status Check</h1>
+                                                </a>
+                                            </div>
+                                            <div class="link-btn">
+                                                <a href="{% url 'Recruit:status' %}">합격조회 바로가기 <i class="bi bi-arrow-up-right-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** Status Link End ***** -->
+
+
                         <!-- ***** FAQ Start ***** -->
-                        <div class="RecruitFaq">
+                        <div class="RecruitFaq pb-4">
                             <div class="row">
                                 <div class="col-lg-12 text-center mx-auto">
                                     <h1 class="title mb-5">Popular FAQs</h1>
@@ -179,7 +201,7 @@
                                                         <ul>
                                                             <!-- item 01 -->
                                                             <li class="faq-item">
-                                                                <a class="faq-question"><span>Q.</span> 해킹 실력이 뛰어난 사람만 지원할 수 있나요? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                                                <a class="faq-question"><span>Q.</span> 해킹 실력이 뛰어나야 하나요? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                                                 <div class="faq-answer collapse" data-parent=".faq-list">
                                                                     <p>
                                                                         I.Sly()는 해킹 지식이 부족하더라도 오직 해킹에 대한
@@ -251,7 +273,7 @@
                                                                         추가적으로 납부해야 합니다. 회비는 교재, 팀 별 온라인 강의 구매,
                                                                         회식비, 간식비 등으로 사용되며, 동아리 비용은 투명하게 공개할
                                                                         예정입니다. 대회 참여, 박람회, MT 등의 활동 시 별도 참가 비용이
-                                                                        발생할 수 있습니다. 자세한 규정은 회칙을 참고해 주세요🏃‍♀️🚶‍♂️🚴‍♂️🏃‍♂️🚶‍♂️
+                                                                        발생할 수 있습니다. 자세한 규정은 회칙을 참고해 주세요🏃‍♀️🚶‍♂️🚴‍♂️🏃‍♂️
                                                                     </p>
                                                                 </div>
                                                             </li>
@@ -266,28 +288,6 @@
                             </div>
                         </div>
                         <!-- ***** FAQ End ***** -->
-
-
-                        <!-- ***** Status Link Start ***** -->
-                        <div class="row pb-4">
-                            <div class="col-lg-12">
-                                <div class="StatusLink">
-                                    <div class="text-center">
-                                        <div class="p-5">
-                                            <div class="py-3">
-                                                <a href="{% url 'Recruit:status' %}">
-                                                    <h1 class="title">Application<br>Status Check</h1>
-                                                </a>
-                                            </div>
-                                            <div class="link-btn">
-                                                <a href="{% url 'Recruit:status' %}">합격조회 바로가기 <i class="bi bi-arrow-up-right-circle"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***** Status Link End ***** -->
 
                     </div>
                 </div>
