@@ -66,11 +66,11 @@
                                                         <form id="delete" action="{% url 'Volunteer:post_delete' post_id=post.id %}" method="post" style="display: inline;">
                                                             {% csrf_token %}
                                                             <button type="button" class="btn btn-square me-3" onclick="confirmDelete()">
-                                                                <i class="fa-regular fa-trash-can"></i> Delete
+                                                                <i class="fa-regular fa-trash-can"></i> 삭제
                                                             </button>
                                                         </form>
                                                         <!-- Edit -->
-                                                        <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> Edit</a>
+                                                        <a class="btn btn-square" href=""><i class="fa-solid fa-eraser"></i> 수정</a>
                                                     </div>
                                                 </div>
                                             {% endif %}
@@ -110,7 +110,7 @@
                                             <!-- Bottom Buttons -->
                                             <div class="col-lg-12">
                                                 <div class="row pt-4">
-                                                    <div class="col-md-8 text-center text-md-end align-self-center order-md-5">
+                                                    <div class="col-md-9 text-center text-md-end align-self-center order-md-5">
                                                         <div class="stats">
                                                             <ul>
                                                                 <!-- Like Button -->
@@ -123,20 +123,20 @@
                                                                             {% else %}
                                                                                 <i class="fa-regular fa-heart fa-beat"></i>
                                                                             {% endif %}
-                                                                            <span class="like-count">{{ post.like_users.count }}</span> Like
+                                                                            좋아요 <span class="like-count">{{ post.like_users.count }}</span>개
                                                                         </button>
                                                                     </form>
                                                                 </li>
                                                                 <!-- Comment Button -->
                                                                 <li>
-                                                                    <button class="comment-btn"><i class="fa-solid fa-comment"></i> Review</button>
+                                                                    <button class="comment-btn"><i class="fa-solid fa-comment"></i> 팀 회고 작성</button>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <!-- Share Button -->
-                                                    <div class="col-md-4 text-center text-md-start order-md-1">
-                                                        <a class="share-btn" href="#"><i class="fa-solid fa-link"></i> Copy Link</a>
+                                                    <div class="col-md-3 text-center text-md-start order-md-1">
+                                                        <a class="share-btn" href="#"><i class="fa-solid fa-share"></i> 프로젝트 공유</a>
                                                     </div>
                                                 </div>
                                             </div>
