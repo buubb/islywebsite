@@ -42,7 +42,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- Yubin JS Files -->
-    <script src="{% static 'fullpage/main.js' %}"></script>
+    
     <script src="{% static 'fullpage/selected.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
@@ -63,7 +63,8 @@ https://templatemo.com/tm-579-cyborg-gaming
 <body>
 
  {% include "fullpagenav.html" %}
- 
+ <!-- Back to top button -->
+<a id="button"></a>
   <!-- ***** Header Area End ***** -->
   <div class="container">
     <div class="row">
@@ -178,171 +179,81 @@ https://templatemo.com/tm-579-cyborg-gaming
                 </div>
               </div>
                 <!-- ***** Facts End ***** -->
-                <!-- ***** Schedule Start ***** -->
-              <div class="schedule">
+                
+              <!-- ***** Activities? *****-->
+              <div class="special">
                 <div class="col-lg-12">
                   <div class="heading-section text-center mx-auto">
-                    <h1 class="title mb-5">How To Do</h1>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <svg display="none">
-                        <symbol id="arrow">
-                            <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                        </symbol>
-                    </svg>
-                    <div id="timeline" class="timeline">
-                        <div class="btn-group">
-                            <button class="btn__1" type="button" data-action="expand">Expand</button>
-                            <button class="btn__2" type="button" data-action="collapse">Collapse</button>
-                        </div>
-                        <!-- item1 -->
-                        <div class="timeline__item">
-                            <div class="timeline__item-header">
-                                <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
-                                    <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                                        <use href="#arrow" />
-                                    </svg>
-                                </button>
-                                <span class="timeline__dot"></span>
-                                <span id="item1-name" class="timeline__meta">
-                                    <time class="timeline__date">Week 0</time><br>
-                                    <strong class="timeline__title">Orientation</strong>
-                                </span>
-                            </div>
-                            <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
-                                <div class="timeline__item-body-content">
-                                    <p class="timeline__item-p">
-                                        <span>⭐오리엔테이션⭐</span>
-                                        동아리 소개와 친목 도모를 위한 다양한 활동이 준비되어 있습니다. 주로 온라인/오프라인 병행으로 진행되며, 각 기수별 상황에 따라 달라질 수 있습니다. 자세한 OT 일정은 내부 채널을 통해 공지해 드릴 예정입니다.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item2 -->
-                        <div class="timeline__item">
-                            <div class="timeline__item-header">
-                                <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
-                                    <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                                        <use href="#arrow" />
-                                    </svg>
-                                </button>
-                                <span class="timeline__dot"></span>
-                                <span id="item2-name" class="timeline__meta">
-                                    <time class="timeline__date">Week 1-4</time><br>
-                                    <strong class="timeline__title">Basic Hacking Technique</strong>
-                                </span>
-                            </div>
-                            <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
-                                <div class="timeline__item-body-content">
-                                    <p class="timeline__item-p">
-                                        <span>🐍정기활동🐍</span>
-                                        • 매주 토요일 12-15시에 진행합니다.<br>
-                                        • <em>전체 활동</em> : 전체 기초 부원들이 모여 해킹 기본 지식을 학습합니다.<br>
-                                        • <em>팀 활동</em> : 웹 해킹, 리버싱, 포너블로 나뉘어 기초 스터디를 진행합니다.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item3 -->
-                        <div class="timeline__item">
-                            <div class="timeline__item-header">
-                                <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
-                                    <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                                        <use href="#arrow" />
-                                    </svg>
-                                </button>
-                                <span class="timeline__dot"></span>
-                                <span id="item3-name" class="timeline__meta">
-                                    <time class="timeline__date">Break</time><br>
-                                    <strong class="timeline__title">Midterm Exams</strong>
-                                </span>
-                            </div>
-                            <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
-                                <div class="timeline__item-body-content">
-                                    <p class="timeline__item-p">중간고사 기간에는 학업에 집중할 수 있도록 동아리 활동을 잠시 쉬어가요!😉</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item4 -->
-                        <div class="timeline__item">
-                            <div class="timeline__item-header">
-                                <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
-                                    <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                                        <use href="#arrow" />
-                                    </svg>
-                                </button>
-                                <span class="timeline__dot"></span>
-                                <span id="item4-name" class="timeline__meta">
-                                    <time class="timeline__date">Week 5-8</time><br>
-                                    <strong class="timeline__title">Basic Hacking Technique</strong>
-                                </span>
-                            </div>
-                            <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-                                <div class="timeline__item-body-content">
-                                    <p class="timeline__item-p">
-                                        <span>🐍정기활동🐍</span>
-                                        • 매주 토요일 12-15시에 진행합니다.<br>
-                                        • <em>전체 활동</em> : 전체 기초 부원들이 모여 해킹 기본 지식을 학습합니다.<br>
-                                        • <em>팀 활동</em> : 웹 해킹, 리버싱, 포너블로 나뉘어 기초 스터디를 진행합니다.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item5 -->
-                        <div class="timeline__item">
-                            <div class="timeline__item-header">
-                                <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
-                                    <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                                        <use href="#arrow" />
-                                    </svg>
-                                </button>
-                                <span class="timeline__dot"></span>
-                                <span id="item5-name" class="timeline__meta">
-                                    <time class="timeline__date">Break</time><br>
-                                    <strong class="timeline__title">Final Exams</strong>
-                                </span>
-                            </div>
-                            <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
-                                <div class="timeline__item-body-content">
-                                    <p class="timeline__item-p">기말고사 기간에는 학업에 집중할 수 있도록 동아리 활동을 잠시 쉬어가요!😴</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item6 -->
-                        <div class="timeline__item">
-                            <div class="timeline__item-header">
-                                <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
-                                    <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                                        <use href="#arrow" />
-                                    </svg>
-                                </button>
-                                <span class="timeline__dot"></span>
-                                <span id="item6-name" class="timeline__meta">
-                                    <time class="timeline__date">Week 9</time><br>
-                                    <strong class="timeline__title">Seminar</strong>
-                                </span>
-                            </div>
-                            <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
-                                <div class="timeline__item-body-content">
-                                    <p class="timeline__item-p">
-                                        <span>🔥최종발표🔥</span>
-                                        팀별로 자유롭게 주제를 선정하여 세미나를 진행합니다. 우수 활동자 시상 및 수료증 수여도 함께 이루어질 예정이니, 동아리 활동에 적극적으로 참여해 보세요!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="title">Our Special Activities</h1>
                   </div>
                 </div>
               </div>
-              <!-- ***** Schedule End ***** -->
+              <div class="main">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <section>
+                      <ul class='indexes'>
+                        <li data-index='0'>01</li>
+                        <li data-index='1'>02</li>
+                        <li data-index='2'>03</li>
+                        <li data-index='3'>04</li>
+                      </ul>
+                      <ul class='tabs'>
+                        <li class='tab'>
+                          <article class='tab-content'>
+                            <h3>Sungshin CSE x I.Sly() CTF</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
+                            voluptate blanditiis nemo magnam sit modi architecto officia
+                            maiores magni. Necessitatibus, iste aut.</p>
+                            
+                          </article>
+                          <div class='tab-image'><img src='https://picsum.photos/id/345/1000/600'></div>
+                        </li>
+                        <li class='tab'>
+                          <article class='tab-content'>
+                            <h3>아이슬리의 밤</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
+                            voluptate blanditiis nemo magnam sit modi architecto officia
+                            maiores magni. Necessitatibus, iste aut.</p>
+                            
+                          </article>
+                          <div class='tab-image'><img src='https://picsum.photos/id/352/1000/600'></div>
+                        </li>
+                        <li class='tab'>
+                          <article class='tab-content'>
+                            <h3>성북구 자원봉사 & 코드클럽</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
+                            voluptate blanditiis nemo magnam sit modi architecto officia
+                            maiores magni. Necessitatibus, iste aut.</p>
+                            
+                          </article>
+                          <div class='tab-image'><img src='https://picsum.photos/id/444/1000/600'></div>
+                        </li>
+                        <li class='tab'>
+                          <article class='tab-content'>
+                            <h3>I.Sly() Hacking Camp</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
+                            voluptate blanditiis nemo magnam sit modi architecto officia
+                            maiores magni. Necessitatibus, iste aut.</p>
+                            
+                          </article>
+                          <div class='tab-image'><img src='https://picsum.photos/id/451/1000/600'></div>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** End ***** -->
               <!-- ***** Special Activities Start ***** -->
               <div class="special">
                 <div class="col-lg-12">
                   <div class="heading-section text-center mx-auto">
-                    <h1 class="title mb-5">Our Special Activities</h1>
+                    <h1 class="title mb-5">Vivid Review</h1>
                   </div>
                 </div>
               </div>
@@ -351,52 +262,93 @@ https://templatemo.com/tm-579-cyborg-gaming
         </div>
     </div>
   </div>
-
-  <div class="slidebody" translate="no">
-    <div class="blog-slider">
-    <div class="blog-slider__wrp swiper-wrapper">
-      <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
+  <!--vivid review-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="vivid">
+      <div class="slidebody" translate="no">
+        <h1>Basic Track</h1>
+        <div class="blog-slider">
           
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+           
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">22 January 2024</span>
+              <div class="blog-slider__title">I.Sly() X Sungshin CSE CTF</div>
+              <div class="blog-slider__text">매년 I.Sly()는 성신여대 융합보안공학과 CTF를 주관하고 있습니다. 문제는 I.Sly() 부원들이 직접 출제하고 운영합니다.  </div>
+              <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+           
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
+            </div>
+          </div>
+          
         </div>
-        <div class="blog-slider__content">
-          <span class="blog-slider__code">22 January 2024</span>
-          <div class="blog-slider__title">I.Sly() X Sungshin CSE CTF</div>
-          <div class="blog-slider__text">매년 I.Sly()는 성신여대 융합보안공학과 CTF를 주관하고 있습니다. 문제는 I.Sly() 부원들이 직접 출제하고 운영합니다.  </div>
-          <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
-        </div>
+        <div class="blog-slider__pagination"></div>
       </div>
-      <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
-        </div>
-        <div class="blog-slider__content">
-          <span class="blog-slider__code">26 December 2019</span>
-          <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-          <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
-        </div>
+        
       </div>
-      
-      <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+      <div class="slidebody" translate="no">
+        <h1>Advanced Track</h1>
+        <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+           
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">22 January 2024</span>
+              <div class="blog-slider__title">I.Sly() X Sungshin CSE CTF</div>
+              <div class="blog-slider__text">매년 I.Sly()는 성신여대 융합보안공학과 CTF를 주관하고 있습니다. 문제는 I.Sly() 부원들이 직접 출제하고 운영합니다.  </div>
+              <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+           
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
+            </div>
+          </div>
+          
         </div>
-        <div class="blog-slider__content">
-          <span class="blog-slider__code">26 December 2019</span>
-          <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-          <div class="blog-slider__text"># Web # Pwnable # Reversing # Crypto # Forensic #Misc</div>
-        </div>
+        <div class="blog-slider__pagination"></div>
       </div>
-      
+        
+      </div>
     </div>
-    <div class="blog-slider__pagination"></div>
   </div>
-    
-  </div>
-
+</div>
+</div>
+<!--vivid review-->
   <!-- footer Start -->
   <div>
     <div id="section-footer">
@@ -467,7 +419,9 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <!-- Special JavaScript -->
   <script src="{% static 'fullpage/special.js' %}"></script>
-  
+
+  <!-- Main JavaScript -->
+  <script src="{% static 'fullpage/main.js' %}"></script>
 
   <script>
       $(".hamburger").click(function(){

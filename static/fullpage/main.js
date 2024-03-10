@@ -45,3 +45,36 @@ function toggleAnswer(answerID) {
 
     typing(); // 처음 한 번만 실행
 });
+
+
+const indexes = document.querySelectorAll('.indexes li');
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
+
+function reset() {
+  for (let i = 0; i < tabs.length; i++) {
+    indexes[i].style.borderColor = 'transparent';
+    tabs[i].style.zIndex = 0;
+    tabs[i].classList.remove('active2');
+    contents[i].classList.remove('active2');
+  }
+}
+
+function showTab(i) {
+  indexes[i].style.borderColor = 'aliceblue';
+  tabs[i].style.opacity = 1;
+  tabs[i].style.zIndex = 5;
+  tabs[i].classList.add('active2');
+  contents[i].classList.add('active2');
+}
+
+function activate(e) {
+  if (!e.target.matches('.indexes li')) return;
+  reset();
+  showTab(e.target.dataset.index);
+}
+
+const init = () => showTab(0);
+
+window.addEventListener('load',init,false);
+window.addEventListener('click',activate,false);

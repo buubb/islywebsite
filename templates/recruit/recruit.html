@@ -25,7 +25,9 @@
 
         <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/InfiniteBanner.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/Procedure.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/StatusLink.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
         <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitFaq.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
@@ -51,16 +53,16 @@
 
 
         <!-- ***** Container 1 Start ***** -->
-        <div class="container-fluid pt-5 RecruitBanner mb-5">
+        <div class="container-fluid pt-5 RecruitBanner">
             <div class="container pt-5">
-                <div class="row g-5 py-5">
+                <div class="row g-5 py-4">
                     <div class="col-lg-12 text-center mx-auto text-lg-start">
                         <div class="p-5 d-flex flex-column justify-content-lg-between flex-lg-row">
                             <div class="align-self-center py-5">
                                 <h1 class="title display-4">
                                     WANT TO LEARN<br>
                                     <span id="element"></span>?<br>
-                                    JOIN I.Sly() NOW!
+                                    JOIN I.Sly()!
                                 </h1>
                             </div>
                             <div class="align-self-center">
@@ -77,10 +79,24 @@
 
 
         <!-- ***** Container 2 Start ***** -->
+        <div class="container-fluid InfiniteBanner">
+            <div class="container">
+                <div class="row py-2">
+                    <div class="align-self-center">
+                        <ul class="props display-6">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Container 2 End ***** -->
+
+
+        <!-- ***** Container 3 Start ***** -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="page-content" style="margin-top: 0; background-color: transparent;">
+                    <div class="page-content" style="margin-top: 0;">
 
                         <!-- ***** Procedure Start ***** -->
                         <div class="Procedure">
@@ -147,53 +163,26 @@
                         <!-- ***** Procedure End ***** -->
 
 
-                        <!-- ***** Facts Start *****
-                        <div class="Facts">
+                        <!-- ***** Status Link Start ***** -->
+                        <div class="row">
                             <div class="col-lg-12">
-                                <div class="text-center mx-auto">
-                                    <h1 class="title mb-5">Activity Records</h1>
-                                </div>
-                                <div class="row g-4 container-facts">
-                                    <div class="col-xl-3 col-6">
-                                        <div class="facts-item">
-                                            <div class="text-center p-5">
-                                                <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                                                <h1 class="number display-3 mb-0" data-toggle="counter-up">4</h1>
-                                                <h5 class="topic text-white">Years</h5>
+                                <div class="StatusLink">
+                                    <div class="text-center">
+                                        <div class="p-5">
+                                            <div class="py-3">
+                                                <a href="{% url 'Recruit:status' %}">
+                                                    <h1 class="title">Application<br>Status Check</h1>
+                                                </a>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-6">
-                                        <div class="facts-item">
-                                            <div class="text-center p-5">
-                                                <i class="fa-solid fa-envelopes-bulk fa-3x text-white mb-3"></i>
-                                                <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
-                                                <h5 class="topic text-white">Applicants</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-6">
-                                        <div class="facts-item">
-                                            <div class="text-center p-5">
-                                                <i class="fa fa-user-group fa-3x text-white mb-3"></i>
-                                                <h1 class="number display-3 mb-0" data-toggle="counter-up">80</h1>
-                                                <h5 class="topic text-white">Members</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-6">
-                                        <div class="facts-item">
-                                            <div class="text-center p-5">
-                                                <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                                                <h1 class="number display-3 mb-0" data-toggle="counter-up">32</h1>
-                                                <h5 class="topic text-white">Projects</h5>
+                                            <div class="link-btn">
+                                                <a href="{% url 'Recruit:status' %}">합격조회 바로가기 <i class="bi bi-arrow-up-right-circle"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        !-- ***** Facts End ***** -->
+                        <!-- ***** Status Link End ***** -->
 
 
                         <!-- ***** FAQ Start ***** -->
@@ -212,7 +201,7 @@
                                                         <ul>
                                                             <!-- item 01 -->
                                                             <li class="faq-item">
-                                                                <a class="faq-question"><span>Q.</span> 해킹 실력이 뛰어난 사람만 지원할 수 있나요? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                                                <a class="faq-question"><span>Q.</span> 해킹 실력이 뛰어나야 하나요? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                                                 <div class="faq-answer collapse" data-parent=".faq-list">
                                                                     <p>
                                                                         I.Sly()는 해킹 지식이 부족하더라도 오직 해킹에 대한
@@ -284,7 +273,7 @@
                                                                         추가적으로 납부해야 합니다. 회비는 교재, 팀 별 온라인 강의 구매,
                                                                         회식비, 간식비 등으로 사용되며, 동아리 비용은 투명하게 공개할
                                                                         예정입니다. 대회 참여, 박람회, MT 등의 활동 시 별도 참가 비용이
-                                                                        발생할 수 있습니다. 자세한 규정은 회칙을 참고해 주세요🏃‍♀️🚶‍♂️🚴‍♂️🏃‍♂️🚶‍♂️
+                                                                        발생할 수 있습니다. 자세한 규정은 회칙을 참고해 주세요🏃‍♀️🚶‍♂️🚴‍♂️🏃‍♂️
                                                                     </p>
                                                                 </div>
                                                             </li>
@@ -304,7 +293,7 @@
                 </div>
             </div>
         </div>
-        <!-- ***** Container 2 End ***** -->
+        <!-- ***** Container 3 End ***** -->
 
 
         <!-- footer Start -->
@@ -412,6 +401,9 @@
         <!-- Raon Typewriter JavaScript -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="{% static 'recruit/js/Typewriter.js' %}"></script>
+
+        <!-- Raon Infinite Scroll JavaScript -->
+        <script src="{% static 'recruit/js/InfiniteScroll.js' %}"></script>
 
         <!-- Raon FAQ JavaScript -->
         <script src="{% static 'recruit/js/RecruitFaq.js' %}"></script>

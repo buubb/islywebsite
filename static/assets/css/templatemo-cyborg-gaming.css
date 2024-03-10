@@ -125,14 +125,14 @@ Global Styles
 */
 html,
 body {
-  background: #1f2122;
+  background: #0d0f10;
   font-family: "Sen","Noto Sans KR",sans-serif!important;
 }
 
 body .page-content {
   margin-top: 110px;
   margin-bottom: 50px;
-  background-color: #27292a;
+  background-color: #0d0f10;
   padding: 60px;
   border-radius: 23px;
 }
@@ -338,7 +338,10 @@ Header Style
 */
 
 .background-header {
-  background-color: #1f2122 !important;
+  background: #0d0f101a;
+  backdrop-filter: blur( 4.5px );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   height: 100px!important;
   position: fixed!important;
   top: 0 !important;
@@ -806,7 +809,7 @@ Banner Style
 */
 
 .main-banner {
-  background-color: #1f2122;
+  background-color: #0d0f10;
   min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;

@@ -17,13 +17,15 @@
         flex-wrap: wrap;
         width:100%;
         padding-right: 0;
-        background-color: #1f2122 ;
+        background-color: #171a1c ;
+        margin-top: 15px;
     }
     header nav .nav .depth_1{
         position:static;
         width:100%;
         box-shadow: none;
-        background-color: #27292a;
+        background-color: #171a1c ;
+        margin-bottom:0px!important;
         border-radius: 0px;
 
     }
@@ -117,6 +119,56 @@
       .bg-3{
         text-align: center!important;
       }
+      header nav .nav li:hover .menu_name{
+        text-underline-offset: 10px!important;
+      }
+      .main {
+        max-width: 1000px!important;
+        max-height: 900px!important;
+        letter-spacing: 0.075em!important;
+        line-height: 1.8!important;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+        
+        & section {
+          display: block;
+          gap: 70px;
+          justify-content: center;
+          margin-top:70px!important;
+          margin-left: 0px;
+          margin-bottom:200px;
+          min-height: 400px;
+        }
+      }
+      .tab{
+        position: absolute;
+        display: flex;
+        width: auto;
+        height: auto;
+        opacity: 0; 
+        background-color: transparent;
+        overflow: hidden;
+        padding-top:40px;
+        padding-bottom: 20px;
+        padding-left:20px;
+      }
+      .tab-content{
+        width:100%;
+        margin:auto;
+      }
+      .indexes {
+        font-size: 20px;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        
+        & li {
+          padding: 1.75rem 2rem;
+          border: 3px solid transparent;
+          cursor: pointer;
+          display: inline-block;
+        }
+      }
+      
 }
 
 @media(min-width:1278px){
