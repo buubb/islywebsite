@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var usernameInput = document.getElementById("username");
     var passwordInput = document.getElementById("password");
     var loginButton = document.getElementById("login-button");
-    var spanElements = document.querySelectorAll(".login-box a span"); // 모든 span 요소 선택
-
+    var spanElements = document.querySelectorAll(".login-box button span"); // 수정: 모든 span 요소 선택
+    var toggleButton = document.getElementById("show-password");
+    
     // 입력 상자를 클릭할 때 placeholder 텍스트를 변경하는 함수
     function changePlaceholder(input, placeholderText) {
         input.setAttribute("placeholder", placeholderText);
@@ -55,4 +56,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // 입력 값 변화 이벤트 추가
     usernameInput.addEventListener("input", checkInputs);
     passwordInput.addEventListener("input", checkInputs);
+
+    // 페이지가 로드될 때 비밀번호 필드를 가림
+    passwordInput.type = "password";
+
+    // 비밀번호 보이기/가리기 버튼 클릭 이벤트 핸들러
+    toggleButton.addEventListener("click", function() {
+        if (passwordInput.type === "password") {
+            // 현재 비밀번호가 가려져 있는 경우: 보이기
+            passwordInput.type = "text";
+        } else {
+            // 현재 비밀번호가 보이는 경우: 가리기
+            passwordInput.type = "password";
+        }
+    });
 });

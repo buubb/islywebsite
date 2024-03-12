@@ -29,7 +29,7 @@ class Login(APIView):
             user_instance = get_user_model().objects.get(username=username)
             user=authenticate(username=username, password=password)
             
-            if user is not None:
+            if user is not None: #사용자가 인증되었는지 확인
                 print(user)
                 # user_instance = get_user_model().objects.get(username=username)
 

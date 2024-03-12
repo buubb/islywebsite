@@ -44,27 +44,37 @@ https://templatemo.com/tm-579-cyborg-gaming
     <!-- ***** Preloader Start ***** -->
     {% include "fullpagenav.html" %}
     <div class="login-box">
-        <!-- <form method="post" action="{% url 'login' %}"> -->
+        {% block content %}
+        <form method="post" action="{% url 'login' %}">
             {% csrf_token %}
-
+            
             <h2>Login</h2>
-            <form>
             <div class="user-box">
-                <input id="username" type="text" name="" required="">
+                <input id="username" type="text" name="username" required=""
+                value="{{ form.password.value|default_if_none:'' |escape }}">
                 <label>Username</label>
             </div>
             <div class="user-box">
-                <input id="password" type="password" name="" required="">
+                <input id="password" type="password" name="password" required=""
+                value="{{ form.password.value|default_if_none:'' |escape }}">
                 <label>Password</label>
             </div>
-            <a id="login-button" disabled href="#">
+            <div class="buttons">
+                <input type="checkbox" id="show-password">
+                <label for="show-password">SHOW PASSWORD</label>
+            </div>
+            <button type="submit" id="login-button">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Submit
-            </a>
-        <!-- </form> -->
+                Login
+            </button>
+                
+                <!-- <input type=submit value="LOGIN"> -->
+            <!-- </a> -->
+        </form>
+        {% endblock %}
         </div>
     
     

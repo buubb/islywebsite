@@ -68,116 +68,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #fff;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-  cursor: pointer;
-}
-
-.login-box button:hover {
-  background: #5EE773;
-  border-color: #5EE773;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #5EE773, 0 0 25px #5EE773, 0 0 50px #5EE773, 0 0 100px #5EE773;
-}
-
-/* placeholder 스타일 */
-input::placeholder {
-  color: white;
-}
-
-/* 애니메이션 스타일 */
-.login-box a span {
-  position: absolute;
-  display: none;
-}
-
-.login-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #5EE773);
-  animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-  0% {
-      left: -100%;
-  }
-  50%,100% {
-      left: 100%;
-  }
-}
-
-.login-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #5EE773);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: .25s
-}
-
-@keyframes btn-anim2 {
-  0% {
-      top: -100%;
-  }
-  50%,100% {
-      top: 100%;
-  }
-}
-
-.login-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #5EE773);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: .5s
-}
-
-@keyframes btn-anim3 {
-  0% {
-      right: -100%;
-  }
-  50%,100% {
-      right: 100%;
-  }
-}
-
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #5EE773);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: .75s
-}
-
-@keyframes btn-anim4 {
-  0% {
-      bottom: -100%;
-  }
-  50%,100% {
-      bottom: 100%;
-  }
-}
-
-/* 버튼 스타일 */
-.login-box a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #808080; /* 검정색 */
+  color: #808080; /* 회색 */
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -190,12 +81,15 @@ input::placeholder {
   border-radius: 5px;
 }
 
-.login-box a.active {
-  color: #fff; /* 하얀색 */
+.login-box button:hover {
+  background: #5EE773;
+  border-color: #5EE773;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #5EE773, 0 0 25px #5EE773, 0 0 50px #5EE773, 0 0 100px #5EE773;
 }
 
 /* 애니메이션 스타일 */
-.login-box a::before {
+/* .login-box button::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -208,23 +102,142 @@ input::placeholder {
   transform-origin: right;
 }
 
-.login-box a.active::before {
+.login-box button.active::before {
+  transform: scaleX(1);
+  transform-origin: left;
+} */
+
+/* 애니메이션 스타일 */
+.login-box button span {
+  position: absolute;
+  display: none; /* 초기에는 숨김 */
+}
+
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #5EE773);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #5EE773);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #5EE773);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #5EE773);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+.login-box button.active {
+  color: #fff; /* 하얀색 */
+}
+
+input::placeholder {
+  color: white;
+}
+
+/* 애니메이션 스타일 */
+.login-box button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: transform .5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.login-box button.active::before {
   transform: scaleX(1);
   transform-origin: left;
 }
+
 /* 애니메이션 스타일 */
-.login-box a span {
+.login-box button span {
   position: absolute;
   display: none; /* 초기에는 숨김 */
 }
 
 /* 입력 상자에 값이 있을 때 버튼 스타일 변경 */
-.login-box .user-box input:valid ~ a {
+.login-box .user-box input:valid ~ button.active {
   color: #fff; /* 하얀색 */
   border-color: #000; /* 검정색 테두리 */
 }
 
 /* 입력 상자에 값이 있을 때 버튼 스타일 변경 및 애니메이션 활성화 */
-.login-box .user-box input:valid ~ a.active span {
+.login-box .user-box input:valid ~ button.active span {
   display: block; /* 입력이 유효하고 버튼이 활성화되면 span 표시 */
+}
+
+
+
+.buttons checkbox {
+  margin-right: 5px;
+}
+
+.buttons label {
+  color: #fff;
 }
