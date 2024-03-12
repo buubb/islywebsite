@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 from volunteer.models import Post, Comment, PostImage
 from volunteer.forms import CommentForm, PostForm
@@ -70,7 +70,7 @@ def post_add(request):
                 )
 
             # 모든 PostImage와 Post의 생성이 완료되면
-            # 해당 Post의 상세페이지로 이동
+            # 해당 Post의 상세 페이지로 이동
             url = reverse("Volunteer:post_detail", args=[post.id])
             return redirect(url)
 
@@ -142,3 +142,33 @@ def post_like(request, post_id):
         }
 
     return JsonResponse(response_data)
+
+
+@login_required(login_url="login")
+def comment_add(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            # commit=False 옵션으로 메모리상에 Comment 객체 생성
+            comment = form.save(commit=False)
+
+            # Comment 생성에 필요한 정보
+            comment.post = post
+            comment.user = request.user
+
+            # DB에 Comment 객체 저장
+            comment.save()
+
+            # 생성 완료 후에는 해당 Post의 상세 페이지로 이동
+            return redirect("Volunteer:post_detail", post_id=post_id)
+    else:
+        # GET 요청 시, 빈 form 생성
+        form = CommentForm()
+
+    context = {
+        "form": form,
+        "post_id": post_id,
+    }
+    return render(request, "volunteer/comment_add.html", context)
