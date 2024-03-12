@@ -47,53 +47,22 @@
                 <div class="col-lg-12">
                     <div class="page-content">
 
-                        <!-- ***** Posting Start ***** -->
-                        <div class="row py-4">
-                            <div class="col-xl-9 col-lg-10 mx-auto">
-                                <div class="VltPosting">
-                                    <form method="POST" enctype="multipart/form-data">
+                        <!-- ***** Comment Form Start ***** -->
+                        <div class="row mt-5">
+                            <div class="col-lg-12">
+                                <div class="text-center text-sm-start">
+                                    <h1 class="title mb-5">Write Comment</h1>
+                                </div>
+                                <div class="row">
+                                    <form method="POST" action="{% url 'Volunteer:comment_add' post_id=post_id %}">
                                         {% csrf_token %}
-                                        <div class="headline">
-                                            <h2 class="major">WRITE</h2>
-                                            <button type="submit">SAVE</button>
-                                        </div>
-                                        <div class="fields">
-                                            <!-- title -->
-                                            <div class="field">
-                                                <div class="label-group">
-                                                    <label for="title">Title</label>
-                                                    <span id="title-counter">0 / 50</span>
-                                                </div>
-                                                <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" required>
-                                                <p id="title-feedback" style="display: none;">Maximum 50 characters allowed.</p>
-                                            </div>
-                                            <!-- year -->
-                                            <div class="field half">
-                                                <label for="year">Year</label>
-                                                <input type="number" class="form-control" name="year" id="year" value="{{ form.year.value|default_if_none:'' }}" min="2020" required>
-                                            </div>
-                                            <!-- generation -->
-                                            <div class="field half">
-                                                <label for="generation">Generation</label>
-                                                <input type="number" class="form-control" name="generation" id="generation" value="{{ form.generation.value|default_if_none:'' }}" min="1" required>
-                                            </div>
-                                            <!-- content -->
-                                            <div class="field">
-                                                <label for="content">Content</label>
-                                                <textarea class="form-control" name="content" id="content" rows="10" required>{{ form.content.value|default_if_none:'' }}</textarea>
-                                            </div>
-                                            <!-- image -->
-                                            <div class="field">
-                                                <!-- label의 for 속성에는 가리키는 input의 id값을 입력 -->
-                                                <label for="id_images">Image Upload</label>
-                                                <input id="id_images" name="images" type="file" multiple>
-                                            </div>
-                                        </div>
+                                        <textarea class="form-control" name="content" id="content" rows="10" required>{{ form.content.value|default_if_none:'' }}</textarea>
+                                        <button type="submit" class="btn btn-primary mt-3">게시</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <!-- ***** Posting End ***** -->
+                        <!-- ***** Comment Form End ***** -->
 
                     </div>
                 </div>

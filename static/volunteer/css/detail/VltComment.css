@@ -1,0 +1,79 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.VltComment {
+    margin-top: 150px;
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.VltComment .title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.VltComment h6 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.VltComment small {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #696B6E;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.075em;
+}
+
+.VltComment p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    text-align: justify;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.VltComment .item {
+    padding: 30px;
+    border-radius: 23px;
+    background: #FFFFFF;
+}
+
+.VltComment .item i {
+    color: #000000;
+}
+
+.VltComment .item .down-content {
+    border-top: 2px solid #000000;
+    padding: 25px 0 0;
+}

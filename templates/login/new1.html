@@ -1,0 +1,131 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+
+
+    <title>I.Sly()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+
+    <link rel="stylesheet" href="{% static 'login/css/dailyui-001sign-up.css' %}">
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+  {% include "fullpagenav.html" %}
+
+    <div class='box'>
+        <div class='box-form'>
+        <div class='box-login-tab'></div>
+        <div class='box-login-title'>
+            <div class='i i-login'></div><h2>LOGIN</h2>
+        </div>
+        <div class='box-login'>
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                {% if request.GET.next %}
+                      <input type="hidden" name="next" value="{{ request.GET.next }}">
+                {% endif %}
+                <div class='fieldset-body' id='login_form'>
+                <button onclick="openLoginInfo();" class='b b-form i i-more' title='Mais Informações'></button>
+                    <p class='field'>
+                    <label for='user'>E-MAIL</label>
+                    <input type='text' id='user' name='username' title='Username' 
+                        placeholder="write your ID" value="{{ form.username.value|default_if_none:'' |escape }}"/>
+                    <span id='valida' class='i i-warning'></span>
+                    <br><br>
+                </p>
+                    <p class='field'>
+                    <label for='pass'>PASSWORD</label>
+                    <input type='password' id='pass' name='password' title='Password' 
+                        placeholder="write your PW" value="{{ form.password.value|default_if_none:'' |escape }}"/>
+                    <!-- <i class="fa fa-eye fa-lg"></i> -->
+                    <span id='valida' class='i i-close'></span>
+                </p>
+        
+                    <label class='checkbox'>
+                    <input type='checkbox' value='TRUE' title='Keep me Signed in' /> Keep me Signed in
+                    </label>
+                    
+                    <a href="/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <input type='submit' id='do_login' value='GET STARTED' title='Get Started' />
+                    </a>
+                    </div>
+            </div>
+            </div>
+            <div class='box-info'>
+                                <p><button onclick="closeLoginInfo();" class='b b-info i i-left' title='Back to Sign In'></button><h3>Need Help?</h3>
+            </p>
+                                <div class='line-wh'></div>
+                                <button onclick="" class='b-support' title='Forgot Password?'> Forgot Password?</button>
+            <button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
+                                <div class='line-wh'></div>
+            <button onclick="" class='b-cta' title='Sign up now!'> CREATE ACCOUNT</button>
+                            </div>
+        </div>
+    
+    
+    <div class='icon-credits'>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/budi-tanrim" title="Budi Tanrim">Budi Tanrim</a> & <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+            <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+        <script src="{% static 'assets/js/tabs.js' %}"></script>
+        <script src="{% static 'assets/js/popup.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle();
+            });
+        </script>
+
+        <!-- Seolin JavaScript -->
+        <script src="{% static 'login/js/dailyui-001sign-up.js' %}"></script>
+
+        <!-- icons : insta, kakao, call -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        
+</body>
+</html>

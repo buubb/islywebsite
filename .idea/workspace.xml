@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4d9918-7fab-4a7f-b027-1be711ee424b" name="Changes" comment="">
+    <list default="true" id="44b2055a-cec8-4589-a522-31a5eceb29f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/recruit/RecruitFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/recruit/RecruitFaq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +20,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2dSD3mbaj8pUM9bD56VjG0BYHIb" />
+  <component name="ProjectId" id="2daD8bcEIOtIom0naTXsDxnlAf9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +38,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/raony/PycharmProjects/islywebsite&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -44,7 +48,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css\recruit" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\volunteer" />
     </key>
   </component>
   <component name="RunManager">
@@ -75,14 +79,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6d4d9918-7fab-4a7f-b027-1be711ee424b" name="Changes" comment="" />
-      <created>1709992389952</created>
+      <changelist id="44b2055a-cec8-4589-a522-31a5eceb29f1" name="Changes" comment="" />
+      <created>1710237136837</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709992389952</updated>
-      <workItem from="1709992393067" duration="7698000" />
-      <workItem from="1710000396131" duration="11000" />
-      <workItem from="1710002661163" duration="6168000" />
+      <updated>1710237136837</updated>
+      <workItem from="1710237137925" duration="369000" />
+      <workItem from="1710237515667" duration="1305000" />
     </task>
     <servers />
   </component>
