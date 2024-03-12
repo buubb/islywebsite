@@ -24,11 +24,21 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon CSS Files -->
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/InfiniteBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/Procedure.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/StatusLink.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitFaq.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+        <!-- Raon Icon Fonts -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
@@ -46,7 +56,55 @@
                 <div class="col-lg-12">
                     <div class="page-content">
 
+
+                        
+
+
                         <!-- ***** 합격조회 Start ***** -->
+
+
+                        <!-- ***** Status Link Start ***** -->
+                <div class="StatusLink">
+                    <div class="text-center">
+                        <div class="p-5">
+                            <div class="py-3">
+                                <a href="{% url 'Recruit:status' %}">
+                                    <h1 class="title">I.Sly() 합격자 조회</h1>
+                                </a>
+                            </div>
+                            <!---->
+                            <div class="row g-4">
+                                <div class="col-lg-4 mx-auto">
+                                    <div class="item d-flex flex-column justify-content-center text-center rounded-3">
+                                        <div class="mb-3 text-start">
+                                            <label for="applicant_name">이름</label>
+                                            <input type="text" class="form-control" id="applicant_name" name="applicant_name">
+                                        </div>
+                                        <div class="mb-3 text-start">
+                                            <label for="applicant_phone">학번</label>
+                                            <input type="tel" class="form-control" id="applicant_phone" name="applicant_phone">
+                                        </div>
+
+                                        <div class="link-btn">
+                                            <a href="{% url 'Recruit:status' %}">조회하기 <i class="bi bi-arrow-up-right-circle"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
 
                         <!-- ***** 합격조회 End ***** -->
 
