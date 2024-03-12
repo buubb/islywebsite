@@ -45,16 +45,16 @@ class Login(APIView):
                 else:
                     count = 0
 
-                if count >= LOGIN_TRY_LIMIT:
-                    # 로그인 실패횟수 초과로 인해 잠긴 계정에 대한 인증 시도 제한
-                    return render(request, "account_lock.html", {"state": "account_lock"})
-                else:
-                    user_instance = get_user_model().objects.get(username=username)
-                    LoginFail.objects.update_or_create(
-                    user=user_instance,
-                    defaults={"count": count + 1},
-                    )
-                    return render(request, "login_failed.html", {"state": "login_failed"})
+                # if count >= LOGIN_TRY_LIMIT:
+                #     # 로그인 실패횟수 초과로 인해 잠긴 계정에 대한 인증 시도 제한
+                #     return render(request, "account_lock.html", {"state": "account_lock"})
+                # else:
+                #     user_instance = get_user_model().objects.get(username=username)
+                #     LoginFail.objects.update_or_create(
+                #     user=user_instance,
+                #     defaults={"count": count + 1},
+                #     )
+                #     return render(request, "login_failed.html", {"state": "login_failed"})
         else:
             return render(request, 'login/make.html')
 
@@ -64,7 +64,7 @@ class Logout(APIView):
         print("get으로 호출")
         if request.user.is_authenticated:
             Logout(request)
-        return render(request, 'islyweb/index.html')
+            return render(request, 'islyweb/index.html')
 
 
 from django.http import HttpResponse
@@ -74,5 +74,3 @@ def check_session_status(request):
         return 
     else:
         return HttpResponse('세션이 만료되었습니다. 다시 로그인해주세요.')
-
-
