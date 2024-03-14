@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80db665d-8dcc-4cc7-b225-40f7f70bc6f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/recruit/InfiniteBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/recruit/InfiniteBanner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710436239092</updated>
       <workItem from="1710436241464" duration="348000" />
-      <workItem from="1710436683418" duration="1716000" />
+      <workItem from="1710436683418" duration="2333000" />
     </task>
     <servers />
   </component>
