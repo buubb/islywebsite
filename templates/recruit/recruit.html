@@ -66,9 +66,15 @@
                                 </h1>
                             </div>
                             <div class="align-self-center">
-                                <a href="#" class="apply btn" onclick="checkRecruitment()">
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
+                                {% if application_link %}
+                                    <a href="{{ application_link }}" class="apply btn" target="_blank">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                {% else %}
+                                    <a href="#" class="apply btn" id="CannotApply">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -408,13 +414,10 @@
         <!-- Raon FAQ JavaScript -->
         <script src="{% static 'recruit/js/RecruitFaq.js' %}"></script>
 
-        <!-- Raon Facts JavaScript -->
-        <script src="{% static 'recruit/js/waypoints.min.js' %}"></script>
-        <script src="{% static 'recruit/js/counterup.min.js' %}"></script>
-        <script src="{% static 'recruit/js/Facts.js' %}"></script>
+        <!-- Raon Apply JavaScript -->
+        <script src="{% static 'recruit/js/ApplyButton.js' %}"></script>
 
         <!-- Eunju JavaScript -->
-        <script src="/static/recruit/js/apply.js"></script>
 
 
         <!-- icons : insta, kakao, call -->

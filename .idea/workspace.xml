@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80db665d-8dcc-4cc7-b225-40f7f70bc6f6" name="Changes" comment="">
+    <list default="true" id="bd3a14be-eee4-42cd-a132-c36b8d1e9364" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/js/apply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,31 +21,31 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2dgih0D3vf3FvpnEeA1oXtpBr9z" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2dh8ARUotrTgA5WbmSwbUJ3kfLs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "raon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\images" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -75,13 +76,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80db665d-8dcc-4cc7-b225-40f7f70bc6f6" name="Changes" comment="" />
-      <created>1710436239092</created>
+      <changelist id="bd3a14be-eee4-42cd-a132-c36b8d1e9364" name="Changes" comment="" />
+      <created>1710448806611</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710436239092</updated>
-      <workItem from="1710436241464" duration="348000" />
-      <workItem from="1710436683418" duration="2333000" />
+      <updated>1710448806611</updated>
+      <workItem from="1710448808864" duration="1848000" />
     </task>
     <servers />
   </component>
