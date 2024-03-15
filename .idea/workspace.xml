@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1119dcee-c013-403f-a73a-2fa3c6491a26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,27 +20,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2djYua46o9p0UoMHA8aEoYihyhY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -76,7 +74,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710523178843</updated>
-      <workItem from="1710523181613" duration="1164000" />
+      <workItem from="1710523181613" duration="1419000" />
+      <workItem from="1710524812695" duration="1237000" />
     </task>
     <servers />
   </component>

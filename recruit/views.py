@@ -13,7 +13,7 @@ def recruit(request):
     if announcement and announcement.start_date <= today <= announcement.end_date:
         return render(request, "recruit/status.html")
 
-    # 지원 기간
+    # 모집 기간
     if recruitment and recruitment.start_date <= today <= recruitment.end_date:
         return render(request, "recruit/recruit.html", {"application_link": recruitment.application_link})
 
