@@ -93,6 +93,7 @@ Item
     padding: 30px 25px;
     background: #FFFFFF;
     transition: .5s;
+    border-radius: 23px;
 }
 
 .Procedure .item:hover {

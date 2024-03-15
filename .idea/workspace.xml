@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bf3f73b-29c6-4728-ade4-a7df28650b1e" name="Changes" comment="">
+    <list default="true" id="bd3a14be-eee4-42cd-a132-c36b8d1e9364" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/new2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/new2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/js/apply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +23,9 @@
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
-  "associatedIndex": 1
+  "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2dbcEnO0o3Sx3T4CsKIApRAFsdb" />
+  <component name="ProjectId" id="2dh8ARUotrTgA5WbmSwbUJ3kfLs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +43,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -66,12 +76,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2bf3f73b-29c6-4728-ade4-a7df28650b1e" name="Changes" comment="" />
-      <created>1710280109526</created>
+      <changelist id="bd3a14be-eee4-42cd-a132-c36b8d1e9364" name="Changes" comment="" />
+      <created>1710448806611</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710280109526</updated>
-      <workItem from="1710280112124" duration="305000" />
+      <updated>1710448806611</updated>
+      <workItem from="1710448808864" duration="1848000" />
     </task>
     <servers />
   </component>

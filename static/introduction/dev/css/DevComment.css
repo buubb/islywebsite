@@ -63,6 +63,7 @@ Custom Text
     font-weight: 400;
     letter-spacing: 0.035em;
     line-height: 1.3;
+    color: #000000;
 }
 
 .DevComment .item span {
