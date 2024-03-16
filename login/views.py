@@ -56,7 +56,7 @@ class Login(APIView):
                 #     )
                 #     return render(request, "login_failed.html", {"state": "login_failed"})
         else:
-            return render(request, 'login/make.html')
+            return render(request, 'login/new2.html')
 
 
 class Logout(APIView):
