@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cdb0fc0-2e89-4661-8576-730a1c53cb7f" name="Changes" comment="">
+    <list default="true" id="1237dbd5-057d-4805-afe5-0ac247ab50b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +20,7 @@
   "customColor": "",
   "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2dkeMETtUGZvhJDZX7M9TlBmBML" />
+  <component name="ProjectId" id="2dkoODpEioYT0YEwDPm4EfGWiC5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,12 +66,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6cdb0fc0-2e89-4661-8576-730a1c53cb7f" name="Changes" comment="" />
-      <created>1710556455095</created>
+      <changelist id="1237dbd5-057d-4805-afe5-0ac247ab50b2" name="Changes" comment="" />
+      <created>1710561404132</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710556455095</updated>
-      <workItem from="1710556458737" duration="3076000" />
+      <updated>1710561404132</updated>
+      <workItem from="1710561406298" duration="329000" />
     </task>
     <servers />
   </component>
