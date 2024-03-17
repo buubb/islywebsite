@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
+  background: linear-gradient(#0d0f10, #0d0f10);
 }
 
 .login-box {
@@ -16,7 +16,7 @@ body {
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, .5);
+  background: #0d0f10;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 10px;
@@ -35,7 +35,8 @@ body {
 }
 
 .login-box .user-box input {
-  width: 100%;
+  /* width: 100%; */
+  width: calc(100% - 20px); /* 입력 상자와 일치하도록 설정 */
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
@@ -78,8 +79,9 @@ body {
   margin-top: 40px;
   letter-spacing: 4px;
   background-color: transparent;
-  border: 1px solid #000; /* 검정색 테두리 */
+  border: 1px solid #808080; /* 검정색 테두리 */
   border-radius: 5px;
+  width: calc(100% - 20px); /* 좌우 여백을 조정하여 입력 상자와 일치하도록 설정 */
 }
 
 /* 애니메이션 스타일 */
@@ -207,12 +209,6 @@ input::placeholder {
   display: block; /* 입력이 유효하고 버튼이 활성화되면 span 표시 */
 }
 
-
-
-.buttons checkbox {
-  margin-right: 5px;
-}
-
 .buttons label {
   color: #fff;
 }
@@ -221,7 +217,7 @@ input::placeholder {
   position: absolute;
   top: 35%;
   transform: translateY(-50%);
-  right: 10px; /* 비밀번호 입력란 오른쪽에 위치하도록 설정 */
+  right: 20px; /* 비밀번호 입력란 오른쪽에 위치하도록 설정 */
   cursor: pointer;
   color: #ccc; /* 아이콘 색상 설정 */
 }

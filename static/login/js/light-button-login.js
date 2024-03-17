@@ -69,4 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+
+    checkInputs();
 });
