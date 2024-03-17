@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 
     <link rel="stylesheet" href="{% static 'login/css/light-button-login.css' %}">
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <!--
 
 TemplateMo 579 Cyborg Gaming
@@ -63,11 +64,11 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="user-box">
                 <input id="password" type="password" name="password" required=""
                 value="{{ form.password.value|default_if_none:'' |escape }}">
+            
                 <label>Password</label>
-            </div>
-            <div class="buttons">
-                <input type="checkbox" id="show-password">
-                <label for="show-password">SHOW PASSWORD</label>
+                <div class="eyes">
+                    <i class="fa fa-eye fa-lg"></i>
+                </div>
             </div>
             <button type="submit" id="login-button">
                 <span></span>
@@ -82,12 +83,8 @@ https://templatemo.com/tm-579-cyborg-gaming
         </form>
         {% endblock %}
         </div>
-    
-    
-    <div class='icon-credits'>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/budi-tanrim" title="Budi Tanrim">Budi Tanrim</a> & <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-
-            <!-- Scripts -->
+        <!-- Scripts -->
         <!-- Bootstrap core JavaScript -->
         <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
         <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
@@ -98,6 +95,17 @@ https://templatemo.com/tm-579-cyborg-gaming
         <script src="{% static 'assets/js/popup.js' %}"></script>
         <script src="{% static 'assets/js/custom.js' %}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- Navbar JavaScript -->
+        <script>
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle();
+            });
+            $(".aboutdrop").click(function () {
+                $(".depth_1").slideToggle();
+            });
+        </script>
+
         <script>
             $(".hamburger").click(function () {
                 $(".nav").slideToggle();
