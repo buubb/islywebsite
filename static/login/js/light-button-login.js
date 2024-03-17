@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var passwordInput = document.getElementById("password");
     var loginButton = document.getElementById("login-button");
     var spanElements = document.querySelectorAll(".login-box button span");
-    var eyesIcon = $('.user-box .eyes');
+    var eyesIcon = document.querySelector('.user-box .eyes');
 
     function changePlaceholder(input, placeholderText) {
         input.setAttribute("placeholder", placeholderText);
@@ -43,25 +43,32 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    usernameInput.addEventListener("input", checkInputs);
-    passwordInput.addEventListener("input", checkInputs);
+    usernameInput.addEventListener("input", function() {
+        checkInputs();
+    });
 
-    checkInputs(); 
+    passwordInput.addEventListener("input", function() {
+        checkInputs();
+    });
 
-    eyesIcon.on('click', function() {
+    eyesIcon.addEventListener('click', function() {
         togglePasswordVisibility();
     });
 
     function togglePasswordVisibility() {
-        if (passwordInput.val().trim() !== "") {
-            eyesIcon.toggleClass('active');
-            if (eyesIcon.hasClass('active')) {
-                eyesIcon.find('i').removeClass('fa-eye').addClass('fa-eye-slash');
-                passwordInput.attr('type', 'text');
+        if (passwordInput.value.trim() !== "") {
+            eyesIcon.classList.toggle('active');
+            if (eyesIcon.classList.contains('active')) {
+                eyesIcon.querySelector('i').classList.remove('fa-eye');
+                eyesIcon.querySelector('i').classList.add('fa-eye-slash');
+                passwordInput.setAttribute('type', 'text');
             } else {
-                eyesIcon.find('i').removeClass('fa-eye-slash').addClass('fa-eye');
-                passwordInput.attr('type', 'password');
+                eyesIcon.querySelector('i').classList.remove('fa-eye-slash');
+                eyesIcon.querySelector('i').classList.add('fa-eye');
+                passwordInput.setAttribute('type', 'password');
             }
         }
     }
+
+    checkInputs();
 });
