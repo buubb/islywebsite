@@ -6,21 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a740db3e-7e54-4f74-9bc3-3f54af0a7eaa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/Facts.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Facts/css/Facts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/recruit/InfiniteBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/recruit/Procedure.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Procedure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/recruit/RecruitBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/recruit/RecruitFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/js/Facts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/Facts/js/Facts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/js/counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/Facts/js/counterup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/js/waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/Facts/js/waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/islyweb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/islyweb/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/tem_profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710681148017</updated>
-      <workItem from="1710681149982" duration="2335000" />
+      <workItem from="1710681149982" duration="5244000" />
     </task>
     <servers />
   </component>
