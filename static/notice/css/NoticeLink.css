@@ -47,6 +47,10 @@ Button
 .NoticeLink .notice-btn a {
     font-size: 75px;
     color: #000000;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
 }
 
 
