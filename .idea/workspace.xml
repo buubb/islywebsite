@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1237dbd5-057d-4805-afe5-0ac247ab50b2" name="Changes" comment="">
+    <list default="true" id="a740db3e-7e54-4f74-9bc3-3f54af0a7eaa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +22,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
+  "associatedIndex": 5
 }]]></component>
-  <component name="ProjectId" id="2dkoODpEioYT0YEwDPm4EfGWiC5" />
+  <component name="ProjectId" id="2doj69aCeicXSxfVay7dPMnkdre" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +42,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\library" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\Facts\js" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\Facts\css" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -66,12 +79,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1237dbd5-057d-4805-afe5-0ac247ab50b2" name="Changes" comment="" />
-      <created>1710561404132</created>
+      <changelist id="a740db3e-7e54-4f74-9bc3-3f54af0a7eaa" name="Changes" comment="" />
+      <created>1710681148017</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710561404132</updated>
-      <workItem from="1710561406298" duration="329000" />
+      <updated>1710681148017</updated>
+      <workItem from="1710681149982" duration="5244000" />
     </task>
     <servers />
   </component>

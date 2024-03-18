@@ -19,7 +19,3 @@ def recruit(request):
 
     # 그 외 기간
     return render(request, "recruit/recruit.html", {"not_in_recruitment_period": True})
-
-
-def status(request):
-    return render(request, "recruit/status.html")
