@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55161d4b-0364-4cc8-8faa-65fa1b20beba" name="Changes" comment="">
+    <list default="true" id="4d2904a3-f822-4bf9-9188-1299017a4295" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +22,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2dsOAcPMyia1DjsbOiIFbDJZ06x" />
+  <component name="ProjectId" id="2dseIW9dteeJVL0tQwIVZOPhArb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,12 +71,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="55161d4b-0364-4cc8-8faa-65fa1b20beba" name="Changes" comment="" />
-      <created>1710793178929</created>
+      <changelist id="4d2904a3-f822-4bf9-9188-1299017a4295" name="Changes" comment="" />
+      <created>1710801134779</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710793178929</updated>
-      <workItem from="1710793181824" duration="816000" />
+      <updated>1710801134779</updated>
+      <workItem from="1710801137261" duration="1396000" />
     </task>
     <servers />
   </component>
