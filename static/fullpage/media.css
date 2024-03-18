@@ -47,8 +47,8 @@
     }
     .text_box{
         position:absolute;
-        font-size: 60px;
-        font-weight: 700;
+        font-size: 70px;
+        font-weight: 900;
         text-align: center!important;
         max-width: 700px;
         margin:auto;
@@ -154,6 +154,10 @@
       .tab-content{
         width:100%;
         margin:auto;
+      }
+      .tab-image {
+        width:0px;
+        height:0px;
       }
       .indexes {
         font-size: 20px;

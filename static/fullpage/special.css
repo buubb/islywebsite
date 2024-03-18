@@ -47,10 +47,10 @@
   position: relative;
   max-width: 600px;
   margin: 20px;
-  background: transparent;
+  background: #FFFFFF;
   box-shadow: 0px 14px 80px rgba(0,0,0,0.2);
   padding: 25px;
-  border:3px solid #FFFFFF;
+  /*border:3px solid #FFFFFF;*/
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
@@ -231,11 +231,11 @@
   letter-spacing: 0.075em;
   line-height: 1.8;
   text-transform: none;
-  color: #FFFFFF;
+  color: black;
   margin-bottom: 20px;
 }
 .blog-slider__text {
-  color: aliceblue;
+  color: black;
   margin-bottom: 30px;
   font-size: 15px;
   font-weight: 500;
