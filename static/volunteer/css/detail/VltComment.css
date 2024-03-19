@@ -88,7 +88,7 @@ Button
 .VltComment .comment_edit,
 .VltComment .comment_delete {
     color: #000000;
-    background: transparent;
+    background-color: transparent;
     display: inline-block;
     text-align: center;
     text-decoration: none;
