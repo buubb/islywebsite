@@ -29,14 +29,15 @@ class Login(APIView):
             user_instance = get_user_model().objects.get(username=username)
             user=authenticate(username=username, password=password)
             
+            next = request.POST["next"]
+
             if user is not None: #사용자가 인증되었는지 확인
                 print(user)
-                # user_instance = get_user_model().objects.get(username=username)
-
                 LoginFail.objects.filter(user__username=username).delete()
                     
                 login(request, user)
-                return render(request, 'islyweb/index.html')
+                return redirect(next)
+                # return render(request, 'islyweb/index.html')
             else:
                 # 로그인 실패 기록 가져오기
                 if LoginFail.objects.filter(user__username=username).exists():
