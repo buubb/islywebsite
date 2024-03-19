@@ -46,13 +46,14 @@ https://templatemo.com/tm-579-cyborg-gaming
     {% include "fullpagenav.html" %}
     <div class="login-box">
         {% block content %}
-        <form method="post" action="{% url 'login' %}">
+        <form method="post" action="{% url 'login' %}?next={{ request.GET.next }}">
+
             {% csrf_token %}
 
             <!-- Raon Added Start -->
-            {% if request.GET.next %}
+            <!-- {% if request.GET.next %}
                  <input type="hidden" name="next" value="{{ request.GET.next }}">
-            {% endif %}
+            {% endif %} -->
             <!-- Raon Added End -->
             
             <h2>Login</h2>
