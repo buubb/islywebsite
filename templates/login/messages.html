@@ -1,10 +1,31 @@
-{% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
-        {{ message }}
-    </li>
+{% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>{{ field.label }}</strong>
+                {% if field.name == 'username' %}
+                    {% if error == "This field is required." %}
+                        아이디를 입력하세요.
+                    {% else %}
+                        아이디가 일치하지 않습니다.
+                    {% endif %}
+                {% elif field.name == 'password' %}
+                    {% if error == "This field is required." %}
+                        비밀번호를 입력하세요.
+                    {% else %}
+                        비밀번호가 일치하지 않습니다.
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endfor %}
     {% endfor %}
-</ul>
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-danger">
+            {% if error == "Please enter a correct username and password. Note that both fields may be case-sensitive." %}
+                아이디 또는 비밀번호가 일치하지 않습니다.
+            {% else %}
+                {{ error }}
+            {% endif %}
+        </div>
+    {% endfor %}
 {% endif %}

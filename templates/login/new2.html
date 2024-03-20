@@ -46,19 +46,20 @@ https://templatemo.com/tm-579-cyborg-gaming
     {% include "fullpagenav.html" %}
     <div class="login-box">
         {% block content %}
-        <form method="post" action="{% url 'login' %}">
+        <form method="post" action="{% url 'login' %}?next={{ request.GET.next }}">
+
             {% csrf_token %}
 
             <!-- Raon Added Start -->
-            {% if request.GET.next %}
+            <!-- {% if request.GET.next %}
                  <input type="hidden" name="next" value="{{ request.GET.next }}">
-            {% endif %}
+            {% endif %} -->
             <!-- Raon Added End -->
             
             <h2>Login</h2>
             <div class="user-box">
                 <input id="username" type="text" name="username" required=""
-                value="{{ form.password.value|default_if_none:'' |escape }}">
+                value="{{ form.username.value|default_if_none:'' |escape }}">
                 <label>Username</label>
             </div>
             <div class="user-box">
@@ -70,6 +71,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <i class="fa fa-eye fa-lg"></i>
                 </div>
             </div>
+            {% include "login/messages.html" %}
             <button type="submit" id="login-button">
                 <span></span>
                 <span></span>
