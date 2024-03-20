@@ -1,14 +1,15 @@
 /*
 ---------------------------------------------
-Content Block
+Content
 ---------------------------------------------
 */
 
 .VltDetails .content {
-    border: 3px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     border-radius: 0;
     padding: 50px 60px;
     background-color: transparent;
+    overflow: hidden;
 }
 
 
@@ -18,7 +19,8 @@ Custom Text
 ---------------------------------------------
 */
 
-.VltDetails h2, p {
+.VltDetails h2,
+.VltDetails p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
 }
@@ -53,51 +55,23 @@ Image
 
 /*
 ---------------------------------------------
-Delete & Edit Button
+Button
 ---------------------------------------------
 */
 
-.VltDetails .vltnav a,
-.VltDetails .vltnav button {
+.VltDetails .like-btn,
+.VltDetails .comment-btn,
+.VltDetails .ellipsis-btn {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #FFFFFF;
-    background: transparent;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    text-decoration: none;
-    border: 1.8px solid #FFFFFF;
-    border-radius: 0;
-    display: inline-block;
-}
-
-.VltDetails .vltnav a:hover,
-.VltDetails .vltnav button:hover {
-    color: #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-
-/*
----------------------------------------------
-Share Button
----------------------------------------------
-*/
-
-.VltDetails .share-btn {
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 0.9rem;
+    font-size: 20px;
     font-weight: 600;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     color: #FFFFFF;
     background-color: transparent;
-    border: 1.8px solid #FFFFFF;
-    border-radius: 0;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    padding: 0 1.5rem;
+    border: none;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 5px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -105,73 +79,6 @@ Share Button
     white-space: nowrap;
     position: relative;
     overflow: hidden;
-}
-
-.VltDetails .share-btn:hover {
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-
-/*
----------------------------------------------
-Stats
----------------------------------------------
-*/
-
-.VltDetails .stats {
-    list-style: none;
-}
-
-.VltDetails .stats li {
-    display: inline-block;
-}
-
-
-/*
----------------------------------------------
-Like Button
----------------------------------------------
-*/
-
-.VltDetails .like-btn {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #FFFFFF;
-    background: transparent;
-    font-size: 0.8em;
-    font-weight: 500;
-    letter-spacing: 0.25em;
-    line-height: 1;
-    border: none;
-    border-left: 1.8px solid #FFFFFF;
-    display: inline-block;
-    /* margin: 0 0 0 2em; */
-    padding: 0 0 0 2em;
-    text-transform: uppercase;
-}
-
-
-/*
----------------------------------------------
-Comment Button
----------------------------------------------
-*/
-
-.VltDetails .comment-btn a {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #FFFFFF;
-    background: transparent;
-    font-size: 0.8em;
-    font-weight: 500;
-    letter-spacing: 0.25em;
-    line-height: 1;
-    border: none;
-    border-left: 1.8px solid #FFFFFF;
-    display: inline-block;
-    margin: 0 0 0 2em;
-    padding: 0 0 0 2em;
-    text-transform: uppercase;
 }
 
 
@@ -194,12 +101,7 @@ Responsive style
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .VltDetails .content {
-        padding: 40px 40px;
-    }
-
-    .VltDetails .vltnav a,
-    .VltDetails .vltnav button {
-        font-size: 13px;
+        padding: 40px 50px;
     }
 }
 
@@ -208,18 +110,11 @@ Responsive style
     .VltDetails .content {
         padding: 30px 40px;
     }
-
-    .VltDetails .share-btn {
-        margin-top: 45px;
-        display: block;
-    }
-
-    .VltDetails .stats {
-        margin-top: 20px;
-    }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    .VltDetails .content {
+        padding: 30px;
+    }
 }

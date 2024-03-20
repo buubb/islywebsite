@@ -77,3 +77,20 @@ Item
     border-top: 2px solid #000000;
     padding: 25px 0 0;
 }
+
+
+/*
+---------------------------------------------
+Button
+---------------------------------------------
+*/
+
+.VltComment .comment_edit,
+.VltComment .comment_delete {
+    color: #000000;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
