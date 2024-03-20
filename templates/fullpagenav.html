@@ -75,7 +75,7 @@
             {% if request.user.is_authenticated %} <!-- 단순히 사용자 인증에 대한 확인만 하는 기능 -> url에 login을 직접 치면 로그인 상태에서도 로그인창이 뜸 -->
             <a href="{% url 'logout' %}" class="menu_name">Logout {{request.user.username}} </a>
             {% else %}
-            <a href={% url 'login' %}?next={{request.path}} class="menu_name">Login </a>
+            <a href="{% url 'login' %}?next={{request.path}}" class="menu_name">Login </a>
             {% endif %}
           </li>
         </ul>
