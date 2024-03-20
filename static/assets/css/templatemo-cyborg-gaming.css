@@ -640,15 +640,16 @@ Header Style
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f0f0f0;
-  border: 0px solid #ccc;
+  background-color: #1f2122;
+  border: 2px solid #FFFFFF!important;
+  border-radius: 23px;
   padding: 10px;
   text-align: center;
 }
 
 .dropdown-menu.show {
   display: inline-block;
-  background-color: #1e1e1e;
+  background-color: #1f2122;
 }
 .dropdown-menu li {
   margin: 5px 0;

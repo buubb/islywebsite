@@ -17,14 +17,22 @@
         flex-wrap: wrap;
         width:100%;
         padding-right: 0;
-        background-color: #171a1c ;
+        background-color: #0d0f10 ;
+        /*적용 안됨*/
+        backdrop-filter: blur( 4.5px );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         margin-top: 15px;
     }
     header nav .nav .depth_1{
         position:static;
         width:100%;
         box-shadow: none;
-        background-color: #171a1c ;
+        background-color: #0d0f10 ;
+        /*적용 안됨*/
+        backdrop-filter: blur( 4.5px );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         margin-bottom:0px!important;
         border-radius: 0px;
 
