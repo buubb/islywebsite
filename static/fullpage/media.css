@@ -183,11 +183,7 @@
       #footer-text .footer-nav{
           display: none!important;
       }
-      #footer-text .footer-res-nav{
-          display: block;
-          width:50%;
-          text-align:right;
-      }
+      
 }
 
 @media(min-width:1278px){
