@@ -1,0 +1,40 @@
+/*
+---------------------------------------------
+Footer
+---------------------------------------------
+*/
+
+.footer {
+    background: #0d0f10;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer p, h4 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+}
+
+.footer .page-link a {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.footer .page-link a:hover {
+    letter-spacing: 2px;
+}
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .footer .link {
+        display: none;
+    }
+}
