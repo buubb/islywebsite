@@ -10,8 +10,11 @@ class Main(View):
         print("post로 호출")
         return render(request, 'main/index.html')
     def get(self,request):
+        # SpecialActivities model과 연결
         sapPost = SpecialActivitiesPost.objects.all()
+        # ActivityRecords model과 연결 
         records = ActivityRecordsCount.objects.all()
+        # main/index.html에서 적용할 수 있도록 render
         return render(request,"main/index.html",({"sapPost":sapPost, "records":records}))
     
 
