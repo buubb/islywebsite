@@ -142,7 +142,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                             <div class="facts-item">
                                 <div class="text-center p-5">
                                     <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">4</h1>
+                                    {% if records.years %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ count.years }}</h1>
+                                    {% else %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">4</h1>
+                                    {% endif %}
                                     <h5 class="topic text-white">Years</h5>
                                 </div>
                             </div>
@@ -151,7 +155,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                             <div class="facts-item">
                                 <div class="text-center p-5">
                                     <i class="fa-solid fa-envelopes-bulk fa-3x text-white mb-3"></i>
-                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
+                                    {% if records.applicants %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ records.applicants }}</h1>
+                                    {% else %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
+                                    {% endif %}
                                     <h5 class="topic text-white">Applicants</h5>
                                 </div>
                             </div>
@@ -160,7 +168,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                             <div class="facts-item">
                                 <div class="text-center p-5">
                                     <i class="fa fa-user-group fa-3x text-white mb-3"></i>
-                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">80</h1>
+                                    {% if records.members %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ records.members }}</h1>
+                                    {% else %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
+                                    {% endif %}
                                     <h5 class="topic text-white">Members</h5>
                                 </div>
                             </div>
@@ -169,7 +181,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                             <div class="facts-item">
                                 <div class="text-center p-5">
                                     <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">32</h1>
+                                    {% if records.projects %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ records.projects }}</h1>
+                                    {% else %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
+                                    {% endif %}
                                     <h5 class="topic text-white">Projects</h5>
                                 </div>
                             </div>

@@ -7,3 +7,11 @@ class SpecialActivitiesPost(models.Model):
     def __str__(self):
         return self.title
     
+class ActivityRecordsInt(models.Model):
+    years = models.IntegerField()
+    applicants = models.IntegerField()
+    members = models.IntegerField()
+    projects = models.IntegerField()
+
+    def __str__(self):
+        return self.years
