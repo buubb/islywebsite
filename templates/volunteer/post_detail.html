@@ -109,8 +109,25 @@
                                                         </a>
                                                     </div>
                                                     <div class="d-flex align-items-center">
-                                                        <!-- ellipsis button -->
-                                                        <button class="ellipsis-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                        {% if request.user == post.user %}
+                                                            <!-- ellipsis button -->
+                                                            <div class="dropdown">
+                                                                <button class="ellipsis-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                </button>
+
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item vlt_share" type="button">SHARE<i class="fa-solid fa-link"></i></button></li>
+
+                                                                    <li><button class="dropdown-item" type="button">EDIT<i class="fa-solid fa-pen-to-square"></i></button></li>
+
+                                                                    <li><button class="dropdown-item" type="button">DELETE<i class="fa-solid fa-trash-can"></i></button></li>
+                                                                </ul>
+                                                            </div>
+                                                        {% else %}
+                                                            <!-- share button -->
+                                                            <button class="share-btn vlt_share"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                                                        {% endif %}
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,7 +288,7 @@
         <!-- Scripts -->
         <!-- Bootstrap core JavaScript -->
         <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+        <!-- <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script> -->
         <script src="{% static 'fullpage/selected.js' %}"></script>
         <script src="{% static 'assets/js/isotope.min.js' %}"></script>
         <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
@@ -290,7 +307,7 @@
             });
         </script>
 
-        <!-- Raon Additional JavaScript -->
+        <!-- Raon JavaScript -->
         <script src="{% static 'volunteer/js/delete.js' %}"></script>
         <script src="{% static 'volunteer/js/like.js' %}"></script>
         <script src="{% static 'volunteer/js/share.js' %}"></script>

@@ -13,9 +13,9 @@ function copyURLToClipboard(event) {
         console.error('Could not copy link: ', err);
     });
 
-    // 기본 동작 중지
+    // 기본 동작 방지
     event.preventDefault();
 }
 
 // Share 버튼에 이벤트 리스너 추가
-document.querySelector('.share-btn').addEventListener('click', copyURLToClipboard);
+document.querySelector('.vlt_share').addEventListener('click', copyURLToClipboard);
