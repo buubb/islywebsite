@@ -24,8 +24,12 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon CSS Files -->
-        <link rel="stylesheet" href="{% static 'recruit/css/StatusCheck.css' %}">
-        <link rel="stylesheet" href="{% static 'recruit/css/StatusInfinite.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/InfiniteBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/Procedure.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/StatusLink.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitFaq.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
@@ -47,59 +51,98 @@
         {% include "fullpagenav.html" %}
         <!-- ***** Navbar End ***** -->
 
-
-        <!-- ***** Container 1 Start ***** -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-content">
 
-                        <!-- ***** Application Status Check Start ***** -->
-                        <div class="row py-4">
-                            <div class="col-lg-12">
-                                <div class="StatusCheck">
-                                    <div class="text-center">
-                                        <div class="p-5">
-                                            <div class="py-3">
-                                                <h1 class="title">I.Sly() 합격자 조회</h1>
-                                            </div>
-                                            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-9 mt-4 mx-auto">
-                                                <form class="" novalidate>
-                                                    <input type="number" class="form-control" id="applicant_phone" name="applicant_phone" placeholder="이메일 또는 전화번호" required>
-                                                    <div class="invalid-feedback">
-                                                        Please enter the number.
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="mt-1">
-                                                <button class="status-btn" type="submit">조회하기 <i class="bi bi-arrow-up-right-circle"></i></button>
-                                            </div>
+
+                        
+
+
+                        <!-- ***** 합격조회 Start ***** -->
+
+
+                        <!-- ***** Status Link Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                
+                    <div class="text-center">
+                        <div class="p-5">
+                            <div class="py-3">
+                                
+                                    <h2 class="title">I.Sly() 합격자 조회</h2>
+                                
+                            </div>
+                            <div class="py-3">
+                                
+                                    <h3 class="title"></h3>
+                                
+                            </div>
+                            <!---->
+                            <style>
+                                .link-btn {
+                                    color: #fff; 
+                                }
+                                .additional-space {
+                                    margin-top: 70px; /* 원하는 간격으로 조정 */
+                                }
+                                
+                            </style>
+                            
+                            <div class="row g-4">
+                                <div class="col-lg-4 mx-auto">
+                                    <div class="item d-flex flex-column justify-content-center align-items-center rounded-3">
+                                        <div class="mb-3 text-start">
+                                            <div style="display: flex; align-items: center;">
+                                                <input type="tel" class="form-control" id="applicant_phone" name="applicant_phone" style="height: 53px; width: 450px; border-radius: 15px;" placeholder="이메일 또는 전화번호">
+                                            
                                         </div>
+                                        </div>
+
+                                        
+                                        <div class="link-btn">
+                                            조회하기 <i class="bi bi-arrow-up-right-circle"></i>
+                                        </div>
+                                        
+                                        
+                                        <!--
+                                        <div class="form-check additional-space">
+                                            <input class="form-check-input" type="checkbox" id="save_id">
+                                            <label class="form-check-label" for="save_id">
+                                                아이디 저장
+                                            </label>
+                                        </div>
+                                        -->
+
+
+                                    
+
                                     </div>
                                 </div>
                             </div>
+                            <!---->
+
+                            
                         </div>
-                        <!-- ***** Application Status Check End ***** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+                        <!-- ***** 합격조회 End ***** -->
 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ***** Container 1 End ***** -->
-
-
-        <!-- ***** Container 2 Start ***** -->
-        <div class="container-fluid StatusInfinite">
-            <div class="container">
-                <div class="row py-2">
-                    <div class="align-self-center">
-                        <ul class="props display-6">
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Container 2 End ***** -->
 
 
         <!-- footer Start -->
@@ -173,9 +216,6 @@
                 $(".depth_1").slideToggle();
             });
         </script>
-
-        <!-- Raon Infinite Scroll JavaScript -->
-        <script src="{% static 'recruit/js/StatusInfinite.js' %}"></script>
 
         <!-- icons : insta, kakao, call -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

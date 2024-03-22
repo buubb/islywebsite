@@ -1,9 +1,8 @@
-// Dev Template Javascript
+// DevCarousel.js
 
 (function ($) {
     "use strict";
 
-    // Dev carousel
     $(".dev-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -30,6 +29,5 @@
         }
     });
 
-    
 })(jQuery);
 
