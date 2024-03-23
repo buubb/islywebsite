@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c22f3e2-32ee-45f7-b3ec-e74a25db444f" name="Changes" comment="">
+    <list default="true" id="cd8cf60b-9790-4942-a925-417dd31ed839" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/js/copyToClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/js/copyToClipboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/share.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/share.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +24,7 @@
   "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2e2X52Fi1dOu8g5b1wX8DYzBcNP" />
+  <component name="ProjectId" id="2e4RZcQTy7FE6FWolKHE5oJcZpD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,15 +42,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\js" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\recruit" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\ctf_challenge\js" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -83,12 +70,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4c22f3e2-32ee-45f7-b3ec-e74a25db444f" name="Changes" comment="" />
-      <created>1711103460969</created>
+      <changelist id="cd8cf60b-9790-4942-a925-417dd31ed839" name="Changes" comment="" />
+      <created>1711161923297</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711103460969</updated>
-      <workItem from="1711103463853" duration="14687000" />
+      <updated>1711161923297</updated>
+      <workItem from="1711161925332" duration="626000" />
     </task>
     <servers />
   </component>
