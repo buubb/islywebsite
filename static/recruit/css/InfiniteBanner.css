@@ -24,7 +24,7 @@ Props
     overflow-x: visible;
     position: relative;
     will-change: transform;
-    animation: scroll-right-to-left 40s linear infinite;
+    animation: scroll-right-to-left 65s linear infinite;
 }
 
 .InfiniteBanner .props li {

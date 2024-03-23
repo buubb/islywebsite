@@ -8,5 +8,5 @@ function copyToClipboard(event, text) {
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("Username Copied"); // 알림 창 표시
+    alert("Username Copied!"); // 알림 창 표시
 }
