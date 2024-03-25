@@ -20,8 +20,6 @@
         background-color: #0d0f10 ;
         /*적용 안됨*/
         backdrop-filter: blur( 4.5px );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
         margin-top: 15px;
     }
     header nav .nav .depth_1{
@@ -31,7 +29,6 @@
         background-color: #0d0f10 ;
         /*적용 안됨*/
         backdrop-filter: blur( 4.5px );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         margin-bottom:0px!important;
         border-radius: 0px;
@@ -49,6 +46,15 @@
         color:aliceblue;
         padding-left: 0;
         padding-right:0;
+    }
+    header nav .nav li:hover .menu_name{
+      color:aliceblue;
+      font-weight: 700;
+      text-decoration: underline 0px aliceblue!important;
+      text-underline-offset: 0px!important;
+    }
+    .nav .depth_1{
+      margin-top: 0px!important;
     }
     .s1-wrap{
         padding:0px 30px;
