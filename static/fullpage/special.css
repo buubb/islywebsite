@@ -26,22 +26,97 @@
 * {
   box-sizing: border-box;
 }
-.vivid{
-  display: flex;
-  justify-content: center;
+.vivid{ /*wrapper*/
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  margin-top: 400px;
+  margin-bottom: 200px;
 }
-.slidebody {
-  background-color: transparent;
-  max-height: 500px;
-  display: inline-block;
+
+.vividtitle h1{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 1.3;
+  font-size:40px!important;
+}
+.slidebody .partner-box:hover{
+  transform: rotateY(180deg);
+}
+.slidebody { /*wrapper*/
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  display: flex;
   margin-bottom:200px;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translateX(-50%);
+  transform: translateY(-50%); */
+  justify-content: center;
+  perspective: 1000px;
 }
 .slidebody h1{
-  color:#57f579;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 800;
-  text-align: center;
 }
+.slidebody p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.slidebody h4{
+  font-size: 22px;
+  font-weight: 500;
+  
+}
+.slidebody h3{
+  font-size: 25px;
+  font-weight: 600;
+
+}
+.slidebody .partner-box{ /*card*/
+  width: 300px;
+  height: 400px; 
+  /* position:relative; */
+  transition: all 0.5s;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 30px;
+}
+
+.slidebody .partner-box .front{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  backface-visibility: hidden;
+  border: solid 3px #FFFFFF;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slidebody .partner-box .back{
+  width: 100%;
+ height: 100%;
+ z-index: 1;
+ transform: rotateY(180deg);
+ border: solid 3px black;
+ background-color: #FFFFFF;
+ color:black;
+ border-radius: 20px;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
 .blog-slider {
   width: 95%;
   position: relative;
