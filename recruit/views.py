@@ -1,6 +1,6 @@
 # backend
-from django.shortcuts import render
-from .models import Recruitment, Announcement
+from django.shortcuts import render, redirect
+from .models import Recruitment, Announcement, Applicant
 import datetime
 
 
@@ -11,7 +11,19 @@ def recruit(request):
 
     # 합격 발표 기간
     if announcement and announcement.start_date <= today <= announcement.end_date:
-        return render(request, "recruit/status.html")
+        # 전화번호 입력
+        if request.method == 'POST':
+            phone_number = request.POST.get('applicant_phone')
+            try:
+                applicant = Applicant.objects.get(phone_number=phone_number)
+                if applicant.is_passed:
+                    return render(request, "recruit/pass.html")
+                else:
+                    return render(request, "recruit/fail.html")
+            except Applicant.DoesNotExist:
+                return render(request, "recruit/status.html", {"not_in_recruitment_period": True})
+        else:
+            return render(request, "recruit/status.html")
 
     # 모집 기간
     if recruitment and recruitment.start_date <= today <= recruitment.end_date:
