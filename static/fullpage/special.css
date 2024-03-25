@@ -46,7 +46,6 @@
   transform: rotateY(180deg);
 }
 .slidebody { /*wrapper*/
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   display: flex;
   margin-bottom:200px;
   /* position: absolute; */
@@ -101,6 +100,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
 }
 .slidebody .partner-box .back{
   width: 100%;
@@ -115,6 +117,9 @@
  display: flex;
  align-items: center;
  justify-content: center;
+ font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+ font-weight: 700;
+ font-size: 30px;
 }
 
 .blog-slider {
