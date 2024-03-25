@@ -63,8 +63,9 @@
                                                 <h1 class="title">I.Sly() 합격자 조회</h1>
                                             </div>
                                             <div class="col-xl-5 col-lg-6 col-md-8 col-sm-9 mt-4 mx-auto">
-                                                <form class="" novalidate>
-                                                    <input type="number" class="form-control" id="applicant_phone" name="applicant_phone" placeholder="학번 또는 전화번호" required>
+                                                <form class="" novalidate method="post">
+                                                    {% csrf_token %}
+                                                    <input type="number" class="form-control" id="applicant_phone" name="applicant_phone" placeholder="전화번호 입력 (ex.01012345678)" required>
                                                     <div class="invalid-feedback">
                                                         Please enter the number.
                                                     </div>
