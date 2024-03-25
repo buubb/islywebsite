@@ -7,6 +7,7 @@ from .models import LoginFail
 from django.contrib.auth import get_user_model
 from django.http import HttpResponse
 from django.utils import timezone
+from django.urls import reverse
 
 LOGIN_TRY_LIMIT=5
 
@@ -45,19 +46,8 @@ class Login(APIView):
                     count = login_fail.count
                 else:
                     count = 0
-
-                # if count >= LOGIN_TRY_LIMIT:
-                #     # 로그인 실패횟수 초과로 인해 잠긴 계정에 대한 인증 시도 제한
-                #     return render(request, "account_lock.html", {"state": "account_lock"})
-                # else:
-                #     user_instance = get_user_model().objects.get(username=username)
-                #     LoginFail.objects.update_or_create(
-                #     user=user_instance,
-                #     defaults={"count": count + 1},
-                #     )
-                #     return render(request, "login_failed.html", {"state": "login_failed"})
         else:
-            return render(request, 'login/new2.html')
+            return redirect(reverse("login"))
 
 
 class Logout(APIView):
