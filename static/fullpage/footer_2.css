@@ -69,6 +69,7 @@ Responsive Style
         justify-content: center!important;
     }
     .footer .footer-res-nav{
+        margin-top:20px!important;
         display: inline-block;
         text-align:center;
     }
