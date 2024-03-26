@@ -1,0 +1,34 @@
+/* status.css */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.inputCheckbox {
+    width: 32px;
+    height: 32px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.line {
+    border-top: 3px solid #fff !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.line1 {
+    border-top: 3px solid #fff !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

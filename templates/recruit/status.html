@@ -38,6 +38,10 @@
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 
+        <!-- Sum CSS Files -->
+        <link rel="stylesheet" href="{% static 'recruit/css/status.css' %}">
+        
+
     </head>
 
     <body>
@@ -45,6 +49,8 @@
         <!-- ***** Navbar Start ***** -->
         {% include "fullpagenav.html" %}
         <!-- ***** Navbar End ***** -->
+
+        
 
 
         <!-- ***** Container 1 Start ***** -->
@@ -54,12 +60,19 @@
                     <div class="page-content">
 
                         <!-- ***** Application Status Check Start ***** -->
+
+                        
+
+                        
+
                         <div class="row py-4">
                             <div class="col-lg-12">
+                                <hr class="line1"> <!-- 추가된 선 -->
                                 <div class="StatusCheck">
                                     <div class="text-center">
-                                        <div class="p-5">
+                                        
                                             <div class="py-3">
+                                                
                                                 <h1 class="title">I.Sly() 합격자 조회</h1>
                                             </div>
                                             <div class="col-xl-5 col-lg-6 col-md-8 col-sm-9 mt-4 mx-auto">
@@ -74,12 +87,30 @@
                                             <div class="mt-1">
                                                 <button class="status-btn" type="submit">조회하기 <i class="bi bi-arrow-up-right-circle"></i></button>
                                             </div>
-                                        </div>
+
+
+                                            <div class="main">
+                                                <div class="box">
+                                                </div>
+                                                  <div class="container1">
+                                                    <div class="flex">
+                                                      <input type="checkbox" class="inputCheckbox" />
+                                                      <p class="rememberMe">Rembember me</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr class="line"> <!-- 추가된 선 -->
+
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- ***** Application Status Check End ***** -->
+
+                        
 
                     </div>
                 </div>
