@@ -6,7 +6,7 @@ Basic
 
 .VltPosting {
     background-color: transparent;
-    border: 1.5px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     padding: 50px 70px 30px;
 }
 
@@ -17,62 +17,27 @@ Headline
 ---------------------------------------------
 */
 
-.VltPosting .headline {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 /* Write */
-.VltPosting h2.major {
+.VltPosting .major {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    color: #fff;
-    font-size: 2.25rem;
+    color: #FFFFFF;
     font-weight: 900;
-    line-height: 1.5;
-    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-size: 2.25rem;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
     letter-spacing: 0.5rem;
-    border-bottom: solid 1.8px #fff;
-    width: max-content;
-    padding-bottom: 0.5rem;
-    margin: 0 0 2.5rem 0;
+    text-transform: uppercase;
 }
 
 /* Save Button */
-.VltPosting button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    color: #1b1f22;
-    background-color: #fff;
-    border: 0;
-    border-radius: 0;
-    height: 3.2rem;
-    line-height: 3.2rem;
-    padding: 0 1.25rem 0 1.35rem;
-    display: inline-block;
-    cursor: pointer;
+.VltPosting .save {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
     text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-    margin: 0 0 2.5rem 0;
-}
-
-.VltPosting button:hover {
-    background-color: #e1e2e2;
-    opacity: 1;
+    padding: 10px 0;
 }
 
 
@@ -140,7 +105,7 @@ Label
 
 .VltPosting label {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #fff;
+    color: #FFFFFF;
     display: block;
     font-size: 1rem;
     font-weight: 500;
@@ -166,7 +131,7 @@ Label
 /* title-feedback */
 .VltPosting p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #57f579;
+    color: #57F579;
     display: block;
     font-size: 0.9rem;
     font-weight: 500;
@@ -197,11 +162,11 @@ Input
     transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     background-color: transparent;
     border-radius: 0;
-    border: solid 1.8px #fff;
+    border: solid 2px #FFFFFF;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.075rem;
-    color: #fff;
+    color: #FFFFFF;
     display: block;
     outline: 0;
     padding: 0 1rem;
@@ -222,12 +187,12 @@ Input
 .VltPosting input[type="file"]:focus,
 .VltPosting textarea:focus {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 1rem;
     letter-spacing: 0.075rem;
     background: rgba(255, 255, 255, 0.075);
     border-color: #fff;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .VltPosting input[type="text"],
@@ -277,7 +242,7 @@ Responsive Style
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* Write */
-    .VltPosting h2.major {
+    .VltPosting .major {
         font-size: 2rem;
     }
 
@@ -304,13 +269,6 @@ Responsive Style
     .VltPosting input[type="file"]:focus,
     .VltPosting textarea:focus {
         font-size: 0.9rem;
-    }
-
-    .VltPosting button {
-        font-size: 0.9rem;
-        height: 3rem;
-        line-height: 3rem;
-        padding: 0 1.05rem 0 1.15rem;
     }
 }
 
