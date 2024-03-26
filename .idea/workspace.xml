@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae672fbb-638c-46d1-97c7-5ae366fc681f" name="Changes" comment="">
+    <list default="true" id="305e1283-c738-4292-8303-b16f06abdfb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/images/banner-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/images/default-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,34 +24,27 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2e7vHNLw5xYQRJoszwS6tU1vK5U" />
+  <component name="ProjectId" id="2eDEiC0mcu0ngc1eby6w0iy9JX7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/islywebsite/static/volunteer/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\images" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css\comment" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\recruit" />
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\volunteer" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,13 +75,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae672fbb-638c-46d1-97c7-5ae366fc681f" name="Changes" comment="" />
-      <created>1711268345937</created>
+      <changelist id="305e1283-c738-4292-8303-b16f06abdfb6" name="Changes" comment="" />
+      <created>1711430875737</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711268345937</updated>
-      <workItem from="1711268347977" duration="2695000" />
-      <workItem from="1711271515087" duration="17041000" />
+      <updated>1711430875737</updated>
+      <workItem from="1711430877294" duration="1702000" />
+      <workItem from="1711433241319" duration="337000" />
     </task>
     <servers />
   </component>
