@@ -53,9 +53,13 @@
                                 <div class="VltPosting">
                                     <form method="POST" enctype="multipart/form-data">
                                         {% csrf_token %}
-                                        <div class="headline">
-                                            <h2 class="major">WRITE</h2>
-                                            <button type="submit">SAVE</button>
+                                        <div class="d-flex justify-content-between mb-5">
+                                            <div class="d-flex align-items-center">
+                                                <h1 class="major">WRITE</h1>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button type="submit" class="save"><i class="fa-solid fa-paper-plane fa-2xl"></i></button>
+                                            </div>
                                         </div>
                                         <div class="fields">
                                             <!-- title -->

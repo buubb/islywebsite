@@ -1,5 +1,5 @@
 # backend
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import Recruitment, Announcement, Applicant
 import datetime
 
@@ -22,12 +22,12 @@ def recruit(request):
 
 
 def check_status(request):
-    phone_number = request.POST.get('applicant_phone')
+    phone_number = request.POST.get("applicant_phone")
     try:
         applicant = Applicant.objects.get(phone_number=phone_number)
         if applicant.is_passed:
-            return render(request, 'recruit/pass.html')  # 합격자인 경우 pass.html로 리다이렉트
+            return render(request, "recruit/pass.html")  # 합격자인 경우 pass.html로 리다이렉트
         else:
-            return render(request, 'recruit/fail.html')  # 불합격자인 경우 fail.html로 리다이렉트
+            return render(request, "recruit/fail.html")  # 불합격자인 경우 fail.html로 리다이렉트
     except Applicant.DoesNotExist:
         return render(request, "recruit/status.html", {"not_in_recruitment_period": True})
