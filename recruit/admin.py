@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.forms import DateInput
 from django.core.exceptions import ValidationError
 from django.db import models
-from .models import Recruitment, Announcement
+from .models import Recruitment, Announcement, Applicant
 
 
 class BaseDateAdmin(admin.ModelAdmin):
@@ -27,5 +27,10 @@ class AnnouncementAdmin(BaseDateAdmin):
     list_display = ('start_date', 'end_date')
 
 
+class ApplicantAdmin(admin.ModelAdmin):
+    list_display = ('name', 'student_id', 'phone_number', 'is_passed')
+
+
 admin.site.register(Recruitment, RecruitmentAdmin)
 admin.site.register(Announcement, AnnouncementAdmin)
+admin.site.register(Applicant, ApplicantAdmin)

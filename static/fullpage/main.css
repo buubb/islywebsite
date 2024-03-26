@@ -24,6 +24,7 @@ header nav{
     justify-content: center;
     padding: 15px 0px 15px 0px;
     border-radius: 0px;
+    cursor: pointer;
 }
 header nav .logo{
     /*border-right: 1px solid #27292a;
@@ -86,6 +87,7 @@ header nav .nav li a{
     border-radius: 18px;
     letter-spacing: .3px;
     text-decoration-line: none;
+    cursor: pointer;
 }
 
 .nav .active a{
