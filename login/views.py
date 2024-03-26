@@ -38,6 +38,7 @@ class Login(APIView):
                     
                 login(request, user)
                 return redirect(next)
+                # return render(request, 'islyweb/index.html')
             else:
                 # 로그인 실패 기록 가져오기
                 if LoginFail.objects.filter(user__username=username).exists():
