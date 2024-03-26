@@ -29,3 +29,13 @@ class Announcement(models.Model):
 
         if Recruitment.objects.filter(start_date__lte=self.end_date, end_date__gte=self.start_date).exists():
             raise ValidationError("There is an overlapping period with the recruitment period.")
+
+
+class Applicant(models.Model):
+    name = models.CharField(max_length=100)
+    student_id = models.CharField(max_length=20)
+    phone_number = models.CharField(max_length=20)
+    is_passed = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name

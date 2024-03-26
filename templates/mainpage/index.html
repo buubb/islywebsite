@@ -138,17 +138,13 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <div class="text-center mx-auto">
                         <h1 class="title mb-5">Activity Records</h1>
                     </div>
-                    {% for act_records in act_records %}
+                    {% for act_record in act_records %}
                     <div class="row g-4 container-facts">
                         <div class="col-xl-3 col-6">
                             <div class="facts-item">
                                 <div class="text-center p-5">
                                     <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                                    {% if act_records.years %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_records.years }}</h1>
-                                    {% else %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">4</h1>
-                                    {% endif %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_record.years }}</h1>
                                     <h5 class="topic text-white">Years</h5>
                                 </div>
                             </div>
@@ -156,12 +152,8 @@ https://templatemo.com/tm-579-cyborg-gaming
                         <div class="col-xl-3 col-6">
                             <div class="facts-item">
                                 <div class="text-center p-5">
-                                    <i class="fa-solid fa-envelopes-bulk fa-3x text-white mb-3"></i>
-                                    {% if act_records.applicants %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_records.applicants }}</h1>
-                                    {% else %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">100</h1>
-                                    {% endif %}
+                                    <i class="fa-solid fa-envelopes-bulk fa-3x text-white mb-3"></i>                                  
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_record.applicants }}</h1>                       
                                     <h5 class="topic text-white">Applicants</h5>
                                 </div>
                             </div>
@@ -169,12 +161,8 @@ https://templatemo.com/tm-579-cyborg-gaming
                         <div class="col-xl-3 col-6">
                             <div class="facts-item">
                                 <div class="text-center p-5">
-                                    <i class="fa fa-user-group fa-3x text-white mb-3"></i>
-                                    {% if act_records.members %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_records.members }}</h1>
-                                    {% else %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">30</h1>
-                                    {% endif %}
+                                    <i class="fa fa-user-group fa-3x text-white mb-3"></i>                                  
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_record.members }}</h1>
                                     <h5 class="topic text-white">Members</h5>
                                 </div>
                             </div>
@@ -183,17 +171,53 @@ https://templatemo.com/tm-579-cyborg-gaming
                             <div class="facts-item">
                                 <div class="text-center p-5">
                                     <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                                    {% if act_records.projects %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_records.projects }}</h1>
-                                    {% else %}
-                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">100</h1>
-                                    {% endif %}
+                                      <h1 class="number display-3 mb-0" data-toggle="counter-up">{{ act_record.projects }}</h1>
                                     <h5 class="topic text-white">Projects</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
+                    {% if not act_records %}
+                    <div class="row g-4 container-facts">
+                      <div class="col-xl-3 col-6">
+                          <div class="facts-item">
+                              <div class="text-center p-5">
+                                  <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">4</h1>
+                                  <h5 class="topic text-white">Years</h5>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                          <div class="facts-item">
+                              <div class="text-center p-5">
+                                  <i class="fa-solid fa-envelopes-bulk fa-3x text-white mb-3"></i>                                  
+                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>                       
+                                  <h5 class="topic text-white">Applicants</h5>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                          <div class="facts-item">
+                              <div class="text-center p-5">
+                                  <i class="fa fa-user-group fa-3x text-white mb-3"></i>                                  
+                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">500</h1>
+                                  <h5 class="topic text-white">Members</h5>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                          <div class="facts-item">
+                              <div class="text-center p-5">
+                                  <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                                    <h1 class="number display-3 mb-0" data-toggle="counter-up">999</h1>
+                                  <h5 class="topic text-white">Projects</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  {% endif %}
                 </div>
               </div>
                 <!-- ***** Facts End ***** -->
@@ -315,7 +339,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <!-- <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script> -->
 
   <script src="{% static 'assets/js/isotope.min.js' %}"></script>
   <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
