@@ -5,15 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var spanElements = document.querySelectorAll(".login-box button span");
     var eyesIcon = document.querySelector('.user-box .eyes');
 
-
-    // 이전 페이지의 URL 파라미터 제거
-    var urlWithoutNext = window.location.href.split('?')[0];
-    window.history.replaceState({}, document.title, urlWithoutNext);
-
     function changePlaceholder(input, placeholderText) {
         input.setAttribute("placeholder", placeholderText);
-    }  
-
+    }
 
     usernameInput.addEventListener("click", function() {
         changePlaceholder(this, "아이디를 입력하세요");
