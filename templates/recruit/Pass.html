@@ -33,6 +33,9 @@
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 
+        <!-- Sum CSS Files -->
+        <link rel="stylesheet" href="{% static 'recruit/css/statusresult.css' %}">
+
     </head>
 
     <body>
@@ -47,13 +50,70 @@
                     <div class="page-content">
 
                         <!-- ***** Pass Start ***** -->
-                        <h1>합격 페이지 테스트</h1>
+                        
+                        
+                            
+                                <div class="page welcome">
+                                    <div class="content">
+                                        <h1 class="header">CONGRATULATION!</h1>
+                                        <p class ="pg">안녕하세요, 이수미님 I.Sly()입니다.</p>
+                                        <p class ="pg">&nbsp;</p>
+                                        <p class ="pg">우선 I.Sly() 9기 신입 모집에 관심을 가지고 지원해주셔서 감사드립니다.</p>
+                                        <p class ="pg">심사 결과 이수미님은 이번 신입 모집에서 "기초부원"으로 최종 합격하셨습니다.</p>
+                                        <p class ="pg">OT는 3/2 (토) 대면으로 진행 될 예정이며, 장소는 추후 공지할 예정입니다. (OT는 필참!!입니다.)</p>
+                                        <p class ="pg">&nbsp;</p>
+                                        <p class ="pg">I.Sly()의 모든 공지나 정보 공유, 팀 활동은 디스코드를 통해 전달됩니다.</p>
+                                        <p class ="pg">따라서 모든 신입 부원들께서는 Discord 앱을 설치하시고, 아래 버튼을 눌러 그룹 서버 초대를 받아주셔야 합니다.</p>
+                                        <p class ="pg">해당 초대는 7일 후 만료되니, 그 전까지 서버에 꼭 들어와 주시기 바랍니다.</p>
+                                        <p class ="pg">&nbsp;</p>
+                                        <p class ="pg">다시 한번, I.Sly()에 관심 갖고 지원해주셔서 감사합니다.</p>
+                                        <p class ="pg">&nbsp;</p>
+
+                                        <div class="button">JOIN US!</div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                              
+                            
                         <!-- ***** Pass End ***** -->
 
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- ***** js ***** -->
+        <script>
+            function typeEffect(element, speed) {
+            var text = element.innerHTML;
+            element.innerHTML = "";
+            
+            var i = 0;
+            var timer = setInterval(function() {
+                if (i < text.length) {
+                    element.append(text.charAt(i));
+                    i++;
+                } else {
+                    clearInterval(timer);
+                }
+            }, speed);
+        }
+
+        // application
+        var speed = 75;
+        var h1 = document.querySelector('h1');
+        var p = document.querySelector('p');
+        var delay = h1.innerHTML.length * speed + speed;
+        
+        // type affect to header
+        typeEffect(h1, speed);
+        </script>
+        <!-- ***** js ***** -->
+
+
 
 
         <!-- footer Start -->
@@ -85,6 +145,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- footer End -->
