@@ -1,0 +1,30 @@
+.content
+{   
+            
+}
+
+.button
+{
+    background  : #E2E2E2;
+    padding     : 10px 20px;
+    cursor      : pointer;
+    display     : inline-block;
+    margin-top: 10px;
+    
+}
+.header
+{
+    /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+    margin-bottom: 20px;
+}
+.header2
+{
+    /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+    margin-bottom: 30px;
+}
+.pg
+{
+    color       : #cccccc;
+}
+            
+         
