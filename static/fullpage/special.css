@@ -147,7 +147,7 @@
   .slidebody {
     background-color: transparent;
     max-height: 500px;
-    display: block;
+    display: inline-block;
     margin-bottom:200px;
   }
   .blog-slider__content{

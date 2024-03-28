@@ -24,6 +24,7 @@ Footer
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
     color: #FFFFFF;
+    font-size: 23px!important;
 }
 
 .footer .page-link a {
@@ -31,6 +32,7 @@ Footer
     letter-spacing: 0.075em;
     color: #FFFFFF;
     transition: .5s;
+    font-size:15px!important;
 }
 
 .footer .page-link a:hover {
@@ -51,6 +53,26 @@ Footer
     color: #FFFFFF;
     transition: .5s;
 }
+
+.footer-icons{
+    width:27px!important;
+    height:27px!important;
+    margin-right:20px;
+  }
+
+.f-tistory{
+    width:24px!important;
+    height:24px!important;
+    margin-right:20px;
+}
+
+.page-link .py-3{
+    padding-top:0.6rem!important;
+    padding-bottom:0.6rem!important;
+}
+.page-link .pb-3{
+    padding-bottom:0.6rem!important;
+}
 /*
 ---------------------------------------------
 Responsive Style
@@ -69,7 +91,7 @@ Responsive Style
         justify-content: center!important;
     }
     .footer .footer-res-nav{
-        margin-top:20px!important;
+        margin-top:40px!important;
         display: inline-block;
         text-align:center;
     }

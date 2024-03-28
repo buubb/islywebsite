@@ -1,6 +1,7 @@
+{% load static %}
     <!-- Footer Start -->
     <div class="container-fluid text-light footer mt-5 py-5">
-        <div class="container py-5">
+        <div class="container">
             <div class="row g-5">
                 <div class="col-xl-8 col-lg-6 col-md-4">
                     <h2 class="text-white mb-4">I.Sly()</h2>
@@ -8,13 +9,18 @@
                     <!-- <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p> -->
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>official.i.sly0@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <!-- <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a> -->
-                        <!-- <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                        <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
-                        <!-- <ion-icon class="call" size="large" name="call"></ion-icon> -->
-                        <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
+                        <a>
+                            <img src="{% static 'fullpage/img/discord.png' %}" class="footer-icons">
+                        </a>
+                        <a>
+                            <img src="{% static 'fullpage/img/kakaotalk.png' %}" class="footer-icons">
+                        </a>
+                        <a href="https://www.instagram.com/official.i.sly0/">
+                            <img src="{% static 'fullpage/img/instagram.png' %}" class="footer-icons">
+                        </a>
+                        <a href="https://hackingisly.tistory.com/">
+                            <img src="{% static 'fullpage/img/tistory.png' %}" class="f-tistory">
+                        </a>
                     </div>
                 </div>
 

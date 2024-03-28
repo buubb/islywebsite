@@ -208,7 +208,7 @@
 			var currLink = $(this);
 
 			// Get the href attribute and remove '#' from the beginning
-			var hrefValue = currLink.attr("href").replace(/^#/, '');
+			var hrefValue = currLink.attr("href") ? currLink.attr("href").replace(/^#/, '') : '';
 
 			// Check if hrefValue is a valid ID selector
 			if (hrefValue && /^[a-zA-Z][\w-]*$/.test(hrefValue)) {
