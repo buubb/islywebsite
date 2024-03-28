@@ -9,13 +9,19 @@ from django.contrib import messages
 
 
 def feed(request):
+    # 전체 포스트 개수
+    total_post_count = Post.objects.count()
+
     # 초기 포스트 개수
     initial_post_count = 6
 
     # 내림차순 정렬
     posts = Post.objects.all().order_by("-generation")[:initial_post_count]
 
-    context = {"posts": posts}
+    context = {
+        "posts": posts,
+        "show_load_more": total_post_count > initial_post_count
+    }
     return render(request, "volunteer/feed.html", context)
 
 
