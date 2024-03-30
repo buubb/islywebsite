@@ -42,7 +42,7 @@ class Applicant(models.Model):
         return self.name
 
     def clean(self):
-        self.phone_number = re.sub(r'\D', '', self.phone_number)
+        self.phone_number = re.sub(r"\D", "", self.phone_number)
 
     def save(self, *args, **kwargs):
         self.clean()
