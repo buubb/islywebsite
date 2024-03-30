@@ -1,6 +1,7 @@
 # models.py
 from django.db import models
 from django.core.exceptions import ValidationError
+import re
 
 
 class Recruitment(models.Model):
@@ -33,9 +34,16 @@ class Announcement(models.Model):
 
 class Applicant(models.Model):
     name = models.CharField(max_length=100)
-    student_id = models.CharField(max_length=20)
-    phone_number = models.CharField(max_length=20)
+    student_id = models.CharField(max_length=20, unique=True)
+    phone_number = models.CharField(max_length=20, unique=True)
     is_passed = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
+
+    def clean(self):
+        self.phone_number = re.sub(r'\D', '', self.phone_number)
+
+    def save(self, *args, **kwargs):
+        self.clean()
+        super().save(*args, **kwargs)
