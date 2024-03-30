@@ -1,0 +1,165 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.Process {
+    margin-top: 0;
+}
+
+
+/*
+---------------------------------------------
+Subtitle, Title
+---------------------------------------------
+*/
+
+.Process .subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
+
+
+.Process .title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.Process .process-item h5,
+.Process .process-item p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+}
+
+/* topic */
+.Process .process-item h5 {
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+/* content */
+.Process .process-item p {
+    letter-spacing: 0.055em;
+}
+
+
+/*
+---------------------------------------------
+Custom Icon
+---------------------------------------------
+*/
+
+.Process .process-item .bi-check-lg {
+    color: #5EE773;
+}
+
+.Process .process-item:hover .bi-check-lg {
+    color: #FFFFFF;
+}
+
+
+/*
+---------------------------------------------
+Icon-box
+---------------------------------------------
+*/
+
+.Process .icon-box-primary,
+.Process .icon-box-light {
+    position: relative;
+    padding: 0 0 10px 10px;
+    z-index: 1;
+}
+
+.Process .icon-box-primary i,
+.Process .icon-box-light i {
+    font-size: 60px;
+    line-height: 0;
+}
+
+.Process .icon-box-primary::before,
+.Process .icon-box-light::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    border-radius: 35px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.Process .icon-box-primary::before {
+    background: #5EE773;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.Process .container-process {
+    position: relative;
+}
+
+.Process .container-process::before {
+    position: absolute;
+    content: '';
+    background: var(--bs-light);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+    z-index: -1;
+}
+
+.Process .process-item {
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    background: #2A2C30;
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .05); */
+    border-radius: 23px;
+}
+
+.Process .process-item:hover {
+    background: #348E38;
+}
+
+.Process .process-item * {
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.Process .process-item:hover h5,
+.Process .process-item:hover p {
+    color: #FFFFFF;
+}
+
+.Process .process-item:hover .icon-box-primary::before {
+    background: #1F2122;
+}
+
+.Process .process-item:hover .icon-box-primary i {
+    color: #FFFFFF !important;
+}

@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <title>I.Sly()</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <!-- Raon CSS Files -->
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/InfiniteBanner.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/Procedure.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/StatusLink.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/boxicons/css/boxicons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/recruit/RecruitFaq.css' %}">
+        <link rel="stylesheet" href="{% static 'copyright.css' %}">
+
+        <!-- Raon Text Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+        <!-- Raon Icon Fonts -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Yubin add -->
+        <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+
+    </head>
+
+    <body>
+
+        <!-- ***** Navbar Start ***** -->
+        {% include "fullpagenav.html" %}
+        <!-- ***** Navbar End ***** -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-content">
+
+
+                        
+
+
+                        <!-- ***** 합격조회 Start ***** -->
+
+
+                        <!-- ***** Status Link Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                
+                    <div class="text-center">
+                        <div class="p-5">
+                            <div class="py-3">
+                                
+                                    <h2 class="title">I.Sly() 합격자 조회</h2>
+                                
+                            </div>
+                            <div class="py-3">
+                                
+                                    <h3 class="title"></h3>
+                                
+                            </div>
+                            <!---->
+                            <style>
+                                .link-btn {
+                                    color: #fff; 
+                                }
+                                .additional-space {
+                                    margin-top: 70px; /* 원하는 간격으로 조정 */
+                                }
+                                
+                            </style>
+                            
+                            <div class="row g-4">
+                                <div class="col-lg-4 mx-auto">
+                                    <div class="item d-flex flex-column justify-content-center align-items-center rounded-3">
+                                        <div class="mb-3 text-start">
+                                            <div style="display: flex; align-items: center;">
+                                                <input type="tel" class="form-control" id="applicant_phone" name="applicant_phone" style="height: 53px; width: 450px; border-radius: 15px;" placeholder="이메일 또는 전화번호">
+                                            
+                                        </div>
+                                        </div>
+
+                                        
+                                        <div class="link-btn">
+                                            조회하기 <i class="bi bi-arrow-up-right-circle"></i>
+                                        </div>
+                                        
+                                        
+                                        <!--
+                                        <div class="form-check additional-space">
+                                            <input class="form-check-input" type="checkbox" id="save_id">
+                                            <label class="form-check-label" for="save_id">
+                                                아이디 저장
+                                            </label>
+                                        </div>
+                                        -->
+
+
+                                    
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+                        <!-- ***** 합격조회 End ***** -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer Start -->
+        <div>
+            <div id="section-footer">
+                <div id="footer-text">
+                    <div class="footerbox">
+                        <h2> I.Sly() </h2>
+                        <p> since 2020 </p>
+                        <div class="footer-contact">
+                            <h3> Contact </h3>
+                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
+                            <ion-icon class="call" size="large" name="call"></ion-icon>
+                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-category">
+                            <li><a href="/recruit/">Recruit</a></li>
+                            <li><a href="/CTF-Challenge/">Wargame</a></li>
+                            <li><a href="/volunteer/">Project</a></li>
+                            <li>
+                                <a>About</a>
+                                <ul class="aboutcolumn">
+                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
+                                    <li><a href="/notice/"> 공지사항 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'fullpage/selected.js' %}"></script>
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+        <script src="{% static 'assets/js/tabs.js' %}"></script>
+        <script src="{% static 'assets/js/popup.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Navbar JavaScript -->
+        <script>
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle();
+            });
+            $(".aboutdrop").click(function () {
+                $(".depth_1").slideToggle();
+            });
+        </script>
+
+        <!-- icons : insta, kakao, call -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>

@@ -29,8 +29,9 @@
     <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
     <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
 
-    <link rel="stylesheet" href="{% static 'login/css/light-button-login.css' %}">
-    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'login/css/new3.css' %}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
 <!--
 
 TemplateMo 579 Cyborg Gaming
@@ -50,20 +51,21 @@ https://templatemo.com/tm-579-cyborg-gaming
 
             {% csrf_token %}
             
-            <h2>Login</h2>
+            <h2>Login</h2> <br>
             <div class="user-box">
                 <input id="username" type="text" name="username" required=""
+                placeholder="아이디를 입력하세요"
                 value="{{ form.username.value|default_if_none:'' |escape }}">
-                <label>Username</label>
+                <i class="uil uil-user"></i>
             </div>
             <div class="user-box">
                 <input id="password" type="password" name="password" required=""
+                placeholder="PW를 입력하세요"
                 value="{{ form.password.value|default_if_none:'' |escape }}">
-            
-                <label>Password</label>
-                <div class="eyes">
-                    <i class="fa fa-eye fa-lg"></i>
-                </div>
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+
+                
             </div>
             {% include "login/messages.html" %}
             <button type="submit" id="login-button">
@@ -101,7 +103,7 @@ https://templatemo.com/tm-579-cyborg-gaming
         </script>
 
         <!-- Seolin JavaScript -->
-        <script src="{% static 'login/js/light-button-login.js' %}"></script>
+        <script src="{% static 'login/js/new3.js' %}"></script>
 
         <script src="{% static 'fullpage/selected.js' %}"></script>
 

@@ -18,7 +18,7 @@ class Login(APIView):
             return render(request, 'islyweb/index.html')
         else:
             form=AuthenticationForm()
-            return render(request, 'login/new2.html', {'form':form})
+            return render(request, 'login/new3.html', {'form':form})
             
     
     def post(self, request):
