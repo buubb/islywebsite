@@ -16,6 +16,9 @@ class Recruitment(models.Model):
         if self.end_date < self.start_date:
             raise ValidationError("End date must be after start date.")
 
+        if Announcement.objects.filter(start_date__lte=self.end_date, end_date__gte=self.start_date).exists():
+            raise ValidationError("There is an overlapping period with the announcement period.")
+
 
 class Announcement(models.Model):
     start_date = models.DateField()
