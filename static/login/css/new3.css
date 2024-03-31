@@ -77,18 +77,19 @@ body {
 .login-box button {
     position: relative;
     display: inline-block;
-    padding: 20px 20px;
-    color: #808080;
+    padding: 15px 20px;
+    color: white;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: color 0.5s;
-    margin-top: 20px; /* 수정된 스타일 */
+    margin-top: 20px; 
     letter-spacing: 4px;
-    background-color: transparent;
-    border: 1px solid #808080;
-    border-radius: 5px;
+    background-color: #808080;
+    border-radius: 10px;
+    /* border: 1px solid #808080;
+    border-radius: 5px; */
     width: calc(100%);
 }
 
@@ -97,7 +98,7 @@ body {
     display: none;
 }
 
-.login-box button span:nth-child(1) {
+/* .login-box button span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -170,10 +171,10 @@ body {
     50%, 100% {
         bottom: 100%;
     }
-}
+} */
 
 .login-box button.active {
-    color: #fff;
+    background-color: #009900;
 }
 
 input::placeholder {
@@ -222,4 +223,8 @@ input::placeholder {
 
 .login-box .user-box input {
     color: white;
+}
+
+.user-box .eyes:hover {
+    color: #5EE773; /* 아이콘에 마우스를 올렸을 때 색상 변경 */
 }
