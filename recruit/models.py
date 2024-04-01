@@ -47,6 +47,9 @@ class Applicant(models.Model):
     def clean(self):
         self.phone_number = re.sub(r"\D", "", self.phone_number)
 
+        if not self.student_id.isdigit():
+            raise ValidationError("Student ID must contain only numbers.")
+
     def save(self, *args, **kwargs):
         self.clean()
         super().save(*args, **kwargs)
