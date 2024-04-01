@@ -26,8 +26,8 @@ def check_status(request):
     try:
         applicant = Applicant.objects.get(phone_number=phone_number)
         if applicant.is_passed:
-            return render(request, "recruit/pass.html")  # 합격자인 경우 pass.html로 리다이렉트
+            return render(request, "recruit/pass.html", {"name": applicant.name})  # 합격자인 경우 pass.html로 리다이렉트
         else:
-            return render(request, "recruit/fail.html")  # 불합격자인 경우 fail.html로 리다이렉트
+            return render(request, "recruit/fail.html", {"name": applicant.name})  # 불합격자인 경우 fail.html로 리다이렉트
     except Applicant.DoesNotExist:
         return render(request, "recruit/status.html", {"not_in_recruitment_period": True})

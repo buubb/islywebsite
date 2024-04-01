@@ -8,16 +8,18 @@
     cursor: pointer;
     display: inline-block;
     margin-top: 10px;
-
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    border-radius: 3px;
 }
 
 .statusResult .header {
     /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .statusResult .header2 {
-    /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
