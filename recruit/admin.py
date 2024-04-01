@@ -8,7 +8,7 @@ from .models import Recruitment, Announcement, Applicant
 
 class BaseDateAdmin(admin.ModelAdmin):
     formfield_overrides = {
-        models.DateField: {'widget': DateInput(attrs={'type': 'date'})},
+        models.DateField: {"widget": DateInput(attrs={"type": "date"})},
     }
 
     def save_model(self, request, obj, form, change):
@@ -20,15 +20,15 @@ class BaseDateAdmin(admin.ModelAdmin):
 
 
 class RecruitmentAdmin(BaseDateAdmin):
-    list_display = ('start_date', 'end_date', 'application_link')
+    list_display = ("start_date", "end_date", "application_link")
 
 
 class AnnouncementAdmin(BaseDateAdmin):
-    list_display = ('start_date', 'end_date')
+    list_display = ("start_date", "end_date")
 
 
 class ApplicantAdmin(admin.ModelAdmin):
-    list_display = ('name', 'student_id', 'phone_number', 'is_passed')
+    list_display = ("name", "student_id", "phone_number", "is_passed")
 
 
 admin.site.register(Recruitment, RecruitmentAdmin)
