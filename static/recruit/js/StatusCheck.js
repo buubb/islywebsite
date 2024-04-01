@@ -32,7 +32,7 @@ function checkAdminPhoneNumber(phone_number) {
                 document.getElementById("format").style.display = "none";
                 document.getElementById("entered-number").innerHTML = phone_number;
             } else {
-                alert("Entered phone number does not exist in the admin.");
+                alert("Entered phone number does not exist in the list.");
             }
         })
         .catch(error => {
@@ -43,12 +43,13 @@ function checkAdminPhoneNumber(phone_number) {
 
 
 
+
 function validateStudentID() {
     var student_id = document.getElementById("student_id").value;
 
-    // 학생 ID 유효성 검사
+    // 학번 유효성 검사
     if (/^\d+$/.test(student_id)) {
-        // Admin에 학생 ID가 존재하는지 확인
+        // Admin에 학번이 존재하는지 확인
         checkAdminStudentID(student_id);
     } else {
         alert("Please enter a valid student ID.");
@@ -70,14 +71,14 @@ function checkAdminStudentID(student_id) {
         })
         .then(data => {
             if (data.exists) {
-                // 학생 ID와 전화번호에 해당하는 applicant의 합격 여부 확인
+                // 학번과 전화번호에 해당하는 applicant의 합격 여부 확인
                 if (data.is_passed) {
-                    renderPassPage();
+                    renderPassPage(student_id, phone_number);
                 } else {
-                    renderFailPage();
+                    renderFailPage(student_id, phone_number);
                 }
             } else {
-                alert("Entered student ID does not exist in the admin.");
+                alert("Entered student ID does not exist in the list.");
             }
         })
         .catch(error => {
@@ -89,24 +90,24 @@ function checkAdminStudentID(student_id) {
 
 
 
-function renderPassPage() {
-    fetch("/recruit/pass/")
+function renderPassPage(student_id, phone_number) {
+    fetch(`/recruit/pass/?student_id=${student_id}&phone_number=${phone_number}`)
         .then(response => response.text())
         .then(html => {
             document.open();
             document.write(html);
             document.close();
         })
-        .catch(error => console.error('Error rendering pass page:', error));
+        .catch(error => console.error("Error rendering pass page:", error));
 }
 
-function renderFailPage() {
-    fetch("/recruit/fail/")
+function renderFailPage(student_id, phone_number) {
+    fetch(`/recruit/fail/?student_id=${student_id}&phone_number=${phone_number}`)
         .then(response => response.text())
         .then(html => {
             document.open();
             document.write(html);
             document.close();
         })
-        .catch(error => console.error('Error rendering fail page:', error));
+        .catch(error => console.error("Error rendering fail page:", error));
 }

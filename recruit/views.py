@@ -1,5 +1,5 @@
 # backend
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Recruitment, Announcement, Applicant
 import datetime
 from django.http import JsonResponse
@@ -41,8 +41,20 @@ def check_student_id(request):
 
 
 def pass_page(request):
-    return render(request, "recruit/Pass.html")
+    student_id = request.GET.get('student_id')
+    phone_number = request.GET.get('phone_number')
+
+    applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
+
+    context = {'name': applicant.name}
+    return render(request, 'recruit/Pass.html', context)
 
 
 def fail_page(request):
-    return render(request, "recruit/Fail.html")
+    student_id = request.GET.get('student_id')
+    phone_number = request.GET.get('phone_number')
+
+    applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
+
+    context = {'name': applicant.name}
+    return render(request, 'recruit/Fail.html', context)
