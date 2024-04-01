@@ -1,30 +1,29 @@
-.content
-{   
-            
+.statusResult .content {
+
 }
 
-.button
-{
-    background  : #E2E2E2;
-    padding     : 10px 20px;
-    cursor      : pointer;
-    display     : inline-block;
+.statusResult .button {
+    background: #E2E2E2;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
     margin-top: 10px;
-    
+
 }
-.header
-{
+
+.statusResult .header {
     /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
     margin-bottom: 20px;
 }
-.header2
-{
+
+.statusResult .header2 {
     /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
     margin-bottom: 30px;
 }
-.pg
-{
-    color       : #cccccc;
+
+.statusResult .pg {
+    /*font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;*/
+    color: #cccccc;
 }
             
          
