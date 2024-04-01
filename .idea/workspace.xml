@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1ccf6a8-dba2-4ec6-994a-5187add74f3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/recruit/js/StatusCheck.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/Fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/statusresult.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/statusresult.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +54,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\js" />
       <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\recruit\css" />
       <recent name="C:\Users\raony\PycharmProjects\islywebsite\templates\recruit" />
     </key>
@@ -94,7 +93,9 @@
       <option name="presentableId" value="Default" />
       <updated>1711993690875</updated>
       <workItem from="1711993693094" duration="490000" />
-      <workItem from="1711994255182" duration="1720000" />
+      <workItem from="1711994255182" duration="2488000" />
+      <workItem from="1711996858818" duration="4230000" />
+      <workItem from="1712001132746" duration="1697000" />
     </task>
     <servers />
   </component>
