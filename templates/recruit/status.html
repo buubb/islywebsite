@@ -34,9 +34,11 @@
         <!-- Raon Icon Fonts -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
 
     </head>
 
@@ -54,26 +56,37 @@
                     <div class="page-content">
 
                         <!-- ***** Application Status Check Start ***** -->
-                        <div class="row py-4">
-                            <div class="col-lg-12">
-                                <div class="StatusCheck">
-                                    <div class="text-center">
-                                        <div class="p-5">
-                                            <div class="py-3">
-                                                <h1 class="title">I.Sly() 합격자 조회</h1>
+                        <div class="row">
+                            <div class="StatusCheck">
+                                <div class="form-container">
+                                    <div class="forms">
+                                        <div class="form">
+                                            <div class="text-center mx-auto">
+                                                <h1 class="title mb-3">Application<br>Status Check</h1>
+                                                <h4 id="subtitle">Format : 010########</h4>
+                                                <h4 id="entered-number"></h4>
                                             </div>
-                                            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-9 mt-4 mx-auto">
-                                                <form class="needs-validation" novalidate method="post" action="{% url 'Recruit:check_status' %}">
-                                                    {% csrf_token %}
-                                                    <input type="number" class="form-control" id="applicant_phone" name="applicant_phone" placeholder="전화번호 입력 (ex.01012345678)" required>
-                                                    <div class="invalid-feedback">
-                                                        Please enter the number.
+                                            <!-- phone number box -->
+                                            <div id="phoneNum-box">
+                                                <form>
+                                                    <div class="input-field">
+                                                        <input type="number" id="phone_number" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" autocomplete="off" required>
+                                                        <i class="uil uil-smile"></i>
                                                     </div>
+                                                    <button class="next-btn" onclick="validatePhoneNumber()">Next</button>
                                                 </form>
                                             </div>
-                                            <div class="mt-1">
-                                                <button class="status-btn" type="submit">조회하기 <i class="bi bi-arrow-up-right-circle"></i></button>
+                                            <!-- student ID box
+                                            <div id="studentID-box">
+                                                <form>
+                                                    <div class="input-field">
+                                                        <input type="text" id="student_id" name="student_id" placeholder="Student ID" aria-label="Student ID" autocomplete="off" required>
+                                                        <i class="uil uil-book-alt"></i>
+                                                    </div>
+                                                    <button class="next-btn" onclick="validateStudentID()">Next</button>
+                                                </form>
                                             </div>
+                                            -->
                                         </div>
                                     </div>
                                 </div>
@@ -90,36 +103,7 @@
 
 
         <!-- footer Start -->
-        <div>
-            <div id="section-footer">
-                <div id="footer-text">
-                    <div class="footerbox">
-                        <h2> I.Sly() </h2>
-                        <p> since 2020 </p>
-                        <div class="footer-contact">
-                            <h3> Contact </h3>
-                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
-                            <ion-icon class="call" size="large" name="call"></ion-icon>
-                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <ul class="footer-category">
-                            <li><a href="/recruit/">Recruit</a></li>
-                            <li><a href="/CTF-Challenge/">Wargame</a></li>
-                            <li><a href="/volunteer/">Project</a></li>
-                            <li>
-                                <a>About</a>
-                                <ul class="aboutcolumn">
-                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
-                                    <li><a href="/notice/"> 공지사항 </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include 'footer_2.html' %}
         <!-- footer End -->
 
 
@@ -161,9 +145,10 @@
             });
         </script>
 
-        <!-- icons : insta, kakao, call -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Raon JavaScript -->
+        <!------------ DO NOT EDIT THIS FILE ------------>
+        <script src="{% static 'recruit/js/StatusCheck.js' %}"></script>
+        <!------------ DO NOT EDIT THIS FILE ------------>
 
     </body>
 

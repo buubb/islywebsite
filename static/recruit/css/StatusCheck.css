@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /*
 ---------------------------------------------
 Basic
@@ -5,26 +7,134 @@ Basic
 */
 
 .StatusCheck {
-    background-color: transparent;
-    border-radius: 0;
-    margin: 100px 0;
+    font-family: "Poppins", "sans-serif";
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.StatusCheck .form-container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.StatusCheck .form-container .forms {
+    width: 200%;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+.StatusCheck .form-container .form {
+    width: 50%;
+    padding: 30px;
+    border-radius: 23px;
+    background: #FFFFFF;
 }
 
 
 /*
 ---------------------------------------------
-Title
+Custom Text
 ---------------------------------------------
 */
 
 .StatusCheck .title {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #FFFFFF;
+    font-family: "Poppins", "sans-serif";
+    color: #000000;
     display: block;
     font-weight: 900;
     letter-spacing: 0.075em;
     line-height: 1.3;
+    text-transform: capitalize;
+}
+
+.StatusCheck h4 {
+    font-family: "Poppins", "sans-serif";
+    color: #696B6E;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    line-height: 1.5;
     text-transform: none;
+}
+
+
+/*
+---------------------------------------------
+Input-field
+---------------------------------------------
+*/
+
+.StatusCheck .form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.StatusCheck .input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    /* border: 2px solid #ccc; */
+    /* transition: border-color 0.4s ease; */
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.StatusCheck .input-field input:is(:focus, :valid) {
+    /* border-color: #000000; */
+    background-color: #EEEEEE;
+    color: #000000;
+    border: none;
+    box-shadow: none;
+}
+
+.StatusCheck .input-field i {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+    padding-left: 15px;
+}
+
+.StatusCheck .input-field input:is(:focus, :valid) ~ i {
+    color: #000000;
+}
+
+.StatusCheck .input-field i.icon {
+    left: 0;
+}
+
+.StatusCheck .input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 15px;
+}
+
+
+/*
+---------------------------------------------
+Spin-button
+---------------------------------------------
+*/
+
+.StatusCheck input[type='number']::-webkit-outer-spin-button,
+.StatusCheck input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
@@ -34,100 +144,27 @@ Button
 ---------------------------------------------
 */
 
-.StatusCheck .status-btn {
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+.StatusCheck .next-btn {
+    font-family: "Poppins", "sans-serif";
     font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    color: #FFFFFF;
-    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    color: #000000;
+    background-color: #57F579;
     border: none;
-    border-radius: 0;
-    height: 3.5rem;
-    line-height: 3.5rem;
+    border-radius: 10px;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    width: 100%;
+    margin-top: 35px;
     display: inline-block;
-    cursor: pointer;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
     position: relative;
     overflow: hidden;
-}
-
-
-/*
----------------------------------------------
-Input
----------------------------------------------
-*/
-
-.StatusCheck input[type="text"],
-.StatusCheck input[type="number"],
-.StatusCheck textarea {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    background-color: transparent;
-    border-radius: 0;
-    border: solid 2px #FFFFFF;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.075rem;
-    color: #fff;
-    display: block;
-    outline: 0;
-    padding: 0 1rem;
-    text-decoration: none;
-    width: 100%;
-    resize: none;
-}
-
-.StatusCheck input[type="text"]:invalid,
-.StatusCheck input[type="number"]:invalid,
-.StatusCheck textarea:invalid {
-    box-shadow: none;
-}
-
-.StatusCheck input[type="text"]:focus,
-.StatusCheck input[type="number"]:focus,
-.StatusCheck textarea:focus {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #FFFFFF;
-    font-size: 1rem;
-    letter-spacing: 0.075rem;
-    background: rgba(255, 255, 255, 0.075);
-    border-color: #FFFFFF;
-    box-shadow: 0 0 0 1px #FFFFFF;
-}
-
-.StatusCheck input[type="text"],
-.StatusCheck input[type="number"] {
-    height: 3.25rem;
-}
-
-.StatusCheck textarea {
-    padding: 0.75rem 1rem;
-}
-
-.StatusCheck input[type='number']::-webkit-outer-spin-button,
-.StatusCheck input[type='number']::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.StatusCheck input[type="text"]::placeholder,
-.StatusCheck input[type="number"]::placeholder {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.075rem;
-    color: #C6C6C6;
+    cursor: pointer;
 }
 
 
@@ -154,12 +191,9 @@ Responsive Style
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .StatusCheck .status-btn {
-        font-size: 0.9rem;
-        height: 3.2rem;
-        line-height: 3.2rem;
-    }
+
 }
+
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
