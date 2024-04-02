@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.forms import DateInput
 from django.core.exceptions import ValidationError
 from django.db import models
-from .models import Recruitment, Announcement, Applicant
+from .models import Recruitment, Announcement, Applicant, Orientation
 
 
 class BaseDateAdmin(admin.ModelAdmin):
@@ -28,9 +28,15 @@ class AnnouncementAdmin(BaseDateAdmin):
 
 
 class ApplicantAdmin(admin.ModelAdmin):
-    list_display = ("generation", "name", "student_id", "phone_number", "is_passed")
+    list_display = ("generation", "position", "name", "student_id", "phone_number", "is_passed")
+    ordering = ["-generation"]
+
+
+class OrientationAdmin(BaseDateAdmin):
+    list_display = ("date", "type")
 
 
 admin.site.register(Recruitment, RecruitmentAdmin)
 admin.site.register(Announcement, AnnouncementAdmin)
 admin.site.register(Applicant, ApplicantAdmin)
+admin.site.register(Orientation, OrientationAdmin)

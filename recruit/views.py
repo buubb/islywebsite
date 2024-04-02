@@ -48,7 +48,8 @@ def pass_page(request):
 
     context = {
         "name": applicant.name,
-        "generation": applicant.generation
+        "generation": applicant.generation,
+        "position": applicant.position
     }
     return render(request, "recruit/Pass.html", context)
 
@@ -61,6 +62,7 @@ def fail_page(request):
 
     context = {
         "name": applicant.name,
-        "generation": applicant.generation
+        "generation": applicant.generation,
+        "position": applicant.position
     }
     return render(request, "recruit/Fail.html", context)
