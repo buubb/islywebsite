@@ -28,7 +28,7 @@ class AnnouncementAdmin(BaseDateAdmin):
 
 
 class ApplicantAdmin(admin.ModelAdmin):
-    list_display = ("name", "student_id", "phone_number", "is_passed")
+    list_display = ("generation", "name", "student_id", "phone_number", "is_passed")
 
 
 admin.site.register(Recruitment, RecruitmentAdmin)
