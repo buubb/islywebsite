@@ -41,20 +41,26 @@ def check_student_id(request):
 
 
 def pass_page(request):
-    student_id = request.GET.get('student_id')
-    phone_number = request.GET.get('phone_number')
+    student_id = request.GET.get("student_id")
+    phone_number = request.GET.get("phone_number")
 
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
 
-    context = {'name': applicant.name}
-    return render(request, 'recruit/Pass.html', context)
+    context = {
+        "name": applicant.name,
+        "generation": applicant.generation
+    }
+    return render(request, "recruit/Pass.html", context)
 
 
 def fail_page(request):
-    student_id = request.GET.get('student_id')
-    phone_number = request.GET.get('phone_number')
+    student_id = request.GET.get("student_id")
+    phone_number = request.GET.get("phone_number")
 
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
 
-    context = {'name': applicant.name}
-    return render(request, 'recruit/Fail.html', context)
+    context = {
+        "name": applicant.name,
+        "generation": applicant.generation
+    }
+    return render(request, "recruit/Fail.html", context)

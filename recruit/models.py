@@ -36,6 +36,7 @@ class Announcement(models.Model):
 
 
 class Applicant(models.Model):
+    generation = models.PositiveIntegerField(null=True)
     name = models.CharField(max_length=100)
     student_id = models.CharField(max_length=20, unique=True)
     phone_number = models.CharField(max_length=20, unique=True)
