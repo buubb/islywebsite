@@ -8,6 +8,9 @@
     cursor: pointer;
     display: inline-block;
     margin-top: 10px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    border-radius: 3px;
 
 }
 
