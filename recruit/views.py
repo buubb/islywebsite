@@ -1,6 +1,6 @@
 # backend
 from django.shortcuts import render, get_object_or_404
-from .models import Recruitment, Announcement, Applicant
+from .models import Recruitment, Announcement, Applicant, Orientation
 import datetime
 from django.http import JsonResponse
 
@@ -46,11 +46,20 @@ def pass_page(request):
 
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
 
+    orientation = Orientation.objects.last()
+
     context = {
         "name": applicant.name,
         "generation": applicant.generation,
-        "position": applicant.position
+        "position": applicant.position,
     }
+
+    if orientation:
+        context.update({
+            "orientation_date": orientation.date,
+            "orientation_type": orientation.type
+        })
+
     return render(request, "recruit/Pass.html", context)
 
 

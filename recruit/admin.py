@@ -35,6 +35,11 @@ class ApplicantAdmin(admin.ModelAdmin):
 class OrientationAdmin(BaseDateAdmin):
     list_display = ("date", "type")
 
+    def save_model(self, request, obj, form, change):
+        # 저장하기 전에 기존의 오리엔테이션 정보를 삭제
+        Orientation.objects.all().delete()
+        super().save_model(request, obj, form, change)
+
 
 admin.site.register(Recruitment, RecruitmentAdmin)
 admin.site.register(Announcement, AnnouncementAdmin)
