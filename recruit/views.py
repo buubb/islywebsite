@@ -1,6 +1,6 @@
 # backend
 from django.shortcuts import render, get_object_or_404
-from .models import Recruitment, Announcement, Applicant, Orientation
+from .models import Recruitment, Announcement, Applicant, Orientation, Discord
 import datetime
 from django.http import JsonResponse
 
@@ -45,22 +45,16 @@ def pass_page(request):
     phone_number = request.GET.get("phone_number")
 
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
-
     orientation = Orientation.objects.last()
+    discord = Discord.objects.first()
 
     context = {
-        "name": applicant.name,
-        "generation": applicant.generation,
-        "position": applicant.position,
+        "applicant": applicant,
+        "orientation": orientation,
+        "discord": discord,
     }
 
-    if orientation:
-        context.update({
-            "orientation_date": orientation.date,
-            "orientation_type": orientation.type
-        })
-
-    return render(request, "recruit/Pass.html", context)
+    return render(request, "recruit/pass.html", context)
 
 
 def fail_page(request):
@@ -70,8 +64,6 @@ def fail_page(request):
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
 
     context = {
-        "name": applicant.name,
-        "generation": applicant.generation,
-        "position": applicant.position
+        "applicant": applicant
     }
-    return render(request, "recruit/Fail.html", context)
+    return render(request, "recruit/fail.html", context)

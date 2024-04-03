@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.forms import DateInput
 from django.core.exceptions import ValidationError
 from django.db import models
-from .models import Recruitment, Announcement, Applicant, Orientation
+from .models import Recruitment, Announcement, Applicant, Orientation, Discord
 
 
 class BaseDateAdmin(admin.ModelAdmin):
@@ -36,8 +36,15 @@ class OrientationAdmin(BaseDateAdmin):
     list_display = ("date", "type")
 
     def save_model(self, request, obj, form, change):
-        # 저장하기 전에 기존의 오리엔테이션 정보를 삭제
         Orientation.objects.all().delete()
+        super().save_model(request, obj, form, change)
+
+
+class DiscordAdmin(BaseDateAdmin):
+    list_display = ("expire_after", "invite_link")
+
+    def save_model(self, request, obj, form, change):
+        Discord.objects.all().delete()
         super().save_model(request, obj, form, change)
 
 
@@ -45,3 +52,4 @@ admin.site.register(Recruitment, RecruitmentAdmin)
 admin.site.register(Announcement, AnnouncementAdmin)
 admin.site.register(Applicant, ApplicantAdmin)
 admin.site.register(Orientation, OrientationAdmin)
+admin.site.register(Discord, DiscordAdmin)

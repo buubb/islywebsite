@@ -80,3 +80,11 @@ class Orientation(models.Model):
 
     def __str__(self):
         return f"Orientation on {self.date}"
+
+
+class Discord(models.Model):
+    expire_after = models.DateField()
+    invite_link = models.URLField()
+
+    def __str__(self):
+        return f"Discord Link expires after {self.expire_after}"

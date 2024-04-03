@@ -60,25 +60,28 @@
                                     <div class="page welcome">
                                         <div class="content">
                                             <h1 class="header">CONGRATULATION!</h1>
-                                            <p class ="pg">안녕하세요, {{ name }}님</p>
-                                            <p class ="pg">I.Sly() {{ generation }}기 {{ position }}부원 모집 합격을 진심으로 축하 드립니다.</p>
-                                            <p class ="pg">서류전형을 거쳐 긴장되는 면접을 통과한 후 합격이라는 결과까지 {{ name }}님께서 보여주신 I.Sly()에 대한 따뜻한 관심과 뜨거운 열정에 깊이 감사 드립니다.</p>
+                                            <p class ="pg">안녕하세요, {{ applicant.name }}님</p>
+                                            <p class ="pg"><em>I.Sly() {{ applicant.generation }}기 {{ applicant.position }}부원 모집 합격</em>을 진심으로 축하 드립니다.</p>
+                                            <p class ="pg">서류전형을 거쳐 긴장되는 면접을 통과한 후 합격이라는 결과까지 {{ applicant.name }}님께서 보여주신 I.Sly()에 대한 따뜻한 관심과 뜨거운 열정에 깊이 감사 드립니다.</p>
                                             <p class ="pg">&nbsp;</p>
                                             <!-- Orientation -->
-                                            {% if orientation_date and orientation_type %}
+                                            {% if orientation %}
                                                 <p class ="pg point">[ 오리엔테이션 안내 ]</p>
-                                                <p class ="pg">Orientation은 {{ orientation_type }}으로 진행될 예정이며, 장소는 추후 공지할 예정입니다.</p>
-                                                <p class ="pg">신입부원들은 Orientation에 반드시 참석하여 주시기 바랍니다.</p>
-                                                <p class ="pg point">{{ orientation_date|date:"Y년 m월 d일" }},</p>
+                                                <p class ="pg">오리엔테이션은 {{ orientation.type }}으로 진행될 예정이며, 장소는 추후 공지할 예정입니다.</p>
+                                                <p class ="pg">신입부원들은 오리엔테이션에 반드시 참석하여 주시기 바랍니다.</p>
+                                                <p class ="pg point">{{ orientation.date|date:"Y년 m월 d일" }},</p>
                                                 <p class ="pg">I.Sly()의 신입부원으로 다시 뵙기를 기대하겠습니다.</p>
                                                 <p class ="pg">&nbsp;</p>
                                             {% endif %}
                                             <!-- Discord -->
-                                            <p class ="pg point">[ 내부 채널 안내 ]</p>
-                                            <p class ="pg">신입부원들은 디스코드 아이슬리 서버에 기간 내로 입장해 주시기 바랍니다.</p>
-                                            <p class ="pg">아래 버튼을 클릭하고, 그룹 서버 초대를 수락하시면 됩니다.</p>
-                                            <div class="discord-btn"><i class="fa-brands fa-discord"></i> Discord <i class="bi bi-arrow-up-right-circle"></i></div>
-                                            <p class ="pg">&nbsp;</p>
+                                            {% if discord %}
+                                                <p class ="pg point">[ 내부 채널 안내 ]</p>
+                                                <p class ="pg">신입부원들은 디스코드 아이슬리 서버에 <em>{{ discord.expire_after|date:"m월 d일" }}</em>까지 입장해 주시기 바랍니다.</p>
+                                                <p class ="pg">아래 버튼을 클릭하고, 그룹 서버 초대를 수락하시면 됩니다.</p>
+                                                <a href="{{ discord.invite_link }}" class="discord-btn"><i class="fa-brands fa-discord"></i> Discord <i class="bi bi-arrow-up-right-circle"></i></a>
+                                                <p class ="pg">&nbsp;</p>
+                                            {% endif %}
+                                            <!-- Contact -->
                                             <p class ="pg point">[ 합격 포기 안내 ]</p>
                                             <p class ="pg">합격 포기 혹은 기타 문의사항이 있으신 분들께서는 운영진에게 연락 주시기 바랍니다.</p>
                                             <p class ="pg">010-1234-5678</p>
