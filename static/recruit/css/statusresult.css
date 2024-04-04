@@ -2,17 +2,18 @@
 
 }
 
+/*
 .statusResult .button {
     background: #E2E2E2;
     padding: 10px 20px;
     cursor: pointer;
     display: inline-block;
     margin-top: 10px;
-
 }
+*/
 
 .statusResult .header {
-    /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 900;
     letter-spacing: 0.075em;
     margin-bottom: 20px;
@@ -27,8 +28,40 @@
 
 .statusResult .pg {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 450;
     letter-spacing: 0.055em;
     color: #cccccc;
 }
-            
-         
+
+.statusResult .point {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.statusResult em {
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.statusResult .discord-btn {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
