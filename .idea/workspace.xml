@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b1136f2-50d3-472b-be13-0c62dfc8e445" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/js/StatusCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/js/StatusCheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/copyright.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
