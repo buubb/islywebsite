@@ -38,6 +38,7 @@
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
 
     </head>
 
@@ -390,36 +391,7 @@
 
 
         <!-- footer Start -->
-        <div>
-            <div id="section-footer">
-                <div id="footer-text">
-                    <div class="footerbox">
-                        <h2> I.Sly() </h2>
-                        <p> since 2020 </p>
-                        <div class="footer-contact">
-                            <h3> Contact </h3>
-                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
-                            <ion-icon class="call" size="large" name="call"></ion-icon>
-                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <ul class="footer-category">
-                            <li><a href="/recruit/">Recruit</a></li>
-                            <li><a href="/CTF-Challenge/">Wargame</a></li>
-                            <li><a href="/volunteer/">Project</a></li>
-                            <li>
-                                <a>About</a>
-                                <ul class="aboutcolumn">
-                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
-                                    <li><a href="/notice/"> 공지사항 </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include 'footer_2.html' %}
         <!-- footer End -->
 
 
@@ -464,9 +436,7 @@
         <!-- Raon JavaScript -->
         <script src="{% static 'notice/js/NoticeCarousel.js' %}"></script>
 
-        <!-- icons : insta, kakao, call -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
     </body>
 
