@@ -59,8 +59,8 @@ class Applicant(models.Model):
         if not re.match(r'^010[0-9]{8}$', self.phone_number):
             raise ValidationError("Phone number must be in the format 010########.")
 
-        if not self.student_id.isdigit():
-            raise ValidationError("Student ID must contain only numbers.")
+        if not re.match(r'^[0-9]{8}$', self.student_id):
+            raise ValidationError("Student ID must be an 8-digit number.")
 
     def save(self, *args, **kwargs):
         self.clean()
