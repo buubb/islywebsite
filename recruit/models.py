@@ -88,3 +88,10 @@ class Discord(models.Model):
 
     def __str__(self):
         return f"Discord Link expires after {self.expire_after}"
+
+
+class LeaderContact(models.Model):
+    leader_contact = models.CharField(max_length=20, unique=True)
+
+    def __str__(self):
+        return self.leader_contact

@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.forms import DateInput
 from django.core.exceptions import ValidationError
 from django.db import models
-from .models import Recruitment, Announcement, Applicant, Orientation, Discord
+from .models import Recruitment, Announcement, Applicant, Orientation, Discord, LeaderContact
 
 
 class BaseDateAdmin(admin.ModelAdmin):
@@ -47,9 +47,17 @@ class DiscordAdmin(BaseDateAdmin):
         Discord.objects.all().delete()
         super().save_model(request, obj, form, change)
 
+class LeaderContactAdmin(admin.ModelAdmin):
+    list_display = ("leader_contact",)
+
+    def save_model(self, request, obj, form, change):
+        LeaderContact.objects.all().delete()
+        super().save_model(request, obj, form, change)
+
 
 admin.site.register(Recruitment, RecruitmentAdmin)
 admin.site.register(Announcement, AnnouncementAdmin)
 admin.site.register(Applicant, ApplicantAdmin)
 admin.site.register(Orientation, OrientationAdmin)
 admin.site.register(Discord, DiscordAdmin)
+admin.site.register(LeaderContact, LeaderContactAdmin)
