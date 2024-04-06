@@ -86,7 +86,11 @@
                                             <!-- Contact -->
                                             <p class ="pg point">[ 합격 포기 안내 ]</p>
                                             <p class ="pg">합격 포기 혹은 기타 문의사항이 있으신 분들께서는 운영진에게 연락 주시기 바랍니다.</p>
-                                            <p class ="pg">010-1234-5678</p>
+                                            {% if contact %}
+                                                <p class ="pg point">{{ contact.contact }}</p>
+                                            {% else %}
+                                                <p class ="pg point">@ official.i.sly0</p>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>
@@ -98,36 +102,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- ***** js ***** -->
-        <script>
-            function typeEffect(element, speed) {
-                var text = element.innerHTML;
-                element.innerHTML = "";
-
-                var i = 0;
-                var timer = setInterval(function() {
-                    if (i < text.length) {
-                        element.append(text.charAt(i));
-                        i++;
-                    } else {
-                        clearInterval(timer);
-                    }
-                }, speed);
-            }
-
-            // application
-            var speed = 75;
-            var header = document.querySelector('.header');
-            var p = document.querySelector('.pg');
-            var delay = header.innerHTML.length * speed + speed;
-
-            // type affect to header
-            typeEffect(header, speed);
-        </script>
-        <!-- ***** js ***** -->
-
 
 
 
@@ -182,9 +156,31 @@
         </script>
 
         <!-- Sumi JavaScript -->
+        <script>
+            function typeEffect(element, speed) {
+                var text = element.innerHTML;
+                element.innerHTML = "";
 
+                var i = 0;
+                var timer = setInterval(function() {
+                    if (i < text.length) {
+                        element.append(text.charAt(i));
+                        i++;
+                    } else {
+                        clearInterval(timer);
+                    }
+                }, speed);
+            }
 
-        <!-- Eunju JavaScript -->
+            // application
+            var speed = 75;
+            var header = document.querySelector('.header');
+            var p = document.querySelector('.pg');
+            var delay = header.innerHTML.length * speed + speed;
+
+            // type affect to header
+            typeEffect(header, speed);
+        </script>
 
 
     </body>

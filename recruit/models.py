@@ -90,8 +90,14 @@ class Discord(models.Model):
         return f"Discord Link expires after {self.expire_after}"
 
 
-class LeaderContact(models.Model):
-    leader_contact = models.CharField(max_length=20, unique=True)
+def validate_contact(value):
+    pattern = re.compile(r'^\d{2,3}-\d{3,4}-\d{4}$')
+    if not pattern.match(value):
+        raise ValidationError("Invalid phone number format. (ex: 010-1234-5678)")
+
+
+class Contact(models.Model):
+    contact = models.CharField("회장단 연락처", max_length=20, validators=[validate_contact])
 
     def __str__(self):
-        return self.leader_contact
+        return self.contact
