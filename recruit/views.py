@@ -46,7 +46,7 @@ def pass_page(request):
 
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
     orientation = Orientation.objects.last()
-    discord = Discord.objects.first()
+    discord = Discord.objects.last()
 
     context = {
         "applicant": applicant,
