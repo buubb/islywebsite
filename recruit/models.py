@@ -36,6 +36,15 @@ class Announcement(models.Model):
 
 
 class Applicant(models.Model):
+    BASIC_MEMBER = "기초"
+    ADVANCED_MEMBER = "심화"
+    POSITION_CHOICES = [
+        (BASIC_MEMBER, "기초"),
+        (ADVANCED_MEMBER, "심화"),
+    ]
+
+    generation = models.PositiveIntegerField(null=True)
+    position = models.CharField(max_length=10, choices=POSITION_CHOICES, default=BASIC_MEMBER)
     name = models.CharField(max_length=100)
     student_id = models.CharField(max_length=20, unique=True)
     phone_number = models.CharField(max_length=20, unique=True)
@@ -47,6 +56,35 @@ class Applicant(models.Model):
     def clean(self):
         self.phone_number = re.sub(r"\D", "", self.phone_number)
 
+        if not re.match(r'^010[0-9]{8}$', self.phone_number):
+            raise ValidationError("Phone number must be in the format 010########.")
+
+        if not self.student_id.isdigit():
+            raise ValidationError("Student ID must contain only numbers.")
+
     def save(self, *args, **kwargs):
         self.clean()
         super().save(*args, **kwargs)
+
+
+class Orientation(models.Model):
+    OFFLINE = "대면"
+    ONLINE = "비대면"
+    TYPE_CHOICES = [
+        (OFFLINE, "대면"),
+        (ONLINE, "비대면"),
+    ]
+
+    type = models.CharField(max_length=10, choices=TYPE_CHOICES, default=OFFLINE)
+    date = models.DateField()
+
+    def __str__(self):
+        return f"Orientation on {self.date}"
+
+
+class Discord(models.Model):
+    expire_after = models.DateField()
+    invite_link = models.URLField()
+
+    def __str__(self):
+        return f"Discord Link expires after {self.expire_after}"

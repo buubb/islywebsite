@@ -1,7 +1,8 @@
 # backend
-from django.shortcuts import render
-from .models import Recruitment, Announcement, Applicant
+from django.shortcuts import render, get_object_or_404
+from .models import Recruitment, Announcement, Applicant, Orientation, Discord
 import datetime
+from django.http import JsonResponse
 
 
 def recruit(request):
@@ -21,13 +22,48 @@ def recruit(request):
     return render(request, "recruit/recruit.html", {"not_in_recruitment_period": True})
 
 
-def check_status(request):
-    phone_number = request.POST.get("applicant_phone")
-    try:
-        applicant = Applicant.objects.get(phone_number=phone_number)
-        if applicant.is_passed:
-            return render(request, "recruit/pass.html")  # 합격자인 경우 pass.html로 리다이렉트
-        else:
-            return render(request, "recruit/fail.html")  # 불합격자인 경우 fail.html로 리다이렉트
-    except Applicant.DoesNotExist:
-        return render(request, "recruit/status.html", {"not_in_recruitment_period": True})
+def check_phone_number(request):
+    if "phone_number" in request.GET:
+        phone_number = request.GET["phone_number"]
+        if Applicant.objects.filter(phone_number=phone_number).exists():
+            return JsonResponse({"exists": True})
+    return JsonResponse({"exists": False})
+
+
+def check_student_id(request):
+    if "student_id" in request.GET and "phone_number" in request.GET:
+        student_id = request.GET["student_id"]
+        phone_number = request.GET["phone_number"]
+        if Applicant.objects.filter(student_id=student_id, phone_number=phone_number).exists():
+            applicant = Applicant.objects.get(student_id=student_id, phone_number=phone_number)
+            return JsonResponse({"exists": True, "is_passed": applicant.is_passed})
+    return JsonResponse({"exists": False})
+
+
+def pass_page(request):
+    student_id = request.GET.get("student_id")
+    phone_number = request.GET.get("phone_number")
+
+    applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
+    orientation = Orientation.objects.last()
+    discord = Discord.objects.first()
+
+    context = {
+        "applicant": applicant,
+        "orientation": orientation,
+        "discord": discord,
+    }
+
+    return render(request, "recruit/pass.html", context)
+
+
+def fail_page(request):
+    student_id = request.GET.get("student_id")
+    phone_number = request.GET.get("phone_number")
+
+    applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
+
+    context = {
+        "applicant": applicant
+    }
+    return render(request, "recruit/fail.html", context)

@@ -24,7 +24,7 @@ Footer
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
     color: #FFFFFF;
-    font-size: 23px!important;
+    font-size: 23px;
 }
 
 .footer .page-link a {
@@ -78,6 +78,27 @@ Footer
 Responsive Style
 ---------------------------------------------
 */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .footer h4 {
+        font-size: 20px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .footer h4 {
+        font-size: 23px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .footer h4 {
+        font-size: 20px;
+    }
+}
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {

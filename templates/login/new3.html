@@ -55,6 +55,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="user-box">
                 <input id="username" type="text" name="username" required=""
                 placeholder="아이디를 입력하세요"
+                autocomplete="off"
                 value="{{ form.username.value|default_if_none:'' |escape }}">
                 <i class="uil uil-user"></i>
             </div>
@@ -62,6 +63,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="user-box">
                 <input id="password" type="password" name="password" required=""
                 placeholder="PW를 입력하세요"
+                autocomplete="off"
                 value="{{ form.password.value|default_if_none:'' |escape }}">
                     <i class="uil uil-lock icon"></i>
                     <i class="uil uil-eye-slash showHidePw"></i> 
@@ -111,6 +113,5 @@ https://templatemo.com/tm-579-cyborg-gaming
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-        
 </body>
 </html>

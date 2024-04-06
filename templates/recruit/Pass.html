@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
 
         <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
@@ -30,8 +30,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
+        <!-- Raon Icon Fonts -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
 
         <!-- Sum CSS Files -->
         <link rel="stylesheet" href="{% static 'recruit/css/statusresult.css' %}">
@@ -52,24 +56,35 @@
                         <!-- ***** Pass Start ***** -->
                         <div class="row py-4">
                             <div class="statusResult">
-                                <div class="content">
+                                <div class="col-lg-6">
                                     <div class="page welcome">
                                         <div class="content">
                                             <h1 class="header">CONGRATULATION!</h1>
-                                            <p class ="pg">안녕하세요, 이수미님 I.Sly()입니다.</p>
+                                            <p class ="pg">안녕하세요, {{ applicant.name }}님</p>
+                                            <p class ="pg"><em>I.Sly() {{ applicant.generation }}기 {{ applicant.position }}부원 모집 합격</em>을 진심으로 축하 드립니다.</p>
+                                            <p class ="pg">서류전형을 거쳐 긴장되는 면접을 통과한 후 합격이라는 결과까지 {{ applicant.name }}님께서 보여주신 I.Sly()에 대한 따뜻한 관심과 뜨거운 열정에 깊이 감사 드립니다.</p>
                                             <p class ="pg">&nbsp;</p>
-                                            <p class ="pg">우선 I.Sly() 9기 신입 모집에 관심을 가지고 지원해주셔서 감사드립니다.</p>
-                                            <p class ="pg">심사 결과 이수미님은 이번 신입 모집에서 "기초부원"으로 최종 합격하셨습니다.</p>
-                                            <p class ="pg">OT는 3/2 (토) 대면으로 진행 될 예정이며, 장소는 추후 공지할 예정입니다. (OT는 필참!!입니다.)</p>
-                                            <p class ="pg">&nbsp;</p>
-                                            <p class ="pg">I.Sly()의 모든 공지나 정보 공유, 팀 활동은 디스코드를 통해 전달됩니다.</p>
-                                            <p class ="pg">따라서 모든 신입 부원들께서는 Discord 앱을 설치하시고, 아래 버튼을 눌러 그룹 서버 초대를 받아주셔야 합니다.</p>
-                                            <p class ="pg">해당 초대는 7일 후 만료되니, 그 전까지 서버에 꼭 들어와 주시기 바랍니다.</p>
-                                            <p class ="pg">&nbsp;</p>
-                                            <p class ="pg">다시 한번, I.Sly()에 관심 갖고 지원해주셔서 감사합니다.</p>
-                                            <p class ="pg">&nbsp;</p>
-
-                                            <div class="button">JOIN US!</div>
+                                            <!-- Orientation -->
+                                            {% if orientation %}
+                                                <p class ="pg point">[ 오리엔테이션 안내 ]</p>
+                                                <p class ="pg">오리엔테이션은 {{ orientation.type }}으로 진행될 예정이며, 장소는 추후 공지할 예정입니다.</p>
+                                                <p class ="pg">신입부원들은 오리엔테이션에 반드시 참석하여 주시기 바랍니다.</p>
+                                                <p class ="pg point">{{ orientation.date|date:"Y년 m월 d일" }},</p>
+                                                <p class ="pg">I.Sly()의 신입부원으로 다시 뵙기를 기대하겠습니다.</p>
+                                                <p class ="pg">&nbsp;</p>
+                                            {% endif %}
+                                            <!-- Discord -->
+                                            {% if discord %}
+                                                <p class ="pg point">[ 내부 채널 안내 ]</p>
+                                                <p class ="pg">신입부원들은 디스코드 아이슬리 서버에 <em>{{ discord.expire_after|date:"m월 d일" }}</em>까지 입장해 주시기 바랍니다.</p>
+                                                <p class ="pg">아래 버튼을 클릭하고, 그룹 서버 초대를 수락하시면 됩니다.</p>
+                                                <a href="{{ discord.invite_link }}" class="discord-btn"><i class="fa-brands fa-discord"></i> Discord <i class="bi bi-arrow-up-right-circle"></i></a>
+                                                <p class ="pg">&nbsp;</p>
+                                            {% endif %}
+                                            <!-- Contact -->
+                                            <p class ="pg point">[ 합격 포기 안내 ]</p>
+                                            <p class ="pg">합격 포기 혹은 기타 문의사항이 있으신 분들께서는 운영진에게 연락 주시기 바랍니다.</p>
+                                            <p class ="pg">010-1234-5678</p>
                                         </div>
                                     </div>
                                 </div>
@@ -115,37 +130,7 @@
 
 
         <!-- footer Start -->
-        <div>
-            <div id="section-footer">
-                <div id="footer-text">
-                    <div class="footerbox">
-                        <h2> I.Sly() </h2>
-                        <p> since 2020 </p>
-                        <div class="footer-contact">
-                            <h3> Contact </h3>
-                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
-                            <ion-icon class="call" size="large" name="call"></ion-icon>
-                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <ul class="footer-category">
-                            <li><a href="/recruit/">Recruit</a></li>
-                            <li><a href="/CTF-Challenge/">Wargame</a></li>
-                            <li><a href="/volunteer/">Project</a></li>
-                            <li>
-                                <a>About</a>
-                                <ul class="aboutcolumn">
-                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
-                                    <li><a href="/notice/"> 공지사항 </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        {% include 'footer_2.html' %}
         <!-- footer End -->
 
 
@@ -194,12 +179,11 @@
             document.body.appendChild(script);
         </script>
 
+        <!-- Sumi JavaScript -->
+
+
         <!-- Eunju JavaScript -->
 
-
-        <!-- icons : insta, kakao, call -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     </body>
 
