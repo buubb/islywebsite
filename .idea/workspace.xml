@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7024aecb-8e5c-416a-bed3-915d68218a7f" name="Changes" comment="">
+    <list default="true" id="a265650c-a00b-4b70-ba13-280ee1eb2030" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/statusresult.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/statusresult.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recruit/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,7 @@
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2eiOlmvy3M7oYZJTlNMtupx724a" />
+  <component name="ProjectId" id="2ejjE9p4D8wyyFUlApuGMFPQHoV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,12 +72,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7024aecb-8e5c-416a-bed3-915d68218a7f" name="Changes" comment="" />
-      <created>1712384087309</created>
+      <changelist id="a265650c-a00b-4b70-ba13-280ee1eb2030" name="Changes" comment="" />
+      <created>1712424768443</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712384087309</updated>
-      <workItem from="1712384089973" duration="1206000" />
+      <updated>1712424768443</updated>
+      <workItem from="1712424772027" duration="2507000" />
     </task>
     <servers />
   </component>
