@@ -6,10 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="60920111-5e7b-42ae-96ac-3a139a50424a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notice/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notice/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notice/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/notice/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/AWS 클라우드 서비스 인프라 구축 이해와 해킹, 보안.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/악성코드 분석을 위한 메모리 포렌식.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/안드로이드 모바일 앱 모의해킹과 시큐어코딩.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/웹 개발자와 정보보안 입문자가 꼭 알아야 할 웹 해킹 &amp; 시큐어 코딩.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/취미로 해킹 #4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/취미로 해킹 #5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/취미로 해킹 #6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/카카오뱅크 로고.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/프리다(Frida)를 이용한 안드로이드 앱 모의해킹.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/해킹 대회를 위한 시스템 해킹 프로토스타 완벽 풀이집.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/img/안드로이드.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/img/윈도우악성코드분석.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/img/취미로해킹#4.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/img/취미로해킹#4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,28 +32,33 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2elWPBcnaqLQQty2iULOKhQON6a" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\notice\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -78,6 +93,9 @@
       <option name="presentableId" value="Default" />
       <updated>1712479619781</updated>
       <workItem from="1712479622996" duration="1046000" />
+      <workItem from="1712482384064" duration="119000" />
+      <workItem from="1712482523342" duration="31000" />
+      <workItem from="1712486939185" duration="3293000" />
     </task>
     <servers />
   </component>
