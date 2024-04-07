@@ -59,8 +59,8 @@ class Applicant(models.Model):
         if not re.match(r'^010[0-9]{8}$', self.phone_number):
             raise ValidationError("Phone number must be in the format 010########.")
 
-        if not self.student_id.isdigit():
-            raise ValidationError("Student ID must contain only numbers.")
+        if not re.match(r'^[0-9]{8}$', self.student_id):
+            raise ValidationError("Student ID must be an 8-digit number.")
 
     def save(self, *args, **kwargs):
         self.clean()
@@ -88,3 +88,16 @@ class Discord(models.Model):
 
     def __str__(self):
         return f"Discord Link expires after {self.expire_after}"
+
+
+def validate_contact(value):
+    pattern = re.compile(r'^\d{2,3}-\d{3,4}-\d{4}$')
+    if not pattern.match(value):
+        raise ValidationError("Invalid phone number format. (ex: 010-1234-5678)")
+
+
+class Contact(models.Model):
+    contact = models.CharField("회장단 연락처", max_length=20, validators=[validate_contact])
+
+    def __str__(self):
+        return self.contact

@@ -43,11 +43,10 @@ body {
     border-radius: 8px;
     outline: none;
     font-size: 16px;
-    border: 2px solid #808080;
+    border: 2px solid white;
     transition: border-color 0.4s ease;
     background: transparent;
     color: white; /* 수정된 스타일 */
-    autocomplete:off;
 }
 
 .user-box i {

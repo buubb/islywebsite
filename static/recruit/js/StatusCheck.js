@@ -10,7 +10,7 @@ function validatePhoneNumber() {
         // Admin에 전화번호가 존재하는지 확인
         checkAdminPhoneNumber(phone_number);
     } else {
-        alert("Please enter a valid phone number in the format 010########.");
+        document.getElementById("feedback-1").style.display = "block";
     }
 
     event.preventDefault();
@@ -32,7 +32,7 @@ function checkAdminPhoneNumber(phone_number) {
                 document.getElementById("format").style.display = "none";
                 document.getElementById("entered-number").innerHTML = phone_number;
             } else {
-                alert("Entered phone number does not exist in the list.");
+                alert("Phone Number not found.");
             }
         })
         .catch(error => {
@@ -48,11 +48,11 @@ function validateStudentID() {
     var student_id = document.getElementById("student_id").value;
 
     // 학번 유효성 검사
-    if (/^\d+$/.test(student_id)) {
+    if (/^\d{8}$/.test(student_id)) {
         // Admin에 학번이 존재하는지 확인
         checkAdminStudentID(student_id);
     } else {
-        alert("Please enter a valid student ID.");
+        document.getElementById("feedback-2").style.display = "block";
     }
 
     event.preventDefault();
@@ -78,7 +78,7 @@ function checkAdminStudentID(student_id) {
                     renderFailPage(student_id, phone_number);
                 }
             } else {
-                alert("Entered student ID does not exist in the list.");
+                alert("Student ID not found.");
             }
         })
         .catch(error => {

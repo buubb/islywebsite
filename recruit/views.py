@@ -1,6 +1,6 @@
 # backend
 from django.shortcuts import render, get_object_or_404
-from .models import Recruitment, Announcement, Applicant, Orientation, Discord
+from .models import Recruitment, Announcement, Applicant, Orientation, Discord, Contact
 import datetime
 from django.http import JsonResponse
 
@@ -46,12 +46,14 @@ def pass_page(request):
 
     applicant = get_object_or_404(Applicant, student_id=student_id, phone_number=phone_number)
     orientation = Orientation.objects.last()
-    discord = Discord.objects.first()
+    discord = Discord.objects.last()
+    contact = Contact.objects.last()
 
     context = {
         "applicant": applicant,
         "orientation": orientation,
         "discord": discord,
+        "contact": contact,
     }
 
     return render(request, "recruit/pass.html", context)

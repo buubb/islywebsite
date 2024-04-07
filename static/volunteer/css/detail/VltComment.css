@@ -59,21 +59,21 @@ Custom Text
 
 /*
 ---------------------------------------------
-Item
+Comment_item
 ---------------------------------------------
 */
 
-.VltComment .item {
+.VltComment .comment_item {
     padding: 30px;
     border-radius: 23px;
     background: #FFFFFF;
 }
 
-.VltComment .item i {
+.VltComment .comment_item i {
     color: #000000;
 }
 
-.VltComment .item .down-content {
+.VltComment .comment_item .down_content {
     border-top: 2px solid #000000;
     padding: 25px 0 0;
 }
