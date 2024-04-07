@@ -21,20 +21,18 @@ Custom Text
 ---------------------------------------------
 */
 
-.DevList h5,
-.DevList span {
+.DevList h5 {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
-}
-
-.DevList h5 {
     font-weight: 800;
     color: #000000;
 }
 
 .DevList span {
-    font-size: 14px;
-    font-weight: 500;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: 0.055em;
+    font-size: 13px;
+    font-weight: 550;
     line-height: 1.5;
     /* color: #696B6E; */
 }
@@ -70,19 +68,20 @@ Task
 
 .dev-item .dev-task a {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #2A2C30;
-    background: #EEEEEE;
+    color: #000000;
+    background-color: transparent;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 550;
     letter-spacing: 0.075em;
     text-decoration: none;
     border: none;
     margin-top: 15px;
+    padding: 5px;
 }
 
 .dev-item .dev-task a:hover {
-    color: #2A2C30;
-    background: #D6D6D6;
+    color: #000000;
+    background-color: #EEEEEE;
     border: none;
 }
 

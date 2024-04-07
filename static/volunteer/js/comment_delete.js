@@ -20,12 +20,12 @@ $(document).ready(function() {
                 },
                 success: function(response) {
                     if (response.success) {
-                        // 삭제 권한이 있는 경우: comment_item 삭제
+                        // 삭제 권한이 있는 경우
                         $this.closest(".comment_item").remove();
                         // 숫자와 아이콘 업데이트
                         var commentCount = response.comment_count;
                         $(".comment-btn").html('<i class="fa-regular fa-message"></i> ' + commentCount);
-                        // 댓글이 0개인 경우: VltComment 삭제
+                        // 댓글이 0개인 경우
                         if (commentCount == 0) {
                             $(".VltComment").remove();
                         }
