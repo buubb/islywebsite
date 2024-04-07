@@ -121,7 +121,54 @@
  font-weight: 700;
  font-size: 30px;
 }
+#news-line{
+  display:flex;
+  justify-content: left;
+  margin-top:100px
+}
 
+#news-line .news-box{
+  display: inline;
+  width:28.67%;
+  height:27%;
+  margin: 30px;
+  padding:0px 0px 30px 0px;
+  background-color: #FFFFFF;
+  border-radius: 23px;
+  filter:brightness(1);
+}
+#news-line .news-box:hover{
+  filter:brightness(0.8);
+}
+#news-line .news-box .caption{
+  position:absolute;
+  top: 40%;
+  left: 0;
+  right:0;
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+#news-line .news-box .caption h2{
+  color: #FFFFFF;
+  font-size: 20px!important;
+  
+}
+#news-line .news-box:hover .caption{
+  opacity: 1;
+}
+#news-line .news-box img{
+  width:100%!important;
+  height:100%!important;
+  border-radius: 23px 23px 0px 0px;
+}
+#news-line .news-box p{
+  padding: 7px;
+  text-align: left;
+  font-size: 15px!important;
+  overflow: hidden;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
 .blog-slider {
   width: 95%;
   position: relative;
