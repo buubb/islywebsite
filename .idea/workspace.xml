@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60920111-5e7b-42ae-96ac-3a139a50424a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/AWS 클라우드 서비스 인프라 구축 이해와 해킹, 보안.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/악성코드 분석을 위한 메모리 포렌식.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/안드로이드 모바일 앱 모의해킹과 시큐어코딩.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/웹 개발자와 정보보안 입문자가 꼭 알아야 할 웹 해킹 &amp; 시큐어 코딩.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/취미로 해킹 #4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/취미로 해킹 #5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/취미로 해킹 #6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/카카오뱅크 로고.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/프리다(Frida)를 이용한 안드로이드 앱 모의해킹.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/해킹 대회를 위한 시스템 해킹 프로토스타 완벽 풀이집.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/img/안드로이드.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/img/윈도우악성코드분석.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/img/취미로해킹#4.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/img/취미로해킹#4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +81,7 @@
       <workItem from="1712479622996" duration="1046000" />
       <workItem from="1712482384064" duration="119000" />
       <workItem from="1712482523342" duration="31000" />
-      <workItem from="1712486939185" duration="3293000" />
+      <workItem from="1712486939185" duration="3714000" />
     </task>
     <servers />
   </component>
