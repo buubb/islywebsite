@@ -375,6 +375,19 @@
                                                 <h4>챌린지로 알아보는 디지털포렌식 해킹 대회 준비 (기초)<br><span>#Forensic #침해대응</span></h4>
                                             </a>
                                         </div>
+                                        {% if rental %}
+                                            <div class="item">
+                                                <a href="{{ rental.link }}">
+                                                    <div class="thumb">
+                                                        <img src="{{ rental.thumbnail.url }}" alt="{{ rental.title }}">
+                                                        <div class="hover-effect">
+                                                            <h6>Click</h6>
+                                                        </div>
+                                                    </div>
+                                                    <h4>{{ rental.title }}<br><span>#{{ rental.hashtags }}</span></h4>
+                                                </a>
+                                            </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>

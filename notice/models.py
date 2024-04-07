@@ -20,3 +20,20 @@ class RentalLink(models.Model):
 
     def __str__(self):
         return self.link
+
+
+class Hashtag(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
+class Rental(models.Model):
+    title = models.CharField(max_length=100)
+    link = models.URLField()
+    hashtags = models.ManyToManyField('Hashtag')
+    thumbnail = models.ImageField(upload_to="lecture")
+
+    def __str__(self):
+        return self.title
