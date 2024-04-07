@@ -105,7 +105,7 @@ Item
 /* Hashtag */
 .NoticeTask .item span {
     color: #8D8F91;
-    display: block;
+    display: inline-block;
     margin-top: 7px;
     font-weight: 500;
     /* add */

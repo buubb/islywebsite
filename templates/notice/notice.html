@@ -386,11 +386,9 @@
                                                             </div>
                                                         </div>
                                                         <h4>{{ lecture.title }}<br>
-                                                            <span>
-                                                                {% for hashtag in lecture.hashtags.all %}
-                                                                    #{{ hashtag.name }}
-                                                                {% endfor %}
-                                                            </span>
+                                                            {% for hashtag in lecture.hashtags.all %}
+                                                                <span>#{{ hashtag.name }}</span>
+                                                            {% endfor %}
                                                         </h4>
                                                     </a>
                                                 </div>
