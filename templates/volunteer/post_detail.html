@@ -42,6 +42,7 @@
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
 
     </head>
 
@@ -156,18 +157,23 @@
                                     <div class="row g-4">
                                         {% for comment in post.comment_set.all %}
                                             <div class="col-xl-4 col-lg-6">
-                                                <div class="item">
+                                                <div class="comment_item">
                                                     <div class="d-flex justify-content-between mb-3">
                                                         <div class="d-flex align-items-center">
                                                             <i class="fa fa-quote-left fa-2x"></i>
                                                         </div>
                                                         <div class="d-flex align-items-center">
-                                                            <button class="comment_edit me-3"><i class="fa-solid fa-pen-to-square fa-lg"></i></button>
-                                                            <button class="comment_delete"><i class="fa-solid fa-trash-can fa-lg"></i></button>
+                                                            {% if request.user == comment.user %}
+                                                                <button class="comment_edit me-3"><i class="fa-solid fa-pen-to-square fa-lg"></i></button>
+                                                                <form action="{% url 'Volunteer:comment_delete' comment.id %}" method="post">
+                                                                    {% csrf_token %}
+                                                                    <button type="submit" class="comment_delete"><i class="fa-solid fa-trash-can fa-lg"></i></button>
+                                                                </form>
+                                                            {% endif %}
                                                         </div>
                                                     </div>
                                                     <p>{{ comment.content }}</p>
-                                                    <div class="down-content d-flex align-items-center mt-4">
+                                                    <div class="down_content d-flex align-items-center mt-4">
                                                         <div class="flex-shrink-0">
                                                             <i class="fa-solid fa-circle-user fa-3x"></i>
                                                         </div>
@@ -236,36 +242,7 @@
 
 
         <!-- footer Start -->
-        <div>
-            <div id="section-footer">
-                <div id="footer-text">
-                    <div class="footerbox">
-                        <h2> I.Sly() </h2>
-                        <p> since 2020 </p>
-                        <div class="footer-contact">
-                            <h3> Contact </h3>
-                            <ion-icon class="insta" size="large" name="logo-instagram"></ion-icon>
-                            <ion-icon class="call" size="large" name="call"></ion-icon>
-                            <ion-icon class="talk" size="large" name="chatbubbles"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <ul class="footer-category">
-                            <li><a href="/recruit/">Recruit</a></li>
-                            <li><a href="/CTF-Challenge/">Wargame</a></li>
-                            <li><a href="/volunteer/">Project</a></li>
-                            <li>
-                                <a>About</a>
-                                <ul class="aboutcolumn">
-                                    <li><a href="/introduction/"> 동아리 소개 </a></li>
-                                    <li><a href="/notice/"> 공지사항 </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include 'footer_2.html' %}
         <!-- footer End -->
 
 
@@ -311,11 +288,10 @@
         <script src="{% static 'volunteer/js/delete.js' %}"></script>
         <script src="{% static 'volunteer/js/like.js' %}"></script>
         <script src="{% static 'volunteer/js/share.js' %}"></script>
+        <script src="{% static 'volunteer/js/comment_delete.js' %}"></script>
         <script src="{% static 'volunteer/js/VltCarousel.js' %}"></script>
 
-        <!-- icons : insta, kakao, call -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
     </body>
 

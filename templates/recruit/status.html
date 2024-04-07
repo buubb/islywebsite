@@ -73,9 +73,10 @@
                                             <div id="phoneNumber-box">
                                                 <form>
                                                     <div class="input-field">
-                                                        <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" autocomplete="off" required>
+                                                        <input type="number" id="phone_number" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" autocomplete="off" required>
                                                         <i class="uil uil-smile"></i>
                                                     </div>
+                                                    <p id="feedback-1" class="mt-2" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid phone number.</p>
                                                     <button class="next-btn" onclick="validatePhoneNumber()">Next</button>
                                                 </form>
                                             </div>
@@ -83,9 +84,10 @@
                                             <div id="studentID-box">
                                                 <form>
                                                     <div class="input-field">
-                                                        <input type="text" id="student_id" name="student_id" placeholder="Student ID" aria-label="Student ID" autocomplete="off" required>
+                                                        <input type="number" id="student_id" name="student_id" placeholder="Student ID" aria-label="Student ID" autocomplete="off" required>
                                                         <i class="uil uil-book-alt"></i>
                                                     </div>
+                                                    <p id="feedback-2" class="mt-2" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid student ID.</p>
                                                     <button class="next-btn" onclick="validateStudentID()">Next</button>
                                                 </form>
                                             </div>

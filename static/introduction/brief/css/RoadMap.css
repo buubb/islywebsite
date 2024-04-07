@@ -11,16 +11,9 @@ Basic
 
 /*
 ---------------------------------------------
-Subtitle, Title
+Title
 ---------------------------------------------
 */
-
-.RoadMap .subtitle {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.075em;
-    cursor: text !important;
-}
 
 .RoadMap .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -39,18 +32,15 @@ Custom Text
 ---------------------------------------------
 */
 
-.RoadMap #week,
-.RoadMap #hashtag {
+.RoadMap .week {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-.RoadMap #week {
     color: #FFFFFF;
     font-weight: 700;
     letter-spacing: 0.075em;
 }
 
-.RoadMap #hashtag {
+.RoadMap .hashtag {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #8D8F91;
     font-weight: 400;
 }

@@ -1,7 +1,9 @@
+# urls.py
 from django.urls import path
-from .views import Notice
+from .views import notice
+
 
 urlpatterns = [
     # url path: notice/
-    path('', Notice.as_view())
+    path('', notice, name="notice")
 ]

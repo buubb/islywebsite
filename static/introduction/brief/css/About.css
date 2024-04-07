@@ -1,10 +1,17 @@
 /*
 ---------------------------------------------
-Title
+Subtitle, Title
 ---------------------------------------------
 */
 
-.DevList .title {
+.About .subtitle {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    cursor: text !important;
+}
+
+.About .title {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: #FFFFFF;
     display: block;
@@ -14,6 +21,10 @@ Title
     text-transform: capitalize;
 }
 
+.About em {
+    color: #57F579;
+    font-style: normal;
+}
 
 /*
 ---------------------------------------------
@@ -21,129 +32,83 @@ Custom Text
 ---------------------------------------------
 */
 
-.DevList h5 {
+.About p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 450;
     letter-spacing: 0.075em;
+    text-align: justify;
+    color: #CCCCCC;
+}
+
+.About h5 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 800;
-    color: #000000;
-}
-
-.DevList span {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    letter-spacing: 0.055em;
-    font-size: 13px;
-    font-weight: 550;
-    line-height: 1.5;
-    /* color: #696B6E; */
-}
-
-
-/*
----------------------------------------------
-Item
----------------------------------------------
-*/
-
-.dev-item {
-    position: relative;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 23px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/*
----------------------------------------------
-Task
----------------------------------------------
-*/
-
-.dev-item .dev-task {
-    text-align: center;
-    padding: 0 10px;
-}
-
-.dev-item .dev-task a {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #000000;
-    background-color: transparent;
-    font-size: 10px;
-    font-weight: 550;
     letter-spacing: 0.075em;
-    text-decoration: none;
-    border: none;
-    margin-top: 15px;
-    padding: 5px;
+    color: #FFFFFF;
 }
 
-.dev-item .dev-task a:hover {
-    color: #000000;
-    background-color: #EEEEEE;
-    border: none;
+.About .fa-solid {
+    color: #FFFFFF;
 }
 
 
 /*
 ---------------------------------------------
-Social
+Button
 ---------------------------------------------
 */
 
-.dev-item .dev-social {
-    position: absolute;
-    padding: 0;
-    top: 15px;
-    left: 0;
+.About .about-btn {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
     overflow: hidden;
 }
 
-.dev-item .dev-social li {
-    list-style-type: none;
-    margin-bottom: 10px;
-    margin-left: -50px;
-    opacity: 0;
-    transition: .5s;
+
+/*
+---------------------------------------------
+Img Border
+---------------------------------------------
+*/
+
+.About .img-border {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
 }
 
-.dev-item:hover .dev-social li {
-    margin-left: 15px;
-    opacity: 1;
+.About .img-border::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 3rem;
+    bottom: 3rem;
+    border: 5px solid #FFFFFF;
+    border-radius: 0;
 }
 
-.dev-item .dev-social li .btn {
-    background: #424549;
-    color: #FFFFFF;
-    border-radius: 40px;
-    transition: .5s;
-}
-
-.dev-item .dev-social li .btn:hover {
-    color: #424549;
-    background: #FFFFFF;
-    border: none;
-}
-
-.dev-item .dev-social li:nth-child(1) {
-    transition-delay: .1s;
-}
-
-.dev-item .dev-social li:nth-child(2) {
-    transition-delay: .2s;
-}
-
-.dev-item .dev-social li:nth-child(3) {
-    transition-delay: .3s;
-}
-
-.dev-item .dev-social li:nth-child(4) {
-    transition-delay: .4s;
-}
-
-.dev-item .dev-social li:nth-child(5) {
-    transition-delay: .5s;
+.About .img-border img {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    object-fit: cover;
+    border-radius: 0;
 }
 
 
@@ -155,35 +120,45 @@ Responsive Style
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-    .dev-item #devlink {
-        display: none;
+    .About .title {
+        font-size: 35px;
+        letter-spacing: 0.055em;
+
     }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .dev-item #devlink {
-        display: inline-block;
+    .About .title {
+        font-size: 28px;
+    }
+    .About h5 {
+        line-height: 1.5;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .dev-item #devlink,
-    .dev-item #footerlink {
-        display: none;
+    .About .title {
+        font-size: 40px;
+        letter-spacing: 0.075em;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .dev-item #devlink,
-    .dev-item #footerlink {
-        display: inline-block;
+    .About .title {
+        font-size: 30px;
+    }
+
+    .About h5 {
+        font-size: 18px;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    .About .title {
+        font-size: 25px;
+    }
 }

@@ -5,6 +5,7 @@ from volunteer.models import Post, Comment, PostImage
 from volunteer.forms import CommentForm, PostForm
 from django.contrib.humanize.templatetags.humanize import ordinal
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 
 
@@ -121,12 +122,13 @@ def post_delete(request, post_id):
         return render(request, "volunteer/404_2.html")
 
 
+@require_POST
 @login_required(login_url="login")
 def post_like(request, post_id):
     post = Post.objects.get(id=post_id)
     user = request.user
 
-    if request.method == "POST" and user.is_authenticated:
+    if user.is_authenticated:
         # 사용자가 "좋아요를 누른 Post 목록"에 "좋아요 버튼을 누른 Post"가 존재한다면
         if user.like_posts.filter(id=post.id).exists():
             # 좋아요 목록에서 삭제
@@ -140,11 +142,11 @@ def post_like(request, post_id):
         response_data = {
             "liked": liked,
             "like_count": post.like_users.count(),
-            "logged_in": True,  # 사용자가 로그인 상태임을 전달
+            "logged_in": True,
         }
     else:
         response_data = {
-            "logged_in": False,  # 사용자가 로그인 상태가 아님을 전달
+            "logged_in": False,
         }
 
     return JsonResponse(response_data)
@@ -178,3 +180,20 @@ def comment_add(request, post_id):
         "post_id": post_id,
     }
     return render(request, "volunteer/comment_add.html", context)
+
+
+@login_required(login_url="login")
+def comment_delete(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    if request.user == comment.user:
+        # 권한이 있는 경우
+        comment.delete()
+        # 댓글 개수 반환
+        post_id = comment.post.id
+        post = Post.objects.get(id=post_id)
+        comment_count = post.comment_set.count()
+        return JsonResponse({"success": True, "comment_count": comment_count})
+    else:
+        # 권한이 없는 경우
+        return JsonResponse({"success": False})

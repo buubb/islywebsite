@@ -299,11 +299,107 @@ https://templatemo.com/tm-579-cyborg-gaming
   <div class="row">
     <div class="col-lg-12">
       <div class="vivid"><!--wrapper-->
-      <div class="vividtitle" translate="no">
-        <h1>Benefits</h1>
-        <p>hhhhhhhhhhhh</p>
-      </div>
-      <div class="slidebody" translate="no"><!-- card -->
+        <div class="vividtitle" translate="no">
+          <h1>I.Sly() NEWS</h1>
+        </div>
+        <!-- instagram 연동 -->
+        <!-- <div>
+        <script>
+            $.ajax({
+              url: 'https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url&access_token=IGQWRNdWc5eDk0QlJWWWxtVFUzQ0JIa0x2VW80NjJiX1ZAlVm9TOUNhZA3laTk1DR1QyWk9EOXJSTGE1NjZABQ0xHMmhsVU5wWjZAGdFBBNTdERjNORU9lOGJ1WnBWUEFzbDJVZADJ3ZAmZAFLVF2RlRNNnFCY2JwYzMyRUkZD',
+              method: 'GET',
+              dataType: 'jsonp',
+              success: function (response) {
+                // API 요청이 성공했을 때 실행될 코드
+                // for (var i = 0; i < response.data.length; i++) {
+                //   var imgUrl = response.data[i].media_url;
+                //   var caption = response.data[i].caption;
+                //   var $img = $('<img>').attr('src', imgUrl);
+                //   $('#instagram-feed').append($img);
+                // }
+
+                console.log(response);
+                console.log("success!");
+              },
+              error: function (xhr, status, error) {
+                // API 요청이 실패했을 때 실행될 코드
+              console.log(xhr.responseText);
+              }
+            });
+        </script>
+        </div> -->
+        <div class="row" id="news-line"></div>
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        var token = "IGQWRNdWc5eDk0QlJWWWxtVFUzQ0JIa0x2VW80NjJiX1ZAlVm9TOUNhZA3laTk1DR1QyWk9EOXJSTGE1NjZABQ0xHMmhsVU5wWjZAGdFBBNTdERjNORU9lOGJ1WnBWUEFzbDJVZADJ3ZAmZAFLVF2RlRNNnFCY2JwYzMyRUkZD";
+
+        /*
+            발급된 토큰은 장기 실행 액세스 토큰으로 60일간 사용이 가능합니다.
+            https://developers.facebook.com/docs/instagram-basic-display-api/guides/long-lived-access-tokens
+
+            발급된 토큰은 만료일(60일)이내에 refresh_access_token혹은, 페이스북 개발자 센터내의 토큰 재발급을 통해 연장을 해주어야합니다.
+            https://developers.facebook.com/docs/instagram-basic-display-api/reference/refresh_access_token
+        */
+
+        $.ajax({
+            type: "GET",
+            dataType: "jsonp",
+            cache: false,
+            url: "https://graph.instagram.com/me/media?access_token=" + token + "&fields=id,caption,media_type,media_url,thumbnail_url,permalink",
+            success: function(response) {
+                console.log(response);
+                if (response.data != undefined && response.data.length > 0) {
+                    for(i = 0; i < 10; i++){
+                        if(response.data[i]){
+                            var item = response.data[i];
+                            var image_url = "";
+                            var post = "";
+
+                            if(item.media_type === "VIDEO"){
+                                image_url = item.thumbnail_url;
+                            }else{
+                                image_url = item.media_url;
+                            }
+
+                            post += '<div class="news-box instagram_item'+i+'">';
+                                post += '<a href="'+ item.permalink +'" target="_blank" rel="noopener noreferrer" >'; // style="background-image: url(' + image_url + ');"
+                                    post += '<img src="'+image_url+'">';
+                                    post += '<p>'+ item.caption +'</p>';
+                                post += '</a>';
+                                post += '<div class="caption">';
+                                  post += '<h2> view all </h2>';
+                                post += '</div>';
+                            post += '</div>';
+
+                            $('#news-line').append(post);
+                        }else{
+                            // if no curent item
+                            show_fallback('#insta-item-'+i)
+                        }
+                    }
+                }else{
+                    // if api error
+                    show_fallback('.news-box')
+                }
+            },
+            error :function(){
+                // if http error
+                show_fallback('.news-box')
+            }
+
+        });
+
+        function show_fallback(el){
+            $(el).addClass('loaded fallback');
+        }
+
+    </script>
+        <!-- instagram 연동-->
+        
+        <!-- <div class="slidebody" translate="no"><!-- card
         <div class="partner-box">
           <div class="front">front</div>
           <div class="back">back</div>
@@ -320,10 +416,10 @@ https://templatemo.com/tm-579-cyborg-gaming
           <div class="front">front</div>
           <div class="back">back</div>
         </div>
+        </div> -->
       </div>
     </div>
   </div>
-</div>
 </div>
 <!--vivid review-->
 

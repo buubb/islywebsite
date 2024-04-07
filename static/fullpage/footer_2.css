@@ -14,12 +14,14 @@ Footer
     letter-spacing: 0.075em;
     color: #FFFFFF;
 }
+
 .footer h2 {
-    font-size: 30px!important;
+    font-size: 30px !important;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
     color: #FFFFFF;
 }
+
 .footer h4 {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
@@ -29,50 +31,52 @@ Footer
 
 .footer .page-link a {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    letter-spacing: 0.075em;
+    letter-spacing: 0.1rem;
     color: #FFFFFF;
     transition: .5s;
-    font-size:15px!important;
+    font-size: 15px !important;
 }
 
 .footer .page-link a:hover {
     letter-spacing: 2px;
 }
 
-.footer .footer-res-nav{
+.footer .footer-res-nav {
     display: none;
 }
 
-.footer-btn{
-    border: 2px solid #FFFFFF!important;
-    border-radius: 23px!important;
-    background-color: #1f2122!important;
-    padding:7px 25px!important;
+.footer .footer-btn {
+    border: 2px solid #FFFFFF !important;
+    border-radius: 23px !important;
+    background-color: #1f2122 !important;
+    padding: 7px 25px !important;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
     color: #FFFFFF;
     transition: .5s;
 }
 
-.footer-icons{
-    width:27px!important;
-    height:27px!important;
-    margin-right:20px;
-  }
-
-.f-tistory{
-    width:24px!important;
-    height:24px!important;
-    margin-right:20px;
+.footer .footer-icons {
+    width: 27px !important;
+    height: 27px !important;
+    margin-right: 20px;
 }
 
-.page-link .py-3{
-    padding-top:0.6rem!important;
-    padding-bottom:0.6rem!important;
+.footer .f-tistory {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 20px;
 }
-.page-link .pb-3{
-    padding-bottom:0.6rem!important;
+
+.footer .page-link .py-3 {
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
 }
+
+.footer .page-link .pb-3 {
+    padding-bottom: 0.6rem !important;
+}
+
 /*
 ---------------------------------------------
 Responsive Style
@@ -105,15 +109,18 @@ Responsive Style
     .footer .link {
         display: none;
     }
-    .footer{
+
+    .footer {
         text-align: center;
     }
-    .d-flex{
-        justify-content: center!important;
+
+    .footer .d-flex {
+        justify-content: center !important;
     }
-    .footer .footer-res-nav{
-        margin-top:40px!important;
+
+    .footer .footer-res-nav {
+        margin-top: 40px !important;
         display: inline-block;
-        text-align:center;
+        text-align: center;
     }
 }
