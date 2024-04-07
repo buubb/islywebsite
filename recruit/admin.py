@@ -19,46 +19,44 @@ class BaseDateAdmin(admin.ModelAdmin):
             form.add_error(None, e)
 
 
+@admin.register(Recruitment)
 class RecruitmentAdmin(BaseDateAdmin):
-    list_display = ("start_date", "end_date", "application_link")
+    list_display = ["start_date", "end_date", "application_link"]
 
 
+@admin.register(Announcement)
 class AnnouncementAdmin(BaseDateAdmin):
-    list_display = ("start_date", "end_date")
+    list_display = ["start_date", "end_date"]
 
 
+@admin.register(Applicant)
 class ApplicantAdmin(admin.ModelAdmin):
-    list_display = ("generation", "position", "name", "student_id", "phone_number", "is_passed")
+    list_display = ["generation", "position", "name", "student_id", "phone_number", "is_passed"]
     ordering = ["-generation"]
 
 
+@admin.register(Orientation)
 class OrientationAdmin(BaseDateAdmin):
-    list_display = ("date", "type")
+    list_display = ["date", "type"]
 
     def save_model(self, request, obj, form, change):
         Orientation.objects.all().delete()
         super().save_model(request, obj, form, change)
 
 
+@admin.register(Discord)
 class DiscordAdmin(BaseDateAdmin):
-    list_display = ("expire_after", "invite_link")
+    list_display = ["expire_after", "invite_link"]
 
     def save_model(self, request, obj, form, change):
         Discord.objects.all().delete()
         super().save_model(request, obj, form, change)
 
 
+@admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ("contact",)
+    list_display = ["contact"]
 
     def save_model(self, request, obj, form, change):
         Contact.objects.all().delete()
         super().save_model(request, obj, form, change)
-
-
-admin.site.register(Recruitment, RecruitmentAdmin)
-admin.site.register(Announcement, AnnouncementAdmin)
-admin.site.register(Applicant, ApplicantAdmin)
-admin.site.register(Orientation, OrientationAdmin)
-admin.site.register(Discord, DiscordAdmin)
-admin.site.register(Contact, ContactAdmin)
