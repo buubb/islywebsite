@@ -1,19 +1,18 @@
 # backend
 from django.shortcuts import render
-from rest_framework.views import APIView
-from .models import AttendanceLink, SubmissionLink, RentalLink
+from .models import AttendanceLink, SubmissionLink, RentalLink, Lecture
 
-class Notice(APIView):
-    def get(self, request):
-        print("get으로 호출")
-        attendance_link = AttendanceLink.objects.first()
-        submission_link = SubmissionLink.objects.first()
-        rental_link = RentalLink.objects.first()  
-        return render(request, "notice/notice.html", {"attendance_link": attendance_link, "submission_link": submission_link, "rental_link": rental_link})
 
-    def post(self, request):
-        print("post로 호출")
-        attendance_link = AttendanceLink.objects.first()
-        submission_link = SubmissionLink.objects.first()
-        rental_link = RentalLink.objects.first()  
-        return render(request, "notice/notice.html", {"attendance_link": attendance_link, "submission_link": submission_link, "rental_link": rental_link})
+def notice(request):
+    attendance_link = AttendanceLink.objects.last()
+    submission_link = SubmissionLink.objects.last()
+    rental_link = RentalLink.objects.last()
+    lectures = Lecture.objects.all()
+
+    context = {
+        "attendance_link": attendance_link,
+        "submission_link": submission_link,
+        "rental_link": rental_link,
+        "lectures": lectures,
+    }
+    return render(request, "notice/notice.html", context)

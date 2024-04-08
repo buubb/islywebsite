@@ -44,6 +44,7 @@ Item
 .NoticeTask .item .thumb {
     position: relative;
     overflow: hidden;
+    aspect-ratio: 3 / 2;
 }
 
 .NoticeTask .item .thumb .hover-effect {
@@ -79,6 +80,9 @@ Item
 
 .NoticeTask .item img {
     border-radius: 23px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Topic */
@@ -86,19 +90,22 @@ Item
     font-size: 17px;
     margin-top: 20px;
     margin-bottom: 0;
-    display: inline-block;
     /* add */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     line-height: 1.3;
     letter-spacing: 0.075em;
     font-weight: 700;
     color: #FFFFFF;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* Hashtag */
 .NoticeTask .item span {
     color: #8D8F91;
-    display: block;
+    display: inline-block;
     margin-top: 7px;
     font-weight: 500;
     /* add */
