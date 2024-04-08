@@ -40,16 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function togglePasswordVisibility() {
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            eyesIcon.classList.add('active');
-            eyesIcon.classList.remove('uil-eye-slash');
-            eyesIcon.classList.add('uil-eye');
-        } else {
-            passwordInput.type = "password";
-            eyesIcon.classList.remove('active');
-            eyesIcon.classList.remove('uil-eye');
-            eyesIcon.classList.add('uil-eye-slash');
+        if (passwordInput.value.trim() !== "") {
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyesIcon.classList.add('active');
+                eyesIcon.classList.remove('uil-eye-slash');
+                eyesIcon.classList.add('uil-eye');
+            } else {
+                passwordInput.type = "password";
+                eyesIcon.classList.remove('active');
+                eyesIcon.classList.remove('uil-eye');
+                eyesIcon.classList.add('uil-eye-slash');
+            }
         }
     }
     
