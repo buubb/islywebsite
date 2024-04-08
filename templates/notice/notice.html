@@ -375,18 +375,24 @@
                                                 <h4>챌린지로 알아보는 디지털포렌식 해킹 대회 준비 (기초)<br><span>#Forensic #침해대응</span></h4>
                                             </a>
                                         </div>
-                                        {% if rental %}
-                                            <div class="item">
-                                                <a href="{{ rental.link }}">
-                                                    <div class="thumb">
-                                                        <img src="{{ rental.thumbnail.url }}" alt="{{ rental.title }}">
-                                                        <div class="hover-effect">
-                                                            <h6>Click</h6>
+                                        {% if lectures %}
+                                            {% for lecture in lectures %}
+                                                <div class="item">
+                                                    <a href="{{ lecture.link }}">
+                                                        <div class="thumb">
+                                                            <img src="{{ lecture.thumbnail.url }}" alt="{{ lecture.title }}">
+                                                            <div class="hover-effect">
+                                                                <h6>Click</h6>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <h4>{{ rental.title }}<br><span>#{{ rental.hashtags }}</span></h4>
-                                                </a>
-                                            </div>
+                                                        <h4>{{ lecture.title }}<br>
+                                                            {% for hashtag in lecture.hashtags.all %}
+                                                                <span>#{{ hashtag.name }}</span>
+                                                            {% endfor %}
+                                                        </h4>
+                                                    </a>
+                                                </div>
+                                            {% endfor %}
                                         {% endif %}
                                     </div>
                                 </div>

@@ -2,28 +2,23 @@ document.addEventListener("DOMContentLoaded", function() {
     var usernameInput = document.getElementById("username");
     var passwordInput = document.getElementById("password");
     var loginButton = document.getElementById("login-button");
-    var spanElements = document.querySelectorAll(".login-box button span");
     var eyesIcon = document.querySelector('.showHidePw');
+    var errorMessage = document.getElementById("error-message");
 
 
-    // 이전 페이지의 URL 파라미터 제거
-    var urlWithoutNext = window.location.href.split('?')[0];
-    window.history.replaceState({}, document.title, urlWithoutNext);
+    var currentUrl = window.location.href;
+    var baseUrl = currentUrl.split('/login')[0]; // "/login" 이전의 부분을 가져옴
+    var newUrl = baseUrl + '/login';
+    window.history.replaceState({}, document.title, newUrl);
 
 
     function checkInputs() {
         if (usernameInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
             loginButton.disabled = false;
             loginButton.classList.add("active");
-            spanElements.forEach(function(span) {
-                span.style.display = "block";
-            });
         } else {
             loginButton.disabled = true;
             loginButton.classList.remove("active");
-            spanElements.forEach(function(span) {
-                span.style.display = "none";
-            });
         }
     }
 
@@ -55,5 +50,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
+    // 에러 메시지가 존재하는 경우 표시
+    var errorMessage = document.getElementById("error_message");
+
+    // 에러 메시지가 존재하는 경우 표시
+    if (errorMessage && errorMessage.innerText.trim() !== "") {
+        errorMessage.style.display = "block";
+        // 에러 메시지를 화면에 표시
+        showAlert(errorMessage.innerText);
+    }
+
+    function showAlert(message) {
+        alert(message);
+    }
+
     checkInputs();
 });

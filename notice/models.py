@@ -29,10 +29,10 @@ class Hashtag(models.Model):
         return self.name
 
 
-class Rental(models.Model):
+class Lecture(models.Model):
     title = models.CharField(max_length=100)
     link = models.URLField()
-    hashtags = models.ManyToManyField('Hashtag')
+    hashtags = models.ManyToManyField(Hashtag)
     thumbnail = models.ImageField(upload_to="lecture")
 
     def __str__(self):
