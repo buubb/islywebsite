@@ -8,46 +8,40 @@ from django.contrib.auth import get_user_model
 from django.http import HttpResponse
 from django.utils import timezone
 from django.urls import reverse
+from django.contrib import messages
+from django.http import HttpResponseRedirect
+
 
 LOGIN_TRY_LIMIT=5
 
 class Login(APIView):
     def get(self, request):
-        print("get으로 호출")
         if request.user.is_authenticated:
-            return render(request, 'islyweb/index.html')
+            return render(request, 'mainpage/index.html')
         else:
-            form=AuthenticationForm()
-            return render(request, 'login/new3.html', {'form':form})
-            
-    
+            form = AuthenticationForm()
+            return render(request, 'login/new3.html', {'form': form})
+
     def post(self, request):
-        print("post로 호출")
         form = AuthenticationForm(request=request, data=request.POST)
         if form.is_valid():
-            username=form.cleaned_data.get('username')
-            password=form.cleaned_data.get('password')
-            user_instance = get_user_model().objects.get(username=username)
-            user=authenticate(username=username, password=password)
-            
-            next = request.POST["next"]
-
-            if user is not None: #사용자가 인증되었는지 확인
-                print(user)
-                LoginFail.objects.filter(user__username=username).delete()
-                    
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
                 login(request, user)
-                return redirect(next)
-                # return render(request, 'islyweb/index.html')
+                next_url = request.POST.get('next', '')
+                if next_url:
+                    return redirect(next_url)
+                return redirect('mainpage:index')  # 로그인 성공 시 메인 페이지로 이동
             else:
-                # 로그인 실패 기록 가져오기
-                if LoginFail.objects.filter(user__username=username).exists():
-                    login_fail = LoginFail.objects.get_or_create(user=user_instance, defaults={"count": 0})[0]
-                    count = login_fail.count
-                else:
-                    count = 0
+                error_message = "아이디 또는 비밀번호가 올바르지 않습니다."
+                messages.error(request, error_message)
+                return redirect('login')  # 로그인 실패 시 로그인 페이지로 리다이렉트
         else:
-            return redirect(reverse("login"))
+            error_message = "로그인에 실패하였습니다. 다시 시도해주세요."
+            messages.error(request, error_message)
+            return redirect('login')  # 폼이 유효하지 않을 때 로그인 페이지로 리다이렉트
 
 
 class Logout(APIView):
@@ -55,7 +49,7 @@ class Logout(APIView):
         print("get으로 호출")
         if request.user.is_authenticated:
             Logout(request)
-            return render(request, 'islyweb/index.html')
+            return render(request, 'mainpage/index.html')
 
 
 from django.http import HttpResponse

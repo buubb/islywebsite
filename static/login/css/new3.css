@@ -43,10 +43,10 @@ body {
     border-radius: 8px;
     outline: none;
     font-size: 16px;
-    border: 2px solid white;
+    border: 2px solid #808080;
     transition: border-color 0.4s ease;
     background: transparent;
-    color: white; /* 수정된 스타일 */
+    color: white;
 }
 
 .user-box i {
@@ -87,9 +87,8 @@ body {
     margin-top: 20px; 
     letter-spacing: 4px;
     background-color: #808080;
+    border: none;
     border-radius: 10px;
-    /* border: 1px solid #808080;
-    border-radius: 5px; */
     width: calc(100%);
 }
 
