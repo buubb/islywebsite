@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b55ca5f-02b8-4701-8cb9-9c6afd84b789" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/statusresult.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/statusresult.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/Fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Fail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <updated>1712652399138</updated>
       <workItem from="1712652402028" duration="8431000" />
       <workItem from="1712661015871" duration="134000" />
-      <workItem from="1712661426700" duration="7119000" />
+      <workItem from="1712661426700" duration="10704000" />
     </task>
     <servers />
   </component>
