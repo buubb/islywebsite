@@ -5,12 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var eyesIcon = document.querySelector('.showHidePw');
     var errorMessage = document.getElementById("error-message");
 
-
     var currentUrl = window.location.href;
     var baseUrl = currentUrl.split('/login')[0]; // "/login" 이전의 부분을 가져옴
     var newUrl = baseUrl + '/login';
     window.history.replaceState({}, document.title, newUrl);
-
 
     function checkInputs() {
         if (usernameInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
@@ -50,19 +48,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    // 에러 메시지가 존재하는 경우 표시
-    var errorMessage = document.getElementById("error_message");
-
-    // 에러 메시지가 존재하는 경우 표시
-    if (errorMessage && errorMessage.innerText.trim() !== "") {
-        errorMessage.style.display = "block";
-        // 에러 메시지를 화면에 표시
-        showAlert(errorMessage.innerText);
-    }
-
-    function showAlert(message) {
-        alert(message);
+    // 에러 메시지가 존재하는 경우
+    if (errorMessage) {
+        var message = errorMessage.innerText.trim();
+        showAlert(message);
     }
 
     checkInputs();
 });
+function showAlert(message) {
+    alert(message);
+}
