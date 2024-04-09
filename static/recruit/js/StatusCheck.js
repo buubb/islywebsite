@@ -32,7 +32,7 @@ function checkAdminPhoneNumber(phone_number) {
                 document.getElementById("format").style.display = "none";
                 document.getElementById("entered-number").innerHTML = phone_number;
             } else {
-                alert("Phone Number not found.");
+                document.getElementById("feedback-1").style.display = "block";
             }
         })
         .catch(error => {
@@ -78,7 +78,7 @@ function checkAdminStudentID(student_id) {
                     renderFailPage(student_id, phone_number);
                 }
             } else {
-                alert("Student ID not found.");
+                document.getElementById("feedback-2").style.display = "block";
             }
         })
         .catch(error => {
