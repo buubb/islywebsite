@@ -148,3 +148,7 @@ input::placeholder {
 .login-box .user-box input {
     color: white;
 }
+
+.alert-danger {
+    display: none; /* 에러 메시지를 숨김 */
+}
