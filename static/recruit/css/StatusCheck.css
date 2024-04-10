@@ -155,7 +155,6 @@ Placeholder
 ---------------------------------------------
 */
 
-.StatusCheck input[type="text"]::placeholder,
 .StatusCheck input[type="number"]::placeholder {
     color: #B2B2B2; /* C6C6C6 */
 }

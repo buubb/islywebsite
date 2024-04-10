@@ -60,17 +60,17 @@ FAQ-list
     list-style: none;
 }
 
-
+/*
 .RecruitFaq .faq .faq-list li + li {
     margin-top: 20px;
 }
-
+*/
 
 .RecruitFaq .faq .faq-list li {
-    padding: 20px;
+    padding: 25px 10px;
     background: transparent;
     border-radius: 0;
-    border: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
     position: relative;
     cursor: pointer;
 }
@@ -110,7 +110,7 @@ FAQ-list
 /* answer */
 .RecruitFaq .faq .faq-list p {
     margin-bottom: 0;
-    padding: 10px 0 0 0;
+    padding: 15px 0 0 0;
     font-size: 16px;
     color: #FFFFFF;
     text-align: justify;
@@ -149,10 +149,11 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    /* right-faq */
+    /* right-faq
     .RecruitFaq .right-faq {
         margin-top: 20px;
     }
+    */
 
     /* question */
     .RecruitFaq .faq .faq-list a {

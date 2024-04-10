@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4a6b111-c698-4b64-b894-572a563a2a79" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
+    <list default="true" id="0d7eea6f-93f4-494b-a720-ffb64bf3353a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/js/StatusCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/js/StatusCheck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/js/Validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,14 +22,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2emZQ6UzmcxvV6JZOBb0Ev6edry" />
+  <component name="ProjectId" id="2epF6C819a6AIgG16xtkZgSG4K6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +37,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/연습/pystagram-22.2_-_-_-",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,12 +72,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f4a6b111-c698-4b64-b894-572a563a2a79" name="Changes" comment="" />
-      <created>1712511695781</created>
+      <changelist id="0d7eea6f-93f4-494b-a720-ffb64bf3353a" name="Changes" comment="" />
+      <created>1712593435877</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712511695781</updated>
-      <workItem from="1712511698867" duration="9213000" />
+      <updated>1712593435877</updated>
+      <workItem from="1712593438181" duration="3628000" />
     </task>
     <servers />
   </component>
