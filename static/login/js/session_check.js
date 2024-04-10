@@ -3,7 +3,7 @@ var loginUrl = document.getElementById('loginUrl').dataset.url;
 
 window.onload = function () {
     checkSessionStatus();
-    setInterval(checkSessionStatus, 1000);  // 1분마다 세션 상태 체크
+    setInterval(checkSessionStatus, 10000);  // 1분마다 세션 상태 체크
 };
 
 function checkSessionStatus() {
