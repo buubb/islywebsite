@@ -4,14 +4,13 @@ from rest_framework.views import APIView
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from .models import LoginFail
-from django.contrib.auth import get_user_model
 from django.http import HttpResponse
 from django.utils import timezone
 from django.urls import reverse
 from django.contrib import messages
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.messages import get_messages
-from django.http import HttpResponse
+# from .models import ConcurrentLogin
 
 LOGIN_TRY_LIMIT=5
 
@@ -32,6 +31,7 @@ class Login(APIView):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
+                # ConcurrentLogin.objects.create(user=user, ip_address=request.META['REMOTE_ADDR'], user_agent=request.META['HTTP_USER_AGENT'])
                 next_url = request.POST.get('next', '')
                 if next_url:
                     return redirect(next_url)
