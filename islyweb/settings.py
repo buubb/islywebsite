@@ -72,6 +72,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'login.middleware.KickedMiddleware',
    # 'corsheaders.middleware.CorsMiddleware',
 ]
 
@@ -80,7 +81,7 @@ LOGIN_TRY_LIMIT=5
 
 # 로그인 성공 시 자동으로 이동할 URL
 # LOGIN_REDIRECT_URL = '/'
-
+# LOGIN_URL = '/login/'
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
 

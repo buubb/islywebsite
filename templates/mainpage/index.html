@@ -425,6 +425,15 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 {% include 'footer_2.html' %}
 
+<!-- Django 템플릿에서 메시지를 표시하는 방법 -->
+<div id="kicked-message" style="display: none;">
+  {% if messages %}
+      {% for message in messages %}
+          <p>{{ message }}</p>
+      {% endfor %}
+  {% endif %}
+</div>
+
 <!-- Copyright Start -->
 <div class="container-fluid copyright py-4">
     <div class="container">
@@ -441,6 +450,7 @@ https://templatemo.com/tm-579-cyborg-gaming
 <!-- Copyright End -->
 
   <!-- Scripts -->
+  <script src="{% static 'login/js/kickedlogout.js' %}"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <!-- <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script> -->
