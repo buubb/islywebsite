@@ -127,6 +127,29 @@
                         </div>
                         <!-- ***** CTF End ***** -->
 
+                        <!-- ***** Gaming Library Start ***** -->
+                        <div class="gaming-library profile-library">
+                            <div class="col-lg-12">
+                                <div class="heading-section">
+                                    <h4><em>CTF</em> Ranking</h4>
+                                </div>
+                                {% for player in players %}
+                                <div class="item">
+                                    <ul>
+                                        <li><h4>{{ player.rank }}</h4></li>
+                                        <li><a href="{{ player.dreamhack_link }}"><img src="{{ player.profile_image.url }}" alt="{{ player.name }}" class="templatemo-item"></a></li>
+                                        <li><span>Name</span><h4>{{ player.name }}</h4></li>
+                                        <li><span>Point</span><h4>{{ player.point }}</h4></li>
+                                        <li><span>Challenge</span><h4>{{ player.challenge }}</h4></li>
+                                        <li>
+                                            <div class="main-border-button border-no-active"><a href="{{ player.dreamhack_link }}">Profile</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <!-- ***** Gaming Library End ***** -->
 
                         <!-- ***** Gaming Library Start ***** -->
                         <div class="gaming-library profile-library">
