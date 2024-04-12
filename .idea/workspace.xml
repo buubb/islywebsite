@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="558a35ac-003d-4d7f-9c6d-61a1269c6ebf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/profile_image_5YtaFxu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTF_Challenge/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712938978005</updated>
-      <workItem from="1712938980454" duration="991000" />
+      <workItem from="1712938980454" duration="3917000" />
     </task>
     <servers />
   </component>
