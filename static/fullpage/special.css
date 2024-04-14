@@ -62,7 +62,7 @@
 
 #news-line::-webkit-scrollbar-thumb {
   /* background: #5EE773; */
-  background: #222222;
+  background: #252424;
   width: 10px!important;
 }
 #news-line .news-box{
@@ -88,13 +88,12 @@
   opacity: 0;
   z-index: 1;
   text-align: center;
-  font-size: 20px;
   transition: 0.5s;
 }
 #news-line .news-box .caption h2{
   color: #FFFFFF;
-  font-size: 25px!important;
-  letter-spacing: 0.075em;
+  font-size: 18px!important;
+  letter-spacing: 0.125em;
   font-weight: 500;
   line-height: 1.8;
 }
