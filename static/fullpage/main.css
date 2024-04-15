@@ -15,14 +15,14 @@ header{
 }
 
 header nav{
-    min-height: 70px;
+    min-height: 60px;
     position: relative;
     display: flex;
     background: transparent;
     align-items: center;
     flex-flow: row nowrap;
     justify-content: center;
-    padding: 15px 0px 15px 0px;
+    padding: 7px 0px 15px 0px;
     border-radius: 0px;
     cursor: pointer;
 }
@@ -34,21 +34,22 @@ header nav .logo{
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-
-    /*로고 글씨체 크기 및 굵기 변경*/
-    
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    color:aliceblue;
-    text-decoration-line: none;
-
+    display: inline-flex;
 }
 header nav .logo img{
     vertical-align: middle;
-    width: 70px;
+    width: 60px;
     
+}
+header nav .logo h2{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  color:#FFFFFF;
+  text-decoration-line: none;
+  padding-top:10px;
+  padding-left:10px;
 }
 header nav .nav{
     display: inline-flex;
@@ -96,23 +97,58 @@ header nav .nav li a{
 }
 
 /* menu dropdown */
-*{margin:0; padding:0;}
+
 ul{list-style:none;}
-a{text-decoration:none; color:#333;}
-.nav:after{display:block; content:''; clear:both;}
-.nav > .dropdown{position:relative; float:left; margin-right:5px;}
-.nav > .dropdown > a{display:block; padding:0 15px; background:transparent; height:45px; line-height:46.4px;}
-/*.nav > .dropdown:hover .depth_1 {display:block;}*/
-.nav .depth_1{display:none; position:absolute; left: calc(50% - 80px);border-radius: 18px;
-  background: #0d0f10;
+a{
+  text-decoration:none; 
+  color:#333;
+}
+.nav:after{
+  display:block; 
+  content:''; 
+  clear:both;
+}
+.nav > .dropdown{
+  position:relative; 
+  float:left; 
+  margin-right:5px;
+}
+.nav > .dropdown > a{
+  display:block; 
+  padding:0 15px; 
+  background:transparent; 
+  height:45px; 
+  line-height:46.4px;
+}
+.nav .depth_1{
+  display:none; 
+  position:absolute; 
+  left: calc(50% - 80px);
+  /* border-radius: 18px; */
+  /* background: #FFFFFF; */
   backdrop-filter: blur( 4.5px );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-    -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); text-align:center;width: 160px;z-index: 4; margin-top: 20px;}
-.nav .depth_1 a{display:block; padding:12px 16px; background: transparent; color:#fff;}
-.nav .depth_1 a:hover{color: #5ee773!important;background-color: #333!important;}
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); 
+  text-align:center;
+  width: 160px;
+  z-index: 4; 
+  margin-top: 20px;
+}
+
+.nav .depth_1 a{
+  display:block; 
+  padding:12px 16px; 
+  background: transparent; 
+  color:#fff;
+}
+
+.nav .depth_1 a:hover{
+  color: #5ee773!important;
+  background-color: #333!important;
+}
 
 header nav .nav .nav-item a:hover,
 header nav .nav .nav-item a.active {
@@ -127,7 +163,7 @@ header nav .nav li:first-child:hover a{
 header nav .nav li:hover .menu_name{
     color:aliceblue;
     text-decoration: underline 3px aliceblue!important;
-    text-underline-offset: 40px!important;
+    text-underline-offset: 33px!important;
 }
 /*
 header nav .nav li:last-child:hover a,
@@ -168,6 +204,7 @@ nav .res-nav .icon-wrap .hamburger{
     color: aliceblue;
     border-radius: 5px;
     position:relative;
+    transform: translateY(-10%);
 }
   
 /* top button */
@@ -210,47 +247,6 @@ nav .res-nav .icon-wrap .hamburger{
                 opacity: 0.7;
             }
         }
-/*scroll down mousy*
-.scrolldown{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:120px;
-}
-.scroll-downs {
-    position: absolute;
-    left:0;
-    right:0;
-    bottom:50px;
-    margin: auto;
-    
-    width :34px;
-    height: 55px;
-  }
-  .mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-  }
-  .scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-  }
-  @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15px); opacity: 0;}
-  }
 /* section */
 #section{
     color: aliceblue;
