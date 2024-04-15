@@ -119,17 +119,17 @@
 }
 .special-button{
   color:#FFFFFF;
-  border-bottom: solid 4px #FFFFFF;
+  border: solid 1.8px #FFFFFF;
   padding: 20px;
   text-align: center;
-  letter-spacing: 0.15em!important;
+  letter-spacing: 0.2em!important;
   line-height: 1.8;
-  font-size: 20px!important;
+  font-size: 18px!important;
   font-weight: 600;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
 }
 .special-button:hover{
-  letter-spacing: 0.2em!important;
+  background-color: rgba(255, 255, 255, 0.075);
   color:#FFFFFF;
 }
 .blog-slider {
