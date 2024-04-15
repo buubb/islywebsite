@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from .models import LoginFail
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.utils import timezone
 from django.urls import reverse
 from django.contrib import messages
@@ -49,9 +49,7 @@ class Logout(APIView):
         if request.user.is_authenticated:
             Logout(request)
             return render(request, 'mainpage/index.html')
+        
 
-def check_session_status(request):
-    if request.user.is_authenticated:
-        return 
-    else:
-        return HttpResponse('세션이 만료되었습니다. 다시 로그인해주세요.')
+                
+
