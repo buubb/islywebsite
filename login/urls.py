@@ -2,8 +2,6 @@ from django.urls import path
 from .views import Login
 from django.contrib.auth import views as auth_views
 # from .views import check_session_status
-
-
 from . import views
 
 """ urlpatterns=[
