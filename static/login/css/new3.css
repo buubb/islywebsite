@@ -98,7 +98,8 @@ body {
 }
 
 .login-box button.active {
-    background-color: #009900;
+    background-color: white;
+    color: black;
 }
 
 input::placeholder {
