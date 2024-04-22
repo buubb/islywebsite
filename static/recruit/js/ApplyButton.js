@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // showAlert 함수 정의
 function showAlert() {
-    alert("지금은 모집 기간이 아닙니다");
+    alert("The application period is now closed");
 }
