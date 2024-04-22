@@ -31,7 +31,6 @@ class Login(APIView):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                # ConcurrentLogin.objects.create(user=user, ip_address=request.META['REMOTE_ADDR'], user_agent=request.META['HTTP_USER_AGENT'])
                 next_url = request.POST.get('next', '')
                 if next_url:
                     return redirect(next_url)
@@ -42,14 +41,16 @@ class Login(APIView):
         else:
             # messages.error(request, '아이디 또는 비밀번호가 올바르지 않습니다.')
             return redirect('login')  # 폼이 유효하지 않을 때 로그인 페이지로 리다이렉트
-
+        
 class Logout(APIView):
     def get(self, request):
         print("get으로 호출")
         if request.user.is_authenticated:
             Logout(request)
             return render(request, 'mainpage/index.html')
-        
 
-                
-
+def check_session_status(request):
+    if request.user.is_authenticated:
+        return
+    else:
+        return HttpResponse('세션이 만료되었습니다. 다시 로그인해주세요.')
