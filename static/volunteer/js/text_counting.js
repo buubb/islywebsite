@@ -1,4 +1,4 @@
-// text-counting.js
+// text_counting.js
 
 $(document).ready(function () {
     $('form').submit(function (e) {

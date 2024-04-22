@@ -6,7 +6,8 @@ Basic
 
 .VltPosting {
     background-color: transparent;
-    border: 4px solid #FFFFFF;
+    border: 5px solid #FFFFFF;
+    border-radius: 33px;
     padding: 50px 70px 30px;
 }
 
@@ -103,7 +104,11 @@ Label
     align-items: flex-start;
 }
 
-.VltPosting label {
+.VltPosting .title-label,
+.VltPosting .year-label,
+.VltPosting .gen-label,
+.VltPosting .con-label,
+.VltPosting .img-label {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
     display: block;
@@ -113,6 +118,7 @@ Label
     line-height: 1.5;
     margin: 0 0 1rem 0;
     text-transform: uppercase;
+    text-align: left;
 }
 
 /* title-counter */
@@ -150,7 +156,6 @@ Input
 
 .VltPosting input[type="text"],
 .VltPosting input[type="number"],
-.VltPosting input[type="file"],
 .VltPosting textarea {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -177,14 +182,12 @@ Input
 
 .VltPosting input[type="text"]:invalid,
 .VltPosting input[type="number"]:invalid,
-.VltPosting input[type="file"]:invalid,
 .VltPosting textarea:invalid {
     box-shadow: none;
 }
 
 .VltPosting input[type="text"]:focus,
 .VltPosting input[type="number"]:focus,
-.VltPosting input[type="file"]:focus,
 .VltPosting textarea:focus {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
@@ -200,11 +203,6 @@ Input
     height: 3.25rem;
 }
 
-.VltPosting input[type="file"] {
-    height: 3.25rem;
-    padding: 10px 15px;
-}
-
 .VltPosting textarea {
     padding: 0.75rem 1rem;
 }
@@ -213,6 +211,76 @@ Input
 .VltPosting input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+/*
+---------------------------------------------
+Image Upload
+---------------------------------------------
+*/
+
+.VltPosting .image-upload {
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.VltPosting input[type="file"] {
+    display: none;
+}
+
+.VltPosting .file-label {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    display: block;
+    position: relative;
+    background-color: #0d0f10;
+    color: #FFFFFF;
+    border-radius: 0;
+    border: 2px solid #FFFFFF;
+    font-size: 1rem; /*** edit ***/
+    font-weight: 500;
+    letter-spacing: 0.075em;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.VltPosting #img-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1px;
+    gap: 16px;
+    border-radius: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.VltPosting img {
+    width: 100%;
+    height: 100px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.VltPosting #num-of-files {
+    display: none;
+}
+
+/* figcaption */
+.image-caption {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 450;
+    letter-spacing: 0.055em;
+    margin-top: 0.5vmin;
+    text-align: center;
 }
 
 
@@ -237,6 +305,10 @@ Responsive Style
     .VltPosting {
         padding: 50px 50px 30px;
     }
+
+    .VltPosting #img-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -259,16 +331,18 @@ Responsive Style
 
     .VltPosting input[type="text"],
     .VltPosting input[type="number"],
-    .VltPosting input[type="file"],
     .VltPosting textarea {
         font-size: 0.9rem;
     }
 
     .VltPosting input[type="text"]:focus,
     .VltPosting input[type="number"]:focus,
-    .VltPosting input[type="file"]:focus,
     .VltPosting textarea:focus {
         font-size: 0.9rem;
+    }
+
+    .VltPosting #img-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

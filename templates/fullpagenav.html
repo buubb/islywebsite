@@ -9,48 +9,77 @@
         <!--반응형 start-->
         <div class="res-nav">
           <div class="icon-wrap">
-           <!-- hamburger button -->
-          <div class="hamburger" onclick="this.classList.toggle('active')">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 200 200">
-            <g stroke-width="6.5" stroke-linecap="round">
-              <path
-                d="M72 82.286h28.75"
-                fill="#009100"
-                fill-rule="evenodd"
-                stroke="aliceblue"
-              />
-              <path
-                d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
-                fill="none"
-                stroke="aliceblue"
-              />
-              <path
-                d="M72 125.143h28.75"
-                fill="#009100"
-                fill-rule="evenodd"
-                stroke="aliceblue"
-              />
-              <path
-                d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
-                fill="none"
-                stroke="aliceblue"
-              />
-              <path
-                d="M100.75 82.286h28.75"
-                fill="#009100"
-                fill-rule="evenodd"
-                stroke="aliceblue"
-              />
-              <path
-                d="M100.75 125.143h28.75"
-                fill="#009100"
-                fill-rule="evenodd"
-                stroke="aliceblue"
-              />
-              </g>
-            </svg>
+            <!-- hamburger button -->
+            <div class="hamburger" onclick="this.classList.toggle('active')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 200 200">
+              <g stroke-width="6.5" stroke-linecap="round">
+                <path
+                  d="M72 82.286h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="aliceblue"
+                />
+                <path
+                  d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                  fill="none"
+                  stroke="aliceblue"
+                />
+                <path
+                  d="M72 125.143h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="aliceblue"
+                />
+                <path
+                  d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                  fill="none"
+                  stroke="aliceblue"
+                />
+                <path
+                  d="M100.75 82.286h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="aliceblue"
+                />
+                <path
+                  d="M100.75 125.143h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="aliceblue"
+                />
+                </g>
+              </svg>
+            </div>
+            <!-- hamburger button end-->
           </div>
-          <!-- hamburger button end-->
+          <!-- icon-wrap end -->
+        </div>
+        <div class="res-nav-container">
+          <div class="res-nav-item">
+            <a class="aboutdrop menu_name">ABOUT</a>
+            <ul class="depth_1">
+              <li><a href="/introduction/">동아리 소개</a></li>
+              <li><a href="/notice/">공지사항</a></li>
+            </ul>
+          </div>
+          <div class="res-nav-item">
+            <a href="/volunteer/" class="menu_name">PROJECT</a>
+          </div>
+          <div class="res-nav-item">
+            <a href="/CTF-Challenge/" class="menu_name">WARGAME</a>
+          </div>
+          <div class="res-nav-item">
+            <a href="/recruit/" class="menu_name">RECRUIT</a>
+          </div>
+          <div class="res-nav-item">
+            {% if request.user.is_authenticated %} <!-- 단순히 사용자 인증에 대한 확인만 하는 기능 -> url에 login을 직접 치면 로그인 상태에서도 로그인창이 뜸 -->
+            <a href="{% url 'logout' %}" class="menu_name">LOGOUT {{request.user.username}} </a>
+            {% else %}
+            <a href="/login/?next={{request.path}}" class="menu_name">LOGIN </a>
+            {% endif %}
+          </div>
+          <div class="mention">
+            <p>2024. I.Sly() All Rights Reserved.</p>
           </div>
         </div>
         <!-- 반응형 end -->
@@ -76,7 +105,7 @@
           <li data-menuanchor="s5" class="menu_li"><a href="/recruit/" class="menu_name">RECRUIT</a></li>
           <li class="menu_li">
             {% if request.user.is_authenticated %} <!-- 단순히 사용자 인증에 대한 확인만 하는 기능 -> url에 login을 직접 치면 로그인 상태에서도 로그인창이 뜸 -->
-            <a href="{% url 'logout' %}" class="menu_name">Logout {{request.user.username}} </a>
+            <a href="{% url 'logout' %}" class="menu_name">LOGOUT {{request.user.username}} </a>
             {% else %}
             <a href="/login/?next={{request.path}}" class="menu_name">LOGIN </a>
 
