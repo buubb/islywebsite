@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="558a35ac-003d-4d7f-9c6d-61a1269c6ebf" name="Changes" comment="">
+    <list default="true" id="787e3401-34ec-41b5-8894-657c4f208144" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/volunteer/js/img_upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/text-counting.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/text_counting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,9 +31,9 @@
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
-  "associatedIndex": 8
+  "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="2f0XTTpa8j5OTTPRJbaIUhN0IDm" />
+  <component name="ProjectId" id="2fSjngKDhRcnfnJnjbqgdlJQSX0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +51,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\js" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -70,12 +84,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="558a35ac-003d-4d7f-9c6d-61a1269c6ebf" name="Changes" comment="" />
-      <created>1712938978005</created>
+      <changelist id="787e3401-34ec-41b5-8894-657c4f208144" name="Changes" comment="" />
+      <created>1713801544060</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712938978005</updated>
-      <workItem from="1712938980454" duration="3917000" />
+      <updated>1713801544060</updated>
+      <workItem from="1713801546278" duration="2564000" />
     </task>
     <servers />
   </component>

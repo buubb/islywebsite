@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
 
         <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'volunteer/css/posting/VltPosting.css' %}">
@@ -66,7 +66,7 @@
                                             <!-- title -->
                                             <div class="field">
                                                 <div class="label-group">
-                                                    <label for="title">Title</label>
+                                                    <label for="title" class="title-label">Title</label>
                                                     <span id="title-counter">0 / 50</span>
                                                 </div>
                                                 <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" required>
@@ -74,24 +74,30 @@
                                             </div>
                                             <!-- year -->
                                             <div class="field half">
-                                                <label for="year">Year</label>
+                                                <label for="year" class="year-label">Year</label>
                                                 <input type="number" class="form-control" name="year" id="year" value="{{ form.year.value|default_if_none:'' }}" min="2020" required>
                                             </div>
                                             <!-- generation -->
                                             <div class="field half">
-                                                <label for="generation">Generation</label>
+                                                <label for="generation" class="gen-label">Generation</label>
                                                 <input type="number" class="form-control" name="generation" id="generation" value="{{ form.generation.value|default_if_none:'' }}" min="1" required>
                                             </div>
                                             <!-- content -->
                                             <div class="field">
-                                                <label for="content">Content</label>
+                                                <label for="content" class="con-label">Content</label>
                                                 <textarea class="form-control" name="content" id="content" rows="10" required>{{ form.content.value|default_if_none:'' }}</textarea>
                                             </div>
                                             <!-- image -->
                                             <div class="field">
-                                                <!-- label의 for 속성에는 가리키는 input의 id값을 입력 -->
-                                                <label for="id_images">Image Upload</label>
-                                                <input id="id_images" name="images" type="file" multiple>
+                                                <p class="img-label">Image Upload</p>
+                                                <div class="image-upload">
+                                                    <input id="file-input" name="images" type="file" accept="image/jpg, image/jpeg, image/png" onchange="preview()" multiple>
+                                                    <label for="file-input" class="file-label py-3">
+                                                        <i class="fa-solid fa-upload"></i> &nbsp; Choose Your Files
+                                                    </label>
+                                                    <p id="num-of-files">No Files Chosen</p>
+                                                    <div id="img-container"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -149,9 +155,9 @@
             });
         </script>
 
-        <!-- Raon Additional JavaScript -->
-        <script src="{% static 'volunteer/js/text-counting.js' %}"></script>
-
+        <!-- Raon JavaScript -->
+        <script src="{% static 'volunteer/js/text_counting.js' %}"></script>
+        <script src="{% static 'volunteer/js/img_upload.js' %}"></script>
 
 
     </body>
