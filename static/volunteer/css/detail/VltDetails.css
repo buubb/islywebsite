@@ -5,8 +5,8 @@ Content
 */
 
 .VltDetails .content {
-    border: 4px solid #FFFFFF;
-    border-radius: 0;
+    border: 6px solid #FFFFFF;
+    border-radius: 43px;
     padding: 50px 60px;
     background-color: transparent;
     /* overflow: hidden; */

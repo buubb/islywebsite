@@ -6,8 +6,8 @@ Basic
 
 .VltPosting {
     background-color: transparent;
-    border: 5px solid #FFFFFF;
-    border-radius: 33px;
+    border: 6px solid #FFFFFF;
+    border-radius: 43px;
     padding: 50px 70px 30px;
 }
 
@@ -240,7 +240,7 @@ Image Upload
     color: #FFFFFF;
     border-radius: 0;
     border: 2px solid #FFFFFF;
-    font-size: 1rem; /*** edit ***/
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.075em;
     text-align: center;

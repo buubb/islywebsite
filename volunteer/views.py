@@ -86,7 +86,7 @@ def post_add(request):
         form = PostForm()
 
     context = {"form": form}
-    return render(request, "volunteer/post_add.html", context)
+    return render(request, "volunteer/post_form.html", context)
 
 
 def post_detail(request, post_id):

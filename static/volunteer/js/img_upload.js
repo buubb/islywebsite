@@ -5,17 +5,23 @@ let imageContainer = document.getElementById("img-container");
 let numOfFiles = document.getElementById("num-of-files");
 
 function preview(){
-    // Clear previous content
+    // Clear image container
     imageContainer.innerHTML = "";
+    // Update numOfFiles
     numOfFiles.textContent = `${fileInput.files.length} Files Selected`;
 
     // Check file types
     for(let i of fileInput.files){
         if (!['image/jpg', 'image/jpeg', 'image/png'].includes(i.type)) {
             alert("Only JPG, JPEG, and PNG files are allowed.");
-            // Clear the file input
+            // Clear file input
             fileInput.value = "";
-            return; // Stop further processing
+            // Clear image container
+            imageContainer.innerHTML = "";
+            // Update numOfFiles
+            numOfFiles.textContent = "No Files Chosen";
+            // Stop further processing
+            return;
         }
 
         let reader = new FileReader();
