@@ -194,7 +194,9 @@ nav .res-nav .icon-wrap .hamburger{
     position:relative;
     transform: translateY(-10%);
 }
-  
+nav .res-nav-container{
+  display: none;
+}
 /* top button */
 
 /* top button*/
