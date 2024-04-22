@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787e3401-34ec-41b5-8894-657c4f208144" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/volunteer/js/img_upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/text-counting.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/text_counting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/templatemo-cyborg-gaming.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/templatemo-cyborg-gaming.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login/css/new3.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login/css/new3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/new3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/new3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713801544060</updated>
-      <workItem from="1713801546278" duration="2564000" />
+      <workItem from="1713801546278" duration="4692000" />
     </task>
     <servers />
   </component>
