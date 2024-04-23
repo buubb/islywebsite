@@ -5,9 +5,10 @@ StatusResult
 */
 
 .statusResult .header {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 900;
     letter-spacing: 0.075em;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
@@ -15,6 +16,7 @@ StatusResult
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 800;
     letter-spacing: 0.075em;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
 
@@ -73,7 +75,7 @@ Button Hover
 */
 
 .statusResult .link-fancy {
-    color: #1717e5;
+    color: #0D0F10;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -100,7 +102,7 @@ Button Hover
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(90deg, #1717e5 0, #1717e5 25%, transparent 0, transparent 50%, #1717e5 0, #1717e5 75%, transparent 0, transparent);
+    background-image: linear-gradient(90deg, #0D0F10 0, #0D0F10 25%, transparent 0, transparent 50%, #0D0F10 0, #0D0F10 75%, transparent 0, transparent);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 400% 1px;
