@@ -5,8 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* font-family: sans-serif; */
-    background: linear-gradient(#0d0f10, #0d0f10);
+    /* background: linear-gradient(#0d0f10, #0d0f10); */
 }
 
 .login-box {
@@ -18,15 +17,17 @@ body {
     transform: translate(-50%, -50%);
     background: #0d0f10;
     box-sizing: border-box;
-    /* box-shadow: 0 15px 25px rgba(0, 0, 0, .6); */
     border-radius: 10px;
     border: none;
 }
 
-.login-box h2 {
+.login-box h1 {
+    font-family: "Source Sans 3", sans-serif;
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: #FFFFFF;
+    font-weight: 800;
+    letter-spacing: 0.075em;
     text-align: center;
 }
 
@@ -43,10 +44,11 @@ body {
     border-radius: 8px;
     outline: none;
     font-size: 16px;
+    letter-spacing: 0.075em;
     border: 2px solid #808080;
     transition: border-color 0.4s ease;
     background: transparent;
-    color: white;
+    color: #FFFFFF;
 }
 
 .user-box i {
@@ -102,10 +104,6 @@ body {
     color: black;
 }
 
-input::placeholder {
-    color: white;
-}
-
 .login-box button::before {
     content: '';
     position: absolute;
@@ -144,6 +142,7 @@ input::placeholder {
 
 input::placeholder {
     color: #808080;
+    letter-spacing: 0.075em;
 }
 
 .login-box .user-box input {

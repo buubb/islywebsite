@@ -1,4 +1,4 @@
-{% load static humanize %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +6,6 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <title>I.Sly()</title>
 
@@ -27,7 +25,9 @@
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
         <!-- Yubin add -->
@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
 
         <!-- Sum CSS Files -->
-        <link rel="stylesheet" href="{% static 'recruit/css/statusresult.css' %}">
+        <link rel="stylesheet" href="{% static 'recruit/css/StatusResult.css' %}">
 
     </head>
 
@@ -56,14 +56,14 @@
                                 <div class="page welcome">
                                     <div class="content">
                                         <h2 class="header2">더 좋은 자리에서 함께 할 수 있기를 바랍니다.</h2>
-                                        <p class="pg">안녕하세요. I.Sly()입니다.</p>
+                                        <p class="pg">안녕하세요, {{ applicant.name }}님</p>
                                         <p class="pg">I.Sly() {{ applicant.generation }}기 신입 모집에 관심을 가지고 지원해 주셔서 진심으로 감사드립니다.</p>
                                         <p class="pg">&nbsp;</p>
-                                        <p class="pg">I.Sly() 운영진에서 면밀히 심사한 결과,</p>
-                                        <p class="pg">{{ applicant.name }}님의 뛰어난 역량을 확인하였으나 제한된 모집 인원으로 인하여 이번에는 함께 하기 어렵게 되었다는 말씀을 전하게 되었습니다.</p>
+                                        <p class="pg">{{ applicant.name }}님의 뛰어난 역량을 확인하였으나,</p>
+                                        <p class="pg">아쉽게도 이번에는 함께 하기 어렵게 되었다는 말씀을 전하게 되었습니다.</p>
                                         <p class="pg">&nbsp;</p>
-                                        <p class="pg">귀한 시간을 내어 저희 I.Sly()에 지원해 주신 점 다시 한번 감사하다는 말씀 전해드리며,</p>
-                                        <p class="pg">다음 기회에 더 좋은 인연으로 함께 할 수 있기를 바라겠습니다.</p>
+                                        <p class="pg">추후 좋은 기회에 꼭 다시 만나뵐 수 있기를 기대하며,</p>
+                                        <p class="pg">다시 한번 I.Sly()에 보여주신 관심과 열정에 깊이 감사드립니다.</p>
                                         <p class="pg">&nbsp;</p>
                                         <p class="pg">감사합니다.</p>
                                         <p class="pg">&nbsp;</p>
