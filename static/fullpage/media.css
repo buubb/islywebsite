@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media(max-width:1278px){
+@media(max-width:1298px){
     header{
         -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
@@ -255,10 +255,4 @@
           display: none!important;
       }
       
-}
-
-@media(min-width:1278px){
-    header nav .nav{
-        display: inline-flex!important;
-    }
 }
