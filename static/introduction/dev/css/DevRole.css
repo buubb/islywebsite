@@ -123,6 +123,7 @@ Image
 
 .DevRole .profile img {
     border-radius: 0;
+    border: 5px solid #FFFFFF;
     margin-top: 3rem;
     width: 100%;
     height: 100%;
@@ -210,6 +211,7 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    /* item */
     .DevRole .item {
         padding: 2.5rem;
     }
@@ -239,6 +241,11 @@ Responsive Style
     .DevRole .down-content .role,
     .DevRole .down-content .dot {
         font-size: 0.85rem;
+    }
+
+    /* next */
+    .DevRole .next h1 {
+        font-size: 1.6rem;
     }
 }
 

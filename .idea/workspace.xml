@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d116b575-8b3a-4868-9736-e46535a0ec3a" name="Changes" comment="">
+    <list default="true" id="3d31701f-e814-4dd7-b5dc-fdd2a1912a4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/eunju_memoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/raon_memoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/seolin_memoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/soyoung_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/soyoung_memoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/sumi_memoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/yubin_memoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/img/example.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/tem4.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,33 +22,31 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
-  <component name="ProjectId" id="2fZfRtTQUEahljB0ngPtNu3RjBB" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fbVHbbLyh71JeZjy1unwMUo99G" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "raon",
-    "last_opened_file_path": "C:/Users/raony/PycharmProjects/islywebsite/static/introduction/dev/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\img" />
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\introduction\dev\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,12 +77,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d116b575-8b3a-4868-9736-e46535a0ec3a" name="Changes" comment="" />
-      <created>1714013517785</created>
+      <changelist id="3d31701f-e814-4dd7-b5dc-fdd2a1912a4e" name="Changes" comment="" />
+      <created>1714069679756</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714013517785</updated>
-      <workItem from="1714013519782" duration="2552000" />
+      <updated>1714069679756</updated>
+      <workItem from="1714069681682" duration="1655000" />
+      <workItem from="1714072589993" duration="3344000" />
     </task>
     <servers />
   </component>
