@@ -103,14 +103,13 @@ Load More button
 }
 
 .vlt-list .load-more-button a {
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     letter-spacing: 0.1rem;
     color: #FFFFFF;
     background-color: transparent;
-    border: 1.8px solid #FFFFFF;
+    /* border: 1.8px solid #FFFFFF; */
     border-radius: 0;
     height: 3.5rem;
     line-height: 3.5rem;
@@ -118,16 +117,10 @@ Load More button
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     white-space: nowrap;
     position: relative;
     overflow: hidden;
-}
-
-.vlt-list .load-more-button a:hover {
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.075);
 }
 
 
@@ -162,6 +155,10 @@ Responsive Style
     .vlt-list .card__like {
         font-size: 11px;
     }
+
+    .vlt-list .load-more-button a {
+        font-size: 1.3rem;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -170,13 +167,18 @@ Responsive Style
         margin-bottom: 30px;
     }
 
-    /*
-    .vlt-list .load-more-button {
-        margin-bottom: 2.5rem;
+    .vlt-list .load-more-button a {
+        font-size: 1.2rem;
     }
-    */
+}
 
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
     .vlt-list .load-more-button a {
         display: block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid #FFFFFF;
     }
 }
