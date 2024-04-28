@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon CSS Files -->
-        <link rel="stylesheet" href="{% static 'volunteer/css/feed/volunteer-intro.css' %}">
-        <link rel="stylesheet" href="{% static 'volunteer/css/feed/volunteer-list.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/feed/VltHeading.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/feed/VltList.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon JavaScript -->
@@ -52,22 +52,26 @@
                 <div class="col-lg-12">
                     <div class="page-content">
 
-                        <!-- ***** Intro Start ***** -->
+                        <!-- ***** Heading Start ***** -->
                         <div class="row pt-4">
-                            <div class="vlt-intro">
+                            <div class="vlt-heading">
                                 <div class="col-lg-12">
-                                    <div class="major">
-                                        <div class="headline">
-                                            <h2>Discover Our Projects!</h2>
+                                    {% if user.is_authenticated %}
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <h2 class="headline display-4">Discover <span>Our</span> Projects!</h2>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <a class="write-btn" href="{% url 'Volunteer:post_add' %}"><i class="fa-solid fa-pen"></i></a>
+                                            </div>
                                         </div>
-                                        <div class="write-button">
-                                            <a href="{% url 'Volunteer:post_add' %}">WRITE</a>
-                                        </div>
-                                    </div>
+                                    {% else %}
+                                        <h2 class="headline display-4 text-center">Discover <span>Our</span> Projects!</h2>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
-                        <!-- ***** Intro End ***** -->
+                        <!-- ***** Heading End ***** -->
 
 
                         <!-- ***** Project List Start ***** -->
