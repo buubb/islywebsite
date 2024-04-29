@@ -22,8 +22,7 @@ Headline
 .vlt-heading .headline {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 900;
-    line-height: 1.3;
-    letter-spacing: 0.075em;
+    letter-spacing: 0.055em;
     text-transform: uppercase;
 }
 
@@ -102,10 +101,6 @@ Responsive Style
 @media (max-width: 767.98px) {
     .vlt-heading {
         margin-bottom: 2.5rem;
-    }
-
-    .vlt-heading .headline {
-        font-size: 2.4rem;
     }
 }
 
