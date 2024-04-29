@@ -31,6 +31,7 @@ function checkAdminPhoneNumber(phone_number) {
                 document.getElementById("studentID-box").style.display = "block";
                 document.getElementById("format").style.display = "none";
                 document.getElementById("entered-number").innerHTML = phone_number;
+                document.getElementById("student_id").focus();
             } else {
                 document.getElementById("feedback-1").style.display = "block";
             }
