@@ -31,6 +31,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
+        <!-- Eunju add -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
         <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
@@ -127,30 +130,113 @@
                         </div>
                         <!-- ***** CTF End ***** -->
 
+                        <div style="margin-bottom: 130px;"></div>
+
                         <!-- ***** Gaming Library Start ***** -->
-                        <div class="gaming-library profile-library">
+                        <div class="row py-4">
                             <div class="col-lg-12">
-                                <div class="heading-section">
-                                    <h4>Wargame Ranking</h4>
+                                <div class="ctf">
+                                    <div class="text-center mx-auto">
+                                        <h1 class="title mb-5"><i class="fas fa-trophy" style="margin-right: 10px;"></i>Wargame Ranking</h1>
+                                    </div>
                                 </div>
-                                {% for player in players %}
-                                <div class="item">
-                                    <ul>
-                                        <li><h4>{{ player.rank }}</h4></li>
-                                        <li><a href="{{ player.dreamhack_link }}"><img src="{{ player.profile_image.url }}" alt="{{ player.name }}" class="templatemo-item"></a></li>
-                                        <li><span>Name</span><h4>{{ player.name }}</h4></li>
-                                        <li><span>Point</span><h4>{{ player.point }}</h4></li>
-                                        <li><span>Challenge</span><h4>{{ player.challenge }}</h4></li>
-                                        <li>
-                                            <div class="main-border-button border-no-active"><a href="{{ player.dreamhack_link }}">Profile</a></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                {% endfor %}
+
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="background-color: white;">Rank</th>
+                                                <th style="background-color: white;">Name</th>
+                                                <th style="background-color: white;">Point</th>
+                                                <th style="background-color: white;">Challenge</th>
+                                                <th style="background-color: white;">Profile Link</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for player in players %}
+                                            <tr>
+                                                <td style="color: white; vertical-align: middle;"><strong>{{ player.rank }}</strong></td>
+                                                <td style="color: white; vertical-align: middle;">
+                                                    <img src="{{ player.profile_image.url }}" alt="{{ player.name }}" style="width: 40px; height: 40px; border-radius: 50%;">
+                                                    <span style="margin-left: 10px;">{{ player.name }}</span>
+                                                </td>
+                                                <td style="color: white; vertical-align: middle;">{{ player.point }} pt</td>
+                                                <td style="color: white; vertical-align: middle;">{{ player.challenge }}</td>
+                                                <td style="color: white; vertical-align: middle;">
+                                                    <a href="{{ player.dreamhack_link }}"><i class="fas fa-paperclip"></i></a>
+                                                </td>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                 </div>
+
                             </div>
                         </div>
                         <!-- ***** Gaming Library End ***** -->
 
+                        <div style="margin-bottom: 130px;"></div>
+
+                       <!-- ***** Gaming Library Start ***** -->
+                        <div class="row py-4">
+                            <div class="col-lg-12">
+                                <div class="ctf">
+                                    <div class="text-center mx-auto">
+                                        <h1 class="title mb-5"><i class="fas fa-user-plus" style="margin-right: 10px;"></i>Add Your Player</h1>
+                                    </div>
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="background-color: white;">Name</th>
+                                                <th style="background-color: white;">Point</th>
+                                                <th style="background-color: white;">Challenge</th>
+                                                <th style="background-color: white;">Profile Link</th>
+                                                <th style="background-color: white;">Profile image</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="field">
+                                                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="field">
+                                                        <input type="number" name="point" class="form-control" placeholder="Point" required>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="field">
+                                                        <input type="number" name="challenge" class="form-control" placeholder="Challenge" required>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="field">
+                                                        <input type="url" name="dreamhack_link" class="form-control" placeholder="Profile Link" required>
+                                                    </div>
+                                                </td>
+                                                <td style="vertical-align: middle;">
+                                                    <div class="field">
+                                                        <label for="profile_image" class="file-label" style="color: white; font-size: 1.1em;">
+                                                            <input id="profile_image" type="file" name="profile_image" class="form-control-file" style="display: none;" required>
+                                                            <i class="fa-solid fa-upload" style="color: white;"></i> Choose Your File
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align: center; margin-top: 50px;">
+                                        <button type="submit" style="background-color: transparent; color: white; border: none; margin-right: 10px;"><i class="fas fa-pencil-alt fa-2x"></i></button>
+                                        <button type="submit" style="background-color: transparent; color: white; border: none; margin-left: 10px;"><i class="fas fa-check fa-2x"></i></button>
+                                    </div>
+                                 </div>
+
+                            </div>
+                        </div>
+                        <!-- ***** Gaming Library End ***** -->
 
                     </div>
                 </div>
