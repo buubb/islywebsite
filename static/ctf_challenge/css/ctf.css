@@ -226,11 +226,13 @@ Responsive style
     .ctf .owl-nav .owl-next:before {
         font-size: 35px;
         background-color: transparent;
+        border: none;
     }
 
     .ctf .owl-nav .owl-prev:before {
         font-size: 35px;
         background-color: transparent;
+        border: none;
     }
 
     .ctf .owl-nav .owl-prev:hover:before,
