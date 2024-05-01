@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="85377482-24bb-4117-b7dc-6750b9d591d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="81be0343-b66a-47fa-8907-197325f202a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/Fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Fail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +31,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2fqJbo1OIBbGP0rQVftpdE4J92T" />
+  <component name="ProjectId" id="2fs7c5eXxh1Fo6QxUmpfcYeuU9E" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,12 +80,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="85377482-24bb-4117-b7dc-6750b9d591d8" name="Changes" comment="" />
-      <created>1714522750741</created>
+      <changelist id="81be0343-b66a-47fa-8907-197325f202a5" name="Changes" comment="" />
+      <created>1714578008469</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714522750741</updated>
-      <workItem from="1714522752563" duration="353000" />
+      <updated>1714578008469</updated>
+      <workItem from="1714578011021" duration="1340000" />
     </task>
     <servers />
   </component>
