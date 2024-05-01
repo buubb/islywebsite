@@ -16,4 +16,5 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='login/new3.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('check_session_status/', check_session_status, name='check_session_status'),
+    # path('login_attempt/', views.login_attempt, name='login_attempt'),
    ]
