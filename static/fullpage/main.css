@@ -22,7 +22,7 @@ header nav{
     align-items: center;
     flex-flow: row nowrap;
     justify-content: center;
-    padding: 7px 0px 15px 0px;
+    padding: 10px 0px;
     border-radius: 0px;
     cursor: pointer;
 }
