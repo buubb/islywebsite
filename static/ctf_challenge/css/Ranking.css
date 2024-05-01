@@ -1,0 +1,35 @@
+/* Ranking.css */
+
+thead {
+    background-color: #ffffff;
+}
+
+td {
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+rank-column {
+    padding-left: 10px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.player-name {
+    margin-left: 10px;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .player-name {
+    margin-left: 5px;
+    }
+    .challenge-column, .profile-column {
+        display: none;
+    }
+}
