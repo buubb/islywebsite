@@ -35,8 +35,8 @@ Left-Info, Right-Info
 .Curriculum .left-info,
 .Curriculum .right-info {
     background-color: transparent;
-    border: 4px solid #FFFFFF;
-    border-radius: 0;
+    border: 5px solid #FFFFFF;
+    border-radius: 23px;
     padding: 30px;
 }
 
