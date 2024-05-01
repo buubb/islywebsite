@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0a9160b-ab3f-47af-a9dd-0fd56fb84195" name="Changes" comment="">
+    <list default="true" id="85377482-24bb-4117-b7dc-6750b9d591d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-intro.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/volunteer-list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTF_Challenge/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTF_Challenge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTF_Challenge/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +21,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
+  "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2fjJ9C2oCuIfTRrx5ZOLnJo0Iy9" />
+  <component name="ProjectId" id="2fqJbo1OIBbGP0rQVftpdE4J92T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,11 +41,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raony\PycharmProjects\islywebsite\static\volunteer\css\feed" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -78,12 +69,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f0a9160b-ab3f-47af-a9dd-0fd56fb84195" name="Changes" comment="" />
-      <created>1714308400591</created>
+      <changelist id="85377482-24bb-4117-b7dc-6750b9d591d8" name="Changes" comment="" />
+      <created>1714522750741</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714308400591</updated>
-      <workItem from="1714308403202" duration="724000" />
+      <updated>1714522750741</updated>
+      <workItem from="1714522752563" duration="353000" />
     </task>
     <servers />
   </component>

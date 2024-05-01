@@ -1,10 +1,10 @@
 # urls.py
 from django.urls import path
-from .views import ctf
+from .views import wargame
 
 
 app_name = "CTFChallenge"
 urlpatterns = [
     # url path: CTF-Challenge/
-    path("", ctf, name="ctf"),
+    path("", wargame, name="wargame"),
 ]
