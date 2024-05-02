@@ -278,14 +278,14 @@ nav .res-nav-container{
     max-width: 1000px;
     margin:auto;
     width:100%;
-    left:350px;
+    margin-left:150px;
     top:270px;
     line-height:110px;
 }
 .mainbutton{
   position:absolute;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  left:350px;
+  margin-left:150px;
   top:520px;
 }
 .mainbutton:hover{
