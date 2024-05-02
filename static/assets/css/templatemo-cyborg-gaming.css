@@ -345,7 +345,7 @@ Header Style
 */
 
 .background-header {
-    background: #25252980;
+    background: #0d0f1080;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     height: 80px !important;

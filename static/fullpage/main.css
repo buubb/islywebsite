@@ -1,5 +1,6 @@
 /* font */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
 body{
     justify-content: center;
 }
@@ -10,7 +11,8 @@ header{
     right:0!important;
     top:0!important; 
     z-index: 100!important;
-    font-family: "Sen","Noto Sans KR",sans-serif!important;
+    /* font-family: "Sen","Noto Sans KR",sans-serif!important; */
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     text-align: center;
 }
 
@@ -42,6 +44,7 @@ header nav .logo img{
     
 }
 header nav .logo h2{
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -559,7 +562,6 @@ path:nth-child(6) {
 .Words {
   margin: 0 auto;
   padding: 80px 0;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 68px;
   font-weight: 900;
   letter-spacing: -2px;
