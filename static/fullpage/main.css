@@ -129,7 +129,7 @@ a{
   position:absolute; 
   left: calc(50% - 80px);
   /* border-radius: 18px; */
-  background:#25252980;
+  background:#0d0f1080;
   backdrop-filter: blur( 10px );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   border: 1px solid #FFFFFF;
@@ -263,7 +263,11 @@ nav .res-nav-container{
     text-align: left!important;
 }
 .green{
-    color:#5ee773;
+    /* background-image: linear-gradient(to right top, #0d0f10,  #5ee773);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    color:#5ee775;
 }
 .text_box{
     position:absolute;
@@ -275,15 +279,14 @@ nav .res-nav-container{
     margin:auto;
     width:100%;
     left:350px;
-    top:250px;
+    top:270px;
     line-height:110px;
 }
 .mainbutton{
   position:absolute;
-  color: #FFFFFF;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   left:350px;
-  top:500px;
+  top:520px;
 }
 .mainbutton:hover{
   filter:brightness(80%)!important;
@@ -293,12 +296,13 @@ nav .res-nav-container{
   padding-bottom:15px;
 }
 .mainrecruit{
+  color: #FFFFFF;
   font-size: 36px;
   font-weight: 600;
 }
 .mainrecruit:hover{
   color:#FFFFFF;
-  filter:brightness(80%)!important;
+  filter:brightness(100%)!important;
 }
 .cursor {
     animation: blink 0.5s infinite;
