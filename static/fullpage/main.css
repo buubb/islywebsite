@@ -1,7 +1,9 @@
 /* font */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
 body{
     justify-content: center;
+    cursor: pointer!important;
 }
 /* header */
 header{
@@ -10,7 +12,8 @@ header{
     right:0!important;
     top:0!important; 
     z-index: 100!important;
-    font-family: "Sen","Noto Sans KR",sans-serif!important;
+    /* font-family: "Sen","Noto Sans KR",sans-serif!important; */
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     text-align: center;
 }
 
@@ -42,6 +45,7 @@ header nav .logo img{
     
 }
 header nav .logo h2{
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -157,7 +161,7 @@ header nav .nav .nav-item a.active {
 header nav .nav li:hover .menu_name{
     color:aliceblue;
     text-decoration: underline 3px aliceblue!important;
-    text-underline-offset: 33px!important;
+    text-underline-offset: 30px!important;
 }
 header nav .nav .nav-item a {
   background-color: transparent;
@@ -192,7 +196,7 @@ nav .res-nav .icon-wrap .hamburger{
     color: aliceblue;
     border-radius: 5px;
     position:relative;
-    transform: translateY(-10%);
+    transform: translateY(-15%);
 }
 nav .res-nav-container{
   display: none;
@@ -265,17 +269,40 @@ nav .res-nav-container{
     position:absolute;
     font-size: 90px;
     font-weight: 800;
+    font-family: "Source Sans 3", sans-serif;
     text-align: left!important;
-    max-width: 700px;
+    max-width: 1000px;
     margin:auto;
     width:100%;
-    padding:0px 0px 0px 40px;
+    left:350px;
     top:250px;
     line-height:110px;
 }
+.mainbutton{
+  position:absolute;
+  color: #FFFFFF;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  left:350px;
+  top:500px;
+}
+.mainbutton:hover{
+  filter:brightness(80%)!important;
+}
+.mainbutton img{
+  padding-left: 30px;
+  padding-bottom:15px;
+}
+.mainrecruit{
+  font-size: 36px;
+  font-weight: 600;
+}
+.mainrecruit:hover{
+  color:#FFFFFF;
+  filter:brightness(80%)!important;
+}
 .cursor {
     animation: blink 0.5s infinite;
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 400;
   }
   
@@ -351,60 +378,7 @@ nav .res-nav-container{
 .button--size-s {
     font-size: 14px;
   }
-/* Wayra */
-.button--wayra {
-    overflow: hidden;
-    width: 245px;
-    -webkit-transition: border-color 0.3s, color 0.3s;
-    transition: border-color 0.3s, color 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  }
-  .button--wayra::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 100%;
-    background: #37474f;
-    z-index: -1;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
-    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-  }
-  .button--wayra:hover {
-    color: #fff;
-    border-color: #1f2122;
-  }
-  .button--wayra.button--inverted:hover {
-    color: #1f2122;
-    border-color: #fff;
-  }
-  .button--wayra:hover::before {
-    opacity: 1;
-    background-color: #1f2122;
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  }
-  .button--wayra.button--inverted:hover::before {
-    background-color: #fff;
-  } 
-.button--border-medium {
-    border: 2px solid;
-  }
-.button--text-upper {
-    letter-spacing: 2px;
-    text-transform: uppercase 
-}
-.button--text-thick {
-    font-weight: 600;
-  }
+
   /* footer */
 #section-footer{ /* root */
   border-top: 0.5px solid #666;
@@ -559,7 +533,6 @@ path:nth-child(6) {
 .Words {
   margin: 0 auto;
   padding: 80px 0;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 68px;
   font-weight: 900;
   letter-spacing: -2px;

@@ -98,10 +98,6 @@ a {
     text-decoration: none !important;
 }
 
-a:hover {
-    color: rgb(57, 237, 111);
-}
-
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -129,13 +125,6 @@ Global Styles
 --------------------------------------------- 
 */
 
-/*
-html,
-body {
-    background: #0d0f10;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-*/
 
 body .page-content {
     margin-top: 110px;
@@ -345,7 +334,7 @@ Header Style
 */
 
 .background-header {
-    background: #25252980;
+    background: #0d0f1080;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     height: 80px !important;
