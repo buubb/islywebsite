@@ -96,7 +96,15 @@
                                                         <i class="fa-solid fa-upload"></i> &nbsp; Choose Your Files
                                                     </label>
                                                     <p id="num-of-files">No Files Chosen</p>
-                                                    <div id="img-container"></div>
+                                                    <div id="img-container">
+                                                        <!-- Existing images -->
+                                                        {% for image in images %}
+                                                            <figure>
+                                                                <img src="{{ image.url }}" alt="">
+                                                                <figcaption class="image-caption">{{ image.name }}</figcaption>
+                                                            </figure>
+                                                        {% endfor %}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

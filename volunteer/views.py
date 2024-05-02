@@ -7,6 +7,7 @@ from django.contrib.humanize.templatetags.humanize import ordinal
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
 from django.contrib import messages
+from django.utils import timezone
 
 
 def feed(request):
@@ -101,25 +102,58 @@ def post_detail(request, post_id):
 
 
 @login_required(login_url="login")
-def post_delete(request, post_id):
-    try:
-        post = Post.objects.get(id=post_id)
+def post_edit(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
 
-        # 권한 확인
-        if request.user != post.user:
-            # 작성자가 아닌 경우
-            messages.error(request, "You do not have permission to delete this post")
+    if request.user != post.user:
+        messages.error(request, "You do not have permission to edit this post")
+        return redirect("Volunteer:post_detail", post_id=post_id)
+
+    images = [image.photo for image in post.postimage_set.all()]
+
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.created = timezone.now()
+            post.save()
+
+            # 이미지 수정
+            new_images = request.FILES.getlist("images")
+            if new_images:
+                post.postimage_set.all().delete()
+                for image_file in new_images:
+                    PostImage.objects.create(
+                        post=post,
+                        photo=image_file,
+                    )
+
             return redirect("Volunteer:post_detail", post_id=post_id)
+    else:
+        form = PostForm(instance=post)
 
-        # 삭제할 수 있는 권한이 있는 경우
-        post.delete()
+    context = {
+        "form": form,
+        "images": images,
+    }
+    return render(request, 'volunteer/post_form.html', context)
 
-        # 삭제 후 피드 페이지로 이동
-        return redirect("Volunteer:feed")
 
-    except Post.DoesNotExist:
-        # 해당 ID의 Post가 존재하지 않는 경우
-        return render(request, "volunteer/404_2.html")
+@login_required(login_url="login")
+def post_delete(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+
+    # 권한 확인
+    if request.user != post.user:
+        # 작성자가 아닌 경우
+        messages.error(request, "You do not have permission to delete this post")
+        return redirect("Volunteer:post_detail", post_id=post_id)
+
+    # 삭제할 수 있는 권한이 있는 경우
+    post.delete()
+
+    # 삭제 후 피드 페이지로 이동
+    return redirect("Volunteer:feed")
 
 
 @require_POST

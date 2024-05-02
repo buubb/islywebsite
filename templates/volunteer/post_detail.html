@@ -120,9 +120,9 @@
                                                                 <ul class="dropdown-menu dropdown-menu-end">
                                                                     <li><button class="dropdown-item vlt_share" type="button">SHARE<i class="fa-solid fa-link"></i></button></li>
 
-                                                                    <li><button class="dropdown-item" type="button">EDIT<i class="fa-solid fa-pen-to-square"></i></button></li>
+                                                                    <li><a class="dropdown-item post_edit" href="{% url 'Volunteer:post_edit' post_id=post.id %}">EDIT<i class="fa-solid fa-pen-to-square"></i></a></li>
 
-                                                                    <li><button class="dropdown-item" type="button">DELETE<i class="fa-solid fa-trash-can"></i></button></li>
+                                                                    <li><a class="dropdown-item post_delete" href="javascript:void(0)" data-uri="{% url 'Volunteer:post_delete' post_id=post.id %}">DELETE<i class="fa-solid fa-trash-can"></i></a></li>
                                                                 </ul>
                                                             </div>
                                                         {% else %}
@@ -278,8 +278,8 @@
         <script src="{% static 'fullpage/nav.js' %}"></script>
 
         <!-- Raon JavaScript -->
-        <script src="{% static 'volunteer/js/delete.js' %}"></script>
-        <script src="{% static 'volunteer/js/like.js' %}"></script>
+        <script src="{% static 'volunteer/js/post_delete.js' %}"></script>
+        <script src="{% static 'volunteer/js/post_like.js' %}"></script>
         <script src="{% static 'volunteer/js/share.js' %}"></script>
         <script src="{% static 'volunteer/js/comment_delete.js' %}"></script>
         <script src="{% static 'volunteer/js/VltCarousel.js' %}"></script>
