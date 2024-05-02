@@ -3,7 +3,6 @@ from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
-from .models import LoginFail
 from django.http import HttpResponse, JsonResponse
 from django.utils import timezone
 from django.urls import reverse
@@ -11,6 +10,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.messages import get_messages
 # from .models import ConcurrentLogin
+from .models import UserLoginFails
 
 LOGIN_TRY_LIMIT=5
 
@@ -48,6 +48,7 @@ class Logout(APIView):
         if request.user.is_authenticated:
             Logout(request)
             return render(request, 'mainpage/index.html')
+
 
 def check_session_status(request):
     if request.user.is_authenticated:

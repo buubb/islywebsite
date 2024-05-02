@@ -1,0 +1,165 @@
+{% load static humanize %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>I.Sly()</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+
+        <!-- Raon CSS Files -->
+        <link rel="stylesheet" href="{% static 'volunteer/css/posting/VltPosting.css' %}">
+        <link rel="stylesheet" href="{% static 'copyright.css' %}">
+
+        <!-- Raon Text Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+        <!-- Yubin add -->
+        <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
+
+    </head>
+
+    <body>
+
+        <!-- ***** Navbar Start ***** -->
+        {% include "fullpagenav.html" %}
+        <!-- ***** Navbar End ***** -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-content">
+
+                        <!-- ***** Posting Start ***** -->
+                        <div class="row py-4">
+                            <div class="col-xl-9 col-lg-10 mx-auto">
+                                <div class="VltPosting">
+                                    <form method="POST" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <div class="d-flex justify-content-between mb-5">
+                                            <div class="d-flex align-items-center">
+                                                <h1 class="major">WRITE</h1>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button type="submit" class="save"><i class="fa-solid fa-paper-plane fa-2xl"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="fields">
+                                            <!-- title -->
+                                            <div class="field">
+                                                <div class="label-group">
+                                                    <label for="title" class="title-label">Title</label>
+                                                    <span id="title-counter">0 / 50</span>
+                                                </div>
+                                                <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" required>
+                                                <p id="title-feedback" style="display: none;">Maximum 50 characters allowed.</p>
+                                            </div>
+                                            <!-- year -->
+                                            <div class="field half">
+                                                <label for="year" class="year-label">Year</label>
+                                                <input type="number" class="form-control" name="year" id="year" value="{{ form.year.value|default_if_none:'' }}" min="2020" required>
+                                            </div>
+                                            <!-- generation -->
+                                            <div class="field half">
+                                                <label for="generation" class="gen-label">Generation</label>
+                                                <input type="number" class="form-control" name="generation" id="generation" value="{{ form.generation.value|default_if_none:'' }}" min="1" required>
+                                            </div>
+                                            <!-- content -->
+                                            <div class="field">
+                                                <label for="content" class="con-label">Content</label>
+                                                <textarea class="form-control" name="content" id="content" rows="10" required>{{ form.content.value|default_if_none:'' }}</textarea>
+                                            </div>
+                                            <!-- image -->
+                                            <div class="field">
+                                                <p class="img-label">Image Upload</p>
+                                                <div class="image-upload">
+                                                    <input id="file-input" name="images" type="file" accept="image/jpg, image/jpeg, image/png" onchange="preview()" multiple>
+                                                    <label for="file-input" class="file-label py-3">
+                                                        <i class="fa-solid fa-upload"></i> &nbsp; Choose Your Files
+                                                    </label>
+                                                    <p id="num-of-files">No Files Chosen</p>
+                                                    <div id="img-container"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** Posting End ***** -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer Start -->
+        {% include 'footer_2.html' %}
+        <!-- footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'fullpage/selected.js' %}"></script>
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+        <script src="{% static 'assets/js/tabs.js' %}"></script>
+        <script src="{% static 'assets/js/popup.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Navbar JavaScript -->
+        <script>
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle();
+            });
+            $(".aboutdrop").click(function () {
+                $(".depth_1").slideToggle();
+            });
+        </script>
+
+        <!-- Raon JavaScript -->
+        <script src="{% static 'volunteer/js/text_counting.js' %}"></script>
+        <script src="{% static 'volunteer/js/img_upload.js' %}"></script>
+
+
+    </body>
+
+</html>

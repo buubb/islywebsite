@@ -1,0 +1,270 @@
+/*
+---------------------------------------------
+DevRole
+---------------------------------------------
+*/
+
+.DevRole {
+    padding: 0;
+    border-top: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.DevRole .item {
+    background-color: transparent;
+    padding: 4rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    border-color: #FFFFFF;
+    border-left-width: 5px;
+    border-style: solid;
+    border-top-width: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.DevRole .row .col-md-6:nth-child(-n + 2) .item {
+    border-top-width: 0;
+}
+
+.DevRole .row .col-md-6:nth-child(odd) .item {
+    border-left-width: 0;
+}
+
+
+/*
+---------------------------------------------
+Next
+---------------------------------------------
+*/
+
+.DevRole .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.DevRole .next h1 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Thumb
+---------------------------------------------
+*/
+
+.DevRole .thumb {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*
+---------------------------------------------
+Info
+---------------------------------------------
+*/
+
+.DevRole .info {
+    text-align: center;
+}
+
+/* education */
+.DevRole .info p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+    line-height: 2.375;
+    letter-spacing: 0.06em;
+    color: #CCC;
+}
+
+/* name */
+.DevRole .info h2 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+
+/*
+---------------------------------------------
+Image
+---------------------------------------------
+*/
+
+.DevRole .profile {
+    aspect-ratio: 3 / 2;
+}
+
+.DevRole .profile img {
+    border-radius: 0;
+    border: 5px solid #FFFFFF;
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*
+---------------------------------------------
+Hover effect
+---------------------------------------------
+*/
+
+
+/*
+---------------------------------------------
+Down-content
+---------------------------------------------
+*/
+
+.DevRole .down-content {
+    margin-top: 3rem;
+
+}
+
+.DevRole .down-content .role {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.055em;
+    line-height: 2.375;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    border: 1.5px solid #0D0F10;
+}
+
+.DevRole .down-content .role:hover {
+    border: 1.5px solid #FFFFFF;
+}
+
+.DevRole .down-content .dot {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.055em;
+    line-height: 2.375;
+    text-align: center;
+    color: #0d0f10;
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    border: 1.5px solid #0D0F10;
+    cursor: default;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* education */
+    .DevRole .info p {
+        font-size: 0.9rem;
+    }
+
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* item */
+    .DevRole .item {
+        padding: 2.5rem;
+    }
+
+    /* education */
+    .DevRole .info p {
+        font-size: 0.8rem;
+    }
+
+    /* name */
+    .DevRole .info h2 {
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+    }
+
+    /* image */
+    .DevRole .thumb img {
+        margin-top: 2.5rem;
+    }
+
+    /* down content */
+    .DevRole .down-content {
+        margin-top: 2.5rem;
+    }
+
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.85rem;
+    }
+
+    /* next */
+    .DevRole .next h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .DevRole .item {
+        border-left-width: 0;
+    }
+
+    .DevRole .row .col-md-6:nth-child(2) .item {
+        border-top-width: 5px;
+    }
+
+    .DevRole .row .col-md-6:nth-child(6) .item {
+        display: none;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}

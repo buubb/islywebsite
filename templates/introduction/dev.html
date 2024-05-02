@@ -7,8 +7,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
         <title>I.Sly()</title>
 
         <!-- Bootstrap core CSS -->
@@ -21,15 +19,18 @@
         <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
 
         <!-- Raon CSS Files -->
-        <link rel="stylesheet" href="{% static 'introduction/dev/css/DevList.css' %}">
+        <link rel="stylesheet" href="{% static 'introduction/dev/css/DevHeadline.css' %}">
+        <link rel="stylesheet" href="{% static 'introduction/dev/css/DevRole.css' %}">
         <link rel="stylesheet" href="{% static 'introduction/dev/css/DevComment.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
         <!-- Raon Icon Fonts -->
@@ -52,114 +53,132 @@
                 <div class="col-lg-12">
                     <div class="page-content">
 
-                        <!-- ***** Developers Start ***** -->
-                        <div class="DevList pt-4">
-                            <div class="col-lg-12">
-                                <div class="text-center mx-auto">
-                                    <h1 class="title mb-5"><i class="bi bi-stars"></i> Developers <i class="bi bi-stars"></i></h1>
+                        <!-- ***** Headline Start ***** -->
+                        <div class="row pt-4">
+                            <div class="DevHeadline">
+                                <div class="col-lg-12">
+                                    <h1 class="display-4">
+                                        JOIN THE TEAM,<br>
+                                        TO JOIN OUR VISION
+                                    </h1>
                                 </div>
-                                <div class="row g-4">
-                                    <!-- Yubin -->
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="dev-item overflow-hidden pb-4">
-                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/yubin_memoji.png' %}" alt="">
-                                            <h5 class="mb-3">Yubin Lee</h5>
-                                            <span><i class="fa-solid fa-graduation-cap"></i> 융합보안공학과 21</span>
-                                            <div class="dev-task">
-                                                <a class="btn btn-square rounded" href="/">#Main</a>
-                                                <a class="btn btn-square rounded" href="/CTF-Challenge/">#Wargame</a>
-                                                <a class="btn btn-square rounded" href="#" onclick="return false;">#NavBar</a>
-                                                <a id="footerlink" class="btn btn-square rounded" href="#" onclick="return false;">#Footer</a>
+                            </div>
+                        </div>
+                        <!-- ***** Headline End ***** -->
+
+
+                        <!-- ***** Developers Start ***** -->
+                        <div class="DevRole">
+                            <div class="row g-0">
+                                <!-- Raon -->
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <div class="info">
+                                                <p>Sungshin, CSE 20</p>
+                                                <h2>Raon Yang</h2>
                                             </div>
-                                            <ul class="dev-social">
-                                                <li><a class="btn btn-square" href="https://github.com/buubb"><i class="fa-brands fa-github"></i></a></li>
-                                                <li><a class="btn btn-square" href="https://velog.io/@buubb/posts"><i class="fa-solid fa-house"></i></a></li>
-                                                <li><a class="btn btn-square" href="#" onclick="copyToClipboard(event, 'liyubin')"><i class="fa-brands fa-discord"></i></a></li>
-                                            </ul>
+                                            <div class="profile">
+                                                <img class="img-fluid" src="{% static 'introduction/dev/img/raon_memoji.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <a class="role btn" href="/volunteer/">Project Frontend · Backend</a>
+                                            <a class="role btn" href="/recruit/">Recruit Frontend · Backend</a>
+                                            <a class="role btn" href="/CTF-Challenge/">Wargame Backend</a>
+                                            <a class="role btn" href="/introduction/">Introduction Frontend</a>
+                                            <a class="role btn" href="/introduction/developers/">Developers Frontend</a>
                                         </div>
                                     </div>
-                                    <!-- Raon -->
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="dev-item overflow-hidden pb-4">
-                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/raon_memoji.png' %}" alt="">
-                                            <h5 class="mb-3">Raon Yang</h5>
-                                            <span><i class="fa-solid fa-graduation-cap"></i> 융합보안공학과 20</span>
-                                            <div class="dev-task">
-                                                <a class="btn btn-square rounded" href="/introduction/">#Introduction</a>
-                                                <a class="btn btn-square rounded" href="/volunteer/">#Project</a>
-                                                <a class="btn btn-square rounded" href="/recruit/">#Recruit</a>
-                                                <a id="devlink" class="btn btn-square rounded" href="/introduction/developers/">#Developers</a>
+                                </div>
+                                <!-- Eunju -->
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <div class="info">
+                                                <p>Sungshin, CSE 20</p>
+                                                <h2>Eunju Park</h2>
                                             </div>
-                                            <ul class="dev-social">
-                                                <li><a class="btn btn-square" href="https://github.com/raon-yang"><i class="fa-brands fa-github"></i></a></li>
-                                                <li><a class="btn btn-square" href="https://blog.naver.com/loulou--"><i class="fa-solid fa-house"></i></a></li>
-                                                <li><a class="btn btn-square" href="#" onclick="copyToClipboard(event, 'raon_yang')"><i class="fa-brands fa-discord"></i></a></li>
-                                            </ul>
+                                            <div class="profile">
+                                                <img class="img-fluid" src="{% static 'introduction/dev/img/eunju_memoji.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <a class="role btn" href="/notice/">Notice Backend</a>
+                                            <a class="role btn" href="/CTF-Challenge/">Wargame Frontend</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
                                         </div>
                                     </div>
-                                    <!-- Eunju -->
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="dev-item overflow-hidden pb-4">
-                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/eunju_memoji.png' %}" alt="">
-                                            <h5 class="mb-3">Eunju Park</h5>
-                                            <span><i class="fa-solid fa-graduation-cap"></i> 융합보안공학과 20</span>
-                                            <div class="dev-task">
-                                                <a class="btn btn-square rounded" href="/recruit/">#Recruit</a>
+                                </div>
+                                <!-- Sumi -->
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <div class="info">
+                                                <p>Sungshin, CSE 21</p>
+                                                <h2>Sumi Lee</h2>
                                             </div>
-                                            <ul class="dev-social">
-                                                <li><a class="btn btn-square" href="https://github.com/enjprk41"><i class="fa-brands fa-github"></i></a></li>
-                                                <li><a class="btn btn-square" href="https://eunjuicyyyyyy.tistory.com/"><i class="fa-solid fa-house"></i></a></li>
-                                                <li><a class="btn btn-square" href="#" onclick="copyToClipboard(event, 'enjprk41')"><i class="fa-brands fa-discord"></i></a></li>
-                                            </ul>
+                                            <div class="profile">
+                                                <img class="img-fluid" src="{% static 'introduction/dev/img/sumi_memoji.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <a class="role btn" href="/notice/">Notice Backend</a>
+                                            <a class="role btn" href="/login/">Login Backend</a>
+                                            <a class="role btn" href="/recruit/">Recruit Frontend</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
                                         </div>
                                     </div>
-                                    <!-- Sumi -->
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="dev-item overflow-hidden pb-4">
-                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/sumi_memoji.png' %}" alt="">
-                                            <h5 class="mb-3">Sumi Lee</h5>
-                                            <span><i class="fa-solid fa-graduation-cap"></i> 융합보안공학과 21</span>
-                                            <div class="dev-task">
-                                                <a class="btn btn-square rounded" href="/notice/">#Notice</a>
-                                                <a class="btn btn-square rounded" href="/recruit/">#Recruit</a>
+                                </div>
+                                <!-- Seolin -->
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <div class="info">
+                                                <p>Sungshin, CSE 21</p>
+                                                <h2>Seolin Um</h2>
                                             </div>
-                                            <ul class="dev-social">
-                                                <li><a class="btn btn-square" href="https://github.com/sumi-2"><i class="fa-brands fa-github"></i></a></li>
-                                                <li><a class="btn btn-square" href="#" onclick="copyToClipboard(event, 'sumv__')"><i class="fa-brands fa-discord"></i></a></li>
-                                            </ul>
+                                            <div class="profile">
+                                                <img class="img-fluid" src="{% static 'introduction/dev/img/seolin_memoji.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <a class="role btn" href="/login/">Login Frontend · Backend</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
                                         </div>
                                     </div>
-                                    <!-- Soyoung -->
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="dev-item overflow-hidden pb-4">
-                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/soyoung_memoji.png' %}" alt="">
-                                            <h5 class="mb-3">Soyoung Ham</h5>
-                                            <span><i class="fa-solid fa-graduation-cap"></i> 융합보안공학과 21</span>
-                                            <div class="dev-task">
-                                                <a class="btn btn-square rounded" href="/introduction/bylaws/">#Bylaws</a>
+                                </div>
+                                <!-- Yubin -->
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <div class="info">
+                                                <p>Sungshin, CSE 21</p>
+                                                <h2>Yubin Lee</h2>
                                             </div>
-                                            <ul class="dev-social">
-                                                <li><a class="btn btn-square" href="https://github.com/rabbit7335"><i class="fa-brands fa-github"></i></a></li>
-                                                <li><a class="btn btn-square" href="https://zero0903.tistory.com/"><i class="fa-solid fa-house"></i></a></li>
-                                                <li><a class="btn btn-square" href="#" onclick="copyToClipboard(event, 'sozero00')"><i class="fa-brands fa-discord"></i></a></li>
-                                            </ul>
+                                            <div class="profile">
+                                                <img class="img-fluid" src="{% static 'introduction/dev/img/yubin_memoji.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <a class="role btn" href="/">Home Frontend · Backend</a>
+                                            <a class="role btn" href="#" onclick="return false;">404 Frontend</a>
+                                            <a class="role btn" href="#" onclick="return false;">Navigation bar</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
+                                            <a class="dot btn" href="#" onclick="return false;">.</a>
                                         </div>
                                     </div>
-                                    <!-- Seolin -->
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="dev-item overflow-hidden pb-4">
-                                            <img class="img-fluid mb-4" src="{% static 'introduction/dev/img/seolin_memoji.png' %}" alt="">
-                                            <h5 class="mb-3">Seolin Um</h5>
-                                            <span><i class="fa-solid fa-graduation-cap"></i> 융합보안공학과 21</span>
-                                            <div class="dev-task">
-                                                <a class="btn btn-square rounded" href="/login/">#Login</a>
-                                            </div>
-                                            <ul class="dev-social">
-                                                <li><a class="btn btn-square" href="https://github.com/djatjfdls"><i class="fa-brands fa-github"></i></a></li>
-                                                <li><a class="btn btn-square" href="https://velog.io/@sin787879/posts"><i class="fa-solid fa-house"></i></a></li>
-                                                <li><a class="btn btn-square" href="#" onclick="copyToClipboard(event, 'umseolin')"><i class="fa-brands fa-discord"></i></a></li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <!-- Next -->
+                                <div class="col-md-6">
+                                    <div class="item next">
+                                        <h1>Who's Next?</h1>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +203,7 @@
                                                         <img src="{% static 'introduction/dev/img/yubin_circle.png' %}" alt="">
                                                     </div>
                                                     <div class="col-9">
-                                                        <p class="mb-0 fw-bold text-dark">Yubin Lee</p><span>Team Leader</span>
+                                                        <p class="mb-0 fw-bold text-dark">Yubin Lee</p><span>Full-Stack Developer</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -226,7 +245,7 @@
                                                         <img src="{% static 'introduction/dev/img/eunju_circle.png' %}" alt="">
                                                     </div>
                                                     <div class="col-9">
-                                                        <p class="mb-0 fw-bold text-dark">Eunju Park</p><span>Back-End Developer</span>
+                                                        <p class="mb-0 fw-bold text-dark">Eunju Park</p><span>Full-Stack Developer</span>
                                                     </div>
                                                 </div>
                                             </div>

@@ -348,7 +348,6 @@ Header Style
     background: #25252980;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    border-bottom: 1px solid #FFFFFF;
     height: 80px !important;
     position: fixed !important;
     top: 0 !important;
@@ -2045,26 +2044,22 @@ eunju workspace
     color: #fff;
 }
 
-/* post.html 기본 컨테이너 스타일 */
 #assignment-content {
     padding: 100px;
     border-radius: 5px;
 }
 
-/* 제목 스타일 */
 .assignment-title {
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
-    text-align: left; /* 텍스트 좌측 정렬 */
+    text-align: left;
 }
 
-/* 폼 스타일 */
 .assignment-form {
     margin-top: 10px;
 }
 
-/* 폼 필드 스타일 */
 .assignment-field {
     width: 100%;
     padding: 10px;
@@ -2073,7 +2068,6 @@ eunju workspace
     border-radius: 3px;
 }
 
-/* 제출 버튼 스타일 */
 .assignment-submit-button {
     margin-top: 20px;
     background-color: #366F31;
@@ -2084,11 +2078,37 @@ eunju workspace
     cursor: pointer;
 }
 
-/* 제출 버튼 호버 효과 */
 .assignment-submit-button:hover {
     background-color: #0C2F09;
 }
 
+/*
+.pagination-container {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 15px;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 3px 8px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.pagination .current-page {
+    padding: 3px 8px;
+    margin: 2px;
+    background-color: #28B463;
+    color: #fff;
+}
+*/
 
 /* 
 ---------------------------------------------

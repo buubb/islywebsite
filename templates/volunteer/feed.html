@@ -7,8 +7,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
         <title>I.Sly()</title>
 
         <!-- Bootstrap core CSS -->
@@ -24,15 +22,17 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon CSS Files -->
-        <link rel="stylesheet" href="{% static 'volunteer/css/feed/volunteer-intro.css' %}">
-        <link rel="stylesheet" href="{% static 'volunteer/css/feed/volunteer-list.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/feed/VltHeading.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/feed/VltList.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon JavaScript -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
         <!-- Raon Text Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
         <!-- Yubin add -->
@@ -52,22 +52,26 @@
                 <div class="col-lg-12">
                     <div class="page-content">
 
-                        <!-- ***** Intro Start ***** -->
+                        <!-- ***** Heading Start ***** -->
                         <div class="row pt-4">
-                            <div class="vlt-intro">
+                            <div class="vlt-heading">
                                 <div class="col-lg-12">
-                                    <div class="major">
-                                        <div class="headline">
-                                            <h2><em>Discover</em> Our Projects!</h2>
+                                    {% if user.is_authenticated %}
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <h2 class="headline display-4">Discover <span>Our</span> Projects!</h2>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <a class="write-btn" href="{% url 'Volunteer:post_add' %}"><i class="fa-solid fa-pen"></i></a>
+                                            </div>
                                         </div>
-                                        <div class="write-button">
-                                            <a href="{% url 'Volunteer:post_add' %}">WRITE</a>
-                                        </div>
-                                    </div>
+                                    {% else %}
+                                        <h2 class="headline display-4 text-center">Discover <span>Our</span> Projects!</h2>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
-                        <!-- ***** Intro End ***** -->
+                        <!-- ***** Heading End ***** -->
 
 
                         <!-- ***** Project List Start ***** -->

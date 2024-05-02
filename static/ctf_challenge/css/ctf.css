@@ -13,19 +13,12 @@ CTF_Challenge Style
 
 /*
 ---------------------------------------------
-Subtitle, Title
+Title
 ---------------------------------------------
 */
 
-.ctf .subtitle {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.075em;
-    cursor: text !important;
-}
-
 .ctf .title {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     color: #FFFFFF;
     display: block;
     font-weight: 900;
@@ -164,11 +157,12 @@ Owl-Nav
     font-size: 25px;
     font-weight: 700;
     content: '\f104';
-    background-color: #2A2C30;
+    background-color: #0D0F10;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+    border: 2px solid #FFFFFF;
 }
 
 .ctf .owl-nav .owl-prev,
@@ -191,16 +185,17 @@ Owl-Nav
     font-size: 25px;
     font-weight: 700;
     content: '\f105';
-    background-color: #2A2C30;
+    background-color: #0D0F10;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+    border: 2px solid #FFFFFF;
 }
 
 .ctf .owl-nav .owl-prev:hover:before,
 .ctf .owl-nav .owl-next:hover:before {
-    color: #2A2C30;
+    color: #000000;
     background-color: #FFFFFF;
     opacity: 1;
 }
@@ -231,11 +226,13 @@ Responsive style
     .ctf .owl-nav .owl-next:before {
         font-size: 35px;
         background-color: transparent;
+        border: none;
     }
 
     .ctf .owl-nav .owl-prev:before {
         font-size: 35px;
         background-color: transparent;
+        border: none;
     }
 
     .ctf .owl-nav .owl-prev:hover:before,

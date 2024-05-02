@@ -7,8 +7,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
         <title>I.Sly()</title>
 
         <!-- Bootstrap core CSS -->
@@ -21,7 +19,7 @@
         <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
 
         <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'recruit/css/RecruitBanner.css' %}">
@@ -32,6 +30,9 @@
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
@@ -56,9 +57,9 @@
         <div class="container-fluid pt-5 RecruitBanner">
             <div class="container pt-5">
                 <div class="row g-5 py-4">
-                    <div class="col-lg-12 text-center mx-auto text-lg-start">
-                        <div class="p-5 d-flex flex-column justify-content-lg-between flex-lg-row">
-                            <div class="align-self-center py-5">
+                    <div class="col-lg-12 text-center mx-auto text-md-start">
+                        <div class="p-5 d-flex flex-column justify-content-md-between flex-md-row">
+                            <div class="align-self-center py-4">
                                 <h1 class="title display-4">
                                     WANT TO LEARN<br>
                                     <span id="element"></span><br>
@@ -68,11 +69,11 @@
                             <div class="align-self-center">
                                 {% if application_link %}
                                     <a href="{{ application_link }}" class="apply btn" target="_blank">
-                                        <i class="bi bi-arrow-right"></i>
+                                        <i class="bi bi-arrow-right-circle"></i>
                                     </a>
                                 {% else %}
                                     <a href="#" class="apply btn" id="CannotApply">
-                                        <i class="bi bi-arrow-right"></i>
+                                        <i class="bi bi-arrow-right-circle"></i>
                                     </a>
                                 {% endif %}
                             </div>

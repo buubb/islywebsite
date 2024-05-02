@@ -26,7 +26,7 @@ Subtitle, Title
 }
 
 .VltMore .title {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     color: #FFFFFF;
     display: block;
     font-weight: 900;
@@ -141,11 +141,12 @@ Owl-Nav
     font-size: 25px;
     font-weight: 700;
     content: '\f104';
-    background-color: #2A2C30;
+    background-color: #0D0F10;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+    border: 2px solid #FFFFFF;
 }
 
 .VltMore .owl-nav .owl-next:before {
@@ -155,16 +156,17 @@ Owl-Nav
     font-size: 25px;
     font-weight: 700;
     content: '\f105';
-    background-color: #2A2C30;
+    background-color: #0D0F10;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+    border: 2px solid #FFFFFF;
 }
 
 .VltMore .owl-nav .owl-prev:hover:before,
 .VltMore .owl-nav .owl-next:hover:before {
-    color: #2A2C30;
+    color: #000000;
     background-color: #FFFFFF;
     opacity: 1;
 }

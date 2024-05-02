@@ -1,12 +1,11 @@
+# from django.db import models
+
 from django.db import models
-from django.contrib.auth import get_user_model
+from django.conf import settings
+from django.contrib.auth.models import User
 
-# Create your models here.
-class LoginFail(models.Model):
-    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    timestamp = models.DateTimeField(auto_now_add=True)
-    success = models.BooleanField(default=False)
-    count = models.IntegerField(default=0)
-
-    def __str__(self):
-        return f'{self.user.username} - {self.timestamp}'
+class UserLoginFails(models.Model):
+    login_attempts = models.IntegerField(default=0)
+    locked = models.BooleanField(default=False)
+    ip_address = models.CharField(max_length=100, default='')  # 로그인 시도한 IP 주소
+    login_time = models.DateTimeField(auto_now_add=True)  # 로그인 시도 시간

@@ -16,7 +16,7 @@ Title
 */
 
 .RoadMap .title {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     color: #FFFFFF;
     display: block;
     font-weight: 900;
@@ -63,7 +63,7 @@ Roadmap-carousel
     width: 100%;
     top: 20px;
     left: 0;
-    border-top: 2px dashed #989A9C;
+    border-top: 2px dashed #FFFFFF;
 }
 
 .RoadMap .roadmap-carousel .roadmap-item .roadmap-point {
@@ -73,8 +73,8 @@ Roadmap-carousel
     top: 6px;
     left: 50%;
     margin-left: -15px;
-    background: #FFFFFF;
-    border: 2px solid #424549;
+    background: #000000;
+    border: 2px solid #FFFFFF;
     transform: rotate(45deg);
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ Roadmap-carousel
     display: block;
     width: 18px;
     height: 18px;
-    background: #424549;
+    background: #FFFFFF;
 }
 
 .RoadMap .roadmap-carousel .roadmap-item {
@@ -102,7 +102,7 @@ Roadmap-carousel
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-right: 2px dashed #989A9C;
+    border-right: 2px dashed #FFFFFF;
 }
 
 .RoadMap .roadmap-carousel .roadmap-item::after {
@@ -114,7 +114,7 @@ Roadmap-carousel
     left: 50%;
     margin-left: -7px;
     transform: rotate(45deg);
-    background: #424549;
+    background: #FFFFFF;
 }
 
 
@@ -149,11 +149,12 @@ Owl-nav
     font-size: 25px;
     font-weight: 700;
     content: '\f104';
-    background-color: #2A2C30;
+    background-color: #0D0F10;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+    border: 2px solid #FFFFFF;
 }
 
 .RoadMap .owl-nav .owl-next:before {
@@ -163,16 +164,17 @@ Owl-nav
     font-size: 25px;
     font-weight: 700;
     content: '\f105';
-    background-color: #2A2C30;
+    background-color: #0D0F10;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
+    border: 2px solid #FFFFFF;
 }
 
 .RoadMap .owl-nav .owl-prev:hover:before,
 .RoadMap .owl-nav .owl-next:hover:before {
-    color: #2A2C30;
+    color: #000000;
     background-color: #FFFFFF;
     opacity: 1;
 }
