@@ -20,4 +20,4 @@ def wargame(request):
     context = {
         "players": players
     }
-    return render(request, "CTF_Challenge/ctf.html", context)
+    return render(request, "CTF_Challenge/wargame.html", context)
