@@ -74,7 +74,7 @@ Facts-Item
 
 .Facts .facts-item {
     border-radius: 23px;
-    border: 3px solid #FFFFFF;
+    border: 5px solid #FFFFFF;
     background-color: transparent;/*#2A2C30;*/
     height: 100%;
     display: flex;
