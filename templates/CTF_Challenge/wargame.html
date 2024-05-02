@@ -33,7 +33,6 @@
 
         <!-- Eunju add -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="{% static 'ctf_challenge/css/Ranking.css' %}">
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
@@ -131,64 +130,10 @@
                         </div>
                         <!-- ***** CTF End ***** -->
 
-                        <div style="margin-bottom: 130px;"></div>
+                        <!-- ***** Ranking Start ***** -->
 
-                        <!-- ***** Gaming Library Start ***** -->
-                        <div class="row py-4">
-                            <div class="col-xl-10 col-lg-10 mx-auto">
-                                <div class="ctf">
-                                    <div class="text-center mx-auto">
-                                        <h1 class="title mb-5"><i class="fas fa-trophy" style="margin-right: 10px;"></i>Wargame Ranking</h1>
-                                    </div>
-                                </div>
+                        <!-- ***** Ranking End ***** -->
 
-                                <div class="rank">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th class="rank-column">Rank</th>
-                                                <th class="name-column">Name</th>
-                                                <th class="point-column">Point</th>
-                                                <th class="challenge-column">Challenge</th>
-                                                <th class="profile-column"></th>
-                                                </tr>
-                                        </thead>
-                                        <tbody class="tbody-style">
-                                            {% for player in players %}
-                                            <tr>
-                                                <td class="rank-column"><strong>{{ player.rank }}</strong></td>
-                                                <td class="name-column">
-                                                    <img class="profile-image" src="{{ player.profile_image.url }}" alt="{{ player.name }}">
-                                                    <span class="player-name">{{ player.name }}</span>
-                                                </td>
-                                                <td class="point-column">{{ player.point }} pt</td>
-                                                <td class="challenge-column">{{ player.challenge }}</td>
-                                                <td class="profile-column">
-                                                    <a href="{{ player.dreamhack_link }}"><i class="fas fa-external-link-alt"></i></a>
-                                                </td>
-                                            </tr>
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
-                                 </div>
-
-                            </div>
-                        </div>
-                        <!-- ***** Gaming Library End ***** -->
-
-                        <div style="margin-bottom: 130px;"></div>
-
-                        <!-- ***** Gaming Library Start ***** -->
-                        <div class="row py-4">
-                            <div class="col-lg-12">
-                                <div class="ctf">
-                                    <div class="text-center mx-auto">
-                                        <h1 class="title mb-5"><i class="fas fa-user-plus" style="margin-right: 10px;"></i>Add Your Player</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***** Gaming Library End ***** -->
 
                     </div>
                 </div>
