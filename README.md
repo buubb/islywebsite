@@ -15,6 +15,7 @@
 - pip install django-crispy-forms //마크다운 관련 패키지
 - pip install django-markdownx //마크다운 관련 패키지
 - pip install crispy_bootstrap5
+- pip install pymysql
 
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
