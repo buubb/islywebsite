@@ -152,8 +152,8 @@
     .mainbanner p{
         text-align: center!important;
     }
-    .bg-3 .button{
-        margin: 35px 0px 50px 0px;
+    .mainbutton img{
+      display: none;
     }
     .nav > .dropdown:hover .depth_1 {display:none;}
     #section-footer h2{
