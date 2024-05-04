@@ -34,7 +34,8 @@ class Login(APIView):
                 next_url = request.POST.get('next', '')
                 if next_url:
                     return redirect(next_url)
-                return render(request, 'mainpage/index.html')  # 로그인 성공 시 메인 페이지로 이동
+                else:
+                    return render(request, 'mainpage/index.html')  # 로그인 성공 시 메인 페이지로 이동
             else:
                 # messages.error(request, '아이디 또는 비밀번호가 올바르지 않습니다.')
                 return redirect('login')  # 로그인 실패 시 로그인 페이지로 리다이렉트

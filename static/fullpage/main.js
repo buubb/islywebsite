@@ -20,7 +20,7 @@ function toggleAnswer(answerID) {
 
 
   document.addEventListener("DOMContentLoaded", function() {
-    const content1 = "열정만 있다면\n 누구나!\n";
+    const content1 = "Feel Your\n Passion in ";
     const content2 = "I.Sly()";
     const text = document.querySelector(".text");
     const cursor = document.querySelector(".cursor"); // 커서 요소 선택

@@ -15,6 +15,7 @@
 - pip install django-crispy-forms //마크다운 관련 패키지
 - pip install django-markdownx //마크다운 관련 패키지
 - pip install crispy_bootstrap5
+- pip install pymysql
 
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
@@ -49,18 +50,3 @@
 5. 기능이름/views.py 내용 작성
 6. islyweb/urls.py에 기능이름 경로 추가하여 url 연결
 7. 서버 돌려서 잘 작동하는지 확인해보기
-<<<<<<< HEAD
-
-# 주의 사항
-
-- 작업 브랜치 규칙:'issueid'-브랜치 이름 (e.x, '3-added-buubb', 비고.buubb는 제 githubID입니다.)
-- 순번과 Github ID는 입력이 필수입니다.
-- PR 제출 후 리뷰가 진행이 돼요. merge 되기 전에 수정과 rebase가 필요하실 수 있어요.  
-
-# Who Am I
-
-| 순번 | Github ID | 
-| ---- | --------- |
-| - | - |
-=======
->>>>>>> 463fbe33090c39f1a6da22e6a8f4a963ccd39b86

@@ -47,20 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
-    
-
-    var LOGIN_TRY_LIMIT = 5;
-    var loginAttempts = 0;
-
-    function loginFailed() {
-        loginAttempts++;
-        if (loginAttempts >= LOGIN_TRY_LIMIT) {
-            loginButton.disabled = true;
-            loginButton.classList.remove("active");
-        } 
-    }
-
-
 
     // 에러 메시지가 존재하는 경우
     if (errorMessage) {
