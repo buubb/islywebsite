@@ -1,28 +1,15 @@
 {% if form.errors %}
     <div class="alert alert-danger" id="error-message" role="alert">
-        {% for field in form %}
-            {% for error in field.errors %}
-                {% if field.name == 'username' %}
-                    {% if error == "This field is required." %}
-                        아이디를 입력하세요.
-                    {% else %}
-                        아이디가 일치하지 않습니다.
-                    {% endif %}
-                {% elif field.name == 'password' %}
-                    {% if error == "This field is required." %}
-                        비밀번호를 입력하세요.
-                    {% else %}
-                        비밀번호가 일치하지 않습니다.
-                    {% endif %}
+        {% if request.session.login_attempts|default:0 < 5 %}
+            {% for error in form.non_field_errors %}
+                {% if error == "Please enter a correct username and password. Note that both fields may be case-sensitive." %}
+                    아이디 또는 비밀번호가 일치하지 않습니다.
+                {% else %}
+                    {{ error }}
                 {% endif %}
             {% endfor %}
-        {% endfor %}
-        {% for error in form.non_field_errors %}
-            {% if error == "Please enter a correct username and password. Note that both fields may be case-sensitive." %}
-                아이디 또는 비밀번호가 일치하지 않습니다.
-            {% else %}
-                {{ error }}
-            {% endif %}
-        {% endfor %}
+        {% else %}
+            로그인 시도 횟수를 초과하였습니다.
+        {% endif %}
     </div>
 {% endif %}
