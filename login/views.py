@@ -3,7 +3,6 @@ from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
-from .models import LoginFail
 from django.http import HttpResponse, JsonResponse
 from django.utils import timezone
 from django.urls import reverse
@@ -11,6 +10,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.messages import get_messages
 # from .models import ConcurrentLogin
+from .models import UserLoginFails
 
 LOGIN_TRY_LIMIT=5
 
@@ -34,7 +34,8 @@ class Login(APIView):
                 next_url = request.POST.get('next', '')
                 if next_url:
                     return redirect(next_url)
-                return render(request, 'mainpage/index.html')  # 로그인 성공 시 메인 페이지로 이동
+                else:
+                    return render(request, 'mainpage/index.html')  # 로그인 성공 시 메인 페이지로 이동
             else:
                 # messages.error(request, '아이디 또는 비밀번호가 올바르지 않습니다.')
                 return redirect('login')  # 로그인 실패 시 로그인 페이지로 리다이렉트
@@ -48,6 +49,7 @@ class Logout(APIView):
         if request.user.is_authenticated:
             Logout(request)
             return render(request, 'mainpage/index.html')
+
 
 def check_session_status(request):
     if request.user.is_authenticated:
