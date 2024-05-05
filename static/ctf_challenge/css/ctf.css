@@ -107,12 +107,9 @@ Owl-Nav
 */
 
 .ctf .owl-nav {
-    display: inline-block !important;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-45px);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .ctf .owl-dots {
@@ -138,16 +135,16 @@ Owl-Nav
     border-radius: 4px;
 }
 
-.ctf .owl-nav .owl-prev {
-    margin-right: 10px;
-    outline: none;
-    position: absolute;
-    left: -65px;
-}
-
 .ctf .owl-nav .owl-prev span,
 .ctf .owl-nav .owl-next span {
     opacity: 0;
+}
+
+.ctf .owl-nav .owl-prev,
+.ctf .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+    margin: 0 12px;
 }
 
 .ctf .owl-nav .owl-prev:before {
@@ -163,19 +160,6 @@ Owl-Nav
     border-radius: 50%;
     line-height: 50px;
     border: 2px solid #FFFFFF;
-}
-
-.ctf .owl-nav .owl-prev,
-.ctf .owl-nav .owl-next {
-    opacity: 1;
-    transition: all .5s;
-}
-
-.ctf .owl-nav .owl-next {
-    margin-left: 10px;
-    outline: none;
-    position: absolute;
-    right: -70px;
 }
 
 .ctf .owl-nav .owl-next:before {
@@ -214,33 +198,7 @@ Responsive style
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* Owl-Nav */
-    .ctf .owl-nav .owl-next {
-        right: -60px;
-    }
 
-    .ctf .owl-nav .owl-prev {
-        left: -55px;
-    }
-
-    .ctf .owl-nav .owl-next:before {
-        font-size: 35px;
-        background-color: transparent;
-        border: none;
-    }
-
-    .ctf .owl-nav .owl-prev:before {
-        font-size: 35px;
-        background-color: transparent;
-        border: none;
-    }
-
-    .ctf .owl-nav .owl-prev:hover:before,
-    .ctf .owl-nav .owl-next:hover:before {
-        color: #FFFFFF;
-        background-color: transparent;
-        opacity: 0.7;
-    }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
