@@ -4,21 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe19ec6d-54b8-40d6-84b7-4658c2839a17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/ctf_challenge/css/Ranking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fullpage/img/Group 1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="79c37de8-22a8-4bc1-a77a-e4485a25bff4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/media/users/profile/test3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/volunteer/images/profile_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/volunteer/js/profile_upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunteer/migrations/0020_comment_name_comment_profile_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunteer/migrations/0021_remove_comment_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunteer/migrations/0022_remove_comment_profile_image_alter_post_year.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Facts/css/Facts.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Facts/css/Facts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/templatemo-cyborg-gaming.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/templatemo-cyborg-gaming.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fullpage/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/fullpage/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fullpage/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/fullpage/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fullpage/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/fullpage/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fullpage/special.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/fullpage/special.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/ctf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/users/profile/I.Sly_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/VltRcd.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/comment/VltRcd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/images/item_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/images/item_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/images/item_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/images/item_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/images/item_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/images/item_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/images/item_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/images/item_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/images/item_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/images/item_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +42,7 @@
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2fukDOwbsqLvX6JkvUFhJ1WAesB" />
+  <component name="ProjectId" id="2g5bHN3YwG4Z6OmOVupC8saQxyl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,7 +51,8 @@
   "keyToString": {
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging raon",
+    "git-widget-placeholder": "raon",
+    "last_opened_file_path": "C:/Users/raon-/PycharmProjects/islywebsite/static/volunteer/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +61,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\images" />
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\css\comment" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\js" />
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\templates\volunteer" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -87,12 +108,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fe19ec6d-54b8-40d6-84b7-4658c2839a17" name="Changes" comment="" />
-      <created>1714658231327</created>
+      <changelist id="79c37de8-22a8-4bc1-a77a-e4485a25bff4" name="Changes" comment="" />
+      <created>1714990298043</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714658231327</updated>
-      <workItem from="1714658232803" duration="668000" />
+      <updated>1714990298043</updated>
+      <workItem from="1714990298722" duration="3161000" />
     </task>
     <servers />
   </component>
