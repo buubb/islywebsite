@@ -59,10 +59,11 @@
 
                         <!-- ***** Message Start ***** -->
                         {% if messages %}
-                            <div class="alert alert-danger mb-3" role="alert">
+                            <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
                                 <ul>
                                 {% for message in messages %}
                                     <li>{{ message.message }}</li>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 {% endfor %}
                                 </ul>
                             </div>
