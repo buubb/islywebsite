@@ -24,6 +24,7 @@ class PostImageInline(admin.TabularInline):
     model = PostImage
     extra = 1
 
+
 class LikeUserInline(admin.TabularInline):
     model = Post.like_users.through
     verbose_name = "좋아요 한 User"
@@ -49,6 +50,7 @@ class PostAdmin(admin.ModelAdmin):
         LikeUserInline,
     ]
 
+
 @admin.register(PostImage)
 class PostImageAdmin(admin.ModelAdmin):
     list_display = [
@@ -56,6 +58,7 @@ class PostImageAdmin(admin.ModelAdmin):
         "post",
         "photo",
     ]
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
@@ -65,5 +68,3 @@ class CommentAdmin(admin.ModelAdmin):
         "content",
         "created",
     ]
-
-
