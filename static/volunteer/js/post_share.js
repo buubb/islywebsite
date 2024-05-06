@@ -18,4 +18,6 @@ function copyURLToClipboard(event) {
 }
 
 // Share 버튼에 이벤트 리스너 추가
-document.querySelector('.vlt_share').addEventListener('click', copyURLToClipboard);
+document.querySelector('.post_share').addEventListener('click', function(event) {
+    copyURLToClipboard(event);
+});
