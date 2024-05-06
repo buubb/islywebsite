@@ -181,6 +181,11 @@ def post_like(request, post_id):
 def comment_add(request, post_id):
     post = get_object_or_404(Post, id=post_id)
 
+    existing_comment = Comment.objects.filter(post=post, user=request.user).exists()
+    if existing_comment:
+        messages.warning(request, "You can only write one comment per project.")
+        return redirect("Volunteer:post_detail", post_id=post_id)
+
     if request.method == "POST":
         form = CommentForm(request.POST, request.FILES)
         if form.is_valid():
