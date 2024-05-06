@@ -10,7 +10,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.messages import get_messages
 # from .models import ConcurrentLogin
-from .models import UserLoginFails
+
 
 LOGIN_TRY_LIMIT=5
 
