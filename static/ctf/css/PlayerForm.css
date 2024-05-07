@@ -64,6 +64,19 @@ label
     text-align: left;
 }
 
+/* name-counter */
+.PlayerForm span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #aaa;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0.2rem 0 1rem 0;
+    text-transform: none;
+}
+
 
 /*
 ---------------------------------------------
@@ -159,7 +172,7 @@ Profile
     border-radius: 100%;
     background: #FFFFFF;
     border: 1px solid transparent;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     cursor: pointer;
     font-weight: normal;
     transition: all .2s ease-in-out;
@@ -188,7 +201,7 @@ Profile
     position: relative;
     border-radius: 100%;
     border: 6px solid #F8F8F8;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .PlayerForm .avatar-upload .avatar-preview > div {
@@ -244,6 +257,11 @@ Responsive Style
     .PlayerForm .point-label,
     .PlayerForm .challenge-label,
     .PlayerForm .dreamhack-label {
+        font-size: 0.9rem;
+    }
+
+    /* name-counter */
+    .PlayerForm span {
         font-size: 0.9rem;
     }
 
