@@ -6,38 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="951dd83f-81e2-498c-8fef-6cdb15f73b53" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/IMG_3374.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/IMG_3374_2QKsXlM.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/IMG_3374_BD7SLtT.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/IMG_3374_cDMcxlN.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/IMG_4323_2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/test9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4_UntRafG.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4_g46gQHU.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4_mTdWyY3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4_pJLRCQM.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4_veby4vk.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/다운로드_4_w1Ve9Ya.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ctf/profile/컴퓨터_바탕화면곰돌이.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/Ranking.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/css/ctf.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/img/xcz.kr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf_challenge/js/CTFCarousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/images/profile_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/profile_upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/profile_upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/player_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/player_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +103,8 @@
       <updated>1715056606329</updated>
       <workItem from="1715056608118" duration="15915000" />
       <workItem from="1715074321795" duration="10105000" />
-      <workItem from="1715084851369" duration="3469000" />
+      <workItem from="1715084851369" duration="4151000" />
+      <workItem from="1715089579870" duration="4934000" />
     </task>
     <servers />
   </component>
