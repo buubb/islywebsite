@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="951dd83f-81e2-498c-8fef-6cdb15f73b53" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/player_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/player_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static" />
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\ctf\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,7 +104,9 @@
       <workItem from="1715056608118" duration="15915000" />
       <workItem from="1715074321795" duration="10105000" />
       <workItem from="1715084851369" duration="4151000" />
-      <workItem from="1715089579870" duration="4934000" />
+      <workItem from="1715089579870" duration="7209000" />
+      <workItem from="1715099555942" duration="3599000" />
+      <workItem from="1715103270011" duration="2626000" />
     </task>
     <servers />
   </component>
