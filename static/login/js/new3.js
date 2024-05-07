@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var loginButton = document.getElementById("login-button");
     var eyesIcon = document.querySelector('.showHidePw');
     var errorMessage = document.getElementById("error-message");
-
     var currentUrl = window.location.href;
     var baseUrl = currentUrl.split('/login')[0]; // "/login" 이전의 부분을 가져옴
     var newUrl = baseUrl + '/login';
     window.history.replaceState({}, document.title, newUrl);
-
     function checkInputs() {
         if (usernameInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
             loginButton.disabled = false;
@@ -19,19 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
             loginButton.classList.remove("active");
         }
     }
-
     usernameInput.addEventListener("input", function() {
         checkInputs();
     });
-
     passwordInput.addEventListener("input", function() {
         checkInputs();
     });
-
     eyesIcon.addEventListener('click', function() {
         togglePasswordVisibility();
     });
-
     function togglePasswordVisibility() {
         if (passwordInput.value.trim() !== "") {
             if (passwordInput.type === "password") {
@@ -54,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
         showAlert(message);
     }
 
-    function showAlert(message) {
-        alert(message);
-    }
+    checkInputs();
 });
+function showAlert(message) {
+    alert(message);
+}
