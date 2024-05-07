@@ -1,6 +1,5 @@
 # models.py
 from django.db import models
-from django.utils import timezone
 
 
 class Player(models.Model):
@@ -8,7 +7,7 @@ class Player(models.Model):
     name = models.CharField(max_length=10)
     point = models.PositiveIntegerField()
     challenge = models.PositiveIntegerField()
-    profile_image = models.ImageField(upload_to="ctf/profile")
+    profile_image = models.ImageField(upload_to="players/profile")
     dreamhack_link = models.URLField()
     updated = models.DateTimeField(auto_now=True, null=True)
 

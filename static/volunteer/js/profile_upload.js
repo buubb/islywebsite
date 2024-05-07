@@ -22,9 +22,10 @@ $("#imageUpload").change(function() {
 });
 
 $("form").submit(function(event) {
-    // If no image is uploaded
-    if ($("#imageUpload").get(0).files.length === 0) {
+    // If no image is uploaded and the image is not being modified
+    if ($("#imageUpload").get(0).files.length === 0 && $("#imagePreview").css("background-image").indexOf("profile_bg.png") !== -1) {
         alert("Please upload a profile image");
         event.preventDefault(); // Prevent default submission behavior
     }
 });
+
