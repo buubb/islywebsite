@@ -63,14 +63,11 @@ def wargame(request):
 def add_player(request):
     if request.method == "POST":
         form = PlayerForm(request.POST, request.FILES)
-
         if form.is_valid():
             player = form.save(commit=False)
             player.user = request.user
             player.save()
-
             return redirect("CTFChallenge:wargame")
-
     else:
         form = PlayerForm()
 

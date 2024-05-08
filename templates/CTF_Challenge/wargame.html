@@ -70,89 +70,10 @@
                         {% endif %}
                         <!-- ***** Message End ***** -->
 
-                        <!-- ***** CTF Start ***** -->
-                        <div class="row py-4">
-                            <div class="col-lg-12">
-                                <div class="ctf">
-                                    <div class="text-center mx-auto">
-                                        <h1 class="title mb-5">Get The Flag</h1>
-                                    </div>
-                                    <div class="owl-carousel ctf-carousel">
-                                        <div class="item">
-                                            <div class="thumb">
-                                                <a href="https://dreamhack.io/">
-                                                    <img src="{% static 'assets/img/dreamhack_logo_sq.png' %}" alt="">
-                                                </a>
-                                                <div class="hover-effect">
-                                                    <a href="https://dreamhack.io/">
-                                                        <h6>Click</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <h4>DreamHack<br><span>#Web #Reversing #Pwnable</span></h4>
-                                        </div>
-                                        <div class="item">
-                                            <div class="thumb">
-                                                <a href="https://overthewire.org/wargames/bandit/">
-                                                    <img src="{% static 'assets/img/overthewire.jpg' %}" alt="">
-                                                </a>
-                                                <div class="hover-effect">
-                                                    <a href="https://overthewire.org/wargames/bandit/">
-                                                        <h6>Click</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <h4>Bandit Wargame<br><span>#Linux</span></h4>
-                                        </div>
-                                        <div class="item">
-                                            <div class="thumb">
-                                                <a href="https://webhacking.kr/">
-                                                    <img src="{% static 'assets/img/webhackingkr.jpg' %}" alt="">
-                                                </a>
-                                                <div class="hover-effect">
-                                                    <a href="https://webhacking.kr/">
-                                                        <h6>Click</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <h4>Webhacking.kr<br><span>#Web</span></h4>
-                                        </div>
-                                        <div class="item">
-                                            <div class="thumb">
-                                                <a href="https://ch.codeengn.com/">
-                                                    <img src="{% static 'assets/img/codeengn.jpg' %}" alt="">
-                                                </a>
-                                                <div class="hover-effect">
-                                                    <a href="https://ch.codeengn.com/">
-                                                        <h6>Click</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <h4>CodeEngn<br><span>#Reversing #Cryptology #Malware Analysis</span></h4>
-                                        </div>
-                                        <div class="item">
-                                            <div class="thumb">
-                                                <a href="http://xcz.kr/">
-                                                    <img src="{% static 'ctf/img/xcz.kr.png' %}" alt="">
-                                                </a>
-                                                <div class="hover-effect">
-                                                    <a href="http://xcz.kr/">
-                                                        <h6>Click</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <h4>XCZ.kr<br><span>#Web #Forensics #Network #Crytology</span></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***** CTF End ***** -->
-
 
                         <!-- ***** Ranking Start ***** -->
                         {% if players %}
-                            <div class="WRanking">
+                            <div class="WRanking pt-4">
                                 <div class="text-center mx-auto">
                                     <h1 class="title mb-5">Wargame Ranking</h1>
                                 </div>
@@ -237,7 +158,7 @@
                         <!-- ***** Your Stat Start ***** -->
                         {% if user.is_authenticated %}
                             {% if user_player %}
-                                <div class="WRanking">
+                                <div class="WRanking" style="margin-top:150px;">
                                     <div class="text-center mx-auto">
                                         <h1 class="title mb-5">Your Stat</h1>
                                     </div>
@@ -315,6 +236,86 @@
                             {% endif %}
                         {% endif %}
                         <!-- ***** Your Stat End ***** -->
+
+
+                        <!-- ***** CTF Start ***** -->
+                        <div class="row pb-4">
+                            <div class="col-lg-12">
+                                <div class="ctf">
+                                    <div class="text-center mx-auto">
+                                        <h1 class="title mb-5">Get The Flag</h1>
+                                    </div>
+                                    <div class="owl-carousel ctf-carousel">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <a href="https://dreamhack.io/">
+                                                    <img src="{% static 'ctf/img/dreamhack_logo.png' %}" alt="">
+                                                </a>
+                                                <div class="hover-effect">
+                                                    <a href="https://dreamhack.io/">
+                                                        <h6>Click</h6>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h4>DreamHack</h4>
+                                        </div>
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <a href="https://overthewire.org/wargames/bandit/">
+                                                    <img src="{% static 'ctf/img/overthewire.png' %}" alt="">
+                                                </a>
+                                                <div class="hover-effect">
+                                                    <a href="https://overthewire.org/wargames/bandit/">
+                                                        <h6>Click</h6>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h4>Bandit Wargame</h4>
+                                        </div>
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <a href="https://webhacking.kr/">
+                                                    <img src="{% static 'ctf/img/webhackingkr.png' %}" alt="">
+                                                </a>
+                                                <div class="hover-effect">
+                                                    <a href="https://webhacking.kr/">
+                                                        <h6>Click</h6>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h4>Webhacking.kr</h4>
+                                        </div>
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <a href="https://ch.codeengn.com/">
+                                                    <img src="{% static 'ctf/img/codeengn.png' %}" alt="">
+                                                </a>
+                                                <div class="hover-effect">
+                                                    <a href="https://ch.codeengn.com/">
+                                                        <h6>Click</h6>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h4>CodeEngn</h4>
+                                        </div>
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <a href="http://xcz.kr/">
+                                                    <img src="{% static 'ctf/img/xcz.kr.png' %}" alt="">
+                                                </a>
+                                                <div class="hover-effect">
+                                                    <a href="http://xcz.kr/">
+                                                        <h6>Click</h6>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h4>XCZ.kr</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** CTF End ***** -->
 
                     </div>
                 </div>
