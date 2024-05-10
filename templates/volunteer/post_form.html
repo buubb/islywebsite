@@ -65,12 +65,15 @@
                                         <div class="fields">
                                             <!-- title -->
                                             <div class="field">
-                                                <div class="label-group">
-                                                    <label for="title" class="title-label">Title</label>
-                                                    <span id="title-counter">0 / 50</span>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <label for="title" class="title-label">Title</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span id="title-counter">0 / 50</span>
+                                                    </div>
                                                 </div>
                                                 <input type="text" class="form-control" name="title" id="title" value="{{ form.title.value|default_if_none:'' }}" required>
-                                                <p id="title-feedback" style="display: none;">Maximum 50 characters allowed.</p>
                                             </div>
                                             <!-- year -->
                                             <div class="field half">
@@ -157,7 +160,7 @@
         <script src="{% static 'fullpage/nav.js' %}"></script>
 
         <!-- Raon JavaScript -->
-        <script src="{% static 'volunteer/js/text_counting.js' %}"></script>
+        <script src="{% static 'volunteer/js/title_counting.js' %}"></script>
         <script src="{% static 'volunteer/js/img_upload.js' %}"></script>
 
 

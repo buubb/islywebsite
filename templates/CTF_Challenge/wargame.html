@@ -22,7 +22,10 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
         <!-- Raon CSS Files -->
-        <link rel="stylesheet" href="{% static 'ctf_challenge/css/ctf.css' %}">
+        <link rel="stylesheet" href="{% static 'ctf/css/ctf.css' %}">
+        <link rel="stylesheet" href="{% static 'ctf/css/WRanking.css' %}">
+        <link rel="stylesheet" href="{% static 'ctf/css/Guidelines.css' %}">
+        <link rel="stylesheet" href="{% static 'ctf/css/Stat.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Fonts -->
@@ -31,8 +34,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
+        <!-- Raon Icon Fonts -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
         <!-- Eunju add -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
@@ -51,8 +57,189 @@
                 <div class="col-lg-12">
                     <div class="page-content">
 
+                        <!-- ***** Message Start ***** -->
+                        {% if messages %}
+                            <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+                                <ul>
+                                {% for message in messages %}
+                                    <li>{{ message.message }}</li>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+                        <!-- ***** Message End ***** -->
+
+
+                        <!-- ***** Ranking Start ***** -->
+                        {% if players %}
+                            <div class="WRanking pt-4">
+                                <div class="text-center mx-auto">
+                                    <h1 class="title mb-5">Wargame Ranking</h1>
+                                </div>
+                                <div class="col-lg-12 d-flex align-items-stretch">
+                                    <div class="card w-100">
+                                        <div class="card-body p-4">
+                                            <div class="table-responsive">
+                                                <table class="table text-nowrap mb-0 align-middle">
+                                                    <thead class="fs-4">
+                                                        <tr>
+                                                            <th class="border-bottom-0">
+                                                                <h6 class="th th-rank mb-1"><i class="fa-solid fa-ranking-star"></i></h6>
+                                                            </th>
+                                                            <th class="border-bottom-0">
+                                                                <h6 class="th th-name mb-1">Name</h6>
+                                                            </th>
+                                                            <th class="border-bottom-0">
+                                                                <h6 class="th th-point mb-1">Point</h6>
+                                                            </th>
+                                                            <th class="border-bottom-0">
+                                                                <h6 class="th th-challenge mb-1">Challenge</h6>
+                                                            </th>
+                                                            <th class="border-bottom-0">
+                                                                <h6 class="th th-profile mb-1">Profile</h6>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {% for player in players %}
+                                                            <tr>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-rank mb-0">{{ player.rank }}</h6>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <img class="profile rounded-circle me-3" src="{{ player.profile_image.url }}" alt="">
+                                                                    <span>{{ player.name }}</span>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-point mb-0">{{ player.point }} pt</h6>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-challenge mb-0">{{ player.challenge }}</h6>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-profile mb-0"><a href="{{ player.dreamhack_link }}"><i class="fa-solid fa-house"></i></a></h6>
+                                                                </td>
+                                                            </tr>
+                                                        {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pagination -->
+                                <div class="pagination mt-5">
+                                    <div class="col-lg-12 text-center mx-auto">
+                                        {% if players.has_previous %}
+                                            <a class="btn" href="?page={{ players.previous_page_number }}"><i class="fa-solid fa-chevron-left"></i></a>
+                                        {% endif %}
+
+                                        {% for page_num in players.paginator.page_range %}
+                                            {% if page_num >= players.number|add:'-2' and page_num <= players.number|add:'2' %}
+                                                {% if page_num == players.number %}
+                                                    <span class="btn current">{{ page_num }}</span>
+                                                {% else %}
+                                                    <a class="btn" href="?page={{ page_num }}">{{ page_num }}</a>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        {% if players.has_next %}
+                                            <a class="btn" href="?page={{ players.next_page_number }}"><i class="fa-solid fa-chevron-right"></i></a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <!-- ***** Ranking End ***** -->
+
+
+                        <!-- ***** Your Stat Start ***** -->
+                        {% if user.is_authenticated %}
+                            {% if user_player %}
+                                <div class="WRanking" style="margin-top:150px;">
+                                    <div class="text-center mx-auto">
+                                        <h1 class="title mb-5">Your Stat</h1>
+                                    </div>
+                                    <div class="col-lg-12 d-flex align-items-stretch">
+                                        <div class="card w-100">
+                                            <div class="card-body p-4">
+                                                <div class="table-responsive">
+                                                    <table class="table text-nowrap mb-0 align-middle text-center">
+                                                        <thead class="fs-4">
+                                                            <tr>
+                                                                <th class="border-bottom-0">
+                                                                    <h6 class="th th-edit mb-1">Edit</h6>
+                                                                </th>
+                                                                <th class="border-bottom-0">
+                                                                    <h6 class="th th-name mb-1">Name</h6>
+                                                                </th>
+                                                                <th class="border-bottom-0">
+                                                                    <h6 class="th th-point mb-1">Point</h6>
+                                                                </th>
+                                                                <th class="border-bottom-0">
+                                                                    <h6 class="th th-challenge mb-1">Challenge</h6>
+                                                                </th>
+                                                                <th class="border-bottom-0">
+                                                                    <h6 class="th th-profile mb-1">Profile</h6>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-edit mb-0">
+                                                                        <a href="{% url 'CTFChallenge:edit_player' user_player.id %}"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                                    </h6>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <img class="profile rounded-circle me-3" src="{{ user_player.profile_image.url }}" alt="">
+                                                                    <span>{{ user_player.name }}</span>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-point mb-0">{{ user_player.point }} pt</h6>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-challenge mb-0">{{ user_player.challenge }}</h6>
+                                                                </td>
+                                                                <td class="border-bottom-0">
+                                                                    <h6 class="td td-profile mb-0"><a href="{{ user_player.dreamhack_link }}"><i class="fa-solid fa-house"></i></a></h6>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-4">
+                                    <div class="Guidelines">
+                                        <div class="col-lg-12 text-md-end text-center mx-auto">
+                                            <a class="btn notion-btn py-2" href="https://www.notion.so/raon-yang/921f3a32fd1b49ddbf2db78e751db1f4">
+                                                More Information <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="row">
+                                    <div class="Stat">
+                                        <div class="col-lg-12 text-center mx-auto">
+                                            <a class="btn link-btn w-100 py-5" href="{% url 'CTFChallenge:add_player' %}">
+                                                Add Your Stat <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                        <!-- ***** Your Stat End ***** -->
+
+
                         <!-- ***** CTF Start ***** -->
-                        <div class="row py-4">
+                        <div class="row pb-4">
                             <div class="col-lg-12">
                                 <div class="ctf">
                                     <div class="text-center mx-auto">
@@ -62,7 +249,7 @@
                                         <div class="item">
                                             <div class="thumb">
                                                 <a href="https://dreamhack.io/">
-                                                    <img src="{% static 'assets/img/dreamhack_logo_sq.png' %}" alt="">
+                                                    <img src="{% static 'ctf/img/dreamhack_logo.png' %}" alt="">
                                                 </a>
                                                 <div class="hover-effect">
                                                     <a href="https://dreamhack.io/">
@@ -70,12 +257,12 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <h4>DreamHack<br><span>#Web #Reversing #Pwnable</span></h4>
+                                            <h4>DreamHack</h4>
                                         </div>
                                         <div class="item">
                                             <div class="thumb">
                                                 <a href="https://overthewire.org/wargames/bandit/">
-                                                    <img src="{% static 'assets/img/overthewire.jpg' %}" alt="">
+                                                    <img src="{% static 'ctf/img/overthewire.png' %}" alt="">
                                                 </a>
                                                 <div class="hover-effect">
                                                     <a href="https://overthewire.org/wargames/bandit/">
@@ -83,12 +270,12 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <h4>Bandit Wargame<br><span>#Linux</span></h4>
+                                            <h4>Bandit Wargame</h4>
                                         </div>
                                         <div class="item">
                                             <div class="thumb">
                                                 <a href="https://webhacking.kr/">
-                                                    <img src="{% static 'assets/img/webhackingkr.jpg' %}" alt="">
+                                                    <img src="{% static 'ctf/img/webhackingkr.png' %}" alt="">
                                                 </a>
                                                 <div class="hover-effect">
                                                     <a href="https://webhacking.kr/">
@@ -96,12 +283,12 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <h4>Webhacking.kr<br><span>#Web</span></h4>
+                                            <h4>Webhacking.kr</h4>
                                         </div>
                                         <div class="item">
                                             <div class="thumb">
                                                 <a href="https://ch.codeengn.com/">
-                                                    <img src="{% static 'assets/img/codeengn.jpg' %}" alt="">
+                                                    <img src="{% static 'ctf/img/codeengn.png' %}" alt="">
                                                 </a>
                                                 <div class="hover-effect">
                                                     <a href="https://ch.codeengn.com/">
@@ -109,12 +296,12 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <h4>CodeEngn<br><span>#Reversing #Cryptology #Malware Analysis</span></h4>
+                                            <h4>CodeEngn</h4>
                                         </div>
                                         <div class="item">
                                             <div class="thumb">
                                                 <a href="http://xcz.kr/">
-                                                    <img src="{% static 'ctf_challenge/img/xcz.kr.png' %}" alt="">
+                                                    <img src="{% static 'ctf/img/xcz.kr.png' %}" alt="">
                                                 </a>
                                                 <div class="hover-effect">
                                                     <a href="http://xcz.kr/">
@@ -122,18 +309,13 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <h4>XCZ.kr<br><span>#Web #Forensics #Network #Crytology</span></h4>
+                                            <h4>XCZ.kr</h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- ***** CTF End ***** -->
-
-                        <!-- ***** Ranking Start ***** -->
-
-                        <!-- ***** Ranking End ***** -->
-
 
                     </div>
                 </div>
@@ -179,7 +361,7 @@
         <script src="{% static 'fullpage/nav.js' %}"></script>
 
         <!-- Raon JavaScript -->
-        <script src="{% static 'ctf_challenge/js/CTFCarousel.js' %}"></script>
+        <script src="{% static 'ctf/js/CTFCarousel.js' %}"></script>
 
 
     </body>
