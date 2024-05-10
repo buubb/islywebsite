@@ -98,12 +98,6 @@ Label
 ---------------------------------------------
 */
 
-.VltPosting .label-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .VltPosting .title-label,
 .VltPosting .year-label,
 .VltPosting .gen-label,
@@ -111,7 +105,7 @@ Label
 .VltPosting .img-label {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
-    display: block;
+    display: inline-block;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
@@ -125,7 +119,7 @@ Label
 .VltPosting span {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #aaa;
-    display: block;
+    display: inline-block;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
@@ -194,7 +188,7 @@ Input
     font-size: 1rem;
     letter-spacing: 0.075rem;
     background: rgba(255, 255, 255, 0.075);
-    border-color: #fff;
+    border-color: #FFFFFF;
     box-shadow: 0 0 0 1px #FFFFFF;
 }
 
