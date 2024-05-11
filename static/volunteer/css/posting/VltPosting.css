@@ -8,7 +8,7 @@ Basic
     background-color: transparent;
     border: 6px solid #FFFFFF;
     border-radius: 43px;
-    padding: 50px 70px 30px;
+    padding: 50px 70px 20px;
 }
 
 
@@ -128,19 +128,6 @@ Label
     text-transform: none;
 }
 
-/* title-feedback */
-.VltPosting p {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #57F579;
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-    text-transform: none;
-}
-
 
 /*
 ---------------------------------------------
@@ -240,6 +227,7 @@ Image Upload
     text-align: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .VltPosting #img-container {
@@ -259,7 +247,7 @@ Image Upload
     object-position: center;
     object-fit: cover;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .VltPosting #num-of-files {
@@ -267,7 +255,7 @@ Image Upload
 }
 
 /* figcaption */
-.image-caption {
+.VltPosting .image-caption {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
     font-size: 13px;
@@ -291,36 +279,30 @@ Responsive Style
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    .VltPosting {
-        padding: 50px 50px 30px;
-    }
-
     .VltPosting #img-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* Write */
-    .VltPosting .major {
-        font-size: 2rem;
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .VltPosting {
+        padding: 50px 50px 20px;
     }
 
     /* label, title-counter */
-    .VltPosting label,
+    .VltPosting .title-label,
+    .VltPosting .year-label,
+    .VltPosting .gen-label,
+    .VltPosting .con-label,
+    .VltPosting .img-label,
     .VltPosting span {
         font-size: 0.9rem;
     }
 
-    /* title-feedback */
-    .VltPosting p {
-        font-size: 0.8rem;
+    /* Choose Your Files */
+    .VltPosting .file-label {
+        font-size: 0.9rem;
     }
 
     .VltPosting input[type="text"],
@@ -335,20 +317,49 @@ Responsive Style
         font-size: 0.9rem;
     }
 
+    /* figcaption */
+    .VltPosting .image-caption {
+        font-size: 12px;
+        margin-top: 0.7vmin;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Write */
+    .VltPosting .major {
+        font-size: 2rem;
+    }
+
     .VltPosting #img-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .VltPosting {
-        padding: 30px 30px 10px;
+        padding: 35px 30px 5px;
     }
 
     .VltPosting .fields {
         width: calc(100% + 3rem);
         margin: -1.5rem 0 2rem -1.5rem;
+    }
+
+    /* label, title-counter */
+    .VltPosting .title-label,
+    .VltPosting .year-label,
+    .VltPosting .gen-label,
+    .VltPosting .con-label,
+    .VltPosting .img-label,
+    .VltPosting span {
+        font-size: 0.8rem;
+    }
+
+    /* figcaption */
+    .VltPosting .image-caption {
+        font-size: 11px;
+        margin-top: 0.9vmin;
     }
 }

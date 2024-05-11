@@ -27,7 +27,15 @@ function preview(){
         let reader = new FileReader();
         let figure = document.createElement("figure");
         let figCap = document.createElement("figcaption");
-        figCap.innerText = i.name;
+        // Get the filename
+        let filename = i.name;
+        if (filename.length > 15) {
+            let firstPart = filename.substring(0, 4);
+            let lastPart = filename.substring(filename.length - 8, filename.length);
+            figCap.innerText = firstPart + "..." + lastPart;
+        } else {
+            figCap.innerText = filename;
+        }
         figCap.classList.add("image-caption");
         figure.appendChild(figCap);
         reader.onload = () => {

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7628e710-932d-4e97-89d3-09ca5c6c1d76" name="Changes" comment="">
+    <list default="true" id="1b07f78c-fafc-49f0-98ce-acd82d3d81fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/js/name_counting.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/js/name_counting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/text_counting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/js/img_upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/img_upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/volunteer/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +23,7 @@
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2gGPhAOnSjN9dkeXEAsZfbUee4f" />
+  <component name="ProjectId" id="2gJdKTNpHAJJszlxlpVNO1JknBH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,11 +41,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\js" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -85,12 +78,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7628e710-932d-4e97-89d3-09ca5c6c1d76" name="Changes" comment="" />
-      <created>1715321059789</created>
+      <changelist id="1b07f78c-fafc-49f0-98ce-acd82d3d81fa" name="Changes" comment="" />
+      <created>1715419552601</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715321059789</updated>
-      <workItem from="1715321061445" duration="4484000" />
+      <updated>1715419552601</updated>
+      <workItem from="1715419554509" duration="3197000" />
     </task>
     <servers />
   </component>
