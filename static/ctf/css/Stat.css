@@ -73,7 +73,7 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    Stat .link-btn a {
+    .Stat .link-btn a {
         font-size: 60px;
     }
 }

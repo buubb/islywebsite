@@ -51,7 +51,7 @@ Label
 .CommentForm .content-label {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
-    display: block;
+    display: inline-block;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
@@ -59,6 +59,19 @@ Label
     margin: 0 0 1rem 0;
     text-transform: uppercase;
     text-align: left;
+}
+
+/* content-counter */
+.CommentForm span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #aaa;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: none;
 }
 
 
@@ -225,11 +238,6 @@ Responsive Style
     /* label */
     .CommentForm .content-label {
         font-size: 0.9rem;
-    }
-
-    /* feedback */
-    .CommentForm p {
-        font-size: 0.8rem;
     }
 
     .CommentForm textarea {
