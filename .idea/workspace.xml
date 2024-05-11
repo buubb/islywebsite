@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b07f78c-fafc-49f0-98ce-acd82d3d81fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/img_upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/img_upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/Stat.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/Stat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715419552601</updated>
-      <workItem from="1715419554509" duration="3197000" />
+      <workItem from="1715419554509" duration="5641000" />
     </task>
     <servers />
   </component>
