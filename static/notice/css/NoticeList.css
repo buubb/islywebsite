@@ -13,24 +13,12 @@ Info
 
 /*
 ---------------------------------------------
-Custom Text
----------------------------------------------
-*/
-
-.NoticeList h3,
-.NoticeList .icon-box h4,
-.NoticeList .icon-box p {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-
-/*
----------------------------------------------
 Scheme
 ---------------------------------------------
 */
 
 .NoticeList h3 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     color: #FFFFFF;
     font-weight: 700;
     padding-bottom: 8px;
@@ -68,6 +56,7 @@ Scheme
 }
 
 .NoticeList .icon-box h4 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 19px;
@@ -75,23 +64,33 @@ Scheme
     letter-spacing: 0.075em;
 }
 
-.NoticeList .icon-box p {
-    line-height: 25px;
-    font-size: 15px;
-    margin-bottom: 0;
-    color: #FFFFFF;
-    letter-spacing: 0.055em;
+.NoticeList ul {
+    list-style-position: outside;
+    padding-left: 1em;
 }
 
+.NoticeList li {
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+    letter-spacing: 0.055em;
+    list-style-type: disc;
+}
 
 /*
----------------------------------------------
-ListCircle
----------------------------------------------
+.NoticeList li::marker {
+    content: "✔ ";
+}
 */
 
-.NoticeList .icon-box p.listCircle {
-    margin-left: 15px;
+.NoticeList li.subList {
+    /* list-style-type: square; */
+    font-size: 13px;
+}
+
+.NoticeList li.subList::marker {
+    content: "-  ";
 }
 
 
@@ -113,9 +112,7 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .NoticeList .icon-box p.listCircle {
-        font-size: 14px;
-    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -125,7 +122,11 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .NoticeList .icon-box p.listCircle {
-        font-size: 13px;
+    .NoticeList li {
+        font-size: 14px;
+    }
+
+    .NoticeList li.subList {
+        font-size: 12px;
     }
 }
