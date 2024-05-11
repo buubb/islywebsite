@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>I.Sly()</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+
+        <!-- Raon CSS Files -->
+        <link rel="stylesheet" href="{% static 'ctf/css/PlayerForm.css' %}">
+        <link rel="stylesheet" href="{% static 'ctf/css/Guidelines.css' %}">
+        <link rel="stylesheet" href="{% static 'copyright.css' %}">
+
+        <!-- Raon Text Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+        <!-- Yubin add -->
+        <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+        <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
+
+    </head>
+
+    <body>
+
+        <!-- ***** Navbar Start ***** -->
+        {% include "fullpagenav.html" %}
+        <!-- ***** Navbar End ***** -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-content">
+
+                        <!-- ***** Guidelines Start ***** -->
+                        <div class="row pt-4">
+                            <div class="Guidelines">
+                                <div class="col-xl-10 text-end mx-auto">
+                                    <a class="btn notion-btn py-2" href="https://raon-yang.notion.site/921f3a32fd1b49ddbf2db78e751db1f4?pvs=4">
+                                        More Information <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** Guidelines End ***** -->
+
+                        <!-- ***** Form Start ***** -->
+                        <div class="row pt-4 pb-4">
+                            <div class="col-xl-10 mx-auto">
+                                <div class="PlayerForm">
+                                    <form method="POST" enctype="multipart/form-data" autocomplete="off">
+                                        {% csrf_token %}
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <h1 class="major">WRITE</h1>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <button type="submit" class="save"><i class="fa-solid fa-paper-plane fa-2xl"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="col-12">
+                                                    <div class="avatar-upload">
+                                                        <div class="avatar-edit">
+                                                            <input type="file" class="form-control" id="imageUpload" name="profile_image" accept="image/jpeg, image/jpg, image/png">
+                                                            <label for="imageUpload"></label>
+                                                        </div>
+                                                        <div class="avatar-preview">
+                                                            {% if player.profile_image %}
+                                                                <div id="imagePreview" style="background-image: url('{{ player.profile_image.url }}');">
+                                                                </div>
+                                                            {% else %}
+                                                                <div id="imagePreview" style="background-image: url('/static/volunteer/images/profile_bg.png');">
+                                                                </div>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row g-3">
+                                                    <div class="col-12">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <label for="name" class="name-label">Name</label>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span id="name-counter">0 / 10</span>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="name" name="name" value="{{ form.name.value|default_if_none:'' }}" required>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="point" class="point-label">Point</label>
+                                                        <input type="number" class="form-control" id="point" name="point" min="1" value="{{ form.point.value|default_if_none:'' }}" required>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="challenge" class="challenge-label">Challenge</label>
+                                                        <input type="number" class="form-control" id="challenge" name="challenge" min="1" value="{{ form.challenge.value|default_if_none:'' }}" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="dreamhack_link" class="dreamhack-label">Profile Link</label>
+                                                        <input type="url" class="form-control" id="dreamhack_link" name="dreamhack_link" value="{{ form.dreamhack_link.value|default_if_none:'' }}" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** Form End ***** -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer Start -->
+        {% include 'footer_2.html' %}
+        <!-- footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <i class="fa-regular fa-copyright"></i> 2024. I.Sly() All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'fullpage/selected.js' %}"></script>
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+        <script src="{% static 'assets/js/tabs.js' %}"></script>
+        <script src="{% static 'assets/js/popup.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Nav SlideToggle JavaScript -->
+        <script src="{% static 'fullpage/nav.js' %}"></script>
+
+        <!-- Raon JavaScript -->
+        <script src="{% static 'volunteer/js/profile_upload.js' %}"></script>
+        <script src="{% static 'ctf/js/name_counting.js' %}"></script>
+
+
+    </body>
+
+</html>

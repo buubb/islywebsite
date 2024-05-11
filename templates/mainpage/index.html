@@ -118,14 +118,16 @@ https://templatemo.com/tm-579-cyborg-gaming
                             <a class="mainrecruit">지원하러 가기   </a><img src="{% static 'fullpage/img/Group 1.png' %}">
                           </div>
                           </div>
-                          <div class="scrolldown">
-                            <p>Scroll down</p>
-                          </div>
-                          <div class="scroll-downs">
-                            <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
-                bottom: 25px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></Div>
-                            <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
-                bottom: 40px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite;"></Div>
+                          <div class="scrolldownwrap">
+                            <div class="scrolldown">
+                              <p>Scroll down</p>
+                            </div>
+                            <div class="scroll-downs">
+                              <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+                  bottom: 25px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+                              <div class="down" style="width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+                  bottom: 40px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: aliceblue; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+                            </div>
                           </div>
                     </div>
                 </div>
@@ -133,8 +135,8 @@ https://templatemo.com/tm-579-cyborg-gaming
                <!-- ***** Facts Start ***** -->
                <div class="Facts">
                 <div class="col-lg-12">
-                    <div class="text-center mx-auto">
-                        <h1 class="title mb-5">Activity Records</h1>
+                    <div class="text-center mx-auto scroll_wrap">
+                        <h1 class="title mb-5 scroll_on type_bottom">Activity Records</h1>
                     </div>
                     {% for act_record in act_records %}
                     <div class="row g-4 container-facts">
@@ -223,8 +225,8 @@ https://templatemo.com/tm-579-cyborg-gaming
               <!-- ***** Activities? *****-->
               <div class="special">
                 <div class="col-lg-12">
-                  <div class="heading-section text-center mx-auto">
-                    <h1 class="title">Our Special Activities</h1>
+                  <div class="heading-section text-center mx-auto scroll_wrap">
+                    <h1 class="title scroll_on type_bottom">Our Special Activities</h1>
                   </div>
                 </div>
               </div>
@@ -232,51 +234,66 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="row">
                   <div class="col-lg-12">
                     <section>
-                      <ul class='indexes'>
-                        <li data-index='0'>01</li>
-                        <li data-index='1'>02</li>
-                        <li data-index='2'>03</li>
-                        <li data-index='3'>04</li>
-                      </ul>
-                      
-                      <ul class='tabs'>
+                      <div class="grid">
+                      </div>
+                      <ul class="tabs">
                         {% for special in special_acts %}
-                        <li class='tab'>
-                          <article class='tab-content'>
-                            <h3>{{ special.title }}</h3>
-                            <p>{{ special.content }}</p>
-                          </article>
-                          <div class='tab-image'><img src='{{ special.image.url }}'></div>
+                        <li class="tab">
+                          <div class="tab-service">
+                            <article class='tab-content'>
+                              <h3>{{ special.title }}</h3>
+                              <p>{{ special.content }}</p>
+                            </article>
+                            <div class="tab-imgArea">
+                              <div class='tab-image'><img src='{{ special.image.url }}'></div>
+                            </div>
+                          </div>
                         </li>
                         {% endfor %}
                         {% if not special_acts %}
                         <li class='tab'>
-                          <article class='tab-content'>
-                            <h3>Sungshin CSE x I.Sly() CTF</h3>
-                            <p>I.Sly()는 매년 초 성신여자대학교 융합보안공학과 대상 CTF 대회 주관을 하고 있습니다. 분야는  Web, Reversing, Pwnable, Crypto, Forensic, Misc로 구성되어 성신여대 융합보안공학과 학생이라면 참가하실 수 있습니다! 또한 I.Sly() 부원이 된다면 CTF 문제 제작 및 운영을 경험해보실 수 있습니다! </p>
-                          </article>
-                          <div class='tab-image'><img src='https://picsum.photos/id/345/1000/600'></div>
+                          <div class="tab-service">
+                            <article class='tab-content'>
+                              <h3>Sungshin CSE x I.Sly() CTF</h3>
+                              <p>I.Sly()는 매년 초 성신여자대학교 융합보안공학과 CTF 대회를 주관하고 있습니다. 해당 대회는 I.Sly() 부원이 직접 문제 제작 및 운영을 맡고 있습니다. </p>
+                            </article>
+                            <div class="tab-imgArea">
+                              <div class='tab-image'><img src='https://picsum.photos/id/345/1000/600'></div>
+                            </div>
+                          </div>
                         </li>
                         <li class='tab'>
-                          <article class='tab-content'>
-                            <h3>아이슬리의 밤</h3>
-                            <p>매년 OB들과의 교류를 통해 대학원, 취업, BoB 합격 팁, 학부연구생 후기 등 다양한 정보를 얻으실 수 있습니다! 평소에 궁금한 점이 있었다면 교류의 장을 기회로 해답을 얻어가시기 바합니다.</p>
-                          </article>
-                          <div class='tab-image'><img src='https://picsum.photos/id/352/1000/600'></div>
+                          <div class="tab-service">
+                            <article class='tab-content'>
+                              <h3>Wisely</h3>
+                              <p>매년 OB들과의 교류를 통해 대학원, 취업, BoB 합격 팁, 학부연구생 후기 등 다양한 정보를 얻으실 수 있습니다! 아이슬리의 밤을 즐겨보세용 ^^</p>
+                            </article>
+                            <div class="tab-imgArea">
+                              <div class='tab-image'><img src='https://picsum.photos/id/352/1000/600'></div>
+                            </div>
+                          </div>
                         </li>
                         <li class='tab'>
-                          <article class='tab-content'>
-                            <h3>성북구 자원봉사 & 코드클럽</h3>
-                            <p>I.Sly()는 2023년부터 성북구 자원봉사센터와 연계하여 봉사를 진행하고 있습니다. 또한 마음 맞는 부원들과 코드클럽 코딩교육봉사도 참가할 수 있습니다. 전공 관련 봉사활동을 경험하고 싶다면 아이슬리로....</p>
-                          </article>
-                          <div class='tab-image'><img src='https://picsum.photos/id/444/1000/600'></div>
+                          <div class="tab-service">
+                            <article class='tab-content'>
+                              <h3>성북구 자원봉사 & 코드클럽</h3>
+                              <p>I.Sly()는 2023년부터 성북구 자원봉사센터 연계 및 코드클럽 코딩교육봉사를 진행하고 있습니다. 매 학기, 방학마다 디스코드에 공지가 올라가니 많은 관심 부탁드립니다 :)</p>
+                            </article>
+                            <div class="tab-imgArea">
+                              <div class='tab-image'><img src='https://picsum.photos/id/444/1000/600'></div>
+                            </div>
+                          </div>
                         </li>
                         <li class='tab'>
-                          <article class='tab-content'>
-                            <h3>I.Sly() Hacking Camp</h3>
-                            <p>방학 때 혼자서 CTF 문제를 풀기 막막하다면 다같이 해킹 문제를 풀 수 있는 아이슬리 해킹 캠프에 참가해보세요! 강제성 있는 환경에서 해킹 실력을 향상 시킬 수 있습니다.</p>
-                          </article>
-                          <div class='tab-image'><img src='https://picsum.photos/id/451/1000/600'></div>
+                          <div class="tab-service">
+                            <article class='tab-content'>
+                              <h3>I.Sly() Hacking Camp</h3>
+                              <p>방학 때 혼자서 CTF 문제를 풀기 막막하다면 다같이 해킹 문제를 풀 수 있는 아이슬리 해킹 캠프에 참가해보세요! 강제성 있는 환경에서 해킹 실력을 향상 시킬 수 있습니다.</p>
+                            </article>
+                            <div class="tab-imgArea">
+                              <div class='tab-image'><img src='https://picsum.photos/id/451/1000/600'></div>
+                            </div>
+                          </div>
                         </li>
                         {% endif %}
                       </ul>
@@ -290,18 +307,18 @@ https://templatemo.com/tm-579-cyborg-gaming
     </div>
   </div>
   <!--vivid review-->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
+<div>
       <div class="vivid"><!--wrapper-->
-        <div class="vividtitle" translate="no">
-          <h1>I.Sly() NEWS</h1>
+        <div class="vividtitle scroll_wrap" translate="no">
+          <h1 class="scroll_on type_bottom">I.Sly() NEWS</h1>
         </div>
-        
-        <div class="pretty-scrollbar js-horizontal-scroll row" id="news-line"></div>
+        <div class="scroll-container">
+          <div class="carousel-primary marquee" id="news-line"></div>
+          <div class="carousel-primary carousel-secondary marquee" id="news-line"></div>
+        </div>
         <div>
           <a class="special-button" href="https://www.instagram.com/official.i.sly0/">
-            VIEW ALL  <i class="bi bi-arrow-up-right-circle"></i>
+            VIEW ALL
           </a>
         </div>
         
@@ -327,7 +344,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 success: function(response) {
                     console.log(response);
                     if (response.data != undefined && response.data.length > 0) {
-                        for(i = 0; i < 10; i++){
+                        for(i = 0; i < 20; i++){
                             if(response.data[i]){
                                 var item = response.data[i];
                                 var image_url = "";
@@ -348,7 +365,8 @@ https://templatemo.com/tm-579-cyborg-gaming
                                     post += '</div>';
                                 post += '</div>';
 
-                                $('#news-line').append(post);
+                                $('.carousel-primary').append(post); // 첫 번째 캐러셀 컨테이너에 데이터 삽입
+                                
                             }else{
                                 // if no curent item
                                 show_fallback('#insta-item-'+i)
@@ -369,14 +387,11 @@ https://templatemo.com/tm-579-cyborg-gaming
             function show_fallback(el){
                 $(el).addClass('loaded fallback');
             }
-
         </script>
         <!-- instagram 연동-->
         
         
       </div>
-    </div>
-  </div>
 </div>
 <!--vivid review-->
 
@@ -422,61 +437,6 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <!-- Nav SlideToggle JavaScript -->
   <script src="{% static 'fullpage/nav.js' %}"></script>
-
-<!-- 가로 스크롤 -->
-<script>
-  $(document).ready(function(){
-      let isScrolling = false;
-      let chk = true;
-
-      $('#news-line').on('mousewheel DOMMouseScroll', function(event){
-          if (!chk || isScrolling) return;
-
-          chk = false;
-          isScrolling = true;
-
-          setTimeout(function(){
-              chk = true;
-              isScrolling = false;
-          }, 500);
-
-          event.preventDefault(); // 기본 스크롤 이벤트 중단
-
-          // 휠 방향 감지(아래: -1, 위: 1)
-          let w_delta = event.originalEvent.wheelDelta / 12 || -event.originalEvent.detail / 3;
-
-          // 현재 스크롤 위치
-          let scrollLeft = $(this).scrollLeft();
-
-          // 휠 아래로
-          if(w_delta < 0) {
-              $(this).animate({
-                  scrollLeft: scrollLeft + 350 // 스크롤을 오른쪽으로 이동
-              }, {
-                 // duration: 500, // 애니메이션 속도 조정
-                  easing: 'linear' // 애니메이션 유형 지정 (linear로 변경)
-              });
-          }
-          // 휠 위로
-          else {
-              $(this).animate({
-                  scrollLeft: scrollLeft - 350 // 스크롤을 왼쪽으로 이동
-              }, {
-                  //duration: 500, // 애니메이션 속도 조정
-                  easing: 'linear' // 애니메이션 유형 지정 (linear로 변경)
-              });
-          }
-      });
-
-      $('#news-line').on('scroll', function(event){
-          $('body').css('overflow-y', 'hidden'); // 세로 스크롤 막기
-      });
-
-      $('#news-line').on('mouseleave', function(event){
-          $('body').css('overflow-y', 'auto'); // 세로 스크롤 허용
-      });
-  });
-</script>
 
    <!-- slider JS Start -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>

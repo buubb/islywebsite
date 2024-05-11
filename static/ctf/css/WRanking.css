@@ -1,0 +1,173 @@
+/*
+---------------------------------------------
+WRanking
+---------------------------------------------
+*/
+
+.WRanking {
+    /* margin-top: 160px; */
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.WRanking .title {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Card
+---------------------------------------------
+*/
+
+.WRanking .card {
+    background-color: #0d0f10;
+    border: 5px solid #FFFFFF;
+    border-radius: 23px;
+}
+
+
+/*
+---------------------------------------------
+Thead
+---------------------------------------------
+*/
+
+.WRanking .th {
+    color: #57F579;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+}
+
+
+/*
+---------------------------------------------
+Tbody
+---------------------------------------------
+*/
+
+.WRanking .td {
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 0.055em;
+}
+
+.WRanking span {
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 0.055em;
+}
+
+.WRanking .td-rank,
+.WRanking .td-edit {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+}
+
+.WRanking a {
+    color: #FFFFFF;
+}
+
+
+/*
+---------------------------------------------
+Profile
+---------------------------------------------
+*/
+
+.WRanking .profile {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*
+---------------------------------------------
+Pagination
+---------------------------------------------
+*/
+
+.WRanking .pagination .btn {
+    color: #FFFFFF;
+    background-color: #0D0F10;
+    border-radius: 50%;
+    border: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    height: 40px;
+    min-width: 40px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.WRanking .pagination .current {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .WRanking .th-challenge,
+    .WRanking .th-profile,
+    .WRanking .td-challenge,
+    .WRanking .td-profile {
+        display: none;
+    }
+
+    .WRanking .td,
+    .WRanking span {
+        font-size: 15px;
+    }
+
+    .WRanking .td-rank {
+        font-size: 16px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}

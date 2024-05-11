@@ -5,7 +5,6 @@ Basic
 */
 
 .StatusCheck {
-    font-family: "Poppins", "sans-serif";
     height: 80vh;
     display: flex;
     align-items: center;
@@ -156,6 +155,7 @@ Placeholder
 */
 
 .StatusCheck input[type="number"]::placeholder {
+    font-family: "Poppins", "sans-serif";
     color: #B2B2B2; /* C6C6C6 */
 }
 
@@ -167,7 +167,7 @@ Button
 */
 
 .StatusCheck .next-btn {
-    font-family: "Poppins", "sans-serif";
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.15rem;

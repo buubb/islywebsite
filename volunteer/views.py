@@ -58,31 +58,22 @@ def load_more(request):
 @login_required(login_url="login")
 def post_add(request):
     if request.method == "POST":
-        # request.POST로 온 데이터는 PostForm으로 처리
         form = PostForm(request.POST)
 
         if form.is_valid():
-            # Post의 "user"값은 request에서 가져와 자동할당
             post = form.save(commit=False)
             post.user = request.user
             post.save()
 
-            # Post를 생성 한 후
-            # request.FILES.getlist("images")로 전송된 이미지들을 순회하며 PostImage객체를 생성
             for image_file in request.FILES.getlist("images"):
-                # request.FILES또는 request.FILES.getlist()로 가져온 파일은
-                # Model의 ImageField부분에 곧바로 할당
                 PostImage.objects.create(
                     post=post,
                     photo=image_file,
                 )
 
-            # 모든 PostImage와 Post의 생성이 완료되면
-            # 해당 Post의 상세 페이지로 이동
             url = reverse("Volunteer:post_detail", args=[post.id])
             return redirect(url)
 
-    # GET요청일 때는 빈 form을 보여주기
     else:
         form = PostForm()
 
@@ -190,8 +181,13 @@ def post_like(request, post_id):
 def comment_add(request, post_id):
     post = get_object_or_404(Post, id=post_id)
 
+    existing_comment = Comment.objects.filter(post=post, user=request.user).exists()
+    if existing_comment:
+        messages.warning(request, "You can only write one comment per project.")
+        return redirect("Volunteer:post_detail", post_id=post_id)
+
     if request.method == "POST":
-        form = CommentForm(request.POST)
+        form = CommentForm(request.POST, request.FILES)
         if form.is_valid():
             # commit=False 옵션으로 메모리상에 Comment 객체 생성
             comment = form.save(commit=False)
@@ -203,6 +199,12 @@ def comment_add(request, post_id):
             # DB에 Comment 객체 저장
             comment.save()
 
+            # 프로필 이미지 저장
+            profile_image = request.FILES.get("profile_image")
+            if profile_image:
+                request.user.profile_image = profile_image
+                request.user.save()
+
             # 생성 완료 후에는 해당 Post의 상세 페이지로 이동
             return redirect("Volunteer:post_detail", post_id=post_id)
     else:
@@ -213,7 +215,7 @@ def comment_add(request, post_id):
         "form": form,
         "post_id": post_id,
     }
-    return render(request, "volunteer/comment_add.html", context)
+    return render(request, "volunteer/comment_form.html", context)
 
 
 @login_required(login_url="login")

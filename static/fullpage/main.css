@@ -166,7 +166,7 @@ a{
   padding:12px 16px; 
   font-weight: 500;
   font-size: 15px;
-  /* color:#fff; */
+  /* color:#fff; nav design ver_1 */
   color:black;
 }
 
@@ -214,11 +214,10 @@ nav .res-nav{
     right:20px;
     display: none;
 }
-nav .res-nav .icon-wrap .hamburger{
+nav .res-nav .burger-wrap .burger{
     color: aliceblue;
     border-radius: 5px;
     position:relative;
-    transform: translateY(-15%);
 }
 nav .res-nav-container{
   display: none;
@@ -242,6 +241,10 @@ nav .res-nav-container{
   
   width :34px;
   height: 55px;
+}
+.scrolldownwrap{
+  position:relative;
+  bottom:-220px;
 }
 .down{
   /*left: 50%;*/
@@ -649,7 +652,7 @@ path:nth-child(6) {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
 
   & section {
-    display: flex;
+    display: block;
     gap: 70px;
     margin-left:50px;
     margin-top:70px!important;
@@ -671,42 +674,63 @@ path:nth-child(6) {
 .tabs { position: relative; }
 
 .tab {
-  position: absolute;
-  display: flex;
-  width: 1050px;
-  height: 400px;
-  opacity: 0; 
-  background-color: transparent;
-  overflow: hidden;
-  padding-top:40px;
-  padding-bottom: 20px;
-  padding-left:20px;
+  padding: 85px 0;
+  width:100%;
+  height:400px;
 }
-
-.tab-content {
-  position: relative;
-  z-index: 5;
-  width: 600px;
+.tab::before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(30, 30, 30, .3);
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: -5px;
+  left: calc(50% - 29px);
+  background-color: #666;
+}
+.tab-service{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  opacity: 0;
-  transform: translateY(-5rem);
+  position:relative;
+}
+.tab:nth-child(2n) .tab-imgArea{
+  right:auto;
+}
+.tab:nth-child(2n) .tab-content{
+  right:0;
+  left:auto;
+}
+.tab-imgArea{
+  max-width: 100%;
+  position:absolute;
+  top:0;
+  right:48px;
+}
+.tab-content {
+  position: absolute;
+  top:50%;
+  left:0;
+  width:50%;
+  padding: 60px 50px 40px 20px;
+  align-content: center;
+  /* transform: translateY(-50%); */
 
   & h3 {
-    font-weight: 600!important;
-    font-size: 32px!important;
-    border-bottom: 3px solid white;
-    padding-bottom: 1rem;
+    font-weight: 700!important;
+    font-size: 30px!important;
+    margin-bottom: 20px;
+    margin-left:5px;
+    line-height: 1.182;
   }
 
   & p {
-    font-weight: 400;
-    line-height: 2;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 18px;
     color: rgba(255,255,255,0.7);
-    padding-bottom:100px;
+    margin-bottom: 72px;
+    width:80%;
   }
 
   & button {
@@ -720,47 +744,131 @@ path:nth-child(6) {
   }
 }
 
-@keyframes content {
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .tab-image {
-  position: absolute;
-  right: 1rem;
-  width: 500px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 600px;
   height: 300px;
-  opacity: 0;
-  transform: translateX(2rem);
-  margin-top: 30px;
-  margin-right:30px;
+  
   &::after {
     content: '';
     position: absolute;
     inset: 0;
     background-color: var(--overlay);
     mix-blend-mode: multiply;
-    width:400px;
+    /* width:500px; */
   }
 
   & img {
-    width: inherit;
-    height: inherit;
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    width: 600px;
+    height: 300px;
     object-fit: cover;
+    object-position: center center;
+    transition-delay: 500ms;
     filter: grayscale(100%);
   }
 }
 
-@keyframes image {
-  100% {
-    opacity: 1;
-    width: 300px;
-    transform: translateX(0);
-  }
+/* scroll 시 나타나는 애니메이션 */
+.scroll_wrap{
+  overflow: hidden;
+}
+.scroll_on {font-size: 24px;font-weight:700;text-align: center;opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_bottom{
+  transform: translate(0, 50px);
 }
 
-.active2 .tab          { opacity: 1; z-index: 5; }
-.active2 .tab-content  { animation: content 0.9s ease-out 0.4s forwards; }
-.active2 .tab-image    { animation: image 1s ease-out forwards; }
+/*hamburger*/
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+/* activities grid */
+.grid{
+  position: absolute!important;
+  height: 1700px!important;
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 80px);
+  background-size: 1px 5px;
+  background-color: #666;
+  background-repeat: repeat-y;
+}
+
+.grid::after{
+  content: "\30FB";
+        line-height: 1;
+        text-indent: -1px;
+        display: inline-block;
+        color: #666;
+        box-sizing: border-box;
+        border: 1px solid #666;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -9px;
+        bottom: -10px;
+        background-color: #666;
+        border-radius: 50%;
+}

@@ -26,6 +26,7 @@ Subtitle, Title
     font-style: normal;
 }
 
+
 /*
 ---------------------------------------------
 Custom Text
@@ -98,7 +99,7 @@ Img Border
     right: 3rem;
     bottom: 3rem;
     border: 5px solid #FFFFFF;
-    border-radius: 0;
+    border-radius: 23px;
 }
 
 .About .img-border img {
@@ -108,7 +109,7 @@ Img Border
     width: calc(100% - 3rem);
     height: calc(100% - 3rem);
     object-fit: cover;
-    border-radius: 0;
+    border-radius: 23px;
 }
 
 
