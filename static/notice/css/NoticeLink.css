@@ -69,25 +69,57 @@ Responsive Style
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .NoticeLink .notice-btn a {
-       font-size: 65px;
+        font-size: 65px;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .NoticeLink .notice-btn a {
-       font-size: 60px;
+        font-size: 60px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 20px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 28px;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .NoticeLink .notice-btn a {
-       font-size: 50px;
+        font-size: 50px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 18px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 22px;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .NoticeLink .notice-btn a {
+        font-size: 45px;
+    }
 
+    .NoticeLink .linkSub {
+        font-size: 16px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 575.98px) {
+    .NoticeLink .linkTitle br {
+        display: none;
+    }
 }
