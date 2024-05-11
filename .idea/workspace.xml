@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b07f78c-fafc-49f0-98ce-acd82d3d81fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/users/profile/test16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/volunteer/js/content_counting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/users/profile/test3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/ctf/css/Stat.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/Stat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/js/CTFCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/js/ctf_carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/RcdCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/rcd_carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/VltCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/js/vlt_carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/WRanking.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/WRanking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/Curriculum.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/Curriculum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/Position.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/Position.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RulesLink.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/VltRcd.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/comment/VltRcd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715419552601</updated>
       <workItem from="1715419554509" duration="6264000" />
-      <workItem from="1715445375183" duration="2788000" />
+      <workItem from="1715445375183" duration="4717000" />
     </task>
     <servers />
   </component>
