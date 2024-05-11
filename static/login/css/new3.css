@@ -31,6 +31,11 @@ body {
     text-align: center;
 }
 
+.login-box a {
+    color: #808080;
+}
+
+
 .login-box .user-box {
     position: relative;
     margin-bottom: 30px;

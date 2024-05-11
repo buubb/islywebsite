@@ -1,24 +1,17 @@
-from django.contrib.auth.hashers import check_password
 from django import forms
-from .models import BoardMember
+from django.contrib.auth.forms import (
+    UserCreationForm,
+    PasswordChangeForm as AuthPasswordChangeForm
+)
 
-class LoginForm(forms.Form):
-    # 입력받을 값 두개
-    username = forms.CharField(error_messages={
-        'required':'아이디를 입력하세요!'
-    },max_length=100, label="사용자이름")
-    password = forms.CharField(error_messages={
-        'required':'비밀번호를 입력하세요!'
-    },widget=forms.PasswordInput, max_length=100, label="password")
-    # 처음 값이 들어왔다 는 검증 진행
-    
-    def clean(self):
-        cleaned_data = super().clean()
-        username = cleaned_data.get('username')
-        password = cleaned_data.get('password')
+class PasswordChangeForm(AuthPasswordChangeForm):
+    # clean_new_password2 재정의 시에는 super()함수 호출이 필요하다. (부모에 존재하는 유효성 검사이다.)
+    def clean_new_password1(self):
+        # new_password1에 대한 유효성 검사를 추가로 정의한다.
+        old_password = self.cleaned_data.get('old_password')
+        new_password1 = self.cleaned_data.get('new_password1')
 
-        if username and password:
-            member = BoardMember.objects.filter(username=username).first()
-
-            if not member or not check_password(password, member.password):
-                self.add_error(None, '아이디 또는 비밀번호가 올바르지 않습니다!')
+        if old_password and new_password1:
+            if old_password == new_password1:  # 기존 암호와 같을 경우 폼 에러를 일으킨다.
+                raise forms.ValidationError('새로운 암호는 기존 암호와 다르게 입력해주세요')
+        return new_password1

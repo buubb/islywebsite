@@ -110,3 +110,51 @@ def check_session_status(request):
         return
     else:
         return HttpResponse('세션이 만료되었습니다. 다시 로그인해주세요.')
+    
+class CheckLogin(APIView):
+    def get(self, request):
+        form = AuthenticationForm()
+       
+        if request.user.is_authenticated:
+            return render(request, 'mainpage/index.html')
+        else:
+            form = AuthenticationForm()
+            # messages = get_messages(request)
+            return render(request, 'login/check.html', {'form': form})
+
+    def post(self, request):
+        form = AuthenticationForm(request=request, data=request.POST)
+
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                # 세션에 확인된 아이디 저장
+                request.session['checked_username'] = username
+                return render(request, 'login/reset.html')
+            else:
+                messages.error(request, '아이디 또는 비밀번호가 일치하지 않습니다.')
+                return render(request, 'login/check.html', {'form': form})
+        else:
+            messages.error(request, '입력이 올바르지 않습니다.')
+            return render(request, 'login/check.html', {'form': form})
+        
+from .forms import PasswordChangeForm        
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
+from django.contrib.auth.views import (
+    PasswordChangeView as AuthPasswordChangeView
+)
+
+class PasswordChangeView(LoginRequiredMixin, AuthPasswordChangeView):
+    success_url = reverse_lazy('password_change')
+    template_name = 'login/reset.html'  # 템플릿 위치 재정의
+    form_class = PasswordChangeForm  # 커스텀 폼 지정
+
+    def form_valid(self, form):  # 유효성 검사 성공 이후 로직 입력
+        messages.success(self.request, '암호를 변경했습니다.')  # 성공 메시지
+        return super().form_valid(form)  # 폼 검사 결과를 리턴해야한다.
+
+password_change = PasswordChangeView.as_view()
+
