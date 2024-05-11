@@ -78,12 +78,12 @@
                                             <!-- year -->
                                             <div class="field half">
                                                 <label for="year" class="year-label">Year</label>
-                                                <input type="number" class="form-control" name="year" id="year" value="{{ form.year.value|default_if_none:'' }}" min="2020" required>
+                                                <input type="number" class="form-control" name="year" id="year" min="2020" value="{{ form.year.value|default_if_none:'' }}" required>
                                             </div>
                                             <!-- generation -->
                                             <div class="field half">
                                                 <label for="generation" class="gen-label">Generation</label>
-                                                <input type="number" class="form-control" name="generation" id="generation" value="{{ form.generation.value|default_if_none:'' }}" min="1" required>
+                                                <input type="number" class="form-control" name="generation" id="generation" min="1" value="{{ form.generation.value|default_if_none:'' }}" required>
                                             </div>
                                             <!-- content -->
                                             <div class="field">
@@ -100,11 +100,16 @@
                                                     </label>
                                                     <p id="num-of-files">No Files Chosen</p>
                                                     <div id="img-container">
-                                                        <!-- Existing images -->
                                                         {% for image in images %}
                                                             <figure>
                                                                 <img src="{{ image.url }}" alt="">
-                                                                <figcaption class="image-caption">{{ image.name }}</figcaption>
+                                                                <figcaption class="image-caption">
+                                                                    {% if image.name|length > 15 %}
+                                                                        {{ image.name|slice:":5" }}...{{ image.name|slice:"-8:" }}
+                                                                    {% else %}
+                                                                        {{ image.name }}
+                                                                    {% endif %}
+                                                                </figcaption>
                                                             </figure>
                                                         {% endfor %}
                                                     </div>
