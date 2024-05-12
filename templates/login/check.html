@@ -53,11 +53,11 @@ https://templatemo.com/tm-579-cyborg-gaming
     {% include "fullpagenav.html" %}
     <div class="login-box">
         {% block content %}
-        <form method="post" action="{% url 'login' %}?next={{ request.GET.next }}">
+        <form method="post" action="{% url 'check' %}">
 
             {% csrf_token %}
             
-            <h1>Login</h1> <br>
+            <h1>Check</h1> <br>
             <div class="user-box">
                 <input id="username" type="text" name="username" required=""
                 placeholder="ID를 입력하세요"
@@ -74,11 +74,10 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <i class="uil uil-lock icon"></i>
                     <i class="uil uil-eye-slash showHidePw"></i> 
             </div>
-            <a href="{% url 'check' %}">reset PW</a>
             {% include "login/messages.html" %}
             <button type="submit" id="login-button">
                 <span></span>
-                Login
+                Check
             </button>
 
             {% endblock %}        
@@ -88,7 +87,7 @@ https://templatemo.com/tm-579-cyborg-gaming
 
         <!-- Scripts -->
         <!-- Bootstrap core JavaScript -->
-        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <!-- <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script> -->
         <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 
         <script src="{% static 'assets/js/isotope.min.js' %}"></script>
