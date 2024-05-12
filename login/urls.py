@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import Login, CheckLogin
+from .views import Login
 from django.contrib.auth import views as auth_views
 from .views import check_session_status
 
@@ -16,6 +16,5 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='login/new3.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('check_session_status/', check_session_status, name='check_session_status'),
-    path('check/', CheckLogin.as_view(), name='check'),
-    path('change_password/',views.change_password, name="change_password"),
+    # path('login_attempt/', views.login_attempt, name='login_attempt'),
    ]

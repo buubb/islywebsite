@@ -31,11 +31,6 @@ body {
     text-align: center;
 }
 
-.login-box a {
-    color: #808080;
-}
-
-
 .login-box .user-box {
     position: relative;
     margin-bottom: 30px;
@@ -151,21 +146,7 @@ input::placeholder {
 }
 
 .login-box .user-box input {
-    color: #808080;
-}
-
-#change-password-form {
-    color: #808080;
-}
-
-#change-password-form input[type="password"] {
-    background-color: transparent; /* 배경을 투명하게 설정 */
-    color: #808080; /* 텍스트 색상을 하얀색으로 설정 */
-    border: 2px solid #808080;
-}
-
-#change-password-form input[type="password"]::placeholder {
-    color: #808080; /* 입력칸에 플레이스홀더(placeholder) 텍스트의 색상을 하얀색으로 설정 */
+    color: white;
 }
 
 .alert-danger {
