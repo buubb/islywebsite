@@ -3,6 +3,14 @@ from django.contrib.auth.forms import (
     UserCreationForm,
     PasswordChangeForm as AuthPasswordChangeForm
 )
+# from .models import LoginAttempt
+
+# class LoginAttemptForm(forms.ModelForm):
+#     class Meta:
+#         model=LoginAttempt
+#         fields=[
+
+#         ]
 
 class PasswordChangeForm(AuthPasswordChangeForm):
     # clean_new_password2 재정의 시에는 super()함수 호출이 필요하다. (부모에 존재하는 유효성 검사이다.)
