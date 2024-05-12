@@ -53,44 +53,35 @@ https://templatemo.com/tm-579-cyborg-gaming
     {% include "fullpagenav.html" %}
     <div class="login-box">
         {% block content %}
-        <form method="post" action="{% url 'login' %}?next={{ request.GET.next }}">
 
-            {% csrf_token %}
+        {% csrf_token %}
             
-            <h1>Login</h1> <br>
-            <div class="user-box">
-                <input id="username" type="text" name="username" required=""
-                placeholder="ID를 입력하세요"
-                autocomplete="off"
-                value="{{ form.username.value|default_if_none:'' |escape }}">
-                <i class="uil uil-user"></i>
-            </div>
-            
-            <div class="user-box">
-                <input id="password" type="password" name="password" required=""
-                placeholder="PW를 입력하세요"
-                autocomplete="off"
-                value="{{ form.password.value|default_if_none:'' |escape }}">
-                    <i class="uil uil-lock icon"></i>
-                    <i class="uil uil-eye-slash showHidePw"></i> 
-            </div>
-            <a href="{% url 'check' %}">reset PW</a>
-            {% include "login/messages.html" %}
-            <button type="submit" id="login-button">
-                <span></span>
-                Login
-            </button>
-            <p>클라이언트 IP 주소: {{ client_ip }}</p>
-            <p>로그인 시도 횟수: {{ login_attempts }}</p>
+        <h1>Reset PW</h1> <br>
+        <div>
+            <label name="label_username" for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+            {{ form.username}}
+        </div>
 
-            {% endblock %}        
-        </form>
+        <div>
+            <label name="label_email" for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+                {{ form.email }}
+            <small>
+                등록하신 메일로 인증번호가 발송됩니다.
+            </small>
+        </div>
+
+        <button type="submit" id="login-button">
+            <span></span>
+            Submit
+        </button>
+
+        {% endblock %}        
         
     </div>
 
         <!-- Scripts -->
         <!-- Bootstrap core JavaScript -->
-        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <!-- <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script> -->
         <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 
         <script src="{% static 'assets/js/isotope.min.js' %}"></script>
@@ -111,7 +102,7 @@ https://templatemo.com/tm-579-cyborg-gaming
         </script>
 
         <!-- Seolin JavaScript -->
-        <script src="{% static 'login/js/new3.js' %}"></script>
+        <script src="{% static 'login/js/changepw.js' %}"></script>
         <script src="{% static 'fullpage/selected.js' %}"></script>
 
         <!-- icons : insta, kakao, call -->
