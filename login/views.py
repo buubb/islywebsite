@@ -74,10 +74,6 @@ class Login(APIView):
                 next_url = request.POST.get('next', '')
                 if next_url:
                     return redirect(next_url)
-                elif request.path == '/login/check':  # 로그인 페이지에서 로그인한 경우
-                    return render(request, 'mainpage/index.html')   # 메인 페이지로 이동
-                elif request.path == '/login/change_password':  # 비밀번호 변경 페이지에서 로그인한 경우
-                    return render(request, 'mainpage/index.html') 
                 else:
                     return redirect('mainpage:index')  # 로그인 성공 시 메인 페이지로 이동
             else:
@@ -134,47 +130,58 @@ class CheckLogin(APIView):
             if user is not None:
                 login(request, user)
                 return redirect('change_password')
-                # return render(request, 'login/change_password.html')
             else:
-                messages.error(request, '아이디 또는 비밀번호가 일치하지 않습니다.')
                 return render(request, 'login/check.html', {'form': form})
         else:
-            messages.error(request, '입력이 올바르지 않습니다.')
             return render(request, 'login/check.html', {'form': form})
+        
+from django.contrib.auth.hashers import check_password
+from django.contrib import messages, auth
+from django.contrib.auth import logout
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError
+from .validators import CustomPasswordValidator
 
-from django.contrib.auth.forms import PasswordChangeForm
-from django.contrib.auth import update_session_auth_hash, logout
+
 def change_password(request):
-  if request.method == "POST":
-    form = PasswordChangeForm(request.user, request.POST)
-    if form.is_valid():
-        user = form.save()
-        update_session_auth_hash(request, user)
-        messages.success(request, 'Password successfully changed')
+    if request.method == "POST":
+        user = request.user
+        origin_password = request.POST.get("origin_password")
+        new_password = request.POST.get("new_password")
+        confirm_password = request.POST.get("confirm_password")
+
+        # 현재 비밀번호 확인
+        if not check_password(origin_password, user.password):
+            # messages.error(request, 'Current password is incorrect.')
+            return render(request, 'login/change_password.html')
+            # return render(request, 'login/change_password.html', {'message': error})
+
+        # 신규 비밀번호 확인
+        if new_password != confirm_password:
+            # messages.error(request, 'Passwords do not match.')
+            return render(request, 'login/change_password.html')
+            # return render(request, 'login/change_password.html', {'message': error})
+        
+        # 비밀번호 유효성 검사
+        try:
+            validate_password(new_password, user=user)
+        except ValidationError as error:
+            # messages.error(request, str(error))
+            return render(request, 'login/change_password.html')
+        
+        # 사용자 정의 비밀번호 유효성 검사 규칙을 적용
+        custom_validator = CustomPasswordValidator()
+        try:
+            custom_validator.validate(new_password, user=user)
+        except ValidationError as error:
+            # messages.error(request, 'try again')
+            return render(request, 'login/change_password.html')
+        
+        # 비밀번호 변경
+        user.set_password(new_password)
+        user.save()
+        # messages.success(request, 'Password successfully changed.')
         logout(request)
         return redirect('login')
     else:
-        messages.error(request, 'Password not changed')
-  else:
-        form = PasswordChangeForm(request.user)
-  return render(request, 'login/change_password.html',{'form':form})
-
-
-from .forms import PasswordChangeForm        
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse_lazy
-from django.contrib.auth.views import (
-    PasswordChangeView as AuthPasswordChangeView
-)
-
-class PasswordChangeView(LoginRequiredMixin, AuthPasswordChangeView):
-    success_url = reverse_lazy('password_change')
-    template_name = 'login/reset.html'  # 템플릿 위치 재정의
-    form_class = PasswordChangeForm  # 커스텀 폼 지정
-
-    def form_valid(self, form):  # 유효성 검사 성공 이후 로직 입력
-        messages.success(self.request, '암호를 변경했습니다.')  # 성공 메시지
-        return super().form_valid(form)  # 폼 검사 결과를 리턴해야한다.
-
-password_change = PasswordChangeView.as_view()
-
+        return render(request, 'login/change_password.html')
