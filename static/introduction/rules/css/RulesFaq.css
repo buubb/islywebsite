@@ -20,13 +20,9 @@ Custom Text
 ---------------------------------------------
 */
 
-.Rules a, p {
+.Rules a,
+.Rules p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-.Rules #list-small {
-    font-size: 14px;
-    margin-left: 15px;
 }
 
 .Rules em {
@@ -57,7 +53,7 @@ FAQ-list
 }
 */
 
-.Rules .faq .faq-list li {
+.Rules .faq .faq-list li.faq-item {
     padding: 25px 10px;
     background: transparent;
     border-radius: 0;
@@ -108,6 +104,55 @@ FAQ-list
     letter-spacing: 0.075em;
 }
 
+/* second */
+.Rules .faq li.listSecond {
+    margin-bottom: 0;
+    padding: 15px 0 0 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #FFFFFF;
+    text-align: justify;
+    letter-spacing: 0.075em;
+    list-style-type: none;
+}
+
+/* third */
+.Rules .faq ul.ulThird {
+    list-style-position: outside;
+    padding-left: 1em;
+}
+
+.Rules .faq li.listThird {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #FFFFFF;
+    text-align: justify;
+    letter-spacing: 0.075em;
+    list-style-type: square;
+}
+
+/* fourth */
+.Rules .faq ul.ulFourth {
+    list-style-position: outside;
+    padding-left: 1em;
+}
+
+.Rules .faq li.listFourth {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #FFFFFF;
+    text-align: justify;
+    letter-spacing: 0.075em;
+}
+
+.Rules .faq li.listFourth::marker {
+    content: "-  ";
+}
+
 
 /*
 ---------------------------------------------
@@ -143,8 +188,13 @@ Responsive Style
         font-size: 15px;
     }
 
-    .Rules #list-small {
-        font-size: 12px;
+    .Rules .faq li.listSecond,
+    .Rules .faq li.listThird {
+        font-size: 15px;
+    }
+
+    .Rules .faq li.listFourth {
+        font-size: 14px;
     }
 }
 

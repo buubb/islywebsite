@@ -122,6 +122,7 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    /*
     .NoticeList li {
         font-size: 14px;
     }
@@ -129,4 +130,5 @@ Responsive Style
     .NoticeList li.subList {
         font-size: 12px;
     }
+     */
 }
