@@ -18,5 +18,4 @@ urlpatterns = [
     path('check_session_status/', check_session_status, name='check_session_status'),
     path('check/', CheckLogin.as_view(), name='check'),
     path('change_password/',views.change_password, name="change_password"),
-    path('password_change/', views.PasswordChangeView.as_view(template_name='login/reset.html'), name='password_change'),
    ]
