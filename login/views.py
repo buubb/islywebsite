@@ -74,8 +74,12 @@ class Login(APIView):
                 next_url = request.POST.get('next', '')
                 if next_url:
                     return redirect(next_url)
+                elif request.path == '/login/check':  # 로그인 페이지에서 로그인한 경우
+                    return render(request, 'mainpage/index.html')   # 메인 페이지로 이동
+                elif request.path == '/login/change_password':  # 비밀번호 변경 페이지에서 로그인한 경우
+                    return render(request, 'mainpage/index.html') 
                 else:
-                    return render(request, 'mainpage/index.html')  # 로그인 성공 시 메인 페이지로 이동
+                    return redirect('mainpage:index')  # 로그인 성공 시 메인 페이지로 이동
             else:
                 # 로그인 실패 시 시도횟수 +1 후 캐시에 저장
                 login_attempts += 1
@@ -114,12 +118,10 @@ def check_session_status(request):
 class CheckLogin(APIView):
     def get(self, request):
         form = AuthenticationForm()
-       
         if request.user.is_authenticated:
             return render(request, 'mainpage/index.html')
         else:
             form = AuthenticationForm()
-            # messages = get_messages(request)
             return render(request, 'login/check.html', {'form': form})
 
     def post(self, request):
@@ -130,16 +132,34 @@ class CheckLogin(APIView):
             password = form.cleaned_data.get('password')
             user = authenticate(username=username, password=password)
             if user is not None:
-                # 세션에 확인된 아이디 저장
-                request.session['checked_username'] = username
-                return render(request, 'login/reset.html')
+                login(request, user)
+                return redirect('change_password')
+                # return render(request, 'login/change_password.html')
             else:
                 messages.error(request, '아이디 또는 비밀번호가 일치하지 않습니다.')
                 return render(request, 'login/check.html', {'form': form})
         else:
             messages.error(request, '입력이 올바르지 않습니다.')
             return render(request, 'login/check.html', {'form': form})
-        
+
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth import update_session_auth_hash, logout
+def change_password(request):
+  if request.method == "POST":
+    form = PasswordChangeForm(request.user, request.POST)
+    if form.is_valid():
+        user = form.save()
+        update_session_auth_hash(request, user)
+        messages.success(request, 'Password successfully changed')
+        logout(request)
+        return redirect('login')
+    else:
+        messages.error(request, 'Password not changed')
+  else:
+        form = PasswordChangeForm(request.user)
+  return render(request, 'login/change_password.html',{'form':form})
+
+
 from .forms import PasswordChangeForm        
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy

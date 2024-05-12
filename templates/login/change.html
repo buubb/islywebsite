@@ -53,34 +53,29 @@ https://templatemo.com/tm-579-cyborg-gaming
     {% include "fullpagenav.html" %}
     <div class="login-box">
         {% block content %}
-        <form method="post" action="{% url 'password_change' %}">
 
-            {% csrf_token %}
+        {% csrf_token %}
             
-            <h1>Change PW</h1> <br>
-            <label for="id_old_password">Old password:</label>
-            <input id="old_password" type="password" name="old_password" required=""
-            placeholder="현재 PW를 입력하세요"
-            autocomplete="off">
-            <i class="uil uil-lock icon"></i>
-            <i class="uil uil-eye-slash showHidePw"></i> 
-    
-            <label for="id_new_password1">New password:</label>
-            <input id="new_password1" type="password" name="new_password1" required=""
-            placeholder="변경할 PW를 입력하세요"
-            autocomplete="off">
-    
-            <label for="id_new_password2">Confirm new password:</label>
-            <input id="new_password2" type="password" name="new_password2" required=""
-            placeholder="변경할 PW를 다시 입력하세요"
-            autocomplete="off">
-            <button type="submit" id="login-button">
-                <span></span>
-                change
-            </button>
+        <h1>Reset PW</h1> <br>
+        <div>
+            <label name="label_username" for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+            {{ form.username}}
+        </div>
 
-            {% endblock %}        
-        </form>
+        <div>
+            <label name="label_email" for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+                {{ form.email }}
+            <small>
+                등록하신 메일로 인증번호가 발송됩니다.
+            </small>
+        </div>
+
+        <button type="submit" id="login-button">
+            <span></span>
+            Submit
+        </button>
+
+        {% endblock %}        
         
     </div>
 
@@ -107,7 +102,7 @@ https://templatemo.com/tm-579-cyborg-gaming
         </script>
 
         <!-- Seolin JavaScript -->
-        <script src="{% static 'login/js/new3.js' %}"></script>
+        <script src="{% static 'login/js/changepw.js' %}"></script>
         <script src="{% static 'fullpage/selected.js' %}"></script>
 
         <!-- icons : insta, kakao, call -->

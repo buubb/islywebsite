@@ -5,6 +5,5 @@ from .models import LoginAttempt
 
 @admin.register(LoginAttempt)
 class LoginAttemptAdmin(admin.ModelAdmin):
-    list_display = ['ip_address', 'username', 'success', 'timestamp']
-    list_filter = ['success', 'timestamp']
-    search_fields = ['ip_address', 'username']
+    list_display = ['ip', 'attempt', 'lock', 'timestamp']
+    ordering=['timestamp']
