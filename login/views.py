@@ -184,7 +184,6 @@ def change_password(request):
         # 비밀번호 변경
         user.set_password(new_password)
         user.save()
-        # messages.success(request, 'Password successfully changed.')
         logout(request)
         login(request, user)
         return render(request, 'mainpage/index.html')
