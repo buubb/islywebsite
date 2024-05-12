@@ -72,6 +72,10 @@ class Login(APIView):
                 # 로그인 성공 시 캐시 값 삭제
                 cache.delete(client_ip)
                 next_url = request.POST.get('next', '')
+
+                if next_url == 'change_password':
+                    return redirect('mainpage:index')
+            
                 if next_url:
                     return redirect(next_url)
                 else:
@@ -182,6 +186,7 @@ def change_password(request):
         user.save()
         # messages.success(request, 'Password successfully changed.')
         logout(request)
-        return redirect('login')
+        login(request, user)
+        return render(request, 'mainpage/index.html')
     else:
         return render(request, 'login/change_password.html')
