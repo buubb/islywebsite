@@ -1,4 +1,4 @@
-{% if form.non_field_errors %}
+{% if form.errors %}
     <div class="alert alert-danger" id="error-message" role="alert">
         {% if request.session.login_attempts|default:0 < 5 %}
             {% for error in form.non_field_errors %}

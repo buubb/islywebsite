@@ -69,20 +69,19 @@ MIDDLEWARE = [
     'django_session_timeout.middleware.SessionTimeoutMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'login.middleware.CsrfFailureMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'login.middleware.Handle404Middleware',
     # 'login.middleware.KickedMiddleware',
    # 'corsheaders.middleware.CorsMiddleware',
 ]
 
 
 # # 로그인 성공 시 자동으로 이동할 URL
-LOGIN_URL = '/login/'
+# # LOGIN_URL = '/login/'
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
+
 
 from django.contrib.messages import constants as messages_constants
 MESSAGE_LEVEL=messages_constants.INFO

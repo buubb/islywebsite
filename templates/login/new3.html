@@ -74,14 +74,12 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <i class="uil uil-lock icon"></i>
                     <i class="uil uil-eye-slash showHidePw"></i> 
             </div>
-            <a href="{% url 'check' %}">reset PW</a>
+
             {% include "login/messages.html" %}
             <button type="submit" id="login-button">
                 <span></span>
                 Login
             </button>
-            <p>클라이언트 IP 주소: {{ client_ip }}</p>
-            <p>로그인 시도 횟수: {{ login_attempts }}</p>
 
             {% endblock %}        
         </form>
