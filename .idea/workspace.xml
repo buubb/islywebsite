@@ -4,47 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b07f78c-fafc-49f0-98ce-acd82d3d81fa" name="Changes" comment="">
+    <list default="true" id="9601f639-f014-4223-ad09-7b628d9940e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2gJdKTNpHAJJszlxlpVNO1JknBH" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2gLEpDkudy7VetuWez8SLhREoKa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "raon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\ctf\js" />
-      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\js" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -82,14 +81,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1b07f78c-fafc-49f0-98ce-acd82d3d81fa" name="Changes" comment="" />
-      <created>1715419552601</created>
+      <changelist id="9601f639-f014-4223-ad09-7b628d9940e3" name="Changes" comment="" />
+      <created>1715468639383</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715419552601</updated>
-      <workItem from="1715419554509" duration="6264000" />
-      <workItem from="1715445375183" duration="5314000" />
-      <workItem from="1715450956705" duration="3559000" />
+      <updated>1715468639383</updated>
+      <workItem from="1715468641232" duration="6993000" />
     </task>
     <servers />
   </component>
