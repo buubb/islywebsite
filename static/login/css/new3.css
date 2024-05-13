@@ -168,6 +168,3 @@ input::placeholder {
     color: #808080; /* 입력칸에 플레이스홀더(placeholder) 텍스트의 색상을 하얀색으로 설정 */
 }
 
-.alert-danger {
-    display: none; /* 에러 메시지를 숨김 */
-}
