@@ -69,6 +69,109 @@ body {
     left: 10px;
 }
 
+/* -------------------- */
+.change-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #808080;
+    transition: border-color 0.4s ease;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.change-box i {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+.change-box i.icon {
+    position: absolute;
+    transform: translateY(-50%);
+    position: fixed;
+    left: 50px;
+    top: 37%;
+}
+
+
+/* ------------------------- */
+
+.change-box1 input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #808080;
+    transition: border-color 0.4s ease;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.change-box1 i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+.change-box1 i.icon {
+    position: absolute;
+    left: 50px;
+    top: 53%;
+}
+
+/* ------------------------ */
+
+.change-box2 input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #808080;
+    transition: border-color 0.4s ease;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.change-box2 i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+.change-box2 i.icon {
+    position: absolute;
+    left: 50px;
+    top: 70%;
+}
+
+.change-box2 small {
+    color: #808080;
+}
+
+/* --------------------------- */
+
 .user-box i.uil-user {
     left: 10px;
 }
@@ -170,4 +273,8 @@ input::placeholder {
 
 .alert-danger {
     display: none; /* 에러 메시지를 숨김 */
+}
+
+.error-message{
+    display: none;
 }

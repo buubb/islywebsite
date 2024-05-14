@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
         showAlert(message);
     }
 
-    function showAlert(message) {
-        alert(message);
-    }
+    checkInputs();
 });
+function showAlert(message) {
+    alert(message);
+}
