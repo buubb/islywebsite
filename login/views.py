@@ -110,51 +110,19 @@ class CheckLogin(APIView):
         else:
             return render(request, 'login/check.html', {'form': form})
         
-from django.contrib.auth.hashers import check_password
-from django.contrib.auth.password_validation import validate_password
-from django.core.exceptions import ValidationError
-from .validators import CustomPasswordValidator
+from .forms import CustomPasswordChangeForm
+from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.decorators import login_required
 
-
-def change_password(request):
-    if request.method == "POST":
-        user = request.user
-        origin_password = request.POST.get("origin_password")
-        new_password = request.POST.get("new_password")
-        confirm_password = request.POST.get("confirm_password")
-
-        # 현재 비밀번호 확인
-        if not check_password(origin_password, user.password):
-            # messages.error(request, 'Current password is incorrect.')
-            return render(request, 'login/change_password.html')
-            # return render(request, 'login/change_password.html', {'message': error})
-
-        # 신규 비밀번호 확인
-        if new_password != confirm_password:
-            # messages.error(request, 'Passwords do not match.')
-            return render(request, 'login/change_password.html')
-            # return render(request, 'login/change_password.html', {'message': error})
-        
-        # 비밀번호 유효성 검사
-        try:
-            validate_password(new_password, user=user)
-        except ValidationError as error:
-            # messages.error(request, str(error))
-            return render(request, 'login/change_password.html')
-        
-        # 사용자 정의 비밀번호 유효성 검사 규칙을 적용
-        custom_validator = CustomPasswordValidator()
-        try:
-            custom_validator.validate(new_password, user=user)
-        except ValidationError as error:
-            # messages.error(request, 'try again')
-            return render(request, 'login/change_password.html')
-        
-        # 비밀번호 변경
-        user.set_password(new_password)
-        user.save()
-        logout(request)
-        login(request, user)
-        return render(request, 'mainpage/index.html')
+@login_required
+def password_edit_view(request):
+    if request.method == 'POST':
+        password_change_form = CustomPasswordChangeForm(request.user, request.POST)
+        if password_change_form.is_valid():
+            user = password_change_form.save()
+            update_session_auth_hash(request, user)
+            return render(request, 'mainpage/index.html')
     else:
-        return render(request, 'login/change_password.html')
+        password_change_form = CustomPasswordChangeForm(request.user)
+
+    return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
