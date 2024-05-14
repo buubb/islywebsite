@@ -303,7 +303,7 @@ nav .res-nav-container{
     font-weight: 800;
     font-family: "Source Sans 3", sans-serif;
     text-align: left!important;
-    max-width: 1000px;
+    max-width: 1200px;
     margin:auto;
     width:100%;
     margin-left:120px;
@@ -813,4 +813,68 @@ path:nth-child(6) {
         bottom: -10px;
         background-color: #666;
         border-radius: 50%;
+}
+
+
+.res-tabs {
+	display: none;
+	flex-wrap: wrap; 
+}
+.res-tabs label {
+	order: 100; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-top: 2rem;
+	cursor: pointer;
+  font-weight: bold;
+  color:#FFFFFF;
+  /* transition: background ease 0.2s; */
+}
+.res-tabs .res-tab {
+  order: 1; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  color: black;
+}
+.res-tab .img{
+  width:50%;
+  position:absolute;
+  left:0;
+  right:0;
+  top:20%
+}
+.res-tab .img img{
+  width:100%;
+}
+.res-tab .res-text{
+  position:absolute;
+  width:45%;
+  right:0;
+  top:30%;
+}
+.res-tabs input[type="radio"] {
+	display: none;
+}
+.res-tabs input[type="radio"]:checked + label {
+	background: #fff;
+  color:black;
+}
+.res-tabs input[type="radio"]:checked + label + .res-tab {
+	display: block;
+  position:relative;
+  height:400px;
+}
+
+@media (max-width: 45em) {
+  .res-tabs .res-tab,
+  .res-tabs label {
+    order: initial;
+  }
+  .res-tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
 }
