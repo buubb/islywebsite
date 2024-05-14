@@ -192,7 +192,6 @@
       }
       .main {
         max-width: 1000px!important;
-        max-height: 900px!important;
         letter-spacing: 0.075em!important;
         line-height: 1.8!important;
         font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
@@ -206,26 +205,6 @@
           margin-bottom:200px;
           min-height: 400px;
         }
-      }
-      .tab{
-        position: absolute;
-        display: flex;
-        width: auto;
-        height: auto;
-        opacity: 0; 
-        background-color: transparent;
-        overflow: hidden;
-        padding-top:40px;
-        padding-bottom: 20px;
-        padding-left:20px;
-      }
-      .tab-content{
-        width:100%;
-        margin:auto;
-      }
-      .tab-image {
-        width:0px;
-        height:0px;
       }
       .indexes {
         font-size: 20px;
@@ -249,7 +228,163 @@
       
 }
 
-@media(max-width:1200px){
+@media(max-width:1400px){
+  
 
+}
 
+@media(max-width:500px){
+  .main {
+    max-width: 1000px!important;
+    letter-spacing: 0.075em!important;
+    line-height: 1.8!important;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+    
+    & section {
+      display: block;
+      gap: 70px;
+      justify-content: center;
+      margin-top:70px!important;
+      margin-left: 0px;
+      margin-bottom:0px;
+      min-height: 400px;
+    }
+  }
+
+  .tab{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    padding:50px 0px;
+    border-top:5px solid #FFFFFF ;
+    height:350px;
+  }
+  .tab::before{
+    display: none;
+  }
+  .tab-content {
+    position: absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    margin:auto;
+    padding: 20px;
+    align-content: center;
+  
+    & h3 {
+      font-weight: 700!important;
+      font-size: 25px!important;
+      margin-bottom: 20px;
+      margin-left:0px;
+      line-height: 1.182;
+      text-align: center;
+    }
+  
+    & p {
+      font-weight: 500;
+      font-size: 16px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 72px;
+      width:100%;
+      text-align: center;
+    }
+  }
+  .tab-image {
+    width:0px;
+    height:0px;
+  }
+  #section{
+    height:100vh;
+  }
+  .mainbanner{
+    display: none;
+  }
+  .text_box{
+    line-height: 50px;
+    font-size: 10.3333333333vw;
+    margin-left: 20px;
+    align-content: center;
+    top: 37%;
+    width: 400px;
+  }
+  .res-ment{
+    display: block;
+    position:absolute;
+    font-size: 4vw;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+    color:#666;
+    margin-left: 20px;
+    top: 50%;
+    width:400px;
+    text-align: left;
+  }
+  .mainbutton{
+    display: none;
+  }
+  .cursor{
+    font-size: 10.3333333333vw;
+  }
+  .scrolldownwrap{
+    position:absolute;
+    bottom:20px;
+    display: contents;
+  }
+
+  /* Facts */
+  .Facts{
+    margin-top:0px;
+  }
+  .Facts .topic{
+    font-size: 16px;
+  }
+  .Facts .title{
+    font-size: 8vw;
+  }
+  .special{
+    margin-top:0px;
+    padding-top:0px;
+  }
+  .special .heading-section h1{
+    font-size: 8vw;
+  }
+
+  .vivid{
+    margin-top: 200px;
+  }
+  .vividtitle h1{
+    font-size: 8vw !important;
+  }
+
+  .scroll-container{
+    height:250px;
+  }
+  .carousel-primary{
+    gap:0 20px;
+  }
+  #news-line .news-box{
+    width:250px;
+    height:250px;
+  }
+  #news-line .news-box .caption{
+    top:45%;
+    left:20px;
+  }
+  #news-line .news-box img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+
+@media(max-width:430px){
+  .text_box{
+    width:330px;
+  }
+  .res-ment{
+    width:300px;
+  }
+  .p-5{
+    padding:2rem!important;
+  }
+  
 }
