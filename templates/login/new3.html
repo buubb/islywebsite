@@ -74,7 +74,9 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <i class="uil uil-lock icon"></i>
                     <i class="uil uil-eye-slash showHidePw"></i> 
             </div>
-            <a href="{% url 'check' %}">reset PW</a>
+            <div style="text-align: right;">
+                <a href="{% url 'check' %}">reset PW</a>
+            </div>
             {% include "login/messages.html" %}
             <button type="submit" id="login-button">
                 <span></span>
