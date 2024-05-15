@@ -25,12 +25,9 @@ urlpatterns = [
     path('assignments/', include('assignments.urls')),
     path('login/', include('login.urls')),
     path('introduction/', include('introduction.urls')),
-    path('library/', include('library.urls')),
-    path('team-activities/', include('team_activities.urls')),
     path('project/', include('volunteer.urls')),
     path('wargame/', include('CTF_Challenge.urls')),
     path('recruit/', include('recruit.urls')),
-    path('markdownx/', include('markdownx.urls')),  
 ]
 # 400, 404, 500 error 처리
 from django.conf.urls import handler400, handler404, handler500

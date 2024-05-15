@@ -54,12 +54,9 @@ INSTALLED_APPS = [
     'CTF_Challenge',
     'recruit',
     'User.apps.UserConfig',
-    #'corsheaders',
     'django_extensions',
-    'markdownx',
     'crispy_forms',
     'crispy_bootstrap5',
-    'django_tuieditor',
     'mainpage',
 ]
 
