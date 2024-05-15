@@ -878,3 +878,14 @@ circle {
   margin:0 auto;
 }
 /* coding end */
+
+/* error page */
+.content404 h2{
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.content404 p{
+  margin: 20px 0px 40px 0px;
+  font-size: 20px;
+  color: #666;
+}
