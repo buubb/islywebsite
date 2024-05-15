@@ -14,7 +14,7 @@ from .views import (
 
 app_name = "Volunteer"
 urlpatterns = [
-    # url path: volunteer/
+    # url path: project/
     path("", feed, name="feed"),
     path("load_more/", load_more, name="load_more"),
     path("post_add/", post_add, name="post_add"),

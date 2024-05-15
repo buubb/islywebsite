@@ -217,7 +217,7 @@
                                             {% for other_post in all_posts %}
                                                 <div class="item">
                                                     <div class="card">
-                                                        <a href="/volunteer/{{ other_post.id }}/" class="card_link">
+                                                        <a href="/project/{{ other_post.id }}/" class="card_link">
                                                             <div class="card__img">
                                                                 {% if other_post.postimage_set.first %}
                                                                     <img src="{{ other_post.postimage_set.first.photo.url }}" alt="">

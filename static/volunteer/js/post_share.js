@@ -1,4 +1,4 @@
-// share.js
+// post_share.js
 
 function copyURLToClipboard(event) {
     // 현재 페이지의 URL 가져오기
