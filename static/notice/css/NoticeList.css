@@ -50,9 +50,7 @@ Scheme
     height: 56px;
     border-radius: 4px;
     line-height: 0;
-    /* box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08); */
     background-color: transparent;
-    /* transition: 0.3s; */
 }
 
 .NoticeList .icon-box h4 {
@@ -78,14 +76,7 @@ Scheme
     list-style-type: disc;
 }
 
-/*
-.NoticeList li::marker {
-    content: "✔ ";
-}
-*/
-
 .NoticeList li.subList {
-    /* list-style-type: square; */
     font-size: 13px;
 }
 
