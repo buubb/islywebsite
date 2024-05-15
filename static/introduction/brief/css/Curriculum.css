@@ -112,20 +112,28 @@ Responsive Style
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
+    .Curriculum .scheme h3 {
+        font-size: 27px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    .Curriculum .scheme h3 {
+        font-size: 26px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    .Curriculum .scheme h3 {
+        font-size: 25px;
+    }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    .Curriculum .scheme h3 {
+        font-size: 24px;
+    }
 }
