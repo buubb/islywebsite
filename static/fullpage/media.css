@@ -214,25 +214,21 @@
 
 @media(max-width:1400px){
   .main {
-        max-width: 1000px!important;
         letter-spacing: 0.075em!important;
         line-height: 1.8!important;
         font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
         
         & section {
-          display: none;
+          display: block;
           gap: 70px;
           justify-content: center;
-          margin-top:70px!important;
+          margin-top:0px!important;
           margin-left: 0px;
+          margin-right:0px;
           margin-bottom:200px;
           min-height: 400px;
         }
       }
-  .res-tabs {
-    display: flex;
-    justify-content: center;
-  }
   .mainbutton{
     display: none;
   }
@@ -268,6 +264,20 @@
     max-width:600px;
     text-align: left;
   }
+  .Facts{
+    margin-top:0px;
+  }
+  .special{
+    margin-top:0px;
+    padding-top:0px;
+  }
+  .vivid{
+    margin-top: 200px;
+  }
+  .Facts .facts-item {
+    border: 3px solid #FFFFFF;
+  }
+  
 }
 
 @media(max-width:700px){
@@ -289,18 +299,18 @@
     width: 100%;
     background-color: transparent;
     padding:50px 0px;
-    border-top:5px solid #FFFFFF ;
-    height:350px;
+    border-top:3px solid #FFFFFF ;
+    height:450px;
   }
   .tab::before{
     display: none;
   }
   .tab-content {
     position: absolute;
-    top:50%;
+    top:70%;
     left:0;
     width:100%;
-    margin:auto;
+    margin-top:50px;
     padding: 20px;
     align-content: center;
   
@@ -317,7 +327,6 @@
       font-weight: 500;
       font-size: 16px;
       color: rgba(255,255,255,0.7);
-      margin-bottom: 72px;
       width:100%;
       text-align: center;
     }
@@ -404,8 +413,29 @@
     width: 250px !important;
     height: 250px !important;
   }
-  .res-tabs{
-    display: none;
+
+  .earth {
+    width: 150px;
+    height: 150px;
+  }
+  .flexible {
+    width:200px;
+    height:100px;
+    font-size: 50px;
+  }
+  .coding{
+    width:150px;
+    
+  }
+  .tab-items{
+    position:relative;
+    margin-right:0px;
+  }
+  .tab:nth-child(2n) .tab-items {
+    margin-left:0px;
+  }
+  .tab-service{
+    justify-content: center;
   }
 }
 
