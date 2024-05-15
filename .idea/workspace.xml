@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f20eaf6-e21e-4812-aadb-4a4e8ae61420" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF_Challenge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/Curriculum.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/Curriculum.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715796042082</updated>
-      <workItem from="1715796043787" duration="3612000" />
+      <workItem from="1715796043787" duration="5420000" />
     </task>
     <servers />
   </component>
