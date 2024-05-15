@@ -1,4 +1,4 @@
-// like.js
+// post_like.js
 
 $(document).ready(function () {
     $(".like-btn").click(function (e) {
@@ -10,7 +10,7 @@ $(document).ready(function () {
         // Ajax 요청
         $.ajax({
             type: "POST",
-            url: "/volunteer/" + post_id + "/like/",
+            url: "/project/" + post_id + "/like/",
             data: {
                 csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
                 next: window.location.pathname
