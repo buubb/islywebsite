@@ -54,12 +54,9 @@ INSTALLED_APPS = [
     'CTF_Challenge',
     'recruit',
     'User.apps.UserConfig',
-    #'corsheaders',
     'django_extensions',
-    'markdownx',
     'crispy_forms',
     'crispy_bootstrap5',
-    'django_tuieditor',
     'mainpage',
 ]
 
@@ -72,8 +69,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'login.middleware.KickedMiddleware',
-   # 'corsheaders.middleware.CorsMiddleware',
 ]
 
 
@@ -81,7 +76,6 @@ MIDDLEWARE = [
 # # LOGIN_URL = '/login/'
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
-
 
 from django.contrib.messages import constants as messages_constants
 MESSAGE_LEVEL=messages_constants.INFO

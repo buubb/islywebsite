@@ -2,8 +2,7 @@
     color: var(--fg);
     font-size: 1.3em!important;
     /* margin-bottom: 200px; */
-    padding-top: 150px;
-    margin-top:200px;
+    padding-top: 100px;
 }
 
 .special .heading-section {
@@ -154,7 +153,7 @@
   text-align: center;
   letter-spacing: 0.2em!important;
   line-height: 1.8;
-  font-size: 18px!important;
+  font-size: 15px!important;
   font-weight: 700;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
 }

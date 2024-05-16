@@ -5,7 +5,7 @@ from .views import wargame, add_player, edit_player
 
 app_name = "CTFChallenge"
 urlpatterns = [
-    # url path: CTF-Challenge/
+    # url path: wargame/
     path("", wargame, name="wargame"),
     path("add_player/", add_player, name="add_player"),
     path("edit_player/<int:player_id>/", edit_player, name="edit_player"),
