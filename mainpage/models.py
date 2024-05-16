@@ -21,3 +21,10 @@ class activity_records_count(models.Model):
     class Meta:
         verbose_name = '동아리 누적 활동 기록'
         verbose_name_plural = 'Activity Record'
+
+class InstagramToken(models.Model):
+    token = models.TextField("instagram_token")
+    last_updated = models.DateTimeField("최종수정일",auto_now=True)
+
+    def __str__(self):
+        return self.token
