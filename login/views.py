@@ -6,7 +6,7 @@ from .forms import CustomPasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 
-LOGIN_TRY_LIMIT=5
+LOGIN_FAILED_IP_COUNT = 10
 
 class Login(APIView):
 
@@ -19,6 +19,9 @@ class Login(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
+
+        # 세션에서 로그인 시도 횟수 가져오기
+        attempt = request.session.get('login_attempt', 0)
 
         if form.is_valid():
             username = form.cleaned_data.get('username')
@@ -36,7 +39,7 @@ class Login(APIView):
                 return render(request, 'login/new3.html')
         else:
             return render(request, 'login/new3.html')
-        
+   
 class Logout(APIView):
     def get(self, request):
         print("get으로 호출")
