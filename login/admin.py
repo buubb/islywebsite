@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import UserLoginFails
+from .models import LoginFails
 
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ['login_attempts', 'locked', 'ip_address', 'login_time']
@@ -11,4 +11,4 @@ class UserProfileAdmin(admin.ModelAdmin):
             obj.delete()
     delete_selected.short_description = "Delete selected User Login Fails records"
 
-admin.site.register(UserLoginFails, UserProfileAdmin)
+admin.site.register(LoginFails, UserProfileAdmin)

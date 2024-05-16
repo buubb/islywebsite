@@ -5,7 +5,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* background: linear-gradient(#0d0f10, #0d0f10); */
 }
 
 .login-box {
@@ -149,12 +148,6 @@ body {
     display: block;
 }
 
-.login-box .user-box input {
-    color: #808080;
-}
-
-/* -------------------------------------------------- */
-
 /* ------------------------------------------ */
 .login1-box {
     position: absolute;
@@ -218,7 +211,6 @@ body {
 
 .change-box i {
     position: absolute;
-    top: 50%;
     color: #999;
     font-size: 23px;
     transition: color 0.4s ease;
@@ -226,14 +218,13 @@ body {
 
 .change-box i.icon {
     left: 10px;
-    top: 45%;
+    top: 43%;
 }
-
 
 /* ------------------------- */
 
 .change-box1 input {
-    position: relative;
+    position: absolute;
     height: 50px;
     width: 100%;
     padding: 0 50px;
@@ -249,7 +240,6 @@ body {
 
 .change-box1 i {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     color: #999;
     font-size: 23px;
@@ -258,7 +248,7 @@ body {
 
 .change-box1 i.icon {
     left: 10px;
-    top: 67%;
+    top: 100%;
 }
 
 /* ------------------------ */
@@ -280,7 +270,6 @@ body {
 
 .change-box2 i {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     color: #999;
     font-size: 23px;
@@ -289,7 +278,7 @@ body {
 
 .change-box2 i.icon {
     left: 10px;
-    top: 29%;
+    top: 28%;
 }
 
 .change-box2 small {

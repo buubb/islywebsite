@@ -6,8 +6,6 @@ from .forms import CustomPasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 
-LOGIN_FAILED_IP_COUNT = 10
-
 class Login(APIView):
 
     def get(self, request):
@@ -19,10 +17,6 @@ class Login(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
-
-        # 세션에서 로그인 시도 횟수 가져오기
-        attempt = request.session.get('login_attempt', 0)
-
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
@@ -30,7 +24,6 @@ class Login(APIView):
             if user is not None:
                 login(request, user)
                 next_url = request.POST.get('next', '')
-
                 if next_url:
                     return redirect(next_url)
                 else:
@@ -63,7 +56,6 @@ class CheckLogin(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
-        
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
@@ -80,15 +72,9 @@ class CheckLogin(APIView):
 def password_edit_view(request):
     if request.method == 'POST':
         password_change_form = CustomPasswordChangeForm(request.user, request.POST)
-        
-        if request.user.is_authenticated:
-            if password_change_form.is_valid():
-                user = password_change_form.save()
-                update_session_auth_hash(request, user)
-                return render(request, 'mainpage/index.html')
-            else:
-                return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
-        else:
+        if password_change_form.is_valid():
+            user = password_change_form.save()
+            update_session_auth_hash(request, user)
             return render(request, 'mainpage/index.html')
     else:
         password_change_form = CustomPasswordChangeForm(request.user)
