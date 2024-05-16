@@ -6,8 +6,6 @@ from .forms import CustomPasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 
-LOGIN_TRY_LIMIT=5
-
 class Login(APIView):
 
     def get(self, request):
@@ -19,7 +17,6 @@ class Login(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
-
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
@@ -27,7 +24,6 @@ class Login(APIView):
             if user is not None:
                 login(request, user)
                 next_url = request.POST.get('next', '')
-
                 if next_url:
                     return redirect(next_url)
                 else:
@@ -36,7 +32,7 @@ class Login(APIView):
                 return render(request, 'login/new3.html')
         else:
             return render(request, 'login/new3.html')
-        
+   
 class Logout(APIView):
     def get(self, request):
         print("get으로 호출")
@@ -60,11 +56,10 @@ class CheckLogin(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
-
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
+            user = authenticate(request=request, username=username, password=password)
             if user is not None:
                 login(request, user)
                 return redirect('change_password')
@@ -85,3 +80,6 @@ def password_edit_view(request):
         password_change_form = CustomPasswordChangeForm(request.user)
 
     return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
+
+def blocked_view(request):
+    return render(request, 'login/login_blocked.html')

@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'mainpage',
+    'axes',
 ]
 
 MIDDLEWARE = [
@@ -69,8 +70,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'login.middleware.KickedMiddleware',
-   # 'corsheaders.middleware.CorsMiddleware',
+    'axes.middleware.AxesMiddleware',
 ]
 
 
@@ -78,7 +78,18 @@ MIDDLEWARE = [
 # # LOGIN_URL = '/login/'
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
+AXES_LOCKOUT_URL = '/login/blocked/'
 
+AXES_FAILURE_LIMIT= 5
+# 다시 로그인하기 전에 30분
+AXES_COOLOFF_TIME= 0.5
+AXES_RESET_ON_SUCCESS = True
+
+
+AUTHENTICATION_BACKENDS = [
+   'axes.backends.AxesBackend', # Axes must be first
+   'django.contrib.auth.backends.ModelBackend',
+]
 
 from django.contrib.messages import constants as messages_constants
 MESSAGE_LEVEL=messages_constants.INFO
