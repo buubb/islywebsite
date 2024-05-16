@@ -69,106 +69,6 @@ body {
     left: 10px;
 }
 
-/* -------------------- */
-.change-box input {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    padding: 0 50px;
-    border-radius: 8px;
-    outline: none;
-    font-size: 16px;
-    letter-spacing: 0.075em;
-    border: 2px solid #808080;
-    transition: border-color 0.4s ease;
-    background: transparent;
-    color: #FFFFFF;
-}
-
-.change-box i {
-    position: absolute;
-    top: 50%;
-    color: #999;
-    font-size: 23px;
-    transition: color 0.4s ease;
-}
-
-.change-box i.icon {
-    position: absolute;
-    transform: translateY(-50%);
-    position: fixed;
-    left: 50px;
-    top: 37%;
-}
-
-
-/* ------------------------- */
-
-.change-box1 input {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    padding: 0 50px;
-    border-radius: 8px;
-    outline: none;
-    font-size: 16px;
-    letter-spacing: 0.075em;
-    border: 2px solid #808080;
-    transition: border-color 0.4s ease;
-    background: transparent;
-    color: #FFFFFF;
-}
-
-.change-box1 i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    font-size: 23px;
-    transition: color 0.4s ease;
-}
-
-.change-box1 i.icon {
-    position: absolute;
-    left: 50px;
-    top: 53%;
-}
-
-/* ------------------------ */
-
-.change-box2 input {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    padding: 0 50px;
-    border-radius: 8px;
-    outline: none;
-    font-size: 16px;
-    letter-spacing: 0.075em;
-    border: 2px solid #808080;
-    transition: border-color 0.4s ease;
-    background: transparent;
-    color: #FFFFFF;
-}
-
-.change-box2 i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    font-size: 23px;
-    transition: color 0.4s ease;
-}
-
-.change-box2 i.icon {
-    position: absolute;
-    left: 50px;
-    top: 70%;
-}
-
-.change-box2 small {
-    color: #808080;
-}
 
 /* --------------------------- */
 
@@ -183,6 +83,11 @@ body {
     font-size: 23px;
     transition: color 0.4s ease;
 }
+
+/* --------------------------------- */
+
+
+/* -------------------------------- */
 
 .login-box button {
     position: relative;
@@ -244,6 +149,219 @@ body {
     display: block;
 }
 
+.login-box .user-box input {
+    color: #808080;
+}
+
+/* -------------------------------------------------- */
+
+/* ------------------------------------------ */
+.login1-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #0d0f10;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+
+.login1-box h1 {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFFFFF;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    text-align: center;
+}
+
+.login1-box a {
+    color: #808080;
+}
+
+
+.login1-box .change-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login1-box .change-box1 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login1-box .change-box2 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------- */
+
+.change-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #808080;
+    transition: border-color 0.4s ease;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.change-box i {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+.change-box i.icon {
+    left: 10px;
+    top: 45%;
+}
+
+
+/* ------------------------- */
+
+.change-box1 input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #808080;
+    transition: border-color 0.4s ease;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.change-box1 i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+.change-box1 i.icon {
+    left: 10px;
+    top: 67%;
+}
+
+/* ------------------------ */
+
+.change-box2 input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #808080;
+    transition: border-color 0.4s ease;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.change-box2 i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+.change-box2 i.icon {
+    left: 10px;
+    top: 29%;
+}
+
+.change-box2 small {
+    color: #808080;
+}
+
+.login1-box button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: color 0.5s;
+    margin-top: 20px; 
+    letter-spacing: 4px;
+    background-color: #808080;
+    border: none;
+    border-radius: 10px;
+    width: calc(100%);
+}
+
+.login1-box button span {
+    position: absolute;
+    display: none;
+}
+
+.login1-box button.active {
+    background-color: white;
+    color: black;
+}
+
+.login1-box button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.login1-box button.active::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.login1-box button span {
+    position: absolute;
+    display: none;
+}
+
+.login1-box .user-box input:valid ~ button.active {
+    color: #fff;
+    border-color: #000;
+}
+
+.login1-box .user-box input:valid ~ button.active span {
+    display: block;
+}
+
+.login1-box .user-box input {
+    color: #808080;
+}
+
+/* ------------------------------------------------- */
+
 .buttons label {
     color: #fff;
 }
@@ -251,10 +369,6 @@ body {
 input::placeholder {
     color: #808080;
     letter-spacing: 0.075em;
-}
-
-.login-box .user-box input {
-    color: #808080;
 }
 
 #change-password-form {

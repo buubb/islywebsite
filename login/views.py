@@ -63,7 +63,7 @@ class CheckLogin(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
-
+        
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
@@ -80,9 +80,15 @@ class CheckLogin(APIView):
 def password_edit_view(request):
     if request.method == 'POST':
         password_change_form = CustomPasswordChangeForm(request.user, request.POST)
-        if password_change_form.is_valid():
-            user = password_change_form.save()
-            update_session_auth_hash(request, user)
+        
+        if request.user.is_authenticated:
+            if password_change_form.is_valid():
+                user = password_change_form.save()
+                update_session_auth_hash(request, user)
+                return render(request, 'mainpage/index.html')
+            else:
+                return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
+        else:
             return render(request, 'mainpage/index.html')
     else:
         password_change_form = CustomPasswordChangeForm(request.user)
