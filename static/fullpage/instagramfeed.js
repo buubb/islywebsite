@@ -33,7 +33,9 @@ $(document).ready(function(){
                                         post += '<img src="' + image_url + '">';
                                         post += '</a>';
                                         post += '<div class="caption" OnClick="location.href =' + image_url + '" style="cursor:pointer;" >';
+                                        post += '<a href="' + item.permalink + '">';
                                         post += '<h2>바로가기 <i class="bi bi-arrow-up-right"></i></h2>';
+                                        post += '</a>';
                                         post += '</div>';
                                         post += '</div>';
 
