@@ -1,6 +1,6 @@
 # admin.py
 from django.contrib import admin
-from .models import AttendanceLink, SubmissionLink, RentalLink, Lecture, Hashtag
+from .models import AttendanceLink, SubmissionLink, RentalLink, Lecture, Hashtag, Fee
 from django.db.models import ManyToManyField
 from django.forms import CheckboxSelectMultiple
 
@@ -46,3 +46,12 @@ class LectureAdmin(admin.ModelAdmin):
 @admin.register(Hashtag)
 class HashtagAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(Fee)
+class FeeAdmin(admin.ModelAdmin):
+    list_display = ["membership_fee", "extension_fee"]
+
+    def save_model(self, request, obj, form, change):
+        Fee.objects.all().delete()
+        super().save_model(request, obj, form, change)
