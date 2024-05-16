@@ -17,6 +17,7 @@
 - pip install crispy_bootstrap5
 - pip install pymysql
 - pip install requests
+- pip install django-axes
 
 # commit 할 때
 - 작업 브랜치 규칙:[이름] 수정 사항 (e.x, '[yubin] main 툴바 수정')
