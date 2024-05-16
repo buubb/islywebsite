@@ -37,3 +37,11 @@ class Lecture(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Fee(models.Model):
+    membership_fee = models.PositiveIntegerField()
+    extension_fee = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"{self.membership_fee}, {self.extension_fee}"
