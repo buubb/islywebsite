@@ -59,7 +59,7 @@ class CheckLogin(APIView):
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
+            user = authenticate(request=request, username=username, password=password)
             if user is not None:
                 login(request, user)
                 return redirect('change_password')
@@ -80,3 +80,6 @@ def password_edit_view(request):
         password_change_form = CustomPasswordChangeForm(request.user)
 
     return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
+
+def blocked_view(request):
+    return render(request, 'login/login_blocked.html')
