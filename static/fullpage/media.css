@@ -190,22 +190,6 @@
       header nav .nav li:hover .menu_name{
         text-underline-offset: 10px!important;
       }
-      .main {
-        max-width: 1000px!important;
-        letter-spacing: 0.075em!important;
-        line-height: 1.8!important;
-        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
-        
-        & section {
-          display: block;
-          gap: 70px;
-          justify-content: center;
-          margin-top:70px!important;
-          margin-left: 0px;
-          margin-bottom:200px;
-          min-height: 400px;
-        }
-      }
       .indexes {
         font-size: 20px;
         color: aliceblue;
@@ -229,17 +213,75 @@
 }
 
 @media(max-width:1400px){
+  .main {
+        letter-spacing: 0.075em!important;
+        line-height: 1.8!important;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+        
+        & section {
+          display: block;
+          gap: 70px;
+          justify-content: center;
+          margin-top:0px!important;
+          margin-left: 0px;
+          margin-right:0px;
+          margin-bottom:200px;
+          min-height: 400px;
+        }
+      }
+  .mainbutton{
+    display: none;
+  }
+  .text_box{
+    top:37%;
+    margin-left:0;
+    font-size: 7.4285714286vw;
+    line-height: 80px;
+  }
+  .cursor{
+    font-size: 7.4285714286vw;
+  }
+  .mainbanner{
+    display: none;
+  }
+  #section{
+    height:100vh;
+    background-image: url("img/isly.gif");
+  }
+  .scrolldownwrap{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    right:0;
+  }
+  .res-ment{
+    display: block;
+    position:absolute;
+    font-size: 20px;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+    color:#666;
+    top: 56%;
+    max-width:600px;
+    text-align: left;
+  }
+  .Facts{
+    margin-top:0px;
+  }
+  .special{
+    margin-top:0px;
+    padding-top:0px;
+  }
+  .vivid{
+    margin-top: 200px;
+  }
+  .Facts .facts-item {
+    border: 3px solid #FFFFFF;
+  }
   
-
 }
 
-@media(max-width:500px){
+@media(max-width:700px){
   .main {
-    max-width: 1000px!important;
-    letter-spacing: 0.075em!important;
-    line-height: 1.8!important;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
-    
     & section {
       display: block;
       gap: 70px;
@@ -257,18 +299,18 @@
     width: 100%;
     background-color: transparent;
     padding:50px 0px;
-    border-top:5px solid #FFFFFF ;
-    height:350px;
+    border-top:3px solid #FFFFFF ;
+    height:450px;
   }
   .tab::before{
     display: none;
   }
   .tab-content {
     position: absolute;
-    top:50%;
+    top:70%;
     left:0;
     width:100%;
-    margin:auto;
+    margin-top:50px;
     padding: 20px;
     align-content: center;
   
@@ -285,7 +327,6 @@
       font-weight: 500;
       font-size: 16px;
       color: rgba(255,255,255,0.7);
-      margin-bottom: 72px;
       width:100%;
       text-align: center;
     }
@@ -296,31 +337,29 @@
   }
   #section{
     height:100vh;
+    background-image: url("img/isly.gif");
   }
   .mainbanner{
     display: none;
   }
   .text_box{
     line-height: 50px;
-    font-size: 10.3333333333vw;
+    font-size: 8.3333333333vw;
     margin-left: 20px;
     align-content: center;
     top: 37%;
-    width: 400px;
+    width: 420px;
   }
   .res-ment{
     display: block;
     position:absolute;
-    font-size: 4vw;
+    font-size: 20px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
     color:#666;
     margin-left: 20px;
     top: 50%;
     width:400px;
     text-align: left;
-  }
-  .mainbutton{
-    display: none;
   }
   .cursor{
     font-size: 10.3333333333vw;
@@ -339,21 +378,21 @@
     font-size: 16px;
   }
   .Facts .title{
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .special{
     margin-top:0px;
     padding-top:0px;
   }
   .special .heading-section h1{
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .vivid{
     margin-top: 200px;
   }
   .vividtitle h1{
-    font-size: 8vw !important;
+    font-size: 7vw !important;
   }
 
   .scroll-container{
@@ -373,6 +412,30 @@
   #news-line .news-box img {
     width: 250px !important;
     height: 250px !important;
+  }
+
+  .earth {
+    width: 150px;
+    height: 150px;
+  }
+  .flexible {
+    width:200px;
+    height:100px;
+    font-size: 50px;
+  }
+  .coding{
+    width:150px;
+    
+  }
+  .tab-items{
+    position:relative;
+    margin-right:0px;
+  }
+  .tab:nth-child(2n) .tab-items {
+    margin-left:0px;
+  }
+  .tab-service{
+    justify-content: center;
   }
 }
 

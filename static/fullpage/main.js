@@ -1,13 +1,4 @@
-/*$(function(){
-    $('#fullpage').fullpage({
-		//options here
-        anchors:['s1','s2','s3','s4'],
-		autoScrolling: false,
-        scrollBar:true,
-        sectionsColor:['#1f2122','aliceblue','#1f2122','#1f2122'],
-	});
-});
-*/
+
 function toggleAnswer(answerID) {
     var answerDiv = document.getElementById(answerID);
 
@@ -47,37 +38,20 @@ function toggleAnswer(answerID) {
 });
 
 
-// const indexes = document.querySelectorAll('.indexes li');
-// const tabs = document.querySelectorAll('.tab');
-// const contents = document.querySelectorAll('.tab-content');
+/*coding js*/
+var morphTimeline = new TimelineMax({ 
+  repeat:-1,
+  repeatDelay:2
+}); 
 
-// function reset() {
-//   for (let i = 0; i < tabs.length; i++) {
-//     indexes[i].style.borderColor = 'transparent';
-//     tabs[i].style.zIndex = 0;
-//     tabs[i].classList.remove('active2');
-//     contents[i].classList.remove('active2');
-//   }
-// }
-
-// function showTab(i) {
-//   indexes[i].style.borderColor = 'aliceblue';
-//   tabs[i].style.opacity = 1;
-//   tabs[i].style.zIndex = 5;
-//   tabs[i].classList.add('active2');
-//   contents[i].classList.add('active2');
-// }
-
-// function activate(e) {
-//   if (!e.target.matches('.indexes li')) return;
-//   reset();
-//   showTab(e.target.dataset.index);
-// }
-
-// const init = () => showTab(0);
-
-// window.addEventListener('load',init,false);
-// window.addEventListener('click',activate,false);
+morphTimeline
+  .to('#pathtuto1',2,{morphSVG:{shape:"#pathtuto2"}}) 
+//path #pathtuto1 morph into #pathtuto2 during 2 seconds
+  .to('#pathtuto1',2,{morphSVG:{shape:"#pathtuto3"}},"+=2")
+//2 seconds later path #pathtuto1 morph into #pathtuto3 during 2 seconds
+  .to('#pathtuto1',2,{morphSVG:{shape:"#pathtuto1"}},"+=2"); 
+//2 seconds later path #pathtuto1 morph back into #pathtuto1 during 2 seconds
+;
 
 
 /* scroll 시 나타나는 animation */
@@ -111,3 +85,47 @@ $(document).ready(function() {
       });
   }).scroll();
 });
+
+/* earth js*/
+const count = 12;
+const step = 180 / count;
+const svg = document.getElementById('svg-container');
+
+for (let i = 0; i < count; i++) {
+    const start = step * i;
+    const end = start + step;
+    const meridian = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+    meridian.setAttribute('r', '450');
+    meridian.setAttribute('class', 'meridian');
+    meridian.style.setProperty('--start', `${start}deg`);
+    meridian.style.setProperty('--end', `${end}deg`);
+    svg.appendChild(meridian);
+}
+/* flag js */
+const chunk_count = 100;
+const anim_stack = 17;
+
+let txt = document.querySelector(".flexible"),
+    w = txt.getBoundingClientRect().width,
+    h = txt.getBoundingClientRect().height,
+    x_chunk = Math.ceil(w/chunk_count),
+    y_chunk = h/chunk_count,
+    remaining_pxs = w - x_chunk * 5;
+
+txt.innerHTML = `<div class='mask'><div>${txt.innerHTML}</div></div>`;
+let html = txt.innerHTML;
+
+for(let i=0; i<chunk_count-1; i++) {
+  txt.innerHTML += html;
+}
+
+let masks = document.querySelectorAll(".mask");
+let inMasks = document.querySelectorAll(".mask div");
+
+for(let i=0; i<masks.length; i++) {
+  masks[i].style.width = x_chunk+"px";
+  masks[i].style.overflow = "hidden";
+  masks[i].style.animationDelay = `${-i*anim_stack}ms`;
+  inMasks[i].style.left = -i*(x_chunk) + "px";
+}
+

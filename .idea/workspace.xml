@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9601f639-f014-4223-ad09-7b628d9940e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f1c5178f-c021-4fe0-876f-1e763d5d5a35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
-  "associatedIndex": 2
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2gLEpDkudy7VetuWez8SLhREoKa" />
+  <component name="ProjectId" id="2gXgST46T5iWmtJ2o7Hnsna8Wv9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,10 +31,6 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -81,12 +72,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9601f639-f014-4223-ad09-7b628d9940e3" name="Changes" comment="" />
-      <created>1715468639383</created>
+      <changelist id="f1c5178f-c021-4fe0-876f-1e763d5d5a35" name="Changes" comment="" />
+      <created>1715849337955</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715468639383</updated>
-      <workItem from="1715468641232" duration="6993000" />
+      <updated>1715849337955</updated>
+      <workItem from="1715849339552" duration="50000" />
     </task>
     <servers />
   </component>
