@@ -1,4 +1,4 @@
-{% load static %}
+{% load static humanize %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,9 +67,9 @@
                                                     <h4>회비</h4>
                                                     <ul>
                                                         {% if fee %}
-                                                            <li>1년 : {{ fee.membership_fee }}원 (6개월 추가 연장 시 {{ fee.extension_fee }}원)</li>
+                                                            <li>1년 : {{ fee.membership_fee|intcomma }}원 (6개월 추가 연장 시 {{ fee.extension_fee|intcomma }}원)</li>
                                                         {% else %}
-                                                            <li>1년 : 30000원 (6개월 추가 연장 시 13000원)</li>
+                                                            <li>1년 : 30,000원 (6개월 추가 연장 시 13,000원)</li>
                                                         {% endif %}
                                                         <li>회비는 교재, 팀 별 온라인 강의 구매, 회식비, 간식비 등으로 사용된다.</li>
                                                     </ul>
