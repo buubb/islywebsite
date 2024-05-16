@@ -98,3 +98,11 @@ def edit_player(request, player_id):
         "player": player,
     }
     return render(request, "CTF_Challenge/player_form.html", context)
+
+
+def snake(request):
+    return render(request, "CTF_Challenge/snake.html")
+
+
+def flag(request):
+    return render(request, "CTF_Challenge/flag.html")
