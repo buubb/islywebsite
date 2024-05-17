@@ -1981,42 +1981,12 @@ seolin workspace
 */
 
 
-/* .mb-3 #username, #password {
-  color: white;
-  border:3px solid green;
-  background-color:transparent
-}
-
-.buttons #login_button {
-  background-color: rgba(0, 128, 0, 0.603);
-  padding: 10px 30px;
-  border-radius: 30px;
-}
-
-.buttons label {
-  color: white;
-} */
-
-
 /* 
 ---------------------------------------------
 sumi workspace
 --------------------------------------------- 
 */
 
-/*
-.game-details #acontent ul li {
-    color: #CCC;
-}
-
-.heading-section h4 {
-    color: #fff;
-}
-
-.custom-list li {
-    color: #ffffffb7;
-}
-*/
 
 /*
 ---------------------------------------------
@@ -2024,80 +1994,6 @@ eunju workspace
 --------------------------------------------- 
 */
 
-.view-count {
-    float: right;
-    font-size: 1.2rem;
-}
-
-.assignment-form {
-    color: #fff;
-}
-
-#assignment-content {
-    padding: 100px;
-    border-radius: 5px;
-}
-
-.assignment-title {
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.assignment-form {
-    margin-top: 10px;
-}
-
-.assignment-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.assignment-submit-button {
-    margin-top: 20px;
-    background-color: #366F31;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.assignment-submit-button:hover {
-    background-color: #0C2F09;
-}
-
-/*
-.pagination-container {
-    text-align: center;
-}
-
-.pagination {
-    display: inline-block;
-    margin: 15px;
-}
-
-.pagination a {
-    text-decoration: none;
-    padding: 3px 8px;
-    margin: 2px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-.pagination .current-page {
-    padding: 3px 8px;
-    margin: 2px;
-    background-color: #28B463;
-    color: #fff;
-}
-*/
 
 /* 
 ---------------------------------------------
