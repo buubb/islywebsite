@@ -17,6 +17,7 @@ class Login(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
+
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
@@ -24,6 +25,7 @@ class Login(APIView):
             if user is not None:
                 login(request, user)
                 next_url = request.POST.get('next', '')
+
                 if next_url:
                     return redirect(next_url)
                 else:
@@ -32,7 +34,7 @@ class Login(APIView):
                 return render(request, 'login/new3.html')
         else:
             return render(request, 'login/new3.html')
-   
+        
 class Logout(APIView):
     def get(self, request):
         print("get으로 호출")
@@ -56,10 +58,11 @@ class CheckLogin(APIView):
 
     def post(self, request):
         form = AuthenticationForm(request=request, data=request.POST)
+
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
+            user = authenticate(request=request, username=username, password=password)
             if user is not None:
                 login(request, user)
                 return redirect('change_password')
@@ -68,8 +71,14 @@ class CheckLogin(APIView):
         else:
             return render(request, 'login/check.html', {'form': form})
 
-@login_required
+# @login_required
 def password_edit_view(request):
+    if request.method == 'GET':
+        if request.user.is_authenticated:
+            return render(request, 'login/change_password.html')
+        else:
+            return render(request, 'mainpage/index.html')
+
     if request.method == 'POST':
         password_change_form = CustomPasswordChangeForm(request.user, request.POST)
         if password_change_form.is_valid():
@@ -80,3 +89,7 @@ def password_edit_view(request):
         password_change_form = CustomPasswordChangeForm(request.user)
 
     return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
+
+def blocked_view(request):
+
+    return render(request, 'login/login_blocked.html')

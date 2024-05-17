@@ -30,9 +30,8 @@
     }
   
     nav .res-nav-container.active {
-      display: block; /* active 클래스가 추가되면 보이도록 설정 */
-      /* 나머지 스타일 유지 */
-  }
+      display: block;
+    }
   
     nav .res-nav-container .res-nav-item:first-child{
       display: inherit;
@@ -213,6 +212,9 @@
 }
 
 @media(max-width:1400px){
+  .container{
+    max-width: 1400px;
+  }
   .main {
         letter-spacing: 0.075em!important;
         line-height: 1.8!important;
@@ -225,7 +227,7 @@
           margin-top:0px!important;
           margin-left: 0px;
           margin-right:0px;
-          margin-bottom:200px;
+          margin-bottom:0px;
           min-height: 400px;
         }
       }
@@ -234,7 +236,7 @@
   }
   .text_box{
     top:37%;
-    margin-left:0;
+    margin-left:40px;
     font-size: 7.4285714286vw;
     line-height: 80px;
   }
@@ -257,11 +259,12 @@
   .res-ment{
     display: block;
     position:absolute;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
     color:#666;
-    top: 56%;
-    max-width:600px;
+    top:56%;
+    margin-left: 40px;
+    max-width:800px;
     text-align: left;
   }
   .Facts{
@@ -277,10 +280,31 @@
   .Facts .facts-item {
     border: 3px solid #FFFFFF;
   }
-  
-}
 
+  .earth {
+    width: 300px;
+  }
+  .coding{
+    width: 300px;
+  }
+}
+@media(max-width:1180px) {
+  .tab-items{
+    margin-right: 0px;
+    max-width:400px;
+  }
+  .flexible{
+    font-size: 80px;
+    padding-right: 50px;
+  }
+  .res-ment{
+    max-width: 570px;
+  }
+}
 @media(max-width:700px){
+  .container{
+    max-width: 700px;
+  }
   .main {
     & section {
       display: block;
@@ -348,7 +372,7 @@
     margin-left: 20px;
     align-content: center;
     top: 37%;
-    width: 420px;
+    width: 450px;
   }
   .res-ment{
     display: block;
@@ -357,7 +381,7 @@
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
     color:#666;
     margin-left: 20px;
-    top: 50%;
+    top:50%;
     width:400px;
     text-align: left;
   }
@@ -400,6 +424,7 @@
   }
   .carousel-primary{
     gap:0 20px;
+    padding-right:20px;
   }
   #news-line .news-box{
     width:250px;
@@ -413,7 +438,6 @@
     width: 250px !important;
     height: 250px !important;
   }
-
   .earth {
     width: 150px;
     height: 150px;
@@ -422,10 +446,12 @@
     width:200px;
     height:100px;
     font-size: 50px;
+    margin-top: 20px;
+    padding-right: 0px;
   }
   .coding{
     width:150px;
-    
+    margin-right:0px;
   }
   .tab-items{
     position:relative;
@@ -433,6 +459,10 @@
   }
   .tab:nth-child(2n) .tab-items {
     margin-left:0px;
+  }
+  .tab:nth-child(2n) .tab-content {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .tab-service{
     justify-content: center;
@@ -450,4 +480,19 @@
     padding:2rem!important;
   }
   
+}
+
+@media (max-height:740px) {
+  .res-ment{
+    top:52%!important;
+  }
+  nav .res-nav-container .res-nav-item:first-child {
+    margin-top: 90px;
+  }
+}
+
+@media (min-height:1000px) {
+  .res-ment{
+    top:52%!important;
+  }
 }
