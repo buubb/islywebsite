@@ -1,4 +1,4 @@
-
+/* main banner typing effect */
 function toggleAnswer(answerID) {
     var answerDiv = document.getElementById(answerID);
 
@@ -38,7 +38,7 @@ function toggleAnswer(answerID) {
 });
 
 
-/*coding js*/
+/* special activities svg(3) js*/
 var morphTimeline = new TimelineMax({ 
   repeat:-1,
   repeatDelay:2
@@ -86,7 +86,7 @@ $(document).ready(function() {
   }).scroll();
 });
 
-/* earth js*/
+/* special activities svg(2) js*/
 const count = 12;
 const step = 180 / count;
 const svg = document.getElementById('svg-container');
@@ -101,7 +101,8 @@ for (let i = 0; i < count; i++) {
     meridian.style.setProperty('--end', `${end}deg`);
     svg.appendChild(meridian);
 }
-/* flag js */
+
+/* special activities svg(1) js*/
 const chunk_count = 100;
 const anim_stack = 17;
 
@@ -129,3 +130,16 @@ for(let i=0; i<masks.length; i++) {
   inMasks[i].style.left = -i*(x_chunk) + "px";
 }
 
+/* nav selected active effect js */
+$(function(){
+  // this will get the full URL at the address bar
+  var url = window.location.href; 
+
+  // passes on every "a" tag 
+  $(".nav a").each(function() {
+          // checks if its the same on the address bar
+      if(url == (this.href)) { 
+          $(this).closest(".menu_li").addClass("active");
+      }
+  });
+});

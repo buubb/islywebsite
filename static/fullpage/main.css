@@ -300,8 +300,6 @@ nav .res-nav-container{
 .text_box{
     position:absolute;
     font-size: 90px;
-    font-weight: 800;
-    font-family: "Source Sans 3", sans-serif;
     text-align: left!important;
     max-width: 1200px;
     margin:auto;
@@ -309,6 +307,10 @@ nav .res-nav-container{
     margin-left:120px;
     top:270px;
     line-height:110px;
+}
+.text_box .text{
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
 }
 .mainbutton{
   position:absolute;
@@ -720,7 +722,6 @@ path:nth-child(6) {
     font-weight: 600!important;
     font-size: 30px!important;
     margin-bottom: 15px;
-    margin-left:5px;
     line-height: 1.182;
   }
 
@@ -841,6 +842,7 @@ circle {
   letter-spacing: -0.5rem;
   font-size: 100px;
   font-weight: bold;
+  margin-top: 50px;
 }
 
 .mask {
@@ -876,6 +878,7 @@ circle {
   display:block;
   width:350px;
   margin:0 auto;
+  margin-right:70px;
 }
 /* coding end */
 

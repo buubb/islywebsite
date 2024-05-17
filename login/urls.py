@@ -1,7 +1,6 @@
 from django.urls import path
 from .views import Login, CheckLogin
 from django.contrib.auth import views as auth_views
-from .views import blocked_view
 
 from . import views
 
@@ -17,5 +16,4 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('check/', CheckLogin.as_view(), name='check'),
     path('change_password/', views.password_edit_view, name='change_password'),
-    path('blocked/', blocked_view, name='blocked'),
    ]
