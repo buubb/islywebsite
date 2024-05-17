@@ -68,8 +68,14 @@ class CheckLogin(APIView):
         else:
             return render(request, 'login/check.html', {'form': form})
 
-@login_required
+# @login_required
 def password_edit_view(request):
+    if request.method == 'GET':
+        if request.user.is_authenticated:
+            return render(request, 'login/change_password.html')
+        else:
+            return render(request, 'mainpage/index.html')
+
     if request.method == 'POST':
         password_change_form = CustomPasswordChangeForm(request.user, request.POST)
         if password_change_form.is_valid():
