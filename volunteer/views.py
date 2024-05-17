@@ -181,13 +181,15 @@ def post_like(request, post_id):
 def comment_add(request, post_id):
     post = get_object_or_404(Post, id=post_id)
 
+    # 현재 사용자가 해당 포스트에 이미 댓글을 작성했는지 확인
     existing_comment = Comment.objects.filter(post=post, user=request.user).exists()
     if existing_comment:
+        # 이미 댓글을 작성한 경우, 경고(alert) 표시
         messages.warning(request, "You can only write one comment per project.")
         return redirect("Volunteer:post_detail", post_id=post_id)
 
     if request.method == "POST":
-        form = CommentForm(request.POST, request.FILES)
+        form = CommentForm(request.POST)
         if form.is_valid():
             # commit=False 옵션으로 메모리상에 Comment 객체 생성
             comment = form.save(commit=False)
@@ -198,12 +200,6 @@ def comment_add(request, post_id):
 
             # DB에 Comment 객체 저장
             comment.save()
-
-            # 프로필 이미지 저장
-            profile_image = request.FILES.get("profile_image")
-            if profile_image:
-                request.user.profile_image = profile_image
-                request.user.save()
 
             # 생성 완료 후에는 해당 Post의 상세 페이지로 이동
             return redirect("Volunteer:post_detail", post_id=post_id)
