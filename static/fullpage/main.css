@@ -892,3 +892,49 @@ circle {
   font-size: 20px;
   color: #666;
 }
+
+/* partnership */
+.partnership{
+  margin:50px 0px 300px 0px;
+  text-align: center;
+}
+.partner-grid{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  filter: grayscale(0.5);
+  gap:0px 30px;
+  margin-bottom: 50px;
+}
+.partner{
+  width:300px;
+  align-content: center;
+}
+.partner-logo{
+  height:150px;
+  align-content: center;
+}
+.partner-logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partner a{
+  color: #FFFFFF!important;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 20px 40px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  /* border-bottom: 5px solid #FFFFFF; */
+}
+.hspace{
+  width:250px;
+}
+.kucis{
+  width:150px;
+}
+.cca{
+  width:250px;
+}
