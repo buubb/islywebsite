@@ -185,7 +185,7 @@ def comment_add(request, post_id):
     existing_comment = Comment.objects.filter(post=post, user=request.user).exists()
     if existing_comment:
         # 이미 댓글을 작성한 경우, 경고(alert) 표시
-        messages.warning(request, "You can only write one comment per project.")
+        messages.warning(request, "You can only write one comment per project")
         return redirect("Volunteer:post_detail", post_id=post_id)
 
     if request.method == "POST":
@@ -210,6 +210,31 @@ def comment_add(request, post_id):
     context = {
         "form": form,
         "post_id": post_id,
+    }
+    return render(request, "volunteer/comment_form.html", context)
+
+
+@login_required(login_url="login")
+def comment_edit(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    if request.user != comment.user:
+        messages.error(request, "You do not have permission to edit this comment")
+        return redirect("Volunteer:post_detail", post_id=comment.post.id)
+
+    if request.method == "POST":
+        form = CommentForm(request.POST, instance=comment)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.created = timezone.now()
+            comment.save()
+            return redirect("Volunteer:post_detail", post_id=comment.post.id)
+    else:
+        form = CommentForm(instance=comment)
+
+    context = {
+        "form": form,
+        "post_id": comment.post.id,
     }
     return render(request, "volunteer/comment_form.html", context)
 

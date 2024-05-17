@@ -9,6 +9,7 @@ from .views import (
     post_delete,
     post_like,
     comment_add,
+    comment_edit,
     comment_delete,
 )
 
@@ -23,5 +24,6 @@ urlpatterns = [
     path("<int:post_id>/delete/", post_delete, name="post_delete"),
     path("<int:post_id>/like/", post_like, name="post_like"),
     path("<int:post_id>/comment_add/", comment_add, name="comment_add"),
+    path("comment_edit/<int:comment_id>/", comment_edit, name="comment_edit"),
     path("comment_delete/<int:comment_id>/", comment_delete, name="comment_delete"),
 ]
