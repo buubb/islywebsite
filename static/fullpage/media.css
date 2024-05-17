@@ -301,6 +301,15 @@
     max-width: 570px;
   }
 }
+@media(max-width:980px) {
+  .partner-grid{
+    grid-auto-flow: row;
+    justify-content: center;
+    filter: grayscale(0.5);
+    gap:0px 30px;
+    margin-bottom: 50px;
+  }
+}
 @media(max-width:700px){
   .container{
     max-width: 700px;
@@ -466,6 +475,21 @@
   }
   .tab-service{
     justify-content: center;
+  }
+  .hspace{
+    width:200px;
+  }
+  .kucis{
+    width:120px;
+  }
+  .cca{
+    width: 150px;
+  }
+  .partner-logo {
+    height: 100px;
+  }
+  .partner a {
+    font-size: 18px;
   }
 }
 
