@@ -1,12 +1,59 @@
-<!-- login_blocked.html -->
+{% load static humanize %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login Blocked</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>I.Sly()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+
+    <!-- Raon CSS Files -->
+    <link rel="stylesheet" href="{% static 'copyright.css' %}">
+
+    <!-- Raon Text Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+    <!-- Yubin add -->
+    <link rel="stylesheet" href="{% static 'fullpage/main.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/special.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage/footer_2.css' %}">
+
 </head>
 <body>
-    <h1>Login Blocked</h1>
-    <p>Your login attempts have exceeded the limit. Please contact the administrator to unlock your account.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-content">
+                    <div class="row py-4">
+                        <div class="statusResult">
+                            <div class="page welcome">
+                                <div class="content404">
+                                    <h2 class="header2">LOCKED</h2>
+                                    <p>계정이 잠겼습니다. 계정을 잠금 해제하려면 관리자에게 문의하세요.</p>
+                                    <a class="special-button" href="/">Go To Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
