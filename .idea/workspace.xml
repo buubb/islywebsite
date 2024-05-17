@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0734b14f-f001-4c57-ab6c-6483e2cbb38d" name="Changes" comment="">
+    <list default="true" id="35079cc6-720c-44b8-8df8-6735af1ff022" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fullpage/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +19,7 @@
   "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2gbeHpd67twnxTODxuDF7lsRDBc" />
+  <component name="ProjectId" id="2gbyWfrW9JLaqbQ51m4xUVoP72i" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +38,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\fullpage" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -79,12 +80,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0734b14f-f001-4c57-ab6c-6483e2cbb38d" name="Changes" comment="" />
-      <created>1715970622192</created>
+      <changelist id="35079cc6-720c-44b8-8df8-6735af1ff022" name="Changes" comment="" />
+      <created>1715980606673</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715970622192</updated>
-      <workItem from="1715970623626" duration="975000" />
+      <updated>1715980606673</updated>
+      <workItem from="1715980608163" duration="384000" />
     </task>
     <servers />
   </component>
