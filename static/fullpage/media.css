@@ -212,7 +212,7 @@
 }
 
 @media(max-width:1400px){
-  .container{
+  .main-container{
     max-width: 1400px;
   }
   .main {
@@ -311,7 +311,7 @@
   }
 }
 @media(max-width:700px){
-  .container{
+  .main-container{
     max-width: 700px;
   }
   .main {
