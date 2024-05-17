@@ -30,9 +30,8 @@
     }
   
     nav .res-nav-container.active {
-      display: block; /* active 클래스가 추가되면 보이도록 설정 */
-      /* 나머지 스타일 유지 */
-  }
+      display: block;
+    }
   
     nav .res-nav-container .res-nav-item:first-child{
       display: inherit;
@@ -460,6 +459,10 @@
   }
   .tab:nth-child(2n) .tab-items {
     margin-left:0px;
+  }
+  .tab:nth-child(2n) .tab-content {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .tab-service{
     justify-content: center;
