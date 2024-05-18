@@ -134,13 +134,12 @@ def post_edit(request, post_id):
 def post_delete(request, post_id):
     post = get_object_or_404(Post, id=post_id)
 
-    # 권한 확인
     if request.user != post.user:
-        # 작성자가 아닌 경우
+        # 권한이 없는 경우
         messages.error(request, "You do not have permission to delete this post")
         return redirect("Volunteer:post_detail", post_id=post_id)
 
-    # 삭제할 수 있는 권한이 있는 경우
+    # 권한이 있는 경우
     post.delete()
 
     # 삭제 후 피드 페이지로 이동
@@ -150,7 +149,7 @@ def post_delete(request, post_id):
 @require_POST
 @login_required(login_url="login")
 def post_like(request, post_id):
-    post = Post.objects.get(id=post_id)
+    post = get_object_or_404(Post, id=post_id)
     user = request.user
 
     if user.is_authenticated:
@@ -243,14 +242,13 @@ def comment_edit(request, comment_id):
 def comment_delete(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
 
-    if request.user == comment.user:
-        # 권한이 있는 경우
-        comment.delete()
-        # 댓글 개수 반환
-        post_id = comment.post.id
-        post = Post.objects.get(id=post_id)
-        comment_count = post.comment_set.count()
-        return JsonResponse({"success": True, "comment_count": comment_count})
-    else:
+    if request.user != comment.user:
         # 권한이 없는 경우
-        return JsonResponse({"success": False})
+        messages.error(request, "You do not have permission to delete this comment")
+        return redirect("Volunteer:post_detail", post_id=comment.post.id)
+
+    # 권한이 있는 경우
+    comment.delete()
+
+    # 삭제 후 해당 Post의 상세 페이지로 다시 이동
+    return redirect("Volunteer:post_detail", post_id=comment.post.id)
