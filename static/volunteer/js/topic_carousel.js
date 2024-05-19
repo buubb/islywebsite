@@ -1,12 +1,12 @@
-// ctf_carousel.js
+// topic_carousel.js
 
 (function ($) {
     "use strict";
 
-    $(".ctf-carousel").owlCarousel({
+    $(".topic-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
-        margin: 30,
+        margin: 25,
         loop: true,
         dots: false,
         nav: true,
@@ -14,20 +14,14 @@
             0: {
                 items: 1
             },
-            576: {
-                items: 2
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
+            600: {
+                items: 1
             },
             1200: {
-                items: 3
+                items: 1
             },
-            1400: {
-                items: 4
+            1800: {
+                items: 1
             }
         }
     });

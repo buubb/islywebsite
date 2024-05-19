@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Post(models.Model):
-    title = models.CharField("포스트 제목", max_length=50, null=True, default='')
+    title = models.CharField("포스트 제목", max_length=50, null=True)
     year = models.PositiveIntegerField("연도", null=True)
     generation = models.PositiveIntegerField("동아리 기수", null=True)
     user = models.ForeignKey("User.User", verbose_name="작성자", on_delete=models.CASCADE)
@@ -21,5 +21,6 @@ class PostImage(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey("User.User", verbose_name="작성자", on_delete=models.CASCADE)
     post = models.ForeignKey(Post, verbose_name="포스트", on_delete=models.CASCADE)
+    name = models.CharField("이름", max_length=10, null=True)
     content = models.TextField("내용")
     created = models.DateTimeField("작성일시", auto_now_add=True)
