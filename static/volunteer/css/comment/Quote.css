@@ -74,6 +74,7 @@ Responsive Style
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .Quote h1 {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 1.5;
     }
 }

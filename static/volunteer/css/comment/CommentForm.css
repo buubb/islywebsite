@@ -240,6 +240,10 @@ Responsive Style
     .CommentForm textarea {
         height: 180px;
     }
+
+    .CommentForm .save-btn {
+        font-size: 0.9rem;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -257,10 +261,6 @@ Responsive Style
 
     .CommentForm textarea {
         height: 200px;
-    }
-
-    .CommentForm .save-btn {
-        font-size: 0.9rem;
     }
 }
 
