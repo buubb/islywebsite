@@ -80,7 +80,7 @@ def edit_player(request, player_id):
     player = get_object_or_404(Player, id=player_id)
 
     if request.user != player.user:
-        messages.error(request, "You do not have permission to edit this stat.")
+        messages.error(request, "You do not have permission to edit this stat")
         return redirect("CTFChallenge:wargame")
 
     if request.method == "POST":
@@ -98,3 +98,7 @@ def edit_player(request, player_id):
         "player": player,
     }
     return render(request, "CTF_Challenge/player_form.html", context)
+
+
+def snake(request):
+    return render(request, "CTF_Challenge/snake.html")
