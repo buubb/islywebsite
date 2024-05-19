@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2bd8121-dffc-44bd-9935-22f8c1f4b440" name="Changes" comment="">
+    <list default="true" id="7f4b5ca2-f1ba-45df-a28b-8666faecdfa2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +25,7 @@
   "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2ggHm0fp0d2H9jHNs7TjjQyfsWK" />
+  <component name="ProjectId" id="2gh4U5qt2zWgZgEBfTZAXjsOpRG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,8 +34,8 @@
   "keyToString": {
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "raon",
+    "last_opened_file_path": "C:/Users/raon-/PycharmProjects/pystagram-22.2_-_-_-",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,12 +81,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b2bd8121-dffc-44bd-9935-22f8c1f4b440" name="Changes" comment="" />
-      <created>1716112457136</created>
+      <changelist id="7f4b5ca2-f1ba-45df-a28b-8666faecdfa2" name="Changes" comment="" />
+      <created>1716136489157</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716112457136</updated>
-      <workItem from="1716112458825" duration="351000" />
+      <updated>1716136489157</updated>
+      <workItem from="1716136490856" duration="2985000" />
     </task>
     <servers />
   </component>

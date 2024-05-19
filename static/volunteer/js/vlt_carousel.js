@@ -1,4 +1,4 @@
-// VltCarousel.js
+// vlt_carousel.js
 
 (function ($) {
     "use strict";

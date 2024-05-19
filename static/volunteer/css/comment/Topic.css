@@ -4,27 +4,11 @@ Basic
 ---------------------------------------------
 */
 
-.VltRcd {
-    margin-top: 140px;
-    display: none;
-}
-
-
 /*
----------------------------------------------
-Title
----------------------------------------------
-*/
-
-.VltRcd .title {
-    font-family: "Source Sans 3", sans-serif;
-    color: #FFFFFF;
-    display: block;
-    font-weight: 900;
-    letter-spacing: 0.075em;
-    line-height: 1.3;
-    text-transform: capitalize;
+.Topic {
+    margin-top: 20px;
 }
+*/
 
 
 /*
@@ -33,7 +17,7 @@ Custom Text
 ---------------------------------------------
 */
 
-.VltRcd h6 {
+.Topic h6 {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     letter-spacing: 0.075em;
     font-weight: 800;
@@ -41,7 +25,7 @@ Custom Text
     color: #000000;
 }
 
-.VltRcd h4 {
+.Topic h4 {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 19px;
     letter-spacing: 0.075em;
@@ -57,11 +41,13 @@ Item
 ---------------------------------------------
 */
 
-.VltRcd .rcd-item {
+.Topic .topic-item {
     position: relative;
     overflow: hidden;
     background-color: #FFFFFF;
     border-radius: 23px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 
@@ -71,13 +57,13 @@ Info
 ---------------------------------------------
 */
 
-.VltRcd .rcd-info {
+.Topic .topic-info {
     text-align: left;
     padding: 20px 30px;
     border-top: 3px solid #000000;
 }
 
-.VltRcd .rcd-info .box {
+.Topic .topic-info .box {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -92,12 +78,11 @@ Image
 ---------------------------------------------
 */
 
-
-.VltRcd .rcd-img {
+.Topic .topic-img {
     aspect-ratio: 16 / 9;
 }
 
-.VltRcd .rcd-img img {
+.Topic .topic-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -110,29 +95,30 @@ Owl-Nav
 ---------------------------------------------
 */
 
-.VltRcd .owl-nav {
+.Topic .owl-nav {
     position: absolute;
     top: -100px;
     right: 0;
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 
-.VltRcd .owl-nav .owl-prev span,
-.VltRcd .owl-nav .owl-next span {
+.Topic .owl-nav .owl-prev span,
+.Topic .owl-nav .owl-next span {
     opacity: 0;
 }
 
-.VltRcd .owl-nav .owl-prev,
-.VltRcd .owl-nav .owl-next {
+.Topic .owl-nav .owl-prev,
+.Topic .owl-nav .owl-next {
     opacity: 1;
     transition: all .5s;
 }
 
-.VltRcd .owl-nav .owl-prev {
+.Topic .owl-nav .owl-prev {
     margin: 0 24px;
 }
 
-.VltRcd .owl-nav .owl-prev:before {
+.Topic .owl-nav .owl-prev:before {
     display: inline-block;
     font-family: 'FontAwesome';
     color: #FFFFFF;
@@ -147,7 +133,7 @@ Owl-Nav
     border: 2px solid #FFFFFF;
 }
 
-.VltRcd .owl-nav .owl-next:before {
+.Topic .owl-nav .owl-next:before {
     display: inline-block;
     font-family: 'FontAwesome';
     color: #FFFFFF;
@@ -162,8 +148,8 @@ Owl-Nav
     border: 2px solid #FFFFFF;
 }
 
-.VltRcd .owl-nav .owl-prev:hover:before,
-.VltRcd .owl-nav .owl-next:hover:before {
+.Topic .owl-nav .owl-prev:hover:before,
+.Topic .owl-nav .owl-next:hover:before {
     color: #000000;
     background-color: #FFFFFF;
     opacity: 1;
@@ -179,40 +165,33 @@ Responsive Style
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-    .VltRcd h4 {
+    .Topic h4 {
         font-size: 18px;
     }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .VltRcd h4 {
+    .Topic h4 {
         font-size: 19px;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .VltRcd {
-        display: block;
+    .Topic {
+        display: none;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .VltRcd h4 {
+    .Topic h4 {
         font-size: 20px;
-    }
-
-    .VltRcd {
-        display: none;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .VltRcd .owl-nav .owl-prev:before,
-    .VltRcd .owl-nav .owl-next:before {
-        display: none;
-    }
+
 }
