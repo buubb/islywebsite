@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f4b5ca2-f1ba-45df-a28b-8666faecdfa2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTF_Challenge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTF_Challenge/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTF_Challenge/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\templates\CTF_Challenge" />
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\js" />
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\css\comment" />
     </key>
@@ -99,7 +100,7 @@
       <updated>1716136489157</updated>
       <workItem from="1716136490856" duration="2985000" />
       <workItem from="1716139593461" duration="12617000" />
-      <workItem from="1716152335210" duration="1084000" />
+      <workItem from="1716152335210" duration="3065000" />
     </task>
     <servers />
   </component>
