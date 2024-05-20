@@ -126,30 +126,6 @@ Responsive Style
 @media (max-width: 1199.98px) {
     /* question */
     .RecruitFaq .faq .faq-list a {
-        font-size: 16px;
-    }
-
-    /* Q */
-    .RecruitFaq .faq .faq-list span {
-        font-size: 18px;
-    }
-
-    /* answer */
-    .RecruitFaq .faq .faq-list p {
-        font-size: 14px;
-    }
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    /* right-faq
-    .RecruitFaq .right-faq {
-        margin-top: 20px;
-    }
-    */
-
-    /* question */
-    .RecruitFaq .faq .faq-list a {
         font-size: 17px;
     }
 
@@ -162,6 +138,11 @@ Responsive Style
     .RecruitFaq .faq .faq-list p {
         font-size: 15px;
     }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
