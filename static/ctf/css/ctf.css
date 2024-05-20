@@ -58,7 +58,7 @@ Item
 
 /* Click */
 .ctf .item .thumb .hover-effect h6 {
-    background-color: #2A2C30;
+    background-color: rgba(0, 0, 0, .6);
     display: inline-block;
     color: #FFFFFF;
     font-weight: 600;
