@@ -34,6 +34,7 @@ Headline
 
 /* Save Button */
 .VltPosting .save {
+    font-size: 32px;
     color: #FFFFFF;
     background-color: transparent;
     border: none;
@@ -331,6 +332,11 @@ Responsive Style
         font-size: 2rem;
     }
 
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 30px;
+    }
+
     .VltPosting #img-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -340,6 +346,16 @@ Responsive Style
 @media (max-width: 575.98px) {
     .VltPosting {
         padding: 35px 30px 5px;
+    }
+
+    /* Write */
+    .VltPosting .major {
+        font-size: 1.8rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 28px;
     }
 
     .VltPosting .fields {
