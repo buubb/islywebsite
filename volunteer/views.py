@@ -82,7 +82,7 @@ def post_add(request):
 
 
 def post_detail(request, post_id):
-    post = Post.objects.get(id=post_id)
+    post = get_object_or_404(Post, id=post_id)
     all_posts = Post.objects.exclude(id=post_id).order_by("-generation")  # 내림차순 정렬
 
     context = {
