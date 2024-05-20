@@ -1,4 +1,4 @@
-// Dev Template Javascript
+// copy_to_clipboard.js
 
 function copyToClipboard(event, text) {
     event.preventDefault(); // 페이지 이동 방지
