@@ -322,3 +322,26 @@ Responsive Style
         font-size: 0.8rem;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.6rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+
+}
