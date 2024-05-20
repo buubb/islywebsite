@@ -108,6 +108,7 @@ Info
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -124,7 +125,6 @@ Image
 .DevRole .profile img {
     border-radius: 0;
     border: 5px solid #FFFFFF;
-    margin-top: 3rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -134,9 +134,52 @@ Image
 
 /*
 ---------------------------------------------
-Hover effect
+Overlay
 ---------------------------------------------
 */
+
+.DevRole .dev-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.DevRole .profile:hover .dev-overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+/*** Button ***/
+.DevRole .btn {
+    transition: .5s;
+}
+
+.DevRole .btn-social {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    width: 38px;
+    height: 38px;
+    border: none;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.DevRole .btn-social:hover {
+    color: #000000;
+    background-color: #AAAAAA;
+}
 
 
 /*
@@ -225,11 +268,7 @@ Responsive Style
     .DevRole .info h2 {
         margin-top: 0.8rem;
         font-size: 1.6rem;
-    }
-
-    /* image */
-    .DevRole .thumb img {
-        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 
     /* down content */
