@@ -146,6 +146,8 @@
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 .special-button{
+  margin: 0 auto;
+  margin-top: 30px;
   color:#FFFFFF;
   border: solid 3px #FFFFFF;
   padding: 20px;
@@ -160,7 +162,10 @@
   background-color: rgba(255, 255, 255, 0.075);
   color:#FFFFFF;
 }
-
+.sp-p{
+  padding: 0px 70px;
+  font-size: 18px;
+}
 @media screen and (max-width: 992px) {
   .vivid{
     display: block;
