@@ -798,16 +798,30 @@ circle {
 /* coding end */
 
 /* error page */
+.error-container{
+  align-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 50px;
+}
 .content404 h2{
-  font-size: 40px;
+  font-size: 45px;
   color: #FFFFFF;
 }
 .content404 p{
-  margin: 20px 0px 40px 0px;
+  margin: 20px 0px 0px 0px;
   font-size: 20px;
   color: #666;
 }
-
+.content404 .p{
+  margin: 0px 0px 80px 0px !important;
+}
+.content404 .res-p{
+  display: none!important;
+}
+.content404 .midment{
+  margin: 0px !important;
+}
 /* partnership */
 .partnership{
   margin:50px 0px 300px 0px;
