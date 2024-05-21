@@ -47,11 +47,11 @@
   display: flex;
   gap: 0 60px;
   width: max-content;
-  animation: scroll-horizontal 20s linear infinite;
+  animation: scroll-horizontal 28s linear infinite;
   padding-right:60px;
 }
 .carousel-secondary{
-  animation: scroll-horizontal-2 20s linear infinite;
+  animation: scroll-horizontal-2 28s linear infinite;
   /* margin-left:60px; */
 }
 .carousel-primary:hover, .carousel-primary:hover~.carousel-secondary{
