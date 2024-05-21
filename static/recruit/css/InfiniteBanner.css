@@ -6,6 +6,8 @@ Basic
 
 .InfiniteBanner {
     background-color: #FFFFFF;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -21,7 +23,7 @@ Props
     padding: 0;
     display: inline-flex;
     align-items: center;
-    overflow-x: visible;
+    overflow-x: hidden;
     position: relative;
     will-change: transform;
     animation: scroll-right-to-left 65s linear infinite;
@@ -54,3 +56,28 @@ Props
     }
 }
 
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .InfiniteBanner .props a {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .InfiniteBanner .props a {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 350px) {
+    .InfiniteBanner .props a {
+        font-size: 25px;
+    }
+}
