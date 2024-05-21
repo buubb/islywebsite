@@ -5,6 +5,9 @@ body{
     justify-content: center;
     cursor: pointer!important;
 }
+.container{
+  min-height: calc(100vh - 378px);
+}
 /* header */
 header{
     position: fixed!important;
@@ -412,94 +415,6 @@ nav .res-nav-container{
 .button--size-s {
     font-size: 14px;
   }
-
-  /* footer */
-#section-footer{ /* root */
-  border-top: 0.5px solid #666;
-  flex-direction: column;
-  padding: 54px 230px 0px 230px;
-  letter-spacing: 0.075em;
-  line-height: 1.8;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
-}
-#footer-text{ /*wrap*/
-  min-height: 200px;
-  display: flex;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-.aboutcolumn{
-  flex-direction: column!important;
-}
-#section-footer h2{
-  color:aliceblue;
-  font-size:30px!important;
-  font-weight:700;
-}
-#section-footer h3{
-  color:aliceblue;
-  font-size: 16px;
-  font-weight: 400;
-}
-#footer-text .footerbox{ /*box1*/
-  width:50%;
-}
-#footer-text .footer-contact{ /*box2*/
-  width:50%;
-  margin: 20px 0px;
-}
-#section-footer p
-{
-  color:#666!important;
-  font-size: 15px;
-}
-#footer-text .footer-nav{ /*box3*/
-  width:50%;
-  text-align: center;
-}
-.footer-nav .footer-category{
-  flex-direction: row!important;
-  margin-left: 25px;
-}
-.footer-nav .footer-category>li{
-  padding-left: 30px;
-  /* padding-top : 8px; */
-  padding-right: 8px;
-  color:#666!important;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.075em;
-  line-height: 1.8;
-  float:right;
-}
-.footer-nav .footer-category>li a{
-  color:aliceblue;
-}
-#footer-text .footer-res-nav{
-  display: none;
-}
-#footer-text .footer-btn{
-  border: 2px solid #FFFFFF!important;
-  border-radius: 23px!important;
-  background-color: #1f2122!important;
-  padding:7px 25px!important;
-}
-.aboutcolumn li{
-  flex-direction: column!important;
-  padding: 10px 0px 0px 0px;
-}
-.aboutcolumn li a{
-  color:#666!important;
-  font-size: 16px!important;
-  font-weight: 400!important;
-  letter-spacing: 0.075em;
-  line-height: 1.8;
-}
-.fp-auto-height.fp-section,
-.fp-auto-height .fp-slide,
-.fp-auto-height .fp-tableCell {
-    height: auto !important;
-}
 
 
 /* habmurger */
