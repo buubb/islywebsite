@@ -7,6 +7,8 @@ Footer
 .footer {
     background: #0d0f10;
     border-top: 1px solid #FFFFFF;
+    position:relative;
+    bottom:translateY(-100%);
 }
 
 .footer p {
