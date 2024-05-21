@@ -389,7 +389,7 @@
     height:0px;
   }
   #section{
-    height:100vh;
+    /* height:100vh; */
     background-image: url("img/isly.gif");
   }
   .mainbanner{
@@ -511,7 +511,6 @@
   .partner a {
     font-size: 18px;
   }
-  
 }
 
 @media(max-width:430px){
@@ -524,14 +523,7 @@
   .p-5{
     padding:2rem!important;
   }
-  .content404 .res-p{
-    margin: 20px 0px 80px 0px !important;
-    display: block!important;
-  }
-
-  .content404 .ment{
-    display: none;
-  }
+  
 }
 
 @media (max-height:740px) {
