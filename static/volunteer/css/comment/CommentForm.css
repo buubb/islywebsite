@@ -8,27 +8,38 @@ Basic
     background-color: transparent;
     border: 6px solid #FFFFFF;
     border-radius: 43px;
-    padding: 50px;
+    padding: 50px 50px 60px;
 }
 
 
 /*
 ---------------------------------------------
-Button
+Headline
 ---------------------------------------------
 */
 
-.CommentForm .save-btn {
-    color: #000000;
-    background-color: #FFFFFF;
+/* Write */
+.CommentForm .major {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    padding-bottom: 8px;
+    font-size: 2.25rem;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Save Button */
+.CommentForm .save {
+    font-size: 32px;
+    color: #FFFFFF;
+    background-color: transparent;
     border: none;
-    border-radius: 8px;
     text-align: center;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    margin-top: 10px;
+    padding: 10px 0;
 }
 
 
@@ -60,7 +71,6 @@ Label
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
-    /* line-height: 1.5; */
     margin: 0 0 1rem 0;
     text-transform: none;
 }
@@ -70,7 +80,6 @@ Label
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
-    /* line-height: 1.5; */
 }
 
 
@@ -105,8 +114,7 @@ Input[type="text"]
     transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     background-color: transparent;
     border-radius: 0;
-    border: none;
-    border-bottom: solid 2px #FFFFFF;
+    border: solid 2px #FFFFFF;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.075rem;
@@ -118,7 +126,7 @@ Input[type="text"]
     width: 100%;
     resize: none;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .CommentForm input[type="text"]:invalid {
@@ -130,17 +138,21 @@ Input[type="text"]
     color: #FFFFFF;
     font-size: 1rem;
     letter-spacing: 0.075rem;
-    box-shadow: none;
+    background: rgba(255, 255, 255, 0.075);
+    border-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .CommentForm input[type="text"] {
-    height: 3.25rem;
+    height: 3.4rem;
 }
 
-#name-counter {
+.CommentForm #name-counter {
     position: absolute;
-    right: 1rem;
-    top: 30%;
+    right: 1.2rem;
+    top: 43%;
     transform: translateY(-50%);
 }
 
@@ -188,17 +200,20 @@ Textarea
     background: rgba(255, 255, 255, 0.075);
     border-color: #FFFFFF;
     box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
-#content-counter {
+.CommentForm #content-counter {
     position: absolute;
     right: 1.5rem;
-    bottom: 0.15rem;
+    bottom: 0.1rem;
 }
 
 .CommentForm textarea {
-    height: 190px;
+    height: 200px;
 }
+
 
 /*
 ---------------------------------------------
@@ -213,10 +228,6 @@ Responsive Style
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .CommentForm {
-        padding: 40px;
-    }
-
     .CommentForm .name-label,
     .CommentForm .content-label {
         font-size: 0.9rem;
@@ -237,46 +248,99 @@ Responsive Style
         font-size: 0.8rem;
     }
 
-    .CommentForm textarea {
-        height: 180px;
-    }
-
-    .CommentForm .save-btn {
-        font-size: 0.9rem;
+    /* name counter */
+    .CommentForm #name-counter {
+        top: 44%;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .CommentForm {
-        padding: 50px;
+    /* input[type="text"] */
+    .CommentForm input[type="text"] {
+        height: 3.25rem;
     }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .CommentForm {
-        padding: 40px;
+        padding: 40px 40px 50px;
     }
 
-    .CommentForm textarea {
-        height: 200px;
+    /* Write */
+    .CommentForm .major {
+        font-size: 2rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 30px;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .CommentForm {
-        padding: 35px;
+        padding: 35px 30px 45px;
     }
 
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.8rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 28px;
+    }
+
+    /* label */
     .CommentForm .name-label,
     .CommentForm .content-label {
         font-size: 0.8rem;
     }
 
+    /* counter */
     .CommentForm #content-counter,
     .CommentForm #name-counter {
         font-size: 0.7rem;
     }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.6rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 26px;
+    }
+
+    #name-counter {
+        right: 1.1rem;
+    }
+
+    #content-counter {
+        right: 1.4rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .CommentForm textarea {
+        height: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+
 }
