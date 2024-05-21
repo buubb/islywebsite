@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57450f9f-1910-4e59-a1a4-b1f919ab70c4" name="Changes" comment="">
+    <list default="true" id="c66c74e2-a5e7-4812-9265-99c81b90cb69" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/copyright.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/Quote.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/Topic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/VltRcd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/rcd_carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/js/topic_carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +24,7 @@
   "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2gknhEsDkq9CgOHGssEl3E1rvk5" />
+  <component name="ProjectId" id="2glKxV008ijAte2EKhQl1rjVKu8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -87,12 +80,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="57450f9f-1910-4e59-a1a4-b1f919ab70c4" name="Changes" comment="" />
-      <created>1716250561903</created>
+      <changelist id="c66c74e2-a5e7-4812-9265-99c81b90cb69" name="Changes" comment="" />
+      <created>1716266972104</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716250561903</updated>
-      <workItem from="1716250563636" duration="7257000" />
+      <updated>1716266972104</updated>
+      <workItem from="1716266973398" duration="2617000" />
     </task>
     <servers />
   </component>
