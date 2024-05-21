@@ -127,6 +127,8 @@ Input
     background: rgba(255, 255, 255, 0.075);
     border-color: #FFFFFF;
     box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .PlayerForm input[type="text"],

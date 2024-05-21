@@ -24,10 +24,8 @@
         <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
 
         <!-- Raon CSS Files -->
-        <link rel="stylesheet" href="{% static 'volunteer/css/comment/Quote.css' %}">
-        <link rel="stylesheet" href="{% static 'volunteer/css/comment/Topic.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/posting/Guidelines.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/comment/CommentForm.css' %}">
-        <link rel="stylesheet" href="{% static 'volunteer/css/comment/VltRcd.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
 
         <!-- Raon Text Fonts -->
@@ -55,204 +53,57 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-content">
+                        
+                        <!-- ***** Guidelines Start ***** -->
+                        <div class="row pt-4">
+                            <div class="Guidelines">
+                                <div class="col-xl-8 col-lg-9 text-end mx-auto">
+                                    <a class="btn notion-btn py-2" href="">
+                                        More Information <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***** Guidelines End ***** -->
 
                         <!-- ***** Comment Form Start ***** -->
-                        <div class="py-5">
-                            <div class="col-lg-12">
-                                <div class="row g-5">
-                                    <div class="col-lg-5">
-                                        <div class="Quote">
-                                            <h1 class="mb-4 text-lg-start text-center">How Was The Project?<br>Share Your Insights!</h1>
-                                            <div class="col-lg-11 instruction">
-                                                <p>가입 전 상상했던 아이슬리와 가입 후 직접 겪은 아이슬리. 무엇이 같고 또 다른 가요? 아이슬리 활동을 하면서 느낀 점을 작성해 주세요!</p>
-                                            </div>
-                                        </div>
-                                        <div class="Topic">
-                                            <div class="col-lg-12 mx-auto">
-                                                <div class="row">
-                                                    <div class="owl-carousel topic-carousel">
-
-                                                        <!-- Item 1 -->
-                                                        <div class="topic-item">
-                                                            <div class="topic-img">
-                                                                <img class="img-fluid" src="{% static 'volunteer/images/item_1.png' %}" alt="">
-                                                            </div>
-                                                            <div class="topic-info">
-                                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 1</h6>
-                                                                <div class="box">
-                                                                    <h4>아이슬리, 재미있나요?<br>그 이유는 뭔가요?</h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Item 2 -->
-                                                        <div class="topic-item">
-                                                            <div class="topic-img">
-                                                                <img class="img-fluid" src="{% static 'volunteer/images/item_2.png' %}" alt="">
-                                                            </div>
-                                                            <div class="topic-info">
-                                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 2</h6>
-                                                                <div class="box">
-                                                                    <h4>가장 좋아하는 아이슬리<br>문화는 어떤 것인가요?</h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Item 3 -->
-                                                        <div class="topic-item">
-                                                            <div class="topic-img">
-                                                                <img class="img-fluid" src="{% static 'volunteer/images/item_3.png' %}" alt="">
-                                                            </div>
-                                                            <div class="topic-info">
-                                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 3</h6>
-                                                                <div class="box">
-                                                                    <h4>오직 아이슬리라서,<br>해볼 수 있었던 활동은?</h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Item 4 -->
-                                                        <div class="topic-item">
-                                                            <div class="topic-img">
-                                                                <img class="img-fluid" src="{% static 'volunteer/images/item_4.png' %}" alt="">
-                                                            </div>
-                                                            <div class="topic-info">
-                                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 4</h6>
-                                                                <div class="box">
-                                                                    <h4>아이슬리에서 한 단계<br>성장한 경험이 있다면?</h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Item 5 -->
-                                                        <div class="topic-item">
-                                                            <div class="topic-img">
-                                                                <img class="img-fluid" src="{% static 'volunteer/images/item_5.png' %}" alt="">
-                                                            </div>
-                                                            <div class="topic-info">
-                                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 5</h6>
-                                                                <div class="box">
-                                                                    <h4>프로젝트를 진행하면서<br>배운 점과 느낀 점은?</h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                        <div class="row py-4">
+                            <div class="col-xl-8 col-lg-9 mx-auto">
+                                <div class="CommentForm">
+                                    <form method="POST" enctype="multipart/form-data" autocomplete="off">
+                                        {% csrf_token %}
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-between mb-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <h1 class="major">WRITE</h1>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <button type="submit" class="save"><i class="fa-solid fa-paper-plane"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="CommentForm">
-                                            <form method="POST" enctype="multipart/form-data" autocomplete="off">
-                                                {% csrf_token %}
-                                                <div class="row g-3">
-                                                    <div class="col-12">
-                                                        <label for="name" class="name-label">Name</label>
-                                                        <div class="text-container">
-                                                            <input type="text" class="form-control" name="name" id="name" value="{{ form.name.value|default_if_none:'' }}" required>
-                                                            <span id="name-counter">0 / 10</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="content" class="content-label">Content</label>
-                                                        <div class="textarea-container">
-                                                            <textarea class="form-control" name="content" id="content" required>{{ form.content.value|default_if_none:'' }}</textarea>
-                                                            <span id="content-counter">0 / 100</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 text-center">
-                                                        <button type="submit" class="btn save-btn w-100 py-3">SAVE</button>
-                                                    </div>
+                                            <div class="col-12">
+                                                <label for="name" class="name-label">Name</label>
+                                                <div class="text-container">
+                                                    <input type="text" class="form-control" name="name" id="name" value="{{ form.name.value|default_if_none:'' }}" required>
+                                                    <span id="name-counter">0 / 10</span>
                                                 </div>
-                                            </form>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="content" class="content-label">Content</label>
+                                                <div class="textarea-container">
+                                                    <textarea class="form-control" name="content" id="content" required>{{ form.content.value|default_if_none:'' }}</textarea>
+                                                    <span id="content-counter">0 / 100</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                         <!-- ***** Comment Form End ***** -->
-
-
-                        <!-- ***** Suggested Topics Start ***** -->
-                        <div class="row pb-4">
-                            <div class="col-lg-12 mx-auto">
-                                <div class="VltRcd">
-                                    <div class="text-center text-sm-start">
-                                        <h1 class="title mb-5">Suggested Topics</h1>
-                                    </div>
-                                    <div class="owl-carousel rcd-carousel">
-
-                                        <!-- Item 1 -->
-                                        <div class="rcd-item">
-                                            <div class="rcd-img">
-                                                <img class="img-fluid" src="{% static 'volunteer/images/item_1.png' %}" alt="">
-                                            </div>
-                                            <div class="rcd-info">
-                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 1</h6>
-                                                <div class="box">
-                                                    <h4>아이슬리, 재미있나요?<br>그 이유는 뭔가요?</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Item 2 -->
-                                        <div class="rcd-item">
-                                            <div class="rcd-img">
-                                                <img class="img-fluid" src="{% static 'volunteer/images/item_2.png' %}" alt="">
-                                            </div>
-                                            <div class="rcd-info">
-                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 2</h6>
-                                                <div class="box">
-                                                    <h4>가장 좋아하는 아이슬리<br>문화는 어떤 것인가요?</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Item 3 -->
-                                        <div class="rcd-item">
-                                            <div class="rcd-img">
-                                                <img class="img-fluid" src="{% static 'volunteer/images/item_3.png' %}" alt="">
-                                            </div>
-                                            <div class="rcd-info">
-                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 3</h6>
-                                                <div class="box">
-                                                    <h4>오직 아이슬리라서,<br>해볼 수 있었던 활동은?</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Item 4 -->
-                                        <div class="rcd-item">
-                                            <div class="rcd-img">
-                                                <img class="img-fluid" src="{% static 'volunteer/images/item_4.png' %}" alt="">
-                                            </div>
-                                            <div class="rcd-info">
-                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 4</h6>
-                                                <div class="box">
-                                                    <h4>아이슬리에서 한 단계<br>성장한 경험이 있다면?</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Item 5 -->
-                                        <div class="rcd-item">
-                                            <div class="rcd-img">
-                                                <img class="img-fluid" src="{% static 'volunteer/images/item_5.png' %}" alt="">
-                                            </div>
-                                            <div class="rcd-info">
-                                                <h6 class="mb-2"><i class="bi bi-tag-fill"></i> Topic 5</h6>
-                                                <div class="box">
-                                                    <h4>프로젝트를 진행하면서<br>배운 점과 느낀 점은?</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***** Suggested Topics End ***** -->
-
+                        
                     </div>
                 </div>
             </div>
@@ -298,8 +149,6 @@
         <!-- Raon JavaScript -->
         <script src="{% static 'volunteer/js/name_counting.js' %}"></script>
         <script src="{% static 'volunteer/js/content_counting.js' %}"></script>
-        <script src="{% static 'volunteer/js/topic_carousel.js' %}"></script>
-        <script src="{% static 'volunteer/js/rcd_carousel.js' %}"></script>
 
 
     </body>
