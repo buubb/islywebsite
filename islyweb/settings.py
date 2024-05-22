@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.forms',
     'islyweb',
     'notice',
-    'assignments',
     'login',
     'introduction',
     'team_activities',
