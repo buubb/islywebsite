@@ -34,6 +34,7 @@ Headline
 
 /* Save Button */
 .PlayerForm .save {
+    font-size: 32px;
     color: #FFFFFF;
     background-color: transparent;
     border: none;
@@ -126,6 +127,8 @@ Input
     background: rgba(255, 255, 255, 0.075);
     border-color: #FFFFFF;
     box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .PlayerForm input[type="text"],
@@ -236,22 +239,6 @@ Responsive Style
         padding: 50px;
     }
 
-    .PlayerForm .avatar-upload {
-        margin: 20px auto;
-    }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    .PlayerForm {
-        padding: 40px;
-    }
-
-    /* Write */
-    .PlayerForm .major {
-        font-size: 2rem;
-    }
-
     /* label */
     .PlayerForm .name-label,
     .PlayerForm .point-label,
@@ -272,10 +259,33 @@ Responsive Style
         font-size: 0.9rem;
     }
 
+    /* input:focus */
     .PlayerForm input[type="text"]:focus,
     .PlayerForm input[type="number"]:focus,
     .PlayerForm input[type="url"]:focus {
         font-size: 0.9rem;
+    }
+
+    /* profile */
+    .PlayerForm .avatar-upload {
+        margin: 20px auto;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .PlayerForm {
+        padding: 40px;
+    }
+
+    /* Write */
+    .PlayerForm .major {
+        font-size: 2rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 30px;
     }
 
     /* profile */
@@ -290,4 +300,50 @@ Responsive Style
     .PlayerForm {
         padding: 35px 30px 40px;
     }
+
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.8rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 28px;
+    }
+
+    /* label */
+    .PlayerForm .name-label,
+    .PlayerForm .point-label,
+    .PlayerForm .challenge-label,
+    .PlayerForm .dreamhack-label {
+        font-size: 0.8rem;
+    }
+
+    /* name-counter */
+    .PlayerForm span {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.6rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+
 }

@@ -16,7 +16,7 @@ class CustomUserAdmin(UserAdmin):
         (
             "추가필드",
             {
-                "fields": ("profile_image", "short_description"),
+                "fields": ("short_description",),
             },
         ),
         (

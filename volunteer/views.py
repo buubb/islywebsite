@@ -82,7 +82,7 @@ def post_add(request):
 
 
 def post_detail(request, post_id):
-    post = Post.objects.get(id=post_id)
+    post = get_object_or_404(Post, id=post_id)
     all_posts = Post.objects.exclude(id=post_id).order_by("-generation")  # 내림차순 정렬
 
     context = {
@@ -134,13 +134,12 @@ def post_edit(request, post_id):
 def post_delete(request, post_id):
     post = get_object_or_404(Post, id=post_id)
 
-    # 권한 확인
     if request.user != post.user:
-        # 작성자가 아닌 경우
+        # 권한이 없는 경우
         messages.error(request, "You do not have permission to delete this post")
         return redirect("Volunteer:post_detail", post_id=post_id)
 
-    # 삭제할 수 있는 권한이 있는 경우
+    # 권한이 있는 경우
     post.delete()
 
     # 삭제 후 피드 페이지로 이동
@@ -150,7 +149,7 @@ def post_delete(request, post_id):
 @require_POST
 @login_required(login_url="login")
 def post_like(request, post_id):
-    post = Post.objects.get(id=post_id)
+    post = get_object_or_404(Post, id=post_id)
     user = request.user
 
     if user.is_authenticated:
@@ -181,13 +180,15 @@ def post_like(request, post_id):
 def comment_add(request, post_id):
     post = get_object_or_404(Post, id=post_id)
 
+    # 현재 사용자가 해당 포스트에 이미 댓글을 작성했는지 확인
     existing_comment = Comment.objects.filter(post=post, user=request.user).exists()
     if existing_comment:
-        messages.warning(request, "You can only write one comment per project.")
+        # 이미 댓글을 작성한 경우, 경고(alert) 표시
+        messages.warning(request, "You can only write one comment per project")
         return redirect("Volunteer:post_detail", post_id=post_id)
 
     if request.method == "POST":
-        form = CommentForm(request.POST, request.FILES)
+        form = CommentForm(request.POST)
         if form.is_valid():
             # commit=False 옵션으로 메모리상에 Comment 객체 생성
             comment = form.save(commit=False)
@@ -198,12 +199,6 @@ def comment_add(request, post_id):
 
             # DB에 Comment 객체 저장
             comment.save()
-
-            # 프로필 이미지 저장
-            profile_image = request.FILES.get("profile_image")
-            if profile_image:
-                request.user.profile_image = profile_image
-                request.user.save()
 
             # 생성 완료 후에는 해당 Post의 상세 페이지로 이동
             return redirect("Volunteer:post_detail", post_id=post_id)
@@ -219,17 +214,41 @@ def comment_add(request, post_id):
 
 
 @login_required(login_url="login")
+def comment_edit(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    if request.user != comment.user:
+        messages.error(request, "You do not have permission to edit this comment")
+        return redirect("Volunteer:post_detail", post_id=comment.post.id)
+
+    if request.method == "POST":
+        form = CommentForm(request.POST, instance=comment)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.created = timezone.now()
+            comment.save()
+            return redirect("Volunteer:post_detail", post_id=comment.post.id)
+    else:
+        form = CommentForm(instance=comment)
+
+    context = {
+        "form": form,
+        "post_id": comment.post.id,
+    }
+    return render(request, "volunteer/comment_form.html", context)
+
+
+@login_required(login_url="login")
 def comment_delete(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
 
-    if request.user == comment.user:
-        # 권한이 있는 경우
-        comment.delete()
-        # 댓글 개수 반환
-        post_id = comment.post.id
-        post = Post.objects.get(id=post_id)
-        comment_count = post.comment_set.count()
-        return JsonResponse({"success": True, "comment_count": comment_count})
-    else:
+    if request.user != comment.user:
         # 권한이 없는 경우
-        return JsonResponse({"success": False})
+        messages.error(request, "You do not have permission to delete this comment")
+        return redirect("Volunteer:post_detail", post_id=comment.post.id)
+
+    # 권한이 있는 경우
+    comment.delete()
+
+    # 삭제 후 해당 Post의 상세 페이지로 다시 이동
+    return redirect("Volunteer:post_detail", post_id=comment.post.id)

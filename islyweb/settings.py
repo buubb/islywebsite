@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'assignments',
     'login',
     'introduction',
-    'library',
     'team_activities',
     'volunteer',
     'CTF_Challenge',

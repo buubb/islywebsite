@@ -4,11 +4,10 @@ from .models import Comment, Post
 
 
 class CommentForm(forms.ModelForm):
-    profile_image = forms.ImageField(label="프로필 이미지", required=False)
-
     class Meta:
         model = Comment
         fields = [
+            "name",
             "content",
         ]
 

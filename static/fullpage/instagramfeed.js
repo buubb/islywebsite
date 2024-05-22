@@ -14,7 +14,7 @@ $(document).ready(function(){
                         cache: false,
                         url: "https://graph.instagram.com/me/media?access_token=" + token + "&fields=id,caption,media_type,media_url,thumbnail_url,permalink",
                         success: function(response) {
-                            console.log(response);
+                            // console.log(response);
                             if (response.data != undefined && response.data.length > 0) {
                                 for (i = 0; i < 20; i++) {
                                     if (response.data[i]) {

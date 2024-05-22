@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="{% static 'volunteer/css/feed/VltHeading.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/feed/VltList.css' %}">
         <link rel="stylesheet" href="{% static 'copyright.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/button/write_button.css' %}">
 
         <!-- Raon JavaScript -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -56,18 +57,7 @@
                         <div class="row pt-4">
                             <div class="vlt-heading">
                                 <div class="col-lg-12">
-                                    {% if user.is_authenticated %}
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <h2 class="headline display-4">Discover <span>Our</span> Projects!</h2>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <a class="write-btn" href="{% url 'Volunteer:post_add' %}"><i class="fa-solid fa-pen"></i></a>
-                                            </div>
-                                        </div>
-                                    {% else %}
-                                        <h2 class="headline display-4 text-center">Discover <span>Our</span> Projects!</h2>
-                                    {% endif %}
+                                    <h2 class="headline display-4 text-center">Discover <span>Our</span> Projects!</h2>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +178,7 @@
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
-            <div class="container">
+            <div class="container-md">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
@@ -200,6 +190,14 @@
             </div>
         </div>
         <!-- Copyright End -->
+        
+        
+        <!-- Write Button Start -->
+        {% if user.is_authenticated %}
+            <a href="{% url 'Volunteer:post_add' %}" class="btn btn-lg btn-lg-square rounded-circle write-btn"><i class="fa-solid fa-pencil"></i></a>
+        {% endif %}
+        <!-- Write Button End -->
+        
 
 
         <!-- Scripts -->
@@ -216,8 +214,8 @@
 
         <!-- Nav SlideToggle JavaScript -->
         <script src="{% static 'fullpage/nav.js' %}"></script>
-
-
+    
+    
     </body>
 
 </html>

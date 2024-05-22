@@ -8,7 +8,7 @@ Basic
     background-color: transparent;
     border: 6px solid #FFFFFF;
     border-radius: 43px;
-    padding: 50px 70px 20px;
+    padding: 50px 70px 50px;
 }
 
 
@@ -34,61 +34,12 @@ Headline
 
 /* Save Button */
 .VltPosting .save {
+    font-size: 32px;
     color: #FFFFFF;
     background-color: transparent;
     border: none;
     text-align: center;
     padding: 10px 0;
-}
-
-
-/*
----------------------------------------------
-Form
----------------------------------------------
-*/
-
-.VltPosting .form {
-    margin: 0 0 2rem 0;
-}
-
-.VltPosting .fields {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: calc(100% + 3rem);
-    margin: -1.5rem 0 2rem -1.5rem;
-}
-
-.VltPosting .fields .field {
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
-    flex-grow: 0;
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
-    padding: 1.5rem 0 0 1.5rem;
-    width: calc(100% - 1.5rem);
-}
-
-.VltPosting .fields .field.half {
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
-    flex-grow: 0;
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
-    padding: 1.5rem 0 0 1.5rem;
-    width: calc(50% - 0.75rem);
 }
 
 
@@ -177,6 +128,8 @@ Input
     background: rgba(255, 255, 255, 0.075);
     border-color: #FFFFFF;
     box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .VltPosting input[type="text"],
@@ -287,7 +240,7 @@ Responsive Style
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .VltPosting {
-        padding: 50px 50px 20px;
+        padding: 50px;
     }
 
     /* label, title-counter */
@@ -326,9 +279,18 @@ Responsive Style
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .VltPosting {
+        padding: 40px;
+    }
+
     /* Write */
     .VltPosting .major {
         font-size: 2rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 30px;
     }
 
     .VltPosting #img-container {
@@ -339,12 +301,17 @@ Responsive Style
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .VltPosting {
-        padding: 35px 30px 5px;
+        padding: 35px 30px;
     }
 
-    .VltPosting .fields {
-        width: calc(100% + 3rem);
-        margin: -1.5rem 0 2rem -1.5rem;
+    /* Write */
+    .VltPosting .major {
+        font-size: 1.8rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 28px;
     }
 
     /* label, title-counter */
@@ -357,9 +324,37 @@ Responsive Style
         font-size: 0.8rem;
     }
 
+    /* Choose Your Files */
+    .VltPosting .file-label {
+        font-size: 0.8rem;
+    }
+
     /* figcaption */
     .VltPosting .image-caption {
         font-size: 11px;
         margin-top: 0.9vmin;
     }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* Write */
+    .VltPosting .major {
+        font-size: 1.6rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+
 }

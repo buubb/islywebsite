@@ -25,3 +25,24 @@ Copyright
 .copyright a:hover {
     letter-spacing: 2px;
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+
+}
+
+@media (max-width: 340px) {
+    .copyright {
+        font-size: 13px;
+    }
+
+    .copyright a {
+        font-size: 13px;
+    }
+}

@@ -38,7 +38,7 @@
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
         <!-- Raon Icon Fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
         <!-- Yubin add -->
         <link rel="stylesheet" href="{% static 'fullpage/media.css' %}">
@@ -135,7 +135,7 @@
 
                                                                     <li><a class="dropdown-item post_edit" href="{% url 'Volunteer:post_edit' post_id=post.id %}">EDIT<i class="fa-solid fa-pen-to-square"></i></a></li>
 
-                                                                    <li><a class="dropdown-item post_delete" href="javascript:void(0)" data-uri="{% url 'Volunteer:post_delete' post_id=post.id %}">DELETE<i class="fa-solid fa-trash-can"></i></a></li>
+                                                                    <li><a class="dropdown-item post_delete vlt_delete" href="javascript:void(0)" data-uri="{% url 'Volunteer:post_delete' post_id=post.id %}">DELETE<i class="fa-solid fa-trash-can"></i></a></li>
                                                                 </ul>
                                                             </div>
                                                         {% else %}
@@ -177,11 +177,8 @@
                                                         </div>
                                                         <div class="d-flex align-items-center">
                                                             {% if request.user == comment.user %}
-                                                                <button class="comment_edit me-3"><i class="fa-solid fa-pen-to-square fa-lg"></i></button>
-                                                                <form action="{% url 'Volunteer:comment_delete' comment.id %}" method="post">
-                                                                    {% csrf_token %}
-                                                                    <button type="submit" class="comment_delete"><i class="fa-solid fa-trash-can fa-lg"></i></button>
-                                                                </form>
+                                                                <a class="comment_edit me-3" href="{% url 'Volunteer:comment_edit' comment_id=comment.id %}"><i class="fa-solid fa-pen-to-square fa-lg"></i></a>
+                                                                <a class="comment_delete vlt_delete" href="javascript:void(0)" data-uri="{% url 'Volunteer:comment_delete' comment_id=comment.id %}"><i class="fa-solid fa-trash-can fa-lg"></i></a>
                                                             {% endif %}
                                                         </div>
                                                     </div>
@@ -191,7 +188,7 @@
                                                             <i class="fa-solid fa-circle-user fa-3x"></i>
                                                         </div>
                                                         <div class="ps-3">
-                                                            <h6>{{ comment.user }}</h6>
+                                                            <h6>{{ comment.name }}</h6>
                                                             <small>{{ comment.created|date:"F d, Y" }}</small>
                                                         </div>
                                                     </div>
@@ -261,7 +258,7 @@
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
-            <div class="container">
+            <div class="container-md">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <a href="/introduction/developers/">Developers <i class="fa-solid fa-angle-right"></i></a>
@@ -273,6 +270,7 @@
             </div>
         </div>
         <!-- Copyright End -->
+        
 
 
         <!-- Scripts -->
@@ -291,10 +289,9 @@
         <script src="{% static 'fullpage/nav.js' %}"></script>
 
         <!-- Raon JavaScript -->
-        <script src="{% static 'volunteer/js/post_delete.js' %}"></script>
+        <script src="{% static 'volunteer/js/vlt_delete.js' %}"></script>
         <script src="{% static 'volunteer/js/post_like.js' %}"></script>
         <script src="{% static 'volunteer/js/post_share.js' %}"></script>
-        <script src="{% static 'volunteer/js/comment_delete.js' %}"></script>
         <script src="{% static 'volunteer/js/vlt_carousel.js' %}"></script>
 
 

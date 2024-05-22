@@ -130,16 +130,26 @@ for(let i=0; i<masks.length; i++) {
   inMasks[i].style.left = -i*(x_chunk) + "px";
 }
 
-/* nav selected active effect js */
-$(function(){
-  // this will get the full URL at the address bar
-  var url = window.location.href; 
+$(document).ready(function() {
+  // 화면 크기를 확인하여 처리
+  function checkWidth() {
+      var windowWidth = $(window).width(); // 현재 창의 너비
+      var mobileContainer = $('#mobile');
 
-  // passes on every "a" tag 
-  $(".nav a").each(function() {
-          // checks if its the same on the address bar
-      if(url == (this.href)) { 
-          $(this).closest(".menu_li").addClass("active");
+      if (windowWidth < 721) {
+          // 화면 너비가 500px 미만인 경우 "container" 클래스 추가
+          mobileContainer.addClass('container');
+      } else {
+          // 화면 너비가 500px 이상인 경우 "container" 클래스 제거
+          mobileContainer.removeClass('container');
       }
+  }
+
+  // 페이지 로드시 한 번 실행
+  checkWidth();
+
+  // 창 크기가 변경될 때마다 실행
+  $(window).resize(function() {
+      checkWidth();
   });
 });

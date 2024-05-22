@@ -25,10 +25,6 @@ Custom Text
     text-transform: none;
 }
 
-.RecruitBanner #element {
-    /* color: #57F579; */
-}
-
 
 /*
 ---------------------------------------------
@@ -110,5 +106,42 @@ Responsive Style
 
     .RecruitBanner .apply {
         font-size: 5rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .RecruitBanner h1 {
+        font-size: 30px;
+    }
+
+    .RecruitBanner .apply {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .RecruitBanner h1 {
+        font-size: 28px;
+    }
+
+    .RecruitBanner .apply {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .RecruitBanner h1 {
+        font-size: 25px;
+    }
+
+    .RecruitBanner .apply {
+        font-size: 3rem;
     }
 }

@@ -1,4 +1,4 @@
-// CTFCarousel.js
+// ctf_carousel.js
 
 (function ($) {
     "use strict";

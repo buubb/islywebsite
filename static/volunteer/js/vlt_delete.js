@@ -1,19 +1,18 @@
-// post_delete.js
+// vlt_delete.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const deleteButtons = document.querySelectorAll('.post_delete');
-
-    deleteButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
+    document.body.addEventListener('click', function(event) {
+        if (event.target.closest('.vlt_delete')) {
             event.preventDefault();
 
-            const uri = this.getAttribute('data-uri');
+            const button = event.target.closest('.vlt_delete');
+            const uri = button.getAttribute('data-uri');
 
             // Confirm deletion
             if (confirm("Are you sure you want to delete?")) {
                 // If confirmed, redirect to delete endpoint
                 window.location.href = uri;
             }
-        });
+        }
     });
 });

@@ -10,6 +10,20 @@ $(document).on("click", function(event) {
   });
 
 $(".aboutdrop").click(function(event){
-        event.stopPropagation(); // 클릭 이벤트가 부모로 전파되지 않도록 함
-        $(".depth_1").slideToggle();
+    event.stopPropagation(); // 클릭 이벤트가 부모로 전파되지 않도록 함
+    $(".depth_1").slideToggle();
   });
+  
+/* nav selected active effect js */
+$(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
+
+    // passes on every "a" tag 
+    $(".nav a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest(".menu_li").addClass("active");
+        }
+    });
+});

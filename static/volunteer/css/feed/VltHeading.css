@@ -34,30 +34,6 @@ Headline
 
 /*
 ---------------------------------------------
-Write-Button
----------------------------------------------
-*/
-
-.vlt-heading .write-btn {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    background-color: transparent;
-    border: 3.5px solid #FFFFFF;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    line-height: 60px;
-    text-align: center;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*
----------------------------------------------
 Responsive Style
 ---------------------------------------------
 */
@@ -87,14 +63,6 @@ Responsive Style
     .vlt-heading span {
         display: none;
     }
-
-    .vlt-heading .write-btn {
-        font-size: 1.2rem;
-        border: 3.3px solid #FFFFFF;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -108,5 +76,36 @@ Responsive Style
 @media (max-width: 575.98px) {
     .vlt-heading {
         margin-bottom: 2.2rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 350px) {
+    .vlt-heading .headline {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .vlt-heading .headline {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .vlt-heading .headline {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .vlt-heading .headline {
+        font-size: 2rem;
     }
 }
