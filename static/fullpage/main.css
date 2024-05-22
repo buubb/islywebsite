@@ -476,9 +476,9 @@ path:nth-child(6) {
   display: flex;
 }
 .wordbanner img{
-  width:600px;
+  width: 550px;
   filter:brightness(0.5);
-  padding-top: 70px;
+  padding-top: 40px;
   padding-left: 100px;
   overflow: visible;
 }
