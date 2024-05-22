@@ -449,7 +449,7 @@
   }
   #section {
     height: 75vh;
-    border-bottom: 3px solid;
+    /* border-bottom: 3px solid; */
   }
   .mainbanner{
     display: none;
