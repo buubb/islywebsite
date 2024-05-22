@@ -167,3 +167,83 @@ Responsive Style
         font-size: 14px;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 22px 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 14px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 15px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 13px;
+    }
+
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 18px 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 13px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 14px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 12px;
+    }
+
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 16px 7px;
+    }
+}
+
+@media (max-width: 340px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 12px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 13px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 12px;
+    }
+
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 15px 6px;
+    }
+}

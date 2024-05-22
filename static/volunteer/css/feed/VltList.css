@@ -99,7 +99,7 @@ Load More button
 
 .vlt-list .load-more-button {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .vlt-list .load-more-button a {
@@ -111,8 +111,8 @@ Load More button
     background-color: transparent;
     /* border: 1.8px solid #FFFFFF; */
     border-radius: 0;
-    height: 3.5rem;
-    line-height: 3.5rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
     padding: 0 1.5rem;
     display: inline-block;
     text-align: center;
@@ -176,9 +176,45 @@ Responsive Style
 @media (max-width: 575.98px) {
     .vlt-list .load-more-button a {
         display: block;
+        font-size: 1.2rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .vlt-list .load-more-button a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .vlt-list .card__title {
         font-size: 0.9rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        border: 2px solid #FFFFFF;
+    }
+}
+
+@media (max-width: 350px) {
+    .vlt-list .load-more-button a {
+        font-size: 1rem;
+    }
+
+    .vlt-list .card__category {
+        font-size: 11px;
+    }
+
+    .vlt-list .card__like {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .vlt-list .load-more-button a {
+        font-size: 0.9rem;
     }
 }

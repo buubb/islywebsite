@@ -116,7 +116,7 @@ Dimensions
 ---------------------------------------------
 */
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     .RecruitBanner h1 {
         font-size: 30px;
     }
