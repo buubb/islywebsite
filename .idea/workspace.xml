@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1924f723-0aa8-4602-801f-080d96f74d95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/player_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/player_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/snake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevHeadline.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevHeadline.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/Fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,29 +17,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2govAhOwmMWs4Jfwr5O1b9dpqYn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -92,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716376604171</updated>
-      <workItem from="1716376605538" duration="4777000" />
+      <workItem from="1716376605538" duration="5359000" />
+      <workItem from="1716382350018" duration="1211000" />
     </task>
     <servers />
   </component>
