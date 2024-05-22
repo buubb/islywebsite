@@ -16,8 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#from .views import Main
-# all url
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainpage.urls')),
@@ -36,13 +35,3 @@ from islyweb.views import bad_request, page_not_found, server_error
 handler400 = 'islyweb.views.bad_request'
 handler404 = 'islyweb.views.page_not_found'
 handler500 = 'islyweb.views.server_error'
-
-
-# #summernote 설정
-# from django.conf import settings
-# from django.conf.urls.static import static
-
-# urlpatterns += [path('summernote/', include('django_summernote.urls'))]
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-    
