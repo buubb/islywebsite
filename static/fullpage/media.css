@@ -127,7 +127,7 @@
         padding:0px 30px;
     }
     .text_box{
-        line-height:90px;
+        /* line-height:90px; */
     }
     .cursor {
         animation: blink 0.5s infinite;
@@ -231,41 +231,41 @@
           min-height: 400px;
         }
       }
-  .mainbutton{
+  /* .mainbutton{
     display: none;
     width:200px;
     margin-left: 15px;
     top:40%;
-  }
-  .mainrecruit{
+  } */
+  /* .mainrecruit{
     font-size: 6vw;
   }
   .mainbutton img{
     width:43px !important;
     padding-bottom:8px;
-  }
-  .text_box{
+  } */
+  /* .text_box{
     top:37%;
     margin-left:40px;
     font-size: 7.4285714286vw;
     line-height: 80px;
-  }
+  } */
   .cursor{
     font-size: 7.4285714286vw;
   }
-  .mainbanner{
+  /* .mainbanner{
     display: none;
-  }
-  #section{
+  } */
+  /* #section{
     height:50vh;
-  }
+  } */
   .scrolldownwrap{
     position:absolute;
     bottom:20px;
     left:0;
     right:0;
   }
-  .res-ment{
+  /* .res-ment{
     display: block;
     position:absolute;
     font-size: 25px;
@@ -275,10 +275,10 @@
     margin-left: 40px;
     max-width:800px;
     text-align: left;
-  }
-  .Facts{
+  } */
+  /* .Facts{
     margin-top:0px;
-  }
+  } */
   .special{
     margin-top:0px;
     padding-top:0px;
@@ -342,6 +342,36 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width:912px) {
+  .Facts .title{
+    /* margin-top:0px; */
+    margin:180px 0px 100px 0px!important;
+  }
+  .text_box{
+    line-height: 70px;
+    font-size: 9.3333333333vw;
+    margin-left: 20px;
+    align-content: center;
+    top: 27%;
+  }
+  .res-ment{
+    display: block; /* block */
+    position:absolute;
+    font-size: 20px;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+    color:#666;
+    margin-left: 20px;
+    top:41%;
+    width:400px;
+    text-align: left;
+  }
+  .cursor{
+    font-size: 9.3333333333vw;
+  }
+  .mainbutton{
+    display: none;
+  }
+}
 @media(max-width:700px){
   .main-container{
     max-width: 700px;
@@ -357,7 +387,15 @@
       min-height: 400px;
     }
   }
-
+  .mainbutton{
+    display: none;
+  }
+  #section{
+    height:50vh;
+  }
+  .Facts{
+    margin-top:0px;
+  }
   .tab{
     position: relative;
     display: block;
@@ -547,7 +585,7 @@
 
 @media(max-width:430px){
   .text_box{
-    width:300px;
+    width:310px;
   }
   .res-ment{
     width:300px;
@@ -582,6 +620,6 @@
 
 @media (min-height:1000px) {
   .res-ment{
-    top:52%!important;
+    /* top:40%; */
   }
 }
