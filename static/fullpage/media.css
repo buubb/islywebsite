@@ -233,6 +233,16 @@
       }
   .mainbutton{
     display: none;
+    width:200px;
+    margin-left: 15px;
+    top:40%;
+  }
+  .mainrecruit{
+    font-size: 6vw;
+  }
+  .mainbutton img{
+    width:43px !important;
+    padding-bottom:8px;
   }
   .text_box{
     top:37%;
@@ -247,8 +257,7 @@
     display: none;
   }
   #section{
-    height:100vh;
-    background-image: url("img/isly.gif");
+    height:50vh;
   }
   .scrolldownwrap{
     position:absolute;
@@ -354,9 +363,9 @@
     display: block;
     width: 100%;
     background-color: transparent;
-    padding:50px 0px;
+    padding:40px 0px;
     border-top:3px solid #FFFFFF ;
-    height:450px;
+    height:380px;
   }
   .tab::before{
     display: none;
@@ -393,27 +402,27 @@
   }
   #section{
     /* height:100vh; */
-    background-image: url("img/isly.gif");
+    /* background-image: url("img/isly.gif"); */
   }
   .mainbanner{
     display: none;
   }
   .text_box{
     line-height: 50px;
-    font-size: 8.3333333333vw;
+    font-size: 9.3333333333vw;
     margin-left: 20px;
     align-content: center;
-    top: 37%;
+    top: 27%;
     width: 450px;
   }
   .res-ment{
-    display: block;
+    display: block; /* block */
     position:absolute;
     font-size: 20px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
     color:#666;
     margin-left: 20px;
-    top:50%;
+    top:40%;
     width:400px;
     text-align: left;
   }
@@ -429,12 +438,14 @@
   /* Facts */
   .Facts{
     margin-top:0px;
+    padding-top:0px;
   }
   .Facts .topic{
     font-size: 16px;
   }
   .Facts .title{
     font-size: 7vw;
+    margin: 180px 0px 70px 0px!important;
   }
   .special{
     margin-top:0px;
@@ -500,7 +511,7 @@
     justify-content: center;
   }
   .hspace{
-    width:200px;
+    width:150px !important;
   }
   .kucis{
     width:120px;
@@ -523,6 +534,11 @@
     width: 200px;
     height: 80px;
     margin: 0px 0px;
+  }
+  .partner:first-child{
+    margin: 0 auto;
+    width: 150px;
+    margin-left: 35px;
   }
   .special-button{
     margin-top: 0;
@@ -555,9 +571,9 @@
   }
 }
 
-@media (max-height:740px) {
+@media (max-height:800px) {
   .res-ment{
-    top:52%!important;
+    top:43%!important;
   }
   nav .res-nav-container .res-nav-item:first-child {
     margin-top: 90px;
