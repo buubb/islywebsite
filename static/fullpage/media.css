@@ -215,7 +215,7 @@
 
       .Facts {
         margin-top: 300px;
-        padding-top:150px;
+        padding-top: 200px;
       }
       
 }
@@ -448,7 +448,7 @@
     height:0px;
   }
   #section {
-    height: 70vh;
+    height: 75vh;
     border-bottom: 3px solid;
   }
   .mainbanner{
