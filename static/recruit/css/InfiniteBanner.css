@@ -63,7 +63,7 @@ Dimensions
 ---------------------------------------------
 */
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     .InfiniteBanner .props a {
         font-size: 30px;
     }
