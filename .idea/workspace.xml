@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa72a7f1-2dba-4afc-bc2f-3ebeb2b8fa91" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/InfiniteBanner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/Procedure.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Procedure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/button/back_to_top.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/easing/easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/dev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/dev.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/introduction/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/notice/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notice/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/Fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Fail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/Pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/Pass.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recruit/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/recruit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,29 +27,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2gne4jcjjrjL0SHzIpgPUe6KG2H" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "raon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -86,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716337582478</updated>
-      <workItem from="1716337583718" duration="4527000" />
+      <workItem from="1716337583718" duration="5427000" />
+      <workItem from="1716343818156" duration="1647000" />
     </task>
     <servers />
   </component>
