@@ -204,3 +204,76 @@ Responsive Style
 @media (max-width: 575.98px) {
 
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* question, number */
+    .Rules .faq .faq-list a,
+    .Rules .faq .faq-list span {
+        font-size: 17px;
+    }
+
+    /* answer */
+    .Rules .faq .faq-list p {
+        font-size: 14px;
+    }
+
+    .Rules .faq li.listSecond,
+    .Rules .faq li.listThird {
+        font-size: 14px;
+    }
+
+    .Rules .faq li.listFourth {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 330px) {
+    /* question, number */
+    .Rules .faq .faq-list a,
+    .Rules .faq .faq-list span {
+        font-size: 16px;
+    }
+
+    /* answer */
+    .Rules .faq .faq-list p {
+        font-size: 13px;
+    }
+
+    .Rules .faq li.listSecond,
+    .Rules .faq li.listThird {
+        font-size: 13px;
+    }
+
+    .Rules .faq li.listFourth {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    /* question, number */
+    .Rules .faq .faq-list a,
+    .Rules .faq .faq-list span {
+        font-size: 15px;
+    }
+
+    /* answer */
+    .Rules .faq .faq-list p {
+        font-size: 12px;
+    }
+
+    .Rules .faq li.listSecond,
+    .Rules .faq li.listThird {
+        font-size: 12px;
+    }
+
+    .Rules .faq li.listFourth {
+        font-size: 11px;
+    }
+}
