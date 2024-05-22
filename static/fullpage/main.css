@@ -308,7 +308,7 @@ nav .res-nav-container{
     margin:auto;
     width:100%;
     margin-left:120px;
-    top:270px;
+    top:230px;
     line-height:110px;
 }
 .text_box .text{
@@ -319,7 +319,7 @@ nav .res-nav-container{
   position:absolute;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   margin-left:120px;
-  top:520px;
+  top:500px;
 }
 .mainbutton:hover{
   filter:brightness(80%)!important;
@@ -856,6 +856,11 @@ circle {
   height: 80px;
   margin: 0px 50px;
 }
+
+.partner:first-child{
+  margin-left: 70px;
+}
+
 .partner-logo{
   /* height:150px;
   align-content: center; */

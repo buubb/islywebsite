@@ -127,7 +127,7 @@
         padding:0px 30px;
     }
     .text_box{
-        line-height:90px;
+        /* line-height:90px; */
     }
     .cursor {
         animation: blink 0.5s infinite;
@@ -231,32 +231,41 @@
           min-height: 400px;
         }
       }
-  .mainbutton{
+  /* .mainbutton{
     display: none;
+    width:200px;
+    margin-left: 15px;
+    top:40%;
+  } */
+  /* .mainrecruit{
+    font-size: 6vw;
   }
-  .text_box{
+  .mainbutton img{
+    width:43px !important;
+    padding-bottom:8px;
+  } */
+  /* .text_box{
     top:37%;
     margin-left:40px;
     font-size: 7.4285714286vw;
     line-height: 80px;
-  }
+  } */
   .cursor{
     font-size: 7.4285714286vw;
   }
-  .mainbanner{
+  /* .mainbanner{
     display: none;
-  }
-  #section{
-    height:100vh;
-    background-image: url("img/isly.gif");
-  }
+  } */
+  /* #section{
+    height:50vh;
+  } */
   .scrolldownwrap{
     position:absolute;
     bottom:20px;
     left:0;
     right:0;
   }
-  .res-ment{
+  /* .res-ment{
     display: block;
     position:absolute;
     font-size: 25px;
@@ -266,10 +275,10 @@
     margin-left: 40px;
     max-width:800px;
     text-align: left;
-  }
-  .Facts{
+  } */
+  /* .Facts{
     margin-top:0px;
-  }
+  } */
   .special{
     margin-top:0px;
     padding-top:0px;
@@ -333,6 +342,36 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width:912px) {
+  .Facts .title{
+    /* margin-top:0px; */
+    margin:180px 0px 100px 0px!important;
+  }
+  .text_box{
+    line-height: 70px;
+    font-size: 9.3333333333vw;
+    margin-left: 20px;
+    align-content: center;
+    top: 27%;
+  }
+  .res-ment{
+    display: block; /* block */
+    position:absolute;
+    font-size: 20px;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+    color:#666;
+    margin-left: 20px;
+    top:45%;
+    width:400px;
+    text-align: left;
+  }
+  .cursor{
+    font-size: 9.3333333333vw;
+  }
+  .mainbutton{
+    display: none;
+  }
+}
 @media(max-width:700px){
   .main-container{
     max-width: 700px;
@@ -348,15 +387,23 @@
       min-height: 400px;
     }
   }
-
+  .mainbutton{
+    display: none;
+  }
+  #section{
+    height:50vh;
+  }
+  .Facts{
+    margin-top:0px;
+  }
   .tab{
     position: relative;
     display: block;
     width: 100%;
     background-color: transparent;
-    padding:50px 0px;
+    padding:40px 0px;
     border-top:3px solid #FFFFFF ;
-    height:450px;
+    height:380px;
   }
   .tab::before{
     display: none;
@@ -393,27 +440,27 @@
   }
   #section{
     /* height:100vh; */
-    background-image: url("img/isly.gif");
+    /* background-image: url("img/isly.gif"); */
   }
   .mainbanner{
     display: none;
   }
   .text_box{
     line-height: 50px;
-    font-size: 8.3333333333vw;
+    font-size: 9.3333333333vw;
     margin-left: 20px;
     align-content: center;
-    top: 37%;
-    width: 450px;
+    top: 27%;
+    width: 460px;
   }
   .res-ment{
-    display: block;
+    display: block; /* block */
     position:absolute;
     font-size: 20px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
     color:#666;
     margin-left: 20px;
-    top:50%;
+    top:40%;
     width:400px;
     text-align: left;
   }
@@ -429,12 +476,14 @@
   /* Facts */
   .Facts{
     margin-top:0px;
+    padding-top:0px;
   }
   .Facts .topic{
     font-size: 16px;
   }
   .Facts .title{
     font-size: 7vw;
+    margin: 180px 0px 70px 0px!important;
   }
   .special{
     margin-top:0px;
@@ -500,7 +549,7 @@
     justify-content: center;
   }
   .hspace{
-    width:200px;
+    width:150px !important;
   }
   .kucis{
     width:120px;
@@ -524,6 +573,11 @@
     height: 80px;
     margin: 0px 0px;
   }
+  .partner:first-child{
+    margin: 0 auto;
+    width: 150px;
+    margin-left: 35px;
+  }
   .special-button{
     margin-top: 0;
   }
@@ -531,7 +585,7 @@
 
 @media(max-width:430px){
   .text_box{
-    width:300px;
+    width:310px;
   }
   .res-ment{
     width:300px;
@@ -554,10 +608,18 @@
     font-size: 15px;
   }
 }
+@media (max-width:320px) {
+  .res-ment {
+    width: 270px;
+  }
+  .text_box {
+    width: 270px;
+  }
+}
 
-@media (max-height:740px) {
+@media (max-height:800px) {
   .res-ment{
-    top:52%!important;
+    top:43%!important;
   }
   nav .res-nav-container .res-nav-item:first-child {
     margin-top: 90px;
@@ -566,6 +628,25 @@
 
 @media (min-height:1000px) {
   .res-ment{
-    top:52%!important;
+    top:41%;
+  }
+}
+
+@media (min-height:1280px) {
+  .text_box{
+    top:19%;
+  }
+  .res-ment{
+    top:31%;
+  }
+}
+
+@media (min-height:1366px) {
+  .text_box{
+    top:15%;
+    line-height: 90px;
+  }
+  .mainbutton{
+    top:33%;
   }
 }
