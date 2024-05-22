@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f80853b-c54f-4ff2-9b2a-85fe68c48c7e" name="Changes" comment="">
+    <list default="true" id="1924f723-0aa8-4602-801f-080d96f74d95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/button/write_button.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/button/write_button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/VltHeading.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/VltHeading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/VltList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/VltList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +21,7 @@
   "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2go5L0IbqhAPcRoS27lFXp7Hras" />
+  <component name="ProjectId" id="2govAhOwmMWs4Jfwr5O1b9dpqYn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,11 +40,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\css\button" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -90,12 +77,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7f80853b-c54f-4ff2-9b2a-85fe68c48c7e" name="Changes" comment="" />
-      <created>1716351031612</created>
+      <changelist id="1924f723-0aa8-4602-801f-080d96f74d95" name="Changes" comment="" />
+      <created>1716376604171</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716351031612</updated>
-      <workItem from="1716351033081" duration="5831000" />
+      <updated>1716376604171</updated>
+      <workItem from="1716376605538" duration="3794000" />
     </task>
     <servers />
   </component>
