@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var usernameInput = document.getElementById("old_password");
+    var oldpasswordInput = document.getElementById("old_password");
     var passwordInput = document.getElementById("new_password1");
     var password1Input = document.getElementById("new_password2");
-    var loginButton = document.getElementById("login-button");
+    var loginButton = document.getElementById("change-button");
 
     function checkInputs() {
-        if (usernameInput.value.trim() !== "" && passwordInput.value.trim() !== "" && password1Input.value.trim() !== "") {
+        if (oldpasswordInput.value.trim() !== "" && passwordInput.value.trim() !== "" && password1Input.value.trim() !== "") {
             loginButton.disabled = false;
             loginButton.classList.add("active");
         } else {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    usernameInput.addEventListener("input", function() {
+    oldpasswordInput.addEventListener("input", function() {
         checkInputs();
     });
 
