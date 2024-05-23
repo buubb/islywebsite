@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL= 'User.User'
  
-# Application definition
 # 기능(어플) 추가 시 아래에 이름을 추가해주세요. 하위 기능은 추가 XX
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -69,9 +68,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'login.middleware.CsrfFailureMiddleware',
     'axes.middleware.AxesMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',s
+    # 'corsheaders.middleware.CorsMiddleware',
 ]
-
 
 # # 로그인 성공 시 자동으로 이동할 URL
 # # LOGIN_URL = '/login/'
@@ -151,7 +149,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'Asia/Seoul' 
 
