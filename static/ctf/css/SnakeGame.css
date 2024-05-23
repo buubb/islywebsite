@@ -92,9 +92,11 @@ All screens style
     cursor: pointer;
 }
 
-#gameover a:hover::before, #setting a:hover::before, #menu a:hover::before {
-    content: ">";
-    margin-right: 10px;
+@media (hover: hover) and (pointer: fine) {
+    #gameover a:hover::before, #setting a:hover::before, #menu a:hover::before {
+        content: ">";
+        margin-right: 10px;
+    }
 }
 
 
@@ -186,8 +188,6 @@ Settings Screen Style
 .SnakeGame #setting {
     display: none;
     width: 340px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     padding-top: 85px;
     padding-bottom: 85px;
     font-size: 30px;
@@ -222,3 +222,17 @@ Settings Screen Style
     background-color: #FFFFFF;
     color: #000000;
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 490px) {
+    .SnakeGame {
+        display: none;
+    }
+}
+

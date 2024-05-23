@@ -65,7 +65,6 @@ Item
     font-size: 14px;
     padding: 10px 20px;
     border-radius: 25px;
-    /* add */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     line-height: 1.5;
     letter-spacing: 0.075em;
@@ -81,7 +80,6 @@ Item
     margin-top: 20px;
     margin-bottom: 0;
     display: block;
-    /* add */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     line-height: 1.3;
     letter-spacing: 0.075em;
@@ -96,7 +94,6 @@ Item
     display: block;
     margin-top: 7px;
     font-weight: 500;
-    /* add */
     font-size: 14px;
     line-height: 1.5;
 }
