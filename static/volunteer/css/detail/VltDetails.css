@@ -122,11 +122,11 @@ Dropdown
 }
 
 .VltDetails .dropdown-menu li:first-child .dropdown-item {
-    padding-top: 10px !important;
+    padding-top: 20px !important;
 }
 
 .VltDetails .dropdown-menu li:last-child .dropdown-item {
-    padding-bottom: 10px !important;
+    padding-bottom: 20px !important;
 }
 
 

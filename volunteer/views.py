@@ -184,7 +184,7 @@ def comment_add(request, post_id):
     existing_comment = Comment.objects.filter(post=post, user=request.user).exists()
     if existing_comment:
         # 이미 댓글을 작성한 경우, 경고(alert) 표시
-        messages.warning(request, "You can only write one comment per project")
+        messages.error(request, "You can only write one comment per project")
         return redirect("Volunteer:post_detail", post_id=post_id)
 
     if request.method == "POST":
