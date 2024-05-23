@@ -123,3 +123,52 @@ Responsive Style
         display: none;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .NoticeLink .notice-btn a {
+        font-size: 42px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 15px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .NoticeLink .notice-btn a {
+        font-size: 40px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 14px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 350px) {
+    .NoticeLink .notice-btn a {
+        font-size: 34px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 13px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 18px;
+    }
+}
