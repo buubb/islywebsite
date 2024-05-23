@@ -147,7 +147,6 @@ def post_delete(request, post_id):
 
 
 @require_POST
-@login_required(login_url="login")
 def post_like(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     user = request.user
