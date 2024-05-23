@@ -176,11 +176,13 @@ Owl-Nav
     border: 2px solid #FFFFFF;
 }
 
-.ctf .owl-nav .owl-prev:hover:before,
-.ctf .owl-nav .owl-next:hover:before {
-    color: #000000;
-    background-color: #FFFFFF;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .ctf .owl-nav .owl-prev:hover:before,
+    .ctf .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
 }
 
 
