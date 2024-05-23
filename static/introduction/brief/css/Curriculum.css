@@ -137,3 +137,39 @@ Responsive Style
         font-size: 24px;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions :: Font
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Curriculum .scheme .icon-box h4 {
+        font-size: 18px;
+    }
+
+    .Curriculum .scheme .icon-box p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Curriculum .scheme .icon-box p {
+        font-size: 13px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: icon box
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Curriculum .scheme .icon-box {
+        margin-top: 40px;
+    }
+}

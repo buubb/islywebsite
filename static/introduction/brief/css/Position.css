@@ -89,3 +89,29 @@ Item
     color: #FFFFFF;
     font-weight: 450;
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    /* title */
+    .Position .position-item h5 {
+        font-size: 18px;
+    }
+
+    /* hashtag */
+    .Position .position-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    /* hashtag */
+    .Position .position-item p {
+        font-size: 13px;
+    }
+}

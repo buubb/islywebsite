@@ -211,3 +211,26 @@ Responsive Style
 @media (max-width: 575.98px) {
 
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .RoadMap .week {
+        font-size: 18px;
+    }
+
+    .RoadMap .hashtag {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .RoadMap .hashtag {
+        font-size: 13px;
+    }
+}

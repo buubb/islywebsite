@@ -48,12 +48,6 @@ FAQ-list
     list-style: none;
 }
 
-/*
-.Rules .faq .faq-list li + li {
-    margin-top: 20px;
-}
-*/
-
 .Rules .faq .faq-list li.faq-item {
     padding: 25px 10px;
     background: transparent;
