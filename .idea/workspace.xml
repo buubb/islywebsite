@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5fa319e8-0173-4ac7-881d-c42a9e872cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/copyright.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/splide/splide.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/splide/splide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/splide/splide.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/splide/splide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="islywebsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="islywebsite" />
@@ -90,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716440647832</updated>
       <workItem from="1716440648522" duration="1844000" />
-      <workItem from="1716442590994" duration="3897000" />
+      <workItem from="1716442590994" duration="4592000" />
     </task>
     <servers />
   </component>
