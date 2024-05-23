@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5fb7004-36a8-456e-a0ce-82ad278bc7da" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltComment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1716465412386</updated>
       <workItem from="1716465414230" duration="4515000" />
-      <workItem from="1716471245525" duration="6515000" />
+      <workItem from="1716471245525" duration="7236000" />
+      <workItem from="1716479616104" duration="13000" />
     </task>
     <servers />
   </component>

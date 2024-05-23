@@ -1,4 +1,4 @@
-// snake_console.js
+// wargame_console.js
 
 console.log(
   `%c
