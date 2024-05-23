@@ -94,10 +94,6 @@ Item
     border-radius: 23px;
 }
 
-.Procedure .item:hover {
-    background: #FFFFFF;
-}
-
 .Procedure .item .topic-icon {
     margin: 0 auto 20px auto;
     width: 90px;
@@ -108,19 +104,9 @@ Item
     transition: .5s;
 }
 
-.Procedure .item:hover .topic-icon {
-    color: #FFFFFF;
-    background: #000000;
-}
-
 .Procedure .item h5,
 .Procedure .item p {
     transition: .5s;
-}
-
-.Procedure .item:hover h5,
-.Procedure .item:hover p {
-    color: #000000;
 }
 
 .Procedure .item a.btn {
@@ -129,10 +115,13 @@ Item
     color: #000000;
     transition: .5s;
     z-index: 1;
+    border: none;
 }
 
-.Procedure .item:hover a.btn {
-    color: #FFFFFF;
+@media (hover: hover) and (pointer: fine) {
+    .Procedure .item:hover a.btn {
+        color: #FFFFFF;
+    }
 }
 
 .Procedure .item a.btn::before {
@@ -148,9 +137,11 @@ Item
     z-index: -1;
 }
 
-.Procedure .item:hover a.btn::before {
-    width: 100%;
-    background: #000000;
+@media (hover: hover) and (pointer: fine) {
+    .Procedure .item:hover a.btn::before {
+        width: 100%;
+        background: #000000;
+    }
 }
 
 
