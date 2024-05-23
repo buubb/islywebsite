@@ -174,3 +174,26 @@ Responsive style
         letter-spacing: 0.035em;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 500px) {
+    .DevComment .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .DevComment .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
