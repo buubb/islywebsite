@@ -624,7 +624,6 @@ circle {
 }
 .carousel-secondary{
   animation: scroll-horizontal-2 25s linear infinite;
-  /* margin-left:60px; */
 }
 @media (hover: hover) and (pointer: fine) {
   .carousel-primary:hover, .carousel-primary:hover~.carousel-secondary{
