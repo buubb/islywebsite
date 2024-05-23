@@ -2,15 +2,84 @@
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
-01. max-width
-02. max-height
+01. max-width(DESC)
+02. max-height(ASC)
 --------------------------------------------- */
 
 /* 
 ---------------------------------------------
-01. max-width
+01. max-width(DESC)
 --------------------------------------------- 
 */
+/* 1400 px */
+@media (max-width:1400px) {
+  .main-container{
+    max-width: 1400px;
+  }
+  .main {
+        letter-spacing: 0.075em!important;
+        line-height: 1.8!important;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+        
+        & section {
+          display: block;
+          gap: 70px;
+          justify-content: center;
+          margin-top:0px!important;
+          margin-left: 0px;
+          margin-right:0px;
+          margin-bottom:0px;
+          min-height: 400px;
+        }
+      }
+  .cursor{
+    font-size: 7.4285714286vw;
+  }
+  .scrolldownwrap{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    right:0;
+  }
+  .special{
+    margin-top:0px;
+    padding-top:0px;
+  }
+  .vivid{
+    margin-top: 200px;
+  }
+  .Facts .facts-item {
+    border: 3px solid #FFFFFF;
+  }
+
+  .earth {
+    width: 300px;
+  }
+  .coding{
+    width: 300px;
+  }
+  /* error page */
+  .error-container{
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 50px;
+  }
+  .content404 h2{
+    font-size: 45px;
+    color: #FFFFFF;
+  }
+  .content404 p{
+    margin: 20px 0px 0px 0px;
+    font-size: 18px;
+    color: #666;
+  }
+  .content404 .p{
+    margin: 0px 0px 80px 0px !important;
+  }
+
+}
+/* 1310 px */
 @media(max-width:1310px){
     header{
         -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
@@ -24,13 +93,11 @@ Table of contents
         display: block;
     }
     nav .res-nav-container{
-      /* display: none; */
       position: fixed;
       width: 100%;
       height: 100vh;
       height: 100dvh;
       padding: 0px;
-      /* margin: 56px 0px 0px; */
       background: #0d0f10;
       transition: transform 0.7s ease-in-out 0s;
       transform: translateY(0px);
@@ -141,9 +208,6 @@ Table of contents
     .s1-wrap{
         padding:0px 30px;
     }
-    .text_box{
-        /* line-height:90px; */
-    }
     .cursor {
         animation: blink 0.5s infinite;
         font-size: 80px;
@@ -158,193 +222,39 @@ Table of contents
     @media (hover: hover) and (pointer: fine) {
       .nav > .dropdown:hover .depth_1 {display:none;}
     }
-    #section-footer h2{
-        color:aliceblue;
-        font-size:27px!important;
-        font-weight:700;
+    @media (hover: hover) and (pointer: fine) {
+      header nav .nav li:hover .menu_name{
+        text-underline-offset: 10px!important;
       }
-      #section-footer h3{
-        color:aliceblue;
-        font-size: 16px;
-        font-weight: 400;
-      }
-      #section-footer p{
-        color:#666!important;
-        font-size: 13px;
-      }
-      .footer-nav .footer-category>li{
-        padding-left: 30px;
-        /* padding-top : 8px; */
-        padding-right: 8px;
-        color:#666!important;
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: 0.075em;
-        line-height: 1.8;
-        float:right;
-      }
-      #section-footer{ 
-        padding: 50px 40px 5px 40px;
-      }
-      .Words-line{
-        position:static!important;
-      }
-      .Words p{
-        font-size: 55px!important;
-      }
-      /* .wordbanner {
-        padding-left: 0px;
-        padding-top: 120px;
-        display: flex;
-      } */
-      .blog-slider__title{
-        font-size: 20px;
-      }
-      .bg-3{
-        text-align: center!important;
-      }
-      @media (hover: hover) and (pointer: fine) {
-        header nav .nav li:hover .menu_name{
-          text-underline-offset: 10px!important;
-        }
-      }
-      .indexes {
-        font-size: 20px;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        
-        & li {
-          padding: 1.75rem 2rem;
-          border: 3px solid transparent;
-          cursor: pointer;
-          display: inline-block;
-        }
-      }
-      #footer-text .footer-nav{
-          display: none!important;
-      }
-      .grid{
-        display: none;
-      }
+    }
+    .indexes {
+      font-size: 20px;
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
       
-      .wordbanner img{
-        display: none;
+      & li {
+        padding: 1.75rem 2rem;
+        border: 3px solid transparent;
+        cursor: pointer;
+        display: inline-block;
       }
+    }
+    .grid{
+      display: none;
+    }
+    
+    .wordbanner img{
+      display: none;
+    }
 
-      .Facts {
-        margin-top: 300px;
-        padding-top: 200px;
-      }
+    .Facts {
+      margin-top: 300px;
+      padding-top: 200px;
+    }
       
 }
-
-@media (max-width:1400px) {
-  .main-container{
-    max-width: 1400px;
-  }
-  .main {
-        letter-spacing: 0.075em!important;
-        line-height: 1.8!important;
-        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
-        
-        & section {
-          display: block;
-          gap: 70px;
-          justify-content: center;
-          margin-top:0px!important;
-          margin-left: 0px;
-          margin-right:0px;
-          margin-bottom:0px;
-          min-height: 400px;
-        }
-      }
-  /* .mainbutton{
-    display: none;
-    width:200px;
-    margin-left: 15px;
-    top:40%;
-  } */
-  /* .mainrecruit{
-    font-size: 6vw;
-  }
-  .mainbutton img{
-    width:43px !important;
-    padding-bottom:8px;
-  } */
-  /* .text_box{
-    top:37%;
-    margin-left:40px;
-    font-size: 7.4285714286vw;
-    line-height: 80px;
-  } */
-  .cursor{
-    font-size: 7.4285714286vw;
-  }
-  /* .mainbanner{
-    display: none;
-  } */
-  /* #section{
-    height:50vh;
-  } */
-  .scrolldownwrap{
-    position:absolute;
-    bottom:20px;
-    left:0;
-    right:0;
-  }
-  /* .res-ment{
-    display: block;
-    position:absolute;
-    font-size: 25px;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
-    color:#666;
-    top:56%;
-    margin-left: 40px;
-    max-width:800px;
-    text-align: left;
-  } */
-  /* .Facts{
-    margin-top:0px;
-  } */
-  .special{
-    margin-top:0px;
-    padding-top:0px;
-  }
-  .vivid{
-    margin-top: 200px;
-  }
-  .Facts .facts-item {
-    border: 3px solid #FFFFFF;
-  }
-
-  .earth {
-    width: 300px;
-  }
-  .coding{
-    width: 300px;
-  }
-  /* error page */
-  .error-container{
-    align-content: center;
-    text-align: center;
-    height: 100vh;
-    padding: 50px;
-  }
-  .content404 h2{
-    font-size: 45px;
-    color: #FFFFFF;
-  }
-  .content404 p{
-    margin: 20px 0px 0px 0px;
-    font-size: 18px;
-    color: #666;
-  }
-  .content404 .p{
-    margin: 0px 0px 80px 0px !important;
-  }
-
-}
+/* 1180 px */
 @media(max-width:1180px) {
   .tab-items{
     margin-right: 0px;
@@ -361,6 +271,7 @@ Table of contents
     max-width: 700px;
   }
 }
+/* 980 px */
 @media(max-width:980px) {
   .partner-grid{
     grid-auto-flow: row;
@@ -370,9 +281,9 @@ Table of contents
     margin-bottom: 50px;
   }
 }
+/* 912 px */
 @media (max-width:912px) {
   .Facts .title{
-    /* margin-top:0px; */
     margin:180px 0px 100px 0px!important;
   }
   .text_box{
@@ -383,7 +294,7 @@ Table of contents
     top: 27%;
   }
   .res-ment{
-    display: block; /* block */
+    display: block;
     position:absolute;
     font-size: 20px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
@@ -469,7 +380,6 @@ Table of contents
   }
   #section {
     height: 70vh;
-    /* border-bottom: 3px solid; */
   }
   .mainbanner{
     display: none;
@@ -483,7 +393,7 @@ Table of contents
     width: 460px;
   }
   .res-ment{
-    display: block; /* block */
+    display: block;
     position:absolute;
     font-size: 20px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
@@ -593,9 +503,6 @@ Table of contents
     font-size: 18px;
   }
   .partner{
-    /* width:300px;
-    align-content: center; */
-  
     position: relative;
     display: inline-block;
     width: 200px;
@@ -611,7 +518,7 @@ Table of contents
     margin-top: 0;
   }
 }
-
+/* 430 px */
 @media(max-width:430px){
   .text_box{
     width:310px;
@@ -623,9 +530,6 @@ Table of contents
     padding:2rem!important;
   }
   .partner{
-    /* width:300px;
-    align-content: center; */
-  
     position: relative;
     display: inline-block;
     width: 150px;
@@ -637,6 +541,7 @@ Table of contents
     font-size: 15px;
   }
 }
+/* 320 px */
 @media (max-width:320px) {
   .res-ment {
     width: 270px;
@@ -647,7 +552,7 @@ Table of contents
 }
 /* 
 ---------------------------------------------
-02. max-height
+02. max-height(ASC)
 --------------------------------------------- 
 */
 @media (max-height:800px) {

@@ -39,9 +39,10 @@ Footer
     transition: .5s;
     font-size: 15px !important;
 }
-
-.footer .page-link a:hover {
-    letter-spacing: 2px;
+@media (hover:hover) and (pointer:fine){
+    .footer .page-link a:hover {
+        letter-spacing: 2px;
+    }
 }
 
 .footer .footer-res-nav {
