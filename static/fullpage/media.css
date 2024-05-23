@@ -1,5 +1,16 @@
 @charset "utf-8";
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. max-width
+02. max-height
+--------------------------------------------- */
 
+/* 
+---------------------------------------------
+01. max-width
+--------------------------------------------- 
+*/
 @media(max-width:1310px){
     header{
         -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
@@ -220,7 +231,7 @@
       
 }
 
-@media(max-width:1400px){
+@media(hover:hover) and (max-width:1400px) and (pointer:fine) {
   .main-container{
     max-width: 1400px;
   }
@@ -393,6 +404,7 @@
       margin-top:70px!important;
       margin-left: 0px;
       margin-bottom:0px;
+      margin-right:0px;
       min-height: 400px;
     }
   }
@@ -625,7 +637,11 @@
     width: 270px;
   }
 }
-
+/* 
+---------------------------------------------
+02. max-height
+--------------------------------------------- 
+*/
 @media (max-height:800px) {
   .res-ment{
     top:43%!important;

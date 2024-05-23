@@ -1,4 +1,14 @@
-/* font */
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. header
+02. main banner
+03. special activities
+04. news
+05. partnership
+06. error page(404,500)
+--------------------------------------------- */
+
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
 body{
@@ -8,7 +18,21 @@ body{
 .container{
   min-height: calc(100vh - 378px);
 }
-/* header */
+/*---- scroll 시 위로 나타나는 애니메이션 ----*/
+.scroll_wrap{
+  overflow: hidden;
+}
+.scroll_on {font-size: 24px;font-weight:700;text-align: center;opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_bottom{
+  transform: translate(0, 50px);
+}
+
+/* 
+---------------------------------------------
+01. header
+--------------------------------------------- 
+*/
 header{
     position: fixed!important;
     left:0!important;
@@ -19,7 +43,6 @@ header{
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     text-align: center;
 }
-
 header nav{
     min-height: 60px;
     position: relative;
@@ -33,8 +56,6 @@ header nav{
     cursor: pointer;
 }
 header nav .logo{
-    /*border-right: 1px solid #27292a;
-    flex-basis: 15%;*/
     margin-right: 580px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -60,8 +81,6 @@ header nav .logo h2{
 }
 header nav .nav{
     display: inline-flex;
-    /* flex-basis: 70%; */
-    /* justify-content: flex-end; */
     vertical-align: middle;
     text-align: right;
     margin-top: 0px;
@@ -71,7 +90,6 @@ header nav .nav{
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     position: relative;
-    /* padding-left: 80px; */
     z-index: 999;
 }
 header nav .nav li{
@@ -97,19 +115,10 @@ header nav .nav li a{
     text-decoration-line: none;
     cursor: pointer;
 }
-
 .nav .active a{
   color:aliceblue;
   font-weight: 700!important;
 }
-
-/* menu dropdown */
-
-ul{list-style:none;}
-/* a{
-  text-decoration:none; 
-  color:#333;
-} */
 .nav:after{
   display:block; 
   content:''; 
@@ -127,25 +136,6 @@ ul{list-style:none;}
   height:45px; 
   line-height:46.4px;
 }
-/* nav design ver_1*/
-/* .nav .depth_1{
-  display:none; 
-  position:absolute; 
-  left: calc(50% - 80px);
-  background:#0d0f1080;
-  backdrop-filter: blur( 10px );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  border: 1px solid #FFFFFF;
-  -webkit-box-shadow: 0px 3px 15px  -1px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
-  box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2); 
-  text-align:center;
-  width: 160px;
-  z-index: 4; 
-  margin-top: 17px;
-} */
-
-/* nav design ver_2 */
 .nav .depth_1{
   display:none; 
   position:fixed; 
@@ -163,21 +153,16 @@ ul{list-style:none;}
   margin-top: 17px;
   align-content: center;
 }
-
 .nav .depth_1 a{
   display:block; 
   padding:12px 16px; 
   font-weight: 500;
   font-size: 15px;
-  /* color:#fff; nav design ver_1 */
   color:black;
 }
-
 .nav .depth_1 a:hover{
-  /* letter-spacing: 0.125em; */
   font-weight: 600;
 }
-
 header nav .nav .nav-item a:hover,
 header nav .nav .nav-item a.active {
     color: #fff !important;
@@ -192,25 +177,21 @@ header nav .nav .nav-item a {
   background-color: transparent;
   color: #666;
   background-color: #1f2122!important;
-  /*padding: 8px 10px 8px 20px;*/ 
   border-radius: 23px;
   letter-spacing: .3px;
 }
-
 header nav .nav .nav-item a img {
     max-width: 30px;
     border-radius: 50%;
     margin-left: 5px;
   }
-
 .mainlogo{
     position:absolute;
     vertical-align: middle;
     width: 200px;
 }
 
-/* resposive nav*/
-
+/* resposive nav */
 nav .res-nav{
     position: absolute;
     top:8px;
@@ -225,199 +206,7 @@ nav .res-nav .burger-wrap .burger{
 nav .res-nav-container{
   display: none;
 }
-/* top button */
-
-/* top button*/
-/*scroll down arrow*/
-.scrolldown{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:100px;
-}
-.scroll-downs {
-  position: absolute;
-  left:0;
-  right:0;
-  bottom:30px;
-  margin: auto;
-  
-  width :34px;
-  height: 55px;
-}
-.scrolldownwrap{
-  position:relative;
-  bottom:-220px;
-}
-.down{
-  /*left: 50%;*/
-  transform: translateY(0%) rotate(45deg);
-  
-                opacity: 0;
-}
-@keyframes scrolldown {
-            0%{
-                transform: translateY(20%) rotate(45deg);
-                opacity: 0.7;
-            }
-            50%{
-                transform: translateY(0%) rotate(45deg);
-                opacity: 0.2;
-            }
-            100%{
-                transform: translateY(20%) rotate(45deg);
-                opacity: 0.7;
-            }
-        }
-/* section */
-#section{
-    color: aliceblue;
-    text-align: center;
-    margin:auto;
-}
-.mainbanner{
-    position:relative;
-    margin:auto;
-    max-width: 700px;
-    width: 100%;
-    padding-right:440px;
-}
-.mainbanner p{
-    text-align: left!important;
-}
-.mainbanner h1{
-    font-size: 100px;
-    font-weight: 200;
-    text-align: left!important;
-}
-.res-ment{
-  display: none;
-}
-.green{
-    /* background-image: linear-gradient(to right top, #0d0f10,  #5ee773);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
-    color:#5ee775;
-}
-.text_box{
-    position:absolute;
-    font-size: 90px;
-    text-align: left!important;
-    max-width: 1000px;
-    margin:auto;
-    width:100%;
-    margin-left:120px;
-    top:230px;
-    line-height:110px;
-}
-.text_box .text{
-  font-weight: 800;
-  font-family: "Source Sans 3", sans-serif;
-}
-.mainbutton{
-  position:absolute;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  margin-left:120px;
-  top:500px;
-}
-.mainbutton:hover{
-  filter:brightness(80%)!important;
-}
-.mainbutton img{
-  padding-left: 15px;
-  padding-bottom:15px;
-}
-.mainrecruit{
-  color: #FFFFFF;
-  font-size: 36px;
-  font-weight: 600;
-}
-.mainrecruit:hover{
-  color:#FFFFFF;
-  filter:brightness(100%)!important;
-}
-.cursor {
-    animation: blink 0.5s infinite;
-    font-size: 90px;
-    font-weight: 400;
-  }
-  
-  @keyframes blink {
-    to {
-      opacity: 0;
-    }
-  }
-#section .subtitle{
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 130%;
-    letter-spacing: -0.01em;
-    margin-bottom: 72px;
-    margin-top: 72px;
-    text-align: center;
-    color: aliceblue;
-}
-
-#section #qcontent {
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-    background-color: #27292a;
-    padding: 20px 50px 20px 50px;
-    text-align: left;
-    min-width: 1000px;
-    border-radius: 23px 23px;
-    cursor: pointer;
-}
-#section #qcontent .down{
-    float: right;
-}
-
-#section #a1, #section #a2, #section #a3, #section #a4{
-    margin-left: 300px;
-    margin-right: 300px;
-    background-color:aliceblue;
-    color:#27292a;
-    padding: 20px 50px 20px 50px;
-    text-align: left;
-    min-width: 1000px;
-    border-radius: 23px 23px;
-}
-
-.bg-3 {
-    color: #fff;
-    position:relative;
-    margin:auto;
-    width: 100%;
-    text-align: left!important;
-}
-
-.bg-3 .button {
-    min-width: 150px;
-    max-width: 250px;
-    margin: 0px 900px 50px 47px;
-    padding: 1em 2em;
-    background: none;
-    color: inherit;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1;
-    -webkit-backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    border-color: #fff;
-  }
-
-.bg-3 .button:focus {
-    outline: none;
-  }
-.button--size-s {
-    font-size: 14px;
-  }
-
-
-/* habmurger */
+/* hamburger */
 svg {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -469,6 +258,88 @@ path:nth-child(6) {
 }
 /*hamburger*/
 
+
+
+/* 
+---------------------------------------------
+02. main banner
+--------------------------------------------- 
+*/
+#section{
+    color: aliceblue;
+    text-align: center;
+    margin:auto;
+}
+.mainbanner{
+    position:relative;
+    margin:auto;
+    max-width: 700px;
+    width: 100%;
+    padding-right:440px;
+}
+.mainbanner p{
+    text-align: left!important;
+}
+.mainbanner h1{
+    font-size: 100px;
+    font-weight: 200;
+    text-align: left!important;
+}
+.res-ment{
+  display: none;
+}
+.green{
+    color:#5ee775;
+}
+.text_box{
+    position:absolute;
+    font-size: 90px;
+    text-align: left!important;
+    max-width: 1000px;
+    margin:auto;
+    width:100%;
+    margin-left:120px;
+    top:230px;
+    line-height:110px;
+}
+.text_box .text{
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
+}
+.mainbutton{
+  position:absolute;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  margin-left:120px;
+  top:500px;
+}
+.mainbutton:hover{
+  filter:brightness(80%)!important;
+}
+.mainbutton img{
+  padding-left: 15px;
+  padding-bottom:15px;
+}
+.mainrecruit{
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 600;
+}
+.mainrecruit:hover{
+  color:#FFFFFF;
+  filter:brightness(100%)!important;
+}
+.cursor {
+    animation: blink 0.5s infinite;
+    font-size: 90px;
+    font-weight: 400;
+}
+  
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
 /*word banner*/
 .wordbanner {
   padding-left: 330px;
@@ -483,89 +354,32 @@ path:nth-child(6) {
   overflow: visible;
 }
 
-/*
-** Apply styles to the parent element
+/* 
+---------------------------------------------
+03. special activities
+--------------------------------------------- 
 */
-.Words {
-  margin: 0 auto;
-  padding: 80px 0;
-  font-size: 68px;
+.special {
+  color: var(--fg);
+  font-size: 1.3em!important;
+  /* margin-bottom: 200px; */
+  padding-top: 100px;
+}
+
+.special .heading-section {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.special .heading-section h1 {
+  font-family: "Source Sans 3", sans-serif; 
+  color: #FFFFFF;
+  display: block;
   font-weight: 900;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  transform: translate3d(0, 0, 0);
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-kerning: normal;
-  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.075em;
+  line-height: 1.3;
+  font-size:40px;
 }
-
-/*
-** Apply common styles to each line of text
-*/
-.Words-line {
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-.Words-line:nth-child(odd) {
-  transform: skew(60deg, -30deg) scaleY(0.66667);
-}
-.Words-line:nth-child(even) {
-  transform: skew(0deg, -30deg) scaleY(1.33333);
-}
-.Words-line:nth-child(1) {
-  left: 29px;
-}
-.Words-line:nth-child(2) {
-  left: 58px;
-}
-.Words-line:nth-child(3) {
-  left: 87px;
-}
-.Words-line:nth-child(4) {
-  left: 116px;
-}
-.Words-line:nth-child(5) {
-  left: 145px;
-}
-.Words-line:nth-child(6) {
-  left: 174px;
-}
-.Words-line:nth-child(7) {
-  left: 203px;
-}
-#wordcolor1 p {
-  /*color: aliceblue !important;*/
-}
-#wordcolor2 p {
-  /*color: #5ee773 !important;*/
-}
-/*
-** Fine-grained text styles
-*/
-.Words p {
-  height: 50px;
-  line-height: 45px;
-  padding: 0 10px;
-  transition: all 0.4s ease-in-out;
-  transform: translate3d(0, 0, 0);
-  vertical-align: top;
-  white-space: nowrap;
-  font-size:68px;
-  letter-spacing: -0.05rem;
-  color:#1e2225!important;
-}
-
-/*
-** The hover interaction
-*/
-.Words:hover p {
-  transform: translate3d(0, -50px, 0);
-}
-/*wordbanner*/
-
-
-/* test */
 .main {
   letter-spacing: 0.075em!important;
   line-height: 1.8!important;
@@ -579,20 +393,10 @@ path:nth-child(6) {
     margin-top:50px!important;
   }
 }
-.indexes, .tabs { list-style-type: none; }
-  
-.indexes {
-  font-size: 25px;
-  color: aliceblue;
-  
-  & li {
-    padding: 1.75rem 2rem;
-    border: 3px solid transparent;
-    cursor: pointer;
-  }
+.tabs { 
+  list-style-type: none; 
+  position: relative;
 }
-
-.tabs { position: relative; }
 
 .tab {
   margin: 75px 0;
@@ -631,7 +435,6 @@ path:nth-child(6) {
   padding-left:50px;
   padding-right:70px;
   margin-top:30px;
-  /* transform: translateY(-50%); */
 
   & h3 {
     font-weight: 600!important;
@@ -704,19 +507,7 @@ path:nth-child(6) {
   }
 }
 
-/* scroll 시 나타나는 애니메이션 */
-.scroll_wrap{
-  overflow: hidden;
-}
-.scroll_on {font-size: 24px;font-weight:700;text-align: center;opacity: 0;transition: all 1s;}
-.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
-.scroll_on.type_bottom{
-  transform: translate(0, 50px);
-}
-
-
 /* earth networking start */
-/* CSS 코드 */
 /* Page Setup */
 .earth {
   width: 350px;
@@ -745,10 +536,7 @@ circle {
   }
 }
 
-
-
 /* earth networking end */
-
 /* flag svg start */
 .flexible {
   display: flex;
@@ -797,59 +585,173 @@ circle {
 }
 /* coding end */
 
-/* error page */
-.error-container{
-  align-content: center;
-  text-align: center;
-  height: 100vh;
-  padding: 50px;
-}
-.content404 h2{
-  font-size: 45px;
+/* 
+---------------------------------------------
+04. news
+--------------------------------------------- 
+*/
+.vivid{ 
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   color: #FFFFFF;
+  display: block;
+  text-align: center;
+  margin-top: 200px;
 }
-.content404 p{
-  margin: 20px 0px 0px 0px;
-  font-size: 20px;
-  color: #666;
+.scroll-container{
+  position:relative;
+  display:flex;
+  align-content: center;
+  margin: 80px auto;
+  width: 100%;
+  height:300px;
+  overflow: hidden;
 }
-.content404 .p{
-  margin: 0px 0px 80px 0px !important;
+
+.carousel-primary{
+  position:absolute;
+  display: flex;
+  gap: 0 60px;
+  width: max-content;
+  animation: scroll-horizontal 25s linear infinite;
+  padding-right:60px;
 }
-.content404 .res-p{
-  display: none!important;
+.carousel-secondary{
+  animation: scroll-horizontal-2 25s linear infinite;
+  /* margin-left:60px; */
 }
-.content404 .midment{
-  margin: 0px !important;
+.carousel-primary:hover, .carousel-primary:hover~.carousel-secondary{
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
-/* partnership */
+.carousel-secondary:hover{
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.scroll-container:hover>.carousel-primary:not(:hover){
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-horizontal-2 {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.vividtitle h1{
+  font-family: "Source Sans 3", sans-serif!important;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 1.3;
+  font-size:40px!important;
+}
+#news-line .news-box{
+  display: inline;
+  width: 250px;
+  height:250px;
+  padding: 0px;
+  background-color: black;
+  filter:brightness(1);
+  text-align: center;
+}
+#news-line .news-box:hover img{
+  filter:brightness(0.3);
+}
+#news-line .news-box .caption{
+  position:absolute;
+  top: 50%;
+  left: 60px;
+  right:0;
+  opacity: 0;
+  z-index: 1;
+  text-align: center;
+  transition: 0.5s;
+}
+#news-line .news-box .caption h2{
+  color: #FFFFFF;
+  font-size: 18px!important;
+  letter-spacing: 0.125em;
+  font-weight: 500;
+  line-height: 1.8;
+}
+#news-line .news-box:hover .caption{
+  opacity: 1;
+  filter:brightness(1);
+}
+#news-line .news-box img{
+  width:300px!important;
+  height:300px!important;
+}
+#news-line .news-box p{
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-align: left;
+  letter-spacing: 0.075em;
+  line-height: 1.8;
+  font-size: 15px!important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.special-button{
+  margin: 0 auto;
+  margin-top: 30px;
+  color:#FFFFFF;
+  border: solid 3px #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 0.2em!important;
+  line-height: 1.8;
+  font-size: 15px!important;
+  font-weight: 700;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
+}
+.special-button:hover{
+  background-color: rgba(255, 255, 255, 0.075);
+  color:#FFFFFF;
+}
+.sp-p{
+  padding: 0px 70px;
+  font-size: 18px;
+}
+/* 
+---------------------------------------------
+05. partnership
+--------------------------------------------- 
+*/
 .partnership{
   margin:50px 0px 300px 0px;
-  /* text-align: center; */
-
   position: relative;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
 }
 .partner-grid{
-  /* display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  filter: grayscale(0.5);
-  gap:0px 30px;
-  margin-bottom: 50px; */
   text-align: center;
   margin-bottom: 50px;
 }
 .partner{
-  /* width:300px;
-  align-content: center; */
-
   position: relative;
   display: inline-block;
   width: 260px;
@@ -862,8 +764,6 @@ circle {
 }
 
 .partner-logo{
-  /* height:150px;
-  align-content: center; */
   box-sizing: border-box;
     display: block;
     overflow: hidden;
@@ -881,9 +781,6 @@ circle {
     right: 0;
 }
 .partner-logo img{
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
   position: absolute;
     inset: 0px;
     box-sizing: border-box;
@@ -908,7 +805,6 @@ circle {
   margin: 20px 40px;
   padding-bottom: 10px;
   font-weight: 500;
-  /* border-bottom: 5px solid #FFFFFF; */
 }
 .hspace{
   width:250px;
@@ -920,3 +816,33 @@ circle {
   width:250px;
 }
 /* partnership end */
+
+/* 
+---------------------------------------------
+06. error page(404, 500)
+--------------------------------------------- 
+*/
+.error-container{
+  align-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 50px;
+}
+.content404 h2{
+  font-size: 45px;
+  color: #FFFFFF;
+}
+.content404 p{
+  margin: 20px 0px 0px 0px;
+  font-size: 20px;
+  color: #666;
+}
+.content404 .p{
+  margin: 0px 0px 80px 0px !important;
+}
+.content404 .res-p{
+  display: none!important;
+}
+.content404 .midment{
+  margin: 0px !important;
+}
