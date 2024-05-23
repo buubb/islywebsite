@@ -214,3 +214,26 @@ Responsive Style
         display: none;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 375px) {
+    .VltMore .card__title {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .VltMore .card__category {
+        font-size: 11px;
+    }
+
+    .VltMore .card__like {
+        font-size: 10px;
+    }
+}
