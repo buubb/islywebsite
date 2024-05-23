@@ -27,3 +27,12 @@ $(function(){
         }
     });
 });
+
+//footer
+let nowUrl = "official.i.sly0@gmail.com";
+
+function copyUrl(){ 
+  	navigator.clipboard.writeText(nowUrl).then(res=>{
+	  alert("Mail Address copied!");
+	})
+}

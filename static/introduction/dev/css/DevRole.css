@@ -307,3 +307,77 @@ Responsive Style
 @media (max-width: 575.98px) {
 
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 370px) {
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 350px) {
+    /* name */
+    .DevRole .info h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    /* name */
+    .DevRole .info h2 {
+        font-size: 1.45rem;
+    }
+
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 330px) {
+    /* name */
+    .DevRole .info h2 {
+        font-size: 1.4rem;
+    }
+
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 320px) {
+    /* name */
+    .DevRole .info h2 {
+        font-size: 1.3rem;
+    }
+
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 310px) {
+    /* name */
+    .DevRole .info h2 {
+        font-size: 1.2rem;
+    }
+
+    /* role */
+    .DevRole .down-content .role,
+    .DevRole .down-content .dot {
+        font-size: 0.55rem;
+    }
+}

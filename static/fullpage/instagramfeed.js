@@ -16,7 +16,7 @@ $(document).ready(function(){
                         success: function(response) {
                             // console.log(response);
                             if (response.data != undefined && response.data.length > 0) {
-                                for (i = 0; i < 20; i++) {
+                                for (i = 0; i < 12; i++) {
                                     if (response.data[i]) {
                                         var item = response.data[i];
                                         var image_url = "";
@@ -84,7 +84,7 @@ $(document).ready(function(){
                 console.log("Instagram 토큰 갱신에 실패했습니다.");
             }
         });
-    }, 60 * 24 * 60 * 60 * 1000); // 60일마다 실행
+    }, 50 * 24 * 60 * 60 * 1000); // 50일마다 실행
 });
 
 function show_fallback(el) {

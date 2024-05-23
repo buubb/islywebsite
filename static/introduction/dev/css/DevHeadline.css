@@ -8,8 +8,16 @@ DevHeadline
     font-family: "Source Sans 3", sans-serif;
     font-weight: 900;
     letter-spacing: 0.055em;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     text-align: center;
+}
+
+.DevHeadline .headline_1 {
+    margin-bottom: 100px;
+}
+
+.DevHeadline .headline_2 {
+    display: none;
 }
 
 
@@ -31,17 +39,37 @@ Responsive Style
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    .DevHeadline .headline_1 {
+        margin-bottom: 80px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .DevHeadline h1 {
-        margin-top: 50px;
+    .DevHeadline .headline_1 {
+        margin-bottom: 70px;
     }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 450px) {
+    .DevHeadline .headline_1 {
+        display: none;
+    }
+
+    .DevHeadline .headline_2 {
+        display: block;
+    }
 }
