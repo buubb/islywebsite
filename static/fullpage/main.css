@@ -18,6 +18,11 @@ body{
 .container{
   min-height: calc(100vh - 378px);
 }
+@media (hover:none) and (pointer:coarse){
+  a:hover{
+    color:#fff;
+  }
+}
 /*---- scroll 시 위로 나타나는 애니메이션 ----*/
 .scroll_wrap{
   overflow: hidden;
@@ -39,7 +44,6 @@ header{
     right:0!important;
     top:0!important; 
     z-index: 100!important;
-    /* font-family: "Sen","Noto Sans KR",sans-serif!important; */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     text-align: center;
 }
@@ -160,18 +164,20 @@ header nav .nav li a{
   font-size: 15px;
   color:black;
 }
-.nav .depth_1 a:hover{
-  font-weight: 600;
-}
-header nav .nav .nav-item a:hover,
-header nav .nav .nav-item a.active {
-    color: #fff !important;
-    background-color: #5ee775 !important;
-}
-header nav .nav li:hover .menu_name{
-    color:aliceblue;
-    text-decoration: underline 3px aliceblue!important;
-    text-underline-offset: 30px!important;
+@media (hover:hover) and (pointer:fine) {
+  .nav .depth_1 a:hover{
+    font-weight: 600;
+  }
+  header nav .nav .nav-item a:hover,
+  header nav .nav .nav-item a.active {
+      color: #fff !important;
+      background-color: #5ee775 !important;
+  }
+  header nav .nav li:hover .menu_name{
+      color:aliceblue;
+      text-decoration: underline 3px aliceblue!important;
+      text-underline-offset: 30px!important;
+  }
 }
 header nav .nav .nav-item a {
   background-color: transparent;
@@ -312,8 +318,10 @@ path:nth-child(6) {
   margin-left:120px;
   top:500px;
 }
-.mainbutton:hover{
-  filter:brightness(80%)!important;
+@media (hover: hover) and (pointer: fine) {
+  .mainbutton:hover{
+    filter:brightness(80%)!important;
+  }
 }
 .mainbutton img{
   padding-left: 15px;
@@ -324,9 +332,11 @@ path:nth-child(6) {
   font-size: 36px;
   font-weight: 600;
 }
-.mainrecruit:hover{
-  color:#FFFFFF;
-  filter:brightness(100%)!important;
+@media (hover: hover) and (pointer: fine) {
+  .mainrecruit:hover{
+    color:#FFFFFF;
+    filter:brightness(100%)!important;
+  }
 }
 .cursor {
     animation: blink 0.5s infinite;
@@ -491,13 +501,10 @@ path:nth-child(6) {
     inset: 0;
     background-color: var(--overlay);
     mix-blend-mode: multiply;
-    /* width:500px; */
   }
 
   & img {
     position: absolute;
-    /* top: 0px;
-    left: 0px; */
     width: 600px;
     height: 300px;
     object-fit: cover;
@@ -619,23 +626,25 @@ circle {
   animation: scroll-horizontal-2 25s linear infinite;
   /* margin-left:60px; */
 }
-.carousel-primary:hover, .carousel-primary:hover~.carousel-secondary{
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-.carousel-secondary:hover{
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-.scroll-container:hover>.carousel-primary:not(:hover){
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
+@media (hover: hover) and (pointer: fine) {
+  .carousel-primary:hover, .carousel-primary:hover~.carousel-secondary{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  .carousel-secondary:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  .scroll-container:hover>.carousel-primary:not(:hover){
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
 }
 @keyframes scroll-horizontal {
   0% {
@@ -670,8 +679,10 @@ circle {
   filter:brightness(1);
   text-align: center;
 }
-#news-line .news-box:hover img{
-  filter:brightness(0.3);
+@media (hover: hover) and (pointer: fine) {
+  #news-line .news-box:hover img{
+    filter:brightness(0.3);
+  }
 }
 #news-line .news-box .caption{
   position:absolute;
@@ -690,9 +701,11 @@ circle {
   font-weight: 500;
   line-height: 1.8;
 }
-#news-line .news-box:hover .caption{
-  opacity: 1;
-  filter:brightness(1);
+@media (hover: hover) and (pointer: fine) {
+  #news-line .news-box:hover .caption{
+    opacity: 1;
+    filter:brightness(1);
+  }
 }
 #news-line .news-box img{
   width:300px!important;
@@ -723,9 +736,11 @@ circle {
   font-weight: 700;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
 }
-.special-button:hover{
-  background-color: rgba(255, 255, 255, 0.075);
-  color:#FFFFFF;
+@media (hover: hover) and (pointer: fine) {
+  .special-button:hover{
+    background-color: rgba(255, 255, 255, 0.075);
+    color:#FFFFFF;
+  }
 }
 .sp-p{
   padding: 0px 70px;

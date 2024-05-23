@@ -75,10 +75,12 @@ Table of contents
       font-size: 17px;
       font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif!important;
     }
-    nav .res-nav-container .res-nav-item ul>li>a:hover{
-      letter-spacing: 0.125em!important;
-      color:#FFFFFF!important;
-      font-weight: 600!important;
+    @media (hover: hover) and (pointer: fine) {
+      nav .res-nav-container .res-nav-item ul>li>a:hover{
+        letter-spacing: 0.125em!important;
+        color:#FFFFFF!important;
+        font-weight: 600!important;
+      }
     }
     nav .res-nav-container .res-nav-item .depth_1{
       display: none;
@@ -125,11 +127,13 @@ Table of contents
         padding-left: 0;
         padding-right:0;
     }
-    header nav .nav li:hover .menu_name{
-      color:aliceblue;
-      font-weight: 700;
-      text-decoration: underline 0px aliceblue!important;
-      text-underline-offset: 0px!important;
+    @media (hover: hover) and (pointer: fine) {
+      header nav .nav li:hover .menu_name{
+        color:aliceblue;
+        font-weight: 700;
+        text-decoration: underline 0px aliceblue!important;
+        text-underline-offset: 0px!important;
+      }
     }
     .nav .depth_1{
       margin-top: 0px!important;
@@ -151,7 +155,9 @@ Table of contents
     .mainbanner p{
         text-align: center!important;
     }
-    .nav > .dropdown:hover .depth_1 {display:none;}
+    @media (hover: hover) and (pointer: fine) {
+      .nav > .dropdown:hover .depth_1 {display:none;}
+    }
     #section-footer h2{
         color:aliceblue;
         font-size:27px!important;
@@ -197,8 +203,10 @@ Table of contents
       .bg-3{
         text-align: center!important;
       }
-      header nav .nav li:hover .menu_name{
-        text-underline-offset: 10px!important;
+      @media (hover: hover) and (pointer: fine) {
+        header nav .nav li:hover .menu_name{
+          text-underline-offset: 10px!important;
+        }
       }
       .indexes {
         font-size: 20px;
@@ -231,7 +239,7 @@ Table of contents
       
 }
 
-@media(hover:hover) and (max-width:1400px) and (pointer:fine) {
+@media (max-width:1400px) {
   .main-container{
     max-width: 1400px;
   }
