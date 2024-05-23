@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d4509bb-2141-4f27-8e0c-5dce967f3b90" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/islywebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/islywebsite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716482942945</updated>
-      <workItem from="1716482944663" duration="966000" />
+      <workItem from="1716482944663" duration="1609000" />
     </task>
     <servers />
   </component>

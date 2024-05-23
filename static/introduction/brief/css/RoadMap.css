@@ -220,6 +220,22 @@ Dimensions
 ---------------------------------------------
 */
 
+@media (max-width: 500px) {
+    .RoadMap .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .RoadMap .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
 @media (max-width: 400px) {
     .RoadMap .week {
         font-size: 18px;

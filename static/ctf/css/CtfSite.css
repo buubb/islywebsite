@@ -206,3 +206,27 @@ Responsive style
 @media (max-width: 575.98px) {
 
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 500px) {
+    .ctf .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .ctf .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
