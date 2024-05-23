@@ -128,11 +128,13 @@ Owl-Nav
     border: 2px solid #FFFFFF;
 }
 
-.DevComment .owl-nav .owl-prev:hover:before,
-.DevComment .owl-nav .owl-next:hover:before {
-    color: #000000;
-    background-color: #FFFFFF;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .DevComment .owl-nav .owl-prev:hover:before,
+    .DevComment .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
 }
 
 

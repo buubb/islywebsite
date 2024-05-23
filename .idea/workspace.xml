@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5fa319e8-0173-4ac7-881d-c42a9e872cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/snake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/ctf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/RoadMap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/wargame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,27 +37,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "raon",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;raon&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\ctf\css" />
+      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\ctf\js" />
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\fullpage\Facts\js" />
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\css\copyright" />
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\css" />
-      <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,7 +104,9 @@
       <option name="presentableId" value="Default" />
       <updated>1716440647832</updated>
       <workItem from="1716440648522" duration="1844000" />
-      <workItem from="1716442590994" duration="7150000" />
+      <workItem from="1716442590994" duration="8005000" />
+      <workItem from="1716450674777" duration="12000" />
+      <workItem from="1716450694680" duration="363000" />
     </task>
     <servers />
   </component>

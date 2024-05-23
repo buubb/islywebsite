@@ -173,13 +173,14 @@ Owl-nav
     border: 2px solid #FFFFFF;
 }
 
-.RoadMap .owl-nav .owl-prev:hover:before,
-.RoadMap .owl-nav .owl-next:hover:before {
-    color: #000000;
-    background-color: #FFFFFF;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .RoadMap .owl-nav .owl-prev:hover:before,
+    .RoadMap .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
 }
-
 
 /*
 ---------------------------------------------
