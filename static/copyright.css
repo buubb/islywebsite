@@ -22,8 +22,10 @@ Copyright
     transition: .5s;
 }
 
-.copyright a:hover {
-    letter-spacing: 2px;
+@media (hover: hover) and (pointer: fine) {
+    .copyright a:hover {
+        letter-spacing: 2px;
+    }
 }
 
 
@@ -33,10 +35,6 @@ Dimensions
 ---------------------------------------------
 */
 
-@media (max-width: 390px) {
-
-}
-
 @media (max-width: 340px) {
     .copyright {
         font-size: 13px;
@@ -44,5 +42,25 @@ Dimensions
 
     .copyright a {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 330px) {
+    .copyright {
+        font-size: 12px;
+    }
+
+    .copyright a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 310px) {
+    .copyright {
+        font-size: 11px;
+    }
+
+    .copyright a {
+        font-size: 11px;
     }
 }

@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5fa319e8-0173-4ac7-881d-c42a9e872cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/css/SnakeGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/SnakeGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/css/SnakeScroll.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/SnakeScroll.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ctf/css/ctf.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/ctf.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CTF_Challenge/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CTF_Challenge/snake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/copyright.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716440647832</updated>
       <workItem from="1716440648522" duration="1844000" />
-      <workItem from="1716442590994" duration="3192000" />
+      <workItem from="1716442590994" duration="3897000" />
     </task>
     <servers />
   </component>
