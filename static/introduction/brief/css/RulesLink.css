@@ -89,3 +89,38 @@ Responsive Style
 @media (max-width: 575.98px) {
 
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .RulesLink .ruleslink-btn a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .RulesLink .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .RulesLink .title {
+        font-size: 1.45rem;
+    }
+
+    .RulesLink .ruleslink-btn a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .RulesLink .title {
+        font-size: 1.3rem;
+    }
+}
