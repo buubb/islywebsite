@@ -418,3 +418,38 @@ Dimensions :: label
         font-size: 0.7rem;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions :: img upload
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .VltPosting .image-caption {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .VltPosting .image-caption {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 350px) {
+    .VltPosting .image-caption {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 340px) {
+    .VltPosting #img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .VltPosting .image-caption {
+        font-size: 10px;
+    }
+}
