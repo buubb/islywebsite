@@ -257,3 +257,16 @@ Dimensions :: subtitle, p
         font-size: 11px;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions :: img
+---------------------------------------------
+*/
+
+@media (max-width: 450px) {
+    .About .img-border {
+        min-height: 300px;
+    }
+}
