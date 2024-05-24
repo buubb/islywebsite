@@ -107,7 +107,7 @@
                                                         <!-- like button -->
                                                         <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
                                                             {% csrf_token %}
-                                                            <button class="like-btn me-4" data-post-id="{{ post.id }}">
+                                                            <button class="like-btn me-3" data-post-id="{{ post.id }}">
                                                                 {% if user in post.like_users.all %}
                                                                     <i class="fa-solid fa-heart"></i>
                                                                 {% else %}

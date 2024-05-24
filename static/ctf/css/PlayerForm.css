@@ -298,6 +298,7 @@ Responsive Style
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .PlayerForm {
+        border-radius: 23px;
         padding: 35px 30px 40px;
     }
 
