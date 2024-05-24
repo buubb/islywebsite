@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c96d711a-6c84-4a2e-8bc0-b0acad32df6d" name="변경" comment="" />
+    <list default="true" id="c96d711a-6c84-4a2e-8bc0-b0acad32df6d" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/CtfSite.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/CtfSite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/Guidelines.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/Guidelines.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/PlayerForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/Stat.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/Stat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ctf/css/WRanking.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ctf/css/WRanking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevHeadline.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevHeadline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/rules/css/RulesFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeLink.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/Procedure.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/Procedure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitBanner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/RecruitFaq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/button/write_button.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/button/write_button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/comment/CommentForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltMore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/VltHeading.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/VltHeading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/feed/VltList.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/feed/VltList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/Guidelines.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/Guidelines.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
