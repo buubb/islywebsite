@@ -72,20 +72,15 @@ MIDDLEWARE = [
     # 'corsheaders.middleware.CorsMiddleware',
 ]
 
-# # 로그인 성공 시 자동으로 이동할 URL
-# # LOGIN_URL = '/login/'
-# 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
 AXES_LOCKOUT_URL = '/login/blocked/'
 
 AXES_FAILURE_LIMIT= 5
-# 다시 로그인하기 전에 30분
 AXES_COOLOFF_TIME= 0.5
 AXES_RESET_ON_SUCCESS = True
 
-
 AUTHENTICATION_BACKENDS = [
-   'axes.backends.AxesBackend', # Axes must be first
+   'axes.backends.AxesBackend',
    'django.contrib.auth.backends.ModelBackend',
 ]
 
