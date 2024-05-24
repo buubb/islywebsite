@@ -19,17 +19,16 @@
         <link rel="stylesheet" href="{% static 'assets/css/templatemo-cyborg-gaming.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
 
         <!-- Raon CSS Files -->
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltDetails.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltComment.css' %}">
         <link rel="stylesheet" href="{% static 'volunteer/css/detail/VltMore.css' %}">
-        <link rel="stylesheet" href="{% static 'copyright.css' %}">
+        <link rel="stylesheet" href="{% static 'volunteer/css/copyright/copyright.css' %}">
 
         <!-- Raon Splide Files -->
-        <link rel="stylesheet" href="{% static 'splide/splide.css' %}">
-        <script src="{% static 'splide/splide.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'volunteer/splide/splide.css' %}">
+        <script src="{% static 'volunteer/splide/splide.js' %}"></script>
 
         <!-- Raon Text Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +88,7 @@
                                                                 {% endfor %}
                                                             {% else %}
                                                                 <li class="splide__slide">
-                                                                    <img src="{% static '/volunteer/images/item_5.png' %}" alt="">
+                                                                    <img src="{% static '/volunteer/images/card-image.png' %}" alt="">
                                                                 </li>
                                                             {% endif %}
                                                         </ul>
@@ -108,7 +107,7 @@
                                                         <!-- like button -->
                                                         <form action="{% url 'Volunteer:post_like' post_id=post.id %}" method="POST">
                                                             {% csrf_token %}
-                                                            <button class="like-btn me-4" data-post-id="{{ post.id }}">
+                                                            <button class="like-btn me-3" data-post-id="{{ post.id }}">
                                                                 {% if user in post.like_users.all %}
                                                                     <i class="fa-solid fa-heart"></i>
                                                                 {% else %}
@@ -208,7 +207,7 @@
                                 <div class="col-lg-12">
                                     <div class="VltMore">
                                         <div class="text-center text-sm-start">
-                                            <h1 class="title mb-5">Other Projects</h1>
+                                            <h1 class="title mb-5">More Projects</h1>
                                         </div>
                                         <div class="owl-carousel vlt-carousel">
                                             {% for other_post in all_posts %}

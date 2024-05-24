@@ -137,3 +137,95 @@ Responsive Style
         font-size: 24px;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions :: padding
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .Curriculum .left-info,
+    .Curriculum .right-info {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Curriculum .left-info,
+    .Curriculum .right-info {
+        padding: 20px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: h4, p
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Curriculum .scheme .icon-box h4 {
+        font-size: 18px;
+    }
+
+    .Curriculum .scheme .icon-box p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Curriculum .scheme .icon-box p {
+        font-size: 13px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: h3
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Curriculum .scheme h3 {
+        font-size: 22px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: icon box
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Curriculum .scheme .icon-box {
+        margin-top: 40px;
+    }
+
+    .Curriculum .scheme .icon-box i {
+        margin-right: 25px;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Curriculum .scheme .icon-box i {
+        margin-right: 22px;
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Curriculum .scheme .icon-box i {
+        display: none;
+    }
+}

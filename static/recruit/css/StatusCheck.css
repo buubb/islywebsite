@@ -64,13 +64,12 @@ Custom Text
 /* feedback */
 .StatusCheck p {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color: #57f579; /* #FF0000 */
+    color: #57f579;
     display: block;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     line-height: 1.5;
-    /* margin-top: 1rem; */
     margin-left: 5px;
     text-transform: none;
 }
@@ -99,11 +98,9 @@ Input-field
     letter-spacing: 0.075em;
     border: 2px solid #FFFFFF;
     background-color: transparent;
-    /* transition: border-color 0.4s ease; */
 }
 
 .StatusCheck .input-field input:is(:focus, :valid) {
-    /* border-color: #57F579; */
     background-color: transparent;
     color: #FFFFFF;
     letter-spacing: 0.075em;
@@ -156,7 +153,7 @@ Placeholder
 
 .StatusCheck input[type="number"]::placeholder {
     font-family: "Poppins", "sans-serif";
-    color: #B2B2B2; /* C6C6C6 */
+    color: #B2B2B2;
 }
 
 
@@ -220,5 +217,150 @@ Responsive Style
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    /* format */
+    .StatusCheck h4 {
+        font-size: 14px;
+    }
 
+    .StatusCheck .input-field input {
+        font-size: 15px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: Button
+---------------------------------------------
+*/
+
+@media (max-width: 420px) {
+    .StatusCheck .next-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .StatusCheck .next-btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck .next-btn {
+        font-size: 0.7rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: title
+---------------------------------------------
+*/
+
+@media (max-width: 360px) {
+    .StatusCheck .title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck .title {
+        font-size: 22px;
+    }
+}
+
+/*
+---------------------------------------------
+Dimensions :: format
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .StatusCheck h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .StatusCheck h4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck h4 {
+        font-size: 11px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: feedback
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .StatusCheck p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .StatusCheck p {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck p {
+        font-size: 0.6rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: input
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .StatusCheck .input-field input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .StatusCheck .form-container .form {
+        padding: 20px;
+    }
+
+    .StatusCheck .input-field i {
+        font-size: 22px;
+    }
+
+    .StatusCheck .input-field input {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    .StatusCheck .input-field input {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck .input-field input {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 330px) {
+    .StatusCheck .input-field input {
+        font-size: 10px;
+    }
 }

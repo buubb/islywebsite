@@ -63,21 +63,8 @@ Dimensions
 ---------------------------------------------
 */
 
-@media (max-width: 400px) {
-    .SnakeScroll .props a {
-        font-size: 30px;
-    }
-}
-
-
-@media (max-width: 360px) {
-    .SnakeScroll .props a {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 350px) {
-    .SnakeScroll .props a {
-        font-size: 25px;
+@media (max-width: 490px) {
+    .SnakeScroll {
+        display: none;
     }
 }

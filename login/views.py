@@ -4,7 +4,6 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from .forms import CustomPasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
-from django.contrib.auth.decorators import login_required
 
 class Login(APIView):
 
@@ -29,7 +28,7 @@ class Login(APIView):
                 if next_url:
                     return redirect(next_url)
                 else:
-                    return redirect('mainpage:index')  # 로그인 성공 시 메인 페이지로 이동
+                    return redirect('mainpage:index')
             else:
                 return render(request, 'login/new3.html')
         else:
@@ -71,7 +70,6 @@ class CheckLogin(APIView):
         else:
             return render(request, 'login/check.html', {'form': form})
 
-# @login_required
 def password_edit_view(request):
     if request.method == 'GET':
         if request.user.is_authenticated:
@@ -91,5 +89,4 @@ def password_edit_view(request):
     return render(request, 'login/change_password.html', {'password_change_form':password_change_form})
 
 def blocked_view(request):
-
     return render(request, 'login/login_blocked.html')

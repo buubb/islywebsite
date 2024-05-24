@@ -173,13 +173,14 @@ Owl-nav
     border: 2px solid #FFFFFF;
 }
 
-.RoadMap .owl-nav .owl-prev:hover:before,
-.RoadMap .owl-nav .owl-next:hover:before {
-    color: #000000;
-    background-color: #FFFFFF;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .RoadMap .owl-nav .owl-prev:hover:before,
+    .RoadMap .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
 }
-
 
 /*
 ---------------------------------------------
@@ -210,4 +211,43 @@ Responsive Style
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 500px) {
+    .RoadMap .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .RoadMap .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+    .RoadMap .week {
+        font-size: 18px;
+    }
+
+    .RoadMap .hashtag {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .RoadMap .hashtag {
+        font-size: 13px;
+    }
 }

@@ -6,7 +6,6 @@ Basic
 
 .DevComment {
     margin-top: 160px;
-    /* padding: 10px 30px; */
 }
 
 
@@ -129,11 +128,13 @@ Owl-Nav
     border: 2px solid #FFFFFF;
 }
 
-.DevComment .owl-nav .owl-prev:hover:before,
-.DevComment .owl-nav .owl-next:hover:before {
-    color: #000000;
-    background-color: #FFFFFF;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .DevComment .owl-nav .owl-prev:hover:before,
+    .DevComment .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
 }
 
 
@@ -171,5 +172,28 @@ Responsive style
 @media (max-width: 575.98px) {
     .DevComment .item h5 {
         letter-spacing: 0.035em;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 500px) {
+    .DevComment .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .DevComment .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
     }
 }

@@ -53,12 +53,6 @@ FAQ-list
     list-style: none;
 }
 
-/*
-.RecruitFaq .faq .faq-list li + li {
-    margin-top: 20px;
-}
-*/
-
 .RecruitFaq .faq .faq-list li {
     padding: 25px 10px;
     background: transparent;

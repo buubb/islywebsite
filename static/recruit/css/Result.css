@@ -74,45 +74,47 @@ Button Hover
 ---------------------------------------------
 */
 
-.statusResult .link-fancy {
-    color: #0D0F10;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
+@media (hover: hover) and (pointer: fine) {
+    .statusResult .link-fancy {
+        color: #0D0F10;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
 
-.statusResult .link-fancy-light {
-    color: #FFFFFF;
-}
+    .statusResult .link-fancy-light {
+        color: #FFFFFF;
+    }
 
-.statusResult .link-fancy:hover {
-    color: #8a8a8e;
-}
+    .statusResult .link-fancy:hover {
+        color: #8a8a8e;
+    }
 
-.statusResult .link-fancy-light:hover {
-    color: #8a8a8e;
-}
+    .statusResult .link-fancy-light:hover {
+        color: #8a8a8e;
+    }
 
-.statusResult .link-fancy:before {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    transform-origin: left;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-image: linear-gradient(90deg, #0D0F10 0, #0D0F10 25%, transparent 0, transparent 50%, #0D0F10 0, #0D0F10 75%, transparent 0, transparent);
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-size: 400% 1px;
-    transition: background-position 0.8s ease-in-out;
-}
+    .statusResult .link-fancy:before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        transform-origin: left;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(90deg, #0D0F10 0, #0D0F10 25%, transparent 0, transparent 50%, #0D0F10 0, #0D0F10 75%, transparent 0, transparent);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 400% 1px;
+        transition: background-position 0.8s ease-in-out;
+    }
 
-.statusResult .link-fancy-light:before {
-    background-image: linear-gradient(90deg, #fff 0, #fff 25%, transparent 0, transparent 50%, #fff 0, #fff 75%, transparent 0, transparent);
-}
+    .statusResult .link-fancy-light:before {
+        background-image: linear-gradient(90deg, #fff 0, #fff 25%, transparent 0, transparent 50%, #fff 0, #fff 75%, transparent 0, transparent);
+    }
 
-.statusResult .link-fancy:hover:before {
-    background-position: 100%;
+    .statusResult .link-fancy:hover:before {
+        background-position: 100%;
+    }
 }

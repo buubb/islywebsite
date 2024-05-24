@@ -1,0 +1,51 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.Compatible {
+    display: none;
+}
+
+.Compatible h1 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: 0.075em;
+}
+
+.Compatible h6 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.055em;
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 490px) {
+    .Compatible {
+        display: block;
+    }
+}
+
+@media (max-width: 390px) {
+    .Compatible h6 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Compatible h6 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Compatible h6 {
+        font-size: 13px;
+    }
+}

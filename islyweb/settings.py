@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL= 'User.User'
  
-# Application definition
 # 기능(어플) 추가 시 아래에 이름을 추가해주세요. 하위 기능은 추가 XX
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -69,24 +68,19 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'login.middleware.CsrfFailureMiddleware',
     'axes.middleware.AxesMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',s
+    'islyweb.middleware.RedirectMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
 ]
 
-
-# # 로그인 성공 시 자동으로 이동할 URL
-# # LOGIN_URL = '/login/'
-# 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
 AXES_LOCKOUT_URL = '/login/blocked/'
 
 AXES_FAILURE_LIMIT= 5
-# 다시 로그인하기 전에 30분
 AXES_COOLOFF_TIME= 0.5
 AXES_RESET_ON_SUCCESS = True
 
-
 AUTHENTICATION_BACKENDS = [
-   'axes.backends.AxesBackend', # Axes must be first
+   'axes.backends.AxesBackend',
    'django.contrib.auth.backends.ModelBackend',
 ]
 

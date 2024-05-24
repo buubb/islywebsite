@@ -94,3 +94,42 @@ Button
     text-decoration: none;
     border: none;
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .VltComment h6 {
+        font-size: 16px;
+    }
+
+    .VltComment p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .VltComment p {
+       line-height: 1.8;
+    }
+}
+
+@media (max-width: 375px) {
+    .VltComment h6 {
+        font-size: 15px;
+    }
+
+    .VltComment small {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .VltComment h6 {
+        font-size: 14px;
+    }
+}

@@ -127,7 +127,6 @@ Owl-Nav
 .VltMore .owl-nav .owl-next {
     opacity: 1;
     transition: all .5s;
-    /* margin: 0 12px; */
 }
 
 .VltMore .owl-nav .owl-prev {
@@ -164,11 +163,13 @@ Owl-Nav
     border: 2px solid #FFFFFF;
 }
 
-.VltMore .owl-nav .owl-prev:hover:before,
-.VltMore .owl-nav .owl-next:hover:before {
-    color: #000000;
-    background-color: #FFFFFF;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .VltMore .owl-nav .owl-prev:hover:before,
+    .VltMore .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
 }
 
 
@@ -211,5 +212,28 @@ Responsive Style
     .VltMore .owl-nav .owl-prev:before,
     .VltMore .owl-nav .owl-next:before {
         display: none;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 375px) {
+    .VltMore .card__title {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .VltMore .card__category {
+        font-size: 11px;
+    }
+
+    .VltMore .card__like {
+        font-size: 10px;
     }
 }
