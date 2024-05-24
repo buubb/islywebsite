@@ -340,7 +340,20 @@ Responsive Style
 
 /*
 ---------------------------------------------
-Dimensions
+Dimensions :: padding
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .VltPosting {
+        padding: 35px 25px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: top
 ---------------------------------------------
 */
 
@@ -356,6 +369,52 @@ Dimensions
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+    /* Write */
+    .VltPosting .major {
+        font-size: 1.5rem;
+    }
 
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* Write */
+    .VltPosting .major {
+        font-size: 1.4rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 330px) {
+    /* Write */
+    .VltPosting .major {
+        font-size: 1.3rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 20px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: label
+---------------------------------------------
+*/
+
+@media (max-width: 330px) {
+    /* Choose Your Files */
+    .VltPosting .file-label {
+        font-size: 0.7rem;
+    }
 }
