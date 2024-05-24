@@ -69,7 +69,6 @@ MIDDLEWARE = [
     'login.middleware.CsrfFailureMiddleware',
     'axes.middleware.AxesMiddleware',
     'islyweb.middleware.RedirectMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
 ]
 
 LOGOUT_REDIRECT_URL = '/'
