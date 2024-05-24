@@ -7,7 +7,7 @@ class Post(models.Model):
     generation = models.PositiveIntegerField("동아리 기수", null=True)
     user = models.ForeignKey("User.User", verbose_name="작성자", on_delete=models.CASCADE)
     content = models.TextField("내용", blank=True)
-    created = models.DateTimeField("작성일시", auto_now_add=True, null=True)
+    created = models.DateTimeField("작성일시", auto_now=True, null=True)
 
     def __str__(self):
         return f"{self.user.username}의 Post(id: {self.id})"

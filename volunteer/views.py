@@ -106,6 +106,7 @@ def post_edit(request, post_id):
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
+            post.created = timezone.now()
             post.save()
 
             # 이미지 수정
