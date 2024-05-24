@@ -141,7 +141,28 @@ Responsive Style
 
 /*
 ---------------------------------------------
-Dimensions :: Font
+Dimensions :: padding
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .Curriculum .left-info,
+    .Curriculum .right-info {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Curriculum .left-info,
+    .Curriculum .right-info {
+        padding: 20px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: h4, p
 ---------------------------------------------
 */
 
@@ -164,6 +185,19 @@ Dimensions :: Font
 
 /*
 ---------------------------------------------
+Dimensions :: h3
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Curriculum .scheme h3 {
+        font-size: 22px;
+    }
+}
+
+
+/*
+---------------------------------------------
 Dimensions :: icon box
 ---------------------------------------------
 */
@@ -171,5 +205,27 @@ Dimensions :: icon box
 @media (max-width: 400px) {
     .Curriculum .scheme .icon-box {
         margin-top: 40px;
+    }
+
+    .Curriculum .scheme .icon-box i {
+        margin-right: 25px;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Curriculum .scheme .icon-box i {
+        margin-right: 22px;
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Curriculum .scheme .icon-box i {
+        display: none;
     }
 }
