@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ae987e4-936b-4581-b4be-e8417a837315" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2bb8bc4c-50e0-44d0-a7cb-f271cee7f0cb" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/introduction/brief/css/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/brief/css/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/notice/css/NoticeTask.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recruit/css/StatusCheck.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/volunteer/images/default-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/introduction/brief.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/introduction/brief.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recruit/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recruit/status.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,7 @@
   "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2gtXsMsuRDRrnfQpL5DgBJVhw7n" />
+  <component name="ProjectId" id="2gtzsNBT9gfS31XLnYsxijJr09s" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "raon",
+    "last_opened_file_path": "C:/Users/raon-/PycharmProjects/islywebsite/static/volunteer/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,7 +43,7 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\raon-\PycharmProjects\islywebsite\static\volunteer\images" />
     </key>
   </component>
@@ -85,12 +84,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="7ae987e4-936b-4581-b4be-e8417a837315" name="변경" comment="" />
-      <created>1716518054358</created>
+      <changelist id="2bb8bc4c-50e0-44d0-a7cb-f271cee7f0cb" name="변경" comment="" />
+      <created>1716531870125</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716518054358</updated>
-      <workItem from="1716518055873" duration="5705000" />
+      <updated>1716531870125</updated>
+      <workItem from="1716531871512" duration="866000" />
     </task>
     <servers />
   </component>
