@@ -158,7 +158,7 @@ Overlay
     opacity: 1;
 }
 
-/*** Button ***/
+/* social button */
 .DevRole .btn {
     transition: .5s;
 }
@@ -176,9 +176,11 @@ Overlay
     background-color: #FFFFFF;
 }
 
-.DevRole .btn-social:hover {
-    color: #000000;
-    background-color: #AAAAAA;
+@media (hover: hover) and (pointer: fine) {
+    .DevRole .btn-social:hover {
+        color: #000000;
+        background-color: #AAAAAA;
+    }
 }
 
 
@@ -306,6 +308,19 @@ Responsive Style
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: overlay
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .DevRole .dev-overlay {
+        display: none;
+    }
 }
 
 
