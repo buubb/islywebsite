@@ -68,6 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'login.middleware.CsrfFailureMiddleware',
     'axes.middleware.AxesMiddleware',
+    'islyweb.middleware.RedirectMiddleware',
     # 'corsheaders.middleware.CorsMiddleware',
 ]
 
