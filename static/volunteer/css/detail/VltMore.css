@@ -186,11 +186,6 @@ Responsive Style
     }
 }
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-
-}
-
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .VltMore .card__category {
@@ -200,11 +195,6 @@ Responsive Style
     .VltMore .card__like {
         font-size: 11px;
     }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
