@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var errorMessage = document.getElementById("error-message");
 
     var currentUrl = window.location.href;
-    var baseUrl = currentUrl.split('/login')[0]; // "/login" 이전의 부분을 가져옴
+    var baseUrl = currentUrl.split('/login')[0];
     var newUrl = baseUrl + '/login';
     window.history.replaceState({}, document.title, newUrl);
 
@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // 에러 메시지가 존재하는 경우
     if (errorMessage) {
         var message = errorMessage.innerText.trim();
         showAlert(message);
