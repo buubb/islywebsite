@@ -50,3 +50,22 @@ Responsive Style
         font-size: 14px;
     }
 }
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Guidelines .notion-btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Guidelines .notion-btn {
+        font-size: 12px;
+    }
+}
