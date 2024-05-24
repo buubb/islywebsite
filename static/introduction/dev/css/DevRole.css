@@ -209,8 +209,10 @@ Down-content
     border: 1.5px solid #0D0F10;
 }
 
-.DevRole .down-content .role:hover {
-    border: 1.5px solid #FFFFFF;
+@media (hover: hover) and (pointer: fine) {
+    .DevRole .down-content .role:hover {
+        border: 1.5px solid #FFFFFF;
+    }
 }
 
 .DevRole .down-content .dot {
