@@ -203,7 +203,7 @@ Responsive style
 
 /*
 ---------------------------------------------
-Dimensions
+Dimensions :: owl-nav
 ---------------------------------------------
 */
 
@@ -227,9 +227,28 @@ Dimensions
     .NoticeTask .owl-nav {
         display: none;
     }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: font
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .NoticeTask h3 {
+        font-size: 28px;
+    }
 
     /* Hashtag */
     .NoticeTask .item span {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .NoticeTask h3 {
+        font-size: 26px;
     }
 }
