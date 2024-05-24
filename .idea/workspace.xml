@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c96d711a-6c84-4a2e-8bc0-b0acad32df6d" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/detail/VltDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/volunteer/css/posting/VltPosting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/comment_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/comment_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/post_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/introduction/dev/css/DevRole.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,8 @@
       <updated>1716540101293</updated>
       <workItem from="1716540102646" duration="876000" />
       <workItem from="1716541082137" duration="156000" />
-      <workItem from="1716544755176" duration="2718000" />
+      <workItem from="1716544755176" duration="3359000" />
+      <workItem from="1716548971398" duration="462000" />
     </task>
     <servers />
   </component>
