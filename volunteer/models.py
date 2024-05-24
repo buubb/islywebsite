@@ -23,4 +23,4 @@ class Comment(models.Model):
     post = models.ForeignKey(Post, verbose_name="포스트", on_delete=models.CASCADE)
     name = models.CharField("이름", max_length=10, null=True)
     content = models.TextField("내용")
-    created = models.DateTimeField("작성일시", auto_now_add=True)
+    created = models.DateTimeField("작성일시", auto_now=True)
