@@ -13,6 +13,7 @@ django-admin-thumbnails==0.2.8
 django-axes==6.4.0
 django-cors-headers==4.2.0
 django-crispy-forms==2.0
+django-environ==0.11.2
 django-extensions==3.2.3
 django-session-timeout==0.1.0
 djangorestframework==3.14.0
