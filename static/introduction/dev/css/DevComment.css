@@ -192,4 +192,8 @@ Dimensions
     .DevComment .item p {
         font-size: 15px;
     }
+
+    .DevComment .item span {
+        font-size: 11px;
+    }
 }
