@@ -187,3 +187,9 @@ Dimensions
         line-height: 45px;
     }
 }
+
+@media (max-width: 400px) {
+    .DevComment .item p {
+        font-size: 15px;
+    }
+}
