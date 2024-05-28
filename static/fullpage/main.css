@@ -597,70 +597,32 @@ circle {
 04. news
 --------------------------------------------- 
 */
-.vivid{ 
+.vivid { 
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   color: #FFFFFF;
   display: block;
   text-align: center;
   margin-top: 200px;
 }
-.scroll-container{
-  position:relative;
-  display:flex;
+.scroll-container {
+  position: relative;
+  display: flex;
   align-content: center;
   margin: 80px auto;
   width: 100%;
-  height:300px;
-  overflow: hidden;
+  height: 300px;
+  overflow-x: hidden;
 }
-
-.carousel-primary{
-  position:absolute;
+.carousel-primary {
+  position: absolute;
   display: flex;
+  justify-content: space-around;
   gap: 0 60px;
   width: max-content;
-  animation: scroll-horizontal 25s linear infinite;
-  padding-right:60px;
+  padding-right: 60px;
 }
-.carousel-secondary{
-  animation: scroll-horizontal-2 25s linear infinite;
-}
-@media (hover: hover) and (pointer: fine) {
-  .carousel-primary:hover, .carousel-primary:hover~.carousel-secondary{
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-  .carousel-secondary:hover{
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-  .scroll-container:hover>.carousel-primary:not(:hover){
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-}
-@keyframes scroll-horizontal {
-  0% {
-    transform: translateX(0%);
-  }
-  100%{
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-horizontal-2 {
-  0%{
-    transform: translateX(100%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
+.carousel-secondary {
+  position: absolute;
 }
 .vividtitle h1{
   font-family: "Source Sans 3", sans-serif!important;
@@ -669,21 +631,22 @@ circle {
   line-height: 1.3;
   font-size:40px!important;
 }
-#news-line .news-box{
+.news-line .news-box{
   display: inline;
   width: 250px;
   height:250px;
   padding: 0px;
+  opacity: 1;
   background-color: black;
   filter:brightness(1);
   text-align: center;
 }
 @media (hover: hover) and (pointer: fine) {
-  #news-line .news-box:hover img{
+  .news-line .news-box:hover img{
     filter:brightness(0.3);
   }
 }
-#news-line .news-box .caption{
+.news-line .news-box .caption{
   position:absolute;
   top: 50%;
   left: 60px;
@@ -693,7 +656,7 @@ circle {
   text-align: center;
   transition: 0.5s;
 }
-#news-line .news-box .caption h2{
+.news-line .news-box .caption h2{
   color: #FFFFFF;
   font-size: 18px!important;
   letter-spacing: 0.125em;
@@ -701,16 +664,16 @@ circle {
   line-height: 1.8;
 }
 @media (hover: hover) and (pointer: fine) {
-  #news-line .news-box:hover .caption{
+  .news-line .news-box:hover .caption{
     opacity: 1;
     filter:brightness(1);
   }
 }
-#news-line .news-box img{
-  width:300px!important;
-  height:300px!important;
+.news-line .news-box img{
+  width:300px;
+  height:300px;
 }
-#news-line .news-box p{
+.news-line .news-box p{
   color: #FFFFFF;
   padding: 10px 20px;
   text-align: left;
@@ -721,6 +684,22 @@ circle {
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+@keyframes scroll-horizontal {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+@keyframes scroll-horizontal-2 {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0%);
+  }
 }
 .special-button{
   margin: 0 auto;
@@ -772,11 +751,9 @@ circle {
   height: 80px;
   margin: 0px 50px;
 }
-
 .partner:first-child{
   margin-left: 70px;
 }
-
 .partner-logo{
   box-sizing: border-box;
     display: block;

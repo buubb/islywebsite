@@ -36,9 +36,13 @@
     const nowUrl = "official.i.sly0@gmail.com";
 
     function copyUrl(){ 
-        navigator.clipboard.writeText(nowUrl).then(res=>{
-            alert("Mail Address copied!");
-        });
+        const input = document.createElement('input');
+        input.value = nowUrl;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        alert("Mail Address copied!");
     }
 
     // Add copyUrl function to the window object for global access

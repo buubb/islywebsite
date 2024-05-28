@@ -1,70 +1,91 @@
-$(document).ready(function(){
+$(document).ready(function() {
     // 서버에서 토큰을 가져오는 함수
     function getInstagramToken() {
         $.ajax({
             type: "GET",
-            url: "/get-instagram-token/",  // Django에서 토큰을 가져오는 URL로 수정해야 함
+            url: "/get-instagram-token/", // Django에서 토큰을 가져오는 URL로 수정해야 함
             success: function(response) {
                 var token = response.token;
                 if (token) {
                     // 가져온 토큰을 사용하여 Instagram API에 요청
-                    $.ajax({
-                        type: "GET",
-                        dataType: "jsonp",
-                        cache: false,
-                        url: "https://graph.instagram.com/me/media?access_token=" + token + "&fields=id,caption,media_type,media_url,thumbnail_url,permalink",
-                        success: function(response) {
-                            // console.log(response);
-                            if (response.data != undefined && response.data.length > 0) {
-                                for (i = 0; i < 12; i++) {
-                                    if (response.data[i]) {
-                                        var item = response.data[i];
-                                        var image_url = "";
-                                        var post = "";
-
-                                        if (item.media_type === "VIDEO") {
-                                            image_url = item.thumbnail_url;
-                                        } else {
-                                            image_url = item.media_url;
-                                        }
-
-                                        post += '<div class="news-box instagram_item' + i + '">';
-                                        post += '<a href="' + item.permalink + '" target="_blank" rel="noopener noreferrer">';
-                                        post += '<img src="' + image_url + '">';
-                                        post += '</a>';
-                                        post += '<div class="caption" OnClick="location.href =' + image_url + '" style="cursor:pointer;" >';
-                                        post += '<a href="' + item.permalink + '">';
-                                        post += '<h2>바로가기 <i class="bi bi-arrow-up-right"></i></h2>';
-                                        post += '</a>';
-                                        post += '</div>';
-                                        post += '</div>';
-
-                                        $('.carousel-primary').append(post);
-                                    } else {
-                                        // if no curent item
-                                        show_fallback('#insta-item-' + i)
-                                    }
-                                }
-                            } else {
-                                // if api error
-                                show_fallback('.news-box')
-                            }
-                        },
-                        error: function() {
-                            // if http error
-                            show_fallback('.news-box')
-                        }
-                    });
+                    fetchInstagramMedia(token);
                 } else {
-                    // 토큰이 없을 때 처리
                     console.log("Instagram 토큰을 가져오지 못했습니다.");
                 }
             },
             error: function() {
-                // 토큰 가져오기 실패 시 처리
                 console.log("Instagram 토큰을 가져오는데 실패했습니다.");
             }
         });
+    }
+
+    // Instagram 미디어를 가져오는 함수
+    function fetchInstagramMedia(token) {
+        $.ajax({
+            type: "GET",
+            url: "https://graph.instagram.com/me/media",
+            data: {
+                access_token: token,
+                fields: "id,caption,media_type,media_url,thumbnail_url,permalink"
+            },
+            success: function(response) {
+                if (response.data && response.data.length > 0) {
+                    $('.carousel-primary, .carousel-secondary').empty(); // 이전 콘텐츠 제거
+
+                    response.data.slice(0, 12).forEach((item, i) => {
+                        var image_url = item.media_type === "VIDEO" ? item.thumbnail_url : item.media_url;
+                        var post = `<div class="news-box instagram_item${i}">
+                            <a href="${item.permalink}" target="_blank" rel="noopener noreferrer">
+                                <img src="${image_url}">
+                            </a>
+                            <div class="caption" onClick="location.href='${item.permalink}'" style="cursor:pointer;">
+                                <h2>바로가기 <i class="bi bi-arrow-up-right"></i></h2>
+                            </div>
+                        </div>`;
+                        $('.carousel-primary, .carousel-secondary').append(post);
+                    });
+                    // 요소가 추가된 후에 애니메이션 시작
+                    setTimeout(startAnimation, 100);
+                } else {
+                    show_fallback('.news-box');
+                }
+            },
+            error: function() {
+                show_fallback('.news-box');
+            }
+        });
+    }
+
+    // 애니메이션 시작 함수
+    function startAnimation() {
+        var primary = document.querySelector('.carousel-primary');
+        var secondary = document.querySelector('.carousel-secondary');
+
+        if (primary && secondary) {
+            var containerWidth = primary.parentNode.clientWidth;
+
+            primary.style.animation = `scroll-horizontal 25s linear infinite`;
+            secondary.style.animation = `scroll-horizontal-2 25s linear infinite`;
+
+            primary.style.transform = `translateX(0%)`;
+            secondary.style.transform = `translateX(${containerWidth}px)`;
+
+            // PC에서는 hover 이벤트를 사용하여 애니메이션 일시정지 및 재개
+            if (!('ontouchstart' in window)) {
+                $('.scroll-container').hover(
+                    function() {
+                        primary.style.animationPlayState = "paused";
+                        secondary.style.animationPlayState = "paused";
+                    },
+                    function() {
+                        primary.style.animationPlayState = "running";
+                        secondary.style.animationPlayState = "running";
+                    }
+                );
+            }
+        } else {
+            console.log("carousel-primary 또는 carousel-secondary 요소를 찾을 수 없습니다.");
+        }
     }
 
     // 토큰 가져오고 Instagram API 호출
@@ -74,7 +95,7 @@ $(document).ready(function(){
     setInterval(function() {
         $.ajax({
             type: "GET",
-            url: "/refresh-instagram-token/",  // Django에서 토큰을 갱신하는 URL로 수정해야 함
+            url: "/refresh-instagram-token/", // Django에서 토큰을 갱신하는 URL로 수정해야 함
             success: function(response) {
                 console.log("Instagram 토큰이 갱신되었습니다.");
                 // 토큰 갱신 후 Instagram API 호출

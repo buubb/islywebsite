@@ -1,4 +1,4 @@
-@charset "utf-8";
+
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -357,22 +357,22 @@ Table of contents
     padding: 20px;
     align-content: center;
   
-    & h3 {
-      font-weight: 700!important;
-      font-size: 25px!important;
-      margin-bottom: 20px;
-      margin-left:0px;
-      line-height: 1.182;
-      text-align: center;
-    }
+  }
+  .tab-content h3 {
+    font-weight: 700!important;
+    font-size: 25px!important;
+    margin-bottom: 20px;
+    margin-left:0px;
+    line-height: 1.182;
+    text-align: center;
+  }
   
-    & p {
+  .tab-content p {
       font-weight: 500;
       font-size: 16px;
       color: rgba(255,255,255,0.7);
       width:100%;
       text-align: center;
-    }
   }
   .tab-image {
     width:0px;
@@ -438,25 +438,27 @@ Table of contents
   .vividtitle h1{
     font-size: 7vw !important;
   }
-
-  .scroll-container{
-    height:250px;
+  .carousel-primary {
+    position: absolute;
+    display: flex;
+    gap: 0 20px;
+    padding-right: 20px;
+    width: max-content;
   }
-  .carousel-primary{
-    gap:0 20px;
-    padding-right:20px;
+  .scroll-container {
+      height: 250px;
   }
-  #news-line .news-box{
-    width:250px;
-    height:250px;
+  .news-box {
+      width: 250px;
+      height: 250px;
   }
-  #news-line .news-box .caption{
-    top:45%;
-    left:20px;
+  .caption {
+      top: 45%;
+      left: 20px;
   }
-  #news-line .news-box img {
-    width: 250px !important;
-    height: 250px !important;
+  .news-box img {
+      width: 250px !important;
+      height: 250px !important;
   }
   .earth {
     width: 150px;
