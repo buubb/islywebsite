@@ -453,8 +453,8 @@ Table of contents
       height: 250px;
   }
   .caption {
-      top: 45%;
-      left: 20px;
+      top: 45% !important;
+      left: 20px !important;
   }
   .news-box img {
       width: 250px !important;
