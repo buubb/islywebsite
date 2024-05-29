@@ -197,3 +197,9 @@ Dimensions
         font-size: 11px;
     }
 }
+
+@media (max-width: 360px) {
+    .DevComment .item span {
+        font-size: 10px;
+    }
+}
