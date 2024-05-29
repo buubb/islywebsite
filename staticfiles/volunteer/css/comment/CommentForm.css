@@ -1,0 +1,271 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.CommentForm {
+    background-color: transparent;
+    border: 6px solid #FFFFFF;
+    border-radius: 43px;
+    padding: 50px 50px 60px;
+}
+
+
+/*
+---------------------------------------------
+Headline
+---------------------------------------------
+*/
+
+/* Write */
+.CommentForm .major {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    padding-bottom: 8px;
+    font-size: 2.25rem;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Save Button */
+.CommentForm .save {
+    font-size: 32px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*
+---------------------------------------------
+Label
+---------------------------------------------
+*/
+
+.CommentForm .name-label,
+.CommentForm .content-label {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* counter */
+.CommentForm span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #aaa;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: none;
+}
+
+
+/*
+---------------------------------------------
+Input
+---------------------------------------------
+*/
+
+.CommentForm input[type="text"],
+.CommentForm textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 0;
+    border: solid 2px #FFFFFF;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    color: #FFFFFF;
+    display: block;
+    outline: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    width: 100%;
+    resize: none;
+}
+
+.CommentForm input[type="text"]:invalid,
+.CommentForm textarea:invalid {
+    box-shadow: none;
+}
+
+.CommentForm input[type="text"]:focus,
+.CommentForm textarea:focus {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    background: rgba(255, 255, 255, 0.075);
+    border-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.CommentForm input[type="text"] {
+    height: 3.25rem;
+}
+
+.CommentForm textarea {
+    padding: 0.75rem 1rem;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .CommentForm .name-label,
+    .CommentForm .content-label,
+    .CommentForm span {
+        font-size: 0.9rem;
+    }
+
+    .CommentForm input[type="text"],
+    .CommentForm textarea {
+        font-size: 0.9rem;
+    }
+
+    .CommentForm input[type="text"]:focus,
+    .CommentForm textarea:focus {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .CommentForm {
+        padding: 40px 40px 50px;
+    }
+
+    /* Write */
+    .CommentForm .major {
+        font-size: 2rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 30px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .CommentForm {
+        border-radius: 23px;
+        padding: 35px 30px 45px;
+    }
+
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.8rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 28px;
+    }
+
+    /* label, counter */
+    .CommentForm .name-label,
+    .CommentForm .content-label,
+    .CommentForm span {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: padding
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .CommentForm {
+        padding: 35px 25px 45px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: top
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.6rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.5rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.4rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 330px) {
+    /* Write */
+    .CommentForm .major {
+        font-size: 1.3rem;
+    }
+
+    /* Save Button */
+    .CommentForm .save {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,106 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.vlt-heading {
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+
+/*
+---------------------------------------------
+Headline
+---------------------------------------------
+*/
+
+/* Discover Our Projects! */
+.vlt-heading .headline {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+}
+
+.vlt-heading .headline em {
+    font-style: normal;
+    color: #57f579;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .vlt-heading .headline {
+        font-size: 3rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .vlt-heading {
+        margin-bottom: 3rem;
+    }
+
+    .vlt-heading .headline {
+        font-size: 2.5rem;
+    }
+
+    .vlt-heading span {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .vlt-heading {
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .vlt-heading {
+        margin-bottom: 2.2rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 350px) {
+    .vlt-heading .headline {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .vlt-heading .headline {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .vlt-heading .headline {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .vlt-heading .headline {
+        font-size: 2rem;
+    }
+}

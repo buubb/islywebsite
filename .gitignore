@@ -9,7 +9,6 @@ my_settings.py
 venv/
 myvenv/
 .config/
-staticfiles/
 # MySQL Database
 *.sql
 *.sqlite3

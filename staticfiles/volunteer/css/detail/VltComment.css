@@ -1,0 +1,135 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.VltComment {
+    margin-top: 160px;
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.VltComment .title {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.VltComment h6 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.VltComment small {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #696B6E;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.075em;
+}
+
+.VltComment p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    text-align: justify;
+}
+
+
+/*
+---------------------------------------------
+Comment_item
+---------------------------------------------
+*/
+
+.VltComment .comment_item {
+    padding: 30px;
+    border-radius: 23px;
+    background: #FFFFFF;
+}
+
+.VltComment .comment_item i {
+    color: #000000;
+}
+
+.VltComment .comment_item .down_content {
+    border-top: 2px solid #000000;
+    padding: 25px 0 0;
+}
+
+
+/*
+---------------------------------------------
+Button
+---------------------------------------------
+*/
+
+.VltComment .comment_edit,
+.VltComment .comment_delete {
+    color: #000000;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .VltComment h6 {
+        font-size: 16px;
+    }
+
+    .VltComment p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .VltComment p {
+       line-height: 1.8;
+    }
+}
+
+@media (max-width: 375px) {
+    .VltComment h6 {
+        font-size: 15px;
+    }
+
+    .VltComment small {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .VltComment h6 {
+        font-size: 14px;
+    }
+}

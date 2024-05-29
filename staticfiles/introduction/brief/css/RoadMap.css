@@ -1,0 +1,222 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.RoadMap {
+    margin-top: 160px;
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.RoadMap .title {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.RoadMap .week {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+.RoadMap .hashtag {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 450;
+}
+
+
+/*
+---------------------------------------------
+Roadmap-carousel
+---------------------------------------------
+*/
+
+.RoadMap .roadmap-carousel {
+    position: relative;
+}
+
+.RoadMap .roadmap-carousel::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    border-top: 2px dashed #FFFFFF;
+}
+
+.RoadMap .roadmap-carousel .roadmap-item .roadmap-point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    left: 50%;
+    margin-left: -15px;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RoadMap .roadmap-carousel .roadmap-item .roadmap-point span {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #FFFFFF;
+}
+
+.RoadMap .roadmap-carousel .roadmap-item {
+    position: relative;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.RoadMap .roadmap-carousel .roadmap-item::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 115px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 2px dashed #FFFFFF;
+}
+
+.RoadMap .roadmap-carousel .roadmap-item::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 111px;
+    left: 50%;
+    margin-left: -7px;
+    transform: rotate(45deg);
+    background: #FFFFFF;
+}
+
+
+/*
+---------------------------------------------
+Owl-nav
+---------------------------------------------
+*/
+
+.RoadMap .owl-nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.RoadMap .owl-nav .owl-prev span,
+.RoadMap .owl-nav .owl-next span {
+    opacity: 0;
+}
+
+.RoadMap .owl-nav .owl-prev,
+.RoadMap .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+    margin: 0 12px;
+}
+
+.RoadMap .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: #0D0F10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    border: 2px solid #FFFFFF;
+}
+
+.RoadMap .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: #0D0F10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    border: 2px solid #FFFFFF;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .RoadMap .owl-nav .owl-prev:hover:before,
+    .RoadMap .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 500px) {
+    .RoadMap .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .RoadMap .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+    .RoadMap .week {
+        font-size: 18px;
+    }
+
+    .RoadMap .hashtag {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .RoadMap .hashtag {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,83 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.InfiniteBanner {
+    background-color: #FFFFFF;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*
+---------------------------------------------
+Props
+---------------------------------------------
+*/
+
+.InfiniteBanner .props {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    will-change: transform;
+    animation: scroll-right-to-left 65s linear infinite;
+}
+
+.InfiniteBanner .props li {
+    white-space: nowrap;
+    color: #000000;
+}
+
+.InfiniteBanner .props a {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #000000;
+    display: inline-block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@keyframes scroll-right-to-left {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .InfiniteBanner .props a {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .InfiniteBanner .props a {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 350px) {
+    .InfiniteBanner .props a {
+        font-size: 25px;
+    }
+}

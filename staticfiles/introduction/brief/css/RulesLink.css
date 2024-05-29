@@ -1,0 +1,106 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.RulesLink {
+    background-color: transparent;
+    border: 5px solid #FFFFFF;
+    border-radius: 23px;
+    margin-top: 120px;
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.RulesLink .title {
+    font-family: "Source Sans 3", sans-serif;
+    color: #fff;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+
+/*
+---------------------------------------------
+Button
+---------------------------------------------
+*/
+
+.RulesLink .ruleslink-btn a {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .RulesLink .ruleslink-btn a {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .RulesLink .ruleslink-btn a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .RulesLink .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .RulesLink .title {
+        font-size: 1.45rem;
+    }
+
+    .RulesLink .ruleslink-btn a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .RulesLink .title {
+        font-size: 1.3rem;
+    }
+}

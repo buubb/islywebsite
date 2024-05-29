@@ -1,0 +1,351 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.StatusCheck {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.StatusCheck .form-container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.StatusCheck .form-container .forms {
+    width: 200%;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+.StatusCheck .form-container .form {
+    width: 50%;
+    padding: 40px;
+    border-radius: 23px;
+    border: 5px solid #FFFFFF;
+    background: transparent;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.StatusCheck .title {
+    font-family: "Poppins", "sans-serif";
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+.StatusCheck h4 {
+    font-family: "Poppins", "sans-serif";
+    color: #B2B2B2;
+    display: block;
+    font-weight: 450;
+    font-size: 15px;
+    letter-spacing: 0.075em;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+/* feedback */
+.StatusCheck p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #57f579;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-left: 5px;
+    text-transform: none;
+}
+
+/*
+---------------------------------------------
+Input-field
+---------------------------------------------
+*/
+
+.StatusCheck .form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.StatusCheck .input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.StatusCheck .input-field input:is(:focus, :valid) {
+    background-color: transparent;
+    color: #FFFFFF;
+    letter-spacing: 0.075em;
+    box-shadow: none;
+}
+
+.StatusCheck .input-field i {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    font-size: 23px;
+    transition: color 0.4s ease;
+    padding-left: 15px;
+}
+
+.StatusCheck .input-field input:is(:focus, :valid) ~ i {
+    color: #57F579;
+}
+
+.StatusCheck .input-field i.icon {
+    left: 0;
+}
+
+.StatusCheck .input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 15px;
+}
+
+
+/*
+---------------------------------------------
+Spin-button
+---------------------------------------------
+*/
+
+.StatusCheck input[type="number"]::-webkit-outer-spin-button,
+.StatusCheck input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*
+---------------------------------------------
+Placeholder
+---------------------------------------------
+*/
+
+.StatusCheck input[type="number"]::placeholder {
+    font-family: "Poppins", "sans-serif";
+    color: #B2B2B2;
+}
+
+
+/*
+---------------------------------------------
+Button
+---------------------------------------------
+*/
+
+.StatusCheck .next-btn {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    width: 100%;
+    margin-top: 35px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .StatusCheck .form-container .form {
+        padding: 30px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* format */
+    .StatusCheck h4 {
+        font-size: 14px;
+    }
+
+    .StatusCheck .input-field input {
+        font-size: 15px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: Button
+---------------------------------------------
+*/
+
+@media (max-width: 420px) {
+    .StatusCheck .next-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .StatusCheck .next-btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck .next-btn {
+        font-size: 0.7rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: title
+---------------------------------------------
+*/
+
+@media (max-width: 360px) {
+    .StatusCheck .title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck .title {
+        font-size: 22px;
+    }
+}
+
+/*
+---------------------------------------------
+Dimensions :: format
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .StatusCheck h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .StatusCheck h4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck h4 {
+        font-size: 11px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: feedback
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .StatusCheck p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .StatusCheck p {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck p {
+        font-size: 0.6rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: input
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .StatusCheck .input-field input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .StatusCheck .form-container .form {
+        padding: 20px;
+    }
+
+    .StatusCheck .input-field i {
+        font-size: 22px;
+    }
+
+    .StatusCheck .input-field input {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    .StatusCheck .input-field input {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    .StatusCheck .input-field input {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 330px) {
+    .StatusCheck .input-field input {
+        font-size: 10px;
+    }
+}

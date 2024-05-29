@@ -1,0 +1,137 @@
+/*
+---------------------------------------------
+Info
+---------------------------------------------
+*/
+
+.NoticeList .info {
+    border-radius: 23px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+
+/*
+---------------------------------------------
+Scheme
+---------------------------------------------
+*/
+
+.NoticeList h3 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-bottom: 8px;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+    transition: 0.3s;
+    letter-spacing: 0.075em;
+}
+
+.NoticeList .icon-box {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.NoticeList .icon-box .bi-1-square,
+.NoticeList .icon-box .bi-2-square,
+.NoticeList .icon-box .bi-3-square,
+.NoticeList .icon-box .bi-4-square,
+.NoticeList .icon-box .bi-5-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-right: 25px;
+    font-size: 43px;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    line-height: 0;
+    background-color: transparent;
+}
+
+.NoticeList .icon-box h4 {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: #FFFFFF;
+    letter-spacing: 0.075em;
+}
+
+.NoticeList ul {
+    list-style-position: outside;
+    padding-left: 1em;
+}
+
+.NoticeList li {
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+    letter-spacing: 0.055em;
+    list-style-type: disc;
+}
+
+.NoticeList li.subList {
+    font-size: 13px;
+}
+
+.NoticeList li.subList::marker {
+    content: "-  ";
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: icon-box
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .NoticeList .icon-box .bi-1-square,
+    .NoticeList .icon-box .bi-2-square,
+    .NoticeList .icon-box .bi-3-square,
+    .NoticeList .icon-box .bi-4-square,
+    .NoticeList .icon-box .bi-5-square {
+        margin-right: 20px;
+        font-size: 40px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 330px) {
+    .NoticeList .icon-box .bi-1-square,
+    .NoticeList .icon-box .bi-2-square,
+    .NoticeList .icon-box .bi-3-square,
+    .NoticeList .icon-box .bi-4-square,
+    .NoticeList .icon-box .bi-5-square {
+        margin-right: 18px;
+        font-size: 33px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: h3
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .NoticeList h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 375px) {
+    .NoticeList h3 {
+        font-size: 26px;
+    }
+}

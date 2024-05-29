@@ -1,0 +1,116 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.Position {
+    margin-top: 160px;
+}
+
+
+/*
+---------------------------------------------
+Title
+---------------------------------------------
+*/
+
+.Position .title {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Btn
+---------------------------------------------
+*/
+
+.Position .btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.Position .btn-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.Position .position-item {
+    position: relative;
+    padding: 45px 30px;
+    background: transparent;
+    border: 5px solid #FFFFFF;
+    border-radius: 23px;
+}
+
+/* icon */
+.Position .position-item .position-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    color: #000000;
+    background: #FFFFFF;
+}
+
+/* text */
+.Position .position-item h5,
+.Position .position-item p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* title */
+.Position .position-item h5 {
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+/* hashtag */
+.Position .position-item p {
+    color: #FFFFFF;
+    font-weight: 450;
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    /* title */
+    .Position .position-item h5 {
+        font-size: 18px;
+    }
+
+    /* hashtag */
+    .Position .position-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    /* hashtag */
+    .Position .position-item p {
+        font-size: 13px;
+    }
+}

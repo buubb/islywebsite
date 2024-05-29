@@ -1,0 +1,66 @@
+/*
+---------------------------------------------
+Copyright
+---------------------------------------------
+*/
+
+.copyright {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #0D0F10;
+    background-color: #FFFFFF;
+}
+
+.copyright a {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #0D0F10;
+    transition: .5s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .copyright a:hover {
+        letter-spacing: 2px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 340px) {
+    .copyright {
+        font-size: 13px;
+    }
+
+    .copyright a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 330px) {
+    .copyright {
+        font-size: 12px;
+    }
+
+    .copyright a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 310px) {
+    .copyright {
+        font-size: 11px;
+    }
+
+    .copyright a {
+        font-size: 11px;
+    }
+}

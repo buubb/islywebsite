@@ -1,0 +1,232 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.NoticeTask {
+    border-radius: 23px;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 160px;
+}
+
+
+/*
+---------------------------------------------
+Heading-section
+---------------------------------------------
+*/
+
+.NoticeTask .heading-section {
+    margin-bottom: 50px;
+}
+
+.NoticeTask h3 {
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-bottom: 8px;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+    transition: 0.3s;
+    letter-spacing: 0.075em;
+}
+
+
+/*
+---------------------------------------------
+Item
+---------------------------------------------
+*/
+
+.NoticeTask .item .thumb {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+}
+
+.NoticeTask .item .thumb .hover-effect {
+    position: absolute;
+    bottom: -100px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+.NoticeTask .item .thumb:hover .hover-effect {
+    opacity: 1;
+    visibility: visible;
+    bottom: 15px;
+}
+
+/* Click */
+.NoticeTask .item .thumb .hover-effect h6 {
+    background-color: rgba(0, 0, 0, .6);
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.075em;
+}
+
+.NoticeTask .item img {
+    border-radius: 23px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Topic */
+.NoticeTask .item h4 {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.3;
+    letter-spacing: 0.075em;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Hashtag */
+.NoticeTask .item span {
+    color: #8D8F91;
+    display: inline-block;
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/*
+---------------------------------------------
+Owl-Nav
+---------------------------------------------
+*/
+
+.NoticeTask .owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    display: flex;
+}
+
+.NoticeTask .owl-nav .owl-prev span,
+.NoticeTask .owl-nav .owl-next span {
+    opacity: 0;
+}
+
+.NoticeTask .owl-nav .owl-prev,
+.NoticeTask .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.NoticeTask .owl-nav .owl-prev {
+    margin: 0 24px;
+}
+
+.NoticeTask .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: #0D0F10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    border: 2px solid #FFFFFF;
+}
+
+.NoticeTask .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: #0D0F10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    border: 2px solid #FFFFFF;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .NoticeTask .owl-nav .owl-prev:hover:before,
+    .NoticeTask .owl-nav .owl-next:hover:before {
+        color: #000000;
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: owl-nav
+---------------------------------------------
+*/
+
+@media (max-width: 500px) {
+    .NoticeTask .owl-nav .owl-prev:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .NoticeTask .owl-nav .owl-next:before {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+    .NoticeTask .owl-nav {
+        display: none;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: font
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .NoticeTask h3 {
+        font-size: 28px;
+    }
+
+    /* Hashtag */
+    .NoticeTask .item span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .NoticeTask h3 {
+        font-size: 26px;
+    }
+}

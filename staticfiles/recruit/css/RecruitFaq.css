@@ -1,0 +1,228 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.RecruitFaq {
+    margin-top: 160px;
+}
+
+
+/*
+---------------------------------------------
+Subtitle, Title
+---------------------------------------------
+*/
+
+.RecruitFaq .title {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.RecruitFaq .faq-item a,
+.RecruitFaq .faq-item p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+
+/*
+---------------------------------------------
+FAQ-list
+---------------------------------------------
+*/
+
+.RecruitFaq .faq .faq-list {
+    padding: 0;
+}
+
+.RecruitFaq .faq .faq-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.RecruitFaq .faq .faq-list li {
+    padding: 25px 10px;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid #FFFFFF;
+    position: relative;
+    cursor: pointer;
+}
+
+/* question */
+.RecruitFaq .faq .faq-list a {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-right: 30px;
+    outline: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.075em;
+}
+
+/* Q */
+.RecruitFaq .faq .faq-list span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+/* icon-show, icon-close */
+.RecruitFaq .faq .faq-list .icon-show,
+.RecruitFaq .faq .faq-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* answer */
+.RecruitFaq .faq .faq-list p {
+    margin-bottom: 0;
+    padding: 15px 0 0 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: justify;
+    letter-spacing: 0.075em;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 17px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 19px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 15px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 15px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 16px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 14px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 22px 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 14px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 15px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 13px;
+    }
+
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 18px 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 13px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 14px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 12px;
+    }
+
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 16px 7px;
+    }
+}
+
+@media (max-width: 340px) {
+    /* question */
+    .RecruitFaq .faq .faq-list a {
+        font-size: 12px;
+    }
+
+    /* Q */
+    .RecruitFaq .faq .faq-list span {
+        font-size: 13px;
+    }
+
+    /* answer */
+    .RecruitFaq .faq .faq-list p {
+        font-size: 12px;
+    }
+
+    /* faq-list li */
+    .RecruitFaq .faq .faq-list li {
+        padding: 15px 6px;
+    }
+}

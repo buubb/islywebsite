@@ -1,0 +1,228 @@
+/*
+---------------------------------------------
+Content
+---------------------------------------------
+*/
+
+.VltDetails .content {
+    border: 6px solid #FFFFFF;
+    border-radius: 43px;
+    padding: 50px 60px;
+    background-color: transparent;
+}
+
+
+/*
+---------------------------------------------
+Custom Text
+---------------------------------------------
+*/
+
+.VltDetails h2,
+.VltDetails p {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+}
+
+.VltDetails h2 {
+    font-weight: 900;
+    letter-spacing: 0.055em;
+    line-height: 1.5;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+}
+
+.VltDetails p {
+    font-weight: 500;
+    letter-spacing: 0.035em;
+}
+
+
+/*
+---------------------------------------------
+Image
+---------------------------------------------
+*/
+
+.VltDetails img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*
+---------------------------------------------
+Button
+---------------------------------------------
+*/
+
+.VltDetails .like-btn,
+.VltDetails .comment-btn,
+.VltDetails .share-btn,
+.VltDetails .ellipsis-btn {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*
+---------------------------------------------
+Dropdown
+---------------------------------------------
+*/
+
+.VltDetails .dropdown-menu {
+    padding: 0 !important;
+    background-color: rgba(0, 0, 0, .8) !important;
+    border: 4px solid #FFFFFF !important;
+    border-radius: 20px !important;
+}
+
+.VltDetails .dropdown-item {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.VltDetails .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+.VltDetails .dropdown-item:focus {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+.VltDetails .dropdown-item .fa-solid {
+    margin-left: auto !important;
+}
+
+.VltDetails .dropdown-menu li:first-child .dropdown-item {
+    padding-top: 20px !important;
+}
+
+.VltDetails .dropdown-menu li:last-child .dropdown-item {
+    padding-bottom: 20px !important;
+}
+
+
+/*
+---------------------------------------------
+Responsive style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .VltDetails .content {
+        padding: 50px;
+    }
+
+    .VltDetails .dropdown-item {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .VltDetails .content {
+        padding: 40px;
+    }
+
+    .VltDetails .dropdown-item {
+        font-size: 13px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .VltDetails .content {
+        border-radius: 23px;
+        padding: 30px;
+    }
+
+    .VltDetails .like-btn,
+    .VltDetails .comment-btn,
+    .VltDetails .share-btn,
+    .VltDetails .ellipsis-btn {
+        font-size: 18px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: padding
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .VltDetails .content {
+        padding: 25px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: button
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .VltDetails .like-btn,
+    .VltDetails .comment-btn,
+    .VltDetails .share-btn,
+    .VltDetails .ellipsis-btn {
+        font-size: 16px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: title
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .VltDetails h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 340px) {
+    .VltDetails h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .VltDetails h2 {
+        font-size: 18px;
+    }
+}

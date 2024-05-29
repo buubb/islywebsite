@@ -1,0 +1,61 @@
+/*
+---------------------------------------------
+Guidelines
+---------------------------------------------
+*/
+
+.Guidelines .notion-btn {
+    border: none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .Guidelines .notion-btn {
+        font-size: 16px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .Guidelines .notion-btn {
+        font-size: 15px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .Guidelines .notion-btn {
+        font-size: 14px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .Guidelines .notion-btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Guidelines .notion-btn {
+        font-size: 12px;
+    }
+}

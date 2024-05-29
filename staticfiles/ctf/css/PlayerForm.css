@@ -1,0 +1,385 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.PlayerForm {
+    background-color: transparent;
+    border: 6px solid #FFFFFF;
+    border-radius: 43px;
+    padding: 50px 60px;
+}
+
+
+/*
+---------------------------------------------
+Headline
+---------------------------------------------
+*/
+
+/* Write */
+.PlayerForm .major {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    padding-bottom: 8px;
+    font-size: 2.25rem;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #FFFFFF;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Save Button */
+.PlayerForm .save {
+    font-size: 32px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*
+---------------------------------------------
+label
+---------------------------------------------
+*/
+
+.PlayerForm .name-label,
+.PlayerForm .point-label,
+.PlayerForm .challenge-label,
+.PlayerForm .dreamhack-label {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    margin: 0.2rem 0 1rem 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* name-counter */
+.PlayerForm span {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #aaa;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0.2rem 0 1rem 0;
+    text-transform: none;
+}
+
+
+/*
+---------------------------------------------
+Input
+---------------------------------------------
+*/
+
+.PlayerForm input[type="text"],
+.PlayerForm input[type="number"],
+.PlayerForm input[type="url"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 0;
+    border: solid 2px #FFFFFF;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    color: #FFFFFF;
+    display: block;
+    outline: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    width: 100%;
+    resize: none;
+}
+
+.PlayerForm input[type="text"]:invalid,
+.PlayerForm input[type="number"]:invalid,
+.PlayerForm input[type="url"]:invalid {
+    box-shadow: none;
+}
+
+.PlayerForm input[type="text"]:focus,
+.PlayerForm input[type="number"]:focus,
+.PlayerForm input[type="url"]:focus {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    background: rgba(255, 255, 255, 0.075);
+    border-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.PlayerForm input[type="text"],
+.PlayerForm input[type="number"],
+.PlayerForm input[type="url"] {
+    height: 3.25rem;
+}
+
+.PlayerForm input[type='number']::-webkit-outer-spin-button,
+.PlayerForm input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*
+---------------------------------------------
+Profile
+---------------------------------------------
+*/
+
+.PlayerForm .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 75px auto 50px;
+}
+
+.PlayerForm .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    top: 10px;
+}
+
+.PlayerForm .avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.PlayerForm .avatar-upload .avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+.PlayerForm .avatar-upload .avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.PlayerForm .avatar-upload .avatar-edit label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.PlayerForm .avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.PlayerForm .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .PlayerForm {
+        padding: 50px;
+    }
+
+    /* label */
+    .PlayerForm .name-label,
+    .PlayerForm .point-label,
+    .PlayerForm .challenge-label,
+    .PlayerForm .dreamhack-label {
+        font-size: 0.9rem;
+    }
+
+    /* name-counter */
+    .PlayerForm span {
+        font-size: 0.9rem;
+    }
+
+    /* input */
+    .PlayerForm input[type="text"],
+    .PlayerForm input[type="number"],
+    .PlayerForm input[type="url"] {
+        font-size: 0.9rem;
+    }
+
+    /* input:focus */
+    .PlayerForm input[type="text"]:focus,
+    .PlayerForm input[type="number"]:focus,
+    .PlayerForm input[type="url"]:focus {
+        font-size: 0.9rem;
+    }
+
+    /* profile */
+    .PlayerForm .avatar-upload {
+        margin: 20px auto;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .PlayerForm {
+        padding: 40px;
+    }
+
+    /* Write */
+    .PlayerForm .major {
+        font-size: 2rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 30px;
+    }
+
+    /* profile */
+    .PlayerForm .avatar-upload {
+        margin: 10px auto;
+    }
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .PlayerForm {
+        border-radius: 23px;
+        padding: 35px 30px 40px;
+    }
+
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.8rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 28px;
+    }
+
+    /* label */
+    .PlayerForm .name-label,
+    .PlayerForm .point-label,
+    .PlayerForm .challenge-label,
+    .PlayerForm .dreamhack-label {
+        font-size: 0.8rem;
+    }
+
+    /* name-counter */
+    .PlayerForm span {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: padding
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    .PlayerForm {
+        padding: 35px 25px 40px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions :: top
+---------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.6rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.5rem;
+    }
+
+    /* Save Button */
+    .VltPosting .save {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.4rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 330px) {
+    /* Write */
+    .PlayerForm .major {
+        font-size: 1.3rem;
+    }
+
+    /* Save Button */
+    .PlayerForm .save {
+        font-size: 20px;
+    }
+}

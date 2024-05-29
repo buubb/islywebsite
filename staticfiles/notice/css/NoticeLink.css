@@ -1,0 +1,169 @@
+/*
+---------------------------------------------
+Basic
+---------------------------------------------
+*/
+
+.NoticeLink {
+    border-radius: 23px;
+    background-color: #FFFFFF;
+}
+
+.NoticeGap {
+    margin-top: 160px;
+}
+
+
+/*
+---------------------------------------------
+Subtitle, Title
+---------------------------------------------
+*/
+
+.NoticeLink .linkSub {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+}
+
+.NoticeLink .linkTitle {
+    font-family: "Source Sans 3", sans-serif;
+    color: #000000;
+    display: block;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    line-height: 1.3;
+    text-transform: none;
+}
+
+
+/*
+---------------------------------------------
+Button
+---------------------------------------------
+*/
+
+.NoticeLink .notice-btn a {
+    font-size: 75px;
+    color: #000000;
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .NoticeLink .notice-btn a {
+        font-size: 65px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .NoticeLink .notice-btn a {
+        font-size: 60px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 20px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 28px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .NoticeLink .notice-btn a {
+        font-size: 50px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 18px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 22px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .NoticeLink .notice-btn a {
+        font-size: 45px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 16px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 575.98px) {
+    .NoticeLink .linkTitle br {
+        display: none;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 400px) {
+    .NoticeLink .notice-btn a {
+        font-size: 42px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 15px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .NoticeLink .notice-btn a {
+        font-size: 40px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 14px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 350px) {
+    .NoticeLink .notice-btn a {
+        font-size: 34px;
+    }
+
+    .NoticeLink .linkSub {
+        font-size: 13px;
+    }
+
+    .NoticeLink .linkTitle {
+        font-size: 18px;
+    }
+}
