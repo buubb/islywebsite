@@ -1,5 +1,6 @@
 # backend
 from django.shortcuts import render
+from notice.models import Fee
 
 
 def introduction(request):
@@ -7,7 +8,11 @@ def introduction(request):
 
 
 def bylaws(request):
-    return render(request, "introduction/rules.html")
+    fee = Fee.objects.last()
+    context = {
+        "fee": fee
+    }
+    return render(request, "introduction/rules.html", context)
 
 
 def developers(request):
