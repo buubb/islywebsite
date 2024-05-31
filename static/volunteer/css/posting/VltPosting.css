@@ -11,6 +11,16 @@ Basic
     padding: 50px 70px 50px;
 }
 
+::selection {
+    background: #777777 !important;
+    color: #FFFFFF !important;
+}
+
+::-moz-selection {
+    background: #777777 !important;
+    color: #FFFFFF !important;
+}
+
 
 /*
 ---------------------------------------------
