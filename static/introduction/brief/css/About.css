@@ -92,35 +92,37 @@ Button
 
 /*
 ---------------------------------------------
-Img Border
+Svg
 ---------------------------------------------
 */
 
-.About .img-border {
-    position: relative;
-    height: 100%;
-    min-height: 400px;
+.About .cell {
+    flex: 0 0 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
 }
 
-.About .img-border::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 3rem;
-    bottom: 3rem;
-    border: 5px solid #FFFFFF;
-    border-radius: 23px;
+.About svg {
+    width: 100%;
 }
 
-.About .img-border img {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    width: calc(100% - 3rem);
-    height: calc(100% - 3rem);
-    object-fit: cover;
-    border-radius: 23px;
+@media screen and (min-width: 993px) {
+    .About .cell {
+        flex: 0 0 16.666%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .About .cell {
+        flex: 0 0 14.285%;
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .About .cell {
+        flex: 0 0 12.5%;
+    }
 }
 
 
@@ -134,7 +136,11 @@ Responsive Style
 @media (max-width: 1399.98px) {
     .About .title {
         font-size: 32px;
+    }
 
+    /* button */
+    .About .about-btn {
+        display: none;
     }
 }
 
@@ -147,11 +153,6 @@ Responsive Style
     .About h5 {
         font-size: 16px;
         line-height: 1.5;
-    }
-
-    /* button */
-    .About .about-btn {
-        display: none;
     }
 }
 
@@ -255,18 +256,5 @@ Dimensions :: subtitle, p
 
     .About .subtitle {
         font-size: 11px;
-    }
-}
-
-
-/*
----------------------------------------------
-Dimensions :: img
----------------------------------------------
-*/
-
-@media (max-width: 450px) {
-    .About .img-border {
-        min-height: 300px;
     }
 }
