@@ -35,6 +35,8 @@
     var ele_score;
     var speed_setting;
     var wall_setting;
+    var gameTitle;
+    var instructions;
 
     /////////////////////////////////////////////////////////////
 
@@ -42,7 +44,6 @@
         ctx.fillStyle = "#FFFFFF";
         ctx.fillRect(x * 10, y * 10, 10, 10);
     }
-
 
     /////////////////////////////////////////////////////////////
 
@@ -222,7 +223,7 @@
 
     /////////////////////////////////////////////////////////////
 
-    // Change the snake speed...
+    // Change the snake speed
     // 150 = slow
     // 100 = normal
     // 50 = fast
@@ -231,6 +232,7 @@
     }
 
     /////////////////////////////////////////////////////////////
+
     var setWall = function (wall_value) {
         wall = wall_value;
         if (wall == 0) {
@@ -255,6 +257,8 @@
                 screen_menu.style.display = "none";
                 screen_setting.style.display = "none";
                 screen_gameover.style.display = "none";
+                gameTitle.style.display = "none";
+                instructions.style.display = "block";
                 break;
 
             case 1:
@@ -262,6 +266,8 @@
                 screen_menu.style.display = "block";
                 screen_setting.style.display = "none";
                 screen_gameover.style.display = "none";
+                gameTitle.style.display = "block";
+                instructions.style.display = "none";
                 break;
 
             case 2:
@@ -269,6 +275,8 @@
                 screen_menu.style.display = "none";
                 screen_setting.style.display = "block";
                 screen_gameover.style.display = "none";
+                gameTitle.style.display = "block";
+                instructions.style.display = "none";
                 break;
 
             case 3:
@@ -276,6 +284,8 @@
                 screen_menu.style.display = "none";
                 screen_setting.style.display = "none";
                 screen_gameover.style.display = "block";
+                gameTitle.style.display = "block";
+                instructions.style.display = "none";
                 break;
         }
     }
@@ -304,6 +314,10 @@
         ele_score = document.getElementById("score_value");
         speed_setting = document.getElementsByName("speed");
         wall_setting = document.getElementsByName("wall");
+
+        // Added elements
+        gameTitle = document.getElementById("gameTitle");
+        instructions = document.getElementById("instructions");
 
         // --------------------
 
@@ -357,7 +371,7 @@
         document.onkeydown = function (evt) {
             if (screen_gameover.style.display == "block") {
                 evt = evt || window.event;
-                if (evt.keyCode == 13) { // Change from 32 (SPACE) to 13 (ENTER)
+                if (evt.keyCode == 13) {
                     newGame();
                     evt.preventDefault(); // Prevent default behavior
                 }

@@ -5,13 +5,13 @@ Basic Styles
 */
 
 ::selection {
-    color: #FFFFFF;
-    background: transparent;
+    background: #777777 !important;
+    color: #FFFFFF !important;
 }
 
 ::-moz-selection {
-    color: #FFFFFF;
-    background: transparent;
+    background: #777777 !important;
+    color: #FFFFFF !important;
 }
 
 .SnakeGame {
@@ -63,7 +63,7 @@ Top Styles
 
 .SnakeGame h1 {
     display: inline-block;
-    font-size: 32px;
+    font-size: 30px;
     color: #FFFFFF;
 }
 
@@ -221,6 +221,27 @@ Settings Screen Style
 .SnakeGame #setting input:checked + label {
     background-color: #FFFFFF;
     color: #000000;
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .SnakeGame h1 {
+        font-size: 28px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .SnakeGame h1 {
+        font-size: 25px;
+    }
 }
 
 
