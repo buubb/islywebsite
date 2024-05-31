@@ -132,7 +132,7 @@ FAQ-list
 /* fourth */
 .Rules .faq ul.ulFourth {
     list-style-position: outside;
-    padding-left: 1em;
+    padding-left: 0.1em;
 }
 
 .Rules .faq li.listFourth {
@@ -143,10 +143,24 @@ FAQ-list
     color: #FFFFFF;
     text-align: justify;
     letter-spacing: 0.075em;
+    list-style-type: none;
 }
 
-.Rules .faq li.listFourth::marker {
-    content: "-  ";
+/* fifth */
+.Rules .faq ul.ulFifth {
+    list-style-position: outside;
+    padding-left: 1em;
+}
+
+.Rules .faq li.listFifth {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #FFFFFF;
+    text-align: justify;
+    letter-spacing: 0.075em;
+    list-style-type: disc;
 }
 
 
@@ -174,7 +188,8 @@ Responsive Style
         font-size: 15px;
     }
 
-    .Rules .faq li.listFourth {
+    .Rules .faq li.listFourth,
+    .Rules .faq li.listFifth {
         font-size: 14px;
     }
 }
@@ -203,7 +218,8 @@ Dimensions
         font-size: 14px;
     }
 
-    .Rules .faq li.listFourth {
+    .Rules .faq li.listFourth,
+    .Rules .faq li.listFifth {
         font-size: 13px;
     }
 }
@@ -225,7 +241,8 @@ Dimensions
         font-size: 13px;
     }
 
-    .Rules .faq li.listFourth {
+    .Rules .faq li.listFourth,
+    .Rules .faq li.listFifth {
         font-size: 12px;
     }
 }
@@ -247,7 +264,8 @@ Dimensions
         font-size: 12px;
     }
 
-    .Rules .faq li.listFourth {
+    .Rules .faq li.listFourth,
+    .Rules .faq li.listFifth {
         font-size: 11px;
     }
 }
