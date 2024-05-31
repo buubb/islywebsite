@@ -50,10 +50,12 @@ Item
     transition: all .4s;
 }
 
-.ctf .item .thumb:hover .hover-effect {
-    opacity: 1;
-    visibility: visible;
-    bottom: 15px;
+@media (hover: hover) and (pointer: fine) {
+    .ctf .item .thumb:hover .hover-effect {
+        opacity: 1;
+        visibility: visible;
+        bottom: 15px;
+    }
 }
 
 /* Click */
