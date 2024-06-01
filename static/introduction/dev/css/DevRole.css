@@ -153,9 +153,11 @@ Overlay
     transition: .5s;
 }
 
-.DevRole .profile:hover .dev-overlay {
-    height: 100%;
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    .DevRole .profile:hover .dev-overlay {
+        height: 100%;
+        opacity: 1;
+    }
 }
 
 /* social button */
@@ -298,19 +300,6 @@ Responsive Style
     }
 
     .DevRole .row .col-md-6:nth-child(6) .item {
-        display: none;
-    }
-}
-
-
-/*
----------------------------------------------
-Dimensions :: overlay
----------------------------------------------
-*/
-
-@media (max-width: 400px) {
-    .DevRole .dev-overlay {
         display: none;
     }
 }
