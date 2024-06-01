@@ -173,6 +173,7 @@ Responsive Style
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .CommentForm {
+        border-radius: 33px;
         padding: 40px 40px 50px;
     }
 
