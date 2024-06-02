@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libpq-dev \
     default-mysql-client \
+    vim \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -18,4 +19,5 @@ COPY . /app/islywebsite/
 ENV DJANGO_SETTINGS_MODULE=islyweb.settings
 ENV PYTHONUNBUFFERED=1
 
-RUN python manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput \
+    && chown -R 1000:1000 /app/islywebsite/staticfiles
