@@ -90,24 +90,32 @@ Pagination
 ---------------------------------------------
 */
 
+.WRanking .pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 .WRanking .pagination .btn {
     color: #FFFFFF;
     background-color: #0D0F10;
     border-radius: 50%;
     border: none;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 0 2px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.03em;
     text-decoration: none;
     display: inline-block;
     padding: 0;
     height: 40px;
-    min-width: 40px;
+    width: 40px;
     line-height: 40px;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .WRanking .pagination .current {
@@ -138,5 +146,77 @@ Responsive Style
 
     .WRanking .td-rank {
         font-size: 16px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .WRanking .pagination .btn {
+        font-size: 13px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}
+
+
+/*
+---------------------------------------------
+Dimensions
+---------------------------------------------
+*/
+
+@media (max-width: 450px) {
+    .WRanking .pagination .btn {
+        font-size: 11px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .WRanking .pagination .btn {
+        font-size: 10px;
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 340px) {
+    .WRanking .pagination .btn {
+        margin: 0 1px;
+        font-size: 9px;
+        height: 26px;
+        width: 26px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+    .WRanking .pagination .btn {
+        font-size: 8px;
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 300px) {
+    .WRanking .pagination .btn {
+        font-size: 7px;
+        height: 22px;
+        width: 22px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 280px) {
+    .WRanking .pagination .btn {
+        font-size: 6px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
     }
 }

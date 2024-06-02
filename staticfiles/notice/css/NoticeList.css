@@ -78,10 +78,7 @@ Scheme
 
 .NoticeList li.subList {
     font-size: 13px;
-}
-
-.NoticeList li.subList::marker {
-    content: "-  ";
+    list-style-type: circle;
 }
 
 

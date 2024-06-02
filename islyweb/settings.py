@@ -13,10 +13,10 @@ SECRET_KEY = env('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ctf.h4ck1ngis1y.xyz']
 
 AUTH_USER_MODEL= 'User.User'
- 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -111,7 +111,7 @@ DATABASES = {
         'HOST': env('DATABASE_HOST'),
         'PORT': env('DATABASE_PORT', default=''),
         'OPTIONS': {
-            'charset': 'utf8mb4',  
+            'charset': 'utf8mb4',
         },
     }
 }
@@ -136,7 +136,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Seoul' 
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -154,9 +154,31 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 FORM_RENDERFORM='django.forms.renderers.TemplatesSetting'
+
+# 로깅
+#LOGGING = {
+    #'version': 1,
+    #'disable_existing_loggers': False,
+   # 'handlers': {
+       # 'file': {
+       #     'level': 'DEBUG',
+      #      'class': 'logging.FileHandler',
+     #       'filename': '/var/log/debug.log',
+    #    },
+   # },
+  #  'loggers': {
+      #  'django': {
+     #       'handlers': ['file'],
+    #        'level': 'DEBUG',
+   #         'propagate': True,
+  #      },
+ #   },
+#}
+
+APPEND_SLASH = True

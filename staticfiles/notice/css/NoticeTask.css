@@ -57,10 +57,12 @@ Item
     transition: all .4s;
 }
 
-.NoticeTask .item .thumb:hover .hover-effect {
-    opacity: 1;
-    visibility: visible;
-    bottom: 15px;
+@media (hover: hover) and (pointer: fine) {
+    .NoticeTask .item .thumb:hover .hover-effect {
+        opacity: 1;
+        visibility: visible;
+        bottom: 15px;
+    }
 }
 
 /* Click */

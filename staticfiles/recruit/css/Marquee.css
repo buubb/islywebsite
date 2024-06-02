@@ -1,0 +1,76 @@
+/*
+---------------------------------------------
+Marquee
+---------------------------------------------
+*/
+
+:root {
+    --speed: 25s;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    padding: 1rem 0;
+    color: #000000;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 0.055em;
+    align-items: center;
+}
+
+.marquee__item {
+    display: inline-block;
+    will-change: transform;
+    animation: marquee var(--speed) linear infinite;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .marquee:hover .marquee__item {
+        animation-play-state: paused;
+    }
+}
+
+.marquee__seperator {
+    margin: 0 1rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/*
+---------------------------------------------
+Responsive Style
+---------------------------------------------
+*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .marquee {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .marquee {
+        padding: 0.8rem 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 340px) {
+    .marquee {
+        padding: 0.6rem 0;
+        font-size: 20px;
+    }
+}
